@@ -124,8 +124,8 @@
   },
   "usage": {
     "name": "usage",
-    "title": "How to Launch with PicturetoDrawing",
-    "description": "Get your AI SaaS startup running in three simple steps:",
+    "title": "How to Convert Picture to Drawing",
+    "description": "Transform any photo to sketch or artistic drawing with our intuitive process. No technical skills needed - just follow these simple steps to create stunning picture to drawing conversions.",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -133,149 +133,24 @@
     "text_align": "center",
     "items": [
       {
-        "title": "Get PicturetoDrawing",
-        "description": "Buy PicturetoDrawing with a one-time payment. Check your email for the code and documentation.",
+        "title": "Upload Your Photo",
+        "description": "Simply drag and drop your image or click to browse. Our picture to drawing converter supports JPG, PNG, and other popular formats. Your photo will be processed securely with complete privacy protection.",
         "image": {
           "src": "/imgs/features/5.png"
         }
       },
       {
-        "title": "Start Your Project",
-        "description": "Read the documentation and clone the code of PicturetoDrawing. Start building your AI SaaS startup.",
+        "title": "Choose Your Art Style",
+        "description": "Select from our collection of artistic styles including pencil sketch, charcoal drawing, watercolor painting, and ink illustration. Each photo to sketch style offers unique aesthetic qualities for your picture to drawing transformation.",
         "image": {
           "src": "/imgs/features/6.png"
         }
       },
       {
-        "title": "Customize Your Project",
-        "description": "Modify the template with your data and contents. Specific AI functionality needs.",
+        "title": "Download Your Artwork",
+        "description": "Watch as our AI transforms your picture to drawing in seconds. Preview your converted photo to sketch result and download in high resolution. Perfect for printing, sharing, or creating personalized gifts.",
         "image": {
           "src": "/imgs/features/7.png"
-        }
-      },
-      {
-        "title": "Deploy to Production",
-        "description": "Deploy your project to production with a few steps and start serving customers immediately.",
-        "image": {
-          "src": "/imgs/features/8.png"
-        }
-      }
-    ]
-  },
-  "feature": {
-    "name": "feature",
-    "title": "Key Features of PicturetoDrawing",
-    "description": "Everything you need to launch your AI SaaS startup quickly and efficiently.",
-    "items": [
-      {
-        "title": "Next.js Boilerplate",
-        "description": "Production-ready Next.js templates with SEO-friendly structure and i18n support.",
-        "icon": "RiNextjsFill"
-      },
-      {
-        "title": "Authentication & Payments",
-        "description": "Integrated Google OAuth, one-tap login, and Stripe payment processing.",
-        "icon": "RiKey2Fill"
-      },
-      {
-        "title": "Data Infrastructure",
-        "description": "Built-in Supabase integration for reliable and scalable data storage.",
-        "icon": "RiDatabase2Line"
-      },
-      {
-        "title": "One-Click Deployment",
-        "description": "Seamless deployment to Vercel or Cloudflare with automated setup.",
-        "icon": "RiCloudy2Fill"
-      },
-      {
-        "title": "Business Analytics",
-        "description": "Integrated Google Analytics and Search Console for tracking growth.",
-        "icon": "RiBarChart2Line"
-      },
-      {
-        "title": "AI-Ready Infrastructure",
-        "description": "Pre-configured AI integration with built-in credits system and API sales.",
-        "icon": "RiRobot2Line"
-      }
-    ]
-  },
-  "stats": {
-    "name": "stats",
-    "label": "Stats",
-    "title": "People Love PicturetoDrawing",
-    "description": "for it's easy to use and fast to ship.",
-    "icon": "FaRegHeart",
-    "items": [
-      {
-        "title": "Trusted by",
-        "label": "99+",
-        "description": "Customers"
-      },
-      {
-        "title": "Built in",
-        "label": "20+",
-        "description": "Components"
-      },
-      {
-        "title": "Ship Fast in",
-        "label": "5",
-        "description": "Minutes"
-      }
-    ]
-  },
-  "testimonial": {
-    "name": "testimonial",
-    "label": "Testimonial",
-    "title": "What Users Say About PicturetoDrawing",
-    "description": "Hear from developers and founders who launched their AI startups with PicturetoDrawing.",
-    "icon": "GoThumbsup",
-    "items": [
-      {
-        "title": "David Chen",
-        "label": "Founder of AIWallpaper.shop",
-        "description": "PicturetoDrawing saved us months of development time. We launched our AI wallpaper business in just 2 days and got our first paying customer within a week!",
-        "image": {
-          "src": "/imgs/users/1.png"
-        }
-      },
-      {
-        "title": "Rachel Kim",
-        "label": "CTO at HeyBeauty.ai",
-        "description": "The pre-built AI infrastructure is a game-changer. We didn't have to worry about architecture - just focused on our AI beauty tech and went live fast.",
-        "image": {
-          "src": "/imgs/users/2.png"
-        }
-      },
-      {
-        "title": "Marcus Thompson",
-        "label": "Solo Developer",
-        "description": "As a solo developer, PicturetoDrawing gave me everything I needed - auth, payments, AI integration, and beautiful UI. Launched my SaaS in a weekend!",
-        "image": {
-          "src": "/imgs/users/3.png"
-        }
-      },
-      {
-        "title": "Sofia Garcia",
-        "label": "CEO of Melodisco",
-        "description": "The templates are production-ready and highly customizable. We built our AI music platform in hours instead of months. Incredible time-to-market!",
-        "image": {
-          "src": "/imgs/users/4.png"
-        }
-      },
-      {
-        "title": "James Wilson",
-        "label": "Tech Lead at GPTs.works",
-        "description": "PicturetoDrawing's infrastructure is rock-solid. We scaled from 0 to 10k users without touching the backend. Best investment for our AI startup.",
-        "image": {
-          "src": "/imgs/users/5.png"
-        }
-      },
-      {
-        "title": "Anna Zhang",
-        "label": "Startup Founder",
-        "description": "From idea to launch in 3 days! PicturetoDrawing's templates and deployment tools made it possible to test our AI business concept incredibly fast.",
-        "image": {
-          "src": "/imgs/users/6.png"
         }
       }
     ]
@@ -283,51 +158,262 @@
   "faq": {
     "name": "faq",
     "label": "FAQ",
-    "title": "Frequently Asked Questions About PicturetoDrawing",
-    "description": "Have another question? Contact us on Discord or by email.",
+    "title": "Frequently Asked Questions About Picture to Drawing Conversion",
+    "description": "Get answers to common questions about our photo to sketch converter and picture to drawing technology.",
     "items": [
       {
-        "title": "What exactly is PicturetoDrawing and how does it work?",
-        "description": "PicturetoDrawing is a comprehensive NextJS boilerplate designed specifically for building AI SaaS startups. It provides ready-to-use templates, infrastructure setup, and deployment tools that help you launch your AI business in hours instead of days."
+        "title": "How does the picture to drawing AI technology work?",
+        "description": "Our advanced artificial intelligence analyzes your photo's composition, lighting, textures, and details to create authentic picture to drawing conversions. The AI understands artistic techniques like shading, line weight, and texture rendering to produce photo to sketch results that mimic traditional hand-drawn artwork. Unlike simple filters, our technology preserves the emotional essence and fine details of your original photograph."
       },
       {
-        "title": "Do I need advanced technical skills to use PicturetoDrawing?",
-        "description": "While basic programming knowledge is helpful, PicturetoDrawing is designed to be developer-friendly. Our templates and documentation make it easy to get started, even if you're not an expert in AI or cloud infrastructure."
+        "title": "What art styles are available for photo to sketch conversion?",
+        "description": "Our picture to drawing converter offers multiple artistic styles including realistic pencil sketches, dramatic charcoal drawings, delicate watercolor paintings, bold ink illustrations, and colored pencil artwork. Each photo to sketch style uses different algorithms to achieve authentic artistic effects. You can experiment with various styles to find the perfect picture to drawing aesthetic for your image."
       },
       {
-        "title": "What types of AI SaaS can I build with PicturetoDrawing?",
-        "description": "PicturetoDrawing supports a wide range of AI applications, from content generation to data analysis tools. Our templates cover popular use cases like AI chatbots, content generators, image processing apps, and more."
+        "title": "Is my photo safe when using your picture to drawing service??",
+        "description": "Most photo to sketch conversions complete within 10-30 seconds, depending on image size and complexity. Our optimized AI servers ensure fast processing without compromising quality. High-resolution pictures or detailed images may take slightly longer, but you'll never wait more than a minute for your picture to drawing transformation. The speed of our technology allows for quick experimentation with different artistic styles."
       },
       {
-        "title": "How long does it typically take to launch with PicturetoDrawing?",
-        "description": "With PicturetoDrawing, you can have a working prototype in hours and a production-ready application in hours. Our one-click deployment and pre-configured infrastructure significantly reduce the traditional months-long development cycle."
+        "title": "How long does picture to drawing conversion take?",
+        "description": "Most photo to sketch conversions complete within 10-30 seconds, depending on image size and complexity. Our optimized AI servers ensure fast processing without compromising quality. High-resolution pictures or detailed images may take slightly longer, but you'll never wait more than a minute for your picture to drawing transformation. The speed of our technology allows for quick experimentation with different artistic styles."
       },
       {
-        "title": "What's included in the PicturetoDrawing infrastructure?",
-        "description": "PicturetoDrawing provides a complete infrastructure stack including authentication, database setup, API integration, payment processing, and scalable cloud deployment. Everything is pre-configured following industry best practices."
+        "title": "What resolution can I download my photo to sketch results?",
+        "description": "You can download your picture to drawing conversions in multiple resolutions, including the full resolution of your original photo. Our AI maintains image quality throughout the photo to sketch process, ensuring your artistic drawings are suitable for printing, professional use, or high-quality social media sharing. Premium users can access even higher resolution outputs for large format printing and commercial applications."
       },
       {
-        "title": "Can I customize the templates to match my brand?",
-        "description": "Absolutely! All PicturetoDrawing templates are fully customizable. You can modify the design, features, and functionality to match your brand identity and specific business requirements while maintaining the robust underlying infrastructure."
+        "title": "Can I use the picture to drawing converter on mobile devices?",
+        "description": "Yes! Our photo to sketch converter works perfectly on smartphones and tablets. The responsive design ensures seamless picture to drawing conversion across all devices. You can upload photos directly from your mobile camera or gallery, apply artistic styles, and download results instantly. The mobile experience maintains all the features and quality of the desktop version, making artistic photo to sketch transformation available anywhere."
       }
     ]
   },
   "cta": {
     "name": "cta",
-    "title": "Ship your first AI SaaS Startup",
-    "description": "Start from here, ship with PicturetoDrawing.",
+    "title": "Ready to Transform Your Pictures to Stunning Drawings?",
+    "description": "Join thousands of satisfied users who trust our AI-powered photo to sketch converter. Experience professional-quality picture to drawing results in seconds, with complete privacy protection and authentic artistic styles.",
     "buttons": [
       {
-        "title": "Get PicturetoDrawing",
+        "title": "Start Your Picture to Drawing Conversion Now",
         "url": "https://picturetodrawing.com",
         "target": "_blank",
         "icon": "GoArrowUpRight"
+      }
+    ]
+  },
+  "art_styles": {
+    "name": "art_styles",
+    "title": "Explore Our Picture to Drawing Art Styles",
+    "description": "Discover the artistic possibilities with our comprehensive collection of photo to sketch styles. Each conversion technique offers unique characteristics to transform your pictures into stunning drawing masterpieces.",
+    "items": [
+      {
+        "title": "Pencil Sketch",
+        "description": "Classic graphite pencil drawing style with realistic shading and fine detail preservation for authentic picture to drawing results.",
+        "image": {
+          "src": "/imgs/art-styles/pencil-sketch.jpg"
+        }
       },
       {
-        "title": "Read Document",
-        "url": "https://docs.picturetodrawing.com",
-        "target": "_blank",
-        "variant": "outline"
+        "title": "Charcoal Drawing",
+        "description": "Bold, dramatic charcoal effects with rich contrasts and artistic smudging for powerful photo to sketch transformations.",
+        "image": {
+          "src": "/imgs/art-styles/charcoal.jpg"
+        }
+      },
+      {
+        "title": "Watercolor Painting",
+        "description": "Soft, flowing watercolor effects with beautiful color blending for dreamy picture to drawing artistic interpretations.",
+        "image": {
+          "src": "/imgs/art-styles/watercolor.jpg"
+        }
+      },
+      {
+        "title": "Ink Illustration",
+        "description": "Clean, precise ink line work with bold contrasts perfect for professional photo to sketch artwork and illustrations.",
+        "image": {
+          "src": "/imgs/art-styles/ink.jpg"
+        }
+      }
+    ],
+    "buttons": [
+      {
+        "title": "Try All Art Styles Free",
+        "url": "/pricing",
+        "target": "_self",
+        "icon": "RiBrushLine"
+      }
+    ]
+  },
+  "transformation_examples": {
+    "name": "transformation_examples",
+    "title": "Picture to Drawing Transformation Examples",
+    "description": "See the incredible results of our AI-powered photo to sketch converter. These real examples demonstrate the quality and artistic authenticity of our picture to drawing technology across different subjects and styles.",
+    "items": [
+      {
+        "title": "Portrait Example",
+        "icon": "RiCameraLine",
+        "image": {
+          "src": "/imgs/examples/portrait-original.jpg"
+        },
+        "children": [
+          {
+            "title": "Picture to Drawing Result",
+            "description": "The AI perfectly captured the facial expressions and subtle details, creating a drawing that looks hand-crafted by a professional artist.",
+            "image": {
+              "src": "/imgs/examples/portrait-transformed.jpg"
+            }
+          }
+        ]
+      },
+      {
+        "title": "Landscape Example",
+        "icon": "RiMountainLine",
+        "image": {
+          "src": "/imgs/examples/landscape-original.jpg"
+        },
+        "children": [
+          {
+            "title": "Watercolor Drawing Style",
+            "description": "The watercolor effect transformed this landscape into a dreamy artistic masterpiece while preserving all the natural beauty.",
+            "image": {
+              "src": "/imgs/examples/landscape-transformed.jpg"
+            }
+          }
+        ]
+      },
+      {
+        "title": "Pet Example",
+        "icon": "RiPawPrintLine",
+        "image": {
+          "src": "/imgs/examples/pet-original.jpg"
+        },
+        "children": [
+          {
+            "title": "Charcoal Sketch Result",
+            "description": "Every whisker and fur detail was preserved in this charcoal drawing, creating a timeless portrait of our beloved pet.",
+            "image": {
+              "src": "/imgs/examples/pet-transformed.jpg"
+            }
+          }
+        ]
+      }
+    ],
+    "buttons": [
+      {
+        "title": "Transform Your Photos Now",
+        "url": "/pricing",
+        "target": "_self",
+        "icon": "RiMagicLine"
+      }
+    ]
+  },
+  "perfect_uses": {
+    "name": "perfect_uses",
+    "title": "Perfect Uses for Picture to Drawing Conversion",
+    "description": "Discover the endless possibilities of our photo to sketch technology. From personal gifts to professional projects, our picture to drawing converter serves diverse creative needs with exceptional quality.",
+    "items": [
+      {
+        "title": "Personalized Gifts",
+        "description": "Create unique, heartfelt gifts by converting cherished family photos to artistic drawings. Perfect for anniversaries, birthdays, and special occasions that deserve memorable picture to drawing keepsakes.",
+        "image": {
+          "src": "/imgs/uses/gifts.jpg"
+        }
+      },
+      {
+        "title": "Social Media Content",
+        "description": "Stand out on Instagram, Facebook, and other platforms with artistic photo to sketch content. Our picture to drawing styles create engaging posts that capture attention and increase engagement.",
+        "image": {
+          "src": "/imgs/uses/social-media.jpg"
+        }
+      },
+      {
+        "title": "Marketing Materials",
+        "description": "Enhance brochures, websites, and advertisements with distinctive photo to sketch artwork. Our picture to drawing converter helps businesses create memorable visual branding that differentiates from competitors.",
+        "image": {
+          "src": "/imgs/uses/marketing.jpg"
+        }
+      },
+      {
+        "title": "Home Decoration",
+        "description": "Transform your favorite photographs into elegant wall art using our picture to drawing technology. Create cohesive home decor with personalized photo to sketch artwork that reflects your style.",
+        "image": {
+          "src": "/imgs/uses/decoration.jpg"
+        }
+      },
+      {
+        "title": "Educational Projects",
+        "description": "Teachers and students use our photo to sketch converter for art education, presentations, and creative assignments. Picture to drawing technology helps illustrate concepts and inspire artistic learning.",
+        "image": {
+          "src": "/imgs/uses/education.jpg"
+        }
+      },
+      {
+        "title": "Creative Portfolios",
+        "description": "Artists, designers, and creatives enhance their portfolios with diverse photo to sketch styles. Our picture to drawing converter demonstrates versatility and artistic vision across different mediums.",
+        "image": {
+          "src": "/imgs/uses/portfolios.jpg"
+        }
+      }
+    ]
+  },
+  "comparison": {
+    "name": "comparison",
+    "title": "See the Difference: Our AI vs Traditional Filters",
+    "description": "Compare our advanced AI-powered picture to drawing technology with basic photo filters. Experience the superior quality and authenticity that sets our photo to sketch converter apart from the competition.",
+    "items": [
+      {
+        "title": "Original Photo",
+        "description": "Standard digital photograph ready for artistic transformation using different methods.",
+        "image": {
+          "src": "/imgs/comparison/original.jpg"
+        }
+      },
+      {
+        "title": "Traditional Filter",
+        "description": "Artificial, over-processed look with lost details and unrealistic photo to sketch appearance.",
+        "image": {
+          "src": "/imgs/comparison/filter.jpg"
+        }
+      },
+      {
+        "title": "Our AI Result",
+        "description": "Authentic, detailed picture to drawing with preserved textures and natural artistic flow.",
+        "image": {
+          "src": "/imgs/comparison/ai-result.jpg"
+        }
+      }
+    ]
+  },
+  "ai_excellence": {
+    "name": "ai_excellence",
+    "title": "Why Our Picture to Drawing AI Excels",
+    "description": "Our cutting-edge artificial intelligence technology sets new standards in photo to sketch conversion, delivering unmatched quality and artistic authenticity.",
+    "items": [
+      {
+        "title": "Advanced Neural Networks",
+        "description": "Our AI uses sophisticated deep learning algorithms trained on millions of artistic samples to understand and replicate authentic drawing techniques."
+      },
+      {
+        "title": "Style Adaptation",
+        "description": "The technology automatically adapts to different image types, optimizing the picture to drawing conversion for portraits, landscapes, and other subjects."
+      },
+      {
+        "title": "Quality Assurance",
+        "description": "Built-in quality checks ensure every photo to sketch conversion meets our high standards for artistic excellence and detail preservation."
+      },
+      {
+        "title": "Continuous Learning",
+        "description": "Our AI constantly improves through user feedback and new training data, ensuring picture to drawing results get better over time."
+      }
+    ],
+    "image": {
+      "src": "/imgs/ai-excellence/technology.jpg"
+    },
+    "buttons": [
+      {
+        "title": "Experience AI Excellence",
+        "url": "/pricing",
+        "target": "_self",
+        "icon": "RiRobot2Line"
       }
     ]
   },

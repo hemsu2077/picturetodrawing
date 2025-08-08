@@ -1,4 +1,7 @@
+import AIExcellence from "@/components/blocks/ai-excellence";
+import ArtStyles from "@/components/blocks/art-styles";
 import Branding from "@/components/blocks/branding";
+import Comparison from "@/components/blocks/comparison";
 import CTA from "@/components/blocks/cta";
 import FAQ from "@/components/blocks/faq";
 import Feature from "@/components/blocks/feature";
@@ -6,10 +9,12 @@ import Feature1 from "@/components/blocks/feature1";
 import Feature2 from "@/components/blocks/feature2";
 import Feature3 from "@/components/blocks/feature3";
 import Hero from "@/components/blocks/hero";
+import PerfectUses from "@/components/blocks/perfect-uses";
 import Pricing from "@/components/blocks/pricing";
 import Showcase from "@/components/blocks/showcase";
 import Stats from "@/components/blocks/stats";
 import Testimonial from "@/components/blocks/testimonial";
+import TransformationExamples from "@/components/blocks/transformation-examples";
 import { getLandingPage } from "@/services/page";
 
 export async function generateMetadata({
@@ -42,15 +47,13 @@ export default async function LandingPage({
   return (
     <>
       {page.hero && <Hero hero={page.hero} />}
-      {page.branding && <Branding section={page.branding} />}
+      {page.art_styles && <ArtStyles section={page.art_styles} />}
+      {page.transformation_examples && <TransformationExamples section={page.transformation_examples} />}
       {page.introduce && <Feature1 section={page.introduce} />}
       {page.benefit && <Feature2 section={page.benefit} />}
+      {page.perfect_uses && <PerfectUses section={page.perfect_uses} />}
+      {page.comparison && <Comparison section={page.comparison} />}
       {page.usage && <Feature3 section={page.usage} />}
-      {page.feature && <Feature section={page.feature} />}
-      {page.showcase && <Showcase section={page.showcase} />}
-      {page.stats && <Stats section={page.stats} />}
-      {page.pricing && <Pricing pricing={page.pricing} />}
-      {page.testimonial && <Testimonial section={page.testimonial} />}
       {page.faq && <FAQ section={page.faq} />}
       {page.cta && <CTA section={page.cta} />}
     </>

@@ -10,6 +10,11 @@ export interface LandingPage {
   branding?: Section;
   introduce?: Section;
   benefit?: Section;
+  art_styles?: Section;
+  transformation_examples?: Section;
+  perfect_uses?: Section;
+  comparison?: Section;
+  ai_excellence?: Section;
   usage?: Section;
   feature?: Section;
   showcase?: Section;
