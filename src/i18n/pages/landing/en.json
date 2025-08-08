@@ -36,7 +36,7 @@
     },
     "buttons": [
       {
-        "title": "Get PicturetoDrawing",
+        "title": "Convert Photo to Drawing Now",
         "url": "https://picturetodrawing.com",
         "target": "_blank",
         "variant": "link",
@@ -48,77 +48,25 @@
     "show_locale": true
   },
   "hero": {
-    "title": "Ship Any AI Startups in hours, not days",
-    "highlight_text": "Ship Any",
-    "description": "PicturetoDrawing is a NextJS boilerplate for building AI SaaS startups.<br/>Ship Fast with a variety of templates and components.",
-    "announcement": {
-      "label": "2025",
-      "title": "🎉 Happy New Year",
-      "url": "/pricing"
-    },
-    "tip": "🎁 50% off before 2025",
+    "title": "Transform Your Picture to Drawing in Seconds",
+    "highlight_text": "Picture to Drawing",
+    "description": "Experience the magic of AI-powered photo to sketch conversion",
+    "tip": "Free to Try, 100% Secure, Instant Results",
     "buttons": [
       {
-        "title": "Get Started",
+        "title": "Try for Free",
         "icon": "RiFlashlightFill",
         "url": "/pricing",
         "target": "_self",
         "variant": "default"
-      },
-      {
-        "title": "Read Document",
-        "icon": "RiBookOpenLine",
-        "url": "https://docs.picturetodrawing.com",
-        "target": "_blank",
-        "variant": "outline"
       }
     ],
     "show_happy_users": true,
     "show_badge": false
   },
-  "branding": {
-    "title": "PicturetoDrawing is built on the shoulders of giants",
-    "items": [
-      {
-        "title": "Next.js",
-        "image": {
-          "src": "/imgs/logos/nextjs.svg",
-          "alt": "Next.js"
-        }
-      },
-      {
-        "title": "React",
-        "image": {
-          "src": "/imgs/logos/react.svg",
-          "alt": "React"
-        }
-      },
-      {
-        "title": "TailwindCSS",
-        "image": {
-          "src": "/imgs/logos/tailwindcss.svg",
-          "alt": "TailwindCSS"
-        }
-      },
-      {
-        "title": "Shadcn/UI",
-        "image": {
-          "src": "/imgs/logos/shadcn.svg",
-          "alt": "Shadcn/UI"
-        }
-      },
-      {
-        "title": "Vercel",
-        "image": {
-          "src": "/imgs/logos/vercel.svg",
-          "alt": "Vercel"
-        }
-      }
-    ]
-  },
   "introduce": {
     "name": "introduce",
-    "title": "What is PicturetoDrawing",
+    "title": "Professional Quality Picture to Drawing Results",
     "label": "Introduce",
     "description": "PicturetoDrawing is a NextJS boilerplate for building AI SaaS startups. Built in a variety of templates and components.",
     "image": {
@@ -126,47 +74,47 @@
     },
     "items": [
       {
-        "title": "Ready-to-use Templates",
-        "description": "Choose from dozens of production-ready AI SaaS templates to quickly start your project.",
+        "title": "Authentic Artistic Rendering",
+        "description": "Every photo to sketch conversion preserves natural textures, shadows, and details that make your drawing look hand-crafted by a professional artist.",
         "icon": "RiNextjsFill"
       },
       {
-        "title": "Infrastructure Setup",
-        "description": "Get instant access to scalable infrastructure with best practices built-in.",
+        "title": "High Resolution Output",
+        "description": "Download your picture to drawing conversions in high resolution, perfect for printing, framing, or sharing on social media platforms.",
         "icon": "RiDatabase2Line"
       },
       {
-        "title": "Quick Deployment",
-        "description": "Deploy your AI SaaS application to production in hours, not days.",
+        "title": "Privacy Protected",
+        "description": "Your photos are processed securely and automatically deleted after conversion. We never store or share your personal images.",
         "icon": "RiCloudyFill"
       }
     ]
   },
   "benefit": {
     "name": "benefit",
-    "title": "Why Choose PicturetoDrawing",
+    "title": "Why Choose Our Picture to Drawing Converter?",
     "label": "Benefits",
-    "description": "Get everything you need to launch your AI startup - from ready-to-use templates to technical support.",
+    "description": "Transform any picture to drawing with authentic artistic styles and incredible detail preservation.",
     "items": [
       {
-        "title": "Complete Framework",
-        "description": "Built on Next.js with authentication, payments, and AI integration - everything works out of the box.",
+        "title": "Advanced AI Technology",
+        "description": "Our cutting-edge artificial intelligence analyzes every detail of your photo to create authentic picture to drawing conversions that maintain the essence and emotion of your original image.",
         "icon": "RiNextjsFill",
         "image": {
           "src": "/imgs/features/2.png"
         }
       },
       {
-        "title": "Rich Templates Library",
-        "description": "Choose from various AI SaaS templates to kickstart your project - chatbots, image generation, and more.",
+        "title": "Multiple Art Styles",
+        "description": "Choose from pencil sketches, charcoal drawings, watercolor paintings, and ink illustrations. Each photo to sketch style is carefully crafted to deliver unique artistic interpretations of your pictures.",
         "icon": "RiClapperboardAiLine",
         "image": {
           "src": "/imgs/features/3.png"
         }
       },
       {
-        "title": "Technical Guidance",
-        "description": "Get dedicated support and join our developer community to ensure your successful launch.",
+        "title": "Lightning Fast Processing",
+        "description": "Experience instant picture to drawing transformation. Our optimized servers process your photo to sketch conversion in seconds, not minutes, delivering professional results without the wait.",
         "icon": "RiCodeFill",
         "image": {
           "src": "/imgs/features/4.png"
