@@ -14,9 +14,9 @@ try {
 
     // Map style IDs to descriptive prompts
     const styleMap: Record<string, string> = {
-      'pencil-sketch': 'pencil sketch',
-      'line-drawing': 'line drawing',
-      'charcoal-drawing': 'charcoal drawing',
+      'pencil-sketch': 'black and white pencil sketch',
+      'line-drawing': 'black and white line drawing',
+      'charcoal-drawing': 'black and white charcoal drawing',
       'color-pencil-drawing': 'color pencil drawing',
       'watercolor-painting': 'watercolor painting',
       'inkart': 'ink art'
@@ -24,6 +24,13 @@ try {
 
     const styleName = styleMap[style] || style;
     const prompt = `transform the image to a drawing, the drawing should be in the style of ${styleName}`
+    
+    // Choose model based on style
+    const model = style === 'line-drawing' 
+      ? "black-forest-labs/flux-kontext-dev" 
+      : "black-forest-labs/flux-kontext-pro";
+    
+    console.log(`Using model: ${model} for style: ${style}`);
     
     // First, upload the input image to get a URL
     const storage = newStorage();
@@ -45,8 +52,6 @@ try {
       console.error("Failed to upload input image:", uploadError);
       throw new Error("Failed to upload input image");
     }
-
-    const model = "black-forest-labs/flux-kontext-pro";
     const imageModel = replicate.image(model);
     const providerOptions = {
       replicate: {
