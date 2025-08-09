@@ -53,3 +53,15 @@ Authorization: Bearer {{apiKey}}
   "subject": "Hello from PicturetoDrawing, with Resend",
   "content": "<p style='color: red;'>Hello from <a href='https://picturetodrawing.com'>picturetodrawing</a></p>"
 }
+
+
+### gen-drawing
+POST {{baseUrl}}/api/gen-drawing
+Content-Type: application/json
+Authorization: Bearer {{apiKey}}
+
+{
+  "style": "pencil drawing",
+  "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Tabby_cat_with_visible_nictitating_membrane.jpg/500px-Tabby_cat_with_visible_nictitating_membrane.jpg",
+  "ratio": ""
+}
