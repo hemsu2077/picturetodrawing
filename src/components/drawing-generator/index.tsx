@@ -106,46 +106,52 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
   };
 
   return (
-    <div className={cn("w-full max-w-4xl mx-auto space-y-6", className)}>
+    <div className={cn("w-full max-w-5xl mx-auto space-y-6 px-4", className)}>
+      {/* Main Input Card */}
+      <Card className="p-6 md:p-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+          {/* Left Side - Image Upload */}
+          <div className="space-y-4">
+            <ImageUpload
+              onImageSelect={handleImageSelect}
+              selectedImage={selectedImage}
+              className="border-0 shadow-none"
+            />
+          </div>
 
-      {/* Image Upload */}
-      <ImageUpload
-        onImageSelect={handleImageSelect}
-        selectedImage={selectedImage}
-      />
-
-      {/* Controls */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <StyleSelector
-          selectedStyle={selectedStyle}
-          onStyleChange={setSelectedStyle}
-        />
-        <RatioSelector
-          selectedRatio={selectedRatio}
-          onRatioChange={setSelectedRatio}
-        />
-      </div>
-
-      {/* Generate Button */}
-      <Card className="p-6">
-        <Button
-          onClick={handleGenerate}
-          disabled={!selectedImage || isGenerating}
-          className="w-full h-12 text-lg"
-          size="lg"
-        >
-          {isGenerating ? (
-            <>
-              <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2" />
-              Generating...
-            </>
-          ) : (
-            <>
-              <Wand2 className="h-5 w-5 mr-2" />
-              Convert to Drawing
-            </>
-          )}
-        </Button>
+          {/* Right Side - All Controls */}
+          <div className="space-y-6">
+            <StyleSelector
+              selectedStyle={selectedStyle}
+              onStyleChange={setSelectedStyle}
+              className="border-0 shadow-none p-0"
+            />
+            <RatioSelector
+              selectedRatio={selectedRatio}
+              onRatioChange={setSelectedRatio}
+              className="border-0 shadow-none p-0"
+            />
+            
+            <Button
+              onClick={handleGenerate}
+              disabled={!selectedImage || isGenerating}
+              className="w-full h-12 text-lg"
+              size="lg"
+            >
+              {isGenerating ? (
+                <>
+                  <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2" />
+                  Generating...
+                </>
+              ) : (
+                <>
+                  <Wand2 className="h-5 w-5 mr-2" />
+                  Convert to Drawing
+                </>
+              )}
+            </Button>
+          </div>
+        </div>
       </Card>
 
       {/* Results */}

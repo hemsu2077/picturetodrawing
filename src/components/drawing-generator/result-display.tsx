@@ -93,28 +93,18 @@ export function ResultDisplay({
         <div className="space-y-4">
           {generatedImages.map((image, index) => (
             <div key={index} className="space-y-4">
-              <div className="relative group">
-                <img
-                  src={image.url}
-                  alt={`Generated drawing ${index + 1}`}
-                  className="w-full rounded-lg shadow-md"
-                />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100">
-                  <Button
-                    variant="secondary"
-                    onClick={() => handleDownload(image.url, image.filename)}
-                    className="shadow-lg"
-                  >
-                    <Download className="h-4 w-4 mr-2" />
-                    Download
-                  </Button>
+              <div className="relative group max-w-2xl mx-auto">
+                <div className="relative h-80 md:h-96 rounded-lg overflow-hidden flex items-center justify-center p-2">
+                  <img
+                    src={image.url}
+                    alt={`Generated drawing ${index + 1}`}
+                    className="max-w-full max-h-full object-contain shadow-md rounded-lg"
+                  />
                 </div>
               </div>
               
-              <div className="flex items-center justify-between">
-                <div className="text-sm text-muted-foreground">
-                  <span className="font-medium">Filename:</span> {image.filename}
-                </div>
+              <div className="flex items-center justify-center">
+               
                 <Button
                   variant="outline"
                   size="sm"

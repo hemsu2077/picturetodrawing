@@ -1,7 +1,6 @@
 "use client";
 
 import React from 'react';
-import { Card } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 
 interface StyleOption {
@@ -51,10 +50,9 @@ const DRAWING_STYLES: StyleOption[] = [
 
 export function StyleSelector({ selectedStyle, onStyleChange, className }: StyleSelectorProps) {
   return (
-    <Card className={cn("p-6", className)}>
-      <div className="space-y-4">
-        <h3 className="text-lg font-medium">Drawing Style</h3>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+    <div className={cn("space-y-4", className)}>
+      <h3 className="text-lg font-medium">Drawing Style</h3>
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
           {DRAWING_STYLES.map((style) => (
             <div
               key={style.id}
@@ -89,7 +87,6 @@ export function StyleSelector({ selectedStyle, onStyleChange, className }: Style
             </div>
           ))}
         </div>
-      </div>
-    </Card>
+    </div>
   );
 }

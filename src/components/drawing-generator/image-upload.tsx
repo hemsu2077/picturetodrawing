@@ -3,7 +3,6 @@
 import React, { useState, useRef } from 'react';
 import { Upload, X, Image as ImageIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
 import { cn } from '@/lib/utils';
 
 interface ImageUploadProps {
@@ -71,7 +70,7 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
   };
 
   return (
-    <Card className={cn("relative", className)}>
+    <div className={cn("relative", className)}>
       <input
         ref={fileInputRef}
         type="file"
@@ -81,16 +80,16 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
       />
       
       {selectedImage ? (
-        <div className="relative">
+        <div className="relative h-80 lg:h-128 rounded-lg border-2 border-border overflow-hidden bg-muted flex items-center justify-center">
           <img
             src={selectedImage.preview}
             alt="Selected image"
-            className="w-full h-64 object-cover rounded-lg"
+            className="max-w-full max-h-full object-contain"
           />
           <Button
-            variant="destructive"
+            variant="secondary"
             size="icon"
-            className="absolute top-2 right-2"
+            className="absolute top-2 right-2 bg-background/80 hover:bg-background/90 border shadow-sm"
             onClick={handleRemoveImage}
           >
             <X className="h-4 w-4" />
@@ -99,7 +98,7 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
       ) : (
         <div
           className={cn(
-            "border-2 border-dashed rounded-lg p-8 text-center cursor-pointer transition-colors",
+            "border-2 border-dashed rounded-lg p-8 text-center cursor-pointer transition-colors h-80 lg:h-128 flex items-center justify-center",
             "hover:border-primary/50 hover:bg-accent/50",
             isDragging && "border-primary bg-accent"
           )}
@@ -128,6 +127,6 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
           </div>
         </div>
       )}
-    </Card>
+    </div>
   );
 }
