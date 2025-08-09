@@ -245,64 +245,68 @@
   },
   "transformation_examples": {
     "name": "transformation_examples",
-    "title": "Picture to Drawing Transformation Examples",
-    "description": "See the incredible results of our AI-powered photo to sketch converter. These real examples demonstrate the quality and artistic authenticity of our picture to drawing technology across different subjects and styles.",
+    "title": "Art Styles Gallery",
+    "description": "Explore our four distinctive drawing styles, each crafted to transform your photos into unique artistic masterpieces with authentic details and professional quality.",
     "items": [
       {
-        "title": "Portrait Example",
-        "icon": "RiCameraLine",
+        "title": "Pencil Sketch",
+        "icon": "RiPencilLine",
+        "description": "Classic graphite pencil drawing with realistic shading and fine detail preservation. Perfect for creating timeless, elegant artwork that captures the essence of your original photo with subtle textures and natural gradients.",
         "image": {
-          "src": "/imgs/examples/portrait-original.jpg"
+          "src": "/imgs/art-styles/pencil-sketch-comparison.jpg"
         },
         "children": [
           {
-            "title": "Picture to Drawing Result",
-            "description": "The AI perfectly captured the facial expressions and subtle details, creating a drawing that looks hand-crafted by a professional artist.",
-            "image": {
-              "src": "/imgs/examples/portrait-transformed.jpg"
-            }
+            "description": "Ideal for portraits, architectural drawings, and detailed illustrations where precision and traditional artistic values matter most."
           }
         ]
       },
       {
-        "title": "Landscape Example",
-        "icon": "RiMountainLine",
+        "title": "Line Drawing",
+        "icon": "RiBrushLine",
+        "description": "Clean, minimalist line art with bold strokes and clear contours. Creates modern, striking artwork that emphasizes form and structure while removing unnecessary details for a contemporary aesthetic.",
         "image": {
-          "src": "/imgs/examples/landscape-original.jpg"
+          "src": "/imgs/art-styles/line-drawing-comparison.jpg"
         },
         "children": [
           {
-            "title": "Watercolor Drawing Style",
-            "description": "The watercolor effect transformed this landscape into a dreamy artistic masterpiece while preserving all the natural beauty.",
-            "image": {
-              "src": "/imgs/examples/landscape-transformed.jpg"
-            }
+            "description": "Perfect for logos, technical illustrations, and modern graphic design projects that require clarity and visual impact."
           }
         ]
       },
       {
-        "title": "Pet Example",
-        "icon": "RiPawPrintLine",
+        "title": "Color Pencil Drawing",
+        "icon": "RiPaletteLine",
+        "description": "Vibrant colored pencil artwork with rich textures and layered colors. Brings your photos to life with the warmth and character of hand-colored illustrations, preserving subtle color variations.",
         "image": {
-          "src": "/imgs/examples/pet-original.jpg"
+          "src": "/imgs/art-styles/color-pencil-comparison.jpg"
         },
         "children": [
           {
-            "title": "Charcoal Sketch Result",
-            "description": "Every whisker and fur detail was preserved in this charcoal drawing, creating a timeless portrait of our beloved pet.",
-            "image": {
-              "src": "/imgs/examples/pet-transformed.jpg"
-            }
+            "description": "Excellent for children's portraits, pet illustrations, and artwork where color plays a crucial role in emotional expression."
+          }
+        ]
+      },
+      {
+        "title": "Watercolor Painting",
+        "icon": "RiDropLine",
+        "description": "Soft, flowing watercolor effects with beautiful color blending and artistic brushstrokes. Creates dreamy, ethereal artwork with the delicate transparency and organic flow of traditional watercolor paintings.",
+        "image": {
+          "src": "/imgs/art-styles/watercolor-comparison.jpg"
+        },
+        "children": [
+          {
+            "description": "Perfect for landscapes, floral arrangements, and artistic projects that benefit from a romantic, painterly aesthetic."
           }
         ]
       }
     ],
     "buttons": [
       {
-        "title": "Transform Your Photos Now",
+        "title": "Try All Art Styles",
         "url": "/pricing",
         "target": "_self",
-        "icon": "RiMagicLine"
+        "icon": "RiBrushLine"
       }
     ]
   },
