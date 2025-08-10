@@ -19,32 +19,32 @@ const DRAWING_STYLES: StyleOption[] = [
   {
     id: 'pencil-sketch',
     name: 'Pencil Sketch',
-    image: '/imgs/styles/pencil-sketch.webp'
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/pencil-sketch.webp'
   },
   {
     id: 'line-drawing',
     name: 'Line Drawing', 
-    image: '/imgs/styles/line-drawing.webp'
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/line-drawing.webp'
   },
   {
     id: 'charcoal-drawing',
     name: 'Charcoal Drawing',
-    image: '/imgs/styles/charcoal-drawing.webp'
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/charcoal-drawing.webp'
   },
   {
     id: 'color-pencil-drawing',
     name: 'Color Pencil Drawing',
-    image: '/imgs/styles/color-pencil-drawing.webp'
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/color-pencil-drawing.webp'
   },
   {
     id: 'watercolor-painting',
     name: 'Watercolor Painting',
-    image: '/imgs/styles/watercolor-painting.webp'
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/watercolor-painting.webp'
   },
   {
     id: 'inkart',
     name: 'InkArt',
-    image: '/imgs/styles/inkart.webp'
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/inkart.webp'
   }
 ];
 

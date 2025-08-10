@@ -21,14 +21,14 @@ interface DrawingGeneratorProps {
 }
 
 export function DrawingGenerator({ className }: DrawingGeneratorProps) {
-  const [selectedImage, setSelectedImage] = useState<{ file: File; preview: string } | null>(null);
+  const [selectedImage, setSelectedImage] = useState<{ file: File | string; preview: string } | null>(null);
   const [selectedStyle, setSelectedStyle] = useState('pencil-sketch');
   const [selectedRatio, setSelectedRatio] = useState('auto');
   const [isGenerating, setIsGenerating] = useState(false);
   const [generatedImages, setGeneratedImages] = useState<GeneratedImage[]>([]);
   const [error, setError] = useState<string | null>(null);
 
-  const handleImageSelect = (file: File, preview: string) => {
+  const handleImageSelect = (file: File | string, preview: string) => {
     if (file && preview) {
       setSelectedImage({ file, preview });
     } else {
@@ -64,13 +64,16 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
     setGeneratedImages([]);
 
     try {
-      const base64Image = await convertImageToBase64(selectedImage.file);
+      let imageData: string;
       
-      console.log('🚀 Sending request with:', {
-        style: selectedStyle,
-        imageSize: base64Image.length,
-        ratio: selectedRatio === 'auto' ? null : selectedRatio,
-      });
+      // Handle sample images (URLs) vs uploaded files
+      if (typeof selectedImage.file === 'string') {
+        // Sample image - use URL directly
+        imageData = selectedImage.file;
+      } else {
+        // Uploaded file - convert to base64
+        imageData = await convertImageToBase64(selectedImage.file);
+      }
       
       const response = await fetch('/api/gen-drawing', {
         method: 'POST',
@@ -79,13 +82,12 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
         },
         body: JSON.stringify({
           style: selectedStyle,
-          image: base64Image,
+          image: imageData,
           ratio: selectedRatio === 'auto' ? null : selectedRatio,
         }),
       });
 
       const data = await response.json();
-      console.log('✅ API response:', data);
 
       if (!response.ok) {
         throw new Error(data.message || 'Generation failed');

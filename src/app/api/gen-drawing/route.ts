@@ -32,25 +32,32 @@ try {
     
     console.log(`Using model: ${model} for style: ${style}`);
     
-    // First, upload the input image to get a URL
-    const storage = newStorage();
-    const inputFilename = `input_${new Date().getTime()}.png`;
-    const inputKey = `picturetodrawing/inputs/${inputFilename}`;
-    const inputBody = Buffer.from(image, "base64");
-
     let inputImageUrl: string;
-    try {
-      const inputUploadResult = await storage.uploadFile({
-        body: inputBody,
-        key: inputKey,
-        contentType: "image/png",
-        disposition: "inline",
-      });
-      inputImageUrl = inputUploadResult.url;
-      console.log("Input image uploaded to:", inputImageUrl);
-    } catch (uploadError) {
-      console.error("Failed to upload input image:", uploadError);
-      throw new Error("Failed to upload input image");
+    
+    // Check if image is already a URL (sample image)
+    if (image.startsWith('https://')) {
+      inputImageUrl = image;
+      console.log("Using sample image URL:", inputImageUrl);
+    } else {
+      // Upload the input image to get a URL
+      const storage = newStorage();
+      const inputFilename = `input_${new Date().getTime()}.png`;
+      const inputKey = `picturetodrawing/inputs/${inputFilename}`;
+      const inputBody = Buffer.from(image, "base64");
+
+      try {
+        const inputUploadResult = await storage.uploadFile({
+          body: inputBody,
+          key: inputKey,
+          contentType: "image/png",
+          disposition: "inline",
+        });
+        inputImageUrl = inputUploadResult.url;
+        console.log("Input image uploaded to:", inputImageUrl);
+      } catch (uploadError) {
+        console.error("Failed to upload input image:", uploadError);
+        throw new Error("Failed to upload input image");
+      }
     }
     const imageModel = replicate.image(model);
     const providerOptions = {
@@ -79,6 +86,7 @@ try {
        
     const provider = "replicate";
 
+    const storage = newStorage();
     const processedImages = await Promise.all(
       images.map(async (image) => {
         const filename = `PicturetoDrawing_${new Date().getTime()}.png`;

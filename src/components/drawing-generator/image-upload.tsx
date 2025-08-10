@@ -6,8 +6,8 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
 interface ImageUploadProps {
-  onImageSelect: (file: File, preview: string) => void;
-  selectedImage?: { file: File; preview: string } | null;
+  onImageSelect: (file: File | string, preview: string) => void;
+  selectedImage?: { file: File | string; preview: string } | null;
   className?: string;
 }
 
@@ -16,6 +16,14 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const acceptedTypes = ['image/jpeg', 'image/jpg', 'image/png', 'image/webp', 'image/heic'];
+
+  // Sample images URLs
+  const sampleImages = [
+    'https://pub-66460257279749d4984c90d98154f46d.r2.dev/sample/sample-1.webp',
+    'https://pub-66460257279749d4984c90d98154f46d.r2.dev/sample/sample-2.webp',
+    'https://pub-66460257279749d4984c90d98154f46d.r2.dev/sample/sample-3.webp',
+    'https://pub-66460257279749d4984c90d98154f46d.r2.dev/sample/sample-5.webp',
+  ];
 
   const handleFileSelect = (file: File) => {
     if (!acceptedTypes.includes(file.type)) {
@@ -58,6 +66,10 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
     }
   };
 
+  const handleSampleImageSelect = (sampleUrl: string) => {
+    onImageSelect(sampleUrl, sampleUrl);
+  };
+
   const handleRemoveImage = () => {
     onImageSelect(null as any, '');
     if (fileInputRef.current) {
@@ -80,7 +92,7 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
       />
       
       {selectedImage ? (
-        <div className="relative h-80 lg:h-128 rounded-lg border-2 border-border overflow-hidden bg-muted flex items-center justify-center">
+        <div className="relative h-108 lg:h-128 rounded-lg border-2 border-border overflow-hidden bg-muted flex items-center justify-center">
           <img
             src={selectedImage.preview}
             alt="Selected image"
@@ -98,16 +110,15 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
       ) : (
         <div
           className={cn(
-            "border-2 border-dashed rounded-lg p-8 text-center cursor-pointer transition-colors h-80 lg:h-128 flex items-center justify-center",
+            "border-2 border-dashed rounded-lg p-6 text-center transition-colors h-108 lg:h-128 flex flex-col items-center justify-center",
             "hover:border-primary/50 hover:bg-accent/50",
             isDragging && "border-primary bg-accent"
           )}
           onDrop={handleDrop}
           onDragOver={handleDragOver}
           onDragLeave={handleDragLeave}
-          onClick={openFileDialog}
         >
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col items-center gap-4 mb-6">
             <div className="p-4 rounded-full bg-muted">
               <ImageIcon className="h-8 w-8 text-muted-foreground" />
             </div>
@@ -120,10 +131,32 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
                 Supports JPG, PNG, WEBP, HEIC formats
               </p>
             </div>
-            <Button variant="outline" className="mt-2">
+            <Button variant="outline" className="mt-2" onClick={openFileDialog}>
               <Upload className="h-4 w-4 mr-2" />
               Choose File
             </Button>
+          </div>
+          
+          <div className="max-w-sm py-4">
+            <p className="text-sm font-medium text-muted-foreground mb-3">Or try with sample images:</p>
+            <div className="grid grid-cols-4 gap-2 px-4 lg:px-16">
+              {sampleImages.map((sampleUrl, index) => (
+                <div
+                  key={index}
+                  className="relative aspect-square rounded-sm overflow-hidden cursor-pointer"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    handleSampleImageSelect(sampleUrl);
+                  }}
+                >
+                  <img
+                    src={sampleUrl}
+                    alt={`Sample ${index + 1}`}
+                    className="w-full h-full hover:scale-105 transition-transform object-cover"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       )}
