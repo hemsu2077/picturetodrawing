@@ -123,9 +123,9 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
               <ImageIcon className="h-8 w-8 text-muted-foreground" />
             </div>
             <div className="space-y-2">
-              <h3 className="text-lg font-medium">Upload an image</h3>
+              <h3 className="text-lg font-medium">Upload an Picture</h3>
               <p className="text-sm text-muted-foreground">
-                Drag and drop your image here, or click to browse
+                Drag and drop your picture here, or click to browse
               </p>
               <p className="text-xs text-muted-foreground">
                 Supports JPG, PNG, WEBP, HEIC formats
@@ -138,7 +138,7 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
           </div>
           
           <div className="max-w-sm py-4">
-            <p className="text-sm font-medium text-muted-foreground mb-3">Or try with sample images:</p>
+            <p className="text-sm font-medium text-muted-foreground mb-3">Or try with sample pictures:</p>
             <div className="grid grid-cols-4 gap-2 px-4 lg:px-16">
               {sampleImages.map((sampleUrl, index) => (
                 <div
