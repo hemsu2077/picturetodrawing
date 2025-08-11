@@ -1,11 +1,11 @@
 {
-  "id": "018f67ae-0113-4346-b5c5-48e925457217",
+  "id": "b54011e3-af75-486e-9166-bd2e32b28c6f",
   "prevId": "00000000-0000-0000-0000-000000000000",
   "version": "7",
   "dialect": "postgresql",
   "tables": {
-    "public.affiliates": {
-      "name": "affiliates",
+    "public.pic_to_dra_affiliates": {
+      "name": "pic_to_dra_affiliates",
       "schema": "",
       "columns": {
         "id": {
@@ -15,7 +15,7 @@
           "notNull": true,
           "identity": {
             "type": "always",
-            "name": "affiliates_id_seq",
+            "name": "pic_to_dra_affiliates_id_seq",
             "schema": "public",
             "increment": "1",
             "startWith": "1",
@@ -87,8 +87,8 @@
       "checkConstraints": {},
       "isRLSEnabled": false
     },
-    "public.apikeys": {
-      "name": "apikeys",
+    "public.pic_to_dra_apikeys": {
+      "name": "pic_to_dra_apikeys",
       "schema": "",
       "columns": {
         "id": {
@@ -98,7 +98,7 @@
           "notNull": true,
           "identity": {
             "type": "always",
-            "name": "apikeys_id_seq",
+            "name": "pic_to_dra_apikeys_id_seq",
             "schema": "public",
             "increment": "1",
             "startWith": "1",
@@ -143,8 +143,8 @@
       "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {
-        "apikeys_api_key_unique": {
-          "name": "apikeys_api_key_unique",
+        "pic_to_dra_apikeys_api_key_unique": {
+          "name": "pic_to_dra_apikeys_api_key_unique",
           "nullsNotDistinct": false,
           "columns": [
             "api_key"
@@ -155,8 +155,8 @@
       "checkConstraints": {},
       "isRLSEnabled": false
     },
-    "public.credits": {
-      "name": "credits",
+    "public.pic_to_dra_credits": {
+      "name": "pic_to_dra_credits",
       "schema": "",
       "columns": {
         "id": {
@@ -166,7 +166,7 @@
           "notNull": true,
           "identity": {
             "type": "always",
-            "name": "credits_id_seq",
+            "name": "pic_to_dra_credits_id_seq",
             "schema": "public",
             "increment": "1",
             "startWith": "1",
@@ -223,8 +223,8 @@
       "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {
-        "credits_trans_no_unique": {
-          "name": "credits_trans_no_unique",
+        "pic_to_dra_credits_trans_no_unique": {
+          "name": "pic_to_dra_credits_trans_no_unique",
           "nullsNotDistinct": false,
           "columns": [
             "trans_no"
@@ -235,8 +235,8 @@
       "checkConstraints": {},
       "isRLSEnabled": false
     },
-    "public.feedbacks": {
-      "name": "feedbacks",
+    "public.pic_to_dra_feedbacks": {
+      "name": "pic_to_dra_feedbacks",
       "schema": "",
       "columns": {
         "id": {
@@ -246,7 +246,7 @@
           "notNull": true,
           "identity": {
             "type": "always",
-            "name": "feedbacks_id_seq",
+            "name": "pic_to_dra_feedbacks_id_seq",
             "schema": "public",
             "increment": "1",
             "startWith": "1",
@@ -295,8 +295,8 @@
       "checkConstraints": {},
       "isRLSEnabled": false
     },
-    "public.orders": {
-      "name": "orders",
+    "public.pic_to_dra_orders": {
+      "name": "pic_to_dra_orders",
       "schema": "",
       "columns": {
         "id": {
@@ -306,7 +306,7 @@
           "notNull": true,
           "identity": {
             "type": "always",
-            "name": "orders_id_seq",
+            "name": "pic_to_dra_orders_id_seq",
             "schema": "public",
             "increment": "1",
             "startWith": "1",
@@ -467,8 +467,8 @@
       "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {
-        "orders_order_no_unique": {
-          "name": "orders_order_no_unique",
+        "pic_to_dra_orders_order_no_unique": {
+          "name": "pic_to_dra_orders_order_no_unique",
           "nullsNotDistinct": false,
           "columns": [
             "order_no"
@@ -479,8 +479,8 @@
       "checkConstraints": {},
       "isRLSEnabled": false
     },
-    "public.posts": {
-      "name": "posts",
+    "public.pic_to_dra_posts": {
+      "name": "pic_to_dra_posts",
       "schema": "",
       "columns": {
         "id": {
@@ -490,7 +490,7 @@
           "notNull": true,
           "identity": {
             "type": "always",
-            "name": "posts_id_seq",
+            "name": "pic_to_dra_posts_id_seq",
             "schema": "public",
             "increment": "1",
             "startWith": "1",
@@ -577,8 +577,8 @@
       "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {
-        "posts_uuid_unique": {
-          "name": "posts_uuid_unique",
+        "pic_to_dra_posts_uuid_unique": {
+          "name": "pic_to_dra_posts_uuid_unique",
           "nullsNotDistinct": false,
           "columns": [
             "uuid"
@@ -589,8 +589,8 @@
       "checkConstraints": {},
       "isRLSEnabled": false
     },
-    "public.users": {
-      "name": "users",
+    "public.pic_to_dra_users": {
+      "name": "pic_to_dra_users",
       "schema": "",
       "columns": {
         "id": {
@@ -600,7 +600,7 @@
           "notNull": true,
           "identity": {
             "type": "always",
-            "name": "users_id_seq",
+            "name": "pic_to_dra_users_id_seq",
             "schema": "public",
             "increment": "1",
             "startWith": "1",
@@ -724,8 +724,8 @@
       "foreignKeys": {},
       "compositePrimaryKeys": {},
       "uniqueConstraints": {
-        "users_uuid_unique": {
-          "name": "users_uuid_unique",
+        "pic_to_dra_users_uuid_unique": {
+          "name": "pic_to_dra_users_uuid_unique",
           "nullsNotDistinct": false,
           "columns": [
             "uuid"

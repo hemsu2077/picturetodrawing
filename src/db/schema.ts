@@ -12,7 +12,7 @@ import {
 
 // Users table
 export const users = pgTable(
-  "users",
+  "pic_to_dra_users",
   {
     id: integer().primaryKey().generatedAlwaysAsIdentity(),
     uuid: varchar({ length: 255 }).notNull().unique(),
@@ -39,7 +39,7 @@ export const users = pgTable(
 );
 
 // Orders table
-export const orders = pgTable("orders", {
+export const orders = pgTable("pic_to_dra_orders", {
   id: integer().primaryKey().generatedAlwaysAsIdentity(),
   order_no: varchar({ length: 255 }).notNull().unique(),
   created_at: timestamp({ withTimezone: true }),
@@ -68,7 +68,7 @@ export const orders = pgTable("orders", {
 });
 
 // API Keys table
-export const apikeys = pgTable("apikeys", {
+export const apikeys = pgTable("pic_to_dra_apikeys", {
   id: integer().primaryKey().generatedAlwaysAsIdentity(),
   api_key: varchar({ length: 255 }).notNull().unique(),
   title: varchar({ length: 100 }),
@@ -78,7 +78,7 @@ export const apikeys = pgTable("apikeys", {
 });
 
 // Credits table
-export const credits = pgTable("credits", {
+export const credits = pgTable("pic_to_dra_credits", {
   id: integer().primaryKey().generatedAlwaysAsIdentity(),
   trans_no: varchar({ length: 255 }).notNull().unique(),
   created_at: timestamp({ withTimezone: true }),
@@ -90,7 +90,7 @@ export const credits = pgTable("credits", {
 });
 
 // Posts table
-export const posts = pgTable("posts", {
+export const posts = pgTable("pic_to_dra_posts", {
   id: integer().primaryKey().generatedAlwaysAsIdentity(),
   uuid: varchar({ length: 255 }).notNull().unique(),
   slug: varchar({ length: 255 }),
@@ -107,7 +107,7 @@ export const posts = pgTable("posts", {
 });
 
 // Affiliates table
-export const affiliates = pgTable("affiliates", {
+export const affiliates = pgTable("pic_to_dra_affiliates", {
   id: integer().primaryKey().generatedAlwaysAsIdentity(),
   user_uuid: varchar({ length: 255 }).notNull(),
   created_at: timestamp({ withTimezone: true }),
@@ -120,7 +120,7 @@ export const affiliates = pgTable("affiliates", {
 });
 
 // Feedbacks table
-export const feedbacks = pgTable("feedbacks", {
+export const feedbacks = pgTable("pic_to_dra_feedbacks", {
   id: integer().primaryKey().generatedAlwaysAsIdentity(),
   created_at: timestamp({ withTimezone: true }),
   status: varchar({ length: 50 }),
