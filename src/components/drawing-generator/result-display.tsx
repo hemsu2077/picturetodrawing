@@ -40,6 +40,11 @@ export function RecentDrawings({
   const [isDeleteDialogOpen, setIsDeleteDialogOpen] = useState(false);
   const [drawingToDelete, setDrawingToDelete] = useState<Drawing | null>(null);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [isRefreshing, setIsRefreshing] = useState(false);
+  const [lastGenerationState, setLastGenerationState] = useState<{isGenerating: boolean, hasNewDrawing: boolean}>({
+    isGenerating: false,
+    hasNewDrawing: false
+  });
 
   // Fetch recent drawings
   const fetchRecentDrawings = async () => {
@@ -67,13 +72,38 @@ export function RecentDrawings({
     }
   }, [session?.user?.uuid]);
 
-  // Handle new drawing generated
+  // Track generation state changes and handle completion
   useEffect(() => {
-    if (onNewDrawingGenerated && !isGenerating && newDrawing) {
-      // Refresh the drawings list when a new drawing is generated
-      fetchRecentDrawings();
+    // Detect when generation just completed
+    // Previous state: was generating, current state: not generating
+    if (lastGenerationState.isGenerating && !isGenerating && !error && !isRefreshing) {
+      console.log('Generation completed, refreshing drawings...');
+      
+      const refreshAfterGeneration = async () => {
+        setIsRefreshing(true);
+        
+        // Wait for the database to be updated (API response means it's already saved)
+        await new Promise(resolve => setTimeout(resolve, 800));
+        
+        try {
+          await fetchRecentDrawings();
+          console.log('Drawings refreshed successfully');
+        } catch (error) {
+          console.error('Failed to refresh drawings:', error);
+        } finally {
+          setIsRefreshing(false);
+        }
+      };
+      
+      refreshAfterGeneration();
     }
-  }, [isGenerating, newDrawing, onNewDrawingGenerated]);
+    
+    // Update the last state
+    setLastGenerationState({
+      isGenerating: isGenerating,
+      hasNewDrawing: !!newDrawing
+    });
+  }, [isGenerating, newDrawing, error, lastGenerationState.isGenerating, isRefreshing]);
 
   // Handle delete drawing
   const handleDelete = async (drawing: Drawing) => {
@@ -146,8 +176,8 @@ export function RecentDrawings({
           
           {/* Drawings Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-            {/* New drawing being generated or error state */}
-            {(isGenerating && newDrawing) || error ? (
+            {/* New drawing being generated, loading, or error state */}
+            {(isGenerating && newDrawing) || isRefreshing || error ? (
               <Card className="aspect-square p-0 relative overflow-hidden shadow-none border-dashed">
                 <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-50">
                   {error ? (
@@ -165,7 +195,9 @@ export function RecentDrawings({
                       <Loader2 className="h-6 w-6 animate-spin text-primary mb-2" />
                       <div className="text-xs text-center px-2">
                         <div className="font-medium">{newDrawing && formatStyle(newDrawing.style)}</div>
-                        <div className="text-muted-foreground mt-1">Generating...</div>
+                        <div className="text-muted-foreground mt-1">
+                          {isGenerating ? "Generating..." : isRefreshing ? "Loading..." : "Processing..."}
+                        </div>
                       </div>
                     </>
                   )}
@@ -174,7 +206,7 @@ export function RecentDrawings({
             ) : null}
             
             {/* Existing drawings */}
-            {drawings.slice(0, (isGenerating && newDrawing) || error ? 3 : 4).map((drawing) => (
+            {drawings.slice(0, (isGenerating && newDrawing) || isRefreshing || error ? 3 : 4).map((drawing) => (
               <DrawingCard
                 key={drawing.uuid}
                 drawing={drawing}
@@ -187,7 +219,7 @@ export function RecentDrawings({
             ))}
             
             {/* Empty slots when less than 4 drawings */}
-            {!isGenerating && !error && drawings.length < 4 && Array.from({ length: 4 - drawings.length }).map((_, index) => (
+            {!isGenerating && !isRefreshing && !error && drawings.length < 4 && Array.from({ length: 4 - drawings.length }).map((_, index) => (
               <Card key={`empty-${index}`} className="aspect-square p-0 relative overflow-hidden shadow-none border-dashed">
                 <div className="absolute inset-0 flex items-center justify-center bg-gray-50">
                   <Eye className="h-8 w-8 text-gray-300" />
