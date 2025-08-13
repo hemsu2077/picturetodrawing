@@ -28,7 +28,7 @@ try {
       const userCredits = await getUserCredits(userUuid);
       if (userCredits.left_credits < 2) {
         return Response.json(
-          { code: -1, message: "Insufficient credits. You need at least 2 credits to convert an image." }, 
+          { code: -1, message: "Insufficient credits." }, 
           { status: 402 }
         );
       }

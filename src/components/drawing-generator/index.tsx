@@ -6,18 +6,12 @@ import { Card } from '@/components/ui/card';
 import { ImageUpload } from './image-upload';
 import { StyleSelector } from './style-selector';
 import { RatioSelector } from './ratio-selector';
-import { ResultDisplay } from './result-display';
+import { RecentDrawings } from './result-display';
 import { Wand2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useSession } from 'next-auth/react';
 import { useAppContext } from '@/contexts/app';
 import { isAuthEnabled } from '@/lib/auth';
-
-interface GeneratedImage {
-  url: string;
-  filename: string;
-  provider: string;
-}
 
 interface DrawingGeneratorProps {
   className?: string;
@@ -31,8 +25,8 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
   const [selectedStyle, setSelectedStyle] = useState('pencil-sketch');
   const [selectedRatio, setSelectedRatio] = useState('auto');
   const [isGenerating, setIsGenerating] = useState(false);
-  const [generatedImages, setGeneratedImages] = useState<GeneratedImage[]>([]);
   const [error, setError] = useState<string | null>(null);
+  const [newDrawing, setNewDrawing] = useState<{ style: string; ratio: string } | null>(null);
 
   const handleImageSelect = (file: File | string, preview: string) => {
     if (file && preview) {
@@ -41,7 +35,6 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
       setSelectedImage(null);
     }
     // Clear previous results when new image is selected
-    setGeneratedImages([]);
     setError(null);
   };
 
@@ -73,7 +66,7 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
 
     setIsGenerating(true);
     setError(null);
-    setGeneratedImages([]);
+    setNewDrawing({ style: selectedStyle, ratio: selectedRatio });
 
     try {
       let imageData: string;
@@ -117,7 +110,9 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
 
       // API returns {code: 0, message: "ok", data: [...]}
       if (data.code === 0 && data.data) {
-        setGeneratedImages(data.data);
+        // Clear the new drawing state since generation is complete
+        setNewDrawing(null);
+        setError(null);
       } else {
         setError(data.message || 'Invalid response format');
         return;
@@ -179,14 +174,12 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
         </div>
       </Card>
 
-      {/* Results */}
-      {(isGenerating || generatedImages.length > 0 || error) && (
-        <ResultDisplay
-          isGenerating={isGenerating}
-          generatedImages={generatedImages}
-          error={error}
-        />
-      )}
+      {/* Recent Drawings */}
+      <RecentDrawings
+        isGenerating={isGenerating}
+        newDrawing={newDrawing}
+        error={error}
+      />
     </div>
   );
 }
