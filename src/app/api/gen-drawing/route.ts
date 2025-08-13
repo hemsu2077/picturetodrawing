@@ -5,6 +5,8 @@ import { newStorage } from "@/lib/storage";
 import { auth } from "@/auth";
 import { getUserCredits, decreaseCredits, CreditsTransType } from "@/services/credit";
 import { isAuthEnabled } from "@/lib/auth";
+import { insertImage } from "@/models/image";
+import { getUuid } from "@/lib/hash";
 
 export async function POST(req: Request) {
 try {
@@ -127,6 +129,32 @@ try {
             contentType: "image/png",
             disposition: "inline",
           });
+
+          // Store image data to database if auth is enabled and we have user UUID
+          if (isAuthEnabled() && userUuid) {
+            try {
+              const imageUuid = getUuid();
+              const currentTime = new Date();
+              
+              await insertImage({
+                uuid: imageUuid,
+                user_uuid: userUuid,
+                original_image_url: inputImageUrl,
+                generated_image_url: res.url || "",
+                style: style,
+                ratio: ratio || "match_input_image",
+                provider: provider,
+                filename: filename,
+                status: "completed",
+                created_at: currentTime,
+                updated_at: currentTime,
+              });
+              console.log(`Image data stored to database for user ${userUuid}`);
+            } catch (dbError) {
+              console.error("Failed to store image data to database:", dbError);
+              // Don't fail the request if database storage fails
+            }
+          }
 
           return {
             ...res,

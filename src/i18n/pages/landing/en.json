@@ -23,14 +23,9 @@
           "icon": "RiMoneyDollarCircleLine"
         },
         {
-          "title": "Showcase",
-          "url": "/showcase",
-          "icon": "RiApps2Line"
-        },
-        {
-          "title": "Docs",
-          "url": "/docs",
-          "icon": "RiBookOpenLine"
+          "title": "My Drawings",
+          "url": "/my-drawings",
+          "icon": "RiGalleryLine"
         }
       ]
     },

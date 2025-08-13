@@ -48,7 +48,9 @@ export default async function LandingPage({
   return (
     <>
       {page.hero && <Hero hero={page.hero} />}
-      <DrawingGenerator />
+      <div id="drawing-generator">
+        <DrawingGenerator />
+      </div>
       {page.transformation_examples && <TransformationExamples section={page.transformation_examples} />}
       {page.introduce && <Feature1 section={page.introduce} />}
       {page.benefit && <Feature2 section={page.benefit} />}

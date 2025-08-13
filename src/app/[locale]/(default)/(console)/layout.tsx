@@ -40,6 +40,12 @@ export default async function ({ children }: { children: ReactNode }) {
           icon: "RiKey2Line",
           is_active: false,
         },
+        {
+          title: "My Drawings",
+          url: "/my-drawings",
+          icon: "RiImageLine",
+          is_active: false,
+        },
       ],
     },
   };
