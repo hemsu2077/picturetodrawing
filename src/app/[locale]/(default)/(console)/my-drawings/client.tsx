@@ -1,23 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Trash2, Download, Eye } from "lucide-react";
+import { Eye } from "lucide-react";
 import { toast } from "sonner";
-
-interface Drawing {
-  uuid: string;
-  generated_image_url: string;
-  original_image_url: string | null;
-  style: string;
-  ratio: string | null;
-  created_at: Date | null;
-  filename: string | null;
-}
+import { Drawing } from "@/components/drawing-generator/shared-types";
+import { DrawingCard } from "@/components/drawing-generator/drawing-card";
+import { DrawingDetailModal } from "@/components/drawing-generator/drawing-detail-modal";
+import { DeleteConfirmationDialog } from "@/components/drawing-generator/delete-confirmation-dialog";
 
 interface MyDrawingsClientProps {
   drawings: Drawing[];
@@ -28,8 +19,10 @@ export default function MyDrawingsClient({ drawings }: MyDrawingsClientProps) {
   const [drawingsList, setDrawingsList] = useState(drawings);
   const [isDeleteDialogOpen, setIsDeleteDialogOpen] = useState(false);
   const [drawingToDelete, setDrawingToDelete] = useState<Drawing | null>(null);
+  const [isDeleting, setIsDeleting] = useState(false);
 
   const handleDelete = async (drawing: Drawing) => {
+    setIsDeleting(true);
     try {
       const response = await fetch(`/api/delete-drawing/${drawing.uuid}`, {
         method: "DELETE",
@@ -46,45 +39,12 @@ export default function MyDrawingsClient({ drawings }: MyDrawingsClientProps) {
     } catch (error) {
       console.error("Error deleting drawing:", error);
       toast.error("Failed to delete drawing");
+    } finally {
+      setIsDeleting(false);
     }
   };
 
-  const handleDownload = async (drawing: Drawing) => {
-    try {
-      const response = await fetch(drawing.generated_image_url);
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = drawing.filename || `drawing-${drawing.style}-${Date.now()}.png`;
-      document.body.appendChild(a);
-      a.click();
-      window.URL.revokeObjectURL(url);
-      document.body.removeChild(a);
-      toast.success("Download started");
-    } catch (error) {
-      console.error("Error downloading image:", error);
-      toast.error("Failed to download image");
-    }
-  };
 
-  const formatDate = (date: Date | null) => {
-    if (!date) return "Unknown";
-    return new Date(date).toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "short",
-      day: "numeric",
-      hour: "2-digit",
-      minute: "2-digit",
-    });
-  };
-
-  const formatStyle = (style: string) => {
-    return style
-      .split("-")
-      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(" ");
-  };
 
   if (drawingsList.length === 0) {
     return (
@@ -118,121 +78,43 @@ export default function MyDrawingsClient({ drawings }: MyDrawingsClientProps) {
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
         {drawingsList.map((drawing) => (
-          <Card key={drawing.uuid} className="group relative overflow-hidden shadow-none py-0 cursor-pointer" onClick={() => setSelectedDrawing(drawing)}>
-            <div className="aspect-square relative">
-              <Image
-                src={drawing.generated_image_url}
-                alt={`Drawing in ${drawing.style} style`}
-                fill
-                className="object-cover transition-transform group-hover:scale-105"
-              />
-              
-              {/* Hover overlay */}
-              <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors pointer-events-none" />
-              
-              {/* Style badge - shown on hover */}
-              <div className="absolute bottom-2 left-2 opacity-0 group-hover:opacity-100 transition-opacity">
-                <div className="bg-white/90 backdrop-blur-sm px-2 py-1 rounded text-xs font-medium text-gray-800">
-                  {formatStyle(drawing.style)}
-                </div>
-              </div>
-
-              {/* Delete button - shown on hover */}
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setDrawingToDelete(drawing);
-                  setIsDeleteDialogOpen(true);
-                }}
-                className="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity bg-red-500 hover:bg-red-600 text-white p-1.5 rounded-full"
-              >
-                <Trash2 className="w-3 h-3" />
-              </button>
-            </div>
-          </Card>
+          <DrawingCard
+            key={drawing.uuid}
+            drawing={drawing}
+            onClick={() => setSelectedDrawing(drawing)}
+            showDeleteButton={true}
+            showDownloadButton={true}
+            showToast={true}
+            onDelete={() => {
+              setDrawingToDelete(drawing);
+              setIsDeleteDialogOpen(true);
+            }}
+          />
         ))}
       </div>
 
       {/* Image Detail Modal */}
-      <Dialog open={!!selectedDrawing} onOpenChange={() => setSelectedDrawing(null)}>
-        <DialogContent className="max-w-4xl max-h-[90vh] overflow-auto">
-          {selectedDrawing && (
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="relative aspect-square bg-gray-100 rounded-lg md:col-span-2">
-                <Image
-                  src={selectedDrawing.generated_image_url}
-                  alt={`Drawing in ${selectedDrawing.style} style`}
-                  fill
-                  className="object-contain rounded-lg"
-                />
-              </div>
-              
-              <div className="space-y-4">
-                <DialogHeader>
-                  <DialogTitle>Drawing Details</DialogTitle>
-                </DialogHeader>
-                
-                <div className="space-y-3">
-                  <div>
-                    <label className="text-xs font-medium text-gray-500">Style</label>
-                    <p className="text-gray-900">{formatStyle(selectedDrawing.style)}</p>
-                  </div>
-                  
-                  {selectedDrawing.ratio && (
-                    <div>
-                      <label className="text-xs font-medium text-gray-500">Aspect Ratio</label>
-                      <p className="text-gray-900">{selectedDrawing.ratio}</p>
-                    </div>
-                  )}
-                  
-                  <div>
-                    <label className="text-xs font-medium text-gray-500">Created</label>
-                    <p className="text-gray-900">{formatDate(selectedDrawing.created_at)}</p>
-                  </div>
-                </div>
-
-                <div className="flex gap-2 pt-4">
-                  <Button 
-                    onClick={() => handleDownload(selectedDrawing)}
-                    className="flex items-center gap-2"
-                  >
-                    <Download className="w-4 h-4" />
-                    Download
-                  </Button>
-                </div>
-              </div>
-            </div>
-          )}
-        </DialogContent>
-      </Dialog>
+      <DrawingDetailModal
+        drawing={selectedDrawing}
+        isOpen={!!selectedDrawing}
+        onClose={() => setSelectedDrawing(null)}
+        showToast={true}
+        showDeleteButton={true}
+        onDelete={(drawing) => {
+          setSelectedDrawing(null);
+          setDrawingToDelete(drawing);
+          setIsDeleteDialogOpen(true);
+        }}
+      />
 
       {/* Delete Confirmation Dialog */}
-      <Dialog open={isDeleteDialogOpen} onOpenChange={setIsDeleteDialogOpen}>
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>Delete Drawing</DialogTitle>
-          </DialogHeader>
-          <div className="space-y-4">
-            <p className="text-gray-600">
-              Are you sure you want to delete this drawing? This action cannot be undone.
-            </p>
-            <div className="flex gap-2 justify-end">
-              <Button 
-                variant="outline" 
-                onClick={() => setIsDeleteDialogOpen(false)}
-              >
-                Cancel
-              </Button>
-              <Button 
-                variant="destructive" 
-                onClick={() => drawingToDelete && handleDelete(drawingToDelete)}
-              >
-                Delete
-              </Button>
-            </div>
-          </div>
-        </DialogContent>
-      </Dialog>
+      <DeleteConfirmationDialog
+        drawing={drawingToDelete}
+        isOpen={isDeleteDialogOpen}
+        onClose={() => setIsDeleteDialogOpen(false)}
+        onConfirm={handleDelete}
+        isDeleting={isDeleting}
+      />
     </div>
   );
 }
