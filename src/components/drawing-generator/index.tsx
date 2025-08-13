@@ -9,6 +9,9 @@ import { RatioSelector } from './ratio-selector';
 import { ResultDisplay } from './result-display';
 import { Wand2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useSession } from 'next-auth/react';
+import { useAppContext } from '@/contexts/app';
+import { isAuthEnabled } from '@/lib/auth';
 
 interface GeneratedImage {
   url: string;
@@ -21,6 +24,9 @@ interface DrawingGeneratorProps {
 }
 
 export function DrawingGenerator({ className }: DrawingGeneratorProps) {
+  const { data: session } = isAuthEnabled() ? useSession() : { data: null };
+  const { setShowSignModal } = useAppContext();
+  
   const [selectedImage, setSelectedImage] = useState<{ file: File | string; preview: string } | null>(null);
   const [selectedStyle, setSelectedStyle] = useState('pencil-sketch');
   const [selectedRatio, setSelectedRatio] = useState('auto');
@@ -54,6 +60,12 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
   };
 
   const handleGenerate = async () => {
+    // Check if user is logged in (only if auth is enabled)
+    if (isAuthEnabled() && !session) {
+      setShowSignModal(true);
+      return;
+    }
+
     if (!selectedImage) {
       setError('Please select an image first');
       return;
@@ -90,17 +102,28 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(data.message || 'Generation failed');
+        if (response.status === 401) {
+          // Authentication required - show login modal
+          setShowSignModal(true);
+          return;
+        } else if (response.status === 402) {
+          // Insufficient credits - show specific error message
+          setError(data.message || 'Insufficient credits');
+          return;
+        }
+        setError(data.message || 'Generation failed');
+        return;
       }
 
       // API returns {code: 0, message: "ok", data: [...]}
       if (data.code === 0 && data.data) {
         setGeneratedImages(data.data);
       } else {
-        throw new Error(data.message || 'Invalid response format');
+        setError(data.message || 'Invalid response format');
+        return;
       }
     } catch (err) {
-      console.error('Generation error:', err);
+      // Handle network or other unexpected errors quietly
       setError(err instanceof Error ? err.message : 'An unexpected error occurred');
     } finally {
       setIsGenerating(false);

@@ -2,9 +2,36 @@ import { respData, respErr } from "@/lib/resp";
 import { experimental_generateImage as generateImage } from "ai";
 import { replicate } from "@ai-sdk/replicate";
 import { newStorage } from "@/lib/storage";
+import { auth } from "@/auth";
+import { getUserCredits, decreaseCredits, CreditsTransType } from "@/services/credit";
+import { isAuthEnabled } from "@/lib/auth";
 
 export async function POST(req: Request) {
 try {
+    let userUuid = "";
+    
+    // Check authentication and credits only if auth is enabled
+    if (isAuthEnabled()) {
+      const session = await auth();
+      if (!session?.user?.uuid) {
+        return Response.json(
+          { code: -1, message: "Authentication required" }, 
+          { status: 401 }
+        );
+      }
+
+      userUuid = session.user.uuid;
+
+      // Check user credits
+      const userCredits = await getUserCredits(userUuid);
+      if (userCredits.left_credits < 2) {
+        return Response.json(
+          { code: -1, message: "Insufficient credits. You need at least 2 credits to convert an image." }, 
+          { status: 402 }
+        );
+      }
+    }
+
     const { style, image, ratio } = await req.json();
 
     // Validate required inputs
@@ -115,6 +142,22 @@ try {
         }
       })
     );
+
+    // Deduct credits after successful generation (only if auth is enabled)
+    if (isAuthEnabled() && userUuid) {
+      try {
+        await decreaseCredits({
+          user_uuid: userUuid,
+          trans_type: CreditsTransType.DrawingGeneration,
+          credits: 2,
+        });
+        console.log(`Successfully deducted 2 credits from user ${userUuid}`);
+      } catch (creditError) {
+        console.error("Failed to deduct credits:", creditError);
+        // Note: We don't fail the request if credit deduction fails
+        // as the image has already been generated successfully
+      }
+    }
   
     return respData(processedImages)   
 } catch (e) {
