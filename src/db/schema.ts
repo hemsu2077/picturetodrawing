@@ -128,3 +128,19 @@ export const feedbacks = pgTable("pic_to_dra_feedbacks", {
   content: text(),
   rating: integer(),
 });
+
+// Generated Images table
+export const images = pgTable("pic_to_dra_images", {
+  id: integer().primaryKey().generatedAlwaysAsIdentity(),
+  uuid: varchar({ length: 255 }).notNull().unique(),
+  user_uuid: varchar({ length: 255 }).notNull(),
+  original_image_url: varchar({ length: 500 }),
+  generated_image_url: varchar({ length: 500 }).notNull(),
+  style: varchar({ length: 50 }).notNull(),
+  ratio: varchar({ length: 50 }),
+  provider: varchar({ length: 50 }).notNull().default("replicate"),
+  filename: varchar({ length: 255 }),
+  status: varchar({ length: 50 }).notNull().default("completed"),
+  created_at: timestamp({ withTimezone: true }),
+  updated_at: timestamp({ withTimezone: true }),
+});
