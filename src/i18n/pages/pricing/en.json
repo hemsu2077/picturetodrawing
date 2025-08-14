@@ -3,7 +3,7 @@
     "name": "pricing",
     "label": "Pricing",
     "title": "Pricing",
-    "description": "Get all features of PicturetoDrawing, Ship your AI SaaS startups fast.",
+    "description": "Transform your photos into stunning artwork with PicturetoDrawing.",
     "groups": [
       {
         "name": "one-time",
@@ -11,313 +11,342 @@
       },
       {
         "name": "monthly",
-        "title": "Monthly",
-        "is_featured": true,
-        "label": "save 15%"
+        "title": "Monthly"
       },
       {
         "name": "yearly",
-        "title": "Annually"
+        "title": "Annually",
+        "is_featured": true,
+        "label": "save up to 30%"
       }
     ],
     "items": [
       {
-        "title": "Starter",
-        "description": "Get started with your first SaaS startup.",
+        "title": "Basic",
+        "description": "Perfect for trying out our AI drawing service.",
         "features_title": "Includes",
         "features": [
-          "100 credits, valid for 1 month",
-          "NextJS boilerplate",
-          "SEO-friendly structure",
-          "Payment with Stripe",
-          "Data storage with Supabase",
-          "Google Oauth & One-Tap Login",
-          "i18n support"
+          "100 credits, valid for 2 months",
+          "No watermark",
+          "Fast generation",
+          "HD download",
+          "About $0.2 per drawing"
         ],
         "interval": "one-time",
-        "amount": 9900,
-        "cn_amount": 69900,
+        "amount": 999,
         "currency": "USD",
-        "price": "$99",
-        "original_price": "$199",
+        "price": "$9.99",
         "unit": "one-time",
         "is_featured": false,
-        "tip": "Pay once. Build unlimited projects!",
+        "tip": "Great for occasional use",
         "button": {
-          "title": "Get PicturetoDrawing",
+          "title": "Get Started",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
-        "product_id": "starter",
-        "product_name": "PicturetoDrawing Boilerplate Starter",
+        "product_id": "basic",
+        "product_name": "PicturetoDrawing Basic",
         "credits": 100,
-        "valid_months": 1,
+        "valid_months": 2,
         "group": "one-time"
       },
       {
         "title": "Standard",
-        "description": "Ship Fast with your SaaS Startups.",
-        "label": "Popular",
-        "features_title": "Everything in Starter, plus",
+        "description": "Best for regular users who create artwork frequently.",
+        "features_title": "Includes",
         "features": [
-          "200 credits, valid for 3 month",
-          "Deploy with Vercel or Cloudflare",
-          "Generation of Privacy & Terms",
-          "Google Analytics Integration",
-          "Google Search Console Integration",
-          "Discord community",
-          "Technical support for your first ship",
-          "Lifetime updates"
+          "400 credits, valid for 6 months",
+          "No watermark",
+          "Fast generation",
+          "HD download",
+          "About $0.1 per drawing"
         ],
         "interval": "one-time",
-        "amount": 19900,
-        "cn_amount": 139900,
+        "amount": 1999,
         "currency": "USD",
-        "price": "$199",
-        "original_price": "$299",
+        "price": "$19.99",
         "unit": "one-time",
         "is_featured": true,
-        "tip": "Pay once. Build unlimited projects!",
+        "tip": "Most popular choice",
         "button": {
-          "title": "Get PicturetoDrawing",
+          "title": "Get Started",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
         "product_id": "standard",
-        "product_name": "PicturetoDrawing Boilerplate Standard",
-        "credits": 200,
-        "valid_months": 3,
+        "product_name": "PicturetoDrawing Standard",
+        "credits": 400,
+        "valid_months": 6,
         "group": "one-time"
       },
       {
         "title": "Premium",
-        "description": "Ship Any AI SaaS Startups.",
-        "features_title": "Everything in Standard, plus",
+        "description": "For power users and creative professionals.",
+        "features_title": "Includes",
+        "label": "Popular",
         "features": [
-          "300 credits, valid for 1 year",
-          "Business Functions with AI",
-          "User Center",
-          "Credits System",
-          "API Sales for your SaaS",
-          "Admin System",
-          "Priority Technical Support"
+          "800 credits, valid for 12 months",
+          "No watermark",
+          "Fast generation",
+          "HD download",
+          "About $0.075 per drawing"
         ],
         "interval": "one-time",
-        "amount": 29900,
-        "cn_amount": 199900,
+        "amount": 2999,
         "currency": "USD",
-        "price": "$299",
-        "original_price": "$399",
+        "price": "$29.99",
         "unit": "one-time",
         "is_featured": false,
-        "tip": "Pay once. Build unlimited projects!",
+        "tip": "Best value for heavy users",
         "button": {
-          "title": "Get PicturetoDrawing",
+          "title": "Get Started",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
         "product_id": "premium",
-        "product_name": "PicturetoDrawing Boilerplate Premium",
-        "credits": 300,
+        "product_name": "PicturetoDrawing Premium",
+        "credits": 800,
         "valid_months": 12,
         "group": "one-time"
       },
       {
-        "title": "Starter",
-        "description": "Get started with your first SaaS startup.",
+        "title": "Basic",
+        "description": "Steady monthly supply for regular creators.",
         "features_title": "Includes",
         "features": [
-          "100 credits, valid for 1 month",
-          "NextJS boilerplate",
-          "SEO-friendly structure",
-          "Payment with Stripe",
-          "Data storage with Supabase",
-          "Google Oauth & One-Tap Login",
-          "i18n support"
+          "200 credits per month",
+          "No watermark",
+          "Fast generation",
+          "HD download",
+          "Commercial use rights",
+          "Priority customer support",
+          "About $0.1 per drawing"
         ],
         "interval": "month",
-        "amount": 8900,
+        "amount": 999,
         "currency": "USD",
-        "price": "$89",
-        "original_price": "$99",
+        "price": "$9.99",
         "unit": "/ month",
         "is_featured": false,
-        "tip": "Pay monthly. Build unlimited projects!",
+        "tip": "Auto-renew, cancel anytime",
         "button": {
-          "title": "Get PicturetoDrawing",
+          "title": "Subscribe",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
-        "product_id": "starter-monthly",
-        "product_name": "PicturetoDrawing Boilerplate Starter Monthly",
-        "credits": 100,
-        "valid_months": 1,
-        "group": "monthly"
-      },
-      {
-        "title": "Standard",
-        "description": "Ship Fast with your SaaS Startups.",
-        "label": "Popular",
-        "features_title": "Everything in Starter, plus",
-        "features": [
-          "200 credits, valid for 1 month",
-          "Deploy with Vercel or Cloudflare",
-          "Generation of Privacy & Terms",
-          "Google Analytics Integration",
-          "Google Search Console Integration",
-          "Discord community",
-          "Technical support for your first ship",
-          "Lifetime updates"
-        ],
-        "interval": "month",
-        "amount": 16900,
-        "currency": "USD",
-        "price": "$169",
-        "original_price": "$199",
-        "unit": "/ month",
-        "is_featured": true,
-        "tip": "Pay monthly. Ship Fast with your SaaS Startups.",
-        "button": {
-          "title": "Get PicturetoDrawing",
-          "url": "/#pricing",
-          "icon": "RiFlashlightFill"
-        },
-        "product_id": "standard-monthly",
-        "product_name": "PicturetoDrawing Boilerplate Standard Monthly",
+        "product_id": "basic-monthly",
+        "product_name": "PicturetoDrawing Basic Monthly",
         "credits": 200,
         "valid_months": 1,
         "group": "monthly"
       },
       {
-        "title": "Premium",
-        "description": "Ship Any AI SaaS Startups.",
-        "features_title": "Everything in Standard, plus",
+        "title": "Standard",
+        "description": "More credits for active creators and small teams.",
+        "label": "Popular",
+        "features_title": "Includes",
         "features": [
-          "300 credits, valid for 1 month",
-          "Business Functions with AI",
-          "User Center",
-          "Credits System",
-          "API Sales for your SaaS",
-          "Admin System",
-          "Priority Technical Support"
+          "400 credits per month",
+          "No watermark",
+          "Fast generation",
+          "HD download",
+          "Commercial use rights",
+          "Priority customer support",
+          "About $0.85 per drawing"
         ],
         "interval": "month",
-        "amount": 24900,
+        "amount": 1699,
         "currency": "USD",
-        "price": "$249",
-        "original_price": "$299",
+        "price": "$16.99",
         "unit": "/ month",
-        "is_featured": false,
-        "tip": "Pay monthly. Ship Any AI SaaS Startups.",
+        "is_featured": true,
+        "tip": "Auto-renew, cancel anytime",
         "button": {
-          "title": "Get PicturetoDrawing",
+          "title": "Subscribe",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
-        "product_id": "premium-monthly",
-        "product_name": "PicturetoDrawing Boilerplate Premium Monthly",
-        "credits": 300,
+        "product_id": "standard-monthly",
+        "product_name": "PicturetoDrawing Standard Monthly",
+        "credits": 400,
         "valid_months": 1,
         "group": "monthly"
       },
       {
-        "title": "Starter",
-        "description": "Get started with your first SaaS startup.",
+        "title": "Premium",
+        "description": "Maximum credits for agencies and power users.",
         "features_title": "Includes",
         "features": [
-          "100 credits, valid for 1 year",
-          "NextJS boilerplate",
-          "SEO-friendly structure",
-          "Payment with Stripe",
-          "Data storage with Supabase",
-          "Google Oauth & One-Tap Login",
-          "i18n support"
+          "1000 credits per month",
+          "No watermark",
+          "Fast generation",
+          "HD download",
+          "Commercial use rights",
+          "Priority customer support",
+          "About $0.06 per drawing"
         ],
-        "interval": "year",
-        "amount": 82800,
+        "interval": "month",
+        "amount": 2999,
         "currency": "USD",
-        "price": "$69",
-        "original_price": "$89",
+        "price": "$29.99",
         "unit": "/ month",
         "is_featured": false,
-        "tip": "Pay annually. Build unlimited projects!",
+        "tip": "Auto-renew, cancel anytime",
         "button": {
-          "title": "Get PicturetoDrawing",
+          "title": "Subscribe",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
-        "product_id": "starter-yearly",
-        "product_name": "PicturetoDrawing Boilerplate Starter Annually",
-        "credits": 1200,
-        "valid_months": 12,
-        "group": "yearly"
+        "product_id": "premium-monthly",
+        "product_name": "PicturetoDrawing Premium Monthly",
+        "credits": 1000,
+        "valid_months": 1,
+        "group": "monthly"
       },
       {
-        "title": "Standard",
-        "description": "Ship Fast with your SaaS Startups.",
-        "label": "Popular",
-        "features_title": "Everything in Starter, plus",
+        "title": "Basic",
+        "description": "Total $83.88/year, Save with annual billing for consistent creators.",
+        "features_title": "Includes",
         "features": [
-          "200 credits, valid for 1 year",
-          "Deploy with Vercel or Cloudflare",
-          "Generation of Privacy & Terms",
-          "Google Analytics Integration",
-          "Google Search Console Integration",
-          "Discord community",
-          "Technical support for your first ship",
-          "Lifetime updates"
+          "200 credits per month",
+          "No watermark",
+          "Fast generation",
+          "HD download",
+          "Commercial use rights",
+          "About $0.07 per drawing"
         ],
         "interval": "year",
-        "amount": 154800,
+        "amount": 8388,
         "currency": "USD",
-        "price": "$129",
-        "original_price": "$169",
+        "price": "$6.99",
+        "original_price": "$9.99",
         "unit": "/ month",
-        "is_featured": true,
-        "tip": "Pay annually. Ship Fast with your SaaS Startups.",
+        "is_featured": false,
+        "tip": "Auto-renew, cancel anytime",
         "button": {
-          "title": "Get PicturetoDrawing",
+          "title": "Subscribe Annually",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
-        "product_id": "standard-yearly",
-        "product_name": "PicturetoDrawing Boilerplate Standard Annually",
+        "product_id": "basic-yearly",
+        "product_name": "PicturetoDrawing Basic Annually",
         "credits": 2400,
         "valid_months": 12,
         "group": "yearly"
       },
       {
-        "title": "Premium",
-        "description": "Ship Any AI SaaS Startups.",
-        "features_title": "Everything in Standard, plus",
+        "title": "Standard",
+        "description": "Total $143.88/year, Best value for growing businesses and teams.",
+        "label": "Popular",
+        "features_title": "Includes",
         "features": [
-          "300 credits, valid for 1 year",
-          "Business Functions with AI",
-          "User Center",
-          "Credits System",
-          "API Sales for your SaaS",
-          "Admin System",
-          "Priority Technical Support"
+          "400 credits per month",
+          "No watermark",
+          "Fast generation",
+          "HD download",
+          "Commercial use rights",
+          "Priority customer support",
+          "About $0.06 per drawing"
         ],
         "interval": "year",
-        "amount": 226800,
+        "amount": 14388,
         "currency": "USD",
-        "price": "$189",
-        "original_price": "$249",
+        "price": "$11.99",
+        "original_price": "$16.99",
+        "unit": "/ month",
+        "is_featured": true,
+        "tip": "Auto-renew, cancel anytime",
+        "button": {
+          "title": "Subscribe Annually",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard-yearly",
+        "product_name": "PicturetoDrawing Standard Annually",
+        "credits": 4800,
+        "valid_months": 12,
+        "group": "yearly"
+      },
+      {
+        "title": "Premium",
+        "description": "Total $251.88/year, Maximum savings for high-volume users.",
+        "features_title": "Includes",
+        "features": [
+          "1000 credits per month",
+          "No watermark",
+          "Fast generation",
+          "HD download",
+          "Commercial use rights",
+          "Priority customer support",
+          "About $0.04 per drawing"
+        ],
+        "interval": "year",
+        "amount": 25188,
+        "currency": "USD",
+        "price": "$20.99",
+        "original_price": "$29.99",
         "unit": "/ month",
         "is_featured": false,
-        "tip": "Pay annually. Ship Any AI SaaS Startups.",
+        "tip": "Auto-renew, cancel anytime",
         "button": {
-          "title": "Get PicturetoDrawing",
+          "title": "Subscribe Annually",
           "url": "/#pricing",
           "icon": "RiFlashlightFill"
         },
         "product_id": "premium-yearly",
-        "product_name": "PicturetoDrawing Boilerplate Premium Annually",
-        "credits": 3600,
+        "product_name": "PicturetoDrawing Premium Annually",
+        "credits": 12000,
         "valid_months": 12,
         "group": "yearly"
       }
     ]
+  },
+
+
+
+ "faq": {
+     "name": "faq",
+     "label": "",
+     "title": "Frequently Asked Questions",
+     "description": "Have questions about our AI picture to drawing service? Find answers below or contact our support team.",
+     "groups": [],
+     "items": [
+       {
+         "title": "What happens when I run out of credits?",
+         "description": "For subscription plans (Monthly/Yearly), your credits automatically reset at the start of each billing cycle. For Pay As You Go users, you'll need to purchase a new credit pack to continue transforming photos into drawings. You can always upgrade to a subscription plan for automatic renewals."
+       },
+       {
+         "title": "How long are my credits valid?",
+         "description": "Pay As You Go credits have different validity periods: Basic (2 months), Standard (6 months), Premium (12 months). Subscription credits (Monthly/Yearly) reset on your billing date. We recommend using your credits before they expire to get the most value."
+       },
+       {
+         "title": "How many drawings can I create with my credits?",
+         "description": "Each photo-to-drawing transformation typically uses 2 credit. So with 100 credits (Basic), you can create 50 drawings. With 200 credits (Standard Monthly), you can generate 100 drawings per month. The exact usage may vary based on image complexity and style."
+       },
+       {
+         "title": "Can I get a refund for unused credits?",
+         "description": "Due to the computational resources required for AI image transformation, we cannot offer refunds for purchased credits. However, Pay As You Go credits have extended validity periods, giving you plenty of time to use them. For subscriptions, you can cancel anytime to prevent future charges."
+       },
+       {
+         "title": "What's the difference between the plans?",
+         "description": "Pay As You Go offers one-time purchases with different credit amounts and validity periods - perfect for occasional use. Monthly plans provide regular credit renewals with commercial rights and priority support. Yearly plans offer the same benefits as monthly but with significant savings (up to 30% off)."
+       },
+       {
+         "title": "How do I manage or cancel my subscription?",
+         "description": "You can manage your subscription, view usage, and cancel anytime in your account dashboard under 'My Credits' or 'My Account'. Pay As You Go purchases don't require cancellation as they're one-time payments."
+       },
+       {
+         "title": "What drawing styles can I create?",
+         "description": "Our AI can transform your photos into various artistic styles including pencil sketch, charcoal drawing, watercolor painting, line art, color pencil drawing, and ink art. You can choose your preferred style during the conversion process to match your artistic vision."
+       },
+       {
+         "title": "Can I use the generated drawings commercially?",
+         "description": "Yes! Monthly and Yearly subscription plans include full commercial usage rights. You can use the generated drawings for your business, client projects, marketing materials, or any commercial purpose. Pay As You Go plans are for personal use only."
+       },
+       {
+         "title": "What if I'm not satisfied with a generated drawing?",
+         "description": "While we can't offer refunds, you can try different artistic styles or adjust your photo for better results using your credits. Our AI works best with clear, well-lit photos. Contact our support team if you need help optimizing your images for the best artistic transformation."
+       }
+     ]
   }
 }

@@ -50,17 +50,7 @@ const ASPECT_RATIOS: RatioOption[] = [
 ];
 
 export function RatioSelector({ selectedRatio, onRatioChange, className }: RatioSelectorProps) {
-  const getRatioIcon = (ratio: string) => {
-    const iconClasses = "bg-muted border border-border/50 p-1";
-    switch (ratio) {
-      case '1:1': return <div className={`w-4 h-4 ${iconClasses}`} />;
-      case '4:3': return <div className={`w-5 h-4 ${iconClasses}`} />;
-      case '3:4': return <div className={`w-4 h-5 ${iconClasses}`} />;
-      case '16:9': return <div className={`w-6 h-3 ${iconClasses}`} />;
-      case '9:16': return <div className={`w-3 h-6 ${iconClasses}`} />;
-      default: return <div className={`w-4 h-4 ${iconClasses} bg-primary/20`} />;
-    }
-  };
+
   return (
     <div className={cn("space-y-4", className)}>
       <div>
@@ -77,7 +67,6 @@ export function RatioSelector({ selectedRatio, onRatioChange, className }: Ratio
           {ASPECT_RATIOS.map((ratio) => (
             <SelectItem key={ratio.value} value={ratio.value}>
               <div className="flex items-center gap-3">
-                {getRatioIcon(ratio.value)}
                 <div className="flex items-center justify-between flex-1">
                   <span className="font-medium">{ratio.label}</span>
                   {ratio.description && (
