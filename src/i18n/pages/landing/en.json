@@ -158,11 +158,11 @@
       },
       {
         "title": "Is my photo safe when using your picture to drawing service??",
-        "description": "Most photo to sketch conversions complete within 10-30 seconds, depending on image size and complexity. Our optimized AI servers ensure fast processing without compromising quality. High-resolution pictures or detailed images may take slightly longer, but you'll never wait more than a minute for your picture to drawing transformation. The speed of our technology allows for quick experimentation with different artistic styles."
+        "description": "Absolutely! Privacy and security are our top priorities. Your photos are processed on secure servers and automatically deleted after your picture to drawing conversion is complete. We never store, share, or use your images for any other purpose. All photo to sketch processing happens through encrypted connections, ensuring your personal photos remain completely private and secure."
       },
       {
         "title": "How long does picture to drawing conversion take?",
-        "description": "Most photo to sketch conversions complete within 10-30 seconds, depending on image size and complexity. Our optimized AI servers ensure fast processing without compromising quality. High-resolution pictures or detailed images may take slightly longer, but you'll never wait more than a minute for your picture to drawing transformation. The speed of our technology allows for quick experimentation with different artistic styles."
+        "description": "Most photo to sketch conversions complete within 20-30 seconds, depending on image size and complexity. Our optimized AI servers ensure fast processing without compromising quality. High-resolution pictures or detailed images may take slightly longer, but you'll never wait more than a minute for your picture to drawing transformation. The speed of our technology allows for quick experimentation with different artistic styles."
       },
       {
         "title": "What resolution can I download my photo to sketch results?",
@@ -187,49 +187,7 @@
       }
     ]
   },
-  "art_styles": {
-    "name": "art_styles",
-    "title": "Explore Our Picture to Drawing Art Styles",
-    "description": "Discover the artistic possibilities with our comprehensive collection of photo to sketch styles. Each conversion technique offers unique characteristics to transform your pictures into stunning drawing masterpieces.",
-    "items": [
-      {
-        "title": "Pencil Sketch",
-        "description": "Classic graphite pencil drawing style with realistic shading and fine detail preservation for authentic picture to drawing results.",
-        "image": {
-          "src": "/imgs/art-styles/pencil-sketch.jpg"
-        }
-      },
-      {
-        "title": "Charcoal Drawing",
-        "description": "Bold, dramatic charcoal effects with rich contrasts and artistic smudging for powerful photo to sketch transformations.",
-        "image": {
-          "src": "/imgs/art-styles/charcoal.jpg"
-        }
-      },
-      {
-        "title": "Watercolor Painting",
-        "description": "Soft, flowing watercolor effects with beautiful color blending for dreamy picture to drawing artistic interpretations.",
-        "image": {
-          "src": "/imgs/art-styles/watercolor.jpg"
-        }
-      },
-      {
-        "title": "Ink Illustration",
-        "description": "Clean, precise ink line work with bold contrasts perfect for professional photo to sketch artwork and illustrations.",
-        "image": {
-          "src": "/imgs/art-styles/ink.jpg"
-        }
-      }
-    ],
-    "buttons": [
-      {
-        "title": "Try All Art Styles Free",
-        "url": "/pricing",
-        "target": "_self",
-        "icon": "RiBrushLine"
-      }
-    ]
-  },
+ 
   "transformation_examples": {
     "name": "transformation_examples",
     "title": "Picture to Drawing Transformation Examples",
@@ -237,10 +195,9 @@
     "items": [
       {
         "title": "Pencil Sketch",
-        "icon": "RiPencilLine",
         "description": "Classic graphite pencil drawing with realistic shading and fine detail preservation. Perfect for creating timeless, elegant artwork that captures the essence of your original photo with subtle textures and natural gradients.",
         "image": {
-          "src": "/imgs/art-styles/pencil-sketch-comparison.jpg"
+          "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch.webp"
         },
         "children": [
           {
@@ -250,10 +207,9 @@
       },
       {
         "title": "Line Drawing",
-        "icon": "RiBrushLine",
         "description": "Clean, minimalist line art with bold strokes and clear contours. Creates modern, striking artwork that emphasizes form and structure while removing unnecessary details for a contemporary aesthetic.",
         "image": {
-          "src": "/imgs/art-styles/line-drawing-comparison.jpg"
+          "src": "https://files.picturetodrawing.com/sample/example-line-drawing.webp"
         },
         "children": [
           {
@@ -263,10 +219,9 @@
       },
       {
         "title": "Color Pencil Drawing",
-        "icon": "RiPaletteLine",
         "description": "Vibrant colored pencil artwork with rich textures and layered colors. Brings your photos to life with the warmth and character of hand-colored illustrations, preserving subtle color variations.",
         "image": {
-          "src": "/imgs/art-styles/color-pencil-comparison.jpg"
+          "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing.webp"
         },
         "children": [
           {
@@ -276,10 +231,9 @@
       },
       {
         "title": "Watercolor Painting",
-        "icon": "RiDropLine",
         "description": "Soft, flowing watercolor effects with beautiful color blending and artistic brushstrokes. Creates dreamy, ethereal artwork with the delicate transparency and organic flow of traditional watercolor paintings.",
         "image": {
-          "src": "/imgs/art-styles/watercolor-comparison.jpg"
+          "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting.webp"
         },
         "children": [
           {

@@ -8,31 +8,31 @@ export default function TransformationExamples({ section }: { section: SectionTy
   }
 
   return (
-    <section id={section.name} className="py-24 bg-slate-50/50">
+    <section id={section.name} className="py-24">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center mb-20">
-          <h2 className="text-4xl font-bold tracking-tight text-slate-900 mb-4">
+          <h2 className="mb-6 text-pretty text-3xl font-bold lg:text-4xl">
             {section.title}
           </h2>
-          <p className="text-xl text-slate-600 leading-relaxed">
+          <p className="mb-4 max-w-xl text-muted-foreground lg:max-w-none lg:text-lg">
             {section.description}
           </p>
         </div>
 
         {/* Examples Grid */}
-        <div className="space-y-32">
+        <div className="space-y-16">
           {section.items?.map((item, i) => (
             <div key={i} className="grid lg:grid-cols-2 gap-16 items-center">
               {/* Image side */}
               <div className={`${i % 2 === 1 ? 'lg:order-2' : 'lg:order-1'}`}>
                 {item.image && (
                   <div className="relative">
-                    <div className="absolute -inset-4 bg-white rounded-3xl shadow-sm"></div>
+                    <div className="absolute -inset-4"></div>
                     <img
                       src={item.image.src}
                       alt={item.title || "Art style example"}
-                      className="relative w-full rounded-2xl border border-slate-200/60 transition-transform duration-500 hover:scale-[1.02]"
+                      className="relative w-full transition-transform duration-500 hover:scale-[1.02] px-8"
                     />
                   </div>
                 )}

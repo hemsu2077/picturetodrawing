@@ -252,7 +252,6 @@ export async function getStripeBilling(sub_id: string) {
     return billing;
   } catch (e) {
     console.log("get subscription billing failed: ", e);
-    // 返回 null 而不是抛出错误，让调用方处理
     return null;
   }
 }
