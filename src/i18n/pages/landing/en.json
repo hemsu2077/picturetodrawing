@@ -29,15 +29,7 @@
         }
       ]
     },
-    "buttons": [
-      {
-        "title": "Try for Free",
-        "url": "https://picturetodrawing.com",
-        "target": "_blank",
-        "variant": "link",
-        "icon": "RiArrowRightUpLine"
-      }
-    ],
+
     "show_sign": true,
     "show_theme": true,
     "show_locale": false
@@ -51,7 +43,7 @@
       {
         "title": "Try for Free",
         "icon": "RiFlashlightFill",
-        "url": "/pricing",
+        "url": "/#drawing-generator",
         "target": "_self",
         "variant": "default"
       }
@@ -189,8 +181,8 @@
     "buttons": [
       {
         "title": "Start Your Picture to Drawing Conversion Now",
-        "url": "https://picturetodrawing.com",
-        "target": "_blank",
+        "url": "/#drawing-generator",
+        "target": "_self",
         "icon": "GoArrowUpRight"
       }
     ]

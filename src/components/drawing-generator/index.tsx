@@ -15,6 +15,7 @@ import { useAppContext } from '@/contexts/app';
 import { isAuthEnabled } from '@/lib/auth';
 import { useLocale } from 'next-intl';
 import { Pricing } from '@/types/blocks/pricing';
+import { RiCoinsLine } from 'react-icons/ri';
 
 interface DrawingGeneratorProps {
   className?: string;
@@ -194,9 +195,10 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
                 </>
               ) : (
                 <>
-                  <Wand2 className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
                   <span className="hidden sm:inline">Convert to Drawing</span>
                   <span className="sm:hidden">Convert</span>
+                  <RiCoinsLine className="inline-block ml-2" />
+                  <span className="text-sm">2</span>
                 </>
               )}
             </Button>
