@@ -55,25 +55,25 @@
     "name": "introduce",
     "title": "Professional Quality Picture to Drawing Results",
     "label": "Introduce",
-    "description": "PicturetoDrawing is a NextJS boilerplate for building AI SaaS startups. Built in a variety of templates and components.",
+    "description": "",
     "image": {
-      "src": "/imgs/features/1.png"
+      "src": "https://files.picturetodrawing.com/sample/draw-introduce.mp4"
     },
     "items": [
       {
         "title": "Authentic Artistic Rendering",
         "description": "Every photo to sketch conversion preserves natural textures, shadows, and details that make your drawing look hand-crafted by a professional artist.",
-        "icon": "RiNextjsFill"
+        "icon": "RiPaintBrushLine"
       },
       {
         "title": "High Resolution Output",
         "description": "Download your picture to drawing conversions in high resolution, perfect for printing, framing, or sharing on social media platforms.",
-        "icon": "RiDatabase2Line"
+        "icon": "RiHdLine"
       },
       {
         "title": "Privacy Protected",
         "description": "Your photos are processed securely and automatically deleted after conversion. We never store or share your personal images.",
-        "icon": "RiCloudyFill"
+        "icon": "RiShieldCheckLine"
       }
     ]
   },
@@ -86,25 +86,25 @@
       {
         "title": "Advanced AI Technology",
         "description": "Our cutting-edge artificial intelligence analyzes every detail of your photo to create authentic picture to drawing conversions that maintain the essence and emotion of your original image.",
-        "icon": "RiNextjsFill",
+        "icon": "RiBrainLine",
         "image": {
-          "src": "/imgs/features/2.png"
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
       },
       {
         "title": "Multiple Art Styles",
         "description": "Choose from pencil sketches, charcoal drawings, watercolor paintings, and ink illustrations. Each photo to sketch style is carefully crafted to deliver unique artistic interpretations of your pictures.",
-        "icon": "RiClapperboardAiLine",
+        "icon": "RiPaletteLine",
         "image": {
-          "src": "/imgs/features/3.png"
+          "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
         }
       },
       {
         "title": "Lightning Fast Processing",
         "description": "Experience instant picture to drawing transformation. Our optimized servers process your photo to sketch conversion in seconds, not minutes, delivering professional results without the wait.",
-        "icon": "RiCodeFill",
+        "icon": "RiFlashlightLine",
         "image": {
-          "src": "/imgs/features/4.png"
+          "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
         }
       }
     ]
@@ -123,21 +123,21 @@
         "title": "Upload Your Photo",
         "description": "Simply drag and drop your image or click to browse. Our picture to drawing converter supports JPG, PNG, and other popular formats. Your photo will be processed securely with complete privacy protection.",
         "image": {
-          "src": "/imgs/features/5.png"
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
       },
       {
         "title": "Choose Your Art Style",
         "description": "Select from our collection of artistic styles including pencil sketch, charcoal drawing, watercolor painting, and ink illustration. Each photo to sketch style offers unique aesthetic qualities for your picture to drawing transformation.",
         "image": {
-          "src": "/imgs/features/6.png"
+          "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
         }
       },
       {
         "title": "Download Your Artwork",
         "description": "Watch as our AI transforms your picture to drawing in seconds. Preview your converted photo to sketch result and download in high resolution. Perfect for printing, sharing, or creating personalized gifts.",
         "image": {
-          "src": "/imgs/features/7.png"
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
       }
     ]
@@ -240,14 +240,6 @@
             "description": "Perfect for landscapes, floral arrangements, and artistic projects that benefit from a romantic, painterly aesthetic."
           }
         ]
-      }
-    ],
-    "buttons": [
-      {
-        "title": "Try All Art Styles",
-        "url": "/pricing",
-        "target": "_self",
-        "icon": "RiBrushLine"
       }
     ]
   },

@@ -31,7 +31,7 @@ export default function TransformationExamples({ section }: { section: SectionTy
                     <div className="absolute -inset-4"></div>
                     <img
                       src={item.image.src}
-                      alt={item.title || "Art style example"}
+                      alt={item.title + " - Picture to Drawing style example"}
                       className="relative w-full transition-transform duration-500 hover:scale-[1.02] px-8"
                     />
                   </div>
@@ -48,7 +48,7 @@ export default function TransformationExamples({ section }: { section: SectionTy
                         <Icon name={item.icon} className="text-white text-xl" />
                       </div>
                     )}
-                    <h3 className="text-3xl font-bold text-slate-900 tracking-tight">
+                    <h3 className="text-3xl font-bold tracking-tight">
                       {item.title}
                     </h3>
                   </div>
@@ -56,13 +56,13 @@ export default function TransformationExamples({ section }: { section: SectionTy
                   {/* Description */}
                   <div className="space-y-4">
                     {item.description && (
-                      <p className="text-lg text-slate-600 leading-relaxed">
+                      <p className="text-lg text-muted-foreground leading-relaxed">
                         {item.description}
                       </p>
                     )}
                     
                     {item.children?.[0]?.description && (
-                      <p className="text-base text-slate-500 border-l-2 border-slate-200 pl-4">
+                      <p className="text-base text-muted-foreground border-l-2 border-border pl-4">
                         {item.children[0].description}
                       </p>
                     )}
@@ -70,12 +70,12 @@ export default function TransformationExamples({ section }: { section: SectionTy
                   
                   {/* CTA Button */}
                   <Button
-                    variant="default"
+                    variant="outline"
                     size="lg"
-                    className="bg-slate-900 hover:bg-slate-800 text-white border-0 rounded-xl px-8 py-3 h-auto font-medium transition-colors duration-200"
+                    className=""
                     asChild
                   >
-                    <a href="/pricing" target="_self">
+                    <a href={`#drawing-generator?style=${item.title?.toLowerCase().replace(/\s+/g, '-')}`} target="_self">
                       <Icon name="RiBrushLine" className="mr-2 text-lg" />
                       Try {item.title} Style
                     </a>

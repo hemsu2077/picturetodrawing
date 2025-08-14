@@ -56,6 +56,55 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
     loadPricingData();
   }, [locale]);
 
+  // Handle URL parameters for style selection
+  useEffect(() => {
+    // Only run on client side
+    if (typeof window === 'undefined') return;
+    
+    // Style name mapping from display names to IDs
+    const styleMapping: { [key: string]: string } = {
+      'pencil-sketch': 'pencil-sketch',
+      'line-drawing': 'line-drawing', 
+      'charcoal-drawing': 'charcoal-drawing',
+      'color-pencil-drawing': 'color-pencil-drawing',
+      'watercolor-painting': 'watercolor-painting',
+      'inkart': 'inkart'
+    };
+
+    const checkAndSetStyle = () => {
+      // Parse URL hash for parameters (e.g., #drawing-generator?style=pencil-sketch)
+      const hash = window.location.hash;
+      
+      if (hash.includes('?')) {
+        const queryString = hash.split('?')[1];
+        const urlParams = new URLSearchParams(queryString);
+        const styleParam = urlParams.get('style');
+        
+        if (styleParam && styleMapping[styleParam]) {
+          setSelectedStyle(styleMapping[styleParam]);
+          
+          // Scroll to the drawing generator section smoothly
+          setTimeout(() => {
+            const element = document.getElementById('drawing-generator');
+            if (element) {
+              element.scrollIntoView({ behavior: 'smooth' });
+            }
+          }, 100);
+        }
+      }
+    };
+
+    // Run immediately
+    checkAndSetStyle();
+    
+    // Also listen for hash changes
+    window.addEventListener('hashchange', checkAndSetStyle);
+    
+    return () => {
+      window.removeEventListener('hashchange', checkAndSetStyle);
+    };
+  }, []);
+
   const handleImageSelect = (file: File | string, preview: string) => {
     if (file && preview) {
       setSelectedImage({ file, preview });
@@ -155,7 +204,7 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
   };
 
   return (
-    <div className={cn("w-full max-w-5xl mx-auto space-y-4 sm:space-y-6 px-2 sm:px-4", className)}>
+    <div className={cn("w-full max-w-5xl mx-auto space-y-4 mb-16 sm:space-y-6 px-2 sm:px-4", className)}>
       {/* Main Input Card */}
       <Card className="p-4 sm:p-6 md:p-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">

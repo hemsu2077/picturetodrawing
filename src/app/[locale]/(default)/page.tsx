@@ -51,8 +51,8 @@ export default async function LandingPage({
       <div id="drawing-generator">
         <DrawingGenerator />
       </div>
-      {page.transformation_examples && <TransformationExamples section={page.transformation_examples} />}
       {page.introduce && <Feature1 section={page.introduce} />}
+      {page.transformation_examples && <TransformationExamples section={page.transformation_examples} />}
       {page.benefit && <Feature2 section={page.benefit} />}
       {page.perfect_uses && <PerfectUses section={page.perfect_uses} />}
       {page.comparison && <Comparison section={page.comparison} />}
