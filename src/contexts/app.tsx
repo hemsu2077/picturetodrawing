@@ -30,6 +30,7 @@ export const AppContextProvider = ({ children }: { children: ReactNode }) => {
 
   const [showSignModal, setShowSignModal] = useState<boolean>(false);
   const [user, setUser] = useState<User | null>(null);
+  const [showPricingModal, setShowPricingModal] = useState<boolean>(false);
 
   const [showFeedback, setShowFeedback] = useState<boolean>(false);
 
@@ -121,6 +122,8 @@ export const AppContextProvider = ({ children }: { children: ReactNode }) => {
         setShowSignModal,
         user,
         setUser,
+        showPricingModal,
+        setShowPricingModal,
         showFeedback,
         setShowFeedback,
       }}

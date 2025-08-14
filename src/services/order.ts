@@ -246,13 +246,13 @@ export async function getStripeBilling(sub_id: string) {
 
     const billing = await stripe.billingPortal.sessions.create({
       customer: subscription.customer as string,
-
       return_url: `${process.env.NEXT_PUBLIC_WEB_URL}/my-orders`,
     });
 
     return billing;
   } catch (e) {
     console.log("get subscription billing failed: ", e);
-    throw e;
+    // 返回 null 而不是抛出错误，让调用方处理
+    return null;
   }
 }

@@ -80,10 +80,19 @@ export default async function () {
         if (sub_id) {
           const billing = await getStripeBilling(sub_id);
 
+          if (billing && billing.url) {
+            return (
+              <Link href={billing.url} target="_blank">
+                {t("my_orders.table.manage_billing")}
+              </Link>
+            );
+          }
+          
+          // if billing is not available, show a message
           return (
-            <Link href={billing.url} target="_blank">
-              {t("my_orders.table.manage_billing")}
-            </Link>
+            <span className="text-gray-500 text-sm">
+              {t("my_orders.table.billing_unavailable")}
+            </span>
           );
         }
 

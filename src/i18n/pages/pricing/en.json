@@ -6,10 +6,6 @@
     "description": "Transform your photos into stunning artwork with PicturetoDrawing.",
     "groups": [
       {
-        "name": "one-time",
-        "title": "Pay as you go"
-      },
-      {
         "name": "monthly",
         "title": "Monthly"
       },
@@ -17,7 +13,11 @@
         "name": "yearly",
         "title": "Annually",
         "is_featured": true,
-        "label": "save up to 30%"
+        "label": "save 30%"
+      },
+      {
+        "name": "one-time",
+        "title": "Pay as you go"
       }
     ],
     "items": [
@@ -208,7 +208,7 @@
         "description": "Total $83.88/year, Save with annual billing for consistent creators.",
         "features_title": "Includes",
         "features": [
-          "200 credits per month",
+          "200 credits per month (2400 credits per year)",
           "No watermark",
           "Fast generation",
           "HD download",
@@ -240,7 +240,7 @@
         "label": "Popular",
         "features_title": "Includes",
         "features": [
-          "400 credits per month",
+          "400 credits per month (4800 credits per year)",
           "No watermark",
           "Fast generation",
           "HD download",
@@ -272,7 +272,7 @@
         "description": "Total $251.88/year, Maximum savings for high-volume users.",
         "features_title": "Includes",
         "features": [
-          "1000 credits per month",
+          "1000 credits per month (12000 credits per year)",
           "No watermark",
           "Fast generation",
           "HD download",

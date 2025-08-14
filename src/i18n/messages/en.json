@@ -50,6 +50,7 @@
       "github_username": "GitHub Username",
       "status": "Status",
       "manage_billing": "Manage Billing",
+      "billing_unavailable": "Billing unavailable",
       "interval": "Interval",
       "interval_month": "Monthly",
       "interval_year": "Annually",

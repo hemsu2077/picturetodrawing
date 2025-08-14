@@ -95,22 +95,22 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
   }, [pricing.items]);
 
   return (
-    <section id={pricing.name} className="py-16">
-      <div className="container">
-        <div className="mx-auto mb-12 text-center">
-          <h2 className="mb-4 text-4xl font-semibold lg:text-5xl">
+    <section id={pricing.name} className="py-4 sm:py-8 lg:py-16">
+      <div className="container px-2 sm:px-4">
+        <div className="mx-auto mb-6 sm:mb-8 lg:mb-12 text-center">
+          <h2 className="mb-2 sm:mb-4 text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-semibold">
             {pricing.title}
           </h2>
-          <p className="text-muted-foreground lg:text-lg">
+          <p className="text-sm sm:text-base lg:text-lg text-muted-foreground px-2">
             {pricing.description}
           </p>
         </div>
         <div className="w-full flex flex-col items-center gap-1">
           {pricing.groups && pricing.groups.length > 0 && (
-            <div className="flex h-12 mb-12 items-center rounded-md bg-muted p-1 text-lg">
+            <div className="flex flex-col sm:flex-row h-auto sm:h-12 mb-6 sm:mb-8 lg:mb-12 items-center rounded-md bg-muted p-1 text-lg gap-1 sm:gap-0">
               <RadioGroup
                 value={group}
-                className={`h-full grid-cols-${pricing.groups.length}`}
+                className={`h-full w-full sm:grid-cols-${pricing.groups.length} flex flex-col sm:grid`}
                 onValueChange={(value) => {
                   setGroup(value);
                 }}
@@ -119,7 +119,7 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
                   return (
                     <div
                       key={i}
-                      className='h-full rounded-md transition-all has-[button[data-state="checked"]]:bg-white'
+                      className='h-10 sm:h-full rounded-md transition-all has-[button[data-state="checked"]]:bg-white'
                     >
                       <RadioGroupItem
                         value={item.name || ""}
@@ -147,10 +147,10 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
             </div>
           )}
           <div
-            className={`w-full mt-0 grid gap-6 md:grid-cols-${
-              pricing.items?.filter(
+            className={`w-full mt-0 grid gap-4 sm:gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-${
+              Math.min(3, pricing.items?.filter(
                 (item) => !item.group || item.group === group
-              )?.length
+              )?.length || 1)
             }`}
           >
             {pricing.items?.map((item, index) => {
@@ -161,17 +161,17 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
               return (
                 <div
                   key={index}
-                  className={`rounded-lg p-6 ${
+                  className={`rounded-lg p-4 sm:p-6 ${
                     item.is_featured
                       ? "border-primary border-2 bg-card text-card-foreground"
                       : "border-muted border"
                   }`}
                 >
-                  <div className="flex h-full flex-col justify-between gap-5">
+                  <div className="flex h-full flex-col justify-between gap-3 sm:gap-5">
                     <div>
-                      <div className="flex items-center gap-2 mb-4">
+                      <div className="flex items-center gap-2 mb-3 sm:mb-4">
                         {item.title && (
-                          <h3 className="text-xl font-semibold">
+                          <h3 className="text-lg sm:text-xl font-semibold">
                             {item.title}
                           </h3>
                         )}
@@ -179,58 +179,58 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
                         {item.label && (
                           <Badge
                             variant="outline"
-                            className="border-primary bg-primary px-1.5 text-primary-foreground"
+                            className="border-primary bg-primary px-1.5 text-primary-foreground text-xs"
                           >
                             {item.label}
                           </Badge>
                         )}
                       </div>
-                      <div className="flex items-end gap-2 mb-4">
+                      <div className="flex items-end gap-2 mb-3 sm:mb-4">
                         {item.original_price && (
-                          <span className="text-xl text-muted-foreground font-semibold line-through">
+                          <span className="text-lg sm:text-xl text-muted-foreground font-semibold line-through">
                             {item.original_price}
                           </span>
                         )}
                         {item.price && (
-                          <span className="text-5xl font-semibold">
+                          <span className="text-3xl sm:text-4xl lg:text-5xl font-semibold">
                             {item.price}
                           </span>
                         )}
                         {item.unit && (
-                          <span className="block font-semibold">
+                          <span className="block font-semibold text-sm sm:text-base">
                             {item.unit}
                           </span>
                         )}
                       </div>
                       {item.description && (
-                        <p className="text-muted-foreground">
+                        <p className="text-muted-foreground text-sm sm:text-base">
                           {item.description}
                         </p>
                       )}
                       {item.features_title && (
-                        <p className="mb-3 mt-6 font-semibold">
+                        <p className="mb-2 sm:mb-3 mt-4 sm:mt-6 font-semibold text-sm sm:text-base">
                           {item.features_title}
                         </p>
                       )}
                       {item.features && (
-                        <ul className="flex flex-col gap-3">
+                        <ul className="flex flex-col gap-2 sm:gap-3">
                           {item.features.map((feature, fi) => {
                             return (
-                              <li className="flex gap-2" key={`feature-${fi}`}>
-                                <Check className="mt-1 size-4 shrink-0" />
-                                {feature}
+                              <li className="flex gap-2 text-sm sm:text-base" key={`feature-${fi}`}>
+                                <Check className="mt-0.5 sm:mt-1 size-3 sm:size-4 shrink-0" />
+                                <span>{feature}</span>
                               </li>
                             );
                           })}
                         </ul>
                       )}
                     </div>
-                    <div className="flex flex-col gap-2">
+                    <div className="flex flex-col gap-2 mt-2 sm:mt-0">
                       {item.cn_amount && item.cn_amount > 0 ? (
-                        <div className="flex items-center gap-x-2 mt-2">
-                          <span className="text-sm">人民币支付 👉</span>
+                        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-x-2 mt-2">
+                          <span className="text-xs sm:text-sm">人民币支付 👉</span>
                           <div
-                            className="inline-block p-2 hover:cursor-pointer hover:bg-base-200 rounded-md"
+                            className="inline-block p-1.5 sm:p-2 hover:cursor-pointer hover:bg-base-200 rounded-md"
                             onClick={() => {
                               if (isLoading) {
                                 return;
@@ -241,14 +241,14 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
                             <img
                               src="/imgs/cnpay.png"
                               alt="cnpay"
-                              className="w-20 h-10 rounded-lg"
+                              className="w-16 sm:w-20 h-8 sm:h-10 rounded-lg"
                             />
                           </div>
                         </div>
                       ) : null}
                       {item.button && (
                         <Button
-                          className="w-full flex items-center justify-center gap-2 font-semibold"
+                          className="w-full flex items-center justify-center gap-2 font-semibold h-10 sm:h-11 text-sm sm:text-base"
                           disabled={isLoading}
                           onClick={() => {
                             if (isLoading) {
@@ -274,7 +274,7 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
                         </Button>
                       )}
                       {item.tip && (
-                        <p className="text-muted-foreground text-sm mt-2">
+                        <p className="text-muted-foreground text-xs sm:text-sm mt-2">
                           {item.tip}
                         </p>
                       )}

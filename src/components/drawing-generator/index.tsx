@@ -1,17 +1,20 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { ImageUpload } from './image-upload';
 import { StyleSelector } from './style-selector';
 import { RatioSelector } from './ratio-selector';
 import { RecentDrawings } from './result-display';
+import PricingModal from '@/components/pricing-modal';
 import { Wand2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useSession } from 'next-auth/react';
 import { useAppContext } from '@/contexts/app';
 import { isAuthEnabled } from '@/lib/auth';
+import { useLocale } from 'next-intl';
+import { Pricing } from '@/types/blocks/pricing';
 
 interface DrawingGeneratorProps {
   className?: string;
@@ -19,7 +22,8 @@ interface DrawingGeneratorProps {
 
 export function DrawingGenerator({ className }: DrawingGeneratorProps) {
   const { data: session } = isAuthEnabled() ? useSession() : { data: null };
-  const { setShowSignModal } = useAppContext();
+  const { setShowSignModal, showPricingModal, setShowPricingModal } = useAppContext();
+  const locale = useLocale();
   
   const [selectedImage, setSelectedImage] = useState<{ file: File | string; preview: string } | null>(null);
   const [selectedStyle, setSelectedStyle] = useState('pencil-sketch');
@@ -27,6 +31,29 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
   const [isGenerating, setIsGenerating] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [newDrawing, setNewDrawing] = useState<{ style: string; ratio: string } | null>(null);
+  const [pricingData, setPricingData] = useState<Pricing | null>(null);
+
+  // Load pricing data
+  useEffect(() => {
+    const loadPricingData = async () => {
+      try {
+        // Load pricing data from the same source as pricing page
+        const pricingModule = await import(`@/i18n/pages/pricing/${locale}.json`);
+        setPricingData(pricingModule.pricing as Pricing);
+      } catch (error) {
+        console.error('Failed to load pricing data:', error);
+        // Fallback to English if current locale fails
+        try {
+          const pricingModule = await import('@/i18n/pages/pricing/en.json');
+          setPricingData(pricingModule.pricing as Pricing);
+        } catch (fallbackError) {
+          console.error('Failed to load fallback pricing data:', fallbackError);
+        }
+      }
+    };
+
+    loadPricingData();
+  }, [locale]);
 
   const handleImageSelect = (file: File | string, preview: string) => {
     if (file && preview) {
@@ -100,8 +127,9 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
           setShowSignModal(true);
           return;
         } else if (response.status === 402) {
-          // Insufficient credits - show specific error message
+          // Insufficient credits - show pricing modal
           setError(data.message || 'Insufficient credits');
+          setShowPricingModal(true);
           return;
         }
         setError(data.message || 'Generation failed');
@@ -126,12 +154,12 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
   };
 
   return (
-    <div className={cn("w-full max-w-5xl mx-auto space-y-6 px-4", className)}>
+    <div className={cn("w-full max-w-5xl mx-auto space-y-4 sm:space-y-6 px-2 sm:px-4", className)}>
       {/* Main Input Card */}
-      <Card className="p-6 md:p-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+      <Card className="p-4 sm:p-6 md:p-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
           {/* Left Side - Image Upload */}
-          <div className="space-y-4">
+          <div className="space-y-3 sm:space-y-4">
             <ImageUpload
               onImageSelect={handleImageSelect}
               selectedImage={selectedImage}
@@ -140,7 +168,7 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
           </div>
 
           {/* Right Side - All Controls */}
-          <div className="space-y-6">
+          <div className="space-y-4 sm:space-y-6">
             <StyleSelector
               selectedStyle={selectedStyle}
               onStyleChange={setSelectedStyle}
@@ -155,18 +183,20 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
             <Button
               onClick={handleGenerate}
               disabled={!selectedImage || isGenerating}
-              className="w-full h-12 text-lg"
+              className="w-full h-11 sm:h-12 text-base sm:text-lg"
               size="lg"
             >
               {isGenerating ? (
                 <>
-                  <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2" />
-                  Generating...
+                  <div className="animate-spin rounded-full h-3 w-3 sm:h-4 sm:w-4 border-b-2 border-white mr-2" />
+                  <span className="hidden sm:inline">Generating...</span>
+                  <span className="sm:hidden">Processing...</span>
                 </>
               ) : (
                 <>
-                  <Wand2 className="h-5 w-5 mr-2" />
-                  Convert to Drawing
+                  <Wand2 className="h-4 w-4 sm:h-5 sm:w-5 mr-2" />
+                  <span className="hidden sm:inline">Convert to Drawing</span>
+                  <span className="sm:hidden">Convert</span>
                 </>
               )}
             </Button>
@@ -180,6 +210,15 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
         newDrawing={newDrawing}
         error={error}
       />
+
+      {/* Pricing Modal */}
+      {pricingData && (
+        <PricingModal
+          open={showPricingModal}
+          onOpenChange={setShowPricingModal}
+          pricing={pricingData}
+        />
+      )}
     </div>
   );
 }
