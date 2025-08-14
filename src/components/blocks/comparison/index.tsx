@@ -20,38 +20,61 @@ export default function Comparison({ section }: { section: SectionType }) {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-8 mb-16">
+        <div className="grid lg:grid-cols-3 gap-6 mb-16">
           {section.items?.map((item, i) => (
             <div key={i} className="text-center">
-              <Card className={`${i === 1 ? 'bg-red-50 border-red-200' : i === 2 ? 'bg-green-50 border-green-200' : 'bg-gray-50'}`}>
-                <CardContent className="p-6">
+              <div className={`
+                relative rounded-xl border-2 
+                ${i === 2 ? 'border-primary bg-background ring-primary/20' : 
+                  i === 1 ? 'border-red-200 bg-background' : 
+                  'border-gray-200 bg-white'}
+              `}>
+                {i === 2 && (
+                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                    <Badge className="bg-primary text-white px-4 py-1 text-sm font-semibold">
+                      ⭐ Recommended
+                    </Badge>
+                  </div>
+                )}
+                
+                <div className="p-6">
                   {item.image && (
-                    <div className="aspect-square mb-6 overflow-hidden rounded-lg">
+                    <div className="aspect-square mb-6 overflow-hidden rounded-xl border-2 border-gray-100">
                       <img
                         src={item.image.src}
-                        alt={item.title || "Comparison example"}
+                        alt={item.title + " - Picture to Drawing"}
                         className="w-full h-full object-cover"
                       />
                     </div>
                   )}
-                  <h3 className="text-xl font-bold mb-4">{item.title}</h3>
-                  <p className="text-muted-foreground">{item.description}</p>
-                  {i === 1 && (
-                    <div className="mt-4">
-                      <Badge variant="destructive" className="bg-red-500">
-                        ❌ Basic Filter
-                      </Badge>
-                    </div>
-                  )}
-                  {i === 2 && (
-                    <div className="mt-4">
-                      <Badge variant="default" className="bg-green-500">
-                        ✓ Our AI
-                      </Badge>
-                    </div>
-                  )}
-                </CardContent>
-              </Card>
+                  
+                  <h3 className={`text-xl font-bold mb-4 ${i === 2 ? 'text-primary' : 'text-gray-900'}`}>
+                    {item.title}
+                  </h3>
+                  
+                  <p className={`${i === 2 ? 'text-gray-700' : 'text-muted-foreground'} leading-relaxed`}>
+                    {item.description}
+                  </p>
+                  
+                  <div className="mt-6">
+                    {i === 0 && (
+                      <div className="inline-flex items-center px-3 py-1 rounded-full bg-gray-100 text-gray-600 text-sm">
+                       Original Photo
+                      </div>
+                    )}
+                    {i === 1 && (
+                      <div className="inline-flex items-center px-3 py-1 rounded-full bg-red-100 text-red-600 text-sm">
+                        Traditional Filter
+                      </div>
+                    )}
+                    {i === 2 && (
+                      <div className="inline-flex items-center px-4 py-2 rounded-full bg-primary text-white font-medium">
+                         AI Conversion
+                      </div>
+                    )}
+                  </div>
+                </div>
+              </div>
             </div>
           ))}
         </div>

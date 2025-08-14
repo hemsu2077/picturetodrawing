@@ -116,7 +116,7 @@ export default function Feature2({ section }: { section: SectionType }) {
                     <div>
                       <img
                         src={item.image?.src}
-                        alt={item.image?.alt || item.title}
+                        alt={item.title + " - Picture to Drawing"}
                         className="max-h-auto w-full object-cover lg:max-h-none rounded-md"
                       />
                     </div>

@@ -294,28 +294,28 @@
   },
   "comparison": {
     "name": "comparison",
-    "title": "See the Difference: Our AI vs Traditional Filters",
+    "title": "Our Picture to Drawing AI vs Traditional Filters",
     "description": "Compare our advanced AI-powered picture to drawing technology with basic photo filters. Experience the superior quality and authenticity that sets our photo to sketch converter apart from the competition.",
     "items": [
       {
         "title": "Original Photo",
         "description": "Standard digital photograph ready for artistic transformation using different methods.",
         "image": {
-          "src": "/imgs/comparison/original.jpg"
+          "src": "https://files.picturetodrawing.com/sample/compare-original.webp"
         }
       },
       {
         "title": "Traditional Filter",
         "description": "Artificial, over-processed look with lost details and unrealistic photo to sketch appearance.",
         "image": {
-          "src": "/imgs/comparison/filter.jpg"
+          "src": "https://files.picturetodrawing.com/sample/compare-traditional.webp"
         }
       },
       {
         "title": "Our AI Result",
         "description": "Authentic, detailed picture to drawing with preserved textures and natural artistic flow.",
         "image": {
-          "src": "/imgs/comparison/ai-result.jpg"
+          "src": "https://files.picturetodrawing.com/sample/compare-ai.webp"
         }
       }
     ]
