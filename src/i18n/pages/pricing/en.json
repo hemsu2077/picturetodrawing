@@ -45,7 +45,7 @@
           "icon": "RiFlashlightFill"
         },
         "product_id": "basic",
-        "product_name": "PicturetoDrawing Basic",
+        "product_name": "Basic One-time",
         "credits": 100,
         "valid_months": 2,
         "group": "one-time"
@@ -74,7 +74,7 @@
           "icon": "RiFlashlightFill"
         },
         "product_id": "standard",
-        "product_name": "PicturetoDrawing Standard",
+        "product_name": "Standard One-time",
         "credits": 400,
         "valid_months": 6,
         "group": "one-time"
@@ -104,7 +104,7 @@
           "icon": "RiFlashlightFill"
         },
         "product_id": "premium",
-        "product_name": "PicturetoDrawing Premium",
+        "product_name": "Premium One-time",
         "credits": 800,
         "valid_months": 12,
         "group": "one-time"
@@ -135,7 +135,7 @@
           "icon": "RiFlashlightFill"
         },
         "product_id": "basic-monthly",
-        "product_name": "PicturetoDrawing Basic Monthly",
+        "product_name": "Basic Monthly",
         "credits": 200,
         "valid_months": 1,
         "group": "monthly"
@@ -167,7 +167,7 @@
           "icon": "RiFlashlightFill"
         },
         "product_id": "standard-monthly",
-        "product_name": "PicturetoDrawing Standard Monthly",
+        "product_name": "Standard Monthly",
         "credits": 400,
         "valid_months": 1,
         "group": "monthly"
@@ -198,7 +198,7 @@
           "icon": "RiFlashlightFill"
         },
         "product_id": "premium-monthly",
-        "product_name": "PicturetoDrawing Premium Monthly",
+        "product_name": "Premium Monthly",
         "credits": 1000,
         "valid_months": 1,
         "group": "monthly"
@@ -229,7 +229,7 @@
           "icon": "RiFlashlightFill"
         },
         "product_id": "basic-yearly",
-        "product_name": "PicturetoDrawing Basic Annually",
+        "product_name": "Basic Annually",
         "credits": 2400,
         "valid_months": 12,
         "group": "yearly"
@@ -262,7 +262,7 @@
           "icon": "RiFlashlightFill"
         },
         "product_id": "standard-yearly",
-        "product_name": "PicturetoDrawing Standard Annually",
+        "product_name": "Standard Annually",
         "credits": 4800,
         "valid_months": 12,
         "group": "yearly"
@@ -294,7 +294,7 @@
           "icon": "RiFlashlightFill"
         },
         "product_id": "premium-yearly",
-        "product_name": "PicturetoDrawing Premium Annually",
+        "product_name": "Premium Annually",
         "credits": 12000,
         "valid_months": 12,
         "group": "yearly"

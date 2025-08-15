@@ -32,6 +32,20 @@
     "close_title": "Close",
     "cancel_title": "Cancel"
   },
+  "my_account": {
+    "title": "My Account",
+    "description": "Manage your account information",
+    "account_management": "Account Management",
+    "profile_information": "Profile Information",
+    "sign_out": "Sign Out",
+    "available_credits": "Available Credits",
+    "add_credits": "Add Credits",
+    "current_plan": "Current Plan",
+    "free_plan": "Free",
+    "upgrade": "Upgrade",
+    "manage_billing": "Manage Billing",
+    "valid_until": "Valid until"
+  },
   "my_orders": {
     "title": "My Orders",
     "description": "orders paid with PicturetoDrawing.",
