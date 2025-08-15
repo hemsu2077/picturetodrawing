@@ -10,8 +10,12 @@
     "credits": "Credits",
     "api_keys": "API Keys",
     "my_orders": "My Orders",
+    "my_credits": "My Credits",
+    "my_drawings": "My Drawings",
     "user_center": "User Center",
-    "admin_system": "Admin System"
+    "admin_system": "Admin System",
+    "balance": "Balance",
+    "recharge": "Add Credits"
   },
   "sign_modal": {
     "sign_in_title": "Sign In",
@@ -35,7 +39,7 @@
   "my_account": {
     "title": "My Account",
     "description": "Manage your account information",
-    "account_management": "Account Management",
+    "account_management": "My Account",
     "profile_information": "Profile Information",
     "sign_out": "Sign Out",
     "available_credits": "Available Credits",

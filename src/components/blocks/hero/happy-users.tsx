@@ -9,8 +9,8 @@ export default function HappyUsers() {
         {Array.from({ length: 5 }).map((_, index) => (
           <Avatar className="size-12 border" key={index}>
             <AvatarImage
-              src={`/imgs/users/${index + 1}.jpg`}
-              alt="placeholder"
+              src={`https://files.picturetodrawing.com/users/${index + 1}.webp`}
+              alt="user"
             />
           </Avatar>
         ))}
