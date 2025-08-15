@@ -205,15 +205,13 @@ export function RecentDrawings({
                             strokeWidth={3}
                           />
                           <div className="text-xs text-center px-2">
-                            <div className="font-medium">{newDrawing && formatStyle(newDrawing.style)}</div>
                             <div className="text-muted-foreground mt-1">About 50-60 seconds</div>
                             <Button
                               variant="outline"
                               size="sm"
-                              className="mt-2 h-6 text-xs"
+                              className="mt-2 h-8 text-xs hidden sm:block"
                               onClick={() => window.open('/pricing', '_blank')}
                             >
-                              <Zap className="h-3 w-3 mr-1" />
                               Upgrade for 2x Speed
                             </Button>
                           </div>
@@ -228,7 +226,6 @@ export function RecentDrawings({
                             strokeWidth={3}
                           />
                           <div className="text-xs text-center px-2">
-                            <div className="font-medium">{newDrawing && formatStyle(newDrawing.style)}</div>
                             <div className="text-muted-foreground mt-1">About 20-30 seconds</div>
                           </div>
                         </>

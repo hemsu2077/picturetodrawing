@@ -15,8 +15,8 @@ export default function PricingModal({ open, onOpenChange, pricing }: PricingMod
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="w-[95vw] max-w-7xl h-[95vh] max-h-[95vh] overflow-y-auto p-2 sm:p-6">
         <DialogHeader className="pb-2 sm:pb-4">
-          <DialogTitle className="text-sm text-muted-foreground text-center">
-         
+          <DialogTitle className="text-sm text-indigo-500 text-center">
+           Insufficient credits. Choose a plan to continue
           </DialogTitle>
         </DialogHeader>
         <div className="overflow-y-auto">

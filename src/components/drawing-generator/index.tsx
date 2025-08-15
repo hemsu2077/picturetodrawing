@@ -144,11 +144,7 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
         imageData = await convertImageToBase64(selectedImage.file);
       }
       
-      // If free user, wait 50 seconds before calling API
-      if (isPaidUser === false) {
-        await new Promise(resolve => setTimeout(resolve, 50000)); // 50 seconds
-      }
-      
+      // Call API immediately for both paid and free users
       const response = await fetch('/api/gen-drawing', {
         method: 'POST',
         headers: {
@@ -180,6 +176,11 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
 
       // API returns {code: 0, message: "ok", data: [...]}
       if (data.code === 0 && data.data) {
+        // For free users, wait 50 seconds before showing the result
+        if (isPaidUser === false) {
+          await new Promise(resolve => setTimeout(resolve, 50000)); // 50 seconds
+        }
+        
         // Clear the new drawing state since generation is complete
         setNewDrawing(null);
         setError(null);
