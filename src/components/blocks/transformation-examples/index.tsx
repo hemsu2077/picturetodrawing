@@ -75,9 +75,9 @@ export default function TransformationExamples({ section }: { section: SectionTy
                     className=""
                     asChild
                   >
-                    <a href={`#drawing-generator?style=${item.title?.toLowerCase().replace(/\s+/g, '-')}`} target="_self">
+                    <a href="#drawing-generator" target="_self">
                       <Icon name="RiBrushLine" className="mr-2 text-lg" />
-                      Try {item.title} Style
+                     Convert your photo to drawing
                     </a>
                   </Button>
                 </div>

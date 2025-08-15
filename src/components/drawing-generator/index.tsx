@@ -56,54 +56,7 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
     loadPricingData();
   }, [locale]);
 
-  // Handle URL parameters for style selection
-  useEffect(() => {
-    // Only run on client side
-    if (typeof window === 'undefined') return;
-    
-    // Style name mapping from display names to IDs
-    const styleMapping: { [key: string]: string } = {
-      'pencil-sketch': 'pencil-sketch',
-      'line-drawing': 'line-drawing', 
-      'charcoal-drawing': 'charcoal-drawing',
-      'color-pencil-drawing': 'color-pencil-drawing',
-      'watercolor-painting': 'watercolor-painting',
-      'inkart': 'inkart'
-    };
 
-    const checkAndSetStyle = () => {
-      // Parse URL hash for parameters (e.g., #drawing-generator?style=pencil-sketch)
-      const hash = window.location.hash;
-      
-      if (hash.includes('?')) {
-        const queryString = hash.split('?')[1];
-        const urlParams = new URLSearchParams(queryString);
-        const styleParam = urlParams.get('style');
-        
-        if (styleParam && styleMapping[styleParam]) {
-          setSelectedStyle(styleMapping[styleParam]);
-          
-          // Scroll to the drawing generator section smoothly
-          setTimeout(() => {
-            const element = document.getElementById('drawing-generator');
-            if (element) {
-              element.scrollIntoView({ behavior: 'smooth' });
-            }
-          }, 100);
-        }
-      }
-    };
-
-    // Run immediately
-    checkAndSetStyle();
-    
-    // Also listen for hash changes
-    window.addEventListener('hashchange', checkAndSetStyle);
-    
-    return () => {
-      window.removeEventListener('hashchange', checkAndSetStyle);
-    };
-  }, []);
 
   const handleImageSelect = (file: File | string, preview: string) => {
     if (file && preview) {
