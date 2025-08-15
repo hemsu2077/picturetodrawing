@@ -13,25 +13,25 @@
     "nav": {
       "items": [
         {
-          "title": "Features",
-          "url": "/#feature",
-          "icon": "RiSparkling2Line"
+          "title": "Home",
+          "url": "/",
+          "icon": ""
         },
         {
           "title": "Pricing",
           "url": "/pricing",
-          "icon": "RiMoneyDollarCircleLine"
+          "icon": ""
         },
         {
           "title": "My Drawings",
           "url": "/my-drawings",
-          "icon": "RiGalleryLine"
+          "icon": ""
         }
       ]
     },
 
     "show_sign": true,
-    "show_theme": true,
+    "show_theme": false,
     "show_locale": false
   },
   "hero": {
@@ -128,14 +128,14 @@
       },
       {
         "title": "Choose Your Art Style",
-        "description": "Select from our collection of artistic styles including pencil sketch, charcoal drawing, watercolor painting, and ink illustration. Each photo to sketch style offers unique aesthetic qualities for your picture to drawing transformation.",
+        "description": "Select from our collection of artistic styles including pencil sketch, charcoal drawing, watercolor painting, and ink illustration. Each picture to drawing style offers unique aesthetic qualities for your picture to drawing transformation.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
         }
       },
       {
         "title": "Download Your Artwork",
-        "description": "Watch as our AI transforms your picture to drawing in seconds. Preview your converted photo to sketch result and download in high resolution. Perfect for printing, sharing, or creating personalized gifts.",
+        "description": "Watch as our AI transforms your picture to drawing in seconds. Preview your converted picture to drawing result and download in high resolution. Perfect for printing, sharing, or creating personalized gifts.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
@@ -191,7 +191,7 @@
   "transformation_examples": {
     "name": "transformation_examples",
     "title": "Picture to Drawing Transformation Examples",
-    "description": "See the incredible results of our AI-powered photo to sketch converter. These real examples demonstrate the quality and artistic authenticity of our picture to drawing technology across different subjects and styles.",
+    "description": "See the incredible results of our AI-powered picture to drawing converter. These real examples demonstrate the quality and artistic authenticity of our picture to drawing technology across different subjects and styles.",
     "items": [
       {
         "title": "Pencil Sketch",
@@ -246,48 +246,48 @@
   "perfect_uses": {
     "name": "perfect_uses",
     "title": "Perfect Uses for Picture to Drawing Conversion",
-    "description": "Discover the endless possibilities of our photo to sketch technology. From personal gifts to professional projects, our picture to drawing converter serves diverse creative needs with exceptional quality.",
+    "description": "Discover the endless possibilities of our picture to drawing technology. From personal gifts to professional projects, our picture to drawing converter serves diverse creative needs with exceptional quality.",
     "items": [
       {
         "title": "Personalized Gifts",
         "description": "Create unique, heartfelt gifts by converting cherished family photos to artistic drawings. Perfect for anniversaries, birthdays, and special occasions that deserve memorable picture to drawing keepsakes.",
         "image": {
-          "src": "/imgs/uses/gifts.jpg"
+          "src": "https://files.picturetodrawing.com/sample/uses-gift.webp?v=20250815"
         }
       },
       {
         "title": "Social Media Content",
-        "description": "Stand out on Instagram, Facebook, and other platforms with artistic photo to sketch content. Our picture to drawing styles create engaging posts that capture attention and increase engagement.",
+        "description": "Stand out on Instagram, Facebook, and other platforms with artistic picture to drawing content. Our picture to drawing styles create engaging posts that capture attention and increase engagement.",
         "image": {
-          "src": "/imgs/uses/social-media.jpg"
+          "src": "https://files.picturetodrawing.com/sample/uses-social.webp?v=20250815"
         }
       },
       {
         "title": "Marketing Materials",
         "description": "Enhance brochures, websites, and advertisements with distinctive photo to sketch artwork. Our picture to drawing converter helps businesses create memorable visual branding that differentiates from competitors.",
         "image": {
-          "src": "/imgs/uses/marketing.jpg"
+          "src": "https://files.picturetodrawing.com/sample/uses-marketing.webp?v=20250815"
         }
       },
       {
         "title": "Home Decoration",
         "description": "Transform your favorite photographs into elegant wall art using our picture to drawing technology. Create cohesive home decor with personalized photo to sketch artwork that reflects your style.",
         "image": {
-          "src": "/imgs/uses/decoration.jpg"
+          "src": "https://files.picturetodrawing.com/sample/uses-decoration.webp?v=20250815"
         }
       },
       {
         "title": "Educational Projects",
         "description": "Teachers and students use our photo to sketch converter for art education, presentations, and creative assignments. Picture to drawing technology helps illustrate concepts and inspire artistic learning.",
         "image": {
-          "src": "/imgs/uses/education.jpg"
+          "src": "https://files.picturetodrawing.com/sample/uses-educational.webp?v=20250815"
         }
       },
       {
         "title": "Creative Portfolios",
         "description": "Artists, designers, and creatives enhance their portfolios with diverse photo to sketch styles. Our picture to drawing converter demonstrates versatility and artistic vision across different mediums.",
         "image": {
-          "src": "/imgs/uses/portfolios.jpg"
+          "src": "https://files.picturetodrawing.com/sample/uses-creative.webp?v=20250815"
         }
       }
     ]
@@ -358,7 +358,7 @@
     "name": "footer",
     "brand": {
       "title": "PicturetoDrawing",
-      "description": "PicturetoDrawing is a NextJS boilerplate for building AI SaaS startups. Ship Fast with a variety of templates and components.",
+      "description": "Transform your photos into stunning artwork with our AI-powered picture to drawing converter. Professional quality photo to sketch results in seconds.",
       "logo": {
         "src": "/logo.png",
         "alt": "PicturetoDrawing"
@@ -372,59 +372,19 @@
           "title": "About",
           "children": [
             {
-              "title": "Features",
-              "url": "/#feature",
-              "target": "_self"
-            },
-            {
-              "title": "Showcases",
-              "url": "/#showcase",
+              "title": "Home",
+              "url": "/",
               "target": "_self"
             },
             {
               "title": "Pricing",
-              "url": "/#pricing",
+              "url": "/pricing",
               "target": "_self"
-            }
-          ]
-        },
-        {
-          "title": "Resources",
-          "children": [
-            {
-              "title": "Documents",
-              "url": "https://docs.picturetodrawing.com",
-              "target": "_blank"
             },
             {
-              "title": "Components",
-              "url": "https://picturetodrawing.com/components",
-              "target": "_blank"
-            },
-            {
-              "title": "Templates",
-              "url": "https://picturetodrawing.com/templates",
-              "target": "_blank"
-            }
-          ]
-        },
-        {
-          "title": "Friends",
-          "children": [
-            {
-              "title": "ThinkAny",
-              "url": "https://thinkany.ai",
-              "target": "_blank"
-            },
-            {
-              "title": "HeyBeauty",
-              "url": "https://heybeauty.ai",
-              "target": "_blank"
-            },
-            {
-              "title": "Pagen",
-              "url": "https://pagen.so",
-              "target": "_blank"
+              "title": "My Drawings",
+              "url": "/my-drawings",
+              "target": "_self"
             }
           ]
         }
@@ -432,24 +392,6 @@
     },
     "social": {
       "items": [
-        {
-          "title": "X",
-          "icon": "RiTwitterXFill",
-          "url": "https://x.com/picturetodrawingai",
-          "target": "_blank"
-        },
-        {
-          "title": "Github",
-          "icon": "RiGithubFill",
-          "url": "https://github.com/picturetodrawingai",
-          "target": "_blank"
-        },
-        {
-          "title": "Discord",
-          "icon": "RiDiscordFill",
-          "url": "https://discord.gg/HQNnrzjZQS",
-          "target": "_blank"
-        },
         {
           "title": "Email",
           "icon": "RiMailLine",

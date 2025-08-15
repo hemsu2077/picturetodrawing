@@ -5,6 +5,7 @@ import HeroBg from "./bg";
 import { Hero as HeroType } from "@/types/blocks/hero";
 import Icon from "@/components/icon";
 import { Link } from "@/i18n/navigation";
+import { Gift, Shield, Zap } from "lucide-react";
 
 export default function Hero({ hero }: { hero: HeroType }) {
   if (hero.disabled) {
@@ -86,7 +87,20 @@ export default function Hero({ hero }: { hero: HeroType }) {
               </div>
             )}
             {hero.tip && (
-              <p className="mt-8 text-md text-muted-foreground">{hero.tip}</p>
+              <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
+                <div className="flex items-center gap-2">
+                  <Gift className="h-4 w-4 text-primary" />
+                  <span className="text-sm text-muted-foreground">Free to Try</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Shield className="h-4 w-4 text-primary" />
+                  <span className="text-sm text-muted-foreground">100% Secure</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Zap className="h-4 w-4 text-primary" />
+                  <span className="text-sm text-muted-foreground">Instant Results</span>
+                </div>
+              </div>
             )}
             {hero.show_happy_users && <HappyUsers />}
           </div>

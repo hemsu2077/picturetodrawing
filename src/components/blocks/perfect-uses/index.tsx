@@ -22,30 +22,24 @@ export default function PerfectUses({ section }: { section: SectionType }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {section.items?.map((item, i) => (
             <Card key={i} className="bg-white border-none shadow-none transition-colors duration-200">
-              {item.image ? (
-                <div className="aspect-video overflow-hidden rounded-t-lg">
-                  <img
-                    src={item.image.src}
-                    alt={item.title + " - Picture to Drawing"}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ) : (
-                <div className="aspect-video overflow-hidden rounded-t-lg bg-gradient-to-br from-orange-100 to-orange-200">
-                  <img
-                    src={`https://picsum.photos/400/225?random=${i + 1}`}
-                    alt={item.title || "Use case example"}
-                    className="w-full h-full object-cover"
-                  />
+              {item.image && (
+                <div className="flex justify-center mb-4">
+                  <div className="w-32 h-32 overflow-hidden rounded-lg">
+                    <img
+                      src={item.image.src}
+                      alt={item.title + " - Picture to Drawing"}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 </div>
               )}
-              <CardHeader className="pb-3">
-                <CardTitle className="text-lg sm:text-xl text-gray-900">
+              <CardHeader className="pb-0">
+                <CardTitle className="text-lg sm:text-xl text-gray-900 text-center">
                   {item.title}
                 </CardTitle>
               </CardHeader>
               <CardContent className="pt-0">
-                <p className="text-muted-foreground leading-relaxed text-sm sm:text-base">
+                <p className="text-muted-foreground leading-relaxed text-sm sm:text-base text-center">
                   {item.description}
                 </p>
               </CardContent>

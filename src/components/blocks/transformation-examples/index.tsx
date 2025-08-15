@@ -85,32 +85,6 @@ export default function TransformationExamples({ section }: { section: SectionTy
             </div>
           ))}
         </div>
-
-        {/* Section Buttons */}
-        {section.buttons && section.buttons.length > 0 && (
-          <div className="text-center mt-20">
-            <div className="flex flex-wrap justify-center gap-4">
-              {section.buttons.map((button, i) => (
-                <Button
-                  key={i}
-                  variant={button.variant === "outline" ? "outline" : "default"}
-                  size="lg"
-                  className={
-                    button.variant === "outline" 
-                      ? "border-slate-300 text-slate-700 hover:bg-slate-50 rounded-xl px-8 py-3 h-auto font-medium"
-                      : "bg-slate-900 hover:bg-slate-800 text-white rounded-xl px-8 py-3 h-auto font-medium"
-                  }
-                  asChild
-                >
-                  <a href={button.url} target={button.target || "_self"}>
-                    {button.icon && <Icon name={button.icon} className="mr-2" />}
-                    {button.title}
-                  </a>
-                </Button>
-              ))}
-            </div>
-          </div>
-        )}
       </div>
     </section>
   );
