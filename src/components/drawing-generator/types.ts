@@ -1,5 +1,5 @@
 // Re-export shared types
-export { Drawing } from './shared-types';
+export type { Drawing } from './shared-types';
 
 export interface GeneratedImage {
   url: string;
