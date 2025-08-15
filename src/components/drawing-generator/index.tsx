@@ -33,6 +33,8 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
   const [error, setError] = useState<string | null>(null);
   const [newDrawing, setNewDrawing] = useState<{ style: string; ratio: string } | null>(null);
   const [pricingData, setPricingData] = useState<Pricing | null>(null);
+  const [isPaidUser, setIsPaidUser] = useState<boolean | null>(null);
+  const [isCheckingPaidStatus, setIsCheckingPaidStatus] = useState(false);
 
   // Load pricing data
   useEffect(() => {
@@ -55,6 +57,38 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
 
     loadPricingData();
   }, [locale]);
+
+  // Check paid status when user session changes
+  useEffect(() => {
+    const checkPaidStatus = async () => {
+      if (!session?.user?.uuid) {
+        setIsPaidUser(false);
+        return;
+      }
+
+      setIsCheckingPaidStatus(true);
+      try {
+        const response = await fetch('/api/check-paid-status');
+        if (response.ok) {
+          const data = await response.json();
+          if (data.code === 0) {
+            setIsPaidUser(data.data.isPaid);
+          } else {
+            setIsPaidUser(false);
+          }
+        } else {
+          setIsPaidUser(false);
+        }
+      } catch (error) {
+        console.error('Failed to check paid status:', error);
+        setIsPaidUser(false);
+      } finally {
+        setIsCheckingPaidStatus(false);
+      }
+    };
+
+    checkPaidStatus();
+  }, [session?.user?.uuid]);
 
 
 
@@ -108,6 +142,11 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
       } else {
         // Uploaded file - convert to base64
         imageData = await convertImageToBase64(selectedImage.file);
+      }
+      
+      // If free user, wait 50 seconds before calling API
+      if (isPaidUser === false) {
+        await new Promise(resolve => setTimeout(resolve, 50000)); // 50 seconds
       }
       
       const response = await fetch('/api/gen-drawing', {
@@ -213,6 +252,7 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
         isGenerating={isGenerating}
         newDrawing={newDrawing}
         error={error}
+        isPaidUser={isPaidUser}
       />
 
       {/* Pricing Modal */}

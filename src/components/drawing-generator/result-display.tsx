@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Loader2, Eye, ArrowRight } from 'lucide-react';
+import { Loader2, Eye, ArrowRight, Zap } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useSession } from 'next-auth/react';
 import { isAuthEnabled } from '@/lib/auth';
@@ -14,6 +14,7 @@ import { formatStyle } from './shared-utils';
 import { DrawingCard } from './drawing-card';
 import { DrawingDetailModal } from './drawing-detail-modal';
 import { DeleteConfirmationDialog } from './delete-confirmation-dialog';
+import { ProgressCircle } from './progress-circle';
 
 interface RecentDrawingsProps {
   isGenerating?: boolean;
@@ -24,6 +25,7 @@ interface RecentDrawingsProps {
   error?: string | null;
   onNewDrawingGenerated?: (drawing: Drawing) => void;
   className?: string;
+  isPaidUser?: boolean | null;
 }
 
 export function RecentDrawings({ 
@@ -31,7 +33,8 @@ export function RecentDrawings({
   newDrawing = null,
   error = null,
   onNewDrawingGenerated,
-  className 
+  className,
+  isPaidUser = null
 }: RecentDrawingsProps) {
   const { data: session } = isAuthEnabled() ? useSession() : { data: null };
   const [drawings, setDrawings] = useState<Drawing[]>([]);
@@ -192,13 +195,44 @@ export function RecentDrawings({
                     </>
                   ) : (
                     <>
-                      <Loader2 className="h-6 w-6 animate-spin text-primary mb-2" />
-                      <div className="text-xs text-center px-2">
-                        <div className="font-medium">{newDrawing && formatStyle(newDrawing.style)}</div>
-                        <div className="text-muted-foreground mt-1">
-                          {isGenerating ? "Generating..." : isRefreshing ? "Loading..." : "Processing..."}
-                        </div>
-                      </div>
+                      {isPaidUser === false ? (
+                        // Free user: progress circle + upgrade button
+                        <>
+                          <ProgressCircle 
+                            duration={80} 
+                            className="mb-3" 
+                            size={48} 
+                            strokeWidth={3}
+                          />
+                          <div className="text-xs text-center px-2">
+                            <div className="font-medium">{newDrawing && formatStyle(newDrawing.style)}</div>
+                            <div className="text-muted-foreground mt-1">About 50-60 seconds</div>
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              className="mt-2 h-6 text-xs"
+                              onClick={() => window.open('/pricing', '_blank')}
+                            >
+                              <Zap className="h-3 w-3 mr-1" />
+                              Upgrade for 2x Speed
+                            </Button>
+                          </div>
+                        </>
+                      ) : (
+                        // Paid user: traditional loading + progress bar
+                        <>
+                          <ProgressCircle 
+                            duration={40} 
+                            className="mb-3" 
+                            size={48} 
+                            strokeWidth={3}
+                          />
+                          <div className="text-xs text-center px-2">
+                            <div className="font-medium">{newDrawing && formatStyle(newDrawing.style)}</div>
+                            <div className="text-muted-foreground mt-1">About 20-30 seconds</div>
+                          </div>
+                        </>
+                      )}
                     </>
                   )}
                 </div>
