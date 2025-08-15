@@ -66,7 +66,7 @@
         "currency": "USD",
         "price": "$19.99",
         "unit": "one-time",
-        "is_featured": true,
+        "is_featured": false,
         "tip": "Most popular choice",
         "button": {
           "title": "Get Started",
@@ -96,7 +96,7 @@
         "currency": "USD",
         "price": "$29.99",
         "unit": "one-time",
-        "is_featured": false,
+        "is_featured": true,
         "tip": "Best value for heavy users",
         "button": {
           "title": "Get Started",

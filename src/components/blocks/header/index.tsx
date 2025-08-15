@@ -86,7 +86,7 @@ export default function Header({ header }: { header: HeaderType }) {
                                   <li key={ii}>
                                     <Link
                                       className={cn(
-                                        "flex select-none gap-4 rounded-md p-3 leading-none no-underline outline-hidden transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                                        "flex select-none gap-4 rounded-md p-3 leading-none no-underline outline-hidden transition-colors hover:bg-accent/10 hover:text-accent-foreground focus:bg-accent/10 focus:text-accent-foreground"
                                       )}
                                       href={iitem.url as any}
                                       target={iitem.target}
@@ -232,7 +232,7 @@ export default function Header({ header }: { header: HeaderType }) {
                                 <Link
                                   key={ii}
                                   className={cn(
-                                    "flex select-none gap-4 rounded-md p-3 leading-none outline-hidden transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                                    "flex select-none gap-4 rounded-md p-3 leading-none outline-hidden transition-colors hover:bg-accent/50 hover:text-accent-foreground focus:bg-accent/50 focus:text-accent-foreground"
                                   )}
                                   href={iitem.url as any}
                                   target={iitem.target}
