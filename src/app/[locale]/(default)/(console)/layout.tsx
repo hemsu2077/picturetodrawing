@@ -23,23 +23,23 @@ export default async function ({ children }: { children: ReactNode }) {
           is_active: false,
         },
         {
-          title: t("user.my_orders"),
-          url: "/my-orders",
-          icon: "RiOrderPlayLine",
-          is_active: false,
-        },
-        {
-          title: t("my_credits.title"),
-          url: "/my-credits",
-          icon: "RiBankCardLine",
-          is_active: false,
-        },
-        {
           title: "My Drawings",
           url: "/my-drawings",
           icon: "RiImageLine",
           is_active: false,
         },
+        {
+          title: t("user.my_orders"),
+          url: "/my-orders",
+          icon: "RiShoppingBagLine",
+          is_active: false,
+        },
+        {
+          title: t("my_credits.title"),
+          url: "/my-credits",
+          icon: "RiCoinsLine",
+          is_active: false,
+        }
       ],
     },
   };

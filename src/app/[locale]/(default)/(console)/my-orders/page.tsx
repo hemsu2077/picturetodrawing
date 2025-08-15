@@ -60,6 +60,7 @@ export default async function () {
         moment(item.paid_at).format("YYYY-MM-DD HH:mm:ss"),
     },
     {
+      title: t("my_orders.table.actions"),
       callback: async (item: any) => {
         if (
           !item.stripe_session_id ||
@@ -82,7 +83,7 @@ export default async function () {
 
           if (billing && billing.url) {
             return (
-              <Link href={billing.url} target="_blank">
+              <Link href={billing.url} target="_blank" className="text-indigo-500">
                 {t("my_orders.table.manage_billing")}
               </Link>
             );
@@ -103,17 +104,6 @@ export default async function () {
 
   const table: TableSlotType = {
     title: t("my_orders.title"),
-    toolbar: {
-      items: [
-        {
-          title: t("my_orders.read_docs"),
-          icon: "RiBookLine",
-          url: "https://docs.picturetodrawing.com",
-          target: "_blank",
-          variant: "default",
-        },
-      ],
-    },
     columns: columns,
     data: orders,
     empty_message: t("my_orders.no_orders"),

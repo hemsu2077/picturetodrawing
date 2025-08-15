@@ -10,6 +10,7 @@ import { redirect } from "next/navigation";
 import { signOut } from "@/auth";
 import Link from "next/link";
 import moment from "moment";
+import { RiCoinsLine } from "react-icons/ri";
 
 export default async function MyAccountPage() {
   const t = await getTranslations();
@@ -80,6 +81,7 @@ export default async function MyAccountPage() {
     return {
       type: "one-time",
       name: latestOneTime.product_name,
+      endDate: latestOneTime.expired_at ? new Date(latestOneTime.expired_at) : null,
       action: "upgrade",
       order: latestOneTime
     };
@@ -130,50 +132,50 @@ export default async function MyAccountPage() {
   };
 
   return (
-    <div className="space-y-6 p-6">
-      <h1 className="text-3xl font-bold">{t("my_account.account_management")}</h1>
+    <div className="space-y-4 sm:space-y-6 py-4 sm:py-6 px-2">
+      <h1 className="text-2xl sm:text-3xl font-bold truncate">{t("my_account.account_management")}</h1>
       
       {/* Profile Information */}
       <Card className="shadow-none">
         <CardHeader>
-          <CardTitle>{t("my_account.profile_information")}</CardTitle>
+          <CardTitle className="text-primary text-sm">{t("my_account.profile_information")}</CardTitle>
         </CardHeader>
-        <CardContent className="flex items-center justify-between">
-          <div className="flex items-center space-x-4">
-            <Avatar className="h-16 w-16">
+        <CardContent className="flex flex-col sm:flex-row items-start sm:items-center justify-between space-y-4 sm:space-y-0">
+          <div className="flex items-center space-x-3 sm:space-x-4 min-w-0 flex-1">
+            <Avatar className="h-12 w-12 sm:h-16 sm:w-16 flex-shrink-0">
               <AvatarImage src={user_info?.avatar_url || ""} />
-              <AvatarFallback className="bg-primary text-white text-xl">
+              <AvatarFallback className="bg-purple-500 text-white text-sm sm:text-xl">
                 {user_info?.nickname?.charAt(0)?.toUpperCase() || user_email?.charAt(0)?.toUpperCase() || "U"}
               </AvatarFallback>
             </Avatar>
-            <div>
-              <h3 className="text-lg font-semibold">
+            <div className="min-w-0 flex-1">
+              <h3 className="text-base sm:text-lg font-semibold truncate">
                 {user_info?.nickname || user_email?.split("@")[0] || "User"}
               </h3>
-              <p className="text-gray-600">{user_email}</p>
+              <p className="text-gray-600 text-sm truncate">{user_email}</p>
             </div>
           </div>
-          <form action={handleSignOut}>
-            <Button type="submit" variant="outline">
+          <form action={handleSignOut} className="w-full sm:w-auto">
+            <Button type="submit" variant="outline" className="w-full sm:w-auto text-sm">
               {t("my_account.sign_out")}
             </Button>
           </form>
         </CardContent>
       </Card>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
         {/* Available Credits */}
         <Card className="shadow-none">
           <CardHeader>
-            <CardTitle>{t("my_account.available_credits")}</CardTitle>
+            <CardTitle className="text-primary text-sm">{t("my_account.available_credits")}</CardTitle>
           </CardHeader>
-          <CardContent className="space-y-4">
+          <CardContent className="space-y-3 sm:space-y-4">
             <div className="flex items-center space-x-2">
-              <span className="text-green-600 text-2xl">🌱</span>
-              <span className="text-3xl font-bold">{userCredits?.left_credits || 0}</span>
+              <RiCoinsLine className="text-primary text-xl sm:text-2xl flex-shrink-0" />
+              <span className="text-2xl sm:text-3xl font-bold">{userCredits?.left_credits || 0}</span>
             </div>
             <Link href="/pricing">
-              <Button variant="outline" className="w-full">
+              <Button variant="outline" className="w-full text-sm">
                 {t("my_account.add_credits")}
               </Button>
             </Link>
@@ -182,16 +184,16 @@ export default async function MyAccountPage() {
 
         {/* Current Plan */}
         <Card className="shadow-none">
-          <CardHeader>
-            <CardTitle>{t("my_account.current_plan")}</CardTitle>
+          <CardHeader >
+            <CardTitle className="text-primary text-sm">{t("my_account.current_plan")}</CardTitle>
           </CardHeader>
-          <CardContent className="space-y-4">
+          <CardContent className="space-y-3 sm:space-y-4">
             <div>
-              <h3 className="text-2xl font-bold">
+              <h3 className="text-xl sm:text-2xl font-bold truncate">
                 {currentPlan.name === "Free" ? t("my_account.free_plan") : currentPlan.name}
               </h3>
-              {currentPlan.type === "subscription" && currentPlan.endDate && (
-                <p className="text-sm text-gray-600">
+              {currentPlan.endDate && (
+                <p className="text-xs sm:text-sm text-gray-600 truncate">
                   {t("my_account.valid_until")} {moment(currentPlan.endDate).format("YYYY-MM-DD")}
                 </p>
               )}

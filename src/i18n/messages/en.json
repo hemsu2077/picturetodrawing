@@ -44,7 +44,7 @@
     "free_plan": "Free",
     "upgrade": "Upgrade",
     "manage_billing": "Manage Billing",
-    "valid_until": "Valid until"
+    "valid_until": "Expires on"
   },
   "my_orders": {
     "title": "My Orders",
@@ -68,14 +68,15 @@
       "interval": "Interval",
       "interval_month": "Monthly",
       "interval_year": "Annually",
-      "interval_one_time": "One-Time"
+      "interval_one_time": "One-Time",
+      "actions": "Actions"
     }
   },
   "my_credits": {
     "title": "My Credits",
-    "left_tip": "left credits: {left_credits}",
+    "left_tip": "Available credits: {left_credits}",
     "no_credits": "No credits records",
-    "recharge": "Recharge",
+    "recharge": "Add Credits",
     "table": {
       "trans_no": "Trans No",
       "trans_type": "Trans Type",

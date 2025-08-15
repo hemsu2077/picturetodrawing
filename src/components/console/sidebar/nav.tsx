@@ -21,7 +21,7 @@ export default function ({
   return (
     <nav
       className={cn(
-        "flex space-x-2 lg:flex-col lg:space-x-0 lg:space-y-1",
+        "flex space-x-1 lg:flex-col lg:space-x-0 lg:space-y-1",
         className
       )}
       {...props}
@@ -35,11 +35,15 @@ export default function ({
             item.is_active || pathname.includes(item.url as any)
               ? "bg-muted/50 text-primary hover:bg-muted hover:text-primary"
               : "hover:bg-transparent hover:underline",
-            "justify-start"
+            "justify-start flex-col lg:flex-row items-center px-2 py-3 lg:px-3 lg:py-2 min-w-0 flex-1"
           )}
         >
-          {item.icon && <Icon name={item.icon} className="w-4 h-4" />}
-          {item.title}
+          {item.icon && (
+            <Icon name={item.icon} className="w-4 h-4 lg:mr-2 mb-1 lg:mb-0 flex-shrink-0" />
+          )}
+          <span className="text-xs lg:text-sm font-medium text-center lg:text-left truncate">
+            {item.title}
+          </span>
         </Link>
       ))}
     </nav>

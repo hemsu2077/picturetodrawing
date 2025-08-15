@@ -11,7 +11,7 @@ export default async function ConsoleLayout({
 }) {
   return (
     <div className="container md:max-w-7xl py-8 mx-auto">
-      <div className="w-full space-y-6 p-4 pb-16 block">
+      <div className="w-full space-y-6 px-0 pb-16 block">
         <div className="flex flex-col space-y-8 lg:flex-row lg:space-x-12 lg:space-y-0">
           {sidebar?.nav?.items && (
             <aside className="md:min-w-40 flex-shrink-0">
