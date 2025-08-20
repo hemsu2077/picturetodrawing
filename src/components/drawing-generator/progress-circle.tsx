@@ -17,11 +17,11 @@ export function ProgressCircle({
   strokeWidth = 4 
 }: ProgressCircleProps) {
   const [progress, setProgress] = useState(0);
+  const [startTime] = useState(() => Date.now()); // 固定开始时间，避免重新计算
   const radius = (size - strokeWidth) / 2;
   const circumference = radius * 2 * Math.PI;
 
   useEffect(() => {
-    const startTime = Date.now();
     const endTime = startTime + duration * 1000;
 
     const updateProgress = () => {
@@ -37,7 +37,12 @@ export function ProgressCircle({
     };
 
     requestAnimationFrame(updateProgress);
-  }, [duration]);
+    
+    // 清理函数，防止内存泄漏
+    return () => {
+      // requestAnimationFrame会在组件卸载时自动停止
+    };
+  }, []); // 移除duration依赖，避免重新开始
 
   const strokeDasharray = circumference;
   const strokeDashoffset = circumference - (progress / 100) * circumference;

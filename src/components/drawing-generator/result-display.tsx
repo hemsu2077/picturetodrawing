@@ -48,6 +48,7 @@ export function RecentDrawings({
     isGenerating: false,
     hasNewDrawing: false
   });
+  const [showProgressCard, setShowProgressCard] = useState(false);
 
   // Fetch recent drawings
   const fetchRecentDrawings = async () => {
@@ -77,6 +78,11 @@ export function RecentDrawings({
 
   // Track generation state changes and handle completion
   useEffect(() => {
+    // Show progress card when generation starts
+    if (isGenerating && newDrawing && !showProgressCard) {
+      setShowProgressCard(true);
+    }
+    
     // Detect when generation just completed
     // Previous state: was generating, current state: not generating
     if (lastGenerationState.isGenerating && !isGenerating && !error && !isRefreshing) {
@@ -95,10 +101,16 @@ export function RecentDrawings({
           console.error('Failed to refresh drawings:', error);
         } finally {
           setIsRefreshing(false);
+          setShowProgressCard(false); // 隐藏进度卡片
         }
       };
       
       refreshAfterGeneration();
+    }
+    
+    // Reset progress card on error
+    if (error) {
+      setShowProgressCard(false);
     }
     
     // Update the last state
@@ -106,7 +118,7 @@ export function RecentDrawings({
       isGenerating: isGenerating,
       hasNewDrawing: !!newDrawing
     });
-  }, [isGenerating, newDrawing, error, lastGenerationState.isGenerating, isRefreshing]);
+  }, [isGenerating, newDrawing, error, lastGenerationState.isGenerating, isRefreshing, showProgressCard]);
 
   // Handle delete drawing
   const handleDelete = async (drawing: Drawing) => {
@@ -180,7 +192,7 @@ export function RecentDrawings({
           {/* Drawings Grid */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             {/* New drawing being generated, loading, or error state */}
-            {(isGenerating && newDrawing) || isRefreshing || error ? (
+            {showProgressCard || error ? (
               <Card className="aspect-square p-0 relative overflow-hidden shadow-none border-dashed">
                 <div className="absolute inset-0 flex flex-col items-center justify-center bg-gray-50">
                   {error ? (
@@ -237,7 +249,7 @@ export function RecentDrawings({
             ) : null}
             
             {/* Existing drawings */}
-            {drawings.slice(0, (isGenerating && newDrawing) || isRefreshing || error ? 3 : 4).map((drawing) => (
+            {drawings.slice(0, showProgressCard || error ? 3 : 4).map((drawing) => (
               <DrawingCard
                 key={drawing.uuid}
                 drawing={drawing}
@@ -250,7 +262,7 @@ export function RecentDrawings({
             ))}
             
             {/* Empty slots when less than 4 drawings */}
-            {!isGenerating && !isRefreshing && !error && drawings.length < 4 && Array.from({ length: 4 - drawings.length }).map((_, index) => (
+            {!showProgressCard && !error && drawings.length < 4 && Array.from({ length: 4 - drawings.length }).map((_, index) => (
               <Card key={`empty-${index}`} className="aspect-square p-0 relative overflow-hidden shadow-none border-dashed">
                 <div className="absolute inset-0 flex items-center justify-center bg-gray-50">
                   <Eye className="h-8 w-8 text-gray-300" />
