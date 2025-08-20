@@ -9,19 +9,28 @@ export default function () {
   const { data: session, status } = useSession();
 
   const oneTapLogin = async function () {
-    const options = {
-      client_id: process.env.NEXT_PUBLIC_AUTH_GOOGLE_ID,
-      auto_select: false,
-      cancel_on_tap_outside: false,
-      context: "signin",
-    };
+    try {
+      const options = {
+        client_id: process.env.NEXT_PUBLIC_AUTH_GOOGLE_ID,
+        auto_select: false,
+        cancel_on_tap_outside: false,
+        context: "signin",
+      };
 
-    // console.log("onetap login trigger", options);
+      // console.log("onetap login trigger", options);
 
-    googleOneTap(options, (response: any) => {
-      console.log("onetap login ok", response);
-      handleLogin(response.credential);
-    });
+      googleOneTap(options, (response: any) => {
+        console.log("onetap login ok", response);
+        handleLogin(response.credential);
+      });
+    } catch (error) {
+      // silent handle FedCM related errors, these errors usually do not affect user experience
+      if (error instanceof Error && error.message.includes('FedCM')) {
+        console.debug('FedCM error (expected during logout):', error.message);
+      } else {
+        console.error("Google One Tap initialization error:", error);
+      }
+    }
   };
 
   const handleLogin = async function (credentials: string) {
