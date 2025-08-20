@@ -62,7 +62,7 @@ export default function DailyCheckin() {
       });
       const result = await response.json();
       
-      if (result.code === 0) {
+      if (result.code === 200 || result.code === 0) {
         toast.success(result.message);
         // Recalculate cycle credits after successful checkin
         const calculateCycleCredits = (consecutiveDays: number): number => {
