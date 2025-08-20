@@ -33,14 +33,10 @@ export default function DailyCheckin() {
   });
   const [loading, setLoading] = useState(false);
   const [initialLoading, setInitialLoading] = useState(true);
-  const [remindMe, setRemindMe] = useState(false);
 
   useEffect(() => {
     fetchCheckinStatus();
-    
-    // Load reminder preference from localStorage
-    const savedReminder = localStorage.getItem('checkin-reminder');
-    setRemindMe(savedReminder === 'true');
+  
   }, []);
 
   const fetchCheckinStatus = async () => {
@@ -87,16 +83,6 @@ export default function DailyCheckin() {
     }
   };
 
-  const handleReminderToggle = (checked: boolean) => {
-    setRemindMe(checked);
-    localStorage.setItem('checkin-reminder', checked.toString());
-    
-    if (checked) {
-      toast.success("Reminder enabled! We'll notify you daily.");
-    } else {
-      toast.info("Daily reminder disabled.");
-    }
-  };
 
   const generateCheckinDays = (): CheckinDay[] => {
     return DAILY_REWARDS.map((credits, index) => {
@@ -157,19 +143,20 @@ export default function DailyCheckin() {
           </CardTitle>
         </div>
         <div className="flex items-center justify-center gap-2">
-          <span className="text-lg">and</span>
-          <Badge variant="destructive" className="text-lg px-3 py-1">
-            Get {totalCredits} Credits
-          </Badge>
+          <span className="text-md">and Get 
+            <span className="text-purple-500 font-medium"> {totalCredits} </span>
+            Credits
+          </span>
         </div>
         
         <div className="flex items-center justify-between text-sm text-muted-foreground max-w-md mx-auto">
           <div className="flex items-center gap-2">
             <Calendar className="h-4 w-4" />
-            <span>You've checked in for {status.consecutive_days} day{status.consecutive_days !== 1 ? 's' : ''}</span>
+            <span>You've checked in for {status.consecutive_days} day{status.consecutive_days !== 1 ? 's' : ''} </span>
           </div>
           {status.checked_in_today && (
             <div className="flex items-center gap-2">
+              <span>, earned</span>
               <Coins className="h-4 w-4 text-primary" />
               <span className="text-primary font-medium">+{status.today_credits}</span>
             </div>
@@ -186,7 +173,7 @@ export default function DailyCheckin() {
               className={`
                 relative flex flex-col items-center justify-center p-3 sm:p-4 rounded-lg border-2 transition-all
                 ${day.completed 
-                  ? 'border-green-500 bg-green-50 dark:bg-green-900/20' 
+                  ? 'border-purple-500 bg-purple-50 dark:bg-purple-900/20' 
                   : day.isToday 
                     ? 'border-primary bg-primary/5 ring-2 ring-primary/20' 
                     : 'border-muted bg-muted/30'
@@ -197,7 +184,7 @@ export default function DailyCheckin() {
               <div className={`
                 w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center text-sm font-bold mb-1
                 ${day.completed 
-                  ? 'bg-green-500 text-white' 
+                  ? 'bg-purple-500 text-white' 
                   : day.isToday
                     ? 'bg-primary text-primary-foreground'
                     : 'bg-muted text-muted-foreground'
@@ -208,7 +195,7 @@ export default function DailyCheckin() {
               
               {/* Day Label */}
               <span className={`text-xs font-medium ${
-                day.completed ? 'text-green-600 dark:text-green-400' : ''
+                day.completed ? 'text-purple-600 dark:text-purple-400' : ''
               }`}>
                 Day {day.day}
               </span>
@@ -228,20 +215,6 @@ export default function DailyCheckin() {
           ))}
         </div>
 
-        {/* Reminder Checkbox */}
-        <div className="flex items-center space-x-2 justify-center">
-          <Checkbox
-            id="remind-me"
-            checked={remindMe}
-            onCheckedChange={handleReminderToggle}
-          />
-          <label
-            htmlFor="remind-me"
-            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
-          >
-            Remind me every day
-          </label>
-        </div>
 
         {/* Check In Button */}
         <div className="flex justify-center">
@@ -261,9 +234,6 @@ export default function DailyCheckin() {
               </div>
             ) : status.checked_in_today ? (
               <div className="flex items-center gap-2">
-                <div className="w-4 h-4 rounded-full bg-green-500 flex items-center justify-center">
-                  <span className="text-white text-xs">✓</span>
-                </div>
                 Checked In Today
               </div>
             ) : (
