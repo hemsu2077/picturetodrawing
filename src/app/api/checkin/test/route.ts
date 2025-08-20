@@ -125,13 +125,13 @@ async function simulateDay8(user_uuid: string) {
     // 删除现有签到记录
     await db().delete(checkins).where(eq(checkins.user_uuid, user_uuid));
 
-    // 创建完整7天签到记录
+    // 创建完整7天签到记录（从8天前到昨天）
     const records = [];
     const today = new Date();
     
     for (let i = 1; i <= 7; i++) {
       const date = new Date(today);
-      date.setDate(date.getDate() - (7 - i + 1)); // 从7天前开始到昨天
+      date.setDate(date.getDate() - (8 - i)); // 从8天前开始到昨天
       const dateStr = date.toISOString().split('T')[0];
       
       // 第i天对应consecutive_days = i
@@ -150,7 +150,7 @@ async function simulateDay8(user_uuid: string) {
 
     await db().insert(checkins).values(records);
 
-    return respJson(0, "Simulated completed 7-day streak, today is day 8");
+    return respJson(0, "Simulated completed 7-day streak, today is day 8 (new cycle starts)");
   } catch (error) {
     console.error("Simulate day 8 failed:", error);
     return respJson(500, "Failed to simulate day 8");

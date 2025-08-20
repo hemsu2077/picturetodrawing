@@ -176,7 +176,7 @@ export default function TestPanel({ onStatusUpdate }: TestPanelProps) {
               className="justify-start"
             >
               <Gift className="h-4 w-4 mr-2" />
-              模拟完成7天(第8天)
+              模拟第8天(重置新周期)
             </Button>
 
             {/* 设置为第3天 */}
@@ -263,8 +263,8 @@ export default function TestPanel({ onStatusUpdate }: TestPanelProps) {
                     <span>{debugInfo.data.last_checkin_date || "无"}</span>
                   </div>
                   <div>
-                    <span className="font-medium">今日获得积分：</span>
-                    <span className="text-purple-600">{debugInfo.data.today_credits}</span>
+                    <span className="font-medium">本周期累积积分：</span>
+                    <span className="text-purple-600">{debugInfo.data.cycle_credits || debugInfo.data.today_credits || 0}</span>
                   </div>
                 </div>
               </div>
@@ -288,7 +288,7 @@ export default function TestPanel({ onStatusUpdate }: TestPanelProps) {
             <li>• <strong>自定义天数</strong>：设置用户已连续签到的天数(0-7)</li>
             <li>• <strong>重置签到</strong>：清空所有签到记录，回到初始状态</li>
             <li>• <strong>模拟中断</strong>：模拟用户连续签到后中断3天的情况</li>
-            <li>• <strong>模拟第8天</strong>：模拟用户已完成7天签到，今天是新周期第1天</li>
+            <li>• <strong>模拟第8天</strong>：模拟用户昨天完成第7天，今天重置为新周期第1天</li>
             <li>• <strong>快速设置</strong>：一键设置常见的测试场景</li>
           </ul>
         </div>

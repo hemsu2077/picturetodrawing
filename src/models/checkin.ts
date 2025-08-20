@@ -72,6 +72,14 @@ export async function getUserCheckinStreak(
   
   // If last checkin was today or yesterday, return the streak
   if (lastCheckin.checkin_date === today || lastCheckin.checkin_date === yesterday) {
+    // If completed 7 days and last checkin was yesterday, reset streak for today
+    if (lastCheckin.consecutive_days >= 7 && lastCheckin.checkin_date === yesterday) {
+      return {
+        consecutive_days: 0, // Reset to 0 for new cycle
+        last_checkin_date: lastCheckin.checkin_date,
+      };
+    }
+    
     return {
       consecutive_days: lastCheckin.consecutive_days,
       last_checkin_date: lastCheckin.checkin_date,

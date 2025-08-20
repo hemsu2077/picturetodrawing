@@ -12,7 +12,7 @@ interface CheckinStatus {
   checked_in_today: boolean;
   consecutive_days: number;
   last_checkin_date: string | null;
-  today_credits: number;
+  cycle_credits: number;
 }
 
 interface CheckinDay {
@@ -29,7 +29,7 @@ export default function DailyCheckin() {
     checked_in_today: false,
     consecutive_days: 0,
     last_checkin_date: null,
-    today_credits: 0,
+    cycle_credits: 0,
   });
   const [loading, setLoading] = useState(false);
   const [initialLoading, setInitialLoading] = useState(true);
@@ -64,11 +64,20 @@ export default function DailyCheckin() {
       
       if (result.code === 0) {
         toast.success(result.message);
+        // Recalculate cycle credits after successful checkin
+        const calculateCycleCredits = (consecutiveDays: number): number => {
+          let totalCredits = 0;
+          for (let i = 1; i <= consecutiveDays; i++) {
+            totalCredits += DAILY_REWARDS[Math.min(i - 1, 6)];
+          }
+          return totalCredits;
+        };
+        
         setStatus(prev => ({
           ...prev,
           checked_in_today: true,
           consecutive_days: result.data.consecutive_days,
-          today_credits: result.data.credits_earned,
+          cycle_credits: calculateCycleCredits(result.data.consecutive_days),
         }));
       } else if (result.code === 208) {
         toast.info("Already checked in today!");
@@ -99,8 +108,14 @@ export default function DailyCheckin() {
         isToday = false; // today is completed, no need to highlight
       } else {
         // today is not checked in: the previous consecutive_days days are completed, today is not checked in
-        completed = dayNumber <= status.consecutive_days;
-        isToday = dayNumber === status.consecutive_days + 1;
+        // Special case: if consecutive_days is 0 (reset after 7 days), all should be uncompleted
+        if (status.consecutive_days === 0) {
+          completed = false;
+          isToday = dayNumber === 1; // First day should be highlighted as today
+        } else {
+          completed = dayNumber <= status.consecutive_days;
+          isToday = dayNumber === status.consecutive_days + 1;
+        }
       }
       
       return {
@@ -152,13 +167,12 @@ export default function DailyCheckin() {
         <div className="flex items-center justify-between text-sm text-muted-foreground max-w-md mx-auto">
           <div className="flex items-center gap-2">
             <Calendar className="h-4 w-4" />
-            <span>You've checked in for {status.consecutive_days} day{status.consecutive_days !== 1 ? 's' : ''} </span>
+            <span className="text-primary pr-2">You've checked in for {status.consecutive_days} day{status.consecutive_days !== 1 ? 's' : ''} </span>
           </div>
-          {status.checked_in_today && (
+          {status.cycle_credits > 0 && (
             <div className="flex items-center gap-2">
-              <span>, earned</span>
               <Coins className="h-4 w-4 text-primary" />
-              <span className="text-primary font-medium">+{status.today_credits}</span>
+              <span className="text-primary font-medium"> +{status.cycle_credits}</span>
             </div>
           )}
         </div>

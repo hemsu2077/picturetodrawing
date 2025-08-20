@@ -98,22 +98,33 @@ export async function getUserCheckinStatus(user_uuid: string) {
     const today = new Date().toISOString().split('T')[0];
     const todayCheckin = await findCheckinByUserAndDate(user_uuid, today);
     
+    // Calculate current cycle accumulated credits
+    const calculateCycleCredits = (consecutiveDays: number): number => {
+      let totalCredits = 0;
+      for (let i = 1; i <= consecutiveDays; i++) {
+        totalCredits += DAILY_REWARDS[Math.min(i - 1, 6)];
+      }
+      return totalCredits;
+    };
+    
     if (todayCheckin) {
       // if today is checked in, return the checkin record of today
+      const cycleCredits = calculateCycleCredits(todayCheckin.consecutive_days);
       return {
         checked_in_today: true,
         consecutive_days: todayCheckin.consecutive_days,
         last_checkin_date: todayCheckin.checkin_date,
-        today_credits: todayCheckin.credits_earned,
+        cycle_credits: cycleCredits,
       };
     } else {
       // if today is not checked in, get the history consecutive checkin information
       const streak = await getUserCheckinStreak(user_uuid);
+      const cycleCredits = calculateCycleCredits(streak.consecutive_days);
       return {
         checked_in_today: false,
         consecutive_days: streak.consecutive_days,
         last_checkin_date: streak.last_checkin_date,
-        today_credits: 0,
+        cycle_credits: cycleCredits,
       };
     }
   } catch (error) {
@@ -122,7 +133,7 @@ export async function getUserCheckinStatus(user_uuid: string) {
       checked_in_today: false,
       consecutive_days: 0,
       last_checkin_date: null,
-      today_credits: 0,
+      cycle_credits: 0,
     };
   }
 }
