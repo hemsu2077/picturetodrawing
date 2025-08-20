@@ -75,7 +75,7 @@ export function ProgressCircle({
           strokeDasharray={strokeDasharray}
           strokeDashoffset={strokeDashoffset}
           strokeLinecap="round"
-          className="text-primary transition-all duration-300 ease-out"
+          className="text-primary"
         />
       </svg>
       {/* Center text */}
