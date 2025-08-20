@@ -4,6 +4,14 @@ import { Sidebar } from "@/types/blocks/sidebar";
 import { getTranslations } from "next-intl/server";
 import { getUserInfo } from "@/services/user";
 import { redirect } from "next/navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+  },
+};
 
 export default async function ({ children }: { children: ReactNode }) {
   const userInfo = await getUserInfo();
