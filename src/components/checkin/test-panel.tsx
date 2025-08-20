@@ -25,6 +25,7 @@ interface TestPanelProps {
 export default function TestPanel({ onStatusUpdate }: TestPanelProps) {
   const [loading, setLoading] = useState(false);
   const [consecutiveDays, setConsecutiveDays] = useState<number>(3);
+  const [debugInfo, setDebugInfo] = useState<any>(null);
 
   const callTestAPI = async (action: string, data?: any) => {
     setLoading(true);
@@ -71,6 +72,21 @@ export default function TestPanel({ onStatusUpdate }: TestPanelProps) {
 
   const handleSimulateDay8 = async () => {
     await callTestAPI("simulate_day8");
+  };
+
+  const handleGetDebugInfo = async () => {
+    setLoading(true);
+    try {
+      const response = await fetch('/api/checkin');
+      const result = await response.json();
+      setDebugInfo(result);
+      toast.success("获取调试信息成功");
+    } catch (error) {
+      console.error('Get debug info failed:', error);
+      toast.error("获取调试信息失败");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -207,8 +223,61 @@ export default function TestPanel({ onStatusUpdate }: TestPanelProps) {
               <Zap className="h-4 w-4 mr-2" />
               快速设为第7天
             </Button>
+
+            {/* 调试信息按钮 */}
+            <Button
+              onClick={handleGetDebugInfo}
+              disabled={loading}
+              variant="secondary"
+              size="sm"
+              className="justify-start"
+            >
+              <TestTube className="h-4 w-4 mr-2" />
+              获取API调试信息
+            </Button>
           </div>
         </div>
+
+        <Separator />
+
+        {/* 调试信息显示 */}
+        {debugInfo && (
+          <div className="bg-gray-50 dark:bg-gray-900 p-4 rounded-lg space-y-3">
+            <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300">API返回数据：</h4>
+            
+            {debugInfo.data && (
+              <div className="text-sm space-y-2">
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <span className="font-medium">今天是否签到：</span>
+                    <span className={debugInfo.data.checked_in_today ? "text-green-600" : "text-red-600"}>
+                      {debugInfo.data.checked_in_today ? "是" : "否"}
+                    </span>
+                  </div>
+                  <div>
+                    <span className="font-medium">连续天数：</span>
+                    <span className="text-blue-600 font-bold">{debugInfo.data.consecutive_days}天</span>
+                  </div>
+                  <div>
+                    <span className="font-medium">最后签到日期：</span>
+                    <span>{debugInfo.data.last_checkin_date || "无"}</span>
+                  </div>
+                  <div>
+                    <span className="font-medium">今日获得积分：</span>
+                    <span className="text-purple-600">{debugInfo.data.today_credits}</span>
+                  </div>
+                </div>
+              </div>
+            )}
+            
+            <details className="text-xs">
+              <summary className="cursor-pointer text-gray-600 dark:text-gray-400">查看完整JSON数据</summary>
+              <pre className="mt-2 text-gray-600 dark:text-gray-400 overflow-auto bg-white dark:bg-gray-800 p-2 rounded">
+                {JSON.stringify(debugInfo, null, 2)}
+              </pre>
+            </details>
+          </div>
+        )}
 
         <Separator />
 

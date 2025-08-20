@@ -49,14 +49,15 @@ async function setConsecutiveDays(user_uuid: string, days: number) {
       date.setDate(date.getDate() - (i - 1));
       const dateStr = date.toISOString().split('T')[0];
       
-      // 计算当天应该获得的奖励
-      const dayIndex = Math.min(i - 1, 6);
+      // 计算正确的连续天数（从第1天开始递增）
+      const consecutiveDayNumber = days - i + 1;
+      const dayIndex = Math.min(consecutiveDayNumber - 1, 6);
       const credits = [2, 2, 4, 2, 4, 2, 8][dayIndex];
       
       records.push({
         user_uuid,
         checkin_date: dateStr,
-        consecutive_days: i,
+        consecutive_days: consecutiveDayNumber,
         credits_earned: credits,
         created_at: new Date(getIsoTimestr()),
       });
@@ -96,13 +97,15 @@ async function simulateBreak(user_uuid: string, lastStreakDays: number) {
       date.setDate(date.getDate() - (i - 1));
       const dateStr = date.toISOString().split('T')[0];
       
-      const dayIndex = Math.min(i - 1, 6);
+      // 计算正确的连续天数（从第1天开始递增）
+      const consecutiveDayNumber = lastStreakDays - i + 1;
+      const dayIndex = Math.min(consecutiveDayNumber - 1, 6);
       const credits = [2, 2, 4, 2, 4, 2, 8][dayIndex];
       
       records.push({
         user_uuid,
         checkin_date: dateStr,
-        consecutive_days: i,
+        consecutive_days: consecutiveDayNumber,
         credits_earned: credits,
         created_at: new Date(getIsoTimestr()),
       });
@@ -126,18 +129,20 @@ async function simulateDay8(user_uuid: string) {
     const records = [];
     const today = new Date();
     
-    for (let i = 7; i >= 1; i--) {
+    for (let i = 1; i <= 7; i++) {
       const date = new Date(today);
-      date.setDate(date.getDate() - (8 - i)); // 从7天前开始
+      date.setDate(date.getDate() - (7 - i + 1)); // 从7天前开始到昨天
       const dateStr = date.toISOString().split('T')[0];
       
-      const dayIndex = Math.min(i - 1, 6);
+      // 第i天对应consecutive_days = i
+      const consecutiveDayNumber = i;
+      const dayIndex = Math.min(consecutiveDayNumber - 1, 6);
       const credits = [2, 2, 4, 2, 4, 2, 8][dayIndex];
       
       records.push({
         user_uuid,
         checkin_date: dateStr,
-        consecutive_days: i,
+        consecutive_days: consecutiveDayNumber,
         credits_earned: credits,
         created_at: new Date(getIsoTimestr()),
       });
