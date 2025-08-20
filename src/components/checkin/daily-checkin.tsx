@@ -137,22 +137,22 @@ export default function DailyCheckin() {
   const totalCredits = DAILY_REWARDS.reduce((sum, credits) => sum + credits, 0);
 
   return (
-    <Card className="w-full max-w-4xl mx-auto">
-      <CardHeader className="text-center space-y-4">
+    <Card className="w-full max-w-4xl mx-auto px-2 sm:px-0">
+      <CardHeader className="text-center space-y-4 px-2 sm:px-6">
         <div className="flex items-center justify-center gap-2">
           <Gift className="h-6 w-6 text-primary" />
-          <CardTitle className="text-2xl font-bold">
+          <CardTitle className="text-xl sm:text-2xl font-bold">
             Check In For 7 Consecutive Days
           </CardTitle>
         </div>
         <div className="flex items-center justify-center gap-2">
-          <span className="text-md">and Get 
+          <span className="text-sm sm:text-md">and Get 
             <span className="text-purple-500 font-medium"> {totalCredits} </span>
             Credits
           </span>
         </div>
         
-        <div className="flex items-center justify-between text-sm text-muted-foreground max-w-md mx-auto">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-sm text-muted-foreground max-w-md mx-auto">
           <div className="flex items-center gap-2">
             <Calendar className="h-4 w-4" />
             <span className="text-primary pr-2">
@@ -174,27 +174,27 @@ export default function DailyCheckin() {
 
       <CardContent className="space-y-6">
         {/* Daily Progress */}
-        <div className="grid grid-cols-7 gap-2 sm:gap-4">
+        <div className="grid grid-cols-7 gap-1 sm:gap-2">
           {checkinDays.map((day) => (
             <div
               key={day.day}
               className={`
-                relative flex flex-col items-center justify-center p-3 sm:p-4 rounded-lg border-2 transition-all
+                relative flex flex-col items-center justify-center p-2 sm:p-3 rounded-lg border-1 transition-all min-h-[70px] sm:min-h-[80px]
                 ${day.completed 
-                  ? 'border-purple-500 bg-purple-50 dark:bg-purple-900/20' 
+                  ? 'border-primary bg-primary/5 dark:bg-primary/5' 
                   : day.isToday 
-                    ? 'border-primary bg-primary/5 ring-2 ring-primary/20' 
+                    ? 'border-purple-500 bg-purple-50 dark:bg-purple-900/20 ring-2 ring-purple-500/20' 
                     : 'border-muted bg-muted/30'
                 }
               `}
             >
               {/* Day Icon */}
               <div className={`
-                w-8 h-8 sm:w-10 sm:h-10 rounded-full flex items-center justify-center text-sm font-bold mb-1
+                w-6 h-6 sm:w-8 sm:h-8 rounded-full flex items-center justify-center text-xs sm:text-sm font-bold mb-1
                 ${day.completed 
-                  ? 'bg-purple-500 text-white' 
+                  ? 'bg-primary text-primary-foreground' 
                   : day.isToday
-                    ? 'bg-primary text-primary-foreground'
+                    ? 'bg-purple-500 text-white'
                     : 'bg-muted text-muted-foreground'
                 }
               `}>
@@ -202,8 +202,8 @@ export default function DailyCheckin() {
               </div>
               
               {/* Day Label */}
-              <span className={`text-xs font-medium ${
-                day.completed ? 'text-purple-600 dark:text-purple-400' : ''
+              <span className={`text-[10px] sm:text-xs font-medium ${
+                day.completed ? 'text-primary dark:text-primary' : day.isToday ? 'text-purple-600 dark:text-purple-400' : ''
               }`}>
                 Day {day.day}
               </span>
@@ -220,13 +220,13 @@ export default function DailyCheckin() {
             disabled={loading || status.checked_in_today}
             size="lg"
             variant={status.checked_in_today ? "secondary" : "default"}
-            className={`px-8 py-3 text-lg font-semibold min-w-[200px] ${
+            className={`px-4 sm:px-8 py-2 sm:py-3 text-base sm:text-lg font-semibold min-w-[160px] sm:min-w-[200px] ${
               status.checked_in_today ? "opacity-60 cursor-not-allowed" : ""
             }`}
           >
             {loading ? (
               <div className="flex items-center gap-2">
-                <div className="animate-spin rounded-full h-4 w-4 border-2 border-background border-t-transparent"></div>
+                <div className="animate-spin rounded-full h-3 w-3 sm:h-4 sm:w-4 border-2 border-background border-t-transparent"></div>
                 Checking In...
               </div>
             ) : status.checked_in_today ? (
@@ -235,7 +235,7 @@ export default function DailyCheckin() {
               </div>
             ) : (
               <div className="flex items-center gap-2">
-                <Gift className="h-4 w-4" />
+                <Gift className="h-3 w-3 sm:h-4 sm:w-4" />
                 Check In
               </div>
             )}
