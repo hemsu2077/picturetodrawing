@@ -1,7 +1,7 @@
 export default function Bg() {
   return (
     <div className="-z-50 absolute left-0 top-0 w-full h-full">
-      {/* 主渐变背景 */}
+      {/* main gradient background */}
       <div 
         className="w-full h-full"
         style={{
@@ -10,7 +10,7 @@ export default function Bg() {
         }}
       />
       
-      {/* 纹理叠加层 */}
+      {/* texture overlay */}
       <div 
         className="absolute inset-0 opacity-30"
         style={{
@@ -24,7 +24,7 @@ export default function Bg() {
         }}
       />
       
-      {/* 额外的晕染效果 */}
+      {/* additional blur effect */}
       <div 
         className="absolute inset-0 opacity-20"
         style={{
@@ -37,7 +37,7 @@ export default function Bg() {
         }}
       />
       
-      {/* 细微的噪点纹理 */}
+      {/* subtle noise texture */}
       <div 
         className="absolute inset-0 opacity-10"
         style={{

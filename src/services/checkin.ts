@@ -99,7 +99,7 @@ export async function getUserCheckinStatus(user_uuid: string) {
     const todayCheckin = await findCheckinByUserAndDate(user_uuid, today);
     
     if (todayCheckin) {
-      // 如果今天已签到，直接返回今天的签到记录
+      // if today is checked in, return the checkin record of today
       return {
         checked_in_today: true,
         consecutive_days: todayCheckin.consecutive_days,
@@ -107,7 +107,7 @@ export async function getUserCheckinStatus(user_uuid: string) {
         today_credits: todayCheckin.credits_earned,
       };
     } else {
-      // 如果今天未签到，获取历史连续签到信息
+      // if today is not checked in, get the history consecutive checkin information
       const streak = await getUserCheckinStreak(user_uuid);
       return {
         checked_in_today: false,

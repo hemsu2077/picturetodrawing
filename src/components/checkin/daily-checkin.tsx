@@ -102,17 +102,17 @@ export default function DailyCheckin() {
     return DAILY_REWARDS.map((credits, index) => {
       const dayNumber = index + 1;
       
-      // 如果今天已经签到，那么连续天数包含今天
-      // 如果今天没签到，那么连续天数不包含今天
+      // if today is checked in, then the consecutive days include today
+      // if today is not checked in, then the consecutive days do not include today
       let completed = false;
       let isToday = false;
       
       if (status.checked_in_today) {
-        // 今天已签到：前 consecutive_days 天都完成了
+        // today is checked in: the previous consecutive_days days are completed
         completed = dayNumber <= status.consecutive_days;
-        isToday = false; // 今天已完成，不需要高亮
+        isToday = false; // today is completed, no need to highlight
       } else {
-        // 今天未签到：前 consecutive_days 天完成了，今天是待签到
+        // today is not checked in: the previous consecutive_days days are completed, today is not checked in
         completed = dayNumber <= status.consecutive_days;
         isToday = dayNumber === status.consecutive_days + 1;
       }
