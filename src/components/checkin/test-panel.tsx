@@ -44,11 +44,11 @@ export default function TestPanel({ onStatusUpdate }: TestPanelProps) {
         toast.success(result.message);
         onStatusUpdate();
       } else {
-        toast.error(result.message || "操作失败");
+        toast.error(result.message || "Operation failed");
       }
     } catch (error) {
       console.error('Test API call failed:', error);
-      toast.error("网络错误，请重试");
+      toast.error("Network error, please try again");
     } finally {
       setLoading(false);
     }
@@ -56,7 +56,7 @@ export default function TestPanel({ onStatusUpdate }: TestPanelProps) {
 
   const handleSetConsecutiveDays = async () => {
     if (consecutiveDays < 0 || consecutiveDays > 7) {
-      toast.error("连续天数必须在0-7之间");
+      toast.error("The number of consecutive days must be between 0 and 7");
       return;
     }
     await callTestAPI("set_consecutive_days", { days: consecutiveDays });
@@ -80,10 +80,10 @@ export default function TestPanel({ onStatusUpdate }: TestPanelProps) {
       const response = await fetch('/api/checkin');
       const result = await response.json();
       setDebugInfo(result);
-      toast.success("获取调试信息成功");
+      toast.success("Get debug info successfully");
     } catch (error) {
       console.error('Get debug info failed:', error);
-      toast.error("获取调试信息失败");
+      toast.error("Get debug info failed");
     } finally {
       setLoading(false);
     }
@@ -94,19 +94,19 @@ export default function TestPanel({ onStatusUpdate }: TestPanelProps) {
       <CardHeader>
         <div className="flex items-center gap-2">
           <TestTube className="h-5 w-5 text-orange-500" />
-          <CardTitle className="text-xl">签到测试面板</CardTitle>
+          <CardTitle className="text-xl">Test Checkin Panel</CardTitle>
           <Badge variant="outline" className="text-orange-600 border-orange-200">
-            测试环境
+            Test Environment
           </Badge>
         </div>
       </CardHeader>
       
       <CardContent className="space-y-6">
-        {/* 自定义连续签到天数 */}
+        {/* Customize consecutive checkin days */}
         <div className="space-y-3">
           <div className="flex items-center gap-2">
             <Settings className="h-4 w-4 text-blue-500" />
-            <Label className="text-sm font-medium">自定义连续签到天数</Label>
+            <Label className="text-sm font-medium">Customize consecutive checkin days</Label>
           </div>
           <div className="flex items-center gap-3">
             <Input
@@ -125,25 +125,25 @@ export default function TestPanel({ onStatusUpdate }: TestPanelProps) {
               variant="outline"
             >
               <Calendar className="h-4 w-4 mr-2" />
-              设置签到天数
+              Set Checkin Days
             </Button>
             <span className="text-sm text-muted-foreground">
-              (0-7天，会自动生成对应的历史记录)
+              (0-7 days, will automatically generate corresponding history records)
             </span>
           </div>
         </div>
 
         <Separator />
 
-        {/* 测试场景按钮组 */}
+        {/* Test Scenario Buttons */}
         <div className="space-y-4">
           <Label className="text-sm font-medium flex items-center gap-2">
             <Zap className="h-4 w-4 text-purple-500" />
-            快速测试场景
+            Quick Test Scenarios
           </Label>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-            {/* 重置所有签到 */}
+            {/* Reset all checkins */}
             <Button
               onClick={handleResetAll}
               disabled={loading}
@@ -152,10 +152,10 @@ export default function TestPanel({ onStatusUpdate }: TestPanelProps) {
               className="justify-start"
             >
               <RotateCcw className="h-4 w-4 mr-2" />
-              重置所有签到
+              Reset All Checkins
             </Button>
 
-            {/* 模拟签到中断 */}
+            {/* Simulate checkin interruption */}
             <Button
               onClick={handleSimulateBreak}
               disabled={loading}
@@ -164,10 +164,10 @@ export default function TestPanel({ onStatusUpdate }: TestPanelProps) {
               className="justify-start"
             >
               <CalendarX className="h-4 w-4 mr-2" />
-              模拟签到中断
+              Simulate Checkin Interruption
             </Button>
 
-            {/* 模拟第8天情况 */}
+            {/* Simulate 8th day */}
             <Button
               onClick={handleSimulateDay8}
               disabled={loading}
@@ -176,10 +176,10 @@ export default function TestPanel({ onStatusUpdate }: TestPanelProps) {
               className="justify-start"
             >
               <Gift className="h-4 w-4 mr-2" />
-              模拟第8天(重置新周期)
+              Simulate 8th Day (Reset New Cycle)
             </Button>
 
-            {/* 设置为第3天 */}
+            {/* Set to 3rd day */}
             <Button
               onClick={() => {
                 setConsecutiveDays(3);
@@ -191,10 +191,10 @@ export default function TestPanel({ onStatusUpdate }: TestPanelProps) {
               className="justify-start"
             >
               <Calendar className="h-4 w-4 mr-2" />
-              快速设为第3天
+              Set to 3rd Day
             </Button>
 
-            {/* 设置为第6天 */}
+            {/* Set to 6th day */}
             <Button
               onClick={() => {
                 setConsecutiveDays(6);
@@ -206,10 +206,10 @@ export default function TestPanel({ onStatusUpdate }: TestPanelProps) {
               className="justify-start"
             >
               <Calendar className="h-4 w-4 mr-2" />
-              快速设为第6天
+              Set to 6th Day
             </Button>
 
-            {/* 设置为第7天 */}
+            {/* Set to 7th day */}
             <Button
               onClick={() => {
                 setConsecutiveDays(7);
@@ -221,10 +221,10 @@ export default function TestPanel({ onStatusUpdate }: TestPanelProps) {
               className="justify-start"
             >
               <Zap className="h-4 w-4 mr-2" />
-              快速设为第7天
+              Set to 7th Day
             </Button>
 
-            {/* 调试信息按钮 */}
+            {/* Debug Info Button */}
             <Button
               onClick={handleGetDebugInfo}
               disabled={loading}
@@ -233,37 +233,37 @@ export default function TestPanel({ onStatusUpdate }: TestPanelProps) {
               className="justify-start"
             >
               <TestTube className="h-4 w-4 mr-2" />
-              获取API调试信息
+              Get Debug Info
             </Button>
           </div>
         </div>
 
         <Separator />
 
-        {/* 调试信息显示 */}
+        {/* Debug Info Display */}
         {debugInfo && (
           <div className="bg-gray-50 dark:bg-gray-900 p-4 rounded-lg space-y-3">
-            <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300">API返回数据：</h4>
+            <h4 className="text-sm font-medium text-gray-700 dark:text-gray-300">API Return Data:</h4>
             
             {debugInfo.data && (
               <div className="text-sm space-y-2">
                 <div className="grid grid-cols-2 gap-4">
                   <div>
-                    <span className="font-medium">今天是否签到：</span>
+                    <span className="font-medium">Is Checked In Today:</span>
                     <span className={debugInfo.data.checked_in_today ? "text-green-600" : "text-red-600"}>
-                      {debugInfo.data.checked_in_today ? "是" : "否"}
+                      {debugInfo.data.checked_in_today ? "Yes" : "No"}
                     </span>
                   </div>
                   <div>
-                    <span className="font-medium">连续天数：</span>
-                    <span className="text-blue-600 font-bold">{debugInfo.data.consecutive_days}天</span>
+                    <span className="font-medium">Consecutive Days:</span>
+                    <span className="text-blue-600 font-bold">{debugInfo.data.consecutive_days}</span>
                   </div>
                   <div>
-                    <span className="font-medium">最后签到日期：</span>
-                    <span>{debugInfo.data.last_checkin_date || "无"}</span>
+                    <span className="font-medium">Last Checkin Date:</span>
+                    <span>{debugInfo.data.last_checkin_date || "None"}</span>
                   </div>
                   <div>
-                    <span className="font-medium">本周期累积积分：</span>
+                    <span className="font-medium">Cycle Credits:</span>
                     <span className="text-purple-600">{debugInfo.data.cycle_credits || debugInfo.data.today_credits || 0}</span>
                   </div>
                 </div>
@@ -271,7 +271,7 @@ export default function TestPanel({ onStatusUpdate }: TestPanelProps) {
             )}
             
             <details className="text-xs">
-              <summary className="cursor-pointer text-gray-600 dark:text-gray-400">查看完整JSON数据</summary>
+              <summary className="cursor-pointer text-gray-600 dark:text-gray-400">View Full JSON Data</summary>
               <pre className="mt-2 text-gray-600 dark:text-gray-400 overflow-auto bg-white dark:bg-gray-800 p-2 rounded">
                 {JSON.stringify(debugInfo, null, 2)}
               </pre>
@@ -281,22 +281,22 @@ export default function TestPanel({ onStatusUpdate }: TestPanelProps) {
 
         <Separator />
 
-        {/* 使用说明 */}
+        {/* Usage Instructions */}
         <div className="bg-muted/50 p-4 rounded-lg space-y-2">
-          <h4 className="text-sm font-medium text-muted-foreground">测试说明：</h4>
+          <h4 className="text-sm font-medium text-muted-foreground">Usage Instructions:</h4>
           <ul className="text-xs text-muted-foreground space-y-1">
-            <li>• <strong>自定义天数</strong>：设置用户已连续签到的天数(0-7)</li>
-            <li>• <strong>重置签到</strong>：清空所有签到记录，回到初始状态</li>
-            <li>• <strong>模拟中断</strong>：模拟用户连续签到后中断3天的情况</li>
-            <li>• <strong>模拟第8天</strong>：模拟用户昨天完成第7天，今天重置为新周期第1天</li>
-            <li>• <strong>快速设置</strong>：一键设置常见的测试场景</li>
+            <li>• <strong>Customize Days</strong>: Set the number of consecutive checkin days (0-7)</li>
+            <li>• <strong>Reset Checkin</strong>: Clear all checkin records and return to initial state</li>
+            <li>• <strong>Simulate Break</strong>: Simulate the situation where the user has checked in for 3 consecutive days</li>
+            <li>• <strong>Simulate 8th Day</strong>: Simulate the situation where the user has completed the 7th day yesterday and today resets to the 1st day of the new cycle</li>
+            <li>• <strong>Quick Set</strong>: Set common test scenarios with one click</li>
           </ul>
         </div>
 
         {loading && (
           <div className="flex items-center justify-center py-4">
             <div className="animate-spin rounded-full h-6 w-6 border-2 border-primary border-t-transparent"></div>
-            <span className="ml-2 text-sm text-muted-foreground">处理中...</span>
+            <span className="ml-2 text-sm text-muted-foreground">Processing...</span>
           </div>
         )}
       </CardContent>

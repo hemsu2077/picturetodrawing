@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Gift, Calendar, Coins } from "lucide-react";
+import { RiCoinsLine } from "react-icons/ri";
 import { toast } from "sonner";
 
 interface CheckinStatus {
@@ -139,8 +140,12 @@ export default function DailyCheckin() {
   return (
     <Card className="w-full max-w-4xl mx-auto px-2 sm:px-0">
       <CardHeader className="text-center space-y-4 px-2 sm:px-6">
-        <div className="flex items-center justify-center gap-2">
-          <Gift className="h-6 w-6 text-primary" />
+        <div className="flex flex-col items-center justify-center gap-3">
+          <img 
+            src="https://files.picturetodrawing.com/ui/free-credits.webp" 
+            alt="Free Credits" 
+            className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
+          />
           <CardTitle className="text-xl sm:text-2xl font-bold">
             Check In For 7 Consecutive Days
           </CardTitle>
@@ -155,7 +160,7 @@ export default function DailyCheckin() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-sm text-muted-foreground max-w-md mx-auto">
           <div className="flex items-center gap-2">
             <Calendar className="h-4 w-4" />
-            <span className="text-primary pr-2">
+            <span className="text-primary">
               {statusLoading ? (
                 <div className="animate-pulse inline-block w-16 h-4 bg-muted rounded"></div>
               ) : (
@@ -165,8 +170,8 @@ export default function DailyCheckin() {
           </div>
           {status.cycle_credits > 0 && (
             <div className="flex items-center gap-2">
-              <Coins className="h-4 w-4 text-primary" />
               <span className="text-primary font-medium"> +{status.cycle_credits}</span>
+              <RiCoinsLine className="h-4 w-4 text-primary" />
             </div>
           )}
         </div>

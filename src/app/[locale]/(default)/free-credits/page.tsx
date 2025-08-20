@@ -2,6 +2,16 @@ import DailyCheckin from "@/components/checkin/daily-checkin";
 import { auth } from "@/auth";
 import { isAuthEnabled } from "@/lib/auth";
 import { redirect } from "next/navigation";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Free Credits - Picture to Drawing",
+    description: "Earn free credits by checking in daily! Complete challenges and get rewarded.",
+    robots: {
+      index: false,
+      follow: false,
+    },
+  };
 
 export default async function FreeCredits() {
   // Check authentication if enabled
