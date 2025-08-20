@@ -208,17 +208,6 @@ export default function DailyCheckin() {
                 Day {day.day}
               </span>
               
-              {/* Special Day Indicators */}
-              {(day.day === 3 || day.day === 5 || day.day === 7) && !day.completed && (
-                <Gift className="absolute -top-1 -right-1 h-3 w-3 text-primary" />
-              )}
-              
-              {/* Completed indicator for special days */}
-              {(day.day === 3 || day.day === 5 || day.day === 7) && day.completed && (
-                <div className="absolute -top-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full flex items-center justify-center">
-                  <Gift className="h-2.5 w-2.5 text-yellow-800" />
-                </div>
-              )}
             </div>
           ))}
         </div>
@@ -258,6 +247,8 @@ export default function DailyCheckin() {
           <div className="text-sm text-muted-foreground">
             {statusLoading ? (
               <div className="animate-pulse inline-block w-32 h-4 bg-muted rounded"></div>
+            ) : status.consecutive_days >= 7 ? (
+              <span>🎉 Amazing! You've completed a full week of check-ins!</span>
             ) : status.checked_in_today ? (
               <span>Come back tomorrow to continue your streak!</span>
             ) : status.consecutive_days === 0 ? (
@@ -266,12 +257,6 @@ export default function DailyCheckin() {
               <span>Continue your {status.consecutive_days}-day streak!</span>
             )}
           </div>
-          
-          {status.consecutive_days >= 7 && (
-            <div className="text-sm text-primary font-medium">
-              🎉 Amazing! You've completed a full week of check-ins!
-            </div>
-          )}
         </div>
       </CardContent>
     </Card>
