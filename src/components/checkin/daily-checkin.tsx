@@ -32,7 +32,7 @@ export default function DailyCheckin() {
     cycle_credits: 0,
   });
   const [loading, setLoading] = useState(false);
-  const [initialLoading, setInitialLoading] = useState(true);
+  const [statusLoading, setStatusLoading] = useState(true);
 
   useEffect(() => {
     fetchCheckinStatus();
@@ -50,7 +50,7 @@ export default function DailyCheckin() {
     } catch (error) {
       console.error('Failed to fetch checkin status:', error);
     } finally {
-      setInitialLoading(false);
+      setStatusLoading(false);
     }
   };
 
@@ -81,6 +81,11 @@ export default function DailyCheckin() {
         }));
       } else if (result.code === 208) {
         toast.info("Already checked in today!");
+        // Update local state to reflect reality
+        setStatus(prev => ({
+          ...prev,
+          checked_in_today: true,
+        }));
       } else {
         toast.error(result.message || "Checkin failed");
       }
@@ -127,24 +132,7 @@ export default function DailyCheckin() {
     });
   };
 
-  if (initialLoading) {
-    return (
-      <Card className="w-full max-w-4xl mx-auto">
-        <CardContent className="p-8">
-          <div className="animate-pulse space-y-4">
-            <div className="h-8 bg-muted rounded w-1/3"></div>
-            <div className="h-4 bg-muted rounded w-2/3"></div>
-            <div className="grid grid-cols-7 gap-4 mt-8">
-              {[...Array(7)].map((_, i) => (
-                <div key={i} className="h-24 bg-muted rounded"></div>
-              ))}
-            </div>
-          </div>
-        </CardContent>
-      </Card>
-    );
-  }
-
+  
   const checkinDays = generateCheckinDays();
   const totalCredits = DAILY_REWARDS.reduce((sum, credits) => sum + credits, 0);
 
@@ -167,7 +155,13 @@ export default function DailyCheckin() {
         <div className="flex items-center justify-between text-sm text-muted-foreground max-w-md mx-auto">
           <div className="flex items-center gap-2">
             <Calendar className="h-4 w-4" />
-            <span className="text-primary pr-2">You've checked in for {status.consecutive_days} day{status.consecutive_days !== 1 ? 's' : ''} </span>
+            <span className="text-primary pr-2">
+              {statusLoading ? (
+                <div className="animate-pulse inline-block w-16 h-4 bg-muted rounded"></div>
+              ) : (
+                `You've checked in for ${status.consecutive_days} day${status.consecutive_days !== 1 ? 's' : ''}`
+              )}
+            </span>
           </div>
           {status.cycle_credits > 0 && (
             <div className="flex items-center gap-2">
@@ -262,7 +256,9 @@ export default function DailyCheckin() {
         {/* Progress Info */}
         <div className="text-center space-y-2">
           <div className="text-sm text-muted-foreground">
-            {status.checked_in_today ? (
+            {statusLoading ? (
+              <div className="animate-pulse inline-block w-32 h-4 bg-muted rounded"></div>
+            ) : status.checked_in_today ? (
               <span>Come back tomorrow to continue your streak!</span>
             ) : status.consecutive_days === 0 ? (
               <span>Start your daily check-in streak to earn credits!</span>
