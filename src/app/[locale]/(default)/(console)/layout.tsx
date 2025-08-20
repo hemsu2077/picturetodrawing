@@ -47,13 +47,7 @@ export default async function ({ children }: { children: ReactNode }) {
           url: "/my-credits",
           icon: "RiCoinsLine",
           is_active: false,
-        },
-        {
-          title: "My Invites",
-          url: "/my-invites",
-          icon: "RiGiftLine",
-          is_active: false,
-        },
+        }
       ],
     },
   };
