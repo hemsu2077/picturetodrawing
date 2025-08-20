@@ -29,6 +29,15 @@
         }
       ]
     },
+    "buttons": [
+      {
+        "title": "Free Credits",
+        "url": "/free-credits",
+        "target": "_self",
+        "variant": "outline",
+        "icon": "RiGiftLine"
+      }
+    ],
 
     "show_sign": true,
     "show_theme": false,

@@ -144,3 +144,15 @@ export const images = pgTable("pic_to_dra_images", {
   created_at: timestamp({ withTimezone: true }),
   updated_at: timestamp({ withTimezone: true }),
 });
+
+// Daily Check-ins table
+export const checkins = pgTable("pic_to_dra_checkins", {
+  id: integer().primaryKey().generatedAlwaysAsIdentity(),
+  user_uuid: varchar({ length: 255 }).notNull(),
+  checkin_date: varchar({ length: 10 }).notNull(), // YYYY-MM-DD format
+  consecutive_days: integer().notNull().default(1),
+  credits_earned: integer().notNull(),
+  created_at: timestamp({ withTimezone: true }),
+}, (table) => [
+  unique("user_date_unique").on(table.user_uuid, table.checkin_date),
+]);

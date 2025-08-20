@@ -32,11 +32,28 @@ import { Menu } from "lucide-react";
 import SignToggle from "@/components/sign/toggle";
 import ThemeToggle from "@/components/theme/toggle";
 import { cn } from "@/lib/utils";
+import { useAppContext } from "@/contexts/app";
+import { isAuthEnabled } from "@/lib/auth";
+import { useRouter } from "@/i18n/navigation";
 
 export default function Header({ header }: { header: HeaderType }) {
+  const { user, setShowSignModal } = useAppContext();
+  const router = useRouter();
+
   if (header.disabled) {
     return null;
   }
+
+  const handleFreeCreditsClick = (e: React.MouseEvent, url: string) => {
+    // Check if this is the Free Credits button and auth is enabled
+    if (url.includes('/free-credits') && isAuthEnabled() && !user) {
+      e.preventDefault();
+      setShowSignModal(true);
+      return;
+    }
+    // For other buttons or when user is logged in, proceed normally
+    router.push(url);
+  };
 
   return (
     <section className="py-3">
@@ -149,17 +166,27 @@ export default function Header({ header }: { header: HeaderType }) {
 
             {header.buttons?.map((item, i) => {
               return (
-                <Button key={i} variant={item.variant}>
-                  <Link
-                    href={item.url as any}
-                    target={item.target || ""}
-                    className="flex items-center gap-1 cursor-pointer"
-                  >
-                    {item.title}
+                <Button 
+                  key={i} 
+                  variant={item.variant}
+                  className={cn(
+                    item.title === "Free Credits" && 
+                    "border-none bg-gradient-to-r from-purple-50/80 to-orange-50/80 hover:from-purple-100/90 hover:to-orange-100/90 text-primary hover:text-purple-800 shadow-sm hover:shadow-md transition-all duration-200"
+                  )}
+                  onClick={(e) => handleFreeCreditsClick(e, item.url as string)}
+                >
+                  <div className="flex items-center gap-2 cursor-pointer">
                     {item.icon && (
-                      <Icon name={item.icon} className="size-4 shrink-0" />
+                      <Icon 
+                        name={item.icon} 
+                        className={cn(
+                          "size-4 shrink-0",
+                          item.title === "Free Credits" && "text-orange-500"
+                        )} 
+                      />
                     )}
-                  </Link>
+                    {item.title}
+                  </div>
                 </Button>
               );
             })}
@@ -281,20 +308,27 @@ export default function Header({ header }: { header: HeaderType }) {
                   <div className="mt-2 flex flex-col gap-3">
                     {header.buttons?.map((item, i) => {
                       return (
-                        <Button key={i} variant={item.variant}>
-                          <Link
-                            href={item.url as any}
-                            target={item.target || ""}
-                            className="flex items-center gap-1"
-                          >
-                            {item.title}
+                        <Button 
+                          key={i} 
+                          variant={item.variant}
+                          className={cn(
+                            item.title === "Free Credits" && 
+                            "border-none bg-gradient-to-r from-purple-50/80 to-orange-50/80 hover:from-purple-100/90 hover:to-orange-100/90 text-primary/90 hover:text-purple-800 shadow-sm hover:shadow-md transition-all duration-200"
+                          )}
+                          onClick={(e) => handleFreeCreditsClick(e, item.url as string)}
+                        >
+                          <div className="flex items-center gap-2">
                             {item.icon && (
                               <Icon
                                 name={item.icon}
-                                className="size-4 shrink-0"
+                                className={cn(
+                                  "size-4 shrink-0",
+                                  item.title === "Free Credits" && "text-orange-500"
+                                )}
                               />
                             )}
-                          </Link>
+                            {item.title}
+                          </div>
                         </Button>
                       );
                     })}

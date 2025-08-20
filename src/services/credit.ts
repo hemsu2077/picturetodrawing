@@ -14,6 +14,7 @@ export enum CreditsTransType {
   NewUser = "new_user", // initial credits for new user
   OrderPay = "order_pay", // user pay for credits
   SystemAdd = "system_add", // system add credits
+  DailyCheckin = "daily_checkin", // daily checkin rewards
   Ping = "ping", // cost for ping api
   DrawingGeneration = "drawing_generation", // cost for drawing generation
 }

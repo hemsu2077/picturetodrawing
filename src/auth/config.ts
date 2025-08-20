@@ -117,8 +117,35 @@ export const providerMap = providers
 
 export const authOptions: NextAuthConfig = {
   providers,
+  trustHost: true, // trust host for redirect
   pages: {
     signIn: "/auth/signin",
+  },
+  session: {
+    strategy: "jwt",
+  },
+  // 
+  cookies: {
+    pkceCodeVerifier: {
+      name: "next-auth.pkce.code_verifier",
+      options: {
+        httpOnly: true,
+        sameSite: "lax",
+        path: "/",
+        secure: process.env.NODE_ENV === "production",
+        maxAge: 60 * 15, // 15 minutes
+      },
+    },
+    state: {
+      name: "next-auth.state", 
+      options: {
+        httpOnly: true,
+        sameSite: "lax",
+        path: "/",
+        secure: process.env.NODE_ENV === "production",
+        maxAge: 60 * 15, // 15 minutes
+      },
+    },
   },
   callbacks: {
     async signIn({ user, account, profile, email, credentials }) {
