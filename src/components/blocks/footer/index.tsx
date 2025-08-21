@@ -49,7 +49,6 @@ export default function Footer({ footer }: { footer: FooterType }) {
                   ))}
                 </ul>
               )} */}
-              <a href="https://twelve.tools" target="_blank"><img src="https://twelve.tools/badge2-light.svg" alt="Featured on Twelve Tools" width="200" height="54"/></a>
             </div>
             <div className="grid grid-cols-3 gap-6">
               {footer.nav?.items?.map((item, i) => (
@@ -82,7 +81,6 @@ export default function Footer({ footer }: { footer: FooterType }) {
                 )}
               </p>
             )}
-
             {footer.agreement && (
               <ul className="flex justify-center gap-4 lg:justify-start">
                 {footer.agreement.items?.map((item, i) => (
@@ -94,6 +92,14 @@ export default function Footer({ footer }: { footer: FooterType }) {
                 ))}
               </ul>
             )}
+          </div>
+          <div className="flex justify-center gap-4 mt-8">
+            <a href="https://fazier.com/launches/picturetodrawing.com" target="_blank"><img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=neutral" width="160" height="60" alt="Fazier badge" /></a>
+            <a href="https://turbo0.com/item/picture-to-drawing" target="_blank" rel="noopener noreferrer"><img src="https://img.turbo0.com/badge-listed-light.svg" alt="Listed on Turbo0" width="120" height="54"/></a>       
+            <a href="https://twelve.tools" target="_blank"><img src="https://twelve.tools/badge2-light.svg" alt="Featured on Twelve Tools" width="150" height="54"/></a>
+            <a title="ai tools code.market" href="https://code.market?code.market=verified"><img alt="ai tools code.market" title="ai tools code.market" src="https://code.market/assets/manage-product/featured-logo-bright.svg" width="160" height="54"/></a>
+            <a href="https://tinylaunch.com" target="_blank" rel="noopener"> <img src="https://tinylaunch.com/tinylaunch_badge_featured_on.svg" alt="TinyLaunch Badge" width="140" height="54"/></a>
+            <a href="https://dang.ai/" target="_blank" ><img src="https://cdn.prod.website-files.com/63d8afd87da01fb58ea3fbcb/6487e2868c6c8f93b4828827_dang-badge.png" alt="Dang.ai" width="120" height="54"/></a>
           </div>
         </footer>
       </div>
