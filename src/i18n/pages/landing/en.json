@@ -394,6 +394,16 @@
               "title": "My Drawings",
               "url": "/my-drawings",
               "target": "_self"
+            },
+            {
+              "title": "Free Credits",
+              "url": "/free-credits",
+              "target": "_self"
+            },
+            {
+              "title": "Contact Us",
+              "url": "mailto:hi@picturetodrawing.com",
+              "target": "_self"
             }
           ]
         }

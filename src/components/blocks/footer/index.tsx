@@ -36,7 +36,7 @@ export default function Footer({ footer }: { footer: FooterType }) {
                   )}
                 </div>
               )}
-              {footer.social && (
+              {/* {footer.social && (
                 <ul className="flex items-center space-x-6 text-muted-foreground">
                   {footer.social.items?.map((item, i) => (
                     <li key={i} className="font-medium hover:text-primary">
@@ -48,9 +48,10 @@ export default function Footer({ footer }: { footer: FooterType }) {
                     </li>
                   ))}
                 </ul>
-              )}
+              )} */}
+              <a href="https://twelve.tools" target="_blank"><img src="https://twelve.tools/badge2-light.svg" alt="Featured on Twelve Tools" width="200" height="54"/></a>
             </div>
-            <div className="grid grid-cols-3 gap-6 lg:gap-20">
+            <div className="grid grid-cols-3 gap-6">
               {footer.nav?.items?.map((item, i) => (
                 <div key={i}>
                   <p className="mb-6 font-bold">{item.title}</p>
