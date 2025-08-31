@@ -7,31 +7,51 @@ import { getUserCredits, decreaseCredits, CreditsTransType } from "@/services/cr
 import { isAuthEnabled } from "@/lib/auth";
 import { insertImage } from "@/models/image";
 import { getUuid } from "@/lib/hash";
+import { checkDailyTrial, recordDailyTrial } from "@/services/trial";
 
 export async function POST(req: Request) {
 try {
     let userUuid = "";
+    let isTrialUsage = false;
     
-    // Check authentication and credits only if auth is enabled
+    // Get user session if auth is enabled
     if (isAuthEnabled()) {
       const session = await auth();
-      if (!session?.user?.uuid) {
+      if (session?.user?.uuid) {
+        userUuid = session.user.uuid;
+      }
+    }
+
+    // Check daily trial availability
+    const trialCheck = await checkDailyTrial(userUuid || undefined);
+    
+    if (trialCheck.canUseTrial) {
+      // User can use daily trial
+      isTrialUsage = true;
+      console.log(`Using daily trial for ${userUuid ? `user ${userUuid}` : 'anonymous user'}`);
+    } else if (isAuthEnabled()) {
+      // Trial already used, check authentication and credits
+      if (!userUuid) {
         return Response.json(
-          { code: -1, message: "Authentication required" }, 
+          { code: -1, message: "Authentication required or daily trial already used" }, 
           { status: 401 }
         );
       }
-
-      userUuid = session.user.uuid;
 
       // Check user credits
       const userCredits = await getUserCredits(userUuid);
       if (userCredits.left_credits < 2) {
         return Response.json(
-          { code: -1, message: "Insufficient credits." }, 
+          { code: -1, message: "Insufficient credits and daily trial already used" }, 
           { status: 402 }
         );
       }
+    } else {
+      // Auth disabled but trial used
+      return Response.json(
+        { code: -1, message: "Daily trial already used" }, 
+        { status: 429 }
+      );
     }
 
     const { style, image, ratio } = await req.json();
@@ -130,15 +150,15 @@ try {
             disposition: "inline",
           });
 
-          // Store image data to database if auth is enabled and we have user UUID
-          if (isAuthEnabled() && userUuid) {
+          // Store image data to database (for both logged-in and trial users)
+          if (userUuid || isTrialUsage) {
             try {
               const imageUuid = getUuid();
               const currentTime = new Date();
               
               await insertImage({
                 uuid: imageUuid,
-                user_uuid: userUuid,
+                user_uuid: userUuid || "", // Empty string for trial users
                 original_image_url: inputImageUrl,
                 generated_image_url: res.url || "",
                 style: style,
@@ -149,7 +169,7 @@ try {
                 created_at: currentTime,
                 updated_at: currentTime,
               });
-              console.log(`Image data stored to database for user ${userUuid}`);
+              console.log(`Image data stored to database for ${userUuid ? `user ${userUuid}` : 'trial user'}`);
             } catch (dbError) {
               console.error("Failed to store image data to database:", dbError);
               // Don't fail the request if database storage fails
@@ -171,8 +191,18 @@ try {
       })
     );
 
-    // Deduct credits after successful generation (only if auth is enabled)
-    if (isAuthEnabled() && userUuid) {
+    // Handle credits and trial recording after successful generation
+    if (isTrialUsage) {
+      // Record daily trial usage
+      try {
+        await recordDailyTrial(userUuid || undefined);
+        console.log(`Daily trial recorded for ${userUuid ? `user ${userUuid}` : 'anonymous user'}`);
+      } catch (trialError) {
+        console.error("Failed to record daily trial:", trialError);
+        // Don't fail the request if trial recording fails
+      }
+    } else if (userUuid) {
+      // Deduct credits for non-trial usage
       try {
         await decreaseCredits({
           user_uuid: userUuid,

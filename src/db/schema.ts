@@ -156,3 +156,17 @@ export const checkins = pgTable("pic_to_dra_checkins", {
 }, (table) => [
   unique("user_date_unique").on(table.user_uuid, table.checkin_date),
 ]);
+
+// Daily Trials table - for tracking daily free trials
+export const dailyTrials = pgTable("pic_to_dra_daily_trials", {
+  id: integer().primaryKey().generatedAlwaysAsIdentity(),
+  user_uuid: varchar({ length: 255 }), // nullable for non-logged-in users
+  ip_address: varchar({ length: 45 }).notNull(), // supports both IPv4 and IPv6
+  trial_date: varchar({ length: 10 }).notNull(), // YYYY-MM-DD format
+  created_at: timestamp({ withTimezone: true }),
+}, (table) => [
+  // Ensure one trial per user per day (for logged-in users)
+  unique("user_daily_trial_unique").on(table.user_uuid, table.trial_date),
+  // Ensure one trial per IP per day (for non-logged-in users)
+  unique("ip_daily_trial_unique").on(table.ip_address, table.trial_date),
+]);

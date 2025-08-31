@@ -21,6 +21,12 @@ interface DrawingGeneratorProps {
   className?: string;
 }
 
+interface TrialStatus {
+  canUseTrial: boolean;
+  isTrialUsage: boolean;
+  isLoggedIn: boolean;
+}
+
 export function DrawingGenerator({ className }: DrawingGeneratorProps) {
   const { data: session } = isAuthEnabled() ? useSession() : { data: null };
   const { setShowSignModal, showPricingModal, setShowPricingModal } = useAppContext();
@@ -35,6 +41,9 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
   const [pricingData, setPricingData] = useState<Pricing | null>(null);
   const [isPaidUser, setIsPaidUser] = useState<boolean | null>(null);
   const [isCheckingPaidStatus, setIsCheckingPaidStatus] = useState(false);
+  const [trialStatus, setTrialStatus] = useState<TrialStatus | null>(null);
+  const [isCheckingTrialStatus, setIsCheckingTrialStatus] = useState(false);
+  const [trialResult, setTrialResult] = useState<any>(null);
 
   // Load pricing data
   useEffect(() => {
@@ -90,7 +99,32 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
     checkPaidStatus();
   }, [session?.user?.uuid]);
 
+  // Check trial status
+  useEffect(() => {
+    const checkTrialStatus = async () => {
+      setIsCheckingTrialStatus(true);
+      try {
+        const response = await fetch('/api/check-trial-status');
+        if (response.ok) {
+          const data = await response.json();
+          if (data.code === 0) {
+            setTrialStatus(data.data);
+          } else {
+            setTrialStatus({ canUseTrial: false, isTrialUsage: false, isLoggedIn: !!session?.user?.uuid });
+          }
+        } else {
+          setTrialStatus({ canUseTrial: false, isTrialUsage: false, isLoggedIn: !!session?.user?.uuid });
+        }
+      } catch (error) {
+        console.error('Failed to check trial status:', error);
+        setTrialStatus({ canUseTrial: false, isTrialUsage: false, isLoggedIn: !!session?.user?.uuid });
+      } finally {
+        setIsCheckingTrialStatus(false);
+      }
+    };
 
+    checkTrialStatus();
+  }, [session?.user?.uuid]);
 
   const handleImageSelect = (file: File | string, preview: string) => {
     if (file && preview) {
@@ -117,14 +151,14 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
   };
 
   const handleGenerate = async () => {
-    // Check if user is logged in (only if auth is enabled)
-    if (isAuthEnabled() && !session) {
-      setShowSignModal(true);
+    if (!selectedImage) {
+      setError('Please select an image first');
       return;
     }
 
-    if (!selectedImage) {
-      setError('Please select an image first');
+    // Check if user needs authentication (only if auth is enabled and no trial available)
+    if (isAuthEnabled() && !session && !trialStatus?.canUseTrial) {
+      setShowSignModal(true);
       return;
     }
 
@@ -169,6 +203,10 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
           setError(data.message || 'Insufficient credits');
           setShowPricingModal(true);
           return;
+        } else if (response.status === 429) {
+          // Daily trial already used
+          setError(data.message || 'Daily trial already used');
+          return;
         }
         setError(data.message || 'Generation failed');
         return;
@@ -176,14 +214,22 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
 
       // API returns {code: 0, message: "ok", data: [...]}
       if (data.code === 0 && data.data) {
-        // For free users, wait 50 seconds before showing the result
-        if (isPaidUser === false) {
+        // Only paid users get instant results, everyone else waits
+        if (isPaidUser !== true) {
           await new Promise(resolve => setTimeout(resolve, 50000)); // 50 seconds
         }
+        
+        // Store the result for display after waiting (if needed)
+        setTrialResult(data.data);
         
         // Clear the new drawing state since generation is complete
         setNewDrawing(null);
         setError(null);
+        
+        // Refresh trial status after successful generation
+        if (trialStatus?.canUseTrial) {
+          setTrialStatus(prev => prev ? { ...prev, canUseTrial: false, isTrialUsage: false } : null);
+        }
       } else {
         setError(data.message || 'Invalid response format');
         return;
@@ -194,6 +240,49 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
     } finally {
       setIsGenerating(false);
     }
+  };
+
+  // Determine button text and cost display
+  const getButtonContent = () => {
+    if (isGenerating) {
+      return (
+        <>
+          <div className="animate-spin rounded-full h-3 w-3 sm:h-4 sm:w-4 border-b-2 border-white mr-2" />
+          <span className="hidden sm:inline">Generating...</span>
+          <span className="sm:hidden">Processing...</span>
+        </>
+      );
+    }
+
+    // Show only text while checking trial status or before status is loaded
+    if (isCheckingTrialStatus || trialStatus === null) {
+      return (
+        <>
+          <span className="hidden sm:inline">Convert to Drawing</span>
+          <span className="sm:hidden">Convert</span>
+        </>
+      );
+    }
+
+    if (trialStatus?.canUseTrial) {
+      return (
+        <>
+          <span className="hidden sm:inline">Convert to Drawing</span>
+          <span className="sm:hidden">Convert</span>
+          <RiCoinsLine className="inline-block ml-2" />
+          <span className="text-sm">FREE</span>
+        </>
+      );
+    }
+
+    return (
+      <>
+        <span className="hidden sm:inline">Convert to Drawing</span>
+        <span className="sm:hidden">Convert</span>
+        <RiCoinsLine className="inline-block ml-2" />
+        <span className="text-sm">2</span>
+      </>
+    );
   };
 
   return (
@@ -225,24 +314,11 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
             
             <Button
               onClick={handleGenerate}
-              disabled={!selectedImage || isGenerating}
+              disabled={!selectedImage || isGenerating || isCheckingTrialStatus}
               className="w-full h-11 sm:h-12 text-base sm:text-lg"
               size="lg"
             >
-              {isGenerating ? (
-                <>
-                  <div className="animate-spin rounded-full h-3 w-3 sm:h-4 sm:w-4 border-b-2 border-white mr-2" />
-                  <span className="hidden sm:inline">Generating...</span>
-                  <span className="sm:hidden">Processing...</span>
-                </>
-              ) : (
-                <>
-                  <span className="hidden sm:inline">Convert to Drawing</span>
-                  <span className="sm:hidden">Convert</span>
-                  <RiCoinsLine className="inline-block ml-2" />
-                  <span className="text-sm">2</span>
-                </>
-              )}
+              {getButtonContent()}
             </Button>
           </div>
         </div>
@@ -254,6 +330,7 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
         newDrawing={newDrawing}
         error={error}
         isPaidUser={isPaidUser}
+        trialResult={trialResult}
       />
 
       {/* Pricing Modal */}

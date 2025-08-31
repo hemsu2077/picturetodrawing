@@ -13,7 +13,7 @@ hi@picturetodrawing.com
 - Email: hi@picturetodrawing.com
 
 ## 5. Your Name
-PicturetoDrawing Team
+Anthony
 
 ## 6. Category
 AI Tool / Photo Editor / Art Generator

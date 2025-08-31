@@ -26,6 +26,7 @@ interface RecentDrawingsProps {
   onNewDrawingGenerated?: (drawing: Drawing) => void;
   className?: string;
   isPaidUser?: boolean | null;
+  trialResult?: any; // For trial users' generated result
 }
 
 export function RecentDrawings({ 
@@ -34,7 +35,8 @@ export function RecentDrawings({
   error = null,
   onNewDrawingGenerated,
   className,
-  isPaidUser = null
+  isPaidUser = null,
+  trialResult = null
 }: RecentDrawingsProps) {
   const { data: session } = isAuthEnabled() ? useSession() : { data: null };
   const [drawings, setDrawings] = useState<Drawing[]>([]);
@@ -50,7 +52,7 @@ export function RecentDrawings({
   });
   const [showProgressCard, setShowProgressCard] = useState(false);
 
-  // Fetch recent drawings
+  // Fetch recent drawings (only for logged-in users)
   const fetchRecentDrawings = async () => {
     if (!session?.user?.uuid) return;
     
@@ -95,8 +97,11 @@ export function RecentDrawings({
         await new Promise(resolve => setTimeout(resolve, 800));
         
         try {
-          await fetchRecentDrawings();
-          console.log('Drawings refreshed successfully');
+          // Only fetch if user is logged in
+          if (session?.user?.uuid) {
+            await fetchRecentDrawings();
+            console.log('Drawings refreshed successfully');
+          }
         } catch (error) {
           console.error('Failed to refresh drawings:', error);
         } finally {
@@ -118,7 +123,7 @@ export function RecentDrawings({
       isGenerating: isGenerating,
       hasNewDrawing: !!newDrawing
     });
-  }, [isGenerating, newDrawing, error, lastGenerationState.isGenerating, isRefreshing, showProgressCard]);
+  }, [isGenerating, newDrawing, error, lastGenerationState.isGenerating, isRefreshing, showProgressCard, session?.user?.uuid]);
 
   // Handle delete drawing
   const handleDelete = async (drawing: Drawing) => {
@@ -144,15 +149,15 @@ export function RecentDrawings({
     }
   };
 
-
-
-  // Don't show if not authenticated
-  if (!session?.user?.uuid) {
+  // Show for both logged-in users and trial users with results
+  const shouldShow = session?.user?.uuid || trialResult || isGenerating || error;
+  
+  if (!shouldShow) {
     return null;
   }
 
-  // Show loading state if no drawings yet and not generating
-  if (loading && drawings.length === 0 && !isGenerating && !error) {
+  // Show loading state if no drawings yet and not generating (logged-in users only)
+  if (session?.user?.uuid && loading && drawings.length === 0 && !isGenerating && !error) {
     return (
       <Card className={cn("p-6", className)}>
         <div className="flex items-center justify-center py-8">
@@ -162,10 +167,24 @@ export function RecentDrawings({
     );
   }
 
-  // Don't show if no drawings and not generating and no error
-  if (drawings.length === 0 && !isGenerating && !error) {
+  // Don't show if no drawings and not generating and no error and no trial result
+  if (drawings.length === 0 && !isGenerating && !error && !trialResult) {
     return null;
   }
+
+  // Create trial result drawing object for display (only for non-logged-in users)
+  const trialDrawing = trialResult && !session?.user?.uuid ? {
+    uuid: 'trial-result',
+    generated_image_url: trialResult[0]?.url || '',
+    style: newDrawing?.style || 'pencil-sketch',
+    ratio: newDrawing?.ratio || 'auto',
+    created_at: new Date(),
+    user_uuid: '',
+    original_image_url: '',
+    provider: trialResult[0]?.provider || 'replicate',
+    filename: trialResult[0]?.filename || '',
+    status: 'completed'
+  } : null;
 
   return (
     <>
@@ -174,12 +193,14 @@ export function RecentDrawings({
           {/* Header */}
           <div className="flex items-center justify-between">
             <div>
-              <h3 className="text-lg font-medium">Recent Drawings</h3>
+              <h3 className="text-lg font-medium">
+                {session?.user?.uuid ? 'Recent Drawings' : 'Your Drawing'}
+              </h3>
               <p className="text-sm text-muted-foreground mt-1">
-                Your latest artwork creations
+                {session?.user?.uuid ? 'Your latest artwork creations' : 'Generated artwork result'}
               </p>
             </div>
-            {drawings.length > 0 && (
+            {session?.user?.uuid && drawings.length > 0 && (
               <Link href="/my-drawings">
                 <Button variant="outline" size="sm">
                   View All
@@ -207,8 +228,21 @@ export function RecentDrawings({
                     </>
                   ) : (
                     <>
-                      {isPaidUser === false ? (
-                        // Free user: progress circle + upgrade button
+                      {isPaidUser === true ? (
+                        // Paid user: fast loading
+                        <>
+                          <ProgressCircle 
+                            duration={40} 
+                            className="mb-3" 
+                            size={48} 
+                            strokeWidth={3}
+                          />
+                          <div className="text-xs text-center px-2">
+                            <div className="text-muted-foreground mt-1">About 20-30 seconds</div>
+                          </div>
+                        </>
+                      ) : (
+                        // Non-paid user (logged-in free or trial): slow loading + upgrade button
                         <>
                           <ProgressCircle 
                             duration={80} 
@@ -228,19 +262,6 @@ export function RecentDrawings({
                             </Button>
                           </div>
                         </>
-                      ) : (
-                        // Paid user: traditional loading + progress bar
-                        <>
-                          <ProgressCircle 
-                            duration={40} 
-                            className="mb-3" 
-                            size={48} 
-                            strokeWidth={3}
-                          />
-                          <div className="text-xs text-center px-2">
-                            <div className="text-muted-foreground mt-1">About 20-30 seconds</div>
-                          </div>
-                        </>
                       )}
                     </>
                   )}
@@ -248,8 +269,21 @@ export function RecentDrawings({
               </Card>
             ) : null}
             
-            {/* Existing drawings */}
-            {drawings.slice(0, showProgressCard || error ? 3 : 4).map((drawing) => (
+            {/* Trial result for non-logged-in users */}
+            {trialDrawing && (
+              <DrawingCard
+                key={trialDrawing.uuid}
+                drawing={trialDrawing}
+                onClick={() => setSelectedDrawing(trialDrawing)}
+                className="aspect-square p-0"
+                showDownloadButton={true}
+                showToast={false}
+                showDeleteButton={false}
+              />
+            )}
+            
+            {/* Existing drawings (logged-in users only) */}
+            {session?.user?.uuid && drawings.slice(0, (showProgressCard || error) ? 3 : (trialDrawing ? 3 : 4)).map((drawing) => (
               <DrawingCard
                 key={drawing.uuid}
                 drawing={drawing}
@@ -262,7 +296,7 @@ export function RecentDrawings({
             ))}
             
             {/* Empty slots when less than 4 drawings */}
-            {!showProgressCard && !error && drawings.length < 4 && Array.from({ length: 4 - drawings.length }).map((_, index) => (
+            {!showProgressCard && !error && !trialDrawing && session?.user?.uuid && drawings.length < 4 && Array.from({ length: 4 - drawings.length }).map((_, index) => (
               <Card key={`empty-${index}`} className="aspect-square p-0 relative overflow-hidden shadow-none border-dashed">
                 <div className="absolute inset-0 flex items-center justify-center bg-gray-50">
                   <Eye className="h-8 w-8 text-gray-300" />
