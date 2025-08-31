@@ -312,14 +312,23 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
               className="border-0 shadow-none p-0"
             />
             
-            <Button
-              onClick={handleGenerate}
-              disabled={!selectedImage || isGenerating || isCheckingTrialStatus}
-              className="w-full h-11 sm:h-12 text-base sm:text-lg"
-              size="lg"
-            >
-              {getButtonContent()}
-            </Button>
+            <div className="space-y-2">
+              <Button
+                onClick={handleGenerate}
+                disabled={!selectedImage || isGenerating || isCheckingTrialStatus}
+                className="w-full h-11 sm:h-12 text-base sm:text-lg"
+                size="lg"
+              >
+                {getButtonContent()}
+              </Button>
+              
+              {/* Trial hint text */}
+              {!session?.user?.uuid && trialStatus?.canUseTrial && (
+                <p className="text-xs text-center text-muted-foreground">
+                  Try free once daily • No Login required
+                </p>
+              )}
+            </div>
           </div>
         </div>
       </Card>
