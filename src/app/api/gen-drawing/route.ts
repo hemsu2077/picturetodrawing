@@ -64,7 +64,7 @@ try {
     // Map style IDs to descriptive prompts
     const styleMap: Record<string, string> = {
       'pencil-sketch': 'black and white pencil sketch',
-      'line-drawing': 'black and white line drawing',
+      'line-drawing': 'black and white outline illustration',
       'charcoal-drawing': 'black and white charcoal drawing',
       'color-pencil-drawing': 'color pencil drawing',
       'watercolor-painting': 'watercolor painting',
@@ -74,12 +74,9 @@ try {
     const styleName = styleMap[style] || style;
     const prompt = `transform the image to a drawing, the drawing should be in the style of ${styleName}`
     
-    // Choose model based on style
-    const model = style === 'line-drawing' 
-      ? "black-forest-labs/flux-kontext-dev" 
-      : "black-forest-labs/flux-kontext-pro";
+    // Use the same model for all styles
+    const model = "black-forest-labs/flux-kontext-pro";
     
-    console.log(`Using model: ${model} for style: ${style}`);
     
     let inputImageUrl: string;
     
