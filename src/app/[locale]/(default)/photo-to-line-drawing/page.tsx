@@ -1,21 +1,10 @@
-import AIExcellence from "@/components/blocks/ai-excellence";
-import ArtStyles from "@/components/blocks/art-styles";
-import Branding from "@/components/blocks/branding";
-import Comparison from "@/components/blocks/comparison";
 import CTA from "@/components/blocks/cta";
 import FAQ from "@/components/blocks/faq";
 import Feature from "@/components/blocks/feature";
-import Feature1 from "@/components/blocks/feature1";
 import Feature2 from "@/components/blocks/feature2";
 import Feature3 from "@/components/blocks/feature3";
 import Hero from "@/components/blocks/hero";
-import PerfectUses from "@/components/blocks/perfect-uses";
-import Pricing from "@/components/blocks/pricing";
-import Showcase from "@/components/blocks/showcase";
 import Showcase1 from "@/components/blocks/showcase1";
-import Stats from "@/components/blocks/stats";
-import Testimonial from "@/components/blocks/testimonial";
-import TransformationExamples from "@/components/blocks/transformation-examples";
 import UseCases from "@/components/blocks/use-cases";
 import { getPhotoToLineDrawingPage } from "@/services/page";
 import DrawingGenerator from "@/components/drawing-generator";
@@ -26,6 +15,8 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
+  const page = await getPhotoToLineDrawingPage(locale);
+  
   let canonicalUrl = `${process.env.NEXT_PUBLIC_WEB_URL}`;
 
   if (locale !== "en") {
@@ -33,6 +24,8 @@ export async function generateMetadata({
   }
 
   return {
+    title: page.meta?.title || "Photo to Line Drawing Converter - AI-Powered Image to Line Art Tool",
+    description: page.meta?.description || "Convert photos to professional line drawings instantly with our AI-powered tool. Perfect for crafts, tattoos, embroidery patterns, and digital art. Free to try, secure processing.",
     alternates: {
       canonical: canonicalUrl,
     },

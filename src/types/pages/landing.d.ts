@@ -27,6 +27,10 @@ export interface LandingPage {
 }
 
 export interface PhotoToLineDrawingPage {
+  meta?: {
+    title?: string;
+    description?: string;
+  };
   hero?: Hero;
   branding?: Section;
   introduce?: Section;
