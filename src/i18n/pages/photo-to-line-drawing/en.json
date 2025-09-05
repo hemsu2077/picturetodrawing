@@ -30,7 +30,7 @@
         "label": "Portrait",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-portrait.webp",
-          "alt": "Portrait photo converted to line drawing"
+          "alt": "Portrait Photo to Line Drawing"
         },
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self"
@@ -41,7 +41,7 @@
         "label": "Architecture",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
-          "alt": "Architecture photo converted to line drawing"
+          "alt": "Architecture Photo to Line Drawing"
         },
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self"
@@ -52,7 +52,7 @@
         "label": "Product",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
-          "alt": "Product photo converted to line drawing"
+          "alt": "Product Photo to Line Drawing"
         },
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self"
@@ -63,7 +63,7 @@
         "label": "Vehicle",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
-          "alt": "Vehicle photo converted to line drawing"
+          "alt": "Vehicle Photo to Line Drawing"
         },
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self"
@@ -74,7 +74,7 @@
         "label": "Nature",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
-          "alt": "Nature photo converted to line drawing"
+          "alt": "Nature Photo to Line Drawing"
         },
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self"
@@ -85,7 +85,7 @@
         "label": "Pet",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-pet.webp",
-          "alt": "Pet photo converted to line drawing"
+          "alt": "Pet Photo to Line Drawing"
         },
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self"
