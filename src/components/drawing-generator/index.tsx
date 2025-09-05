@@ -19,6 +19,7 @@ import { RiCoinsLine } from 'react-icons/ri';
 
 interface DrawingGeneratorProps {
   className?: string;
+  defaultStyle?: string;
 }
 
 interface TrialStatus {
@@ -27,13 +28,13 @@ interface TrialStatus {
   isLoggedIn: boolean;
 }
 
-export function DrawingGenerator({ className }: DrawingGeneratorProps) {
+export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch' }: DrawingGeneratorProps) {
   const { data: session } = isAuthEnabled() ? useSession() : { data: null };
   const { setShowSignModal, showPricingModal, setShowPricingModal } = useAppContext();
   const locale = useLocale();
   
   const [selectedImage, setSelectedImage] = useState<{ file: File | string; preview: string } | null>(null);
-  const [selectedStyle, setSelectedStyle] = useState('pencil-sketch');
+  const [selectedStyle, setSelectedStyle] = useState(defaultStyle);
   const [selectedRatio, setSelectedRatio] = useState('auto');
   const [isGenerating, setIsGenerating] = useState(false);
   const [error, setError] = useState<string | null>(null);

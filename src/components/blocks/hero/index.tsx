@@ -2,12 +2,18 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import HappyUsers from "./happy-users";
 import HeroBg from "./bg";
+import LineDrawingBg from "./line-drawing-bg";
 import { Hero as HeroType } from "@/types/blocks/hero";
 import Icon from "@/components/icon";
 import { Link } from "@/i18n/navigation";
 import { Gift, Shield, Zap } from "lucide-react";
 
-export default function Hero({ hero }: { hero: HeroType }) {
+interface HeroProps {
+  hero: HeroType;
+  backgroundVariant?: 'default' | 'line-drawing';
+}
+
+export default function Hero({ hero, backgroundVariant = 'default' }: HeroProps) {
   if (hero.disabled) {
     return null;
   }
@@ -20,7 +26,7 @@ export default function Hero({ hero }: { hero: HeroType }) {
 
   return (
     <>
-      <HeroBg />
+      {backgroundVariant === 'line-drawing' ? <LineDrawingBg /> : <HeroBg />}
       <section className="py-12 lg:py-24">
         <div className="container">
           {hero.show_badge && (

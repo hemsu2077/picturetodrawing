@@ -7,10 +7,10 @@ export default function Feature({ section }: { section: SectionType }) {
   }
 
   return (
-    <section id={section.name} className="py-20 lg:py-24">
+    <section id={section.name} className="py-20 lg:py-16">
       <div className="container mx-auto px-4 sm:px-6">
         {/* Header */}
-        <div className="mx-auto max-w-3xl text-center mb-16 lg:mb-20">
+        <div className="mx-auto max-w-3xl text-center mb-16">
           <h2 className="mb-6 text-pretty text-3xl font-bold lg:text-4xl tracking-tight">
             {section.title}
           </h2>
@@ -20,7 +20,7 @@ export default function Feature({ section }: { section: SectionType }) {
         </div>
 
         {/* Features Grid */}
-        <div className="grid gap-6 md:gap-8 lg:gap-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {section.items?.map((item, i) => (
             <div 
               key={i} 
@@ -32,7 +32,7 @@ export default function Feature({ section }: { section: SectionType }) {
                 {item.icon && (
                   <div className="relative">
                     <div className="flex w-16 h-16 lg:w-18 lg:h-18 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 backdrop-blur-sm transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 group-hover:border-blue-300 group-hover:from-blue-100 group-hover:to-indigo-100">
-                      <Icon name={item.icon} className="text-blue-600 text-2xl lg:text-3xl" />
+                      <Icon name={item.icon} className="text-primary text-2xl lg:text-3xl" />
                     </div>
                     {/* Subtle glow effect */}
                     <div className="absolute inset-0 rounded-2xl bg-blue-200/30 blur-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 -z-10"></div>

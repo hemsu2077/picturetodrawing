@@ -42,9 +42,9 @@ export default async function PhotoToLineDrawingPage({
 
   return (
     <>
-      {page.hero && <Hero hero={page.hero} />}
+      {page.hero && <Hero hero={page.hero} backgroundVariant="line-drawing" />}
       <div id="drawing-generator">
-        <DrawingGenerator />
+        <DrawingGenerator defaultStyle="line-drawing" />
       </div>
       {page.showcase && <Showcase1 section={page.showcase} />}
       {page.feature && <Feature section={page.feature} />}
