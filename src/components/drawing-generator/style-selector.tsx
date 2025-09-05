@@ -45,6 +45,16 @@ const DRAWING_STYLES: StyleOption[] = [
     id: 'inkart',
     name: 'InkArt',
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/inkart.webp'
+  },
+  {
+    id: 'superhero-comic',
+    name: 'Superhero Comic',
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/superhero-comic.webp'
+  },
+  {
+    id: 'manga',
+    name: 'Manga',
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/manga.webp'
   }
 ];
 
@@ -52,7 +62,7 @@ export function StyleSelector({ selectedStyle, onStyleChange, className }: Style
   return (
     <div className={cn("space-y-4", className)}>
       <h3 className="text-lg font-medium">Drawing Style</h3>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
           {DRAWING_STYLES.map((style) => (
             <div
               key={style.id}
