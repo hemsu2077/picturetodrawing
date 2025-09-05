@@ -8,54 +8,66 @@ export default function Feature3({ section }: { section: SectionType }) {
   }
 
   return (
-    <section className="py-16 bg-teal-50">
-      <div className="container mx-auto px-4">
-        <div className="mx-auto flex max-w-2xl flex-col items-center gap-2 text-center mb-16">
+    <section className="py-20 lg:py-24 bg-gradient-to-b from-violet-50 via-blue-50/50 to-transparent relative overflow-hidden">
+      {/* Subtle background elements */}
+      <div className="absolute top-0 left-1/4 w-72 h-72 bg-gradient-to-br from-blue-100/20 to-purple-100/20 rounded-full blur-3xl"></div>
+      <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-gradient-to-br from-indigo-100/20 to-pink-100/20 rounded-full blur-3xl"></div>
+      
+      <div className="container mx-auto px-4 relative">
+        {/* Header */}
+        <div className="text-center mb-16">
           {section.label && (
-            <Badge variant="outline" className="mb-4">
+            <Badge variant="secondary" className="mb-6 px-4 py-1.5 text-sm font-medium bg-white/60 backdrop-blur-sm border-0 text-slate-700">
               {section.label}
             </Badge>
           )}
-          <h2 className="mb-6 text-pretty text-3xl font-bold lg:text-4xl">
+         <h2 className="mb-6 text-pretty text-3xl font-bold lg:text-4xl tracking-tight">
             {section.title}
           </h2>
-          <p className="text-muted-foreground lg:text-lg">
+          <p className="max-w-2xl mx-auto text-muted-foreground text-base lg:text-lg leading-relaxed">
             {section.description}
           </p>
         </div>
 
-        <div className="mx-auto max-w-4xl">
-          <div className="grid gap-8 md:grid-cols-3">
+        {/* Horizontal Layout */}
+        <div className="max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-12 lg:gap-16 relative">
+            {/* Connection lines */}
+            <div className="absolute top-16 left-0 right-0 hidden md:flex items-center justify-between px-16">
+              <div className="flex-1 h-px bg-gradient-to-r from-transparent via-slate-300 to-slate-300"></div>
+              <div className="w-8"></div>
+              <div className="flex-1 h-px bg-gradient-to-r from-slate-300 to-transparent"></div>
+            </div>
+
             {section.items?.map((item, index) => (
-              <div key={index} className="relative">
-                {/* line */}
-                {index < (section.items?.length || 0) - 1 && (
-                  <div className="absolute left-1/2 top-8 hidden h-px w-full bg-gradient-to-r from-primary/20 to-transparent md:block"></div>
-                )}
-                
-                <div className="flex flex-col items-center text-center">
-                  {/* step icon */}
-                  <div className="relative mb-6">
-                    <div className="flex size-16 items-center justify-center rounded-full bg-primary text-primary-foreground">
-                      {index === 0 && <Upload className="h-8 w-8" />}
-                      {index === 1 && <Wand2 className="h-8 w-8" />}
-                      {index === 2 && <Download className="h-8 w-8" />}
+              <div key={index} className="relative text-center">
+                {/* Step content */}
+                <div className="space-y-6">
+                  {/* Icon container */}
+                  <div className="relative">
+                    <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-white border border-slate-200 transition-all duration-300 hover:border-slate-300">
+                      {index === 0 && <Upload className="h-10 w-10 text-blue-600" />}
+                      {index === 1 && <Wand2 className="h-10 w-10 text-indigo-600" />}
+                      {index === 2 && <Download className="h-10 w-10 text-purple-600" />}
                     </div>
-                    {index < (section.items?.length || 0) - 1 && (
-                      <div className="absolute left-1/2 top-full mt-2 h-8 w-px bg-primary/20 md:hidden"></div>
-                    )}
+                    
                   </div>
 
-                  {/* content */}
-                  <div className="space-y-3">
-                    <h3 className="text-xl font-semibold text-gray-900">
+                  {/* Content */}
+                  <div className="space-y-4">
+                    <h3 className="text-xl font-bold tracking-tight text-slate-900">
                       {item.title}
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-sm lg:text-base text-slate-600 leading-relaxed font-light">
                       {item.description}
                     </p>
                   </div>
                 </div>
+
+                {/* Mobile connection line */}
+                {index < (section.items?.length || 0) - 1 && (
+                  <div className="absolute left-1/2 top-full mt-6 h-12 w-px bg-gradient-to-b from-slate-300 to-transparent md:hidden transform -translate-x-1/2"></div>
+                )}
               </div>
             ))}
           </div>

@@ -1,6 +1,5 @@
 import Icon from "@/components/icon";
 import { Section as SectionType } from "@/types/blocks/section";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function UseCases({ section }: { section: SectionType }) {
   if (section.disabled) {
@@ -8,46 +7,60 @@ export default function UseCases({ section }: { section: SectionType }) {
   }
 
   return (
-    <section id={section.name} className="py-16 lg:py-20 bg-gray-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+    <section id={section.name} className="py-24">
+      <div className="container mx-auto px-4">
+        {/* Header */}
+        <div className="mx-auto max-w-3xl text-center mb-20">
+          <h2 className="mb-6 text-pretty text-3xl font-bold lg:text-4xl">
             {section.title}
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="mb-4 max-w-xl text-muted-foreground lg:max-w-none lg:text-lg">
             {section.description}
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* Use Cases Grid */}
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {section.items?.map((item, i) => (
-            <Card key={i} className="bg-white rounded-lg p-6 shadow-sm border-none">
-              {item.icon && (
-                <div className="mb-4">
-                  <Icon name={item.icon} className="text-3xl text-gray-700" />
+            <div key={i} className="group relative">
+              <div className="h-full bg-white rounded-2xl p-8 transition-all duration-300 hover:shadow-lg hover:shadow-gray-200/50 border border-gray-100">
+                {/* Icon & Title */}
+                <div className="space-y-6 mb-6">
+                  {item.icon && (
+                    <div className="inline-flex w-14 h-14 bg-slate-900 rounded-2xl items-center justify-center">
+                      <Icon name={item.icon} className="text-white text-xl" />
+                    </div>
+                  )}
+                  <h3 className="text-2xl font-bold tracking-tight">
+                    {item.title}
+                  </h3>
                 </div>
-              )}
-              <CardHeader className="p-0 mb-3">
-                <CardTitle className="text-xl font-semibold text-gray-900">
-                  {item.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="p-0">
-                <p className="text-gray-600 mb-4">
-                  {item.description}
-                </p>
-                {item.children && Array.isArray(item.children) && (
-                  <ul className="text-gray-600 space-y-2">
-                    {item.children.map((child, childIndex) => (
-                      <li key={childIndex} className="flex items-start">
-                        <span className="text-gray-400 mr-2">•</span>
-                        <span>{typeof child === 'string' ? child : child.description || ''}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </CardContent>
-            </Card>
+                
+                {/* Description */}
+                <div className="space-y-4">
+                  <p className="text-base text-muted-foreground leading-relaxed">
+                    {item.description}
+                  </p>
+                  
+                  {/* Children List */}
+                  {item.children && Array.isArray(item.children) && (
+                    <ul className="space-y-3 mt-6">
+                      {item.children.map((child, childIndex) => (
+                        <li key={childIndex} className="flex items-start text-sm text-muted-foreground">
+                          <div className="w-1.5 h-1.5 rounded-full bg-slate-400 mt-2 mr-3 flex-shrink-0"></div>
+                          <span className="leading-relaxed">
+                            {typeof child === 'string' ? child : child.description || ''}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </div>
+
+                {/* Subtle hover accent */}
+                <div className="absolute bottom-0 left-8 right-8 h-0.5 bg-gradient-to-r from-transparent via-slate-200 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+              </div>
+            </div>
           ))}
         </div>
       </div>
