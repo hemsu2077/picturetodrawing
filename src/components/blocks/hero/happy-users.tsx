@@ -25,7 +25,7 @@ export default function HappyUsers() {
           ))}
         </div>
         <p className="text-left font-medium text-muted-foreground">
-          from 99+ happy users
+          from 999+ happy users
         </p>
       </div>
     </div>

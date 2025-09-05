@@ -325,7 +325,7 @@ export function DrawingGenerator({ className }: DrawingGeneratorProps) {
               {/* Trial hint text */}
               {!session?.user?.uuid && trialStatus?.canUseTrial && (
                 <p className="text-xs text-center text-muted-foreground">
-                  Try free once daily • No Login required
+                  Try free once daily • No Sign-up required
                 </p>
               )}
             </div>

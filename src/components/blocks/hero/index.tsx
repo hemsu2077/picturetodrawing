@@ -98,7 +98,7 @@ export default function Hero({ hero }: { hero: HeroType }) {
                 </div>
                 <div className="flex items-center gap-2">
                   <Zap className="h-4 w-4 text-primary" />
-                  <span className="text-sm text-muted-foreground">Instant Results</span>
+                  <span className="text-sm text-muted-foreground">No Sign-up Required</span>
                 </div>
               </div>
             )}

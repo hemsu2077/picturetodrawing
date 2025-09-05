@@ -128,8 +128,8 @@
   },
   "usage": {
     "name": "usage",
-    "title": "How to Convert Picture to Drawing",
-    "description": "Transform any photo to sketch or artistic drawing with our intuitive process. No technical skills needed - just follow these simple steps to create stunning picture to drawing conversions.",
+    "title": "How Photo to Line Drawing Works",
+    "description": "Our advanced AI technology converts your photos into clean line art in just 3 simple steps.",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -138,21 +138,21 @@
     "items": [
       {
         "title": "Upload Your Photo",
-        "description": "Simply drag and drop your image or click to browse. Our picture to drawing converter supports JPG, PNG, and other popular formats. Your photo will be processed securely with complete privacy protection.",
+        "description": "Simply drag and drop your image or select from your device. We support all common photo formats including JPG, PNG, WebP and HEIC.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
       },
       {
-        "title": "Choose Your Art Style",
-        "description": "Select from our collection of artistic styles including pencil sketch, charcoal drawing, watercolor painting, and ink illustration. Each picture to drawing style offers unique aesthetic qualities for your picture to drawing transformation.",
+        "title": "Choose Line Drawing Style",
+        "description": "Our intelligent algorithm analyzes your photo to identify key contours, edges, and important details, creating a clean line drawing conversion.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
         }
       },
       {
         "title": "Download Your Artwork",
-        "description": "Watch as our AI transforms your picture to drawing in seconds. Preview your converted picture to drawing result and download in high resolution. Perfect for printing, sharing, or creating personalized gifts.",
+        "description": "Get your high-quality line art in multiple formats. Perfect for printing, digital projects, or importing into design software.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
@@ -162,46 +162,42 @@
   "faq": {
     "name": "faq",
     "label": "FAQ",
-    "title": "Frequently Asked Questions About Picture to Drawing Conversion",
-    "description": "Get answers to common questions about our photo to sketch converter and picture to drawing technology.",
+    "title": "Frequently Asked Questions About Photo to Line Drawing Conversion",
+    "description": "Everything you need to know about converting photos to line drawings",
     "items": [
       {
-        "title": "How does the picture to drawing AI technology work?",
-        "description": "Our advanced artificial intelligence analyzes your photo's composition, lighting, textures, and details to create authentic picture to drawing conversions. The AI understands artistic techniques like shading, line weight, and texture rendering to produce photo to sketch results that mimic traditional hand-drawn artwork. Unlike simple filters, our technology preserves the emotional essence and fine details of your original photograph."
+        "title": "What types of photos work best for line drawing conversion?",
+        "description": "Photos with clear subjects and good contrast work best. Portraits, pets, buildings, and objects with defined edges produce excellent line art results. Our AI can handle various lighting conditions and automatically adjusts for optimal line drawing output."
       },
       {
-        "title": "What art styles are available for photo to sketch conversion?",
-        "description": "Our picture to drawing converter offers multiple artistic styles including realistic pencil sketches, dramatic charcoal drawings, delicate watercolor paintings, bold ink illustrations, and colored pencil artwork. Each photo to sketch style uses different algorithms to achieve authentic artistic effects. You can experiment with various styles to find the perfect picture to drawing aesthetic for your image."
+        "title": "Can I use the line drawings for commercial projects?",
+        "description": "Yes! All line drawings created with our photo to line drawing tool can be used for both personal and commercial purposes. You retain full rights to your converted images and can use them for products, marketing, or any business application."
       },
       {
-        "title": "Is my photo safe when using your picture to drawing service??",
-        "description": "Absolutely! Privacy and security are our top priorities. Your photos are processed on secure servers and automatically deleted after your picture to drawing conversion is complete. We never store, share, or use your images for any other purpose. All photo to sketch processing happens through encrypted connections, ensuring your personal photos remain completely private and secure."
+        "title": "What file formats are supported for upload and download?",
+        "description": "Upload: JPG, PNG, HEIC, WebP, and most common image formats. Download: High-quality PNG for raster graphics, SVG for scalable vector line art, and PDF for printing. Choose the format that best suits your intended use case."
       },
       {
-        "title": "How long does picture to drawing conversion take?",
-        "description": "Most photo to sketch conversions complete within 20-30 seconds, depending on image size and complexity. Our optimized AI servers ensure fast processing without compromising quality. High-resolution pictures or detailed images may take slightly longer, but you'll never wait more than a minute for your picture to drawing transformation. The speed of our technology allows for quick experimentation with different artistic styles."
+        "title": "How long does photo to line drawing conversion take?",
+        "description": "Processing time depends on your account type: Free users can expect conversions to complete within 50-60 seconds, while premium subscribers enjoy priority processing with results in just 20-30 seconds. Image size and complexity may slightly affect processing time, but our optimized AI servers ensure consistent quality regardless of speed."
       },
       {
-        "title": "What resolution can I download my photo to sketch results?",
-        "description": "You can download your picture to drawing conversions in multiple resolutions, including the full resolution of your original photo. Our AI maintains image quality throughout the photo to sketch process, ensuring your artistic drawings are suitable for printing, professional use, or high-quality social media sharing. Premium users can access even higher resolution outputs for large format printing and commercial applications."
+        "title": "Is my photo data secure and private?",
+        "description": "Absolutely. Your photos are processed securely and automatically deleted from our servers after conversion. We never store, share, or use your images for any purpose other than creating your line drawing. Your privacy is our top priority."
       },
       {
-        "title": "Can I use the picture to drawing converter on mobile devices?",
-        "description": "Yes! Our photo to sketch converter works perfectly on smartphones and tablets. The responsive design ensures seamless picture to drawing conversion across all devices. You can upload photos directly from your mobile camera or gallery, apply artistic styles, and download results instantly. The mobile experience maintains all the features and quality of the desktop version, making artistic photo to sketch transformation available anywhere."
-      },
-      {
-        "title": "Do I need to sign up to use the picture to drawing converter?",
-        "description": "While creating an account unlocks the full potential of our picture to drawing service, you can try our photo to sketch converter without signing up! Every day, you get one free picture to drawing conversion to experience our AI technology. Once your daily trial is used, you'll need to create an account to continue transforming your photos to drawings. Registered users enjoy unlimited picture to drawing conversions, faster processing speeds, and access to premium artistic styles for their photo to sketch creations."
+        "title": "Can I adjust the line thickness and detail level?",
+        "description": "No, you cannot adjust the line thickness and detail level."
       }
     ]
   },
   "cta": {
     "name": "cta",
-    "title": "Ready to Transform Your Pictures to Stunning Drawings?",
-    "description": "Join thousands of satisfied users who trust our AI-powered photo to sketch converter. Experience professional-quality picture to drawing results in seconds, with complete privacy protection and authentic artistic styles.",
+    "title": "Ready to Transform Your Photos?",
+    "description": "Join thousands of creators who use our photo to line drawing tool to bring their ideas to life. Start converting your images today.",
     "buttons": [
       {
-        "title": "Start Your Picture to Drawing Conversion Now",
+        "title": "Convert Your First Photo Free",
         "url": "/#drawing-generator",
         "target": "_self",
         "icon": "GoArrowUpRight"
@@ -282,129 +278,5 @@
         ]
       }
     ]
-  },
-  "perfect_uses": {
-    "name": "perfect_uses",
-    "title": "Perfect Uses for Picture to Drawing Conversion",
-    "description": "Discover the endless possibilities of our picture to drawing technology. From personal gifts to professional projects, our picture to drawing converter serves diverse creative needs with exceptional quality.",
-    "items": [
-      {
-        "title": "Personalized Gifts",
-        "description": "Create unique, heartfelt gifts by converting cherished family photos to artistic drawings. Perfect for anniversaries, birthdays, and special occasions that deserve memorable picture to drawing keepsakes.",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/uses-gift.webp?v=20250815"
-        }
-      },
-      {
-        "title": "Social Media Content",
-        "description": "Stand out on Instagram, Facebook, and other platforms with artistic picture to drawing content. Our picture to drawing styles create engaging posts that capture attention and increase engagement.",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/uses-social.webp?v=20250815"
-        }
-      },
-      {
-        "title": "Marketing Materials",
-        "description": "Enhance brochures, websites, and advertisements with distinctive photo to sketch artwork. Our picture to drawing converter helps businesses create memorable visual branding that differentiates from competitors.",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/uses-marketing.webp?v=20250815"
-        }
-      },
-      {
-        "title": "Home Decoration",
-        "description": "Transform your favorite photographs into elegant wall art using our picture to drawing technology. Create cohesive home decor with personalized photo to sketch artwork that reflects your style.",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/uses-decoration.webp?v=20250815"
-        }
-      },
-      {
-        "title": "Educational Projects",
-        "description": "Teachers and students use our photo to sketch converter for art education, presentations, and creative assignments. Picture to drawing technology helps illustrate concepts and inspire artistic learning.",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/uses-educational.webp?v=20250815"
-        }
-      },
-      {
-        "title": "Creative Portfolios",
-        "description": "Artists, designers, and creatives enhance their portfolios with diverse photo to sketch styles. Our picture to drawing converter demonstrates versatility and artistic vision across different mediums.",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/uses-creative.webp?v=20250815"
-        }
-      }
-    ]
-  },
-
-
-  "footer": {
-    "name": "footer",
-    "brand": {
-      "title": "PicturetoDrawing",
-      "description": "Transform your photos into stunning artwork with our AI-powered picture to drawing converter. Professional quality photo to sketch results in seconds.",
-      "logo": {
-        "src": "/logo.png",
-        "alt": "PicturetoDrawing"
-      },
-      "url": "/"
-    },
-    "copyright": "© 2025 • PicturetoDrawing All rights reserved.",
-    "nav": {
-      "items": [
-        {
-          "title": "About",
-          "children": [
-            {
-              "title": "Home",
-              "url": "/",
-              "target": "_self"
-            },
-            {
-              "title": "Pricing",
-              "url": "/pricing",
-              "target": "_self"
-            },
-            {
-              "title": "My Drawings",
-              "url": "/my-drawings",
-              "target": "_self"
-            },
-            {
-              "title": "Free Credits",
-              "url": "/free-credits",
-              "target": "_self"
-            },
-            {
-              "title": "Contact Us",
-              "url": "mailto:hi@picturetodrawing.com",
-              "target": "_self"
-            }
-          ]
-        }
-      ]
-    },
-    "social": {
-      "items": [
-        {
-          "title": "Email",
-          "icon": "RiMailLine",
-          "url": "mailto:hi@picturetodrawing.com",
-          "target": "_self"
-        }
-      ]
-    },
-    "agreement": {
-      "items": [
-        {
-          "title": "Privacy Policy",
-          "url": "/privacy-policy"
-        },
-        {
-          "title": "Terms of Service",
-          "url": "/terms-of-service"
-        },
-        {
-          "title": "Refund Policy",
-          "url": "/refund-policy"
-        }
-      ]
-    }
   }
 }
