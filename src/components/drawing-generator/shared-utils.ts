@@ -8,6 +8,19 @@ export const formatStyle = (style: string) => {
     .join(" ");
 };
 
+export const formatModel = (model: string) => {
+  if (model === 'nano-banana') {
+    return 'Nano Banana 🍌';
+  }
+  return 'Classic';
+};
+
+export const formatRatio = (ratio: string | null) => {
+  if (!ratio) return 'Auto';
+  if (ratio === 'match_input_image') return 'Auto';
+  return ratio;
+};
+
 export const formatDate = (date: Date | null) => {
   if (!date) return "Unknown";
   return new Date(date).toLocaleDateString("en-US", {

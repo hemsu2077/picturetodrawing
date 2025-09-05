@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { ImageUpload } from './image-upload';
 import { StyleSelector } from './style-selector';
+import { ModelSelector } from './model-selector';
 import { RatioSelector } from './ratio-selector';
 import { RecentDrawings } from './result-display';
 import PricingModal from '@/components/pricing-modal';
@@ -35,7 +36,15 @@ export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch' }: 
   
   const [selectedImage, setSelectedImage] = useState<{ file: File | string; preview: string } | null>(null);
   const [selectedStyle, setSelectedStyle] = useState(defaultStyle);
+  const [selectedModel, setSelectedModel] = useState('default');
   const [selectedRatio, setSelectedRatio] = useState('auto');
+
+  // Auto-set ratio to 'auto' when nano-banana is selected
+  useEffect(() => {
+    if (selectedModel === 'nano-banana') {
+      setSelectedRatio('auto');
+    }
+  }, [selectedModel]);
   const [isGenerating, setIsGenerating] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [newDrawing, setNewDrawing] = useState<{ style: string; ratio: string } | null>(null);
@@ -187,6 +196,7 @@ export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch' }: 
         },
         body: JSON.stringify({
           style: selectedStyle,
+          model: selectedModel,
           image: imageData,
           ratio: selectedRatio === 'auto' ? null : selectedRatio,
         }),
@@ -307,9 +317,15 @@ export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch' }: 
               onStyleChange={setSelectedStyle}
               className="border-0 shadow-none p-0"
             />
+            <ModelSelector
+              selectedModel={selectedModel}
+              onModelChange={setSelectedModel}
+              className="border-0 shadow-none p-0"
+            />
             <RatioSelector
               selectedRatio={selectedRatio}
               onRatioChange={setSelectedRatio}
+              disabled={selectedModel === 'nano-banana'}
               className="border-0 shadow-none p-0"
             />
             

@@ -1,0 +1,1 @@
+ALTER TABLE "pic_to_dra_images" ADD COLUMN "model" varchar(50) DEFAULT 'default' NOT NULL;

@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Download, Trash2 } from 'lucide-react';
 import { Drawing } from './shared-types';
-import { formatStyle, formatDate, handleDownload } from './shared-utils';
+import { formatStyle, formatModel, formatRatio, formatDate, handleDownload } from './shared-utils';
 
 interface DrawingDetailModalProps {
   drawing: Drawing | null;
@@ -50,12 +50,15 @@ export function DrawingDetailModal({
                 <p className="text-gray-900">{formatStyle(drawing.style)}</p>
               </div>
               
-              {drawing.ratio && (
-                <div>
-                  <label className="text-xs font-medium text-gray-500">Aspect Ratio</label>
-                  <p className="text-gray-900">{drawing.ratio}</p>
-                </div>
-              )}
+              <div>
+                <label className="text-xs font-medium text-gray-500">AI Model</label>
+                <p className="text-gray-900">{formatModel(drawing.model)}</p>
+              </div>
+              
+              <div>
+                <label className="text-xs font-medium text-gray-500">Aspect Ratio</label>
+                <p className="text-gray-900">{formatRatio(drawing.ratio)}</p>
+              </div>
               
               <div>
                 <label className="text-xs font-medium text-gray-500">Created</label>

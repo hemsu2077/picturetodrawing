@@ -29,6 +29,13 @@
       "when": 1756637604876,
       "tag": "0003_luxuriant_next_avengers",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1757082329612,
+      "tag": "0004_rapid_hellfire_club",
+      "breakpoints": true
     }
   ]
 }

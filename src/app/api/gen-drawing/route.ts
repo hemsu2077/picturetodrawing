@@ -54,7 +54,7 @@ try {
       );
     }
 
-    const { style, image, ratio } = await req.json();
+    const { style, model, image, ratio } = await req.json();
 
     // Validate required inputs
     if (!style || !image) {
@@ -76,11 +76,11 @@ try {
       prompt = 'Convert this photo into a clean black and white line illustration. Keep only the main outlines, no shading. Make it look like a coloring book page with clear contours and simplified details. Remove the background and focus on the subject.';
     } else {
       const styleName = styleMap[style] || style;
-      prompt = `transform the image to a drawing, the drawing should be in the style of ${styleName}`;
+      prompt = `transform the image to a drawing, the drawing should be in the style of ${styleName}, Try to make it look as realistically painted as possible.`;
     }
     
-    // Use the same model for all styles
-    const model = "black-forest-labs/flux-kontext-pro";
+    // Select model based on user choice
+    const selectedModel = model === 'nano-banana' ? "google/nano-banana" : "black-forest-labs/flux-kontext-pro";
     
     
     let inputImageUrl: string;
@@ -110,21 +110,42 @@ try {
         throw new Error("Failed to upload input image");
       }
     }
-    const imageModel = replicate.image(model);
-    const providerOptions = {
-      replicate: {
-        input_image: inputImageUrl,
-        output_format:"png",
-      },
+    const imageModel = replicate.image(selectedModel);
+    
+    // Configure provider options based on model
+    let providerOptions: any;
+    if (model === 'nano-banana') {
+      // Nano Banana uses image_input array and doesn't support ratio
+      providerOptions = {
+        replicate: {
+          image_input: [inputImageUrl],
+          output_format: "png",
+        },
+      };
+    } else {
+      // Default model (flux-kontext-pro) uses input_image and supports ratio
+      providerOptions = {
+        replicate: {
+          input_image: inputImageUrl,
+          output_format: "png",
+        },
+      };
     }
 
-    const { images, warnings } = await generateImage({
-        model: imageModel,
-        prompt: prompt,
-        n: 1,
-        providerOptions,
-        aspectRatio:ratio || "match_input_image",
-      });
+    // Configure generateImage options based on model
+    const generateOptions: any = {
+      model: imageModel,
+      prompt: prompt,
+      n: 1,
+      providerOptions,
+    };
+
+    // Only add aspectRatio for default model
+    if (model !== 'nano-banana') {
+      generateOptions.aspectRatio = ratio || "match_input_image";
+    }
+
+    const { images, warnings } = await generateImage(generateOptions);
 
       if (warnings.length > 0) {
         console.warn("Generation warnings:", warnings);
@@ -164,6 +185,7 @@ try {
                 original_image_url: inputImageUrl,
                 generated_image_url: res.url || "",
                 style: style,
+                model: model || "default",
                 ratio: ratio || "match_input_image",
                 provider: provider,
                 filename: filename,

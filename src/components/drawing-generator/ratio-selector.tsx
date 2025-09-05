@@ -13,6 +13,7 @@ interface RatioOption {
 interface RatioSelectorProps {
   selectedRatio: string;
   onRatioChange: (ratio: string) => void;
+  disabled?: boolean;
   className?: string;
 }
 
@@ -49,17 +50,17 @@ const ASPECT_RATIOS: RatioOption[] = [
   }
 ];
 
-export function RatioSelector({ selectedRatio, onRatioChange, className }: RatioSelectorProps) {
+export function RatioSelector({ selectedRatio, onRatioChange, disabled = false, className }: RatioSelectorProps) {
 
   return (
     <div className={cn("space-y-4", className)}>
       <div>
         <p className="text-sm text-muted-foreground mt-1">
-          Choose the output image dimensions
+        Aspect Ratio
         </p>
       </div>
       
-      <Select value={selectedRatio} onValueChange={onRatioChange}>
+      <Select value={disabled ? 'auto' : selectedRatio} onValueChange={disabled ? undefined : onRatioChange} disabled={disabled}>
         <SelectTrigger className="w-full">
           <SelectValue placeholder="Select aspect ratio" />
         </SelectTrigger>

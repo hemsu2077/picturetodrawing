@@ -137,6 +137,7 @@ export const images = pgTable("pic_to_dra_images", {
   original_image_url: varchar({ length: 500 }),
   generated_image_url: varchar({ length: 500 }).notNull(),
   style: varchar({ length: 50 }).notNull(),
+  model: varchar({ length: 50 }).notNull().default("default"),
   ratio: varchar({ length: 50 }),
   provider: varchar({ length: 50 }).notNull().default("replicate"),
   filename: varchar({ length: 255 }),
