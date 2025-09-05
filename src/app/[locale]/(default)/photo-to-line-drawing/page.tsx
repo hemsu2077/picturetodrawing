@@ -51,6 +51,7 @@ export default async function PhotoToLineDrawingPage({
       <div id="drawing-generator">
         <DrawingGenerator />
       </div>
+      {page.feature && <Feature section={page.feature} />}
       {page.introduce && <Feature1 section={page.introduce} />}
       {page.transformation_examples && <TransformationExamples section={page.transformation_examples} />}
       {page.benefit && <Feature2 section={page.benefit} />}

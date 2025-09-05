@@ -1,9 +1,9 @@
 {
 
   "hero": {
-    "title": "Photo to Line Drawing",
+    "title": "Transform Photo to Line Drawing Instantly",
     "highlight_text": "Photo to Line Drawing",
-    "description": "Experience the magic of AI-powered photo to sketch conversion",
+    "description": "Convert any photo into clean, professional line art without drawing skills.",
     "tip": "Free to Try, 100% Secure, Instant Results",
     "buttons": [
       {
@@ -16,6 +16,43 @@
     ],
     "show_happy_users": true,
     "show_badge": false
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Powerful Features for Every Creator",
+    "description": "Whether you're a hobbyist, professional designer, or crafter, our photo to line drawing tool provides everything you need.",
+    "items": [
+      {
+        "title": "No Drawing Skills Required",
+        "description": "Transform any photo into professional line art without any artistic background. Perfect for beginners and experts alike.",
+        "icon": "RiMagicLine"
+      },
+      {
+        "title": "Lightning Fast Processing",
+        "description": "Get your line drawing results in seconds, not hours. Our optimized AI ensures quick turnaround times for all your projects.",
+        "icon": "RiFlashlightLine"
+      },
+      {
+        "title": "Customizable Settings",
+        "description": "Adjust line thickness, detail level, and contrast to get the perfect line art style for your specific project needs.",
+        "icon": "RiSettings3Line"
+      },
+      {
+        "title": "Multiple Output Formats",
+        "description": "Download your line drawings as PNG, SVG, or PDF. Compatible with embroidery software, laser cutters, and design programs.",
+        "icon": "RiDownloadLine"
+      },
+      {
+        "title": "Privacy Protected",
+        "description": "Your photos are processed securely and never stored on our servers. Complete privacy and data protection guaranteed.",
+        "icon": "RiShieldCheckLine"
+      },
+      {
+        "title": "Works Everywhere",
+        "description": "Use our photo to line drawing converter on any device - desktop, tablet, or mobile. No software installation required.",
+        "icon": "RiSmartphoneLine"
+      }
+    ]
   },
   "introduce": {
     "name": "introduce",
