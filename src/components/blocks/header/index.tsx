@@ -103,7 +103,7 @@ export default function Header({ header }: { header: HeaderType }) {
                                   <NavigationMenuLink asChild>
                                     <Link
                                       className={cn(
-                                        "flex select-none gap-4 rounded-md p-3 leading-none no-underline outline-hidden transition-colors hover:bg-accent/10 hover:text-accent-foreground focus:bg-accent/10 focus:text-accent-foreground"
+                                        "flex select-none gap-4 rounded-lg p-3 leading-none no-underline outline-hidden transition-colors hover:bg-muted focus:bg-muted"
                                       )}
                                       href={iitem.url as any}
                                       target={iitem.target}
@@ -259,7 +259,7 @@ export default function Header({ header }: { header: HeaderType }) {
                                 <Link
                                   key={ii}
                                   className={cn(
-                                    "flex select-none gap-4 rounded-md p-3 leading-none outline-hidden transition-colors hover:bg-accent/50 hover:text-accent-foreground focus:bg-accent/50 focus:text-accent-foreground"
+                                    "flex select-none gap-4 rounded-lg p-3 leading-none outline-hidden transition-colors hover:bg-muted hover:text-muted-foreground focus:bg-muted focus:text-muted-foreground"
                                   )}
                                   href={iitem.url as any}
                                   target={iitem.target}

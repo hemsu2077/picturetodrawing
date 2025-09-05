@@ -18,12 +18,14 @@
             {
               "title": "Picture to Drawing",
               "url": "/",
-              "target": "_self"
+              "target": "_self",
+              "icon": "RiBrushLine"
             },
             {
               "title": "Photo to line drawing",
               "url": "/photo-to-line-drawing",
-              "target": "_self"
+              "target": "_self",
+              "icon": "RiColorFilterAiLine"
             }
           ]
         },

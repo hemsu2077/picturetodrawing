@@ -7,7 +7,7 @@ export default function Feature({ section }: { section: SectionType }) {
   }
 
   return (
-    <section id={section.name} className="py-20 lg:py-16">
+    <section id={section.name} className="py-16">
       <div className="container mx-auto px-4 sm:px-6">
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center mb-16">
