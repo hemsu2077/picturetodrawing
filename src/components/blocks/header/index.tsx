@@ -241,25 +241,21 @@ export default function Header({ header }: { header: HeaderType }) {
                     </Link>
                   </SheetTitle>
                 </SheetHeader>
-                <div className="mb-8 mt-8 flex flex-col gap-4">
-                  <Accordion type="single" collapsible className="w-full">
+                <div className="mb-8 mt-6 flex flex-col">
+                  <nav className="space-y-1">
                     {header.nav?.items?.map((item, i) => {
                       if (item.children && item.children.length > 0) {
                         return (
-                          <AccordionItem
-                            key={i}
-                            value={item.title || ""}
-                            className="border-b-0"
-                          >
-                            <AccordionTrigger className="mb-4 py-0 font-semibold hover:no-underline text-left">
+                          <div key={i} className="space-y-1">
+                            <div className="px-4 py-3 text-sm font-semibold text-foreground border-b border-border/50">
                               {item.title}
-                            </AccordionTrigger>
-                            <AccordionContent className="mt-2">
+                            </div>
+                            <div className="space-y-1 pb-4">
                               {item.children.map((iitem, ii) => (
                                 <Link
                                   key={ii}
                                   className={cn(
-                                    "flex select-none gap-4 rounded-lg p-3 leading-none outline-hidden transition-colors hover:bg-muted hover:text-muted-foreground focus:bg-muted focus:text-muted-foreground"
+                                    "flex items-center gap-3 px-6 py-3 text-sm transition-colors hover:bg-muted rounded-lg mx-2"
                                   )}
                                   href={iitem.url as any}
                                   target={iitem.target}
@@ -267,21 +263,23 @@ export default function Header({ header }: { header: HeaderType }) {
                                   {iitem.icon && (
                                     <Icon
                                       name={iitem.icon}
-                                      className="size-4 shrink-0"
+                                      className="size-5 shrink-0 text-muted-foreground"
                                     />
                                   )}
-                                  <div>
-                                    <div className="text-sm font-semibold">
+                                  <div className="flex flex-col">
+                                    <span className="font-medium text-foreground">
                                       {iitem.title}
-                                    </div>
-                                    <p className="text-sm leading-snug text-muted-foreground">
-                                      {iitem.description}
-                                    </p>
+                                    </span>
+                                    {iitem.description && (
+                                      <span className="text-xs text-muted-foreground mt-0.5">
+                                        {iitem.description}
+                                      </span>
+                                    )}
                                   </div>
                                 </Link>
                               ))}
-                            </AccordionContent>
-                          </AccordionItem>
+                            </div>
+                          </div>
                         );
                       }
                       return (
@@ -289,19 +287,19 @@ export default function Header({ header }: { header: HeaderType }) {
                           key={i}
                           href={item.url as any}
                           target={item.target}
-                          className="font-semibold my-4 flex items-center gap-2 px-4"
+                          className="flex items-center gap-3 px-4 py-3 text-sm font-medium transition-colors hover:bg-muted rounded-lg mx-2"
                         >
                           {item.icon && (
                             <Icon
                               name={item.icon}
-                              className="size-4 shrink-0"
+                              className="size-5 shrink-0 text-muted-foreground"
                             />
                           )}
-                          {item.title}
+                          <span className="text-foreground">{item.title}</span>
                         </Link>
                       );
                     })}
-                  </Accordion>
+                  </nav>
                 </div>
                 <div className="flex-1"></div>
                 <div className="border-t pt-4">

@@ -31,11 +31,11 @@ export default function Feature({ section }: { section: SectionType }) {
                 {/* Icon Container */}
                 {item.icon && (
                   <div className="relative">
-                    <div className="flex w-16 h-16 lg:w-18 lg:h-18 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-50 to-indigo-50 backdrop-blur-sm transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 group-hover:border-blue-300 group-hover:from-blue-100 group-hover:to-indigo-100">
+                    <div className="flex w-16 h-16 lg:w-18 lg:h-18 items-center justify-center rounded-2xl bg-gradient-to-br from-primary/5 to-indigo-50 backdrop-blur-sm transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 group-hover:border-blue-300 group-hover:from-primary/10 group-hover:to-indigo-100">
                       <Icon name={item.icon} className="text-primary text-2xl lg:text-3xl" />
                     </div>
                     {/* Subtle glow effect */}
-                    <div className="absolute inset-0 rounded-2xl bg-blue-200/30 blur-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 -z-10"></div>
+                    <div className="absolute inset-0 rounded-2xl bg-primary/10 blur-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100 -z-10"></div>
                   </div>
                 )}
 

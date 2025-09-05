@@ -8,7 +8,7 @@ export default function Feature3({ section }: { section: SectionType }) {
   }
 
   return (
-    <section className="py-20 lg:py-24 bg-gradient-to-b from-violet-50 via-blue-50/50 to-transparent relative overflow-hidden">
+    <section className="py-20 lg:py-24 bg-gradient-to-b from-primary/2 to-transparent relative overflow-hidden">
       {/* Subtle background elements */}
       <div className="absolute top-0 left-1/4 w-72 h-72 bg-gradient-to-br from-blue-100/20 to-purple-100/20 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-gradient-to-br from-indigo-100/20 to-pink-100/20 rounded-full blur-3xl"></div>
@@ -46,9 +46,9 @@ export default function Feature3({ section }: { section: SectionType }) {
                   {/* Icon container */}
                   <div className="relative">
                     <div className="inline-flex items-center justify-center w-20 h-20 rounded-2xl bg-white border border-slate-200 transition-all duration-300 hover:border-slate-300">
-                      {index === 0 && <Upload className="h-10 w-10 text-blue-600" />}
-                      {index === 1 && <Wand2 className="h-10 w-10 text-indigo-600" />}
-                      {index === 2 && <Download className="h-10 w-10 text-purple-600" />}
+                      {index === 0 && <Upload className="h-10 w-10" />}
+                      {index === 1 && <Wand2 className="h-10 w-10" />}
+                      {index === 2 && <Download className="h-10 w-10" />}
                     </div>
                     
                   </div>
