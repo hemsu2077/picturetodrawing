@@ -26,7 +26,7 @@
     "items": [
       {
         "title": "Portrait Photo to Line Drawing Transformation",
-        "description": "Transform personal portraits into elegant line art that captures every detail and emotion with artistic precision.",
+        "description": "Transform portraits into elegant line art with artistic precision.",
         "label": "Portrait",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch.webp",
@@ -37,7 +37,7 @@
       },
       {
         "title": "Landscape Photo to Line Drawing Conversion",
-        "description": "Convert scenic landscapes into beautiful line art that preserves natural textures and atmospheric depth.",
+        "description": "Convert landscapes into beautiful line art preserving natural textures.",
         "label": "Landscape",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/example-line-drawing.webp",
@@ -48,7 +48,7 @@
       },
       {
         "title": "Architectural Photo to Line Drawing Style",
-        "description": "Transform building and architectural photos into precise line drawings perfect for technical and artistic use.",
+        "description": "Transform architectural photos into precise line drawings for technical use.",
         "label": "Architecture",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing.webp",
@@ -59,7 +59,7 @@
       },
       {
         "title": "Product Photo to Line Drawing for Design",
-        "description": "Convert industrial and product photos into clean line art ideal for technical documentation and design work.",
+        "description": "Convert product photos into clean line art for design documentation.",
         "label": "Product",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting.webp",
@@ -70,7 +70,7 @@
       },
       {
         "title": "Nature Photo to Line Drawing Art",
-        "description": "Transform wildlife and nature photography into artistic line drawings that highlight natural beauty and form.",
+        "description": "Transform nature photos into artistic line drawings highlighting natural beauty.",
         "label": "Nature",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/compare-ai.webp",
@@ -81,7 +81,7 @@
       },
       {
         "title": "Vehicle Photo to Line Drawing Illustration",
-        "description": "Convert automotive and vehicle photos into technical line art perfect for documentation and design projects.",
+        "description": "Convert vehicle photos into technical line art for documentation projects.",
         "label": "Vehicle",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/compare-original.webp",
