@@ -12,7 +12,7 @@
       {
         "title": "Try for Free",
         "icon": "RiFlashlightFill",
-        "url": "/#drawing-generator",
+        "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self",
         "variant": "default"
       }
@@ -29,21 +29,10 @@
         "description": "Transform portraits into elegant line art with artistic precision.",
         "label": "Portrait",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch.webp",
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-portrait.webp",
           "alt": "Portrait photo converted to line drawing"
         },
-        "url": "/#drawing-generator",
-        "target": "_self"
-      },
-      {
-        "title": "Landscape Photo to Line Drawing Conversion",
-        "description": "Convert landscapes into beautiful line art preserving natural textures.",
-        "label": "Landscape",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-line-drawing.webp",
-          "alt": "Landscape photo converted to line drawing"
-        },
-        "url": "/#drawing-generator",
+        "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self"
       },
       {
@@ -51,10 +40,10 @@
         "description": "Transform architectural photos into precise line drawings for technical use.",
         "label": "Architecture",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing.webp",
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
           "alt": "Architecture photo converted to line drawing"
         },
-        "url": "/#drawing-generator",
+        "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self"
       },
       {
@@ -62,21 +51,10 @@
         "description": "Convert product photos into clean line art for design documentation.",
         "label": "Product",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting.webp",
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
           "alt": "Product photo converted to line drawing"
         },
-        "url": "/#drawing-generator",
-        "target": "_self"
-      },
-      {
-        "title": "Nature Photo to Line Drawing Art",
-        "description": "Transform nature photos into artistic line drawings highlighting natural beauty.",
-        "label": "Nature",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/compare-ai.webp",
-          "alt": "Nature photo converted to line drawing"
-        },
-        "url": "/#drawing-generator",
+        "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self"
       },
       {
@@ -84,10 +62,32 @@
         "description": "Convert vehicle photos into technical line art for documentation projects.",
         "label": "Vehicle",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/compare-original.webp",
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
           "alt": "Vehicle photo converted to line drawing"
         },
-        "url": "/#drawing-generator",
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self"
+      },
+      {
+        "title": "Nature Photo to Line Drawing Art",
+        "description": "Transform nature photos into artistic line drawings highlighting natural beauty.",
+        "label": "Nature",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
+          "alt": "Nature photo converted to line drawing"
+        },
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self"
+      },
+      {
+        "title": "Pet Photo to Line Drawing Conversion",
+        "description": "Turn your beloved pet photos into line drawings that capture their unique personality.",
+        "label": "Pet",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-pet.webp",
+          "alt": "Pet photo converted to line drawing"
+        },
+        "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self"
       }
     ]
@@ -201,7 +201,7 @@
     "buttons": [
       {
         "title": "Convert Your First Photo Free",
-        "url": "/#drawing-generator",
+        "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self",
         "icon": "GoArrowUpRight"
       }
