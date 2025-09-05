@@ -17,6 +17,78 @@
     "show_happy_users": true,
     "show_badge": false
   },
+  "showcase": {
+    "name": "showcase",
+    "title": "Stunning Photo to Line Drawing Results Across All Categories",
+    "items": [
+      {
+        "title": "Portrait Photo to Line Drawing Transformation",
+        "description": "Transform personal portraits into elegant line art that captures every detail and emotion with artistic precision.",
+        "label": "Portrait",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch.webp",
+          "alt": "Portrait photo converted to line drawing"
+        },
+        "url": "/#drawing-generator",
+        "target": "_self"
+      },
+      {
+        "title": "Landscape Photo to Line Drawing Conversion",
+        "description": "Convert scenic landscapes into beautiful line art that preserves natural textures and atmospheric depth.",
+        "label": "Landscape",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-line-drawing.webp",
+          "alt": "Landscape photo converted to line drawing"
+        },
+        "url": "/#drawing-generator",
+        "target": "_self"
+      },
+      {
+        "title": "Architectural Photo to Line Drawing Style",
+        "description": "Transform building and architectural photos into precise line drawings perfect for technical and artistic use.",
+        "label": "Architecture",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing.webp",
+          "alt": "Architecture photo converted to line drawing"
+        },
+        "url": "/#drawing-generator",
+        "target": "_self"
+      },
+      {
+        "title": "Product Photo to Line Drawing for Design",
+        "description": "Convert industrial and product photos into clean line art ideal for technical documentation and design work.",
+        "label": "Product",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting.webp",
+          "alt": "Product photo converted to line drawing"
+        },
+        "url": "/#drawing-generator",
+        "target": "_self"
+      },
+      {
+        "title": "Nature Photo to Line Drawing Art",
+        "description": "Transform wildlife and nature photography into artistic line drawings that highlight natural beauty and form.",
+        "label": "Nature",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/compare-ai.webp",
+          "alt": "Nature photo converted to line drawing"
+        },
+        "url": "/#drawing-generator",
+        "target": "_self"
+      },
+      {
+        "title": "Vehicle Photo to Line Drawing Illustration",
+        "description": "Convert automotive and vehicle photos into technical line art perfect for documentation and design projects.",
+        "label": "Vehicle",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/compare-original.webp",
+          "alt": "Vehicle photo converted to line drawing"
+        },
+        "url": "/#drawing-generator",
+        "target": "_self"
+      }
+    ]
+  },
   "feature": {
     "name": "feature",
     "title": "Powerful Features for Every Creator",
@@ -51,64 +123,6 @@
         "title": "Works Everywhere",
         "description": "Use our photo to line drawing converter on any device - desktop, tablet, or mobile. No software installation required.",
         "icon": "RiSmartphoneLine"
-      }
-    ]
-  },
-  "introduce": {
-    "name": "introduce",
-    "title": "Professional Quality Photo to Line Drawing Results",
-    "label": "Introduce",
-    "description": "",
-    "image": {
-      "src": "https://files.picturetodrawing.com/sample/draw-introduce.mp4"
-    },
-    "items": [
-      {
-        "title": "Authentic Artistic Rendering",
-        "description": "Every photo to sketch conversion preserves natural textures, shadows, and details that make your drawing look hand-crafted by a professional artist.",
-        "icon": "RiPaintBrushLine"
-      },
-      {
-        "title": "High Resolution Output",
-        "description": "Download your picture to drawing conversions in high resolution, perfect for printing, framing, or sharing on social media platforms.",
-        "icon": "RiHdLine"
-      },
-      {
-        "title": "Privacy Protected",
-        "description": "Your photos are processed securely and automatically deleted after conversion. We never store or share your personal images.",
-        "icon": "RiShieldCheckLine"
-      }
-    ]
-  },
-  "benefit": {
-    "name": "benefit",
-    "title": "Why Choose Our Picture to Drawing Converter?",
-    "label": "Benefits",
-    "description": "Transform any picture to drawing with authentic artistic styles and incredible detail preservation.",
-    "items": [
-      {
-        "title": "Advanced AI Technology",
-        "description": "Our cutting-edge artificial intelligence analyzes every detail of your photo to create authentic picture to drawing conversions that maintain the essence and emotion of your original image.",
-        "icon": "RiBrainLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
-        }
-      },
-      {
-        "title": "Multiple Art Styles",
-        "description": "Choose from pencil sketches, charcoal drawings, watercolor paintings, and ink illustrations. Each photo to sketch style is carefully crafted to deliver unique artistic interpretations of your pictures.",
-        "icon": "RiPaletteLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
-        }
-      },
-      {
-        "title": "Lightning Fast Processing",
-        "description": "Experience instant picture to drawing transformation. Our optimized servers process your photo to sketch conversion in seconds, not minutes, delivering professional results without the wait.",
-        "icon": "RiFlashlightLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
-        }
       }
     ]
   },
@@ -195,57 +209,76 @@
     ]
   },
  
-  "transformation_examples": {
-    "name": "transformation_examples",
-    "title": "Picture to Drawing Transformation Examples",
-    "description": "See the incredible results of our AI-powered picture to drawing converter. These real examples demonstrate the quality and artistic authenticity of our picture to drawing technology across different subjects and styles.",
+  
+  "use_cases": {
+    "name": "use_cases",
+    "title": "Photo to Line Drawing Applications Across Industries",
+    "description": "From personal crafts to professional projects, discover how photo to line drawing transforms creative workflows across industries.",
     "items": [
       {
-        "title": "Pencil Sketch",
-        "description": "Classic graphite pencil drawing with realistic shading and fine detail preservation. Perfect for creating timeless, elegant artwork that captures the essence of your original photo with subtle textures and natural gradients.",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch.webp"
-        },
+        "title": "Crafts & Hobbies",
+        "description": "Transform your photos into practical patterns and guides for creative projects.",
+        "icon": "RiScissorsLine",
         "children": [
-          {
-            "description": "Ideal for portraits, architectural drawings, and detailed illustrations where precision and traditional artistic values matter most."
-          }
+          "Embroidery patterns from family photos",
+          "Custom coloring pages for kids", 
+          "Woodburning and engraving guides",
+          "Stencils for painting projects"
         ]
       },
       {
-        "title": "Line Drawing",
-        "description": "Clean, minimalist line art with bold strokes and clear contours. Creates modern, striking artwork that emphasizes form and structure while removing unnecessary details for a contemporary aesthetic.",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-line-drawing.webp"
-        },
+        "title": "Digital Art & Design",
+        "description": "Use photo to line drawing as foundation for digital creative work.",
+        "icon": "RiPaintBrushLine",
         "children": [
-          {
-            "description": "Perfect for logos, technical illustrations, and modern graphic design projects that require clarity and visual impact."
-          }
+          "Base layers for digital paintings",
+          "Reference guides for illustrations",
+          "Minimalist logo creation",
+          "Website and app graphics"
         ]
       },
       {
-        "title": "Color Pencil Drawing",
-        "description": "Vibrant colored pencil artwork with rich textures and layered colors. Brings your photos to life with the warmth and character of hand-colored illustrations, preserving subtle color variations.",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing.webp"
-        },
+        "title": "Personalized Gifts",
+        "description": "Create meaningful presents with photo to line drawing conversions.",
+        "icon": "RiGiftLine",
         "children": [
-          {
-            "description": "Excellent for children's portraits, pet illustrations, and artwork where color plays a crucial role in emotional expression."
-          }
+          "Pet portraits on custom mugs",
+          "Family line art for wall decor",
+          "Personalized t-shirt designs", 
+          "Custom poster artwork"
         ]
       },
       {
-        "title": "Watercolor Painting",
-        "description": "Soft, flowing watercolor effects with beautiful color blending and artistic brushstrokes. Creates dreamy, ethereal artwork with the delicate transparency and organic flow of traditional watercolor paintings.",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting.webp"
-        },
+        "title": "Professional Manufacturing",
+        "description": "Convert photos to precise line drawings for industrial applications.",
+        "icon": "RiSettings3Line",
         "children": [
-          {
-            "description": "Perfect for landscapes, floral arrangements, and artistic projects that benefit from a romantic, painterly aesthetic."
-          }
+          "Laser cutting path generation",
+          "CNC machine toolpaths",
+          "Plotter art creation",
+          "Technical diagram simplification"
+        ]
+      },
+      {
+        "title": "Tattoo & Body Art",
+        "description": "Photo to line drawing creates perfect templates for body art.",
+        "icon": "RiHeartLine",
+        "children": [
+          "Tattoo design templates",
+          "Henna pattern creation",
+          "Body art stencils",
+          "Artist consultation visuals"
+        ]
+      },
+      {
+        "title": "Education & Training",
+        "description": "Simplify complex images into clear educational materials.",
+        "icon": "RiGraduationCapLine",
+        "children": [
+          "Simplified anatomical diagrams",
+          "Technical equipment outlines",
+          "Educational material graphics",
+          "Student activity sheets"
         ]
       }
     ]
@@ -299,68 +332,8 @@
       }
     ]
   },
-  "comparison": {
-    "name": "comparison",
-    "title": "Our Picture to Drawing AI vs Traditional Filters",
-    "description": "Compare our advanced AI-powered picture to drawing technology with basic photo filters. Experience the superior quality and authenticity that sets our photo to sketch converter apart from the competition.",
-    "items": [
-      {
-        "title": "Original Photo",
-        "description": "Standard digital photograph ready for artistic transformation using different methods.",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/compare-original.webp"
-        }
-      },
-      {
-        "title": "Traditional Filter",
-        "description": "Artificial, over-processed look with lost details and unrealistic photo to sketch appearance.",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/compare-traditional.webp"
-        }
-      },
-      {
-        "title": "Our AI Result",
-        "description": "Authentic, detailed picture to drawing with preserved textures and natural artistic flow.",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/compare-ai.webp"
-        }
-      }
-    ]
-  },
-  "ai_excellence": {
-    "name": "ai_excellence",
-    "title": "Why Our Picture to Drawing AI Excels",
-    "description": "Our cutting-edge artificial intelligence technology sets new standards in photo to sketch conversion, delivering unmatched quality and artistic authenticity.",
-    "items": [
-      {
-        "title": "Advanced Neural Networks",
-        "description": "Our AI uses sophisticated deep learning algorithms trained on millions of artistic samples to understand and replicate authentic drawing techniques."
-      },
-      {
-        "title": "Style Adaptation",
-        "description": "The technology automatically adapts to different image types, optimizing the picture to drawing conversion for portraits, landscapes, and other subjects."
-      },
-      {
-        "title": "Quality Assurance",
-        "description": "Built-in quality checks ensure every photo to sketch conversion meets our high standards for artistic excellence and detail preservation."
-      },
-      {
-        "title": "Continuous Learning",
-        "description": "Our AI constantly improves through user feedback and new training data, ensuring picture to drawing results get better over time."
-      }
-    ],
-    "image": {
-      "src": "/imgs/ai-excellence/technology.jpg"
-    },
-    "buttons": [
-      {
-        "title": "Experience AI Excellence",
-        "url": "/pricing",
-        "target": "_self",
-        "icon": "RiRobot2Line"
-      }
-    ]
-  },
+
+
   "footer": {
     "name": "footer",
     "brand": {

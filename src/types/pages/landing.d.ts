@@ -34,6 +34,7 @@ export interface PhotoToLineDrawingPage {
   art_styles?: Section;
   transformation_examples?: Section;
   perfect_uses?: Section;
+  use_cases?: Section;
   comparison?: Section;
   ai_excellence?: Section;
   usage?: Section;

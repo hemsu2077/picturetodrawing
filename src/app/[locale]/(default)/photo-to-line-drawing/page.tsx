@@ -12,9 +12,11 @@ import Hero from "@/components/blocks/hero";
 import PerfectUses from "@/components/blocks/perfect-uses";
 import Pricing from "@/components/blocks/pricing";
 import Showcase from "@/components/blocks/showcase";
+import Showcase1 from "@/components/blocks/showcase1";
 import Stats from "@/components/blocks/stats";
 import Testimonial from "@/components/blocks/testimonial";
 import TransformationExamples from "@/components/blocks/transformation-examples";
+import UseCases from "@/components/blocks/use-cases";
 import { getPhotoToLineDrawingPage } from "@/services/page";
 import DrawingGenerator from "@/components/drawing-generator";
 
@@ -51,12 +53,10 @@ export default async function PhotoToLineDrawingPage({
       <div id="drawing-generator">
         <DrawingGenerator />
       </div>
+      {page.showcase && <Showcase1 section={page.showcase} />}
       {page.feature && <Feature section={page.feature} />}
-      {page.introduce && <Feature1 section={page.introduce} />}
-      {page.transformation_examples && <TransformationExamples section={page.transformation_examples} />}
       {page.benefit && <Feature2 section={page.benefit} />}
-      {page.perfect_uses && <PerfectUses section={page.perfect_uses} />}
-      {page.comparison && <Comparison section={page.comparison} />}
+      {page.use_cases && <UseCases section={page.use_cases} />}
       {page.usage && <Feature3 section={page.usage} />}
       {page.faq && <FAQ section={page.faq} />}
       {page.cta && <CTA section={page.cta} />}
