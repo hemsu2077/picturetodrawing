@@ -5,6 +5,11 @@
   },
   "hero": {
     "title": "Transform Photo to Line Drawing Instantly",
+    "announcement": {
+      "label": "NEW",
+      "title": "🍌 Nano Banana",
+      "url": "/photo-to-line-drawing#drawing-generator"
+    },
     "highlight_text": "Photo to Line Drawing",
     "description": "Convert any photo into clean, professional line art without drawing skills.",
     "tip": "Free to Try, 100% Secure, Instant Results",

@@ -42,7 +42,7 @@ export default function Hero({ hero, backgroundVariant = 'default' }: HeroProps)
             {hero.announcement && (
               <Link
                 href={hero.announcement.url as any}
-                className="mx-auto mb-3 inline-flex items-center gap-3 rounded-full border px-2 py-1 text-sm"
+                className="mx-auto mb-3 inline-flex bg-white/20 items-center gap-3 border rounded-full  px-2 py-1 text-sm"
               >
                 {hero.announcement.label && (
                   <Badge>{hero.announcement.label}</Badge>
