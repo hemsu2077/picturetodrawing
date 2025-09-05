@@ -26,6 +26,26 @@ export interface LandingPage {
   footer?: Footer;
 }
 
+export interface PhotoToLineDrawingPage {
+  hero?: Hero;
+  branding?: Section;
+  introduce?: Section;
+  benefit?: Section;
+  art_styles?: Section;
+  transformation_examples?: Section;
+  perfect_uses?: Section;
+  comparison?: Section;
+  ai_excellence?: Section;
+  usage?: Section;
+  feature?: Section;
+  showcase?: Section;
+  stats?: Section;
+  pricing?: Pricing;
+  testimonial?: Section;
+  faq?: Section;
+  cta?: Section;
+}
+
 export interface PricingPage {
   pricing?: Pricing;
   faq?: Section;

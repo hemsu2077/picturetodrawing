@@ -64,15 +64,20 @@ try {
     // Map style IDs to descriptive prompts
     const styleMap: Record<string, string> = {
       'pencil-sketch': 'black and white pencil sketch',
-      'line-drawing': 'black and white outline illustration',
       'charcoal-drawing': 'black and white charcoal drawing',
       'color-pencil-drawing': 'color pencil drawing',
       'watercolor-painting': 'watercolor painting',
       'inkart': 'ink art'
     };
 
-    const styleName = styleMap[style] || style;
-    const prompt = `transform the image to a drawing, the drawing should be in the style of ${styleName}`
+    // Special handling for line-drawing with custom prompt
+    let prompt: string;
+    if (style === 'line-drawing') {
+      prompt = 'Convert this photo into a clean black and white line illustration. Keep only the main outlines, no shading. Make it look like a coloring book page with clear contours and simplified details. Remove the background and focus on the subject.';
+    } else {
+      const styleName = styleMap[style] || style;
+      prompt = `transform the image to a drawing, the drawing should be in the style of ${styleName}`;
+    }
     
     // Use the same model for all styles
     const model = "black-forest-labs/flux-kontext-pro";

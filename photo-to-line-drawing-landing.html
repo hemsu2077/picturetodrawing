@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo to Line Drawing Converter - Transform Photos to Line Art Instantly</title>
+    <meta name="description" content="Convert photos to line drawings effortlessly. Transform any photo into clean line art for embroidery, tattoos, crafts, and digital art. No drawing skills needed.">
+    <meta name="keywords" content="photo to line drawing, line art converter, photo to sketch, image to line art, drawing converter, photo outline, line drawing tool">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center">
+                    <i class="fas fa-draw-polygon text-2xl text-gray-900 mr-3"></i>
+                    <span class="text-xl font-semibold text-gray-900">LineArt Pro</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-600 hover:text-gray-900 transition-colors">Features</a>
+                    <a href="#how-it-works" class="text-gray-600 hover:text-gray-900 transition-colors">How It Works</a>
+                    <a href="#use-cases" class="text-gray-600 hover:text-gray-900 transition-colors">Use Cases</a>
+                    <a href="#faq" class="text-gray-600 hover:text-gray-900 transition-colors">FAQ</a>
+                </div>
+                <button class="bg-gray-900 text-white px-6 py-2 rounded-lg hover:bg-gray-800 transition-colors">
+                    Try Free Now
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
+                    Transform Photos to <span class="border-b-4 border-gray-900">Line Drawings</span> Instantly
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Convert any photo into clean, professional line art without drawing skills. Perfect for embroidery patterns, tattoo designs, crafts, and digital art projects.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+                    <button class="bg-gray-900 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-800 transition-colors">
+                        <i class="fas fa-upload mr-2"></i>
+                        Convert Photo Now
+                    </button>
+                    <button class="border-2 border-gray-300 text-gray-700 px-8 py-4 rounded-lg text-lg font-medium hover:border-gray-400 transition-colors">
+                        <i class="fas fa-play mr-2"></i>
+                        Watch Demo
+                    </button>
+                </div>
+                
+                <!-- Hero Visual -->
+                <div class="max-w-4xl mx-auto bg-gray-50 rounded-2xl p-8">
+                    <div class="grid md:grid-cols-3 gap-8 items-center">
+                        <div class="text-center">
+                            <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
+                                <i class="fas fa-image text-4xl text-gray-400 mb-2"></i>
+                                <p class="text-sm text-gray-600">Original Photo</p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <i class="fas fa-arrow-right text-2xl text-gray-400"></i>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-white rounded-lg p-4 shadow-sm border border-gray-200">
+                                <i class="fas fa-pencil-alt text-4xl text-gray-400 mb-2"></i>
+                                <p class="text-sm text-gray-600">Clean Line Drawing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="bg-gray-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    How Photo to Line Drawing Works
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Our advanced AI technology converts your photos into clean line art in just three simple steps. No technical expertise required.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12">
+                <div class="text-center">
+                    <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 shadow-sm">
+                        <span class="text-2xl font-bold text-gray-900">1</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Upload Your Photo</h3>
+                    <p class="text-gray-600">
+                        Simply drag and drop your image or select from your device. We support all common photo formats including JPG, PNG, and HEIC.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 shadow-sm">
+                        <span class="text-2xl font-bold text-gray-900">2</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">AI Processing</h3>
+                    <p class="text-gray-600">
+                        Our intelligent algorithm analyzes your photo to identify key contours, edges, and important details, creating a clean line drawing conversion.
+                    </p>
+                </div>
+
+                <div class="text-center">
+                    <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 shadow-sm">
+                        <span class="text-2xl font-bold text-gray-900">3</span>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Download & Use</h3>
+                    <p class="text-gray-600">
+                        Get your high-quality line art in multiple formats. Perfect for printing, digital projects, or importing into design software.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Powerful Features for Every Creator
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Whether you're a hobbyist, professional designer, or crafter, our photo to line drawing tool provides everything you need.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <div class="bg-white rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-magic text-gray-900"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">No Drawing Skills Required</h3>
+                    <p class="text-gray-600">
+                        Transform any photo into professional line art without any artistic background. Perfect for beginners and experts alike.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <div class="bg-white rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-bolt text-gray-900"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Lightning Fast Processing</h3>
+                    <p class="text-gray-600">
+                        Get your line drawing results in seconds, not hours. Our optimized AI ensures quick turnaround times for all your projects.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <div class="bg-white rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-cogs text-gray-900"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Customizable Settings</h3>
+                    <p class="text-gray-600">
+                        Adjust line thickness, detail level, and contrast to get the perfect line art style for your specific project needs.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <div class="bg-white rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-download text-gray-900"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Multiple Output Formats</h3>
+                    <p class="text-gray-600">
+                        Download your line drawings as PNG, SVG, or PDF. Compatible with embroidery software, laser cutters, and design programs.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <div class="bg-white rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-shield-alt text-gray-900"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Privacy Protected</h3>
+                    <p class="text-gray-600">
+                        Your photos are processed securely and never stored on our servers. Complete privacy and data protection guaranteed.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-6">
+                    <div class="bg-white rounded-lg w-12 h-12 flex items-center justify-center mb-4">
+                        <i class="fas fa-mobile-alt text-gray-900"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Works Everywhere</h3>
+                    <p class="text-gray-600">
+                        Use our photo to line drawing converter on any device - desktop, tablet, or mobile. No software installation required.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section id="use-cases" class="bg-gray-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Endless Creative Possibilities
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    From personal crafts to professional projects, discover how photo to line drawing transforms creative workflows across industries.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <i class="fas fa-cut text-3xl text-gray-700 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Crafts & Hobbies</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Embroidery patterns from family photos</li>
+                        <li>• Custom coloring pages for kids</li>
+                        <li>• Woodburning and engraving guides</li>
+                        <li>• Stencils for painting projects</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <i class="fas fa-paint-brush text-3xl text-gray-700 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Digital Art & Design</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Base layers for digital paintings</li>
+                        <li>• Reference guides for illustrations</li>
+                        <li>• Minimalist logo creation</li>
+                        <li>• Website and app graphics</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <i class="fas fa-gift text-3xl text-gray-700 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Personalized Gifts</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Pet portraits on custom mugs</li>
+                        <li>• Family line art for wall decor</li>
+                        <li>• Personalized t-shirt designs</li>
+                        <li>• Custom poster artwork</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <i class="fas fa-industry text-3xl text-gray-700 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Professional Manufacturing</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Laser cutting path generation</li>
+                        <li>• CNC machine toolpaths</li>
+                        <li>• Plotter art creation</li>
+                        <li>• Technical diagram simplification</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <i class="fas fa-heart text-3xl text-gray-700 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Tattoo & Body Art</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Tattoo design templates</li>
+                        <li>• Henna pattern creation</li>
+                        <li>• Body art stencils</li>
+                        <li>• Artist consultation visuals</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <i class="fas fa-graduation-cap text-3xl text-gray-700 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-3">Education & Training</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li>• Simplified anatomical diagrams</li>
+                        <li>• Technical equipment outlines</li>
+                        <li>• Educational material graphics</li>
+                        <li>• Student activity sheets</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Showcase -->
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    See the Magic in Action
+                </h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Real examples of photo to line drawing conversions showing the quality and versatility of our line art generator.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="aspect-square bg-white rounded border border-gray-200 mb-3 flex items-center justify-center">
+                        <i class="fas fa-dog text-4xl text-gray-300"></i>
+                    </div>
+                    <p class="text-sm text-gray-600 text-center">Pet Portrait</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="aspect-square bg-white rounded border border-gray-200 mb-3 flex items-center justify-center">
+                        <i class="fas fa-home text-4xl text-gray-300"></i>
+                    </div>
+                    <p class="text-sm text-gray-600 text-center">Architecture</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="aspect-square bg-white rounded border border-gray-200 mb-3 flex items-center justify-center">
+                        <i class="fas fa-leaf text-4xl text-gray-300"></i>
+                    </div>
+                    <p class="text-sm text-gray-600 text-center">Nature</p>
+                </div>
+                
+                <div class="bg-gray-50 rounded-lg p-4">
+                    <div class="aspect-square bg-white rounded border border-gray-200 mb-3 flex items-center justify-center">
+                        <i class="fas fa-user text-4xl text-gray-300"></i>
+                    </div>
+                    <p class="text-sm text-gray-600 text-center">Portrait</p>
+                </div>
+            </div>
+
+            <div class="text-center mt-12">
+                <button class="bg-gray-900 text-white px-8 py-3 rounded-lg text-lg font-medium hover:bg-gray-800 transition-colors">
+                    Try Your Own Photo
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="bg-gray-50 py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Everything you need to know about converting photos to line drawings
+                </p>
+            </div>
+
+            <div class="space-y-8">
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-lg font-semibold mb-3">What types of photos work best for line drawing conversion?</h3>
+                    <p class="text-gray-600">
+                        Photos with clear subjects and good contrast work best. Portraits, pets, buildings, and objects with defined edges produce excellent line art results. Our AI can handle various lighting conditions and automatically adjusts for optimal line drawing output.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-lg font-semibold mb-3">Can I use the line drawings for commercial projects?</h3>
+                    <p class="text-gray-600">
+                        Yes! All line drawings created with our photo to line drawing tool can be used for both personal and commercial purposes. You retain full rights to your converted images and can use them for products, marketing, or any business application.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-lg font-semibold mb-3">What file formats are supported for upload and download?</h3>
+                    <p class="text-gray-600">
+                        Upload: JPG, PNG, HEIC, WebP, and most common image formats. Download: High-quality PNG for raster graphics, SVG for scalable vector line art, and PDF for printing. Choose the format that best suits your intended use case.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-lg font-semibold mb-3">How long does the photo to line drawing conversion take?</h3>
+                    <p class="text-gray-600">
+                        Most conversions complete within 10-30 seconds depending on image size and complexity. Our optimized AI processing ensures quick results without compromising on line art quality. Larger images may take slightly longer but typically finish within one minute.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-lg font-semibold mb-3">Is my photo data secure and private?</h3>
+                    <p class="text-gray-600">
+                        Absolutely. Your photos are processed securely and automatically deleted from our servers after conversion. We never store, share, or use your images for any purpose other than creating your line drawing. Your privacy is our top priority.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg p-6 shadow-sm">
+                    <h3 class="text-lg font-semibold mb-3">Can I adjust the line thickness and detail level?</h3>
+                    <p class="text-gray-600">
+                        Yes! Our advanced settings allow you to customize line thickness, detail preservation, and contrast levels. Whether you need fine details for technical drawings or bold lines for crafts, you can fine-tune the output to match your project requirements perfectly.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-gray-900 py-20">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                Ready to Transform Your Photos?
+            </h2>
+            <p class="text-xl text-gray-300 mb-8">
+                Join thousands of creators who use our photo to line drawing tool to bring their ideas to life. Start converting your images today.
+            </p>
+            <button class="bg-white text-gray-900 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition-colors">
+                <i class="fas fa-upload mr-2"></i>
+                Convert Your First Photo Free
+            </button>
+            <p class="text-sm text-gray-400 mt-4">No account required • Instant results • 100% secure</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-draw-polygon text-xl text-gray-900 mr-2"></i>
+                        <span class="text-lg font-semibold text-gray-900">LineArt Pro</span>
+                    </div>
+                    <p class="text-gray-600 text-sm">
+                        Professional photo to line drawing conversion tool for creators, crafters, and artists worldwide.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-4">Product</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><a href="#" class="hover:text-gray-900">Features</a></li>
+                        <li><a href="#" class="hover:text-gray-900">How It Works</a></li>
+                        <li><a href="#" class="hover:text-gray-900">Pricing</a></li>
+                        <li><a href="#" class="hover:text-gray-900">API Access</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-4">Support</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><a href="#" class="hover:text-gray-900">Help Center</a></li>
+                        <li><a href="#" class="hover:text-gray-900">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-gray-900">Tutorials</a></li>
+                        <li><a href="#" class="hover:text-gray-900">Community</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold text-gray-900 mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li><a href="#" class="hover:text-gray-900">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-gray-900">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-gray-900">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-200 mt-8 pt-8 text-center">
+                <p class="text-sm text-gray-600">
+                    © 2024 LineArt Pro. All rights reserved. Transform any photo to line drawing with professional quality results.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Apply animation to sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>

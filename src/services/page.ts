@@ -1,4 +1,4 @@
-import { LandingPage, PricingPage, ShowcasePage } from "@/types/pages/landing";
+import { LandingPage, PricingPage, ShowcasePage, PhotoToLineDrawingPage } from "@/types/pages/landing";
 
 export async function getLandingPage(locale: string): Promise<LandingPage> {
   return (await getPage("landing", locale)) as LandingPage;
@@ -12,10 +12,14 @@ export async function getShowcasePage(locale: string): Promise<ShowcasePage> {
   return (await getPage("showcase", locale)) as ShowcasePage;
 }
 
+export async function getPhotoToLineDrawingPage(locale: string): Promise<PhotoToLineDrawingPage> {
+  return (await getPage("photo-to-line-drawing", locale)) as PhotoToLineDrawingPage;
+}
+
 export async function getPage(
   name: string,
   locale: string
-): Promise<LandingPage | PricingPage | ShowcasePage> {
+): Promise<LandingPage | PricingPage | ShowcasePage | PhotoToLineDrawingPage> {
   try {
     if (locale === "zh-CN") {
       locale = "zh";
