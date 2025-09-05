@@ -13,9 +13,19 @@
     "nav": {
       "items": [
         {
-          "title": "Home",
-          "url": "/",
-          "icon": ""
+          "title": "AI Drawing Tools",
+          "children": [
+            {
+              "title": "Picture to Drawing",
+              "url": "/",
+              "target": "_self"
+            },
+            {
+              "title": "Photo to line drawing",
+              "url": "/photo-to-line-drawing",
+              "target": "_self"
+            }
+          ]
         },
         {
           "title": "Pricing",
