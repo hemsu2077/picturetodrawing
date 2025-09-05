@@ -223,6 +223,10 @@
         "title": "Crafts & Hobbies",
         "description": "Transform your photos into practical patterns and guides for creative projects.",
         "icon": "RiScissorsLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-coloring-page.webp",
+          "alt": "photo to line drawing use case - coloring page"
+        },
         "children": [
           "Embroidery patterns from family photos",
           "Custom coloring pages for kids", 
@@ -234,6 +238,10 @@
         "title": "Digital Art & Design",
         "description": "Use photo to line drawing as foundation for digital creative work.",
         "icon": "RiPaintBrushLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-logo.webp",
+          "alt": "photo to line drawing use case - logo"
+        },
         "children": [
           "Base layers for digital paintings",
           "Reference guides for illustrations",
@@ -245,6 +253,10 @@
         "title": "Personalized Gifts",
         "description": "Create meaningful presents with photo to line drawing conversions.",
         "icon": "RiGiftLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-t-shirt.webp",
+          "alt": "photo to line drawing use case - t-shirt"
+        },
         "children": [
           "Pet portraits on custom mugs",
           "Family line art for wall decor",
@@ -256,6 +268,10 @@
         "title": "Professional Manufacturing",
         "description": "Convert photos to precise line drawings for industrial applications.",
         "icon": "RiSettings3Line",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-manufacturing.webp",
+          "alt": "photo to line drawing use case - manufacturing"
+        },
         "children": [
           "Laser cutting path generation",
           "CNC machine toolpaths",
@@ -267,6 +283,10 @@
         "title": "Tattoo & Body Art",
         "description": "Photo to line drawing creates perfect templates for body art.",
         "icon": "RiHeartLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-tattoo.webp",
+          "alt": "photo to line drawing use case - tattoo"
+        },
         "children": [
           "Tattoo design templates",
           "Henna pattern creation",
@@ -278,6 +298,10 @@
         "title": "Education & Training",
         "description": "Simplify complex images into clear educational materials.",
         "icon": "RiGraduationCapLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-education.webp",
+          "alt": "photo to line drawing use case - education"
+        },
         "children": [
           "Simplified anatomical diagrams",
           "Technical equipment outlines",

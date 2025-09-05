@@ -1,4 +1,3 @@
-import Icon from "@/components/icon";
 import { Section as SectionType } from "@/types/blocks/section";
 
 export default function UseCases({ section }: { section: SectionType }) {
@@ -24,11 +23,15 @@ export default function UseCases({ section }: { section: SectionType }) {
           {section.items?.map((item, i) => (
             <div key={i} className="group relative">
               <div className="h-full bg-white rounded-2xl p-8 transition-all duration-300 hover:shadow-lg hover:shadow-gray-200/50 border border-gray-100">
-                {/* Icon & Title */}
+                {/* Image & Title */}
                 <div className="space-y-6 mb-6">
-                  {item.icon && (
-                    <div className="inline-flex w-14 h-14 bg-slate-900 rounded-2xl items-center justify-center">
-                      <Icon name={item.icon} className="text-white text-xl" />
+                  {item.image && (
+                    <div className="inline-flex w-14 h-14 rounded-2xl overflow-hidden">
+                      <img 
+                        src={item.image.src} 
+                        alt={item.image.alt}
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   )}
                   <h3 className="text-2xl font-bold tracking-tight">
