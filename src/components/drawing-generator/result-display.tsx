@@ -106,7 +106,7 @@ export function RecentDrawings({
           console.error('Failed to refresh drawings:', error);
         } finally {
           setIsRefreshing(false);
-          setShowProgressCard(false); // 隐藏进度卡片
+          setShowProgressCard(false); //
         }
       };
       
@@ -177,6 +177,7 @@ export function RecentDrawings({
     uuid: 'trial-result',
     generated_image_url: trialResult[0]?.url || '',
     style: newDrawing?.style || 'pencil-sketch',
+    model: trialResult[0]?.model || 'default',
     ratio: newDrawing?.ratio || 'auto',
     created_at: new Date(),
     user_uuid: '',
