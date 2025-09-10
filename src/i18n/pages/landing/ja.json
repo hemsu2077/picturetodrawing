@@ -1,0 +1,515 @@
+{
+  "template": "picturetodrawing-template-one",
+  "theme": "light",
+  "header": {
+    "brand": {
+      "title": "PicturetoDrawing",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "PicturetoDrawing"
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "AI描画ツール",
+          "children": [
+            {
+              "title": "写真イラスト化",
+              "url": "/",
+              "target": "_self",
+              "icon": "RiBrushLine"
+            },
+            {
+              "title": "写真を線描画",
+              "url": "/photo-to-line-drawing",
+              "target": "_self",
+              "icon": "RiColorFilterAiLine"
+            }
+          ]
+        },
+        {
+          "title": "料金プラン",
+          "url": "/pricing",
+          "icon": ""
+        },
+        {
+          "title": "マイドローイング",
+          "url": "/my-drawings",
+          "icon": ""
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "title": "無料クレジット",
+        "url": "/free-credits",
+        "target": "_self",
+        "variant": "outline",
+        "icon": "RiGiftLine"
+      }
+    ],
+
+    "show_sign": true,
+    "show_theme": false,
+    "show_locale": true
+  },
+  "hero": {
+    "title": "写真イラスト化で数秒できれいなアートに",
+    "highlight_text": "写真イラスト化",
+    "description": "AI搭載の写真スケッチ変換の魔法を体験しよう",
+    "announcement": {
+      "label": "NEW",
+      "title": "🍌 nano banana",
+      "url": "/#drawing-generator"
+    },
+    "tip": "無料でお試し・100%安全・即時結果",
+    "tip_items": [
+      {
+        "text": "無料でお試し",
+        "icon": "Gift"
+      },
+      {
+        "text": "100%安全",
+        "icon": "Shield"
+      },
+      {
+        "text": "会員登録不要",
+        "icon": "Zap"
+      }
+    ],
+    "buttons": [
+      {
+        "title": "無料でお試し",
+        "icon": "RiFlashlightFill",
+        "url": "/#drawing-generator",
+        "target": "_self",
+        "variant": "default"
+      }
+    ],
+    "show_happy_users": true,
+    "show_badge": false
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "プロ品質の写真イラスト化結果",
+    "label": "サービス紹介",
+    "description": "",
+    "image": {
+      "src": "https://files.picturetodrawing.com/sample/draw-introduce.mp4"
+    },
+    "items": [
+      {
+        "title": "本格的なアーティスティック表現",
+        "description": "写真からスケッチへの変換で、自然な質感、陰影、ディテールを保存し、プロのアーティストが手描きしたような本物らしい仕上がりを実現します。",
+        "icon": "RiPaintBrushLine"
+      },
+      {
+        "title": "高解像度出力",
+        "description": "写真イラスト化の結果を高解像度でダウンロード。印刷、フレーミング、SNS共有に最適です。",
+        "icon": "RiHdLine"
+      },
+      {
+        "title": "プライバシー保護",
+        "description": "写真は安全に処理され、変換後自動的に削除されます。個人の画像を保存したり共有したりすることはありません。",
+        "icon": "RiShieldCheckLine"
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "私たちの写真イラスト化コンバーターを選ぶ理由",
+    "label": "特長",
+    "description": "本格的なアーティスティックスタイルと驚異的なディテール保存で、あらゆる写真をイラストに変換します。",
+    "items": [
+      {
+        "title": "先進のAI技術",
+        "description": "最先端の人工知能が写真のあらゆるディテールを分析し、元の画像の本質と感情を維持した本物らしい写真イラスト化を実現します。",
+        "icon": "RiBrainLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+        }
+      },
+      {
+        "title": "多彩なアートスタイル",
+        "description": "鉛筆スケッチ、木炭画、水彩画、インクイラストから選択可能。各写真スケッチスタイルは、写真のユニークな芸術的解釈を提供するよう丁寧に作られています。",
+        "icon": "RiPaletteLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
+        }
+      },
+      {
+        "title": " lightning-fast処理",
+        "description": "瞬時の写真イラスト化変換を体験。最適化されたサーバーが写真スケッチ変換を数秒で処理し、待ち時間なしでプロ品質の結果を提供します。",
+        "icon": "RiFlashlightLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "写真をイラストに変換する方法",
+    "description": "直感的なプロセスで、あらゆる写真をスケッチや芸術的なイラストに変換。技術的なスキルは不要 - これらの簡単なステップに従うだけで、素晴らしい写真イラスト化が作成できます。",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "image_position": "left",
+    "text_align": "center",
+    "items": [
+      {
+        "title": "写真をアップロード",
+        "description": "画像をドラッグ＆ドロップするか、クリックして参照。写真イラスト化コンバーターはJPG、PNG、その他人気形式をサポート。写真は完全なプライバシー保護で安全に処理されます。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+        }
+      },
+      {
+        "title": "アートスタイルを選択",
+        "description": "鉛筆スケッチ、木炭画、水彩画、インクイラストを含むアーティスティックスタイルのコレクションから選択。各写真イラスト化スタイルは、変換にユニークな美的特性を提供します。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
+        }
+      },
+      {
+        "title": "アートワークをダウンロード",
+        "description": "AIが写真を数秒でイラストに変換する様子を鑑賞。変換された写真イラスト化結果をプレビューし、高解像度でダウンロード。印刷、共有、パーソナライズされたギフト作成に最適です。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "よくある質問",
+    "title": "写真イラスト化についてのよくある質問",
+    "description": "写真スケッチコンバーターと写真イラスト化技術に関する一般的な質問への回答をご覧ください。",
+    "items": [
+      {
+        "title": "写真イラスト化AI技術はどのように機能しますか？",
+        "description": "当社の高度な人工知能が写真の構図、照明、質感、ディテールを分析し、本物らしい写真イラスト化を作成します。AIは陰影、線の太さ、質感レンダリングなどの芸術的技術を理解し、伝統的な手描きアートワークを模倣した写真スケッチ結果を生成します。単純なフィルターとは異なり、当社の技術は元の写真の感情的な本質と細部を保存します。"
+      },
+      {
+        "title": "写真スケッチ変換で利用できるアートスタイルは何ですか？",
+        "description": "写真イラスト化コンバーターは、リアルな鉛筆スケッチ、ドラマチックな木炭画、繊細な水彩画、大胆なインクイラスト、色鉛筆アートワークなど、複数の芸術的スタイルを提供します。各写真スケッチスタイルは、本物らしい芸術的効果を達成するために異なるアルゴリズムを使用します。画像に最適な写真イラスト化の美的感覚を見つけるために、様々なスタイルを試すことができます。"
+      },
+      {
+        "title": "写真イラスト化サービスを使用する際、写真は安全ですか？",
+        "description": "もちろんです！プライバシーとセキュリティは私たちの最優先事項です。写真は安全なサーバーで処理され、写真イラスト化変換完了後に自動的に削除されます。画像を保存、共有、または他の目的で使用することはありません。すべての写真スケッチ処理は暗号化接続を通じて行われ、個人の写真が完全にプライベートで安全であることを保証します。"
+      },
+      {
+        "title": "写真イラスト化変換にはどのくらい時間がかかりますか？",
+        "description": "処理時間はアカウントタイプによります：無料ユーザーは変換が50-60秒以内に完了することを期待でき、プレミアムサブスクライバーは優先処理を享受し、わずか20-30秒で結果を得られます。画像サイズと複雑さが処理時間に若干影響する場合がありますが、最適化されたAIサーバーは速度に関係なく一貫した品質を保証します。"
+      },
+      {
+        "title": "写真スケッチ結果をどの解像度でダウンロードできますか？",
+        "description": "写真イラスト化変換を複数の解像度でダウンロードでき、元の写真のフル解像度を含みます。AIは写真スケッチプロセス全体で画像品質を維持し、芸術的なドローイングが印刷、プロフェッショナル使用、高品質のSNS共有に適していることを保証します。プレミアムユーザーは、大判印刷および商用アプリケーションのためのさらに高解像度の出力にアクセスできます。"
+      },
+      {
+        "title": "写真イラスト化コンバーターをモバイルデバイスで使用できますか？",
+        "description": "はい！写真スケッチコンバーターはスマートフォンやタブレットで完璧に機能します。レスポンシブデザインがすべてのデバイスでシームレスな写真イラスト化変換を保証します。モバイルカメラやギャラリーから直接写真をアップロードし、芸術的スタイルを適用し、結果を即座にダウンロードできます。モバイル体験はデスクトップ版のすべての機能と品質を維持し、芸術的な写真スケッチ変換をどこでも利用可能にします。"
+      },
+      {
+        "title": "写真イラスト化コンバーターを使用するには会員登録が必要ですか？",
+        "description": "アカウントを作成すると写真イラスト化サービスの全潜在能力が解禁されますが、会員登録なしで写真スケッチコンバーターをお試しいただけます！毎日、AI技術を体験するための無料の写真イラスト化変換が1回利用可能です。1日の試用が使用された後、写真をイラストに変換し続けるにはアカウント作成が必要になります。登録ユーザーは無制限の写真イラスト化変換、より高速な処理速度、写真スケッチ作成のためのプレミアム芸術的スタイルへのアクセスを享受します。"
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "写真を素晴らしいイラストに変換する準備はできましたか？",
+    "description": "AI搭載の写真スケッチコンバーターを信頼する何千人もの満足ユーザーに加わりましょう。完全なプライバシー保護と本物らしい芸術的スタイルで、数秒でプロ品質の写真イラスト化結果を体験してください。",
+    "buttons": [
+      {
+        "title": "今すぐ写真イラスト化変換を開始",
+        "url": "/#drawing-generator",
+        "target": "_self",
+        "icon": "GoArrowUpRight"
+      }
+    ]
+  },
+ 
+  "transformation_examples": {
+    "name": "transformation_examples",
+    "title": "写真イラスト化変換例",
+    "description": "AI搭載の写真イラスト化コンバーターの信じられないような結果をご覧ください。これらの実際の例は、異なる被写体やスタイルにおける写真イラスト化技術の品質と芸術的真正性を示しています。",
+    "items": [
+      {
+        "title": "鉛筆スケッチ",
+        "description": "リアルな陰影と細部の保存を備えたクラシックな石墨鉛筆ドローイング。微妙な質感と自然なグラデーションで元の写真の本質を捉える、永遠のエレガントなアートワーク作成に最適です。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch.webp"
+        },
+        "children": [
+          {
+            "description": "精度と伝統的な芸術的価値が最も重要なポートレート、建築ドローイング、詳細なイラストに最適です。"
+          }
+        ],
+        "buttons": [
+          {
+            "title": "写真をイラストに変換",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "線画",
+        "description": "大胆なストロークと明確な輪郭を持つクリーンでミニマルな線画。不要なディテールを削除し、形と構造を強調することで、現代的で印象的なアートワークを作成します。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-line-drawing.webp"
+        },
+        "children": [
+          {
+            "description": "明確さと視覚的インパクトを必要とするロゴ、技術的イラスト、現代的なグラフィックデザインプロジェクトに最適です。"
+          }
+        ],
+        "buttons": [
+          {
+            "title": "写真をイラストに変換",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "色鉛筆画",
+        "description": "豊かな質感と層状の色を持つ鮮やかな色鉛筆アートワーク。手彩色イラストの温かみと性格で写真を命を吹き込み、微妙な色の変化を保存します。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing.webp"
+        },
+        "children": [
+          {
+            "description": "子供のポートレート、ペットイラスト、感情表現で色が重要な役割を果たすアートワークに最適です。"
+          }
+        ],
+        "buttons": [
+          {
+            "title": "写真をイラストに変換",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "水彩画",
+        "description": "美しい色のブレンドと芸術的なブラシストロークを持つ柔らかく流れるような水彩効果。伝統的な水彩画の繊細な透明性と有機的な流れで、夢のようなエーテリアルなアートワークを作成します。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting.webp"
+        },
+        "children": [
+          {
+            "description": "風景、花のアレンジメント、ロマンチックで絵画的な美的感覚が有益な芸術的プロジェクトに最適です。"
+          }
+        ],
+        "buttons": [
+          {
+            "title": "写真をイラストに変換",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      }
+    ]
+  },
+  "perfect_uses": {
+    "name": "perfect_uses",
+    "title": "写真イラスト化の完璧な使い方",
+    "description": "写真イラスト化技術の無限の可能性を発見しましょう。パーソナルギフトからプロフェッショナルプロジェクトまで、写真イラスト化コンバーターは卓越した品質で多様なクリエイティブニーズに対応します。",
+    "items": [
+      {
+        "title": "パーソナライズされたギフト",
+        "description": "大切な家族写真を芸術的なイラストに変換して、ユニークで心温まるギフトを作成。記念すべき写真イラスト化の記念品にふさわしい記念日、誕生日、特別な機会に最適です。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-gift.webp?v=20250815"
+        }
+      },
+      {
+        "title": "ソーシャルメディアコンテンツ",
+        "description": "芸術的な写真イラスト化コンテンツでInstagram、Facebook、その他のプラットフォームで目立ちましょう。写真イラスト化スタイルが注目を集め、エンゲージメントを増加させる魅力的な投稿を作成します。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-social.webp?v=20250815"
+        }
+      },
+      {
+        "title": "マーケティング資料",
+        "description": "独特な写真スケッチアートワークでパンフレット、ウェブサイト、広告を強化。写真イラスト化コンバーターが競合と差別化される記憶に残るビジュアルブランディングの作成を支援します。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-marketing.webp?v=20250815"
+        }
+      },
+      {
+        "title": "ホームデコレーション",
+        "description": "写真イラスト化技術を使用して、お気に入りの写真をエレガントなウォールアートに変換。個人的な写真スケッチアートワークで調和の取れたホームデコレーションを作成し、あなたのスタイルを反映します。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-decoration.webp?v=20250815"
+        }
+      },
+      {
+        "title": "教育プロジェクト",
+        "description": "教師や学生が美術教育、プレゼンテーション、クリエイティブな課題に写真スケッチコンバーターを使用。写真イラスト化技術が概念を説明し、芸術的学習を刺激します。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-educational.webp?v=20250815"
+        }
+      },
+      {
+        "title": "クリエイティブポートフォリオ",
+        "description": "アーティスト、デザイナー、クリエイターが多様な写真スケッチスタイルでポートフォリオを強化。写真イラスト化コンバーターが異なるメディアでの多様性と芸術的ビジョンを示します。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-creative.webp?v=20250815"
+        }
+      }
+    ]
+  },
+  "comparison": {
+    "name": "comparison",
+    "title": "写真イラスト化AI vs 従来のフィルター",
+    "description": "先進のAI搭載写真イラスト化技術と基本的な写真フィルターを比較。写真スケッチコンバーターを競合と差別化する優れた品質と真正性を体験してください。",
+    "items": [
+      {
+        "title": "元の写真",
+        "description": "異なる方法を使用した芸術的変換の準備ができた標準的なデジタル写真。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/compare-original.webp"
+        }
+      },
+      {
+        "title": "従来のフィルター",
+        "description": "ディテールが失われ、非現実的な写真スケッチ外観を持つ人工的で過剰処理された見た目。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/compare-traditional.webp"
+        }
+      },
+      {
+        "title": "当社のAI結果",
+        "description": "保存された質感と自然な芸術的流れを持つ本物らしく詳細な写真イラスト化。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/compare-ai.webp"
+        }
+      }
+    ]
+  },
+  "ai_excellence": {
+    "name": "ai_excellence",
+    "title": "写真イラスト化AIが優れている理由",
+    "description": "当社の最先端人工知能技術が写真スケッチ変換に新しい基準を設定し、比類のない品質と芸術的真正性を提供します。",
+    "items": [
+      {
+        "title": "高度なニューラルネットワーク",
+        "description": "当社のAIは、何百万もの芸術的サンプルで訓練された洗練された深層学習アルゴリズムを使用して、本物らしい描画技術を理解し、複製します。"
+      },
+      {
+        "title": "スタイル適応",
+        "description": "この技術は自動的に異なる画像タイプに適応し、ポートレート、風景、その他の被写体に最適化された写真イラスト化変換を提供します。"
+      },
+      {
+        "title": "品質保証",
+        "description": "内蔵の品質チェックが、すべての写真スケッチ変換が芸術的卓越性とディテール保存に関する当社の高い基準を満たしていることを保証します。"
+      },
+      {
+        "title": "継続的学習",
+        "description": "当社のAIはユーザーフィードバックと新しい訓練データを通じて継続的に改善し、時間の経過とともに写真イラスト化結果が良くなることを保証します。"
+      }
+    ],
+    "image": {
+      "src": "/imgs/ai-excellence/technology.jpg"
+    },
+    "buttons": [
+      {
+        "title": "AIの卓越性を体験",
+        "url": "/pricing",
+        "target": "_self",
+        "icon": "RiRobot2Line"
+      }
+    ]
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "PicturetoDrawing",
+      "description": "AI搭載の写真イラスト化コンバーターで写真を素晴らしいアートワークに変換。数秒でプロ品質の写真スケッチ結果を提供。",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "PicturetoDrawing"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2025 • PicturetoDrawing All rights reserved.",
+    "nav": {
+      "items": [
+        {
+          "title": "About",
+          "children": [
+            {
+              "title": "写真イラスト化",
+              "url": "/",
+              "target": "_self"
+            },
+            {
+              "title": "写真を線描画",
+              "url": "/photo-to-line-drawing",
+              "target": "_self"
+            },
+            {
+              "title": "料金プラン",
+              "url": "/pricing",
+              "target": "_self"
+            },
+            {
+              "title": "マイドローイング",
+              "url": "/my-drawings",
+              "target": "_self"
+            },
+            {
+              "title": "無料クレジット",
+              "url": "/free-credits",
+              "target": "_self"
+            },
+            {
+              "title": "お問い合わせ",
+              "url": "mailto:hi@picturetodrawing.com",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "Email",
+          "icon": "RiMailLine",
+          "url": "mailto:hi@picturetodrawing.com",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "プライバシーポリシー",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "利用規約",
+          "url": "/terms-of-service"
+        },
+        {
+          "title": "返金ポリシー",
+          "url": "/refund-policy"
+        }
+      ]
+    }
+  }
+}

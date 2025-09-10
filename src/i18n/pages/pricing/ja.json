@@ -1,0 +1,352 @@
+{
+  "pricing": {
+    "name": "pricing",
+    "label": "料金プラン",
+    "title": "料金プラン",
+    "description": "写真イラスト化で、大切な思い出を素敵なアートに変換しよう",
+    "groups": [
+      {
+        "name": "monthly",
+        "title": "月額プラン"
+      },
+      {
+        "name": "yearly",
+        "title": "年額プラン",
+        "is_featured": true,
+        "label": "30%割引"
+      },
+      {
+        "name": "one-time",
+        "title": "都度購入"
+      }
+    ],
+    "items": [
+      {
+        "title": "Basic",
+        "description": "AI写真イラスト化を気軽に試してみたい方に",
+        "features_title": "含まれる機能",
+        "features": [
+          "100クレジット、2ヶ月有効",
+          "ウォーターマークなし",
+          "高速生成",
+          "HDダウンロード",
+          "1枚約$0.2"
+        ],
+        "interval": "one-time",
+        "amount": 999,
+        "currency": "USD",
+        "price": "$9.99",
+        "unit": "one-time",
+        "is_featured": false,
+        "tip": "たまに使う方に最適",
+        "button": {
+          "title": "今すぐ始める",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "basic",
+        "product_name": "Basic One-time",
+        "credits": 100,
+        "valid_months": 2,
+        "group": "one-time"
+      },
+      {
+        "title": "Standard",
+        "description": "頻繁に写真イラスト化を楽しみたい方に最適",
+        "features_title": "含まれる機能",
+        "features": [
+          "400クレジット、6ヶ月有効",
+          "ウォーターマークなし",
+          "高速生成",
+          "HDダウンロード",
+          "1枚約$0.1"
+        ],
+        "interval": "one-time",
+        "amount": 1999,
+        "currency": "USD",
+        "price": "$19.99",
+        "unit": "one-time",
+        "is_featured": false,
+        "tip": "最も人気の選択",
+        "button": {
+          "title": "今すぐ始める",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard",
+        "product_name": "Standard One-time",
+        "credits": 400,
+        "valid_months": 6,
+        "group": "one-time"
+      },
+      {
+        "title": "Premium",
+        "description": "プロフェッショナルやヘビーユーザー向け",
+        "features_title": "含まれる機能",
+        "label": "人気",
+        "features": [
+          "800クレジット、12ヶ月有効",
+          "ウォーターマークなし",
+          "高速生成",
+          "HDダウンロード",
+          "1枚約$0.075"
+        ],
+        "interval": "one-time",
+        "amount": 2999,
+        "currency": "USD",
+        "price": "$29.99",
+        "unit": "one-time",
+        "is_featured": true,
+        "tip": "ヘビーユーザーに最適",
+        "button": {
+          "title": "今すぐ始める",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "premium",
+        "product_name": "Premium One-time",
+        "credits": 800,
+        "valid_months": 12,
+        "group": "one-time"
+      },
+      {
+        "title": "Basic",
+        "description": "定期的に写真イラスト化を楽しみたい方に",
+        "features_title": "含まれる機能",
+        "features": [
+          "月額200クレジット",
+          "ウォーターマークなし",
+          "高速生成",
+          "HDダウンロード",
+          "商用利用可能",
+          "優先サポート",
+          "1枚約$0.1"
+        ],
+        "interval": "month",
+        "amount": 999,
+        "currency": "USD",
+        "price": "$9.99",
+        "unit": "/ month",
+        "is_featured": false,
+        "tip": "自動更新、いつでも解約可能",
+        "button": {
+          "title": "購読する",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "basic-monthly",
+        "product_name": "Basic Monthly",
+        "credits": 200,
+        "valid_months": 1,
+        "group": "monthly"
+      },
+      {
+        "title": "Standard",
+        "description": "アクティブなクリエイターや小規模チームに最適",
+        "label": "人気",
+        "features_title": "含まれる機能",
+        "features": [
+          "月額400クレジット",
+          "ウォーターマークなし",
+          "高速生成",
+          "HDダウンロード",
+          "商用利用可能",
+          "優先サポート",
+          "1枚約$0.85"
+        ],
+        "interval": "month",
+        "amount": 1699,
+        "currency": "USD",
+        "price": "$16.99",
+        "unit": "/ month",
+        "is_featured": true,
+        "tip": "Auto-renew, cancel anytime",
+        "button": {
+          "title": "Subscribe",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard-monthly",
+        "product_name": "Standard Monthly",
+        "credits": 400,
+        "valid_months": 1,
+        "group": "monthly"
+      },
+      {
+        "title": "Premium",
+        "description": "代理店やパワーユーザー向けの最大クレジット",
+        "features_title": "含まれる機能",
+        "features": [
+          "月額1000クレジット",
+          "ウォーターマークなし",
+          "高速生成",
+          "HDダウンロード",
+          "商用利用可能",
+          "優先サポート",
+          "1枚約$0.06"
+        ],
+        "interval": "month",
+        "amount": 2999,
+        "currency": "USD",
+        "price": "$29.99",
+        "unit": "/ month",
+        "is_featured": false,
+        "tip": "Auto-renew, cancel anytime",
+        "button": {
+          "title": "Subscribe",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "premium-monthly",
+        "product_name": "Premium Monthly",
+        "credits": 1000,
+        "valid_months": 1,
+        "group": "monthly"
+      },
+      {
+        "title": "Basic",
+        "description": "年額$83.88、継続的な利用でお得な年間プラン",
+        "features_title": "含まれる機能",
+        "features": [
+          "月額200クレジット（年間2400クレジット）",
+          "ウォーターマークなし",
+          "高速生成",
+          "HDダウンロード",
+          "商用利用可能",
+          "1枚約$0.07"
+        ],
+        "interval": "year",
+        "amount": 8388,
+        "currency": "USD",
+        "price": "$6.99",
+        "original_price": "$9.99",
+        "unit": "/ month",
+        "is_featured": false,
+        "tip": "Auto-renew, cancel anytime",
+        "button": {
+          "title": "Subscribe Annually",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "basic-yearly",
+        "product_name": "Basic Annually",
+        "credits": 2400,
+        "valid_months": 12,
+        "group": "yearly"
+      },
+      {
+        "title": "Standard",
+        "description": "年額$143.88、成長中のビジネスやチームに最適な価値",
+        "label": "人気",
+        "features_title": "含まれる機能",
+        "features": [
+          "月額400クレジット（年間4800クレジット）",
+          "ウォーターマークなし",
+          "高速生成",
+          "HDダウンロード",
+          "商用利用可能",
+          "優先サポート",
+          "1枚約$0.06"
+        ],
+        "interval": "year",
+        "amount": 14388,
+        "currency": "USD",
+        "price": "$11.99",
+        "original_price": "$16.99",
+        "unit": "/ month",
+        "is_featured": true,
+        "tip": "Auto-renew, cancel anytime",
+        "button": {
+          "title": "Subscribe Annually",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard-yearly",
+        "product_name": "Standard Annually",
+        "credits": 4800,
+        "valid_months": 12,
+        "group": "yearly"
+      },
+      {
+        "title": "Premium",
+        "description": "年額$251.88、大口ユーザー向けの最大限の節約",
+        "features_title": "含まれる機能",
+        "features": [
+          "月額1000クレジット（年間12000クレジット）",
+          "ウォーターマークなし",
+          "高速生成",
+          "HDダウンロード",
+          "商用利用可能",
+          "優先サポート",
+          "1枚約$0.04"
+        ],
+        "interval": "year",
+        "amount": 25188,
+        "currency": "USD",
+        "price": "$20.99",
+        "original_price": "$29.99",
+        "unit": "/ month",
+        "is_featured": false,
+        "tip": "Auto-renew, cancel anytime",
+        "button": {
+          "title": "Subscribe Annually",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "premium-yearly",
+        "product_name": "Premium Annually",
+        "credits": 12000,
+        "valid_months": 12,
+        "group": "yearly"
+      }
+    ]
+  },
+
+
+
+ "faq": {
+     "name": "faq",
+     "label": "",
+     "title": "よくある質問",
+     "description": "AI写真イラスト化サービスについての質問にお答えします。下記で回答を見つけるか、サポートチームにお問い合わせください",
+     "groups": [],
+     "items": [
+       {
+         "title": "クレジットがなくなったらどうなりますか？",
+         "description": "月額・年額プランの場合、請求周期の開始時にクレジットが自動的にリセットされます。都度購入の場合、写真イラスト化を続けるには新しいクレジットパックを購入する必要があります。自動更新のために、いつでも定期購読プランにアップグレードできます。"
+       },
+       {
+         "title": "クレジットの有効期限はどのくらいですか？",
+         "description": "都度購入のクレジットには有効期限があります：ベーシック（2ヶ月）、スタンダード（6ヶ月）、プレミアム（12ヶ月）。月額・年額プランのクレジットは、請求日にリセットされます。クレジットを最大限に活用するため、有効期限切れ前にご使用をお勧めします。"
+       },
+       {
+         "title": "クレジットで何枚のイラストを作成できますか？",
+         "description": "写真イラスト化の変換には通常2クレジット使用されます。100クレジット（ベーシック）で50枚のイラストを作成でき、200クレジット（スタンダード月額）で月に100枚のイラストを生成できます。正確な使用量は、画像の複雑さとスタイルによって異なる場合があります。"
+       },
+       {
+         "title": "未使用のクレジットは返金できますか？",
+         "description": "AI画像変換に必要な計算リソースのため、購入済みクレジットの返金はできかねます。ただし、都度購入のクレジットには延長された有効期限があるため、ゆっくりご使用いただけます。定期購読の場合、いつでも解約して今後の請求を停止できます。"
+       },
+       {
+         "title": "プランの違いは何ですか？",
+         "description": "都度購入は、異なるクレジット数と有効期限で一度限りの購入が可能－たまに使う方に最適です。月額プランは、定期的なクレジット更新に加え、商用利用権と優先サポートが付いています。年額プランは、月額と同じメリットに加え、大幅な節約（最大30%割引）が可能です。"
+       },
+       {
+         "title": "定期購読の管理・解約はどうすればよいですか？",
+         "description": "アカウントダッシュボードの『マイクレジット』または『マイアカウント』から、定期購読の管理、使用状況の確認、いつでも解約が可能です。都度購入は一度限りの支払いのため、解約の必要はありません。"
+       },
+       {
+         "title": "どんな描画スタイルを作成できますか？",
+         "description": "AIは写真を様々なアートスタイルに変換できます：鉛筆スケッチ、木炭画、水彩画、線画、色鉛筆画、インクアートなど。変換プロセス中に、あなたの芸術的ビジョンに合ったスタイルを選択できます。"
+       },
+       {
+         "title": "生成されたイラストは商用利用できますか？",
+         "description": "はい！月額・年額定期購読プランには、完全な商用利用権が含まれています。生成されたイラストをビジネス、クライアントプロジェクト、マーケティング資料、またはその他の商用目的でご使用いただけます。都度購入プランは個人利用のみとなります。"
+       },
+       {
+         "title": "生成されたイラストに満足できない場合は？",
+         "description": "返金はできかねますが、クレジットを使用して異なるアートスタイルを試したり、写真を調整してより良い結果を得ることができます。AIは明瞭で光の良い写真に最も効果的です。最高の芸術的変換のため画像を最適化するヘルプが必要な場合は、サポートチームにお問い合わせください。"
+       }
+     ]
+  }
+}

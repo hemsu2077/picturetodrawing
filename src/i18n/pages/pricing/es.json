@@ -22,7 +22,7 @@
     ],
     "items": [
       {
-        "title": "Básico",
+        "title": "Basic",
         "description": "Perfecto para probar nuestro servicio de dibujo IA.",
         "features_title": "Incluye",
         "features": [
@@ -45,13 +45,13 @@
           "icon": "RiFlashlightFill"
         },
         "product_id": "basic",
-        "product_name": "Básico Único",
+        "product_name": "Basic One-time",
         "credits": 100,
         "valid_months": 2,
         "group": "one-time"
       },
       {
-        "title": "Estándar",
+        "title": "Standard",
         "description": "Ideal para usuarios regulares que crean arte con frecuencia.",
         "features_title": "Incluye",
         "features": [
@@ -74,7 +74,7 @@
           "icon": "RiFlashlightFill"
         },
         "product_id": "standard",
-        "product_name": "Estándar Único",
+        "product_name": "Standard One-time",
         "credits": 400,
         "valid_months": 6,
         "group": "one-time"
@@ -104,13 +104,13 @@
           "icon": "RiFlashlightFill"
         },
         "product_id": "premium",
-        "product_name": "Premium Único",
+        "product_name": "Premium One-time",
         "credits": 800,
         "valid_months": 12,
         "group": "one-time"
       },
       {
-        "title": "Básico",
+        "title": "Basic",
         "description": "Suministro mensual constante para creadores regulares.",
         "features_title": "Incluye",
         "features": [
@@ -135,13 +135,13 @@
           "icon": "RiFlashlightFill"
         },
         "product_id": "basic-monthly",
-        "product_name": "Básico Mensual",
+        "product_name": "Basic Monthly",
         "credits": 200,
         "valid_months": 1,
         "group": "monthly"
       },
       {
-        "title": "Estándar",
+        "title": "Standard",
         "description": "Más créditos para creadores activos y equipos pequeños.",
         "label": "Popular",
         "features_title": "Incluye",
@@ -167,7 +167,7 @@
           "icon": "RiFlashlightFill"
         },
         "product_id": "standard-monthly",
-        "product_name": "Estándar Mensual",
+        "product_name": "Standard Monthly",
         "credits": 400,
         "valid_months": 1,
         "group": "monthly"
@@ -198,13 +198,13 @@
           "icon": "RiFlashlightFill"
         },
         "product_id": "premium-monthly",
-        "product_name": "Premium Mensual",
+        "product_name": "Premium Monthly",
         "credits": 1000,
         "valid_months": 1,
         "group": "monthly"
       },
       {
-        "title": "Básico",
+        "title": "Basic",
         "description": "Total $83.88/año, Ahorra con facturación anual para creadores constantes.",
         "features_title": "Incluye",
         "features": [
@@ -229,13 +229,13 @@
           "icon": "RiFlashlightFill"
         },
         "product_id": "basic-yearly",
-        "product_name": "Básico Anual",
+        "product_name": "Basic Annually",
         "credits": 2400,
         "valid_months": 12,
         "group": "yearly"
       },
       {
-        "title": "Estándar",
+        "title": "Standard",
         "description": "Total $143.88/año, El mejor valor para empresas y equipos en crecimiento.",
         "label": "Popular",
         "features_title": "Incluye",
@@ -262,7 +262,7 @@
           "icon": "RiFlashlightFill"
         },
         "product_id": "standard-yearly",
-        "product_name": "Estándar Anual",
+        "product_name": "Standard Annually",
         "credits": 4800,
         "valid_months": 12,
         "group": "yearly"
@@ -294,7 +294,7 @@
           "icon": "RiFlashlightFill"
         },
         "product_id": "premium-yearly",
-        "product_name": "Premium Anual",
+        "product_name": "Premium Annually",
         "credits": 12000,
         "valid_months": 12,
         "group": "yearly"

@@ -1,0 +1,328 @@
+{
+  "meta": {
+    "title": "写真を線描画に変換 - 無料でお試し",
+    "description": "写真を簡単に線描画に変換。刺繍、タトゥー、クラフト、デジタルアートのためのクリーンな線画を即座に作成。"
+  },
+  "hero": {
+    "title": "写真を線描画に変換する魔法のツール",
+    "highlight_text": "写真を線描画",
+    "announcement": {
+      "label": "NEW",
+      "title": "🍌 nano banana",
+      "url": "/photo-to-line-drawing#drawing-generator"
+    },
+    "description": "絵画スキル不要で、どんな写真も美しいプロ品質の線画に変換。",
+    "tip": "無料でお試し・完全セキュア・即座に結果",
+    "tip_items": [
+      {
+        "text": "無料でお試し",
+        "icon": "Gift"
+      },
+      {
+        "text": "100%セキュア",
+        "icon": "Shield"
+      },
+      {
+        "text": "会員登録不要",
+        "icon": "Zap"
+      }
+    ],
+    "buttons": [
+      {
+        "title": "無料で試す",
+        "icon": "RiFlashlightFill",
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self",
+        "variant": "default"
+      }
+    ],
+    "show_happy_users": true,
+    "show_badge": false
+  },
+  "showcase": {
+    "name": "showcase",
+    "title": "あらゆるカテゴリーで驚きの写真を線描画へ変換",
+    "items": [
+      {
+        "title": "ポートレート写真を美しい線描画に変換",
+        "description": "芸術的な精度でポートレートを優雅な線画に変換。",
+        "label": "ポートレート",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-portrait.webp",
+          "alt": "ポートレート写真を線描画に変換"
+        },
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self"
+      },
+      {
+        "title": "建築写真を精密な線描画に変換",
+        "description": "建築写真を技術的な用途向けの精密な線画に変換。",
+        "label": "建築",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
+          "alt": "建築写真を線描画に変換"
+        },
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self"
+      },
+      {
+        "title": "プロダクト写真をデザイン用線画に変換",
+        "description": "プロダクト写真をデザインドキュメンテーション用のクリーンな線画に変換。",
+        "label": "プロダクト",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
+          "alt": "プロダクト写真を線描画に変換"
+        },
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self"
+      },
+      {
+        "title": "乗り物写真を技術的な線画イラストに変換",
+        "description": "乗り物の写真をドキュメンテーションプロジェクト用の技術的な線画に変換。",
+        "label": "乗り物",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
+          "alt": "乗り物写真を線描画に変換"
+        },
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self"
+      },
+      {
+        "title": "自然写真を芸術的な線画に変換",
+        "description": "自然の美しさを際立たせる芸術的な線画に自然写真を変換。",
+        "label": "自然",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
+          "alt": "自然写真を線描画に変換"
+        },
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self"
+      },
+      {
+        "title": "ペット写真を個性的な線画に変換",
+        "description": "愛するペットの写真を、ユニークな個性を捉えた線画に変換。",
+        "label": "ペット",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-pet.webp",
+          "alt": "ペット写真を線描画に変換"
+        },
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "写真を線描画に変換する機能",
+    "description": "趣味として、プロのデザイナーとして、またはクラフターとして、私たちの写真を線描画に変換するツールが、あなたの必要なすべてを提供します。",
+    "items": [
+      {
+        "title": "絵画スキルは不要",
+        "description": "芸術的な背景がなくても、どんな写真もプロ品質の線画に変換。初心者から専門家まで完璧に対応。",
+        "icon": "RiMagicLine"
+      },
+      {
+        "title": "超高速処理",
+        "description": "線描画の結果を数時間ではなく数秒で取得。最適化されたAIがすべてのプロジェクトで迅速な処理を実現。",
+        "icon": "RiFlashlightLine"
+      },
+      {
+        "title": "カスタマイズ可能な設定",
+        "description": "線の太さ、詳細レベル、コントラストを調整して、特定のプロジェクトニーズに最適な線画スタイルを取得。",
+        "icon": "RiSettings3Line"
+      },
+      {
+        "title": "複数の出力フォーマット",
+        "description": "線描画をPNG、SVG、またはPDFでダウンロード。刺繍ソフトウェア、レーザーカッター、デザインプログラムと互換性あり。",
+        "icon": "RiDownloadLine"
+      },
+      {
+        "title": "プライバシー保護",
+        "description": "写真は安全に処理され、サーバーに保存されることはありません。完全なプライバシーとデータ保護を保証。",
+        "icon": "RiShieldCheckLine"
+      },
+      {
+        "title": "どこでも利用可能",
+        "description": "デスクトップ、タブレット、モバイルなど、あらゆるデバイスで写真を線描画に変換するコンバーターを使用。ソフトウェアインストール不要。",
+        "icon": "RiSmartphoneLine"
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "写真を線描画に変換する方法",
+    "description": "私たちの高度なAI技術が、たった3つの簡単なステップで写真をクリーンな線画に変換します。",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "image_position": "left",
+    "text_align": "center",
+    "items": [
+      {
+        "title": "写真をアップロード",
+        "description": "画像をドラッグ＆ドロップするか、デバイスから選択するだけ。JPG、PNG、WebP、HEICなど、すべての一般的な写真フォーマットに対応。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+        }
+      },
+      {
+        "title": "線描画スタイルを選択",
+        "description": "私たちのインテリジェントなアルゴリズムが写真を分析して輪郭、エッジ、重要な詳細を識別し、クリーンな線描画を作成。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
+        }
+      },
+      {
+        "title": "アートワークをダウンロード",
+        "description": "高品質な線画を複数のフォーマットで取得。印刷、デジタルプロジェクト、またはデザインソフトウェアへのインポートに最適。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "写真を線描画に変換するよくある質問",
+    "description": "写真を線描画に変換する方法について知りたいことすべて",
+    "items": [
+      {
+        "title": "線描画変換に最適な写真の種類は何ですか？",
+        "description": "被写体がはっきりしていて、コントラストが良い写真が最適です。ポートレート、ペット、建物、輪郭が明確なオブジェクトが優れた線画結果を生成します。私たちのAIは様々な照明条件に対応でき、最適な線描画出力のために自動調整します。"
+      },
+      {
+        "title": "線描画を商用プロジェクトで使用できますか？",
+        "description": "はい！私たちの写真を線描画に変換するツールで作成されたすべての線描画は、個人および商用目的で使用できます。変換された画像の完全な権利を保持し、製品、マーケティング、またはビジネスアプリケーションに使用できます。"
+      },
+      {
+        "title": "アップロードとダウンロードでサポートされているファイル形式は何ですか？",
+        "description": "アップロード：JPG、PNG、HEIC、WebP、およびほとんどの一般的な画像形式。ダウンロード：ラスターグラフィック用の高品質PNG、スケーラブルなベクター線画用のSVG、印刷用のPDF。意図する使用ケースに最適な形式を選択してください。"
+      },
+      {
+        "title": "写真を線描画に変換するにはどのくらい時間がかかりますか？",
+        "description": "処理時間はアカウントタイプによります：無料ユーザーは50〜60秒以内に変換が完了することを期待できますが、プレミアムサブスクライバーは優先処理を享受し、わずか20〜30秒で結果を得られます。画像サイズと複雑さが処理時間に若干影響する可能性がありますが、最適化されたAIサーバーが速度に関係なく一貫した品質を保証します。"
+      },
+      {
+        "title": "私の写真データは安全でプライベートですか？",
+        "description": "はい、完全に安全です。写真は安全に処理され、変換後にサーバーから自動的に削除されます。線描画を作成する目的以外で画像を保存、共有、または使用することは決してありません。あなたのプライバシーが最優先事項です。"
+      },
+      {
+        "title": "線の太さと詳細レベルを調整できますか？",
+        "description": "いいえ、線の太さと詳細レベルを調整することはできません。"
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "写真を変換する準備はできましたか？",
+    "description": "私たちの写真を線描画に変換するツールを使用してアイデアを実現している何千人ものクリエイターに参加しませんか。今日から画像の変換を始めましょう。",
+    "buttons": [
+      {
+        "title": "最初の写真を無料で変換",
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self",
+        "icon": "GoArrowUpRight"
+      }
+    ]
+  },
+ 
+  
+  "use_cases": {
+    "name": "use_cases",
+    "title": "写真イラスト化の業界別アプリケーション",
+    "description": "個人のクラフトからプロのプロジェクトまで、写真イラスト化がどのように業界全体でクリエイティブなワークフローを変革しているかを発見。",
+    "items": [
+      {
+        "title": "クラフト＆ホビー",
+        "description": "写真をクリエイティブプロジェクトのための実用的なパターンとガイドに変換。",
+        "icon": "RiScissorsLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-coloring-page.webp",
+          "alt": "写真を線描画に変換する使用例 - 塗り絵"
+        },
+        "children": [
+          "家族写真からの刺繍パターン",
+          "子供向けカスタム塗り絵", 
+          "木目焼きとエングレービングガイド",
+          "ペインティングプロジェクト用ステンシル"
+        ]
+      },
+      {
+        "title": "デジタルアート＆デザイン",
+        "description": "写真を線描画に変換したものをデジタルクリエイティブワークの基盤として活用。",
+        "icon": "RiPaintBrushLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-logo.webp",
+          "alt": "写真を線描画に変換する使用例 - ロゴ"
+        },
+        "children": [
+          "デジタルペイントのベースレイヤー",
+          "イラストレーションの参照ガイド",
+          "ミニマリストロゴの作成",
+          "ウェブサイトとアプリのグラフィック"
+        ]
+      },
+      {
+        "title": "パーソナライズドギフト",
+        "description": "写真を線描画に変換して意味のある贈り物を作成。",
+        "icon": "RiGiftLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-t-shirt.webp",
+          "alt": "写真を線描画に変換する使用例 - Tシャツ"
+        },
+        "children": [
+          "カスタムマグカップのペットポートレート",
+          "壁装飾用のファミリー線画",
+          "パーソナライズドTシャツデザイン", 
+          "カスタムポスターアートワーク"
+        ]
+      },
+      {
+        "title": "プロフェッショナル製造",
+        "description": "産業用途のために写真を精密な線描画に変換。",
+        "icon": "RiSettings3Line",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-manufacturing.webp",
+          "alt": "写真を線描画に変換する使用例 - 製造"
+        },
+        "children": [
+          "レーザーカッティングパス生成",
+          "CNCマシンツールパス",
+          "プロッターアート作成",
+          "技術図面の簡素化"
+        ]
+      },
+      {
+        "title": "タトゥー＆ボディアート",
+        "description": "写真を線描画に変換してボディアートに最適なテンプレートを作成。",
+        "icon": "RiHeartLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-tattoo.webp",
+          "alt": "写真を線描画に変換する使用例 - タトゥー"
+        },
+        "children": [
+          "タトゥーデザインテンプレート",
+          "ヘナパターン作成",
+          "ボディアートステンシル",
+          "アーティスト相談用ビジュアル"
+        ]
+      },
+      {
+        "title": "教育＆トレーニング",
+        "description": "複雑な画像を明確な教育教材に簡素化。",
+        "icon": "RiGraduationCapLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-education.webp",
+          "alt": "写真を線描画に変換する使用例 - 教育"
+        },
+        "children": [
+          "簡略化された解剖学的図",
+          "技術的な機器のアウトライン",
+          "教育教材グラフィック",
+          "学生アクティビティシート"
+        ]
+      }
+    ]
+  }
+}
