@@ -4,7 +4,7 @@
     "description": "轻松将照片转换为线稿。一键将任意图片转换为清晰的线条艺术，适用于刺绣、纹身、手工艺和数字艺术创作。"
   },
   "hero": {
-    "title": "秒速转换图片为线稿",
+    "title": "秒速图片转线稿",
     "announcement": {
       "label": "新品",
       "title": "🍌 Nano Banana",
@@ -13,6 +13,20 @@
     "highlight_text": "图片转线稿",
     "description": "无需绘画技能，一键将任意照片转换为专业级清晰线条艺术。",
     "tip": "免费试用，100%安全，即时出图",
+    "tip_items": [
+      {
+        "text": "免费试用",
+        "icon": "Gift"
+      },
+      {
+        "text": "100% 安全",
+        "icon": "Shield"
+      },
+      {
+        "text": "无需注册",
+        "icon": "Zap"
+      }
+    ],
     "buttons": [
       {
         "title": "免费试用",

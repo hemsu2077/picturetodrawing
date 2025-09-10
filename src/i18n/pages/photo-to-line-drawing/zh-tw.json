@@ -13,6 +13,20 @@
     "highlight_text": "Photo to Line Drawing",
     "description": "Convert any photo into clean, professional line art without drawing skills.",
     "tip": "Free to Try, 100% Secure, Instant Results",
+    "tip_items": [
+      {
+        "text": "免费试用",
+        "icon": "Gift"
+      },
+      {
+        "text": "100% 安全",
+        "icon": "Shield"
+      },
+      {
+        "text": "无需注册",
+        "icon": "Zap"
+      }
+    ],
     "buttons": [
       {
         "title": "Try for Free",
