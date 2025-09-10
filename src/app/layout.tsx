@@ -35,6 +35,7 @@ export default async function RootLayout({
             />
           ))}
         <link rel="alternate" hrefLang="x-default" href={webUrl} />
+        <meta name="_foundr" content="d48034f39fa1b2b80802c4ae76c00180"></meta>
       </head>
       <body>{children}</body>
     </html>
