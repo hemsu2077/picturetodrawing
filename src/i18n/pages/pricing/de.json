@@ -1,0 +1,352 @@
+{
+  "pricing": {
+    "name": "pricing",
+    "label": "Preise",
+    "title": "Preise",
+    "description": "Wandeln Sie Ihre Fotos mit Bild zu Zeichnung in beeindruckende Kunstwerke um.",
+    "groups": [
+      {
+        "name": "monthly",
+        "title": "Monatlich"
+      },
+      {
+        "name": "yearly",
+        "title": "Jährlich",
+        "is_featured": true,
+        "label": "sparen Sie 30%"
+      },
+      {
+        "name": "one-time",
+        "title": "Nach Bedarf zahlen"
+      }
+    ],
+    "items": [
+      {
+        "title": "Basic",
+        "description": "Perfekt zum Testen unseres KI-Zeichnungsservices.",
+        "features_title": "Enthält",
+        "features": [
+          "100 Credits, gültig für 2 Monate",
+          "Kein Wasserzeichen",
+          "Schnelle Generierung",
+          "HD-Download",
+          "Etwa 0,2 $ pro Zeichnung"
+        ],
+        "interval": "one-time",
+        "amount": 999,
+        "currency": "USD",
+        "price": "9,99 $",
+        "unit": "einmalig",
+        "is_featured": false,
+        "tip": "Ideal für gelegentliche Nutzung",
+        "button": {
+          "title": "Starten",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "basic",
+        "product_name": "Basic Einmalig",
+        "credits": 100,
+        "valid_months": 2,
+        "group": "one-time"
+      },
+      {
+        "title": "Standard",
+        "description": "Ideal für regelmäßige Nutzer, die häufig Kunstwerke erstellen.",
+        "features_title": "Enthält",
+        "features": [
+          "400 Credits, gültig für 6 Monate",
+          "Kein Wasserzeichen",
+          "Schnelle Generierung",
+          "HD-Download",
+          "Etwa 0,1 $ pro Zeichnung"
+        ],
+        "interval": "one-time",
+        "amount": 1999,
+        "currency": "USD",
+        "price": "19,99 $",
+        "unit": "einmalig",
+        "is_featured": false,
+        "tip": "Beliebteste Wahl",
+        "button": {
+          "title": "Starten",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard",
+        "product_name": "Standard Einmalig",
+        "credits": 400,
+        "valid_months": 6,
+        "group": "one-time"
+      },
+      {
+        "title": "Premium",
+        "description": "Für Power-User und kreative Profis.",
+        "features_title": "Enthält",
+        "label": "Beliebt",
+        "features": [
+          "800 Credits, gültig für 12 Monate",
+          "Kein Wasserzeichen",
+          "Schnelle Generierung",
+          "HD-Download",
+          "Etwa 0,075 $ pro Zeichnung"
+        ],
+        "interval": "one-time",
+        "amount": 2999,
+        "currency": "USD",
+        "price": "29,99 $",
+        "unit": "einmalig",
+        "is_featured": true,
+        "tip": "Bester Wert für intensive Nutzer",
+        "button": {
+          "title": "Starten",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "premium",
+        "product_name": "Premium Einmalig",
+        "credits": 800,
+        "valid_months": 12,
+        "group": "one-time"
+      },
+      {
+        "title": "Basic",
+        "description": "Ständiger monatlicher Vorrat für regelmäßige Ersteller.",
+        "features_title": "Enthält",
+        "features": [
+          "200 Credits pro Monat",
+          "Kein Wasserzeichen",
+          "Schnelle Generierung",
+          "HD-Download",
+          "Kommerzielle Nutzungsrechte",
+          "Priorisierter Kundensupport",
+          "Etwa 0,1 $ pro Zeichnung"
+        ],
+        "interval": "month",
+        "amount": 999,
+        "currency": "USD",
+        "price": "9,99 $",
+        "unit": " / Monat",
+        "is_featured": false,
+        "tip": "Automatische Verlängerung, jederzeit kündbar",
+        "button": {
+          "title": "Abonnieren",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "basic-monthly",
+        "product_name": "Basic Monatlich",
+        "credits": 200,
+        "valid_months": 1,
+        "group": "monthly"
+      },
+      {
+        "title": "Standard",
+        "description": "Mehr Credits für aktive Ersteller und kleine Teams.",
+        "label": "Beliebt",
+        "features_title": "Enthält",
+        "features": [
+          "400 Credits pro Monat",
+          "Kein Wasserzeichen",
+          "Schnelle Generierung",
+          "HD-Download",
+          "Kommerzielle Nutzungsrechte",
+          "Priorisierter Kundensupport",
+          "Etwa 0,85 $ pro Zeichnung"
+        ],
+        "interval": "month",
+        "amount": 1699,
+        "currency": "USD",
+        "price": "16,99 $",
+        "unit": " / Monat",
+        "is_featured": true,
+        "tip": "Automatische Verlängerung, jederzeit kündbar",
+        "button": {
+          "title": "Abonnieren",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard-monthly",
+        "product_name": "Standard Monatlich",
+        "credits": 400,
+        "valid_months": 1,
+        "group": "monthly"
+      },
+      {
+        "title": "Premium",
+        "description": "Maximale Credits für Agenturen und Power-User.",
+        "features_title": "Enthält",
+        "features": [
+          "1000 Credits pro Monat",
+          "Kein Wasserzeichen",
+          "Schnelle Generierung",
+          "HD-Download",
+          "Kommerzielle Nutzungsrechte",
+          "Priorisierter Kundensupport",
+          "Etwa 0,06 $ pro Zeichnung"
+        ],
+        "interval": "month",
+        "amount": 2999,
+        "currency": "USD",
+        "price": "29,99 $",
+        "unit": " / Monat",
+        "is_featured": false,
+        "tip": "Automatische Verlängerung, jederzeit kündbar",
+        "button": {
+          "title": "Abonnieren",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "premium-monthly",
+        "product_name": "Premium Monatlich",
+        "credits": 1000,
+        "valid_months": 1,
+        "group": "monthly"
+      },
+      {
+        "title": "Basic",
+        "description": "Insgesamt 83,88 $/Jahr, sparen Sie mit jährlicher Abrechnung für konsistente Ersteller.",
+        "features_title": "Enthält",
+        "features": [
+          "200 Credits pro Monat (2400 Credits pro Jahr)",
+          "Kein Wasserzeichen",
+          "Schnelle Generierung",
+          "HD-Download",
+          "Kommerzielle Nutzungsrechte",
+          "Etwa 0,07 $ pro Zeichnung"
+        ],
+        "interval": "year",
+        "amount": 8388,
+        "currency": "USD",
+        "price": "6,99 $",
+        "original_price": "9,99 $",
+        "unit": " / Monat",
+        "is_featured": false,
+        "tip": "Automatische Verlängerung, jederzeit kündbar",
+        "button": {
+          "title": "Jährlich abonnieren",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "basic-yearly",
+        "product_name": "Basic Jährlich",
+        "credits": 2400,
+        "valid_months": 12,
+        "group": "yearly"
+      },
+      {
+        "title": "Standard",
+        "description": "Insgesamt 143,88 $/Jahr, bester Wert für wachsende Unternehmen und Teams.",
+        "label": "Beliebt",
+        "features_title": "Enthält",
+        "features": [
+          "400 Credits pro Monat (4800 Credits pro Jahr)",
+          "Kein Wasserzeichen",
+          "Schnelle Generierung",
+          "HD-Download",
+          "Kommerzielle Nutzungsrechte",
+          "Priorisierter Kundensupport",
+          "Etwa 0,06 $ pro Zeichnung"
+        ],
+        "interval": "year",
+        "amount": 14388,
+        "currency": "USD",
+        "price": "11,99 $",
+        "original_price": "16,99 $",
+        "unit": " / Monat",
+        "is_featured": true,
+        "tip": "Automatische Verlängerung, jederzeit kündbar",
+        "button": {
+          "title": "Jährlich abonnieren",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard-yearly",
+        "product_name": "Standard Jährlich",
+        "credits": 4800,
+        "valid_months": 12,
+        "group": "yearly"
+      },
+      {
+        "title": "Premium",
+        "description": "Insgesamt 251,88 $/Jahr, maximale Ersparnis für Nutzer mit hohem Volumen.",
+        "features_title": "Enthält",
+        "features": [
+          "1000 Credits pro Monat (12000 Credits pro Jahr)",
+          "Kein Wasserzeichen",
+          "Schnelle Generierung",
+          "HD-Download",
+          "Kommerzielle Nutzungsrechte",
+          "Priorisierter Kundensupport",
+          "Etwa 0,04 $ pro Zeichnung"
+        ],
+        "interval": "year",
+        "amount": 25188,
+        "currency": "USD",
+        "price": "20,99 $",
+        "original_price": "29,99 $",
+        "unit": " / Monat",
+        "is_featured": false,
+        "tip": "Automatische Verlängerung, jederzeit kündbar",
+        "button": {
+          "title": "Jährlich abonnieren",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "premium-yearly",
+        "product_name": "Premium Jährlich",
+        "credits": 12000,
+        "valid_months": 12,
+        "group": "yearly"
+      }
+    ]
+  },
+
+
+
+   "faq": {
+     "name": "faq",
+     "label": "",
+     "title": "Häufig gestellte Fragen",
+     "description": "Haben Sie Fragen zu unserem KI-Bild-zu-Zeichnung-Service? Finden Sie unten Antworten oder kontaktieren Sie unser Support-Team.",
+     "groups": [],
+     "items": [
+       {
+         "title": "Was passiert, wenn meine Credits aufgebraucht sind?",
+         "description": "Bei Abonnementplänen (Monatlich/Jährlich) werden Ihre Credits automatisch zu Beginn jedes Abrechnungszyklus zurückgesetzt. Für Nutzer mit Nach-Bedarf-Zahlung müssen Sie ein neues Credit-Paket kaufen, um Fotos in Zeichnungen umzuwandeln. Sie können jederzeit zu einem Abonnementplan wechseln für automatische Erneuerungen."
+       },
+       {
+         "title": "Wie lange sind meine Credits gültig?",
+         "description": "Credits für Nach-Bedarf-Zahlung haben unterschiedliche Gültigkeitsdauern: Basic (2 Monate), Standard (6 Monate), Premium (12 Monate). Abonnement-Credits (Monatlich/Jährlich) werden zu Ihrem Abrechnungsdatum zurückgesetzt. Wir empfehlen, Ihre Credits vor Ablauf zu nutzen, um das meiste Wert zu bekommen."
+       },
+       {
+         "title": "Wie viele Zeichnungen kann ich mit meinen Credits erstellen?",
+         "description": "Jede Foto-zu-Zeichnung-Umwandlung verwendet typischerweise 2 Credits. Mit 100 Credits (Basic) können Sie also 50 Zeichnungen erstellen. Mit 200 Credits (Standard Monatlich) können Sie 100 Zeichnungen pro Monat generieren. Die genaue Nutzung kann je nach Bildkomplexität und Stil variieren."
+       },
+       {
+         "title": "Kann ich eine Rückerstattung für ungenutzte Credits erhalten?",
+         "description": "Aufgrund der benötigten Rechenressourcen für die KI-Bildtransformation können wir keine Rückerstattungen für gekaufte Credits anbieten. Allerdings haben Credits für Nach-Bedarf-Zahlung verlängerte Gültigkeitsdauern, die Ihnen ausreichend Zeit zur Nutzung geben. Bei Abonnements können Sie jederzeit kündigen, um zukünftige Belastungen zu verhindern."
+       },
+       {
+         "title": "Was ist der Unterschied zwischen den Plänen?",
+         "description": "Nach-Bedarf-Zahlung bietet einmalige Käufe mit unterschiedlichen Credit-Mengen und Gültigkeitsdauern - perfekt für gelegentliche Nutzung. Monatspläne bieten regelmäßige Credit-Erneuerungen mit kommerziellen Rechten und Prioritätssupport. Jahrespläne bieten die gleichen Vorteile wie Monatspläne aber mit erheblichen Ersparnissen (bis zu 30% Rabatt)."
+       },
+       {
+         "title": "Wie verwalte oder kündige ich mein Abonnement?",
+         "description": "Sie können Ihr Abonnement verwalten, die Nutzung einsehen und jederzeit in Ihrem Konto-Dashboard unter 'Meine Credits' oder 'Mein Konto' kündigen. Käufe mit Nach-Bedarf-Zahlung benötigen keine Kündigung, da es sich um einmalige Zahlungen handelt."
+       },
+       {
+         "title": "Welche Zeichenstile kann ich erstellen?",
+         "description": "Unsere KI kann Ihre Fotos in verschiedene künstlerische Stile umwandeln, einschließlich Bleistiftskizze, Kohlezeichnung, Aquarellmalerei, Linienkunst, Buntstiftzeichnung und Tuschkunst. Sie können während des Umwandlungsprozesses Ihren bevorzugten Stil wählen, um Ihre künstlerische Vision zu verwirklichen."
+       },
+       {
+         "title": "Kann ich die erstellten Zeichnungen kommerziell nutzen?",
+         "description": "Ja! Monatliche und jährliche Abonnementpläne umfassen volle kommerzielle Nutzungsrechte. Sie können die erstellten Zeichnungen für Ihr Unternehmen, Kundenprojekte, Marketingmaterialien oder beliebige kommerzielle Zwecke verwenden. Pläne mit Nach-Bedarf-Zahlung sind nur für die persönliche Nutzung bestimmt."
+       },
+       {
+         "title": "Was passiert, wenn ich mit einer erstellten Zeichnung nicht zufrieden bin?",
+         "description": "Während wir keine Rückerstattungen anbieten können, können Sie mit Ihren Credits verschiedene künstlerische Stile ausprobieren oder Ihr Foto für bessere Ergebnisse anpassen. Unsere KI funktioniert am besten mit klaren, gut beleuchteten Fotos. Kontaktieren Sie unser Support-Team, wenn Sie Hilfe bei der Optimierung Ihrer Bilder für die beste künstlerische Transformation benötigen."
+       }
+     ]
+  }
+}

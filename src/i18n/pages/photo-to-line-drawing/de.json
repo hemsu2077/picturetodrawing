@@ -1,0 +1,328 @@
+{
+  "meta": {
+    "title": "Foto in Strichzeichnung Konverter - Kostenlos testen",
+    "description": "Wandeln Sie mühelos Fotos in Strichzeichnungen um. Verwandeln Sie jedes Foto in saubere Linienkunst für Stickerei, Tätowierungen, Handwerk und digitale Kunst."
+  },
+  "hero": {
+    "title": "Wandeln Sie Fotos sofort in Strichzeichnungen um",
+    "announcement": {
+      "label": "NEU",
+      "title": "🍌 Nano Banana",
+      "url": "/photo-to-line-drawing#drawing-generator"
+    },
+    "highlight_text": "Foto in Strichzeichnung",
+    "description": "Wandeln Sie jedes Foto ohne Zeichenfähigkeiten in saubere, professionelle Linienkunst um.",
+    "tip": "Kostenlos testen, 100% sicher, sofortige Ergebnisse",
+    "tip_items": [
+      {
+        "text": "Kostenlos testen",
+        "icon": "Gift"
+      },
+      {
+        "text": "100% sicher",
+        "icon": "Shield"
+      },
+      {
+        "text": "Keine Anmeldung erforderlich",
+        "icon": "Zap"
+      }
+    ],
+    "buttons": [
+      {
+        "title": "Kostenlos testen",
+        "icon": "RiFlashlightFill",
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self",
+        "variant": "default"
+      }
+    ],
+    "show_happy_users": true,
+    "show_badge": false
+  },
+  "showcase": {
+    "name": "showcase",
+    "title": "Beeindruckende Foto-in-Strichzeichnung Ergebnisse in allen Kategorien",
+    "items": [
+      {
+        "title": "Porträt-Foto-in-Strichzeichnung-Transformation",
+        "description": "Verwandeln Sie Porträts mit künstlerischer Präzision in elegante Linienkunst.",
+        "label": "Porträt",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-portrait.webp",
+          "alt": "Porträt-Foto in Strichzeichnung"
+        },
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self"
+      },
+      {
+        "title": "Architektonischer Foto-in-Strichzeichnung-Stil",
+        "description": "Verwandeln Sie architektonische Fotos in präzise Strichzeichnungen für den technischen Einsatz.",
+        "label": "Architektur",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
+          "alt": "Architektur-Foto in Strichzeichnung"
+        },
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self"
+      },
+      {
+        "title": "Produktfoto-in-Strichzeichnung für Design",
+        "description": "Wandeln Sie Produktfotos in saubere Linienkunst für Designdokumentation um.",
+        "label": "Produkt",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
+          "alt": "Produktfoto in Strichzeichnung"
+        },
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self"
+      },
+      {
+        "title": "Fahrzeugfoto-in-Strichzeichnung-Illustration",
+        "description": "Wandeln Sie Fahrzeugfotos in technische Linienkunst für Dokumentationsprojekte um.",
+        "label": "Fahrzeug",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
+          "alt": "Fahrzeugfoto in Strichzeichnung"
+        },
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self"
+      },
+      {
+        "title": "Naturfoto-in-Strichzeichnung-Kunst",
+        "description": "Verwandeln Sie Naturfotos in künstlerische Strichzeichnungen, die natürliche Schönheit hervorheben.",
+        "label": "Natur",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
+          "alt": "Naturfoto in Strichzeichnung"
+        },
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self"
+      },
+      {
+        "title": "Haustierfoto-in-Strichzeichnung-Umwandlung",
+        "description": "Verwandeln Sie Ihre geliebten Haustierfotos in Strichzeichnungen, die ihre einzigartige Persönlichkeit einfangen.",
+        "label": "Haustier",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-pet.webp",
+          "alt": "Haustierfoto in Strichzeichnung"
+        },
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Foto-in-Strichzeichnung Funktionen",
+    "description": "Ob Sie Hobbyist, professioneller Designer oder Handwerker sind, unser Foto-in-Strichzeichnung-Tool bietet alles, was Sie benötigen.",
+    "items": [
+      {
+        "title": "Keine Zeichenfähigkeiten erforderlich",
+        "description": "Verwandeln Sie jedes Foto ohne künstlerischen Hintergrund in professionelle Linienkunst. Perfekt für Anfänger und Experten gleichermaßen.",
+        "icon": "RiMagicLine"
+      },
+      {
+        "title": "Blitzschnelle Verarbeitung",
+        "description": "Erhalten Sie Ihre Strichzeichnung-Ergebnisse in Sekunden, nicht in Stunden. Unsere optimierte KI gewährleistet schnelle Bearbeitungszeiten für alle Ihre Projekte.",
+        "icon": "RiFlashlightLine"
+      },
+      {
+        "title": "Anpassbare Einstellungen",
+        "description": "Passen Sie Linienstärke, Detailgrad und Kontrast an, um den perfekten Linienkunst-Stil für Ihre spezifischen Projektanforderungen zu erhalten.",
+        "icon": "RiSettings3Line"
+      },
+      {
+        "title": "Mehrere Ausgabeformate",
+        "description": "Laden Sie Ihre Strichzeichnungen als PNG, SVG oder PDF herunter. Kompatibel mit Stickerei-Software, Lasercuttern und Designprogrammen.",
+        "icon": "RiDownloadLine"
+      },
+      {
+        "title": "Datenschutz geschützt",
+        "description": "Ihre Fotos werden sicher verarbeitet und niemals auf unseren Servern gespeichert. Vollständiger Datenschutz und Datenschutz garantiert.",
+        "icon": "RiShieldCheckLine"
+      },
+      {
+        "title": "Funktioniert überall",
+        "description": "Verwenden Sie unseren Foto-in-Strichzeichnung-Konverter auf jedem Gerät - Desktop, Tablet oder Mobil. Keine Softwareinstallation erforderlich.",
+        "icon": "RiSmartphoneLine"
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "Wie Foto-in-Strichzeichnung funktioniert",
+    "description": "Unsere fortschrittliche KI-Technologie wandelt Ihre Fotos in nur 3 einfachen Schritten in saubere Linienkunst um.",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "image_position": "left",
+    "text_align": "center",
+    "items": [
+      {
+        "title": "Laden Sie Ihr Foto hoch",
+        "description": "Ziehen Sie einfach Ihr Bild per Drag & Drop oder wählen Sie es von Ihrem Gerät aus. Wir unterstützen alle gängigen Fotoformate einschließlich JPG, PNG, WebP und HEIC.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+        }
+      },
+      {
+        "title": "Wählen Sie den Strichzeichnungs-Stil",
+        "description": "Unser intelligenter Algorithmus analysiert Ihr Foto, um wichtige Konturen, Kanten und wichtige Details zu identifizieren und erstellt eine saubere Strichzeichnungsumwandlung.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
+        }
+      },
+      {
+        "title": "Laden Sie Ihr Kunstwerk herunter",
+        "description": "Erhalten Sie Ihre hochwertige Linienkunst in mehreren Formaten. Perfekt zum Drucken, für digitale Projekte oder zum Importieren in Designsoftware.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Häufig gestellte Fragen zur Foto-in-Strichzeichnung-Umwandlung",
+    "description": "Alles, was Sie über die Umwandlung von Fotos in Strichzeichnungen wissen müssen",
+    "items": [
+      {
+        "title": "Welche Fototypen eignen sich am besten für die Strichzeichnungsumwandlung?",
+        "description": "Fotos mit klaren Motiven und gutem Kontrast funktionieren am besten. Porträts, Haustiere, Gebäude und Objekte mit definierten Kanten erzeugen ausgezeichnete Strichzeichnungsergebnisse. Unsere KI kann verschiedene Beleuchtungsbedingungen bewältigen und passt sich automatisch für optimale Strichzeichnungsergebnisse an."
+      },
+      {
+        "title": "Kann ich die Strichzeichnungen für kommerzielle Projekte verwenden?",
+        "description": "Ja! Alle mit unserem Foto-in-Strichzeichnung-Tool erstellten Strichzeichnungen können sowohl für persönliche als auch für kommerzielle Zwecke verwendet werden. Sie behalten die vollen Rechte an Ihren umgewandelten Bildern und können sie für Produkte, Marketing oder jede geschäftliche Anwendung verwenden."
+      },
+      {
+        "title": "Welche Dateiformate werden für Hoch- und Herunterladen unterstützt?",
+        "description": "Upload: JPG, PNG, HEIC, WebP und die meisten gängigen Bildformate. Download: Hochwertiges PNG für Rastergrafiken, SVG für skalierbare Vektor-Linienkunst und PDF zum Drucken. Wählen Sie das Format, das am besten zu Ihrem beabsichtigten Verwendungszweck passt."
+      },
+      {
+        "title": "Wie lange dauert die Foto-in-Strichzeichnung-Umwandlung?",
+        "description": "Die Verarbeitungszeit hängt von Ihrem Kontotyp ab: Kostenlose Benutzer können mit Abschluss der Umwandlung innerhalb von 50-60 Sekunden rechnen, während Premium-Abonnenten eine Prioritätsverarbeitung mit Ergebnissen in nur 20-30 Sekunden genießen. Bildgröße und Komplexität können die Verarbeitungszeit leicht beeinflussen, aber unsere optimierten KI-Server sorgen unabhängig von der Geschwindigkeit für konsistente Qualität."
+      },
+      {
+        "title": "Sind meine Fotodaten sicher und privat?",
+        "description": "Absolut. Ihre Fotos werden sicher verarbeitet und nach der Umwandlung automatisch von unseren Servern gelöscht. Wir speichern, teilen oder verwenden Ihre Bilder niemals für andere Zwecke als die Erstellung Ihrer Strichzeichnung. Ihre Privatsphäre hat unsere oberste Priorität."
+      },
+      {
+        "title": "Kann ich die Linienstärke und den Detailgrad anpassen?",
+        "description": "Nein, Sie können die Linienstärke und den Detailgrad nicht anpassen."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Bereit, Ihre Fotos umzuwandeln?",
+    "description": "Schließen Sie sich Tausenden von Erstellern an, die unser Foto-in-Strichzeichnung-Tool verwenden, um ihre Ideen zum Leben zu erwecken. Beginnen Sie heute mit der Umwandlung Ihrer Bilder.",
+    "buttons": [
+      {
+        "title": "Wandeln Sie Ihr erstes Foto kostenlos um",
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self",
+        "icon": "GoArrowUpRight"
+      }
+    ]
+  },
+ 
+  
+  "use_cases": {
+    "name": "use_cases",
+    "title": "Foto-in-Strichzeichnung Anwendungen in verschiedenen Branchen",
+    "description": "Von persönlichen Handarbeiten bis zu professionellen Projekten, entdecken Sie, wie Foto-in-Strichzeichnung kreative Arbeitsabläufe in verschiedenen Branchen transformiert.",
+    "items": [
+      {
+        "title": "Handwerk & Hobbys",
+        "description": "Verwandeln Sie Ihre Fotos in praktische Muster und Anleitungen für kreative Projekte.",
+        "icon": "RiScissorsLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-coloring-page.webp",
+          "alt": "Foto-in-Strichzeichnung Anwendungsfall - Malvorlage"
+        },
+        "children": [
+          "Stickmuster aus Familienfotos",
+          "Personalisierte Malvorlagen für Kinder",
+          "Pyrografie- und Gravieranleitungen",
+          "Schablonen für Malprojekte"
+        ]
+      },
+      {
+        "title": "Digitale Kunst & Design",
+        "description": "Verwenden Sie Foto-in-Strichzeichnung als Grundlage für digitale kreative Arbeit.",
+        "icon": "RiPaintBrushLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-logo.webp",
+          "alt": "Foto-in-Strichzeichnung Anwendungsfall - Logo"
+        },
+        "children": [
+          "Grundebenen für digitale Gemälde",
+          "Referenzanleitungen für Illustrationen",
+          "Erstellung minimalistischer Logos",
+          "Website- und App-Grafiken"
+        ]
+      },
+      {
+        "title": "Personalisierte Geschenke",
+        "description": "Erstellen Sie bedeutungsvolle Geschenke mit Foto-in-Strichzeichnung-Umwandlungen.",
+        "icon": "RiGiftLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-t-shirt.webp",
+          "alt": "Foto-in-Strichzeichnung Anwendungsfall - T-Shirt"
+        },
+        "children": [
+          "Haustierporträts auf personalisierten Tassen",
+          "Familien-Linienkunst für Wanddeko",
+          "Personalisierte T-Shirt-Designs",
+          "Benutzerdefinierte Poster-Kunstwerke"
+        ]
+      },
+      {
+        "title": "Professionelle Fertigung",
+        "description": "Wandeln Sie Fotos in präzise Strichzeichnungen für industrielle Anwendungen um.",
+        "icon": "RiSettings3Line",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-manufacturing.webp",
+          "alt": "Foto-in-Strichzeichnung Anwendungsfall - Fertigung"
+        },
+        "children": [
+          "Laser-Schneidpfad-Generierung",
+          "CNC-Maschinen-Werkzeugpfade",
+          "Plotter-Kunst-Erstellung",
+          "Vereinfachung technischer Diagramme"
+        ]
+      },
+      {
+        "title": "Tätowierung & Körperkunst",
+        "description": "Foto-in-Strichzeichnung erstellt perfekte Vorlagen für Körperkunst.",
+        "icon": "RiHeartLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-tattoo.webp",
+          "alt": "Foto-in-Strichzeichnung Anwendungsfall - Tätowierung"
+        },
+        "children": [
+          "Tätowierungs-Design-Vorlagen",
+          "Henna-Muster-Erstellung",
+          "Körperkunst-Schablonen",
+          "Visuale für Künstlerberatung"
+        ]
+      },
+      {
+        "title": "Bildung & Ausbildung",
+        "description": "Vereinfachen Sie komplexe Bilder in klare Bildungsmaterialien.",
+        "icon": "RiGraduationCapLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-education.webp",
+          "alt": "Foto-in-Strichzeichnung Anwendungsfall - Bildung"
+        },
+        "children": [
+          "Vereinfachte anatomische Diagramme",
+          "Technische Geräte-Umrisszeichnungen",
+          "Grafiken für Bildungsmaterial",
+          "Schüleraktivitätsbögen"
+        ]
+      }
+    ]
+  }
+}

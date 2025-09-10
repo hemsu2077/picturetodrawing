@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "Kostenlose Credits - Bild zu Zeichnung",
+    "description": "Verdienen Sie kostenlose Credits durch tägliches Einchecken! Absolvieren Sie Herausforderungen und erhalten Sie Belohnungen.",
+    "robots": {
+      "index": false,
+      "follow": false
+    }
+  },
+  "hero": {
+    "title": "Kostenlose Credits",
+    "description": "Verdienen Sie kostenlose Credits durch tägliches Einchecken! Absolvieren Sie Herausforderungen und erhalten Sie Belohnungen."
+  }
+}

@@ -1,0 +1,515 @@
+{
+  "template": "picturetodrawing-template-one",
+  "theme": "light",
+  "header": {
+    "brand": {
+      "title": "PicturetoDrawing",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "PicturetoDrawing"
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "KI-Zeichnungstools",
+          "children": [
+            {
+              "title": "Bild zu Zeichnung",
+              "url": "/",
+              "target": "_self",
+              "icon": "RiBrushLine"
+            },
+            {
+              "title": "Foto in Strichzeichnung",
+              "url": "/photo-to-line-drawing",
+              "target": "_self",
+              "icon": "RiColorFilterAiLine"
+            }
+          ]
+        },
+        {
+          "title": "Preise",
+          "url": "/pricing",
+          "icon": ""
+        },
+        {
+          "title": "Meine Zeichnungen",
+          "url": "/my-drawings",
+          "icon": ""
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "title": "Kostenlose Credits",
+        "url": "/free-credits",
+        "target": "_self",
+        "variant": "outline",
+        "icon": "RiGiftLine"
+      }
+    ],
+
+    "show_sign": true,
+    "show_theme": false,
+    "show_locale": true
+  },
+  "hero": {
+    "title": "Wandeln Sie Ihr Bild in Sekunden in eine Zeichnung um",
+    "highlight_text": "Bild zu Zeichnung",
+    "description": "Erleben Sie die Magie der KI-gesteuerten Foto-zu-Skizze-Umwandlung",
+    "announcement": {
+      "label": "NEU",
+      "title": "🍌 Nano Banana",
+      "url": "/#drawing-generator"
+    },
+    "tip": "Kostenlos testen, 100% sicher, sofortige Ergebnisse",
+    "tip_items": [
+      {
+        "text": "Kostenlos testen",
+        "icon": "Gift"
+      },
+      {
+        "text": "100% sicher",
+        "icon": "Shield"
+      },
+      {
+        "text": "Keine Anmeldung erforderlich",
+        "icon": "Zap"
+      }
+    ],
+    "buttons": [
+      {
+        "title": "Kostenlos testen",
+        "icon": "RiFlashlightFill",
+        "url": "/#drawing-generator",
+        "target": "_self",
+        "variant": "default"
+      }
+    ],
+    "show_happy_users": true,
+    "show_badge": false
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "Professionelle Bild-zu-Zeichnung Ergebnisse",
+    "label": "Vorstellung",
+    "description": "",
+    "image": {
+      "src": "https://files.picturetodrawing.com/sample/draw-introduce.mp4"
+    },
+    "items": [
+      {
+        "title": "Authentische künstlerische Darstellung",
+        "description": "Jede Foto-zu-Skizze-Umwandlung bewahrt natürliche Texturen, Schatten und Details, die Ihre Zeichnung wie von einem professionellen Künstler handgefertigt aussehen lassen.",
+        "icon": "RiPaintBrushLine"
+      },
+      {
+        "title": "Hochauflösende Ausgabe",
+        "description": "Laden Sie Ihre Bild-zu-Zeichnung-Umwandlungen in hoher Auflösung herunter, perfekt zum Drucken, Einrahmen oder Teilen auf Social-Media-Plattformen.",
+        "icon": "RiHdLine"
+      },
+      {
+        "title": "Datenschutz geschützt",
+        "description": "Ihre Fotos werden sicher verarbeitet und nach der Umwandlung automatisch gelöscht. Wir speichern oder teilen niemals Ihre persönlichen Bilder.",
+        "icon": "RiShieldCheckLine"
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Warum unseren Bild-zu-Zeichnung Konverter wählen?",
+    "label": "Vorteile",
+    "description": "Wandeln Sie jedes Bild mit authentischen künstlerischen Stilen und unglaublicher Detailtreue in eine Zeichnung um.",
+    "items": [
+      {
+        "title": "Fortgeschrittene KI-Technologie",
+        "description": "Unsere hochmoderne künstliche Intelligenz analysiert jedes Detail Ihres Fotos, um authentische Bild-zu-Zeichnung-Umwandlungen zu erstellen, die das Wesen und die Emotion Ihres Originalbildes bewahren.",
+        "icon": "RiBrainLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+        }
+      },
+      {
+        "title": "Mehrere Kunststile",
+        "description": "Wählen Sie aus Bleistiftskizzen, Kohlezeichnungen, Aquarellmalereien und Tusche-Illustrationen. Jeder Foto-zu-Skizze-Stil wird sorgfältig gestaltet, um einzigartige künstlerische Interpretationen Ihrer Bilder zu liefern.",
+        "icon": "RiPaletteLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
+        }
+      },
+      {
+        "title": "Blitzschnelle Verarbeitung",
+        "description": "Erleben Sie sofortige Bild-zu-Zeichnung-Transformation. Unsere optimierten Server verarbeiten Ihre Foto-zu-Skizze-Umwandlung in Sekunden, nicht Minuten, und liefern professionelle Ergebnisse ohne Wartezeit.",
+        "icon": "RiFlashlightLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "So wandeln Sie Bilder in Zeichnungen um",
+    "description": "Wandeln Sie jedes Foto mit unserem intuitiven Prozess in eine Skizze oder künstlerische Zeichnung um. Keine technischen Fähigkeiten erforderlich - folgen Sie einfach diesen einfachen Schritten, um beeindruckende Bild-zu-Zeichnung-Umwandlungen zu erstellen.",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "image_position": "left",
+    "text_align": "center",
+    "items": [
+      {
+        "title": "Laden Sie Ihr Foto hoch",
+        "description": "Ziehen Sie einfach Ihr Bild per Drag & Drop oder klicken Sie zum Durchsuchen. Unser Bild-zu-Zeichnung-Konverter unterstützt JPG, PNG und andere beliebte Formate. Ihr Foto wird sicher mit vollständigem Datenschutz verarbeitet.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+        }
+      },
+      {
+        "title": "Wählen Sie Ihren Kunststil",
+        "description": "Wählen Sie aus unserer Sammlung künstlerischer Stile einschließlich Bleistiftskizze, Kohlezeichnung, Aquarellmalerei und Tusche-Illustration. Jeder Bild-zu-Zeichnung-Stil bietet einzigartige ästhetische Qualitäten für Ihre Bild-zu-Zeichnung-Transformation.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
+        }
+      },
+      {
+        "title": "Laden Sie Ihr Kunstwerk herunter",
+        "description": "Beobachten Sie, wie unsere KI Ihr Bild in Sekunden in eine Zeichnung umwandelt. Vorschau Ihres konvertierten Bild-zu-Zeichnung-Ergebnisses und Download in hoher Auflösung. Perfekt zum Drucken, Teilen oder Erstellen personalisierter Geschenke.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Häufig gestellte Fragen zur Bild-zu-Zeichnung-Umwandlung",
+    "description": "Finden Sie Antworten auf häufig gestellte Fragen zu unserem Foto-zu-Skizze-Konverter und der Bild-zu-Zeichnung-Technologie.",
+    "items": [
+      {
+        "title": "Wie funktioniert die Bild-zu-Zeichnung KI-Technologie?",
+        "description": "Unsere fortschrittliche künstliche Intelligenz analysiert Komposition, Beleuchtung, Texturen und Details Ihres Fotos, um authentische Bild-zu-Zeichnung-Umwandlungen zu erstellen. Die KI versteht künstlerische Techniken wie Schattierung, Linienstärke und Texturdarstellung, um Foto-zu-Skizze-Ergebnisse zu produzieren, die traditionelle handgezeichnete Kunstwerke nachahmen. Im Gegensatz zu einfachen Filtern bewahrt unsere Technologie das emotionale Wesen und die feinen Details Ihres Originalfotos."
+      },
+      {
+        "title": "Welche Kunststile sind für die Foto-zu-Skizze-Umwandlung verfügbar?",
+        "description": "Unser Bild-zu-Zeichnung-Konverter bietet mehrere künstlerische Stile einschließlich realistischer Bleistiftskizzen, dramatischer Kohlezeichnungen, zarter Aquarellmalereien, kühner Tusche-Illustrationen und Buntstiftkunst. Jeder Foto-zu-Skizze-Stil verwendet unterschiedliche Algorithmen, um authentische künstlerische Effekte zu erzielen. Sie können mit verschiedenen Stilen experimentieren, um die perfekte Bild-zu-Zeichnung-Ästhetik für Ihr Bild zu finden."
+      },
+      {
+        "title": "Ist mein Foto bei Verwendung Ihres Bild-zu-Zeichnung-Service sicher?",
+        "description": "Absolut! Datenschutz und Sicherheit sind unsere obersten Prioritäten. Ihre Fotos werden auf sicheren Servern verarbeitet und nach Abschluss Ihrer Bild-zu-Zeichnung-Umwandlung automatisch gelöscht. Wir speichern, teilen oder verwenden Ihre Bilder niemals für andere Zwecke. Alle Foto-zu-Skizze-Verarbeitungen erfolgen über verschlüsselte Verbindungen, um sicherzustellen, dass Ihre persönlichen Fotos vollständig privat und sicher bleiben."
+      },
+      {
+        "title": "Wie lange dauert die Bild-zu-Zeichnung-Umwandlung?",
+        "description": "Die Verarbeitungszeit hängt von Ihrem Kontotyp ab: Kostenlose Benutzer können mit Abschluss der Umwandlung innerhalb von 50-60 Sekunden rechnen, während Premium-Abonnenten eine Prioritätsverarbeitung mit Ergebnissen in nur 20-30 Sekunden genießen. Bildgröße und Komplexität können die Verarbeitungszeit leicht beeinflussen, aber unsere optimierten KI-Server sorgen unabhängig von der Geschwindigkeit für konsistente Qualität."
+      },
+      {
+        "title": "In welcher Auflösung kann ich meine Foto-zu-Skizze-Ergebnisse herunterladen?",
+        "description": "Sie können Ihre Bild-zu-Zeichnung-Umwandlungen in mehreren Auflösungen herunterladen, einschließlich der vollen Auflösung Ihres Originalfotos. Unsere KI behält die Bildqualität während des gesamten Foto-zu-Skizze-Prozesses bei und stellt sicher, dass Ihre künstlerischen Zeichnungen zum Drucken, für den professionellen Einsatz oder zum Teilen in hoher Qualität auf Social Media geeignet sind. Premium-Benutzer können auf noch höher aufgelöste Ausgaben für Großformatdruck und kommerzielle Anwendungen zugreifen."
+      },
+      {
+        "title": "Kann ich den Bild-zu-Zeichnung-Konverter auf mobilen Geräten verwenden?",
+        "description": "Ja! Unser Foto-zu-Skizze-Konverter funktioniert perfekt auf Smartphones und Tablets. Das responsive Design sorgt für nahtlose Bild-zu-Zeichnung-Umwandlung auf allen Geräten. Sie können Fotos direkt von Ihrer mobilen Kamera oder Galerie hochladen, künstlerische Stile anwenden und Ergebnisse sofort herunterladen. Die mobile Erfahrung bietet alle Funktionen und die Qualität der Desktop-Version und macht künstlerische Foto-zu-Skizze-Transformation überall verfügbar."
+      },
+      {
+        "title": "Muss ich mich anmelden, um den Bild-zu-Zeichnung-Konverter zu verwenden?",
+        "description": "Während die Erstellung eines Kontos das volle Potenzial unseres Bild-zu-Zeichnung-Service freischaltet, können Sie unseren Foto-zu-Skizze-Konverter ohne Anmeldung testen! Jeden Tag erhalten Sie eine kostenlose Bild-zu-Zeichnung-Umwandlung, um unsere KI-Technologie zu erleben. Sobald Ihr täglicher Test genutzt ist, müssen Sie ein Konto erstellen, um weiterhin Fotos in Zeichnungen umzuwandeln. Registrierte Benutzer genießen unbegrenzte Bild-zu-Zeichnung-Umwandlungen, schnellere Verarbeitungszeiten und Zugang zu Premium-Kunststilen für ihre Foto-zu-Skizze-Kreationen."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Bereit, Ihre Bilder in beeindruckende Zeichnungen umzuwandeln?",
+    "description": "Schließen Sie sich Tausenden zufriedener Benutzer an, die unserem KI-gesteuerten Foto-zu-Skizze-Konverter vertrauen. Erleben Sie professionelle Bild-zu-Zeichnung-Ergebnisse in Sekunden mit vollständigem Datenschutz und authentischen künstlerischen Stilen.",
+    "buttons": [
+      {
+        "title": "Starten Sie jetzt Ihre Bild-zu-Zeichnung-Umwandlung",
+        "url": "/#drawing-generator",
+        "target": "_self",
+        "icon": "GoArrowUpRight"
+      }
+    ]
+  },
+ 
+  "transformation_examples": {
+    "name": "transformation_examples",
+    "title": "Bild-zu-Zeichnung Transformationsbeispiele",
+    "description": "Sehen Sie die unglaublichen Ergebnisse unseres KI-gesteuerten Bild-zu-Zeichnung-Konverters. Diese echten Beispiele demonstrieren die Qualität und künstlerische Authentizität unserer Bild-zu-Zeichnung-Technologie bei verschiedenen Motiven und Stilen.",
+    "items": [
+      {
+        "title": "Bleistiftskizze",
+        "description": "Klassische Bleistiftzeichnung mit realistischer Schattierung und feiner Detailbewahrung. Perfekt zum Erstellen zeitloser, eleganter Kunstwerke, die das Wesen Ihres Originalfotos mit subtilen Texturen und natürlichen Farbverläufen einfangen.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch.webp"
+        },
+        "children": [
+          {
+            "description": "Ideal für Porträts, architektonische Zeichnungen und detaillierte Illustrationen, bei denen Präzision und traditionelle künstlerische Werte am wichtigsten sind."
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Wandeln Sie Ihr Foto in eine Zeichnung um",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "Strichzeichnung",
+        "description": "Saubere, minimalistische Linienkunst mit kühnen Strichen und klaren Konturen. Schafft moderne, auffällige Kunstwerke, die Form und Struktur betonen, während unnötige Details für ein zeitgenössisches Ästhetik entfernt werden.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-line-drawing.webp"
+        },
+        "children": [
+          {
+            "description": "Perfekt für Logos, technische Illustrationen und moderne Grafikdesign-Projekte, die Klarheit und visuelle Wirkung erfordern."
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Wandeln Sie Ihr Foto in eine Zeichnung um",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "Buntstiftzeichnung",
+        "description": "Lebendige Buntstiftkunst mit reichen Texturen und geschichteten Farben. Verleiht Ihren Fotos mit der Wärme und dem Charakter von handkolorierten Illustrationen Leben und bewahrt subtile Farbvariationen.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing.webp"
+        },
+        "children": [
+          {
+            "description": "Ausgezeichnet für Kinderporträts, Tierillustrationen und Kunstwerke, bei denen Farbe eine entscheidende Rolle im emotionalen Ausdruck spielt."
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Wandeln Sie Ihr Foto in eine Zeichnung um",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "Aquarellmalerei",
+        "description": "Weiche, fließende Aquarelleffekte mit wunderschönem Farbverlauf und künstlerischen Pinselstrichen. Schafft traumhafte, ätherische Kunstwerke mit der zarten Transparenz und organischen Fluss traditioneller Aquarellmalereien.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting.webp"
+        },
+        "children": [
+          {
+            "description": "Perfekt für Landschaften, Blumenarrangements und künstlerische Projekte, die von einer romantischen, malerischen Ästhetik profitieren."
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Wandeln Sie Ihr Foto in eine Zeichnung um",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      }
+    ]
+  },
+  "perfect_uses": {
+    "name": "perfect_uses",
+    "title": "Perfekte Anwendungsmöglichkeiten für die Bild-zu-Zeichnung-Umwandlung",
+    "description": "Entdecken Sie die endlosen Möglichkeiten unserer Bild-zu-Zeichnung-Technologie. Von persönlichen Geschenken bis zu professionellen Projekten erfüllt unser Bild-zu-Zeichnung-Konverter vielfältige kreative Bedürfnisse mit außergewöhnlicher Qualität.",
+    "items": [
+      {
+        "title": "Personalisierte Geschenke",
+        "description": "Erstellen Sie einzigartige, herzliche Geschenke, indem Sie geschätzte Familienfotos in künstlerische Zeichnungen umwandeln. Perfekt für Jubiläen, Geburtstage und besondere Anlässe, die denkwürdige Bild-zu-Zeichnung-Andenken verdienen.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-gift.webp?v=20250815"
+        }
+      },
+      {
+        "title": "Social-Media-Inhalte",
+        "description": "Heben Sie sich auf Instagram, Facebook und anderen Plattformen mit künstlerischen Bild-zu-Zeichnung-Inhalten hervor. Unsere Bild-zu-Zeichnung-Stile erstellen ansprechende Beiträge, die Aufmerksamkeit erregen und das Engagement erhöhen.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-social.webp?v=20250815"
+        }
+      },
+      {
+        "title": "Marketingmaterialien",
+        "description": "Verleihen Sie Broschüren, Websites und Werbeanzeigen mit unverwechselbarer Foto-zu-Skizze-Kunst eine besondere Note. Unser Bild-zu-Zeichnung-Konverter hilft Unternehmen, unvergessliche visuelle Markenbildung zu schaffen, die sich von Wettbewerbern abhebt.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-marketing.webp?v=20250815"
+        }
+      },
+      {
+        "title": "Heimdekoration",
+        "description": "Wandeln Sie Ihre Lieblingsfotos mit unserer Bild-zu-Zeichnung-Technologie in elegante Wandkunst um. Schaffen Sie einheitliche Wohneinrichtung mit personalisierter Foto-zu-Skizze-Kunst, die Ihren Stil widerspiegelt.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-decoration.webp?v=20250815"
+        }
+      },
+      {
+        "title": "Bildungsprojekte",
+        "description": "Lehrer und Schüler verwenden unseren Foto-zu-Skizze-Konverter für Kunsterziehung, Präsentationen und kreative Aufgaben. Die Bild-zu-Zeichnung-Technologie hilft, Konzepte zu veranschaulichen und künstlerisches Lernen zu inspirieren.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-educational.webp?v=20250815"
+        }
+      },
+      {
+        "title": "Kreative Portfolios",
+        "description": "Künstler, Designer und Kreative verbessern ihre Portfolios mit vielfältigen Foto-zu-Skizze-Stilen. Unser Bild-zu-Zeichnung-Konverter demonstriert Vielseitigkeit und künstlerische Vision über verschiedene Medien hinweg.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-creative.webp?v=20250815"
+        }
+      }
+    ]
+  },
+  "comparison": {
+    "name": "comparison",
+    "title": "Unsere Bild-zu-Zeichnung KI vs. herkömmliche Filter",
+    "description": "Vergleichen Sie unsere fortschrittliche KI-gesteuerte Bild-zu-Zeichnung-Technologie mit einfachen Fotofiltern. Erleben Sie die überlegene Qualität und Authentizität, die unseren Foto-zu-Skizze-Konverter von der Konkurrenz abhebt.",
+    "items": [
+      {
+        "title": "Originalfoto",
+        "description": "Standard digitales Foto, bereit für die künstlerische Transformation mit verschiedenen Methoden.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/compare-original.webp"
+        }
+      },
+      {
+        "title": "Herkömmlicher Filter",
+        "description": "Künstliches, überarbeitetes Aussehen mit verlorenen Details und unrealistischem Foto-zu-Skizze-Aussehen.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/compare-traditional.webp"
+        }
+      },
+      {
+        "title": "Unser KI-Ergebnis",
+        "description": "Authentische, detaillierte Bild-zu-Zeichnung mit bewahrten Texturen und natürlichem künstlerischen Fluss.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/compare-ai.webp"
+        }
+      }
+    ]
+  },
+  "ai_excellence": {
+    "name": "ai_excellence",
+    "title": "Warum unsere Bild-zu-Zeichnung KI herausragt",
+    "description": "Unsere hochmoderne künstliche Intelligenz-Technologie setzt neue Maßstäbe in der Foto-zu-Skizze-Umwandlung und liefert unübertroffene Qualität und künstlerische Authentizität.",
+    "items": [
+      {
+        "title": "Fortgeschrittene neuronale Netzwerke",
+        "description": "Unsere KI verwendet ausgefeilte Deep-Learning-Algorithmen, die mit Millionen von künstlerischen Beispielen trainiert wurden, um authentische Zeichentechniken zu verstehen und zu replizieren."
+      },
+      {
+        "title": "Stil-Anpassung",
+        "description": "Die Technologie passt sich automatisch verschiedenen Bildtypen an und optimiert die Bild-zu-Zeichnung-Umwandlung für Porträts, Landschaften und andere Motive."
+      },
+      {
+        "title": "Qualitätssicherung",
+        "description": "Integrierte Qualitätsprüfungen stellen sicher, dass jede Foto-zu-Skizze-Umwandlung unsere hohen Standards für künstlerische Exzellenz und Detailtreue erfüllt."
+      },
+      {
+        "title": "Kontinuierliches Lernen",
+        "description": "Unsere KI verbessert sich ständig durch Benutzerfeedback und neue Trainingsdaten und stellt sicher, dass die Bild-zu-Zeichnung-Ergebnisse mit der Zeit besser werden."
+      }
+    ],
+    "image": {
+      "src": "/imgs/ai-excellence/technology.jpg"
+    },
+    "buttons": [
+      {
+        "title": "Erleben Sie KI-Exzellenz",
+        "url": "/pricing",
+        "target": "_self",
+        "icon": "RiRobot2Line"
+      }
+    ]
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "PicturetoDrawing",
+      "description": "Wandeln Sie Ihre Fotos mit unserem KI-gesteuerten Bild-zu-Zeichnung-Konverter in beeindruckende Kunstwerke um. Professionelle Foto-zu-Skizze-Ergebnisse in Sekunden.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "PicturetoDrawing"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2025 • PicturetoDrawing Alle Rechte vorbehalten.",
+    "nav": {
+      "items": [
+        {
+          "title": "Über",
+          "children": [
+            {
+              "title": "Bild zu Zeichnung",
+              "url": "/",
+              "target": "_self"
+            },
+            {
+              "title": "Foto in Strichzeichnung",
+              "url": "/photo-to-line-drawing",
+              "target": "_self"
+            },
+            {
+              "title": "Preise",
+              "url": "/pricing",
+              "target": "_self"
+            },
+            {
+              "title": "Meine Zeichnungen",
+              "url": "/my-drawings",
+              "target": "_self"
+            },
+            {
+              "title": "Kostenlose Credits",
+              "url": "/free-credits",
+              "target": "_self"
+            },
+            {
+              "title": "Kontaktieren Sie uns",
+              "url": "mailto:hi@picturetodrawing.com",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "E-Mail",
+          "icon": "RiMailLine",
+          "url": "mailto:hi@picturetodrawing.com",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "Datenschutzrichtlinie",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Nutzungsbedingungen",
+          "url": "/terms-of-service"
+        },
+        {
+          "title": "Rückerstattungsrichtlinie",
+          "url": "/refund-policy"
+        }
+      ]
+    }
+  }
+}
