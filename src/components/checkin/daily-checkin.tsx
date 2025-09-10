@@ -8,6 +8,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Gift, Calendar, Coins } from "lucide-react";
 import { RiCoinsLine } from "react-icons/ri";
 import { toast } from "sonner";
+import { useTranslations } from "next-intl";
 
 interface CheckinStatus {
   checked_in_today: boolean;
@@ -26,6 +27,7 @@ interface CheckinDay {
 const DAILY_REWARDS = [2, 2, 4, 2, 4, 2, 8];
 
 export default function DailyCheckin() {
+  const t = useTranslations();
   const [status, setStatus] = useState<CheckinStatus>({
     checked_in_today: false,
     consecutive_days: 0,
@@ -81,18 +83,18 @@ export default function DailyCheckin() {
           cycle_credits: calculateCycleCredits(result.data.consecutive_days),
         }));
       } else if (result.code === 208) {
-        toast.info("Already checked in today!");
+        toast.info(t("daily_checkin.already_checked_in"));
         // Update local state to reflect reality
         setStatus(prev => ({
           ...prev,
           checked_in_today: true,
         }));
       } else {
-        toast.error(result.message || "Checkin failed");
+        toast.error(result.message || t("daily_checkin.checkin_failed"));
       }
     } catch (error) {
       console.error('Checkin failed:', error);
-      toast.error("Network error. Please try again.");
+      toast.error(t("daily_checkin.network_error"));
     } finally {
       setLoading(false);
     }
@@ -147,14 +149,11 @@ export default function DailyCheckin() {
             className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
           />
           <CardTitle className="text-xl sm:text-2xl font-bold">
-            Check In For 7 Consecutive Days
+            {t("daily_checkin.title")}
           </CardTitle>
         </div>
         <div className="flex items-center justify-center gap-2">
-          <span className="text-sm sm:text-md">and Get 
-            <span className="text-purple-500 font-medium"> {totalCredits} </span>
-            Credits
-          </span>
+          <span className="text-sm sm:text-md">{t("daily_checkin.get_credits", { credits: totalCredits })}</span>
         </div>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-sm text-muted-foreground max-w-md mx-auto">
@@ -164,7 +163,10 @@ export default function DailyCheckin() {
               {statusLoading ? (
                 <div className="animate-pulse inline-block w-16 h-4 bg-muted rounded"></div>
               ) : (
-                `You've checked in for ${status.consecutive_days} day${status.consecutive_days !== 1 ? 's' : ''}`
+                t("daily_checkin.checked_in_days", { 
+                  days: status.consecutive_days, 
+                  plural: status.consecutive_days !== 1 ? 's' : '' 
+                })
               )}
             </span>
           </div>
@@ -210,7 +212,7 @@ export default function DailyCheckin() {
               <span className={`text-[10px] sm:text-xs font-medium ${
                 day.completed ? 'text-primary dark:text-primary' : day.isToday ? 'text-purple-600 dark:text-purple-400' : ''
               }`}>
-                Day {day.day}
+                {t("daily_checkin.day", { day: day.day })}
               </span>
               
             </div>
@@ -232,16 +234,16 @@ export default function DailyCheckin() {
             {loading ? (
               <div className="flex items-center gap-2">
                 <div className="animate-spin rounded-full h-3 w-3 sm:h-4 sm:w-4 border-2 border-background border-t-transparent"></div>
-                Checking In...
+                {t("daily_checkin.checking_in")}
               </div>
             ) : status.checked_in_today ? (
               <div className="flex items-center gap-2">
-                Checked In Today
+                {t("daily_checkin.checked_in_today")}
               </div>
             ) : (
               <div className="flex items-center gap-2">
                 <Gift className="h-3 w-3 sm:h-4 sm:w-4" />
-                Check In
+                {t("daily_checkin.check_in")}
               </div>
             )}
           </Button>
@@ -253,13 +255,13 @@ export default function DailyCheckin() {
             {statusLoading ? (
               <div className="animate-pulse inline-block w-32 h-4 bg-muted rounded"></div>
             ) : status.consecutive_days >= 7 ? (
-              <span>🎉 Amazing! You've completed a full week of check-ins!</span>
+              <span>{t("daily_checkin.completed_week")}</span>
             ) : status.checked_in_today ? (
-              <span>Come back tomorrow to continue your streak!</span>
+              <span>{t("daily_checkin.come_back_tomorrow")}</span>
             ) : status.consecutive_days === 0 ? (
-              <span>Start your daily check-in streak to earn credits!</span>
+              <span>{t("daily_checkin.start_streak")}</span>
             ) : (
-              <span>Continue your {status.consecutive_days}-day streak!</span>
+              <span>{t("daily_checkin.continue_streak", { days: status.consecutive_days })}</span>
             )}
           </div>
         </div>

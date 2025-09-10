@@ -9,6 +9,7 @@ import { cn } from '@/lib/utils';
 import { useSession } from 'next-auth/react';
 import { isAuthEnabled } from '@/lib/auth';
 import { toast } from 'sonner';
+import { useTranslations } from 'next-intl';
 import { Drawing } from './shared-types';
 import { formatStyle } from './shared-utils';
 import { DrawingCard } from './drawing-card';
@@ -39,6 +40,7 @@ export function RecentDrawings({
   trialResult = null
 }: RecentDrawingsProps) {
   const { data: session } = isAuthEnabled() ? useSession() : { data: null };
+  const t = useTranslations();
   const [drawings, setDrawings] = useState<Drawing[]>([]);
   const [selectedDrawing, setSelectedDrawing] = useState<Drawing | null>(null);
   const [loading, setLoading] = useState(false);
@@ -138,12 +140,12 @@ export function RecentDrawings({
       }
 
       setDrawings(prev => prev.filter(d => d.uuid !== drawing.uuid));
-      toast.success("Drawing deleted successfully");
+      toast.success(t("my_drawings.delete_success"));
       setIsDeleteDialogOpen(false);
       setDrawingToDelete(null);
     } catch (error) {
       console.error("Error deleting drawing:", error);
-      toast.error("Failed to delete drawing");
+      toast.error(t("my_drawings.delete_failed"));
     } finally {
       setIsDeleting(false);
     }
@@ -195,16 +197,16 @@ export function RecentDrawings({
           <div className="flex items-center justify-between">
             <div>
               <h3 className="text-lg font-medium">
-                {session?.user?.uuid ? 'Recent Drawings' : 'Your Drawing'}
+                {session?.user?.uuid ? t('drawing_generator.recent_drawings') : t('drawing_generator.your_drawing')}
               </h3>
               <p className="text-sm text-muted-foreground mt-1">
-                {session?.user?.uuid ? 'Your latest artwork creations' : 'Generated artwork result'}
+                {session?.user?.uuid ? t('drawing_generator.latest_artwork') : t('drawing_generator.generated_result')}
               </p>
             </div>
             {session?.user?.uuid && drawings.length > 0 && (
               <Link href="/my-drawings">
                 <Button variant="outline" size="sm">
-                  View All
+                  {t('drawing_generator.view_all')}
                   <ArrowRight className="h-4 w-4 ml-1" />
                 </Button>
               </Link>
@@ -223,7 +225,7 @@ export function RecentDrawings({
                         <span className="text-destructive text-sm">⚠</span>
                       </div>
                       <div className="text-xs text-center px-2">
-                        <div className="font-medium text-destructive">Failed</div>
+                        <div className="font-medium text-destructive">{t('drawing_generator.failed')}</div>
                         <div className="text-muted-foreground mt-1 break-words whitespace-pre-wrap">{error}</div>
                       </div>
                     </>
@@ -239,7 +241,7 @@ export function RecentDrawings({
                             strokeWidth={3}
                           />
                           <div className="text-xs text-center px-2">
-                            <div className="text-muted-foreground mt-1">About 20-30 seconds</div>
+                            <div className="text-muted-foreground mt-1">{t('drawing_generator.about_20_30_seconds')}</div>
                           </div>
                         </>
                       ) : (
@@ -252,14 +254,14 @@ export function RecentDrawings({
                             strokeWidth={3}
                           />
                           <div className="text-xs text-center px-2">
-                            <div className="text-muted-foreground mt-1">About 50-60 seconds</div>
+                            <div className="text-muted-foreground mt-1">{t('drawing_generator.about_50_60_seconds')}</div>
                             <Button
                               variant="outline"
                               size="sm"
                               className="mt-2 h-8 text-xs hidden sm:block"
                               onClick={() => window.open('/pricing', '_blank')}
                             >
-                              Upgrade for 2x Speed
+                              {t('drawing_generator.upgrade_for_speed')}
                             </Button>
                           </div>
                         </>

@@ -14,7 +14,7 @@ import { cn } from '@/lib/utils';
 import { useSession } from 'next-auth/react';
 import { useAppContext } from '@/contexts/app';
 import { isAuthEnabled } from '@/lib/auth';
-import { useLocale } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Pricing } from '@/types/blocks/pricing';
 import { RiCoinsLine } from 'react-icons/ri';
 
@@ -33,6 +33,7 @@ export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch' }: 
   const { data: session } = isAuthEnabled() ? useSession() : { data: null };
   const { setShowSignModal, showPricingModal, setShowPricingModal } = useAppContext();
   const locale = useLocale();
+  const t = useTranslations();
   
   const [selectedImage, setSelectedImage] = useState<{ file: File | string; preview: string } | null>(null);
   const [selectedStyle, setSelectedStyle] = useState(defaultStyle);
@@ -162,7 +163,7 @@ export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch' }: 
 
   const handleGenerate = async () => {
     if (!selectedImage) {
-      setError('Please select an image first');
+      setError(t('drawing_generator.select_image_first'));
       return;
     }
 
@@ -211,15 +212,15 @@ export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch' }: 
           return;
         } else if (response.status === 402) {
           // Insufficient credits - show pricing modal
-          setError(data.message || 'Insufficient credits');
+          setError(data.message || t('drawing_generator.insufficient_credits'));
           setShowPricingModal(true);
           return;
         } else if (response.status === 429) {
           // Daily trial already used
-          setError(data.message || 'Daily trial already used');
+          setError(data.message || t('drawing_generator.daily_trial_used'));
           return;
         }
-        setError(data.message || 'Generation failed');
+        setError(data.message || t('drawing_generator.generation_failed'));
         return;
       }
 
@@ -242,12 +243,12 @@ export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch' }: 
           setTrialStatus(prev => prev ? { ...prev, canUseTrial: false, isTrialUsage: false } : null);
         }
       } else {
-        setError(data.message || 'Invalid response format');
+        setError(data.message || t('drawing_generator.generation_failed'));
         return;
       }
     } catch (err) {
       // Handle network or other unexpected errors quietly
-      setError(err instanceof Error ? err.message : 'An unexpected error occurred');
+      setError(err instanceof Error ? err.message : t('drawing_generator.unexpected_error'));
     } finally {
       setIsGenerating(false);
     }
@@ -259,8 +260,8 @@ export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch' }: 
       return (
         <>
           <div className="animate-spin rounded-full h-3 w-3 sm:h-4 sm:w-4 border-b-2 border-white mr-2" />
-          <span className="hidden sm:inline">Generating...</span>
-          <span className="sm:hidden">Processing...</span>
+          <span className="hidden sm:inline">{t('drawing_generator.generating')}</span>
+          <span className="sm:hidden">{t('drawing_generator.processing')}</span>
         </>
       );
     }
@@ -269,8 +270,8 @@ export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch' }: 
     if (isCheckingTrialStatus || trialStatus === null) {
       return (
         <>
-          <span className="hidden sm:inline">Convert to Drawing</span>
-          <span className="sm:hidden">Convert</span>
+          <span className="hidden sm:inline">{t('drawing_generator.convert_to_drawing')}</span>
+          <span className="sm:hidden">{t('drawing_generator.convert')}</span>
         </>
       );
     }
@@ -278,18 +279,18 @@ export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch' }: 
     if (trialStatus?.canUseTrial) {
       return (
         <>
-          <span className="hidden sm:inline">Convert to Drawing</span>
-          <span className="sm:hidden">Convert</span>
+          <span className="hidden sm:inline">{t('drawing_generator.convert_to_drawing')}</span>
+          <span className="sm:hidden">{t('drawing_generator.convert')}</span>
           <RiCoinsLine className="inline-block ml-2" />
-          <span className="text-sm">FREE</span>
+          <span className="text-sm">{t('drawing_generator.free')}</span>
         </>
       );
     }
 
     return (
       <>
-        <span className="hidden sm:inline">Convert to Drawing</span>
-        <span className="sm:hidden">Convert</span>
+        <span className="hidden sm:inline">{t('drawing_generator.convert_to_drawing')}</span>
+        <span className="sm:hidden">{t('drawing_generator.convert')}</span>
         <RiCoinsLine className="inline-block ml-2" />
         <span className="text-sm">2</span>
       </>
@@ -342,7 +343,7 @@ export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch' }: 
               {/* Trial hint text */}
               {!session?.user?.uuid && trialStatus?.canUseTrial && (
                 <p className="text-xs text-center text-muted-foreground">
-                  Try free once daily • No Sign-up required
+                  {t('drawing_generator.try_free_hint')}
                 </p>
               )}
             </div>

@@ -9,6 +9,7 @@ import { Drawing } from "@/components/drawing-generator/shared-types";
 import { DrawingCard } from "@/components/drawing-generator/drawing-card";
 import { DrawingDetailModal } from "@/components/drawing-generator/drawing-detail-modal";
 import { DeleteConfirmationDialog } from "@/components/drawing-generator/delete-confirmation-dialog";
+import { useTranslations } from "next-intl";
 
 interface MyDrawingsClientProps {
   drawings: Drawing[];
@@ -17,6 +18,7 @@ interface MyDrawingsClientProps {
 const ITEMS_PER_PAGE = 12;
 
 export default function MyDrawingsClient({ drawings }: MyDrawingsClientProps) {
+  const t = useTranslations();
   const [selectedDrawing, setSelectedDrawing] = useState<Drawing | null>(null);
   const [drawingsList, setDrawingsList] = useState(drawings);
   const [isDeleteDialogOpen, setIsDeleteDialogOpen] = useState(false);
@@ -41,7 +43,7 @@ export default function MyDrawingsClient({ drawings }: MyDrawingsClientProps) {
       }
 
       setDrawingsList(prev => prev.filter(d => d.uuid !== drawing.uuid));
-      toast.success("Drawing deleted successfully");
+      toast.success(t("my_drawings.delete_success"));
       setIsDeleteDialogOpen(false);
       setDrawingToDelete(null);
       
@@ -51,7 +53,7 @@ export default function MyDrawingsClient({ drawings }: MyDrawingsClientProps) {
       }
     } catch (error) {
       console.error("Error deleting drawing:", error);
-      toast.error("Failed to delete drawing");
+      toast.error(t("my_drawings.delete_failed"));
     } finally {
       setIsDeleting(false);
     }
@@ -69,14 +71,14 @@ export default function MyDrawingsClient({ drawings }: MyDrawingsClientProps) {
             <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gray-100 flex items-center justify-center">
               <Eye className="w-12 h-12 text-gray-400" />
             </div>
-            <h1 className="text-2xl font-bold text-gray-900 mb-2">No Drawings Yet</h1>
+            <h1 className="text-2xl font-bold text-gray-900 mb-2">{t("my_drawings.no_drawings_title")}</h1>
             <p className="text-gray-600 mb-8">
-              You haven't created any drawings yet. Start by converting your first image!
+              {t("my_drawings.no_drawings_description")}
             </p>
           </div>
           <Link href="/#drawing-generator">
             <Button size="lg" className="px-8">
-              Convert to Drawing
+              {t("my_drawings.convert_to_drawing")}
             </Button>
           </Link>
         </div>
@@ -87,9 +89,9 @@ export default function MyDrawingsClient({ drawings }: MyDrawingsClientProps) {
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">My Drawings</h1>
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">{t("my_drawings.title")}</h1>
         <p className="text-gray-600">
-           {drawingsList.length} total drawings
+          {t("my_drawings.description", { count: drawingsList.length })}
         </p>
       </div>
 
@@ -120,7 +122,7 @@ export default function MyDrawingsClient({ drawings }: MyDrawingsClientProps) {
             disabled={currentPage === 1}
           >
             <ChevronLeft className="h-4 w-4" />
-            Previous
+            {t("my_drawings.previous")}
           </Button>
           
           <div className="flex items-center gap-1">
@@ -143,7 +145,7 @@ export default function MyDrawingsClient({ drawings }: MyDrawingsClientProps) {
             onClick={() => handlePageChange(currentPage + 1)}
             disabled={currentPage === totalPages}
           >
-            Next
+            {t("my_drawings.next")}
             <ChevronRight className="h-4 w-4" />
           </Button>
         </div>

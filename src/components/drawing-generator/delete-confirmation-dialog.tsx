@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Drawing } from './shared-types';
+import { useTranslations } from 'next-intl';
 
 interface DeleteConfirmationDialogProps {
   drawing: Drawing | null;
@@ -19,17 +20,18 @@ export function DeleteConfirmationDialog({
   onConfirm,
   isDeleting = false
 }: DeleteConfirmationDialogProps) {
+  const t = useTranslations();
   if (!drawing) return null;
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent>
         <DialogHeader>
-          <DialogTitle>Delete Drawing</DialogTitle>
+          <DialogTitle>{t("delete_dialog.title")}</DialogTitle>
         </DialogHeader>
         <div className="space-y-4">
           <p className="text-gray-600">
-            Are you sure you want to delete this drawing? This action cannot be undone.
+            {t("delete_dialog.message")}
           </p>
           <div className="flex gap-2 justify-end">
             <Button 
@@ -37,14 +39,14 @@ export function DeleteConfirmationDialog({
               onClick={onClose}
               disabled={isDeleting}
             >
-              Cancel
+              {t("delete_dialog.cancel")}
             </Button>
             <Button 
               variant="destructive" 
               onClick={() => onConfirm(drawing)}
               disabled={isDeleting}
             >
-              {isDeleting ? "Deleting..." : "Delete"}
+              {isDeleting ? t("delete_dialog.deleting") : t("delete_dialog.delete")}
             </Button>
           </div>
         </div>

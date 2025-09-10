@@ -6,6 +6,7 @@ import { Download, Trash2 } from 'lucide-react';
 import { Drawing } from './shared-types';
 import { formatStyle, handleDownload } from './shared-utils';
 import { cn } from '@/lib/utils';
+import { useTranslations } from 'next-intl';
 
 interface DrawingCardProps {
   drawing: Drawing;
@@ -26,6 +27,7 @@ export function DrawingCard({
   showToast = false,
   className 
 }: DrawingCardProps) {
+  const t = useTranslations();
   return (
     <Card 
       className={cn(
@@ -37,7 +39,7 @@ export function DrawingCard({
       <div className="aspect-square relative">
         <Image
           src={drawing.generated_image_url}
-          alt={`Drawing in ${drawing.style} style`}
+          alt={t('drawing_generator.drawing_alt', { style: drawing.style })}
           fill
           className="object-cover transition-transform group-hover:scale-105"
         />
@@ -62,7 +64,7 @@ export function DrawingCard({
                 handleDownload(drawing, showToast);
               }}
               className="opacity-0 group-hover:opacity-100 transition-opacity bg-primary/60 hover:bg-primary text-white p-1.5 rounded-full"
-              title="Download"
+              title={t('drawing_generator.download_tooltip')}
             >
               <Download className="w-3 h-3" />
             </button>
@@ -76,7 +78,7 @@ export function DrawingCard({
                 onDelete();
               }}
               className="opacity-0 group-hover:opacity-100 transition-opacity bg-red-500 hover:bg-red-600 text-white p-1.5 rounded-full"
-              title="Delete"
+              title={t('drawing_generator.delete_tooltip')}
             >
               <Trash2 className="w-3 h-3" />
             </button>

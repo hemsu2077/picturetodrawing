@@ -4,6 +4,7 @@ import React, { useState, useRef } from 'react';
 import { Upload, X, Image as ImageIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
+import { useTranslations } from 'next-intl';
 
 interface ImageUploadProps {
   onImageSelect: (file: File | string, preview: string) => void;
@@ -12,6 +13,7 @@ interface ImageUploadProps {
 }
 
 export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUploadProps) {
+  const t = useTranslations();
   const [isDragging, setIsDragging] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
@@ -27,7 +29,7 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
 
   const handleFileSelect = (file: File) => {
     if (!acceptedTypes.includes(file.type)) {
-      alert('Please select a valid image file (JPG, PNG, WEBP, HEIC)');
+      alert(t('daily_checkin.invalid_file'));
       return;
     }
 
@@ -95,7 +97,7 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
         <div className="relative h-108 lg:h-128 rounded-lg border-2 border-border overflow-hidden bg-muted flex items-center justify-center">
           <img
             src={selectedImage.preview}
-            alt="Selected image"
+            alt={t('drawing_generator.selected_image_alt')}
             className="max-w-full max-h-full object-contain"
           />
           <Button
@@ -123,22 +125,22 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
               <ImageIcon className="h-8 w-8 text-muted-foreground" />
             </div>
             <div className="space-y-2">
-              <h3 className="text-lg font-medium">Upload an Picture</h3>
+              <h3 className="text-lg font-medium">{t('daily_checkin.upload_picture')}</h3>
               <p className="text-sm text-muted-foreground">
-                Drag and drop your picture here, or click to browse
+                {t('daily_checkin.drag_drop_hint')}
               </p>
               <p className="text-xs text-muted-foreground">
-                Supports JPG, PNG, WEBP, HEIC formats
+                {t('daily_checkin.supported_formats')}
               </p>
             </div>
             <Button variant="outline" className="mt-2" onClick={openFileDialog}>
               <Upload className="h-4 w-4 mr-2" />
-              Choose File
+              {t('daily_checkin.choose_file')}
             </Button>
           </div>
           
           <div className="max-w-sm py-4">
-            <p className="text-sm font-medium text-muted-foreground mb-3">Or try with sample pictures:</p>
+            <p className="text-sm font-medium text-muted-foreground mb-3">{t('daily_checkin.try_samples')}</p>
             <div className="grid grid-cols-4 gap-2 px-4 lg:px-16">
               {sampleImages.map((sampleUrl, index) => (
                 <div
@@ -151,7 +153,7 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
                 >
                   <img
                     src={sampleUrl}
-                    alt={`Sample ${index + 1}`}
+                    alt={t('drawing_generator.sample_alt', { index: index + 1 })}
                     className="w-full h-full hover:scale-105 transition-transform object-cover"
                   />
                 </div>

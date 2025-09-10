@@ -3,6 +3,7 @@
 import React from 'react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { cn } from '@/lib/utils';
+import { useTranslations } from 'next-intl';
 
 interface ModelOption {
   value: string;
@@ -16,32 +17,34 @@ interface ModelSelectorProps {
   className?: string;
 }
 
-const AI_MODELS: ModelOption[] = [
+const getAiModels = (t: any): ModelOption[] => [
   {
     value: 'default',
-    label: 'Classic',
-    description: 'Natural drawing'
+    label: t('drawing_generator.models.classic'),
+    description: t('drawing_generator.models.classic_description')
   },
   {
     value: 'nano-banana',
-    label: 'Nano Banana 🍌',
-    description: 'Creative style'
+    label: t('drawing_generator.models.nano_banana'),
+    description: t('drawing_generator.models.nano_banana_description')
   }
 ];
 
 export function ModelSelector({ selectedModel, onModelChange, className }: ModelSelectorProps) {
+  const t = useTranslations();
+  const AI_MODELS = getAiModels(t);
 
   return (
     <div className={cn("space-y-4", className)}>
       <div>
         <p className="text-sm text-muted-foreground">
-          AI model
+          {t('drawing_generator.ai_model')}
         </p>
       </div>
       
       <Select value={selectedModel} onValueChange={onModelChange}>
         <SelectTrigger className="w-full">
-          <SelectValue placeholder="Select AI model" />
+          <SelectValue placeholder={t('drawing_generator.select_ai_model')} />
         </SelectTrigger>
         <SelectContent>
           {AI_MODELS.map((model) => (

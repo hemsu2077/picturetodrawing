@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { cn } from '@/lib/utils';
+import { useTranslations } from 'next-intl';
 
 interface StyleOption {
   id: string;
@@ -15,53 +16,56 @@ interface StyleSelectorProps {
   className?: string;
 }
 
-const DRAWING_STYLES: StyleOption[] = [
+const getDrawingStyles = (t: any): StyleOption[] => [
   {
     id: 'pencil-sketch',
-    name: 'Pencil Sketch',
+    name: t('drawing_generator.styles.pencil_sketch'),
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/pencil-sketch.webp'
   },
   {
     id: 'line-drawing',
-    name: 'Line Drawing', 
+    name: t('drawing_generator.styles.line_drawing'), 
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/line-drawing.webp'
   },
   {
     id: 'charcoal-drawing',
-    name: 'Charcoal Drawing',
+    name: t('drawing_generator.styles.charcoal_drawing'),
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/charcoal-drawing.webp'
   },
   {
     id: 'color-pencil-drawing',
-    name: 'Color Pencil Drawing',
+    name: t('drawing_generator.styles.color_pencil_drawing'),
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/color-pencil-drawing.webp'
   },
   {
     id: 'watercolor-painting',
-    name: 'Watercolor Painting',
+    name: t('drawing_generator.styles.watercolor_painting'),
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/watercolor-painting.webp'
   },
   {
     id: 'inkart',
-    name: 'InkArt',
+    name: t('drawing_generator.styles.inkart'),
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/inkart.webp'
   },
   {
     id: 'superhero-comic',
-    name: 'Superhero Comic',
+    name: t('drawing_generator.styles.superhero_comic'),
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/superhero-comic.webp'
   },
   {
     id: 'manga',
-    name: 'Manga',
+    name: t('drawing_generator.styles.manga'),
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/manga.webp'
   }
 ];
 
 export function StyleSelector({ selectedStyle, onStyleChange, className }: StyleSelectorProps) {
+  const t = useTranslations();
+  const DRAWING_STYLES = getDrawingStyles(t);
+  
   return (
     <div className={cn("space-y-4", className)}>
-      <h3 className="text-lg font-medium">Drawing Style</h3>
+      <h3 className="text-lg font-medium">{t('drawing_generator.drawing_style')}</h3>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2">
           {DRAWING_STYLES.map((style) => (
             <div

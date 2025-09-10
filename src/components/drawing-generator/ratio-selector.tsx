@@ -3,6 +3,7 @@
 import React from 'react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { cn } from '@/lib/utils';
+import { useTranslations } from 'next-intl';
 
 interface RatioOption {
   value: string;
@@ -17,52 +18,54 @@ interface RatioSelectorProps {
   className?: string;
 }
 
-const ASPECT_RATIOS: RatioOption[] = [
+const getAspectRatios = (t: any): RatioOption[] => [
   {
     value: 'auto',
-    label: 'Auto',
-    description: 'Match input image'
+    label: t('drawing_generator.ratios.auto'),
+    description: t('drawing_generator.ratios.auto_description')
   },
   {
     value: '1:1',
     label: '1:1',
-    description: 'Square'
+    description: t('drawing_generator.ratios.square')
   },
   {
     value: '4:3',
     label: '4:3',
-    description: 'Landscape'
+    description: t('drawing_generator.ratios.landscape')
   },
   {
     value: '3:4',
     label: '3:4',
-    description: 'Portrait'
+    description: t('drawing_generator.ratios.portrait')
   },
   {
     value: '16:9',
     label: '16:9',
-    description: 'Wide'
+    description: t('drawing_generator.ratios.wide')
   },
   {
     value: '9:16',
     label: '9:16',
-    description: 'Tall'
+    description: t('drawing_generator.ratios.tall')
   }
 ];
 
 export function RatioSelector({ selectedRatio, onRatioChange, disabled = false, className }: RatioSelectorProps) {
+  const t = useTranslations();
+  const ASPECT_RATIOS = getAspectRatios(t);
 
   return (
     <div className={cn("space-y-4", className)}>
       <div>
         <p className="text-sm text-muted-foreground mt-1">
-        Aspect Ratio
+          {t('drawing_generator.aspect_ratio')}
         </p>
       </div>
       
       <Select value={disabled ? 'auto' : selectedRatio} onValueChange={disabled ? undefined : onRatioChange} disabled={disabled}>
         <SelectTrigger className="w-full">
-          <SelectValue placeholder="Select aspect ratio" />
+          <SelectValue placeholder={t('drawing_generator.select_aspect_ratio')} />
         </SelectTrigger>
         <SelectContent>
           {ASPECT_RATIOS.map((ratio) => (
