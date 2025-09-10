@@ -145,7 +145,7 @@ export default function DailyCheckin() {
         <div className="flex flex-col items-center justify-center gap-3">
           <img 
             src="https://files.picturetodrawing.com/ui/free-credits.webp" 
-            alt="Free Credits" 
+            alt="Picture to Drawing Free Credits" 
             className="w-12 h-12 sm:w-16 sm:h-16 object-contain"
           />
           <CardTitle className="text-xl sm:text-2xl font-bold">

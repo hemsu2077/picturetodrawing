@@ -22,7 +22,7 @@
               "icon": "RiBrushLine"
             },
             {
-              "title": "照片转线条画",
+              "title": "图片转线稿",
               "url": "/photo-to-line-drawing",
               "target": "_self",
               "icon": "RiColorFilterAiLine"
@@ -452,8 +452,13 @@
           "title": "关于",
           "children": [
             {
-              "title": "首页",
+              "title": "图片转手绘",
               "url": "/",
+              "target": "_self"
+            },
+            {
+              "title": "图片转线稿",
+              "url": "/photo-to-line-drawing",
               "target": "_self"
             },
             {

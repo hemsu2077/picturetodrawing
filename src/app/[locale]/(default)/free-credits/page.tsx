@@ -3,17 +3,19 @@ import { auth } from "@/auth";
 import { isAuthEnabled } from "@/lib/auth";
 import { redirect } from "next/navigation";
 import { Metadata } from "next";
+import { getFreeCreditsPage } from "@/services/page";
+import { useLocale } from "next-intl";
 
-export const metadata: Metadata = {
-    title: "Free Credits - Picture to Drawing",
-    description: "Earn free credits by checking in daily! Complete challenges and get rewarded.",
-    robots: {
-      index: false,
-      follow: false,
-    },
+export async function generateMetadata({ params: { locale } }: { params: { locale: string } }): Promise<Metadata> {
+  const page = await getFreeCreditsPage(locale);
+  return {
+    title: page.meta.title,
+    description: page.meta.description,
+    robots: page.meta.robots,
   };
+}
 
-export default async function FreeCredits() {
+export default async function FreeCredits({ params: { locale } }: { params: { locale: string } }) {
   // Check authentication if enabled
   if (isAuthEnabled()) {
     const session = await auth();
@@ -22,13 +24,15 @@ export default async function FreeCredits() {
     }
   }
 
+  const page = await getFreeCreditsPage(locale);
+
   return (
     <div className="container py-8">
       <div className="max-w-4xl mx-auto space-y-8">
         <div className="text-center space-y-4">
-          <h1 className="text-3xl font-bold">Free Credits</h1>
+          <h1 className="text-3xl font-bold">{page.hero.title}</h1>
           <p className="text-muted-foreground text-lg">
-            Earn free credits by checking in daily! Complete challenges and get rewarded.
+            {page.hero.description}
           </p>
         </div>
         

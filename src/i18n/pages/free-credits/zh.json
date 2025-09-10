@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "免费积分 - 图片转手绘",
+    "description": "每日签到赚取免费积分！完成挑战获得奖励。",
+    "robots": {
+      "index": false,
+      "follow": false
+    }
+  },
+  "hero": {
+    "title": "免费积分",
+    "description": "每日签到赚取免费积分！完成挑战获得奖励。"
+  }
+}
