@@ -1,35 +1,35 @@
 {
   "meta": {
-    "title": "Photo to Line Drawing Converter - Free to Try",
-    "description": "Convert photos to line drawings effortlessly. Transform any photo into clean line art for embroidery, tattoos, crafts, and digital art."
+    "title": "사진을 선화 그림으로 변환 - 무료 체험 가능",
+    "description": "사진을 선화 그림으로 쉽게 변환하세요. 자수, 타투, 수공예, 디지털 아트를 위한 깨끗한 선화 예술로 어떤 사진이든 변환하세요."
   },
   "hero": {
-    "title": "Transform Photo to Line Drawing Instantly",
+    "title": "사진을 선화 그림으로 즉시 변환하세요",
     "announcement": {
       "label": "NEW",
       "title": "🍌 Nano Banana",
       "url": "/photo-to-line-drawing#drawing-generator"
     },
-    "highlight_text": "Photo to Line Drawing",
-    "description": "Convert any photo into clean, professional line art without drawing skills.",
-    "tip": "Free to Try, 100% Secure, Instant Results",
+    "highlight_text": "사진을 선화 그림으로",
+    "description": "그림 실력 없이도 어떤 사진이든 깨끗하고 전문적인 선화 예술로 변환하세요.",
+    "tip": "무료 체험, 100% 안전, 즉시 결과",
     "tip_items": [
       {
-        "text": "Free to Try",
+        "text": "무료 체험",
         "icon": "Gift"
       },
       {
-        "text": "100% Secure",
+        "text": "100% 안전",
         "icon": "Shield"
       },
       {
-        "text": "No Sign-up Required",
+        "text": "가입 불필요",
         "icon": "Zap"
       }
     ],
     "buttons": [
       {
-        "title": "Try for Free",
+        "title": "무료 체험하기",
         "icon": "RiFlashlightFill",
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self",
@@ -41,70 +41,70 @@
   },
   "showcase": {
     "name": "showcase",
-    "title": "Stunning Photo to Line Drawing Results Across All Categories",
+    "title": "모든 카테고리에서 놀라운 사진을 선화 그림으로 변환 결과",
     "items": [
       {
-        "title": "Portrait Photo to Line Drawing Transformation",
-        "description": "Transform portraits into elegant line art with artistic precision.",
-        "label": "Portrait",
+        "title": "인물 사진을 선화 그림으로 변환",
+        "description": "예술적 정밀도로 인물사진을 우아한 선화 예술로 변환하세요.",
+        "label": "인물",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-portrait.webp",
-          "alt": "Portrait Photo to Line Drawing"
+          "alt": "인물 사진을 선화 그림으로"
         },
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self"
       },
       {
-        "title": "Architectural Photo to Line Drawing Style",
-        "description": "Transform architectural photos into precise line drawings for technical use.",
-        "label": "Architecture",
+        "title": "건축 사진을 선화 그림 스타일로",
+        "description": "기술적 용도를 위해 건축 사진을 정밀한 선화 그림으로 변환하세요.",
+        "label": "건축",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
-          "alt": "Architecture Photo to Line Drawing"
+          "alt": "건축 사진을 선화 그림으로"
         },
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self"
       },
       {
-        "title": "Product Photo to Line Drawing for Design",
-        "description": "Convert product photos into clean line art for design documentation.",
-        "label": "Product",
+        "title": "디자인을 위한 제품 사진을 선화 그림으로",
+        "description": "디자인 문서화를 위해 제품 사진을 깨끗한 선화 예술로 변환하세요.",
+        "label": "제품",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
-          "alt": "Product Photo to Line Drawing"
+          "alt": "제품 사진을 선화 그림으로"
         },
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self"
       },
       {
-        "title": "Vehicle Photo to Line Drawing Illustration",
-        "description": "Convert vehicle photos into technical line art for documentation projects.",
-        "label": "Vehicle",
+        "title": "차량 사진을 선화 그림 일러스트로",
+        "description": "문서화 프로젝트를 위해 차량 사진을 기술적 선화 예술로 변환하세요.",
+        "label": "차량",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
-          "alt": "Vehicle Photo to Line Drawing"
+          "alt": "차량 사진을 선화 그림으로"
         },
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self"
       },
       {
-        "title": "Nature Photo to Line Drawing Art",
-        "description": "Transform nature photos into artistic line drawings highlighting natural beauty.",
-        "label": "Nature",
+        "title": "자연 사진을 선화 그림 예술로",
+        "description": "자연의 아름다움을 강조하는 예술적 선화 그림으로 자연 사진을 변환하세요.",
+        "label": "자연",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
-          "alt": "Nature Photo to Line Drawing"
+          "alt": "자연 사진을 선화 그림으로"
         },
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self"
       },
       {
-        "title": "Pet Photo to Line Drawing Conversion",
-        "description": "Turn your beloved pet photos into line drawings that capture their unique personality.",
-        "label": "Pet",
+        "title": "반려동물 사진을 선화 그림으로 변환",
+        "description": "사랑하는 반려동물의 독특한 개성을 담은 선화 그림으로 변환하세요.",
+        "label": "반려동물",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-pet.webp",
-          "alt": "Pet Photo to Line Drawing"
+          "alt": "반려동물 사진을 선화 그림으로"
         },
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self"
@@ -113,45 +113,45 @@
   },
   "feature": {
     "name": "feature",
-    "title": "Photo to Line Drawing Features",
-    "description": "Whether you're a hobbyist, professional designer, or crafter, our photo to line drawing tool provides everything you need.",
+    "title": "사진을 선화 그림으로 변환 기능",
+    "description": "취미로 하시는 분, 전문 디자이너, 공예가 등 누구든지 저희 사진을 선화 그림으로 변환 도구가 필요한 모든 것을 제공합니다.",
     "items": [
       {
-        "title": "No Drawing Skills Required",
-        "description": "Transform any photo into professional line art without any artistic background. Perfect for beginners and experts alike.",
+        "title": "그림 실력 불필요",
+        "description": "예술적 배경 없이도 어떤 사진이든 전문적인 선화 예술로 변환하세요. 초보자와 전문가 모두에게 완벽합니다.",
         "icon": "RiMagicLine"
       },
       {
-        "title": "Lightning Fast Processing",
-        "description": "Get your line drawing results in seconds, not hours. Our optimized AI ensures quick turnaround times for all your projects.",
+        "title": "번개처럼 빠른 처리",
+        "description": "몇 시간이 아닌 몇 초 만에 선화 그림 결과를 얻으세요. 저희의 최적화된 AI가 모든 프로젝트에 빠른 처리 시간을 보장합니다.",
         "icon": "RiFlashlightLine"
       },
       {
-        "title": "Customizable Settings",
-        "description": "Adjust line thickness, detail level, and contrast to get the perfect line art style for your specific project needs.",
+        "title": "사용자 지정 설정",
+        "description": "선의 두께, 디테일 수준, 대비를 조정하여 특정 프로젝트 요구에 맞는 완벽한 선화 예술 스타일을 얻으세요.",
         "icon": "RiSettings3Line"
       },
       {
-        "title": "Multiple Output Formats",
-        "description": "Download your line drawings as PNG, SVG, or PDF. Compatible with embroidery software, laser cutters, and design programs.",
+        "title": "다양한 출력 형식",
+        "description": "선화 그림을 PNG, SVG 또는 PDF로 다운로드하세요. 자수 소프트웨어, 레이저 커터, 디자인 프로그램과 호환됩니다.",
         "icon": "RiDownloadLine"
       },
       {
-        "title": "Privacy Protected",
-        "description": "Your photos are processed securely and never stored on our servers. Complete privacy and data protection guaranteed.",
+        "title": "개인정보 보호",
+        "description": "당신의 사진은 안전하게 처리되며 저희 서버에 저장되지 않습니다. 완전한 개인정보 보호와 데이터 보안을 보장합니다.",
         "icon": "RiShieldCheckLine"
       },
       {
-        "title": "Works Everywhere",
-        "description": "Use our photo to line drawing converter on any device - desktop, tablet, or mobile. No software installation required.",
+        "title": "모든 기기에서 작동",
+        "description": "데스크톱, 태블릿, 모바일 등 어떤 기기에서도 사진을 선화 그림으로 변환기를 사용하세요. 소프트웨어 설치가 필요 없습니다.",
         "icon": "RiSmartphoneLine"
       }
     ]
   },
   "usage": {
     "name": "usage",
-    "title": "How Photo to Line Drawing Works",
-    "description": "Our advanced AI technology converts your photos into clean line art in just 3 simple steps.",
+    "title": "사진을 선화 그림으로 변환하는 방법",
+    "description": "저희의 고급 AI 기술이 단 3단계의 간단한 과정으로 사진을 깨끗한 선화 예술로 변환합니다.",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -159,22 +159,22 @@
     "text_align": "center",
     "items": [
       {
-        "title": "Upload Your Photo",
-        "description": "Simply drag and drop your image or select from your device. We support all common photo formats including JPG, PNG, WebP and HEIC.",
+        "title": "사진 업로드",
+        "description": "단순히 이미지를 드래그 앤 드롭하거나 기기에서 선택하세요. JPG, PNG, WebP, HEIC를 포함한 모든 일반적인 사진 형식을 지원합니다.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
       },
       {
-        "title": "Choose Line Drawing Style",
-        "description": "Our intelligent algorithm analyzes your photo to identify key contours, edges, and important details, creating a clean line drawing conversion.",
+        "title": "선화 그림 스타일 선택",
+        "description": "저희의 지능형 알고리즘이 사진을 분석하여 핵심 윤곽, 가장자리, 중요한 디테일을 식별하여 깨끗한 선화 그림 변환을 만들어냅니다.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
         }
       },
       {
-        "title": "Download Your Artwork",
-        "description": "Get your high-quality line art in multiple formats. Perfect for printing, digital projects, or importing into design software.",
+        "title": "예술 작품 다운로드",
+        "description": "다양한 형식의 고품질 선화 예술을 얻으세요. 인쇄, 디지털 프로젝트 또는 디자인 소프트웨어로 가져오기에 완벽합니다.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
@@ -183,43 +183,43 @@
   },
   "faq": {
     "name": "faq",
-    "label": "FAQ",
-    "title": "Frequently Asked Questions About Photo to Line Drawing Conversion",
-    "description": "Everything you need to know about converting photos to line drawings",
+    "label": "자주 묻는 질문",
+    "title": "사진을 선화 그림으로 변환에 대해 자주 묻는 질문",
+    "description": "사진을 선화 그림으로 변환하는 것에 대해 알아야 할 모든 것",
     "items": [
       {
-        "title": "What types of photos work best for line drawing conversion?",
-        "description": "Photos with clear subjects and good contrast work best. Portraits, pets, buildings, and objects with defined edges produce excellent line art results. Our AI can handle various lighting conditions and automatically adjusts for optimal line drawing output."
+        "title": "어떤 유형의 사진이 선화 그림 변환에 가장 적합한가요?",
+        "description": "명확한 주제와 좋은 대비를 가진 사진이 가장 좋습니다. 인물, 반려동물, 건물, 그리고 뚜렷한 가장자리를 가진 객체들이 뛰어난 선화 예술 결과를 만들어냅니다. 저희 AI는 다양한 조명 조건을 처리할 수 있으며 최적의 선화 그림 출력을 위해 자동으로 조정합니다."
       },
       {
-        "title": "Can I use the line drawings for commercial projects?",
-        "description": "Yes! All line drawings created with our photo to line drawing tool can be used for both personal and commercial purposes. You retain full rights to your converted images and can use them for products, marketing, or any business application."
+        "title": "선화 그림을 상업적 프로젝트에 사용할 수 있나요?",
+        "description": "네! 저희 사진을 선화 그림으로 변환 도구로 제작된 모든 선화 그림은 개인 및 상업적 목적 모두에 사용할 수 있습니다. 변환된 이미지에 대한 모든 권리를 보유하며 제품, 마케팅 또는 모든 비즈니스 애플리케이션에 사용할 수 있습니다."
       },
       {
-        "title": "What file formats are supported for upload and download?",
-        "description": "Upload: JPG, PNG, HEIC, WebP, and most common image formats. Download: High-quality PNG for raster graphics, SVG for scalable vector line art, and PDF for printing. Choose the format that best suits your intended use case."
+        "title": "업로드 및 다운로드에 지원되는 파일 형식은 무엇인가요?",
+        "description": "업로드: JPG, PNG, HEIC, WebP 및 대부분의 일반적인 이미지 형식. 다운로드: 래스터 그래픽용 고품질 PNG, 확장 가능한 벡터 선화 예술용 SVG, 인쇄용 PDF. 의도한 사용 사례에 가장 적합한 형식을 선택하세요."
       },
       {
-        "title": "How long does photo to line drawing conversion take?",
-        "description": "Processing time depends on your account type: Free users can expect conversions to complete within 50-60 seconds, while premium subscribers enjoy priority processing with results in just 20-30 seconds. Image size and complexity may slightly affect processing time, but our optimized AI servers ensure consistent quality regardless of speed."
+        "title": "사진을 선화 그림으로 변환하는 데 얼마나 걸리나요?",
+        "description": "처리 시간은 계정 유형에 따라 달라집니다: 무료 사용자는 50-60초 이내에 변환이 완료되기를 기대할 수 있으며, 프리미엄 구독자는 단 20-30초 만에 결과를 얻는 우선 처리를 즈깁니다. 이미지 크기와 복잡성이 처리 시간에 약간 영향을 줄 수 있지만, 저희의 최적화된 AI 서버는 속도에 관계없이 일관된 품질을 보장합니다."
       },
       {
-        "title": "Is my photo data secure and private?",
-        "description": "Absolutely. Your photos are processed securely and automatically deleted from our servers after conversion. We never store, share, or use your images for any purpose other than creating your line drawing. Your privacy is our top priority."
+        "title": "내 사진 데이터가 안전하고 비공개인가요?",
+        "description": "물론입니다. 당신의 사진은 안전하게 처리되며 변환 후 저희 서버에서 자동으로 삭제됩니다. 저희는 선화 그림 제작 외에는 어떤 목적으로도 당신의 이미지를 저장, 공유 또는 사용하지 않습니다. 당신의 개인정보 보호가 저희의 최우선 과제입니다."
       },
       {
-        "title": "Can I adjust the line thickness and detail level?",
-        "description": "No, you cannot adjust the line thickness and detail level."
+        "title": "선의 두께와 디테일 수준을 조정할 수 있나요?",
+        "description": "아니요, 선의 두께와 디테일 수준을 조정할 수 없습니다."
       }
     ]
   },
   "cta": {
     "name": "cta",
-    "title": "Ready to Transform Your Photos?",
-    "description": "Join thousands of creators who use our photo to line drawing tool to bring their ideas to life. Start converting your images today.",
+    "title": "사진을 변환할 준비가 되셨나요?",
+    "description": "아이디어를 현실로 만들기 위해 저희 사진을 선화 그림으로 변환 도구를 사용하는 수천 명의 창작자들과 함께하세요. 오늘부터 이미지 변환을 시작해보세요.",
     "buttons": [
       {
-        "title": "Convert Your First Photo Free",
+        "title": "첫 번째 사진을 무료로 변환하기",
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self",
         "icon": "GoArrowUpRight"
@@ -230,97 +230,97 @@
   
   "use_cases": {
     "name": "use_cases",
-    "title": "Photo to Line Drawing Applications Across Industries",
-    "description": "From personal crafts to professional projects, discover how photo to line drawing transforms creative workflows across industries.",
+    "title": "다양한 산업 분야의 사진을 선화 그림으로 변환 활용법",
+    "description": "개인 수공예부터 전문 프로젝트까지, 사진을 선화 그림으로 변환이 다양한 산업 분야의 창작 워크플로를 어떻게 변화시키는지 발견해보세요.",
     "items": [
       {
-        "title": "Crafts & Hobbies",
-        "description": "Transform your photos into practical patterns and guides for creative projects.",
+        "title": "수공예 & 취미",
+        "description": "사진을 창의적 프로젝트를 위한 실용적인 패턴과 가이드로 변환하세요.",
         "icon": "RiScissorsLine",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-coloring-page.webp",
-          "alt": "photo to line drawing use case - coloring page"
+          "alt": "사진을 선화 그림으로 변환 활용 사례 - 컬러링북"
         },
         "children": [
-          "Embroidery patterns from family photos",
-          "Custom coloring pages for kids", 
-          "Woodburning and engraving guides",
-          "Stencils for painting projects"
+          "가족 사진에서 자수 패턴",
+          "아이들을 위한 맞춤 컬러링북", 
+          "목공 태우기 및 조각 가이드",
+          "페인팅 프로젝트용 스텐실"
         ]
       },
       {
-        "title": "Digital Art & Design",
-        "description": "Use photo to line drawing as foundation for digital creative work.",
+        "title": "디지털 아트 & 디자인",
+        "description": "디지털 창작 작업의 기초로 사진을 선화 그림으로 변환을 활용하세요.",
         "icon": "RiPaintBrushLine",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-logo.webp",
-          "alt": "photo to line drawing use case - logo"
+          "alt": "사진을 선화 그림으로 변환 활용 사례 - 로고"
         },
         "children": [
-          "Base layers for digital paintings",
-          "Reference guides for illustrations",
-          "Minimalist logo creation",
-          "Website and app graphics"
+          "디지털 페인팅의 기본 레이어",
+          "일러스트레이션을 위한 참고 가이드",
+          "미니멀 로고 제작",
+          "웹사이트 및 앱 그래픽"
         ]
       },
       {
-        "title": "Personalized Gifts",
-        "description": "Create meaningful presents with photo to line drawing conversions.",
+        "title": "개인화된 선물",
+        "description": "사진을 선화 그림으로 변환으로 의미 있는 선물을 만들어보세요.",
         "icon": "RiGiftLine",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-t-shirt.webp",
-          "alt": "photo to line drawing use case - t-shirt"
+          "alt": "사진을 선화 그림으로 변환 활용 사례 - 티셔츠"
         },
         "children": [
-          "Pet portraits on custom mugs",
-          "Family line art for wall decor",
-          "Personalized t-shirt designs", 
-          "Custom poster artwork"
+          "맞춤 머그에 반려동물 초상화",
+          "벽면 장식용 가족 선화 예술",
+          "개인화된 티셔츠 디자인", 
+          "맞춤 포스터 예술 작품"
         ]
       },
       {
-        "title": "Professional Manufacturing",
-        "description": "Convert photos to precise line drawings for industrial applications.",
+        "title": "전문 제조업",
+        "description": "산업 응용을 위해 사진을 정밀한 선화 그림으로 변환하세요.",
         "icon": "RiSettings3Line",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-manufacturing.webp",
-          "alt": "photo to line drawing use case - manufacturing"
+          "alt": "사진을 선화 그림으로 변환 활용 사례 - 제조업"
         },
         "children": [
-          "Laser cutting path generation",
-          "CNC machine toolpaths",
-          "Plotter art creation",
-          "Technical diagram simplification"
+          "레이저 커팅 경로 생성",
+          "CNC 기계 도구 경로",
+          "플로터 아트 제작",
+          "기술 다이어그램 단순화"
         ]
       },
       {
-        "title": "Tattoo & Body Art",
-        "description": "Photo to line drawing creates perfect templates for body art.",
+        "title": "타투 & 바디 아트",
+        "description": "사진을 선화 그림으로 변환으로 바디 아트를 위한 완벽한 템플릿을 만들어보세요.",
         "icon": "RiHeartLine",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-tattoo.webp",
-          "alt": "photo to line drawing use case - tattoo"
+          "alt": "사진을 선화 그림으로 변환 활용 사례 - 타투"
         },
         "children": [
-          "Tattoo design templates",
-          "Henna pattern creation",
-          "Body art stencils",
-          "Artist consultation visuals"
+          "타투 디자인 템플릿",
+          "헤나 패턴 제작",
+          "바디 아트 스텐실",
+          "아티스트 상담용 비주얼"
         ]
       },
       {
-        "title": "Education & Training",
-        "description": "Simplify complex images into clear educational materials.",
+        "title": "교육 & 훈련",
+        "description": "복잡한 이미지를 명확한 교육 자료로 단순화하세요.",
         "icon": "RiGraduationCapLine",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-education.webp",
-          "alt": "photo to line drawing use case - education"
+          "alt": "사진을 선화 그림으로 변환 활용 사례 - 교육"
         },
         "children": [
-          "Simplified anatomical diagrams",
-          "Technical equipment outlines",
-          "Educational material graphics",
-          "Student activity sheets"
+          "단순화된 해부학 다이어그램",
+          "기술 장비 아웃라인",
+          "교육 자료 그래픽",
+          "학생 활동 시트"
         ]
       }
     ]
