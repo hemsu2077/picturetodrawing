@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Precios - Conversor de Foto a Dibujo | PicturetoDrawing",
+    "description": "Elige tu plan perfecto para transformar fotos en obras de arte espectaculares. Flexibles opciones de precios desde Básico hasta Premium, diseñadas para amantes del arte hasta profesionales."
+  },
   "pricing": {
     "name": "pricing",
     "label": "Precios",

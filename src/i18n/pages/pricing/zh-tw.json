@@ -1,4 +1,8 @@
-{
+{ 
+  "meta": {
+    "title": "價格方案 - AI照片轉手繪轉換器 | PicturetoDrawing",
+    "description": "使用PicturetoDrawing將您的照片轉換為精美藝術品。從基本版到進階版，適合所有用戶。"
+  },
   "pricing": {
     "name": "pricing",
     "label": "價格",

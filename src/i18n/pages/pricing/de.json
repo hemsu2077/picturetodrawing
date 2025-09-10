@@ -1,4 +1,8 @@
-{
+{ 
+  "meta": {
+    "title": "Preise - Bild zu Zeichnung Konverter | PicturetoDrawing",
+    "description": "Wählen Sie Ihren perfekten Plan für das Umwandeln Ihrer Fotos in beeindruckende Kunstwerke. Flexiblen Preisoptionen von Basic bis Premium, designed for hobbyists to professionals."
+  },
   "pricing": {
     "name": "pricing",
     "label": "Preise",

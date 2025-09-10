@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "Pricing - AI Photo to Drawing Converter | PicturetoDrawing",
+    "description": "Choose your perfect plan for transforming photos into stunning artwork. Flexible pricing options from basic to premium, designed for hobbyists to professionals."
+  },
   "pricing": {
     "name": "pricing",
     "label": "Pricing",

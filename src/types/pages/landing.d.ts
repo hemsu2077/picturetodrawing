@@ -52,6 +52,10 @@ export interface PhotoToLineDrawingPage {
 }
 
 export interface PricingPage {
+  meta?: {
+    title?: string;
+    description?: string;
+  };
   pricing?: Pricing;
   faq?: Section;
 }

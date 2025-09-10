@@ -1,4 +1,8 @@
-{
+{ 
+  "meta": {
+    "title": "Tarifs - Convertisseur de Photo à Dessin | PicturetoDrawing",
+    "description": "Choisissez votre plan parfait pour transformer vos photos en œuvres d'art époustouflantes. Flexibles options de prix de Basic à Premium, conçus pour les amateurs d'art jusqu'aux professionnels."
+  },
   "pricing": {
     "name": "pricing",
     "label": "Tarifs",

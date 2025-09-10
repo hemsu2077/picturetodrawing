@@ -1,4 +1,8 @@
-{
+{ 
+  "meta": {
+    "title": "价格方案 - AI照片转手绘转换器 | PicturetoDrawing",
+    "description": "使用图片转手绘将您的照片转换为精美艺术作品。从基本版到进阶版，适合所有用户。"
+  },
   "pricing": {
     "name": "pricing",
     "label": "价格",
