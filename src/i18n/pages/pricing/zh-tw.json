@@ -1,0 +1,352 @@
+{
+  "pricing": {
+    "name": "pricing",
+    "label": "Pricing",
+    "title": "Pricing",
+    "description": "Transform your photos into stunning artwork with PicturetoDrawing.",
+    "groups": [
+      {
+        "name": "monthly",
+        "title": "Monthly"
+      },
+      {
+        "name": "yearly",
+        "title": "Annually",
+        "is_featured": true,
+        "label": "save 30%"
+      },
+      {
+        "name": "one-time",
+        "title": "Pay as you go"
+      }
+    ],
+    "items": [
+      {
+        "title": "Basic",
+        "description": "Perfect for trying out our AI drawing service.",
+        "features_title": "Includes",
+        "features": [
+          "100 credits, valid for 2 months",
+          "No watermark",
+          "Fast generation",
+          "HD download",
+          "About $0.2 per drawing"
+        ],
+        "interval": "one-time",
+        "amount": 999,
+        "currency": "USD",
+        "price": "$9.99",
+        "unit": "one-time",
+        "is_featured": false,
+        "tip": "Great for occasional use",
+        "button": {
+          "title": "Get Started",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "basic",
+        "product_name": "Basic One-time",
+        "credits": 100,
+        "valid_months": 2,
+        "group": "one-time"
+      },
+      {
+        "title": "Standard",
+        "description": "Best for regular users who create artwork frequently.",
+        "features_title": "Includes",
+        "features": [
+          "400 credits, valid for 6 months",
+          "No watermark",
+          "Fast generation",
+          "HD download",
+          "About $0.1 per drawing"
+        ],
+        "interval": "one-time",
+        "amount": 1999,
+        "currency": "USD",
+        "price": "$19.99",
+        "unit": "one-time",
+        "is_featured": false,
+        "tip": "Most popular choice",
+        "button": {
+          "title": "Get Started",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard",
+        "product_name": "Standard One-time",
+        "credits": 400,
+        "valid_months": 6,
+        "group": "one-time"
+      },
+      {
+        "title": "Premium",
+        "description": "For power users and creative professionals.",
+        "features_title": "Includes",
+        "label": "Popular",
+        "features": [
+          "800 credits, valid for 12 months",
+          "No watermark",
+          "Fast generation",
+          "HD download",
+          "About $0.075 per drawing"
+        ],
+        "interval": "one-time",
+        "amount": 2999,
+        "currency": "USD",
+        "price": "$29.99",
+        "unit": "one-time",
+        "is_featured": true,
+        "tip": "Best value for heavy users",
+        "button": {
+          "title": "Get Started",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "premium",
+        "product_name": "Premium One-time",
+        "credits": 800,
+        "valid_months": 12,
+        "group": "one-time"
+      },
+      {
+        "title": "Basic",
+        "description": "Steady monthly supply for regular creators.",
+        "features_title": "Includes",
+        "features": [
+          "200 credits per month",
+          "No watermark",
+          "Fast generation",
+          "HD download",
+          "Commercial use rights",
+          "Priority customer support",
+          "About $0.1 per drawing"
+        ],
+        "interval": "month",
+        "amount": 999,
+        "currency": "USD",
+        "price": "$9.99",
+        "unit": "/ month",
+        "is_featured": false,
+        "tip": "Auto-renew, cancel anytime",
+        "button": {
+          "title": "Subscribe",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "basic-monthly",
+        "product_name": "Basic Monthly",
+        "credits": 200,
+        "valid_months": 1,
+        "group": "monthly"
+      },
+      {
+        "title": "Standard",
+        "description": "More credits for active creators and small teams.",
+        "label": "Popular",
+        "features_title": "Includes",
+        "features": [
+          "400 credits per month",
+          "No watermark",
+          "Fast generation",
+          "HD download",
+          "Commercial use rights",
+          "Priority customer support",
+          "About $0.85 per drawing"
+        ],
+        "interval": "month",
+        "amount": 1699,
+        "currency": "USD",
+        "price": "$16.99",
+        "unit": "/ month",
+        "is_featured": true,
+        "tip": "Auto-renew, cancel anytime",
+        "button": {
+          "title": "Subscribe",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard-monthly",
+        "product_name": "Standard Monthly",
+        "credits": 400,
+        "valid_months": 1,
+        "group": "monthly"
+      },
+      {
+        "title": "Premium",
+        "description": "Maximum credits for agencies and power users.",
+        "features_title": "Includes",
+        "features": [
+          "1000 credits per month",
+          "No watermark",
+          "Fast generation",
+          "HD download",
+          "Commercial use rights",
+          "Priority customer support",
+          "About $0.06 per drawing"
+        ],
+        "interval": "month",
+        "amount": 2999,
+        "currency": "USD",
+        "price": "$29.99",
+        "unit": "/ month",
+        "is_featured": false,
+        "tip": "Auto-renew, cancel anytime",
+        "button": {
+          "title": "Subscribe",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "premium-monthly",
+        "product_name": "Premium Monthly",
+        "credits": 1000,
+        "valid_months": 1,
+        "group": "monthly"
+      },
+      {
+        "title": "Basic",
+        "description": "Total $83.88/year, Save with annual billing for consistent creators.",
+        "features_title": "Includes",
+        "features": [
+          "200 credits per month (2400 credits per year)",
+          "No watermark",
+          "Fast generation",
+          "HD download",
+          "Commercial use rights",
+          "About $0.07 per drawing"
+        ],
+        "interval": "year",
+        "amount": 8388,
+        "currency": "USD",
+        "price": "$6.99",
+        "original_price": "$9.99",
+        "unit": "/ month",
+        "is_featured": false,
+        "tip": "Auto-renew, cancel anytime",
+        "button": {
+          "title": "Subscribe Annually",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "basic-yearly",
+        "product_name": "Basic Annually",
+        "credits": 2400,
+        "valid_months": 12,
+        "group": "yearly"
+      },
+      {
+        "title": "Standard",
+        "description": "Total $143.88/year, Best value for growing businesses and teams.",
+        "label": "Popular",
+        "features_title": "Includes",
+        "features": [
+          "400 credits per month (4800 credits per year)",
+          "No watermark",
+          "Fast generation",
+          "HD download",
+          "Commercial use rights",
+          "Priority customer support",
+          "About $0.06 per drawing"
+        ],
+        "interval": "year",
+        "amount": 14388,
+        "currency": "USD",
+        "price": "$11.99",
+        "original_price": "$16.99",
+        "unit": "/ month",
+        "is_featured": true,
+        "tip": "Auto-renew, cancel anytime",
+        "button": {
+          "title": "Subscribe Annually",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard-yearly",
+        "product_name": "Standard Annually",
+        "credits": 4800,
+        "valid_months": 12,
+        "group": "yearly"
+      },
+      {
+        "title": "Premium",
+        "description": "Total $251.88/year, Maximum savings for high-volume users.",
+        "features_title": "Includes",
+        "features": [
+          "1000 credits per month (12000 credits per year)",
+          "No watermark",
+          "Fast generation",
+          "HD download",
+          "Commercial use rights",
+          "Priority customer support",
+          "About $0.04 per drawing"
+        ],
+        "interval": "year",
+        "amount": 25188,
+        "currency": "USD",
+        "price": "$20.99",
+        "original_price": "$29.99",
+        "unit": "/ month",
+        "is_featured": false,
+        "tip": "Auto-renew, cancel anytime",
+        "button": {
+          "title": "Subscribe Annually",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "premium-yearly",
+        "product_name": "Premium Annually",
+        "credits": 12000,
+        "valid_months": 12,
+        "group": "yearly"
+      }
+    ]
+  },
+
+
+
+ "faq": {
+     "name": "faq",
+     "label": "",
+     "title": "Frequently Asked Questions",
+     "description": "Have questions about our AI picture to drawing service? Find answers below or contact our support team.",
+     "groups": [],
+     "items": [
+       {
+         "title": "What happens when I run out of credits?",
+         "description": "For subscription plans (Monthly/Yearly), your credits automatically reset at the start of each billing cycle. For Pay As You Go users, you'll need to purchase a new credit pack to continue transforming photos into drawings. You can always upgrade to a subscription plan for automatic renewals."
+       },
+       {
+         "title": "How long are my credits valid?",
+         "description": "Pay As You Go credits have different validity periods: Basic (2 months), Standard (6 months), Premium (12 months). Subscription credits (Monthly/Yearly) reset on your billing date. We recommend using your credits before they expire to get the most value."
+       },
+       {
+         "title": "How many drawings can I create with my credits?",
+         "description": "Each photo-to-drawing transformation typically uses 2 credit. So with 100 credits (Basic), you can create 50 drawings. With 200 credits (Standard Monthly), you can generate 100 drawings per month. The exact usage may vary based on image complexity and style."
+       },
+       {
+         "title": "Can I get a refund for unused credits?",
+         "description": "Due to the computational resources required for AI image transformation, we cannot offer refunds for purchased credits. However, Pay As You Go credits have extended validity periods, giving you plenty of time to use them. For subscriptions, you can cancel anytime to prevent future charges."
+       },
+       {
+         "title": "What's the difference between the plans?",
+         "description": "Pay As You Go offers one-time purchases with different credit amounts and validity periods - perfect for occasional use. Monthly plans provide regular credit renewals with commercial rights and priority support. Yearly plans offer the same benefits as monthly but with significant savings (up to 30% off)."
+       },
+       {
+         "title": "How do I manage or cancel my subscription?",
+         "description": "You can manage your subscription, view usage, and cancel anytime in your account dashboard under 'My Credits' or 'My Account'. Pay As You Go purchases don't require cancellation as they're one-time payments."
+       },
+       {
+         "title": "What drawing styles can I create?",
+         "description": "Our AI can transform your photos into various artistic styles including pencil sketch, charcoal drawing, watercolor painting, line art, color pencil drawing, and ink art. You can choose your preferred style during the conversion process to match your artistic vision."
+       },
+       {
+         "title": "Can I use the generated drawings commercially?",
+         "description": "Yes! Monthly and Yearly subscription plans include full commercial usage rights. You can use the generated drawings for your business, client projects, marketing materials, or any commercial purpose. Pay As You Go plans are for personal use only."
+       },
+       {
+         "title": "What if I'm not satisfied with a generated drawing?",
+         "description": "While we can't offer refunds, you can try different artistic styles or adjust your photo for better results using your credits. Our AI works best with clear, well-lit photos. Contact our support team if you need help optimizing your images for the best artistic transformation."
+       }
+     ]
+  }
+}

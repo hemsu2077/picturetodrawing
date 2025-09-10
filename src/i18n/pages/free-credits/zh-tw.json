@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "Free Credits - Picture to Drawing",
+    "description": "Earn free credits by checking in daily! Complete challenges and get rewarded.",
+    "robots": {
+      "index": false,
+      "follow": false
+    }
+  },
+  "hero": {
+    "title": "Free Credits",
+    "description": "Earn free credits by checking in daily! Complete challenges and get rewarded."
+  }
+}
