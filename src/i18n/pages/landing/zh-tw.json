@@ -3,26 +3,26 @@
   "theme": "light",
   "header": {
     "brand": {
-      "title": "PicturetoDrawing",
+      "title": "照片轉手繪",
       "logo": {
         "src": "/logo.png",
-        "alt": "PicturetoDrawing"
+        "alt": "照片轉手繪"
       },
       "url": "/"
     },
     "nav": {
       "items": [
         {
-          "title": "AI Drawing Tools",
+          "title": "AI繪畫工具",
           "children": [
             {
-              "title": "Picture to Drawing",
+              "title": "照片轉手繪",
               "url": "/",
               "target": "_self",
               "icon": "RiBrushLine"
             },
             {
-              "title": "Photo to line drawing",
+              "title": "照片轉線稿",
               "url": "/photo-to-line-drawing",
               "target": "_self",
               "icon": "RiColorFilterAiLine"
@@ -30,12 +30,12 @@
           ]
         },
         {
-          "title": "Pricing",
+          "title": "價格",
           "url": "/pricing",
           "icon": ""
         },
         {
-          "title": "My Drawings",
+          "title": "我的手繪作品",
           "url": "/my-drawings",
           "icon": ""
         }
@@ -43,7 +43,7 @@
     },
     "buttons": [
       {
-        "title": "Free Credits",
+        "title": "免費點數",
         "url": "/free-credits",
         "target": "_self",
         "variant": "outline",
@@ -56,32 +56,32 @@
     "show_locale": true
   },
   "hero": {
-    "title": "Transform Your Picture to Drawing in Seconds",
-    "highlight_text": "Picture to Drawing",
-    "description": "Experience the magic of AI-powered photo to sketch conversion",
+    "title": "秒速轉換，照片轉手繪",
+    "highlight_text": "照片轉手繪",
+    "description": "體驗AI驅動的照片轉素描神奇效果",
     "announcement": {
-      "label": "NEW",
+      "label": "新品",
       "title": "🍌 Nano Banana",
       "url": "/#drawing-generator"
     },
-    "tip": "Free to Try, 100% Secure, Instant Results",
+    "tip": "免費試用，100%安全，即時出圖",
     "tip_items": [
       {
-        "text": "Free to Try",
+        "text": "免費試用",
         "icon": "Gift"
       },
       {
-        "text": "100% Secure",
+        "text": "100% 安全",
         "icon": "Shield"
       },
       {
-        "text": "No Sign-up Required",
+        "text": "無需註冊",
         "icon": "Zap"
       }
     ],
     "buttons": [
       {
-        "title": "Try for Free",
+        "title": "免費試用",
         "icon": "RiFlashlightFill",
         "url": "/#drawing-generator",
         "target": "_self",
@@ -93,55 +93,55 @@
   },
   "introduce": {
     "name": "introduce",
-    "title": "Professional Quality Picture to Drawing Results",
-    "label": "Introduce",
+    "title": "專業級照片轉手繪效果",
+    "label": "產品介紹",
     "description": "",
     "image": {
       "src": "https://files.picturetodrawing.com/sample/draw-introduce.mp4"
     },
     "items": [
       {
-        "title": "Authentic Artistic Rendering",
-        "description": "Every photo to sketch conversion preserves natural textures, shadows, and details that make your drawing look hand-crafted by a professional artist.",
+        "title": "真實藝術渲染",
+        "description": "每次照片轉手繪都保留自然紋理、陰影和細節，讓您的作品看起來像專業藝術家手繪的一樣。",
         "icon": "RiPaintBrushLine"
       },
       {
-        "title": "High Resolution Output",
-        "description": "Download your picture to drawing conversions in high resolution, perfect for printing, framing, or sharing on social media platforms.",
+        "title": "高解析度輸出",
+        "description": "下載您的照片轉手繪作品，支援高解析度，完美適合列印、裱框或在社群媒體平台上分享。",
         "icon": "RiHdLine"
       },
       {
-        "title": "Privacy Protected",
-        "description": "Your photos are processed securely and automatically deleted after conversion. We never store or share your personal images.",
+        "title": "隱私保護",
+        "description": "您的照片經過安全處理，轉換後自動刪除。我們絕不會儲存或分享您的個人圖片。",
         "icon": "RiShieldCheckLine"
       }
     ]
   },
   "benefit": {
     "name": "benefit",
-    "title": "Why Choose Our Picture to Drawing Converter?",
-    "label": "Benefits",
-    "description": "Transform any picture to drawing with authentic artistic styles and incredible detail preservation.",
+    "title": "為何選擇我們的照片轉手繪工具？",
+    "label": "產品優勢",
+    "description": "運用真實藝術風格和驚人的細節保留，將任何照片轉換為精美手繪作品。",
     "items": [
       {
-        "title": "Advanced AI Technology",
-        "description": "Our cutting-edge artificial intelligence analyzes every detail of your photo to create authentic picture to drawing conversions that maintain the essence and emotion of your original image.",
+        "title": "先進AI技術",
+        "description": "我們的尖端人工智慧分析您照片的每個細節，創造真實的照片轉手繪效果，同時保留原始圖像的本質和情感。",
         "icon": "RiBrainLine",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
       },
       {
-        "title": "Multiple Art Styles",
-        "description": "Choose from pencil sketches, charcoal drawings, watercolor paintings, and ink illustrations. Each photo to sketch style is carefully crafted to deliver unique artistic interpretations of your pictures.",
+        "title": "多種藝術風格",
+        "description": "從鉛筆素描、炭筆畫、水彩畫到水墨插圖，多種風格任您選擇。每種照片轉素描風格都經過精心設計，為您的照片提供獨特的藝術詮釋。",
         "icon": "RiPaletteLine",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
         }
       },
       {
-        "title": "Lightning Fast Processing",
-        "description": "Experience instant picture to drawing transformation. Our optimized servers process your photo to sketch conversion in seconds, not minutes, delivering professional results without the wait.",
+        "title": "閃電般快速處理",
+        "description": "體驗即時照片轉手繪轉換。我們的優化伺服器在幾秒鐘內完成您的照片轉素描處理，無需漫長等待即可獲得專業成果。",
         "icon": "RiFlashlightLine",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
@@ -151,8 +151,8 @@
   },
   "usage": {
     "name": "usage",
-    "title": "How to Convert Picture to Drawing",
-    "description": "Transform any photo to sketch or artistic drawing with our intuitive process. No technical skills needed - just follow these simple steps to create stunning picture to drawing conversions.",
+    "title": "如何將照片轉換為手繪",
+    "description": "透過我們直觀的流程，將任何照片轉換為素描或藝術手繪。無需技術技能，只需按照這些簡單步驟，即可創造精美的照片轉手繪作品。",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -160,22 +160,22 @@
     "text_align": "center",
     "items": [
       {
-        "title": "Upload Your Photo",
-        "description": "Simply drag and drop your image or click to browse. Our picture to drawing converter supports JPG, PNG, and other popular formats. Your photo will be processed securely with complete privacy protection.",
+        "title": "上傳您的照片",
+        "description": "只需拖放圖片或點擊瀏覽。我們的照片轉手繪工具支援JPG、PNG和其他流行格式。您的照片將在完全隱私保護下安全處理。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
       },
       {
-        "title": "Choose Your Art Style",
-        "description": "Select from our collection of artistic styles including pencil sketch, charcoal drawing, watercolor painting, and ink illustration. Each picture to drawing style offers unique aesthetic qualities for your picture to drawing transformation.",
+        "title": "選擇您的藝術風格",
+        "description": "從我們的藝術風格系列中選擇，包括鉛筆素描、炭筆畫、水彩畫和水墨插圖。每種照片轉手繪風格都為您的轉換提供獨特的視覺美感。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
         }
       },
       {
-        "title": "Download Your Artwork",
-        "description": "Watch as our AI transforms your picture to drawing in seconds. Preview your converted picture to drawing result and download in high resolution. Perfect for printing, sharing, or creating personalized gifts.",
+        "title": "下載您的藝術作品",
+        "description": "觀看我們的AI在幾秒鐘內將您的照片轉換為手繪。預覽您的轉換結果並下載高解析度版本。適合列印、分享或創作個人化禮物。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
@@ -184,47 +184,47 @@
   },
   "faq": {
     "name": "faq",
-    "label": "FAQ",
-    "title": "Frequently Asked Questions About Picture to Drawing Conversion",
-    "description": "Get answers to common questions about our photo to sketch converter and picture to drawing technology.",
+    "label": "常見問題",
+    "title": "關於照片轉手繪的常見問題",
+    "description": "了解我們的照片轉素描工具和照片轉手繪技術的常見問題解答。",
     "items": [
       {
-        "title": "How does the picture to drawing AI technology work?",
-        "description": "Our advanced artificial intelligence analyzes your photo's composition, lighting, textures, and details to create authentic picture to drawing conversions. The AI understands artistic techniques like shading, line weight, and texture rendering to produce photo to sketch results that mimic traditional hand-drawn artwork. Unlike simple filters, our technology preserves the emotional essence and fine details of your original photograph."
+        "title": "照片轉手繪AI技術如何運作？",
+        "description": "我們的先進人工智慧分析照片的構圖、光線、紋理和細節，創造真實的照片轉手繪效果。AI理解陰影、線條粗細和紋理渲染等藝術技巧，產生模仿傳統手繪作品的照片轉素描結果。與簡單濾鏡不同，我們的技術保留了原始照片的情感本質和精細細節。"
       },
       {
-        "title": "What art styles are available for photo to sketch conversion?",
-        "description": "Our picture to drawing converter offers multiple artistic styles including realistic pencil sketches, dramatic charcoal drawings, delicate watercolor paintings, bold ink illustrations, and colored pencil artwork. Each photo to sketch style uses different algorithms to achieve authentic artistic effects. You can experiment with various styles to find the perfect picture to drawing aesthetic for your image."
+        "title": "照片轉素描有哪些藝術風格？",
+        "description": "我們的照片轉手繪工具提供多種藝術風格，包括寫實鉛筆素描、戲劇性炭筆畫、精緻水彩畫、大膽水墨插圖和彩色鉛筆藝術。每種照片轉素描風格使用不同演算法來達成真實的藝術效果。您可以嘗試各種風格，為您的圖像找到完美的照片轉手繪美感。"
       },
       {
-        "title": "Is my photo safe when using your picture to drawing service?",
-        "description": "Absolutely! Privacy and security are our top priorities. Your photos are processed on secure servers and automatically deleted after your picture to drawing conversion is complete. We never store, share, or use your images for any other purpose. All photo to sketch processing happens through encrypted connections, ensuring your personal photos remain completely private and secure."
+        "title": "使用照片轉手繪服務時我的照片安全嗎？",
+        "description": "當然！隱私和安全是我們的首要任務。您的照片在安全伺服器上處理，照片轉手繪轉換完成後自動刪除。我們絕不會儲存、分享或將您的圖片用於其他目的。所有照片轉素描處理都透過加密連接進行，確保您的個人照片完全私密和安全。"
       },
       {
-        "title": "How long does picture to drawing conversion take?",
-        "description": "Processing time depends on your account type: Free users can expect conversions to complete within 50-60 seconds, while premium subscribers enjoy priority processing with results in just 20-30 seconds. Image size and complexity may slightly affect processing time, but our optimized AI servers ensure consistent quality regardless of speed."
+        "title": "照片轉手繪需要多長時間？",
+        "description": "處理時間取決於您的帳戶類型：免費用戶可在50-60秒內完成轉換，而付費用戶享有優先處理，只需20-30秒即可獲得結果。圖片大小和複雜性可能會稍微影響處理時間，但我們優化的AI伺服器確保無論速度如何都能保持一致品質。"
       },
       {
-        "title": "What resolution can I download my photo to sketch results?",
-        "description": "You can download your picture to drawing conversions in multiple resolutions, including the full resolution of your original photo. Our AI maintains image quality throughout the photo to sketch process, ensuring your artistic drawings are suitable for printing, professional use, or high-quality social media sharing. Premium users can access even higher resolution outputs for large format printing and commercial applications."
+        "title": "我可以下載什麼解析度的照片轉素描結果？",
+        "description": "您可以下載多種解析度的照片轉手繪作品，包括原始照片的完整解析度。我們的AI在整個照片轉素描過程中保持影像品質，確保您的藝術手繪適合列印、專業使用或高品質社群媒體分享。付費用戶可以獲得更高解析度的輸出，用於大格式列印和商業應用。"
       },
       {
-        "title": "Can I use the picture to drawing converter on mobile devices?",
-        "description": "Yes! Our photo to sketch converter works perfectly on smartphones and tablets. The responsive design ensures seamless picture to drawing conversion across all devices. You can upload photos directly from your mobile camera or gallery, apply artistic styles, and download results instantly. The mobile experience maintains all the features and quality of the desktop version, making artistic photo to sketch transformation available anywhere."
+        "title": "我可以在行動裝置上使用照片轉手繪工具嗎？",
+        "description": "可以！我們的照片轉素描工具在手機和平板上完美運作。響應式設計確保在所有裝置上都能流暢進行照片轉手繪轉換。您可以直接從行動相機或圖庫上傳照片，應用藝術風格，並即時下載結果。行動版體驗保持了桌面版的所有功能和品質，讓藝術性的照片轉素描轉換隨時隨地都能使用。"
       },
       {
-        "title": "Do I need to sign up to use the picture to drawing converter?",
-        "description": "While creating an account unlocks the full potential of our picture to drawing service, you can try our photo to sketch converter without signing up! Every day, you get one free picture to drawing conversion to experience our AI technology. Once your daily trial is used, you'll need to create an account to continue transforming your photos to drawings. Registered users enjoy unlimited picture to drawing conversions, faster processing speeds, and access to premium artistic styles for their photo to sketch creations."
+        "title": "使用照片轉手繪工具需要註冊嗎？",
+        "description": "雖然創建帳戶可以發揮我們照片轉手繪服務的全部潛力，但您可以無需註冊就試用我們的照片轉素描工具！每天您可以獲得一次免費照片轉手繪轉換來體驗我們的AI技術。一旦每日試用額度用完，您需要創建帳戶才能繼續將照片轉換為手繪。註冊用戶享有無限照片轉手繪轉換、更快的處理速度和進階藝術風格的使用權限。"
       }
     ]
   },
   "cta": {
     "name": "cta",
-    "title": "Ready to Transform Your Pictures to Stunning Drawings?",
-    "description": "Join thousands of satisfied users who trust our AI-powered photo to sketch converter. Experience professional-quality picture to drawing results in seconds, with complete privacy protection and authentic artistic styles.",
+    "title": "準備將您的照片轉換為精美手繪了嗎？",
+    "description": "加入數千位信任我們AI驅動照片轉素描工具的滿意用戶。在幾秒鐘內體驗專業品質的照片轉手繪結果，享受完整的隱私保護和真實藝術風格。",
     "buttons": [
       {
-        "title": "Start Your Picture to Drawing Conversion Now",
+        "title": "立即開始照片轉手繪",
         "url": "/#drawing-generator",
         "target": "_self",
         "icon": "GoArrowUpRight"
@@ -234,23 +234,23 @@
  
   "transformation_examples": {
     "name": "transformation_examples",
-    "title": "Picture to Drawing Transformation Examples",
-    "description": "See the incredible results of our AI-powered picture to drawing converter. These real examples demonstrate the quality and artistic authenticity of our picture to drawing technology across different subjects and styles.",
+    "title": "照片轉手繪轉換範例",
+    "description": "看看我們AI驅動的照片轉手繪工具的驚人效果。這些真實範例展示了我們照片轉手繪技術在不同主題和風格上的品質和藝術真實性。",
     "items": [
       {
-        "title": "Pencil Sketch",
-        "description": "Classic graphite pencil drawing with realistic shading and fine detail preservation. Perfect for creating timeless, elegant artwork that captures the essence of your original photo with subtle textures and natural gradients.",
+        "title": "鉛筆素描",
+        "description": "經典石墨鉛筆繪畫，具有寫實陰影和精細細節保留。適合創造永恆、優雅的藝術作品，捕捉原始照片的本質，呈現細膩紋理和自然漸層。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch.webp"
         },
         "children": [
           {
-            "description": "Ideal for portraits, architectural drawings, and detailed illustrations where precision and traditional artistic values matter most."
+            "description": "適合人像、建築繪畫和詳細插圖，在精確度和傳統藝術價值最重要的場合。"
           }
         ],
         "buttons": [
           {
-            "title": "Convert your photo to drawing",
+            "title": "將您的照片轉換為手繪",
             "icon": "RiFlashlightFill",
             "url": "/#drawing-generator",
             "target": "_self",
@@ -259,19 +259,19 @@
         ]
       },
       {
-        "title": "Line Drawing",
-        "description": "Clean, minimalist line art with bold strokes and clear contours. Creates modern, striking artwork that emphasizes form and structure while removing unnecessary details for a contemporary aesthetic.",
+        "title": "線條畫",
+        "description": "簡潔、極簡線條藝術，具有大膽線條和清晰輪廓。創造現代、引人注目的藝術作品，強調形式和結構，同時去除不必要的細節，營造當代美感。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/example-line-drawing.webp"
         },
         "children": [
           {
-            "description": "Perfect for logos, technical illustrations, and modern graphic design projects that require clarity and visual impact."
+            "description": "完美適合標誌、技術插圖和需要清晰度和視覺衝擊力的現代平面設計項目。"
           }
         ],
         "buttons": [
           {
-            "title": "Convert your photo to drawing",
+            "title": "將您的照片轉換為手繪",
             "icon": "RiFlashlightFill",
             "url": "/#drawing-generator",
             "target": "_self",
@@ -280,19 +280,19 @@
         ]
       },
       {
-        "title": "Color Pencil Drawing",
-        "description": "Vibrant colored pencil artwork with rich textures and layered colors. Brings your photos to life with the warmth and character of hand-colored illustrations, preserving subtle color variations.",
+        "title": "彩色鉛筆畫",
+        "description": "充滿活力的彩色鉛筆藝術品，具有豐富紋理和層次色彩。為您的照片注入生命，帶有手繪插圖的溫暖和特色，保留細膩的色彩變化。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing.webp"
         },
         "children": [
           {
-            "description": "Excellent for children's portraits, pet illustrations, and artwork where color plays a crucial role in emotional expression."
+            "description": "非常適合兒童肖像、寵物插圖和色彩在情感表達中扮演重要角色的藝術作品。"
           }
         ],
         "buttons": [
           {
-            "title": "Convert your photo to drawing",
+            "title": "將您的照片轉換為手繪",
             "icon": "RiFlashlightFill",
             "url": "/#drawing-generator",
             "target": "_self",
@@ -301,19 +301,19 @@
         ]
       },
       {
-        "title": "Watercolor Painting",
-        "description": "Soft, flowing watercolor effects with beautiful color blending and artistic brushstrokes. Creates dreamy, ethereal artwork with the delicate transparency and organic flow of traditional watercolor paintings.",
+        "title": "水彩畫",
+        "description": "柔和、流動的水彩效果，具有美麗的色彩混合和藝術筆觸。創造夢幻、空靈的藝術作品，具有傳統水彩畫的細膩透明度和有機流動感。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting.webp"
         },
         "children": [
           {
-            "description": "Perfect for landscapes, floral arrangements, and artistic projects that benefit from a romantic, painterly aesthetic."
+            "description": "完美適合風景、花卉佈置和受益於浪漫、繪畫美學的藝術項目。"
           }
         ],
         "buttons": [
           {
-            "title": "Convert your photo to drawing",
+            "title": "將您的照片轉換為手繪",
             "icon": "RiFlashlightFill",
             "url": "/#drawing-generator",
             "target": "_self",
@@ -325,47 +325,47 @@
   },
   "perfect_uses": {
     "name": "perfect_uses",
-    "title": "Perfect Uses for Picture to Drawing Conversion",
-    "description": "Discover the endless possibilities of our picture to drawing technology. From personal gifts to professional projects, our picture to drawing converter serves diverse creative needs with exceptional quality.",
+    "title": "照片轉手繪的完美用途",
+    "description": "探索我們照片轉手繪技術的無限可能。從個人禮物到專業項目，我們的照片轉手繪工具以卓越品質滿足多樣的創意需求。",
     "items": [
       {
-        "title": "Personalized Gifts",
-        "description": "Create unique, heartfelt gifts by converting cherished family photos to artistic drawings. Perfect for anniversaries, birthdays, and special occasions that deserve memorable picture to drawing keepsakes.",
+        "title": "個人化禮物",
+        "description": "將珍貴的家庭照片轉換為藝術手繪，創造獨特、深具心意的禮物。完美適合週年紀念、生日和值得紀念的照片轉手繪紀念品。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/uses-gift.webp?v=20250815"
         }
       },
       {
-        "title": "Social Media Content",
-        "description": "Stand out on Instagram, Facebook, and other platforms with artistic picture to drawing content. Our picture to drawing styles create engaging posts that capture attention and increase engagement.",
+        "title": "社群媒體內容",
+        "description": "在Instagram、Facebook和其他平台上以藝術性照片轉手繪內容脫穎而出。我們的照片轉手繪風格創造引人入勝的貼文，吸引注意並增加互動。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/uses-social.webp?v=20250815"
         }
       },
       {
-        "title": "Marketing Materials",
-        "description": "Enhance brochures, websites, and advertisements with distinctive photo to sketch artwork. Our picture to drawing converter helps businesses create memorable visual branding that differentiates from competitors.",
+        "title": "行銷材料",
+        "description": "以獨特的照片轉素描藝術作品增強手冊、網站和廣告。我們的照片轉手繪工具幫助企業創造難忘的視覺品牌，與競爭對手區分開來。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/uses-marketing.webp?v=20250815"
         }
       },
       {
-        "title": "Home Decoration",
-        "description": "Transform your favorite photographs into elegant wall art using our picture to drawing technology. Create cohesive home decor with personalized photo to sketch artwork that reflects your style.",
+        "title": "家居裝飾",
+        "description": "使用我們的照片轉手繪技術將您最喜愛的照片轉換為優雅的壁畫藝術。創造協調的家居裝飾，展現您風格的個人化照片轉素描藝術品。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/uses-decoration.webp?v=20250815"
         }
       },
       {
-        "title": "Educational Projects",
-        "description": "Teachers and students use our photo to sketch converter for art education, presentations, and creative assignments. Picture to drawing technology helps illustrate concepts and inspire artistic learning.",
+        "title": "教育項目",
+        "description": "教師和學生使用我們的照片轉素描工具進行藝術教育、簡報和創意作業。照片轉手繪技術有助於說明概念並激發藝術學習。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/uses-educational.webp?v=20250815"
         }
       },
       {
-        "title": "Creative Portfolios",
-        "description": "Artists, designers, and creatives enhance their portfolios with diverse photo to sketch styles. Our picture to drawing converter demonstrates versatility and artistic vision across different mediums.",
+        "title": "創意作品集",
+        "description": "藝術家、設計師和創意人士以多樣化的照片轉素描風格豐富他們的作品集。我們的照片轉手繪工具展現不同媒介的多功能性和藝術視野。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/uses-creative.webp?v=20250815"
         }
@@ -374,26 +374,26 @@
   },
   "comparison": {
     "name": "comparison",
-    "title": "Our Picture to Drawing AI vs Traditional Filters",
-    "description": "Compare our advanced AI-powered picture to drawing technology with basic photo filters. Experience the superior quality and authenticity that sets our photo to sketch converter apart from the competition.",
+    "title": "我們的照片轉手繪AI vs 傳統濾鏡",
+    "description": "比較我們先進的AI驅動照片轉手繪技術與基本照片濾鏡。體驗優越品質和真實性，讓我們的照片轉素描工具在競爭中脫穎而出。",
     "items": [
       {
-        "title": "Original Photo",
-        "description": "Standard digital photograph ready for artistic transformation using different methods.",
+        "title": "原始照片",
+        "description": "標準數位照片，準備使用不同方法進行藝術轉換。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/compare-original.webp"
         }
       },
       {
-        "title": "Traditional Filter",
-        "description": "Artificial, over-processed look with lost details and unrealistic photo to sketch appearance.",
+        "title": "傳統濾鏡",
+        "description": "人工、過度處理的外觀，失去細節和不真實的照片轉素描外觀。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/compare-traditional.webp"
         }
       },
       {
-        "title": "Our AI Result",
-        "description": "Authentic, detailed picture to drawing with preserved textures and natural artistic flow.",
+        "title": "我們的AI結果",
+        "description": "真實、詳細的照片轉手繪，保留紋理和自然藝術流動。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/compare-ai.webp"
         }
@@ -402,24 +402,24 @@
   },
   "ai_excellence": {
     "name": "ai_excellence",
-    "title": "Why Our Picture to Drawing AI Excels",
-    "description": "Our cutting-edge artificial intelligence technology sets new standards in photo to sketch conversion, delivering unmatched quality and artistic authenticity.",
+    "title": "為何我們的照片轉手繪AI出類拔萃",
+    "description": "我們的尖端人工智慧技術為照片轉素描轉換樹立新標準，提供無與倫比的品質和藝術真實性。",
     "items": [
       {
-        "title": "Advanced Neural Networks",
-        "description": "Our AI uses sophisticated deep learning algorithms trained on millions of artistic samples to understand and replicate authentic drawing techniques."
+        "title": "先進神經網絡",
+        "description": "我們的AI使用複雜的深度學習演算法，經過數百萬藝術樣本訓練，理解和複製真實的繪畫技巧。"
       },
       {
-        "title": "Style Adaptation",
-        "description": "The technology automatically adapts to different image types, optimizing the picture to drawing conversion for portraits, landscapes, and other subjects."
+        "title": "風格適應",
+        "description": "技術自動適應不同圖像類型，為人像、風景和其他主題優化照片轉手繪轉換。"
       },
       {
-        "title": "Quality Assurance",
-        "description": "Built-in quality checks ensure every photo to sketch conversion meets our high standards for artistic excellence and detail preservation."
+        "title": "品質保證",
+        "description": "內建品質檢查確保每張照片轉素描轉換都符合我們的藝術卓越和細節保留高標準。"
       },
       {
-        "title": "Continuous Learning",
-        "description": "Our AI constantly improves through user feedback and new training data, ensuring picture to drawing results get better over time."
+        "title": "持續學習",
+        "description": "我們的AI透過用戶反饋和新訓練數據不斷改進，確保照片轉手繪結果隨時間推移越來越好。"
       }
     ],
     "image": {
@@ -427,7 +427,7 @@
     },
     "buttons": [
       {
-        "title": "Experience AI Excellence",
+        "title": "體驗AI卓越",
         "url": "/pricing",
         "target": "_self",
         "icon": "RiRobot2Line"
@@ -437,11 +437,11 @@
   "footer": {
     "name": "footer",
     "brand": {
-      "title": "PicturetoDrawing",
-      "description": "Transform your photos into stunning artwork with our AI-powered picture to drawing converter. Professional quality photo to sketch results in seconds.",
+      "title": "照片轉手繪",
+      "description": "使用我們的AI驅動照片轉手繪工具將您的照片轉換為精美藝術品。在幾秒鐘內獲得專業品質的照片轉素描結果。",
       "logo": {
         "src": "/logo.png",
-        "alt": "PicturetoDrawing"
+        "alt": "照片轉手繪"
       },
       "url": "/"
     },
@@ -449,30 +449,35 @@
     "nav": {
       "items": [
         {
-          "title": "About",
+          "title": "關於",
           "children": [
             {
-              "title": "Home",
+              "title": "照片轉手繪",
               "url": "/",
               "target": "_self"
             },
             {
-              "title": "Pricing",
+              "title": "照片轉線稿",
+              "url": "/photo-to-line-drawing",
+              "target": "_self"
+            },
+            {
+              "title": "價格",
               "url": "/pricing",
               "target": "_self"
             },
             {
-              "title": "My Drawings",
+              "title": "我的手繪作品",
               "url": "/my-drawings",
               "target": "_self"
             },
             {
-              "title": "Free Credits",
+              "title": "免費點數",
               "url": "/free-credits",
               "target": "_self"
             },
             {
-              "title": "Contact Us",
+              "title": "聯繫我們",
               "url": "mailto:hi@picturetodrawing.com",
               "target": "_self"
             }
@@ -483,7 +488,7 @@
     "social": {
       "items": [
         {
-          "title": "Email",
+          "title": "電子郵件",
           "icon": "RiMailLine",
           "url": "mailto:hi@picturetodrawing.com",
           "target": "_self"
@@ -493,15 +498,15 @@
     "agreement": {
       "items": [
         {
-          "title": "Privacy Policy",
+          "title": "隱私政策",
           "url": "/privacy-policy"
         },
         {
-          "title": "Terms of Service",
+          "title": "服務條款",
           "url": "/terms-of-service"
         },
         {
-          "title": "Refund Policy",
+          "title": "退款政策",
           "url": "/refund-policy"
         }
       ]

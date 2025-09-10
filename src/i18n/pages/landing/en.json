@@ -452,8 +452,13 @@
           "title": "About",
           "children": [
             {
-              "title": "Home",
+              "title": "Picture to Drawing",
               "url": "/",
+              "target": "_self"
+            },
+            {
+              "title": "Photo to Line Drawing",
+              "url": "/photo-to-line-drawing",
               "target": "_self"
             },
             {

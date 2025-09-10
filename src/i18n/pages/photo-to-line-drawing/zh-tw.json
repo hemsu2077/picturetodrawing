@@ -1,21 +1,21 @@
 {
   "meta": {
-    "title": "Photo to Line Drawing Converter - Free to Try",
-    "description": "Convert photos to line drawings effortlessly. Transform any photo into clean line art for embroidery, tattoos, crafts, and digital art."
+    "title": "照片轉線稿工具 - 免費線上轉換",
+    "description": "輕鬆將照片轉換為線稿。一鍵將任意圖片轉換為清晰的線條藝術，適用於刺繡、紋身、手工藝和數位藝術創作。"
   },
   "hero": {
-    "title": "Transform Photo to Line Drawing Instantly",
+    "title": "秒速照片轉線稿",
     "announcement": {
-      "label": "NEW",
+      "label": "新品",
       "title": "🍌 Nano Banana",
       "url": "/photo-to-line-drawing#drawing-generator"
     },
-    "highlight_text": "Photo to Line Drawing",
-    "description": "Convert any photo into clean, professional line art without drawing skills.",
-    "tip": "Free to Try, 100% Secure, Instant Results",
+    "highlight_text": "照片轉線稿",
+    "description": "無需繪畫技能，一鍵將任意照片轉換為專業級清晰線條藝術。",
+    "tip": "免費試用，100%安全，即時出圖",
     "tip_items": [
       {
-        "text": "免费试用",
+        "text": "免費試用",
         "icon": "Gift"
       },
       {
@@ -23,13 +23,13 @@
         "icon": "Shield"
       },
       {
-        "text": "无需注册",
+        "text": "無需註冊",
         "icon": "Zap"
       }
     ],
     "buttons": [
       {
-        "title": "Try for Free",
+        "title": "免費試用",
         "icon": "RiFlashlightFill",
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self",
@@ -41,70 +41,70 @@
   },
   "showcase": {
     "name": "showcase",
-    "title": "Stunning Photo to Line Drawing Results Across All Categories",
+    "title": "全品類照片轉線稿精彩效果展示",
     "items": [
       {
-        "title": "Portrait Photo to Line Drawing Transformation",
-        "description": "Transform portraits into elegant line art with artistic precision.",
-        "label": "Portrait",
+        "title": "人像照片轉線稿藝術",
+        "description": "將人像照片轉換為優雅線條藝術，藝術精度完美呈現。",
+        "label": "人像",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-portrait.webp",
-          "alt": "Portrait Photo to Line Drawing"
+          "alt": "人像照片轉線稿"
         },
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self"
       },
       {
-        "title": "Architectural Photo to Line Drawing Style",
-        "description": "Transform architectural photos into precise line drawings for technical use.",
-        "label": "Architecture",
+        "title": "建築照片轉線稿風格",
+        "description": "將建築照片轉換為精確線稿，滿足專業技術使用需求。",
+        "label": "建築",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
-          "alt": "Architecture Photo to Line Drawing"
+          "alt": "建築照片轉線稿"
         },
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self"
       },
       {
-        "title": "Product Photo to Line Drawing for Design",
-        "description": "Convert product photos into clean line art for design documentation.",
-        "label": "Product",
+        "title": "產品照片轉線稿設計",
+        "description": "將產品照片轉換為清晰線條藝術，用於設計文檔製作。",
+        "label": "產品",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
-          "alt": "Product Photo to Line Drawing"
+          "alt": "產品照片轉線稿"
         },
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self"
       },
       {
-        "title": "Vehicle Photo to Line Drawing Illustration",
-        "description": "Convert vehicle photos into technical line art for documentation projects.",
-        "label": "Vehicle",
+        "title": "車輛照片轉線稿插圖",
+        "description": "將車輛照片轉換為技術性線條藝術，用於文檔項目。",
+        "label": "車輛",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
-          "alt": "Vehicle Photo to Line Drawing"
+          "alt": "車輛照片轉線稿"
         },
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self"
       },
       {
-        "title": "Nature Photo to Line Drawing Art",
-        "description": "Transform nature photos into artistic line drawings highlighting natural beauty.",
-        "label": "Nature",
+        "title": "自然照片轉線稿藝術",
+        "description": "將自然風光照片轉換為藝術線條畫，突顯自然之美。",
+        "label": "自然",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
-          "alt": "Nature Photo to Line Drawing"
+          "alt": "自然照片轉線稿"
         },
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self"
       },
       {
-        "title": "Pet Photo to Line Drawing Conversion",
-        "description": "Turn your beloved pet photos into line drawings that capture their unique personality.",
-        "label": "Pet",
+        "title": "寵物照片轉線稿轉換",
+        "description": "將您心愛的寵物照片轉換為線稿，捕捉牠們獨特的個性魅力。",
+        "label": "寵物",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-pet.webp",
-          "alt": "Pet Photo to Line Drawing"
+          "alt": "寵物照片轉線稿"
         },
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self"
@@ -113,45 +113,45 @@
   },
   "feature": {
     "name": "feature",
-    "title": "Photo to Line Drawing Features",
-    "description": "Whether you're a hobbyist, professional designer, or crafter, our photo to line drawing tool provides everything you need.",
+    "title": "照片轉線稿功能特點",
+    "description": "無論您是愛好者、專業設計師還是手工藝人，我們的照片轉線稿工具都能滿足您的所有需求。",
     "items": [
       {
-        "title": "No Drawing Skills Required",
-        "description": "Transform any photo into professional line art without any artistic background. Perfect for beginners and experts alike.",
+        "title": "無需繪畫技能",
+        "description": "無需任何藝術背景，即可將任意照片轉換為專業線條藝術。完美適合初學者和專家使用。",
         "icon": "RiMagicLine"
       },
       {
-        "title": "Lightning Fast Processing",
-        "description": "Get your line drawing results in seconds, not hours. Our optimized AI ensures quick turnaround times for all your projects.",
+        "title": "閃電般快速處理",
+        "description": "幾秒鐘內獲得線稿結果，而非數小時。我們優化的AI確保所有項目的快速週轉時間。",
         "icon": "RiFlashlightLine"
       },
       {
-        "title": "Customizable Settings",
-        "description": "Adjust line thickness, detail level, and contrast to get the perfect line art style for your specific project needs.",
+        "title": "可自訂設置",
+        "description": "調整線條粗細、細節程度和對比度，為特定項目需求獲得完美的線條藝術風格。",
         "icon": "RiSettings3Line"
       },
       {
-        "title": "Multiple Output Formats",
-        "description": "Download your line drawings as PNG, SVG, or PDF. Compatible with embroidery software, laser cutters, and design programs.",
+        "title": "多種輸出格式",
+        "description": "將線稿下載為PNG、SVG或PDF格式。相容刺繡軟體、雷射切割機和設計程式。",
         "icon": "RiDownloadLine"
       },
       {
-        "title": "Privacy Protected",
-        "description": "Your photos are processed securely and never stored on our servers. Complete privacy and data protection guaranteed.",
+        "title": "隱私保護",
+        "description": "您的照片經過安全處理，絕不會儲存在我們的伺服器上。保證完全的隱私和數據保護。",
         "icon": "RiShieldCheckLine"
       },
       {
-        "title": "Works Everywhere",
-        "description": "Use our photo to line drawing converter on any device - desktop, tablet, or mobile. No software installation required.",
+        "title": "隨處可用",
+        "description": "在任何設備上使用我們的照片轉線稿轉換器 - 桌面、平板或手機。無需安裝軟體。",
         "icon": "RiSmartphoneLine"
       }
     ]
   },
   "usage": {
     "name": "usage",
-    "title": "How Photo to Line Drawing Works",
-    "description": "Our advanced AI technology converts your photos into clean line art in just 3 simple steps.",
+    "title": "照片轉線稿使用方法",
+    "description": "我們先進的AI技術只需3個簡單步驟即可將您的照片轉換為清晰線條藝術。",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -159,22 +159,22 @@
     "text_align": "center",
     "items": [
       {
-        "title": "Upload Your Photo",
-        "description": "Simply drag and drop your image or select from your device. We support all common photo formats including JPG, PNG, WebP and HEIC.",
+        "title": "上傳您的照片",
+        "description": "只需拖放圖片或從設備中選擇。我們支援所有常見照片格式，包括JPG、PNG、WebP和HEIC。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
       },
       {
-        "title": "Choose Line Drawing Style",
-        "description": "Our intelligent algorithm analyzes your photo to identify key contours, edges, and important details, creating a clean line drawing conversion.",
+        "title": "選擇線稿風格",
+        "description": "我們的智慧演算法分析您的照片以識別關鍵輪廓、邊緣和重要細節，創建清晰的線稿轉換。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
         }
       },
       {
-        "title": "Download Your Artwork",
-        "description": "Get your high-quality line art in multiple formats. Perfect for printing, digital projects, or importing into design software.",
+        "title": "下載您的藝術作品",
+        "description": "獲得多種格式的高品質線條藝術。完美適合列印、數位項目或導入設計軟體。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
@@ -183,43 +183,43 @@
   },
   "faq": {
     "name": "faq",
-    "label": "FAQ",
-    "title": "Frequently Asked Questions About Photo to Line Drawing Conversion",
-    "description": "Everything you need to know about converting photos to line drawings",
+    "label": "常見問題",
+    "title": "關於照片轉線稿的常見問題",
+    "description": "您需要了解的關於照片轉線稿轉換的一切資訊",
     "items": [
       {
-        "title": "What types of photos work best for line drawing conversion?",
-        "description": "Photos with clear subjects and good contrast work best. Portraits, pets, buildings, and objects with defined edges produce excellent line art results. Our AI can handle various lighting conditions and automatically adjusts for optimal line drawing output."
+        "title": "哪些類型的照片最適合線稿轉換？",
+        "description": "主體清晰、對比度良好的照片效果最佳。人像、寵物、建築物和具有明確邊緣的物體能產生優秀的線條藝術效果。我們的AI能夠處理各種光線條件，並自動調整以獲得最佳線稿輸出。"
       },
       {
-        "title": "Can I use the line drawings for commercial projects?",
-        "description": "Yes! All line drawings created with our photo to line drawing tool can be used for both personal and commercial purposes. You retain full rights to your converted images and can use them for products, marketing, or any business application."
+        "title": "我可以將線稿用於商業項目嗎？",
+        "description": "可以！使用我們的照片轉線稿工具創建的所有線稿都可以用於個人和商業目的。您保留轉換圖像的完整權利，可以將其用於產品、行銷或任何商業應用。"
       },
       {
-        "title": "What file formats are supported for upload and download?",
-        "description": "Upload: JPG, PNG, HEIC, WebP, and most common image formats. Download: High-quality PNG for raster graphics, SVG for scalable vector line art, and PDF for printing. Choose the format that best suits your intended use case."
+        "title": "支援哪些檔案格式進行上傳和下載？",
+        "description": "上傳：JPG、PNG、HEIC、WebP和大多數常見圖像格式。下載：用於柵格圖形的高品質PNG、可縮放矢量線條藝術的SVG，以及用於列印的PDF。選擇最適合您預期用途的格式。"
       },
       {
-        "title": "How long does photo to line drawing conversion take?",
-        "description": "Processing time depends on your account type: Free users can expect conversions to complete within 50-60 seconds, while premium subscribers enjoy priority processing with results in just 20-30 seconds. Image size and complexity may slightly affect processing time, but our optimized AI servers ensure consistent quality regardless of speed."
+        "title": "照片轉線稿轉換需要多長時間？",
+        "description": "處理時間取決於您的帳戶類型：免費用戶可以預期在50-60秒內完成轉換，而高級訂閱用戶享受優先處理，僅需20-30秒即可獲得結果。圖片大小和複雜性可能會稍微影響處理時間，但我們優化的AI伺服器確保無論速度如何都能保持一致的品質。"
       },
       {
-        "title": "Is my photo data secure and private?",
-        "description": "Absolutely. Your photos are processed securely and automatically deleted from our servers after conversion. We never store, share, or use your images for any purpose other than creating your line drawing. Your privacy is our top priority."
+        "title": "我的照片數據是否安全私密？",
+        "description": "絕對安全。您的照片經過安全處理，轉換後會從我們的伺服器中自動刪除。我們絕不會儲存、分享或為創建線稿以外的任何目的使用您的圖像。您的隱私是我們的首要任務。"
       },
       {
-        "title": "Can I adjust the line thickness and detail level?",
-        "description": "No, you cannot adjust the line thickness and detail level."
+        "title": "我可以調整線條粗細和細節程度嗎？",
+        "description": "不可以，您無法調整線條粗細和細節程度。"
       }
     ]
   },
   "cta": {
     "name": "cta",
-    "title": "Ready to Transform Your Photos?",
-    "description": "Join thousands of creators who use our photo to line drawing tool to bring their ideas to life. Start converting your images today.",
+    "title": "準備轉換您的照片了嗎？",
+    "description": "加入數千位使用我們照片轉線稿工具讓創意變為現實的創作者。今天就開始轉換您的圖像吧。",
     "buttons": [
       {
-        "title": "Convert Your First Photo Free",
+        "title": "免費轉換您的第一張照片",
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self",
         "icon": "GoArrowUpRight"
@@ -230,97 +230,97 @@
   
   "use_cases": {
     "name": "use_cases",
-    "title": "Photo to Line Drawing Applications Across Industries",
-    "description": "From personal crafts to professional projects, discover how photo to line drawing transforms creative workflows across industries.",
+    "title": "照片轉線稿在各行業的應用",
+    "description": "從個人手工藝到專業項目，了解照片轉線稿如何改變各行業的創意工作流程。",
     "items": [
       {
-        "title": "Crafts & Hobbies",
-        "description": "Transform your photos into practical patterns and guides for creative projects.",
+        "title": "手工藝與愛好",
+        "description": "將您的照片轉換為實用圖案和指南，用於創意項目製作。",
         "icon": "RiScissorsLine",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-coloring-page.webp",
-          "alt": "photo to line drawing use case - coloring page"
+          "alt": "照片轉線稿應用 - 塗色頁"
         },
         "children": [
-          "Embroidery patterns from family photos",
-          "Custom coloring pages for kids", 
-          "Woodburning and engraving guides",
-          "Stencils for painting projects"
+          "家庭照片刺繡圖案",
+          "兒童定制塗色頁", 
+          "木刻和雕刻指南",
+          "繪畫項目模板"
         ]
       },
       {
-        "title": "Digital Art & Design",
-        "description": "Use photo to line drawing as foundation for digital creative work.",
+        "title": "數位藝術與設計",
+        "description": "使用照片轉線稿作為數位創意工作的基礎。",
         "icon": "RiPaintBrushLine",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-logo.webp",
-          "alt": "photo to line drawing use case - logo"
+          "alt": "照片轉線稿應用 - 標誌"
         },
         "children": [
-          "Base layers for digital paintings",
-          "Reference guides for illustrations",
-          "Minimalist logo creation",
-          "Website and app graphics"
+          "數位繪畫基礎圖層",
+          "插圖參考指南",
+          "極簡標誌創作",
+          "網站和應用程式圖形"
         ]
       },
       {
-        "title": "Personalized Gifts",
-        "description": "Create meaningful presents with photo to line drawing conversions.",
+        "title": "個人化禮物",
+        "description": "透過照片轉線稿轉換製作有意義的心意禮物。",
         "icon": "RiGiftLine",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-t-shirt.webp",
-          "alt": "photo to line drawing use case - t-shirt"
+          "alt": "照片轉線稿應用 - T恤"
         },
         "children": [
-          "Pet portraits on custom mugs",
-          "Family line art for wall decor",
-          "Personalized t-shirt designs", 
-          "Custom poster artwork"
+          "定制馬克杯寵物肖像",
+          "牆面裝飾家庭線條藝術",
+          "個人化T恤設計", 
+          "定制海報藝術作品"
         ]
       },
       {
-        "title": "Professional Manufacturing",
-        "description": "Convert photos to precise line drawings for industrial applications.",
+        "title": "專業製造業",
+        "description": "將照片轉換為精確線稿，用於工業應用。",
         "icon": "RiSettings3Line",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-manufacturing.webp",
-          "alt": "photo to line drawing use case - manufacturing"
+          "alt": "照片轉線稿應用 - 製造業"
         },
         "children": [
-          "Laser cutting path generation",
-          "CNC machine toolpaths",
-          "Plotter art creation",
-          "Technical diagram simplification"
+          "雷射切割路徑生成",
+          "CNC機床刀具路徑",
+          "繪圖機藝術創作",
+          "技術圖表簡化"
         ]
       },
       {
-        "title": "Tattoo & Body Art",
-        "description": "Photo to line drawing creates perfect templates for body art.",
+        "title": "紋身與身體藝術",
+        "description": "照片轉線稿為身體藝術創建完美模板。",
         "icon": "RiHeartLine",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-tattoo.webp",
-          "alt": "photo to line drawing use case - tattoo"
+          "alt": "照片轉線稿應用 - 紋身"
         },
         "children": [
-          "Tattoo design templates",
-          "Henna pattern creation",
-          "Body art stencils",
-          "Artist consultation visuals"
+          "紋身設計模板",
+          "海娜圖案創作",
+          "身體藝術模板",
+          "藝術家諮詢視覺材料"
         ]
       },
       {
-        "title": "Education & Training",
-        "description": "Simplify complex images into clear educational materials.",
+        "title": "教育培訓",
+        "description": "將複雜圖像簡化為清晰的教育材料。",
         "icon": "RiGraduationCapLine",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-education.webp",
-          "alt": "photo to line drawing use case - education"
+          "alt": "照片轉線稿應用 - 教育"
         },
         "children": [
-          "Simplified anatomical diagrams",
-          "Technical equipment outlines",
-          "Educational material graphics",
-          "Student activity sheets"
+          "簡化解剖圖表",
+          "技術設備輪廓圖",
+          "教育材料圖形",
+          "學生活動表格"
         ]
       }
     ]

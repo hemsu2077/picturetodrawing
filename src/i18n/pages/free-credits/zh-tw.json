@@ -1,14 +1,14 @@
 {
   "meta": {
-    "title": "Free Credits - Picture to Drawing",
-    "description": "Earn free credits by checking in daily! Complete challenges and get rewarded.",
+    "title": "免費點數 - 照片轉手繪",
+    "description": "每日簽到賺取免費點數！完成挑戰獲得獎勵。",
     "robots": {
       "index": false,
       "follow": false
     }
   },
   "hero": {
-    "title": "Free Credits",
-    "description": "Earn free credits by checking in daily! Complete challenges and get rewarded."
+    "title": "免費點數",
+    "description": "每日簽到賺取免費點數！完成挑戰獲得獎勵。"
   }
 }
