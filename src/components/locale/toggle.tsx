@@ -19,9 +19,17 @@ export default function ({ isIcon = false }: { isIcon?: boolean }) {
 
   const handleSwitchLanguage = (value: string) => {
     if (value !== locale) {
-      let newPathName = pathname.replace(`/${locale}`, `/${value}`);
-      if (!newPathName.startsWith(`/${value}`)) {
-        newPathName = `/${value}${newPathName}`;
+      // More precise path replacement - only replace at the beginning
+      let newPathName = pathname;
+      if (pathname.startsWith(`/${locale}/`)) {
+        // Replace locale at the beginning of path
+        newPathName = pathname.replace(`/${locale}/`, `/${value}/`);
+      } else if (pathname === `/${locale}`) {
+        // Handle root locale path
+        newPathName = `/${value}`;
+      } else {
+        // Fallback: prepend new locale
+        newPathName = `/${value}${pathname}`;
       }
       router.push(newPathName);
     }

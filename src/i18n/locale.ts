@@ -17,4 +17,5 @@ export const defaultLocale = "en";
 
 export const localePrefix = "as-needed";
 
-export const localeDetection = false;
+export const localeDetection = 
+  process.env.NEXT_PUBLIC_LOCALE_DETECTION === "true";

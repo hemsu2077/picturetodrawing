@@ -310,7 +310,7 @@ export default function Header({ header }: { header: HeaderType }) {
                           key={i} 
                           variant={item.variant}
                           className={cn(
-                            item.title === "Free Credits" && 
+                            item.variant === "outline" &&
                             "border-none bg-gradient-to-r from-purple-50/80 to-orange-50/80 hover:from-purple-100/90 hover:to-orange-100/90 text-primary/90 hover:text-purple-800 shadow-sm hover:shadow-md transition-all duration-200"
                           )}
                           onClick={(e) => handleFreeCreditsClick(e, item.url as string)}
@@ -321,7 +321,7 @@ export default function Header({ header }: { header: HeaderType }) {
                                 name={item.icon}
                                 className={cn(
                                   "size-4 shrink-0",
-                                  item.title === "Free Credits" && "text-orange-500"
+                                  item.variant === "outline" && "text-orange-500"
                                 )}
                               />
                             )}
