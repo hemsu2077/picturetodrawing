@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "Crédits gratuits - Photo en dessin",
+    "description": "Gagnez des crédits gratuits en pointant quotidiennement ! Complétez des défis et obtenez des récompenses.",
+    "robots": {
+      "index": false,
+      "follow": false
+    }
+  },
+  "hero": {
+    "title": "Crédits gratuits",
+    "description": "Gagnez des crédits gratuits en pointant quotidiennement ! Complétez des défis et obtenez des récompenses."
+  }
+}

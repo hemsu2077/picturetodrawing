@@ -1,0 +1,328 @@
+{
+  "meta": {
+    "title": "Convertir photo en dessin au trait - Essai gratuit",
+    "description": "Convertissez des photos en dessins au trait sans effort. Transformez n'importe quelle photo en dessin au trait net pour broderie, tatouages, artisanat et art numérique."
+  },
+  "hero": {
+    "title": "Transformez instantanément une photo en dessin au trait",
+    "announcement": {
+      "label": "NOUVEAU",
+      "title": "🍌 Nano Banana",
+      "url": "/photo-to-line-drawing#drawing-generator"
+    },
+    "highlight_text": "photo en dessin au trait",
+    "description": "Convertissez n'importe quelle photo en dessin au trait net et professionnel sans compétences artistiques.",
+    "tip": "Essai gratuit, 100% sécurisé, résultats instantanés",
+    "tip_items": [
+      {
+        "text": "Essai gratuit",
+        "icon": "Gift"
+      },
+      {
+        "text": "100% sécurisé",
+        "icon": "Shield"
+      },
+      {
+        "text": "Sans inscription",
+        "icon": "Zap"
+      }
+    ],
+    "buttons": [
+      {
+        "title": "Essayer gratuitement",
+        "icon": "RiFlashlightFill",
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self",
+        "variant": "default"
+      }
+    ],
+    "show_happy_users": true,
+    "show_badge": false
+  },
+  "showcase": {
+    "name": "showcase",
+    "title": "Résultats époustouflants de conversion photo en dessin au trait pour toutes les catégories",
+    "items": [
+      {
+        "title": "Transformation de portrait en dessin au trait",
+        "description": "Transformez des portraits en dessins au trait élégants avec une précision artistique.",
+        "label": "Portrait",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-portrait.webp",
+          "alt": "Portrait transformé en dessin au trait"
+        },
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self"
+      },
+      {
+        "title": "Style architectural en dessin au trait",
+        "description": "Transformez des photos architecturales en dessins au trait précis pour usage technique.",
+        "label": "Architecture",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
+          "alt": "Architecture transformée en dessin au trait"
+        },
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self"
+      },
+      {
+        "title": "Photo de produit en dessin au trait pour design",
+        "description": "Convertissez des photos de produits en dessins au trait nets pour documentation de design.",
+        "label": "Produit",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
+          "alt": "Produit transformé en dessin au trait"
+        },
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self"
+      },
+      {
+        "title": "Illustration de véhicule en dessin au trait",
+        "description": "Convertissez des photos de véhicules en dessins au trait techniques pour projets de documentation.",
+        "label": "Véhicule",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
+          "alt": "Véhicule transformé en dessin au trait"
+        },
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self"
+      },
+      {
+        "title": "Art de nature en dessin au trait",
+        "description": "Transformez des photos de nature en dessins au trait artistiques mettant en valeur la beauté naturelle.",
+        "label": "Nature",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
+          "alt": "Nature transformée en dessin au trait"
+        },
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self"
+      },
+      {
+        "title": "Conversion de photo d'animal en dessin au trait",
+        "description": "Transformez les photos de vos animaux bien-aimés en dessins au trait qui capturent leur personnalité unique.",
+        "label": "Animal",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-pet.webp",
+          "alt": "Animal transformé en dessin au trait"
+        },
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self"
+      }
+    ]
+  },
+  "feature": {
+    "name": "feature",
+    "title": "Fonctionnalités de conversion photo en dessin au trait",
+    "description": "Que vous soyez amateur, designer professionnel ou artisan, notre outil de conversion photo en dessin au trait vous offre tout ce dont vous avez besoin.",
+    "items": [
+      {
+        "title": "Aucune compétence en dessin requise",
+        "description": "Transformez n'importe quelle photo en dessin au trait professionnel sans aucune formation artistique. Parfait pour les débutants comme pour les experts.",
+        "icon": "RiMagicLine"
+      },
+      {
+        "title": "Traitement ultra-rapide",
+        "description": "Obtenez vos dessins au trait en quelques secondes, pas en heures. Notre IA optimisée garantit des temps de traitement rapides pour tous vos projets.",
+        "icon": "RiFlashlightLine"
+      },
+      {
+        "title": "Paramètres personnalisables",
+        "description": "Ajustez l'épaisseur des traits, le niveau de détail et le contraste pour obtenir le style de dessin au trait parfait pour vos besoins spécifiques.",
+        "icon": "RiSettings3Line"
+      },
+      {
+        "title": "Formats de sortie multiples",
+        "description": "Téléchargez vos dessins au trait au format PNG, SVG ou PDF. Compatible avec les logiciels de broderie, les découpeuses laser et les programmes de design.",
+        "icon": "RiDownloadLine"
+      },
+      {
+        "title": "Confidentialité protégée",
+        "description": "Vos photos sont traitées de manière sécurisée et ne sont jamais stockées sur nos serveurs. Confidentialité et protection des données garanties.",
+        "icon": "RiShieldCheckLine"
+      },
+      {
+        "title": "Fonctionne partout",
+        "description": "Utilisez notre convertisseur photo en dessin au trait sur n'importe quel appareil - ordinateur, tablette ou mobile. Aucune installation de logiciel requise.",
+        "icon": "RiSmartphoneLine"
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "Comment fonctionne la conversion photo en dessin au trait",
+    "description": "Notre technologie IA avancée convertit vos photos en dessins au trait nets en seulement 3 étapes simples.",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "image_position": "left",
+    "text_align": "center",
+    "items": [
+      {
+        "title": "Téléchargez votre photo",
+        "description": "Glissez-déposez simplement votre image ou sélectionnez-la depuis votre appareil. Nous supportons tous les formats photo courants incluant JPG, PNG, WebP et HEIC.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+        }
+      },
+      {
+        "title": "Choisissez le style de dessin au trait",
+        "description": "Notre algorithme intelligent analyse votre photo pour identifier les contours, bords et détails importants, créant une conversion en dessin au trait nette.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
+        }
+      },
+      {
+        "title": "Téléchargez votre œuvre d'art",
+        "description": "Obtenez votre dessin au trait de haute qualité dans plusieurs formats. Parfait pour impression, projets numériques ou importation dans des logiciels de design.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Questions fréquentes sur la conversion photo en dessin au trait",
+    "description": "Tout ce que vous devez savoir sur la conversion de photos en dessins au trait",
+    "items": [
+      {
+        "title": "Quels types de photos fonctionnent le mieux pour la conversion en dessin au trait ?",
+        "description": "Les photos avec des sujets clairs et un bon contraste donnent les meilleurs résultats. Les portraits, animaux, bâtiments et objets aux contours définis produisent d'excellents dessins au trait. Notre IA peut gérer diverses conditions d'éclairage et s'ajuste automatiquement pour un résultat optimal."
+      },
+      {
+        "title": "Puis-je utiliser les dessins au trait pour des projets commerciaux ?",
+        "description": "Oui ! Tous les dessins au trait créés avec notre outil de conversion photo en dessin au trait peuvent être utilisés pour des projets personnels et commerciaux. Vous conservez tous les droits sur vos images converties et pouvez les utiliser pour produits, marketing ou toute application professionnelle."
+      },
+      {
+        "title": "Quels formats de fichiers sont pris en charge pour téléchargement et téléchargement ?",
+        "description": "Téléchargement : JPG, PNG, HEIC, WebP et la plupart des formats image courants. Téléchargement : PNG haute qualité pour graphiques raster, SVG pour dessins au trait vectoriels évolutifs, et PDF pour impression. Choisissez le format qui convient le mieux à votre cas d'usage."
+      },
+      {
+        "title": "Combien de temps prend la conversion photo en dessin au trait ?",
+        "description": "Le temps de traitement dépend de votre type de compte : les utilisateurs gratuits peuvent s'attendre à des conversions en 50-60 secondes, tandis que les abonnés premium bénéficient d'un traitement prioritaire avec résultats en seulement 20-30 secondes. La taille et la complexité de l'image peuvent légèrement affecter le temps de traitement, mais nos serveurs IA optimisés garantissent une qualité constante."
+      },
+      {
+        "title": "Mes données photo sont-elles sécurisées et privées ?",
+        "description": "Absolument. Vos photos sont traitées de manière sécurisée et automatiquement supprimées de nos serveurs après conversion. Nous ne stockons, partageons ou n'utilisons jamais vos images à d'autres fins que la création de votre dessin au trait. Votre vie privée est notre priorité absolue."
+      },
+      {
+        "title": "Puis-je ajuster l'épaisseur des traits et le niveau de détail ?",
+        "description": "Non, vous ne pouvez pas ajuster l'épaisseur des traits et le niveau de détail."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Prêt à transformer vos photos ?",
+    "description": "Rejoignez des milliers de créateurs qui utilisent notre outil de conversion photo en dessin au trait pour donner vie à leurs idées. Commencez à convertir vos images aujourd'hui.",
+    "buttons": [
+      {
+        "title": "Convertissez votre première photo gratuitement",
+        "url": "/photo-to-line-drawing#drawing-generator",
+        "target": "_self",
+        "icon": "GoArrowUpRight"
+      }
+    ]
+  },
+ 
+  
+  "use_cases": {
+    "name": "use_cases",
+    "title": "Applications de conversion photo en dessin au trait dans divers secteurs",
+    "description": "Des projets personnels aux applications professionnelles, découvrez comment la conversion photo en dessin au trait transforme les flux de travail créatifs dans tous les secteurs.",
+    "items": [
+      {
+        "title": "Artisanat et loisirs",
+        "description": "Transformez vos photos en motifs et guides pratiques pour vos projets créatifs.",
+        "icon": "RiScissorsLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-coloring-page.webp",
+          "alt": "cas d'usage photo en dessin au trait - page à colorier"
+        },
+        "children": [
+          "Motifs de broderie à partir de photos de famille",
+          "Pages à colorier personnalisées pour enfants",
+          "Guides pour pyrogravure et gravure",
+          "Pochoirs pour projets de peinture"
+        ]
+      },
+      {
+        "title": "Art numérique et design",
+        "description": "Utilisez la conversion photo en dessin au trait comme base pour vos créations numériques.",
+        "icon": "RiPaintBrushLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-logo.webp",
+          "alt": "cas d'usage photo en dessin au trait - logo"
+        },
+        "children": [
+          "Couches de base pour peintures numériques",
+          "Guides de référence pour illustrations",
+          "Création de logos minimalistes",
+          "Graphiques pour sites web et applications"
+        ]
+      },
+      {
+        "title": "Cadeaux personnalisés",
+        "description": "Créez des cadeaux significatifs avec des conversions photo en dessin au trait.",
+        "icon": "RiGiftLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-t-shirt.webp",
+          "alt": "cas d'usage photo en dessin au trait - t-shirt"
+        },
+        "children": [
+          "Portraits d'animaux sur mugs personnalisés",
+          "Dessins au trait de famille pour décoration murale",
+          "Designs de t-shirts personnalisés",
+          "Œuvres d'art d'affiche personnalisées"
+        ]
+      },
+      {
+        "title": "Fabrication professionnelle",
+        "description": "Convertissez des photos en dessins au trait précis pour applications industrielles.",
+        "icon": "RiSettings3Line",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-manufacturing.webp",
+          "alt": "cas d'usage photo en dessin au trait - fabrication"
+        },
+        "children": [
+          "Génération de trajectoires pour découpe laser",
+          "Parcours d'outils pour machines CNC",
+          "Création d'art pour traceur",
+          "Simplification de diagrammes techniques"
+        ]
+      },
+      {
+        "title": "Tatouage et art corporel",
+        "description": "La conversion photo en dessin au trait crée des modèles parfaits pour l'art corporel.",
+        "icon": "RiHeartLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-tattoo.webp",
+          "alt": "cas d'usage photo en dessin au trait - tatouage"
+        },
+        "children": [
+          "Modèles pour designs de tatouage",
+          "Création de motifs pour henné",
+          "Pochoirs pour art corporel",
+          "Visuels pour consultation avec artiste"
+        ]
+      },
+      {
+        "title": "Éducation et formation",
+        "description": "Simplifiez des images complexes en supports pédagogiques clairs.",
+        "icon": "RiGraduationCapLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-education.webp",
+          "alt": "cas d'usage photo en dessin au trait - éducation"
+        },
+        "children": [
+          "Diagrammes anatomiques simplifiés",
+          "Contours d'équipements techniques",
+          "Graphiques pour matériel pédagogique",
+          "Fiches d'activité pour étudiants"
+        ]
+      }
+    ]
+  }
+}

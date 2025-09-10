@@ -1,0 +1,515 @@
+{
+  "template": "picturetodrawing-template-one",
+  "theme": "light",
+  "header": {
+    "brand": {
+      "title": "PicturetoDrawing",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "PicturetoDrawing"
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Outils de dessin IA",
+          "children": [
+            {
+              "title": "Photo en dessin",
+              "url": "/",
+              "target": "_self",
+              "icon": "RiBrushLine"
+            },
+            {
+              "title": "Photo en dessin au trait",
+              "url": "/photo-to-line-drawing",
+              "target": "_self",
+              "icon": "RiColorFilterAiLine"
+            }
+          ]
+        },
+        {
+          "title": "Tarifs",
+          "url": "/pricing",
+          "icon": ""
+        },
+        {
+          "title": "Mes dessins",
+          "url": "/my-drawings",
+          "icon": ""
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "title": "Crédits gratuits",
+        "url": "/free-credits",
+        "target": "_self",
+        "variant": "outline",
+        "icon": "RiGiftLine"
+      }
+    ],
+
+    "show_sign": true,
+    "show_theme": false,
+    "show_locale": true
+  },
+  "hero": {
+    "title": "Transformez votre photo en dessin en quelques secondes",
+    "highlight_text": "photo en dessin",
+    "description": "Découvrez la magie de la conversion photo en croquis grâce à l'IA",
+    "announcement": {
+      "label": "NOUVEAU",
+      "title": "🍌 Nano Banana",
+      "url": "/#drawing-generator"
+    },
+    "tip": "Essai gratuit, 100% sécurisé, résultats instantanés",
+    "tip_items": [
+      {
+        "text": "Essai gratuit",
+        "icon": "Gift"
+      },
+      {
+        "text": "100% sécurisé",
+        "icon": "Shield"
+      },
+      {
+        "text": "Pas d'inscription requise",
+        "icon": "Zap"
+      }
+    ],
+    "buttons": [
+      {
+        "title": "Essayer gratuitement",
+        "icon": "RiFlashlightFill",
+        "url": "/#drawing-generator",
+        "target": "_self",
+        "variant": "default"
+      }
+    ],
+    "show_happy_users": true,
+    "show_badge": false
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "Résultats photo en dessin de qualité professionnelle",
+    "label": "Présentation",
+    "description": "",
+    "image": {
+      "src": "https://files.picturetodrawing.com/sample/draw-introduce.mp4"
+    },
+    "items": [
+      {
+        "title": "Rendu artistique authentique",
+        "description": "Chaque conversion photo en croquis préserve les textures naturelles, les ombres et les détails qui donnent à votre dessin l'apparence d'une œuvre réalisée à la main par un artiste professionnel.",
+        "icon": "RiPaintBrushLine"
+      },
+      {
+        "title": "Sortie haute résolution",
+        "description": "Téléchargez vos conversions photo en dessin en haute résolution, parfaites pour l'impression, le encadrement ou le partage sur les réseaux sociaux.",
+        "icon": "RiHdLine"
+      },
+      {
+        "title": "Vie privée protégée",
+        "description": "Vos photos sont traitées de manière sécurisée et automatiquement supprimées après conversion. Nous ne stockons ni ne partageons jamais vos images personnelles.",
+        "icon": "RiShieldCheckLine"
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "Pourquoi choisir notre convertisseur photo en dessin ?",
+    "label": "Avantages",
+    "description": "Transformez n'importe quelle photo en dessin avec des styles artistiques authentiques et une conservation des détails incroyable.",
+    "items": [
+      {
+        "title": "Technologie IA avancée",
+        "description": "Notre intelligence artificielle de pointe analyse chaque détail de votre photo pour créer des conversions photo en dessin authentiques qui préservent l'essence et l'émotion de votre image originale.",
+        "icon": "RiBrainLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+        }
+      },
+      {
+        "title": "Styles artistiques multiples",
+        "description": "Choisissez parmi des croquis au crayon, des dessins au fusain, des aquarelles et des illustrations à l'encre. Chaque style photo en croquis est soigneusement conçu pour offrir des interprétations artistiques uniques de vos photos.",
+        "icon": "RiPaletteLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
+        }
+      },
+      {
+        "title": "Traitement rapide comme l'éclair",
+        "description": "Découvrez une transformation instantanée photo en dessin. Nos serveurs optimisés traitent votre conversion photo en croquis en quelques secondes, pas en minutes, offrant des résultats professionnels sans attente.",
+        "icon": "RiFlashlightLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "Comment convertir une photo en dessin",
+    "description": "Transformez n'importe quelle photo en croquis ou dessin artistique avec notre processus intuitif. Aucune compétence technique nécessaire - suivez simplement ces étapes simples pour créer des conversions photo en dessin époustouflantes.",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "image_position": "left",
+    "text_align": "center",
+    "items": [
+      {
+        "title": "Téléchargez votre photo",
+        "description": "Glissez-déposez simplement votre image ou cliquez pour parcourir. Notre convertisseur photo en dessin prend en charge JPG, PNG et autres formats populaires. Votre photo sera traitée de manière sécurisée avec une protection complète de la vie privée.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+        }
+      },
+      {
+        "title": "Choisissez votre style artistique",
+        "description": "Sélectionnez parmi notre collection de styles artistiques incluant croquis au crayon, dessin au fusain, aquarelle et illustration à l'encre. Chaque style photo en dessin offre des qualités esthétiques uniques pour votre transformation photo en dessin.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
+        }
+      },
+      {
+        "title": "Téléchargez votre œuvre",
+        "description": "Regardez notre IA transformer votre photo en dessin en quelques secondes. Prévisualisez votre résultat photo en dessin converti et téléchargez-le en haute résolution. Parfait pour l'impression, le partage ou la création de cadeaux personnalisés.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Questions fréquentes sur la conversion photo en dessin",
+    "description": "Obtenez des réponses aux questions courantes sur notre convertisseur photo en croquis et la technologie photo en dessin.",
+    "items": [
+      {
+        "title": "Comment fonctionne la technologie IA photo en dessin ?",
+        "description": "Notre intelligence artificielle avancée analyse la composition, l'éclairage, les textures et les détails de votre photo pour créer des conversions photo en dessin authentiques. L'IA comprend les techniques artistiques comme l'ombrage, l'épaisseur des lignes et le rendu des textures pour produire des résultats photo en croquis qui imitent les œuvres d'art traditionnelles dessinées à la main. Contrairement aux filtres simples, notre technologie préserve l'essence émotionnelle et les détails fins de votre photo originale."
+      },
+      {
+        "title": "Quels styles artistiques sont disponibles pour la conversion photo en croquis ?",
+        "description": "Notre convertisseur photo en dessin offre plusieurs styles artistiques incluant des croquis au crayon réalistes, des dessins au fusain dramatiques, des aquarelles délicates, des illustrations à l'encre audacieuses et des œuvres aux crayons de couleur. Chaque style photo en croquis utilise différents algorithmes pour obtenir des effets artistiques authentiques. Vous pouvez expérimenter divers styles pour trouver l'esthétique photo en dessin parfaite pour votre image."
+      },
+      {
+        "title": "Ma photo est-elle en sécurité lorsque j'utilise votre service photo en dessin ?",
+        "description": "Absolument ! La vie privée et la sécurité sont nos priorités absolues. Vos photos sont traitées sur des serveurs sécurisés et automatiquement supprimées après la fin de votre conversion photo en dessin. Nous ne stockons, ne partageons ni n'utilisons jamais vos images pour d'autres purposes. Tout le traitement photo en croquis se fait via des connexions cryptées, garantissant que vos photos personnelles restent complètement privées et sécurisées."
+      },
+      {
+        "title": "Combien de temps prend la conversion photo en dessin ?",
+        "description": "Le temps de traitement dépend de votre type de compte : les utilisateurs gratuits peuvent s'attendre à des conversions terminées en 50-60 secondes, tandis que les abonnés premium bénéficient d'un traitement prioritaire avec des résultats en seulement 20-30 secondes. La taille et la complexité de l'image peuvent légèrement affecter le temps de traitement, mais nos serveurs IA optimisés assurent une qualité constante quelle que soit la vitesse."
+      },
+      {
+        "title": "Quelle résolution puis-je télécharger pour mes résultats photo en croquis ?",
+        "description": "Vous pouvez télécharger vos conversions photo en dessin en plusieurs résolutions, y compris la résolution complète de votre photo originale. Notre IA maintient la qualité de l'image tout au long du processus photo en croquis, garantissant que vos dessins artistiques conviennent à l'impression, à un usage professionnel ou au partage sur les réseaux sociaux de haute qualité. Les utilisateurs premium peuvent accéder à des sorties de résolution encore plus élevées pour l'impression grand format et les applications commerciales."
+      },
+      {
+        "title": "Puis-je utiliser le convertisseur photo en dessin sur les appareils mobiles ?",
+        "description": "Oui ! Notre convertisseur photo en croquis fonctionne parfaitement sur les smartphones et tablettes. Le design responsive assure une conversion photo en dessin transparente sur tous les appareils. Vous pouvez télécharger des photos directement depuis votre appareil photo mobile ou votre galerie, appliquer des styles artistiques et télécharger les résultats instantanément. L'expérience mobile conserve toutes les fonctionnalités et la qualité de la version bureau, rendant la transformation artistique photo en croquis disponible partout."
+      },
+      {
+        "title": "Dois-je m'inscrire pour utiliser le convertisseur photo en dessin ?",
+        "description": "Bien que la création d'un compte débloque le plein potentiel de notre service photo en dessin, vous pouvez essayer notre convertisseur photo en croquis sans vous inscrire ! Chaque jour, vous obtenez une conversion photo en dessin gratuite pour expérimenter notre technologie IA. Une fois votre essai quotidien utilisé, vous devrez créer un compte pour continuer à transformer vos photos en dessins. Les utilisateurs inscrits bénéficient de conversions photo en dessin illimitées, de vitesses de traitement plus rapides et d'un accès aux styles artistiques premium pour leurs créations photo en croquis."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Prêt à transformer vos photos en dessins époustouflants ?",
+    "description": "Rejoignez des milliers d'utilisateurs satisfaits qui font confiance à notre convertisseur photo en croquis alimenté par l'IA. Découvrez des résultats photo en dessin de qualité professionnelle en quelques secondes, avec une protection complète de la vie privée et des styles artistiques authentiques.",
+    "buttons": [
+      {
+        "title": "Commencez votre conversion photo en dessin maintenant",
+        "url": "/#drawing-generator",
+        "target": "_self",
+        "icon": "GoArrowUpRight"
+      }
+    ]
+  },
+ 
+  "transformation_examples": {
+    "name": "transformation_examples",
+    "title": "Exemples de transformation photo en dessin",
+    "description": "Découvrez les résultats incroyables de notre convertisseur photo en dessin alimenté par l'IA. Ces exemples réels démontrent la qualité et l'authenticité artistique de notre technologie photo en dessin sur différents sujets et styles.",
+    "items": [
+      {
+        "title": "Croquis au crayon",
+        "description": "Dessin au crayon graphite classique avec un ombrage réaliste et une conservation des détails fins. Parfait pour créer des œuvres d'art intemporelles et élégantes qui capturent l'essence de votre photo originale avec des textures subtiles et des dégradés naturels.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch.webp"
+        },
+        "children": [
+          {
+            "description": "Idéal pour les portraits, les dessins architecturaux et les illustrations détaillées où la précision et les valeurs artistiques traditionnelles comptent le plus."
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Convertissez votre photo en dessin",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "Dessin au trait",
+        "description": "Art linéaire épuré et minimaliste avec des traits audacieux et des contours clairs. Crée des œuvres d'art modernes et frappantes qui mettent l'accent sur la forme et la structure tout en éliminant les détails superflus pour une esthétique contemporaine.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-line-drawing.webp"
+        },
+        "children": [
+          {
+            "description": "Parfait pour les logos, les illustrations techniques et les projets de design graphique moderne qui nécessitent clarté et impact visuel."
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Convertissez votre photo en dessin",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "Dessin aux crayons de couleur",
+        "description": "Œuvre vibrante aux crayons de couleur avec des textures riches et des couleurs superposées. Donne vie à vos photos avec la chaleur et le caractère des illustrations coloriées à la main, en préservant les variations de couleur subtiles.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing.webp"
+        },
+        "children": [
+          {
+            "description": "Excellent pour les portraits d'enfants, les illustrations d'animaux et les œuvres où la couleur joue un rôle crucial dans l'expression émotionnelle."
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Convertissez votre photo en dessin",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "Aquarelle",
+        "description": "Effets d'aquarelle doux et fluides avec de magnifiques mélanges de couleurs et des coups de pinceau artistiques. Crée des œuvres d'art oniriques et éthérées avec la transparence délicate et le flux organique des aquarelles traditionnelles.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting.webp"
+        },
+        "children": [
+          {
+            "description": "Parfait pour les paysages, les arrangements floraux et les projets artistiques qui bénéficient d'une esthétique romantique et picturale."
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Convertissez votre photo en dessin",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      }
+    ]
+  },
+  "perfect_uses": {
+    "name": "perfect_uses",
+    "title": "Utilisations parfaites pour la conversion photo en dessin",
+    "description": "Découvrez les possibilités infinies de notre technologie photo en dessin. Des cadeaux personnels aux projets professionnels, notre convertisseur photo en dessin sert des besoins créatifs divers avec une qualité exceptionnelle.",
+    "items": [
+      {
+        "title": "Cadeaux personnalisés",
+        "description": "Créez des cadeaux uniques et pleins de cœur en convertissant des photos de famille précieuses en dessins artistiques. Parfait pour les anniversaires, les fêtes et les occasions spéciales qui méritent des souvenirs photo en dessin mémorables.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-gift.webp?v=20250815"
+        }
+      },
+      {
+        "title": "Contenu pour les réseaux sociaux",
+        "description": "Démarquez-vous sur Instagram, Facebook et autres plateformes avec du contenu artistique photo en dessin. Nos styles photo en dessin créent des publications engageantes qui captent l'attention et augmentent l'engagement.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-social.webp?v=20250815"
+        }
+      },
+      {
+        "title": "Matériels marketing",
+        "description": "Améliorez les brochures, sites web et publicités avec des œuvres d'art photo en croquis distinctives. Notre convertisseur photo en dessin aide les entreprises à créer une identité visuelle mémorable qui se différencie des concurrents.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-marketing.webp?v=20250815"
+        }
+      },
+      {
+        "title": "Décoration intérieure",
+        "description": "Transformez vos photographies préférées en élégants muraux en utilisant notre technologie photo en dessin. Créez une décoration intérieure cohérente avec des œuvres d'art photo en croquis personnalisées qui reflètent votre style.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-decoration.webp?v=20250815"
+        }
+      },
+      {
+        "title": "Projets éducatifs",
+        "description": "Les enseignants et étudiants utilisent notre convertisseur photo en croquis pour l'éducation artistique, les présentations et les devoirs créatifs. La technologie photo en dessin aide à illustrer des concepts et à inspirer l'apprentissage artistique.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-educational.webp?v=20250815"
+        }
+      },
+      {
+        "title": "Portfolios créatifs",
+        "description": "Les artistes, designers et créatifs enrichissent leurs portfolios avec divers styles photo en croquis. Notre convertisseur photo en dessin démontre la polyvalence et la vision artistique à travers différents médiums.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-creative.webp?v=20250815"
+        }
+      }
+    ]
+  },
+  "comparison": {
+    "name": "comparison",
+    "title": "Notre IA photo en dessin vs les filtres traditionnels",
+    "description": "Comparez notre technologie photo en dessin avancée alimentée par l'IA avec les filtres photo de base. Découvrez la qualité supérieure et l'authenticité qui distinguent notre convertisseur photo en croquis de la concurrence.",
+    "items": [
+      {
+        "title": "Photo originale",
+        "description": "Photo numérique standard prête pour transformation artistique utilisant différentes méthodes.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/compare-original.webp"
+        }
+      },
+      {
+        "title": "Filtre traditionnel",
+        "description": "Apparence artificielle et surtraitée avec détails perdus et aspect photo en croquis irréaliste.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/compare-traditional.webp"
+        }
+      },
+      {
+        "title": "Notre résultat IA",
+        "description": "Photo en dessin authentique et détaillée avec textures préservées et flux artistique naturel.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/compare-ai.webp"
+        }
+      }
+    ]
+  },
+  "ai_excellence": {
+    "name": "ai_excellence",
+    "title": "Pourquoi notre IA photo en dessin excelle",
+    "description": "Notre technologie d'intelligence artificielle de pointe établit de nouvelles normes en conversion photo en croquis, offrant une qualité et une authenticité artistique inégalées.",
+    "items": [
+      {
+        "title": "Réseaux neuronaux avancés",
+        "description": "Notre IA utilise des algorithmes d'apprentissage profond sophistiqués entraînés sur des millions d'échantillons artistiques pour comprendre et répliquer des techniques de dessin authentiques."
+      },
+      {
+        "title": "Adaptation de style",
+        "description": "La technologie s'adapte automatiquement à différents types d'images, optimisant la conversion photo en dessin pour les portraits, paysages et autres sujets."
+      },
+      {
+        "title": "Contrôle qualité",
+        "description": "Des vérifications de qualité intégrées garantissent que chaque conversion photo en croquis répond à nos normes élevées d'excellence artistique et de conservation des détails."
+      },
+      {
+        "title": "Apprentissage continu",
+        "description": "Notre IA s'améliore constamment grâce aux retours des utilisateurs et aux nouvelles données d'entraînement, garantissant que les résultats photo en dessin s'améliorent avec le temps."
+      }
+    ],
+    "image": {
+      "src": "/imgs/ai-excellence/technology.jpg"
+    },
+    "buttons": [
+      {
+        "title": "Découvrez l'excellence IA",
+        "url": "/pricing",
+        "target": "_self",
+        "icon": "RiRobot2Line"
+      }
+    ]
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "PicturetoDrawing",
+      "description": "Transformez vos photos en œuvres d'art époustouflantes avec notre convertisseur photo en dessin alimenté par l'IA. Résultats photo en croquis de qualité professionnelle en quelques secondes.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "PicturetoDrawing"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2025 • PicturetoDrawing Tous droits réservés.",
+    "nav": {
+      "items": [
+        {
+          "title": "À propos",
+          "children": [
+            {
+              "title": "Photo en dessin",
+              "url": "/",
+              "target": "_self"
+            },
+            {
+              "title": "Photo en dessin au trait",
+              "url": "/photo-to-line-drawing",
+              "target": "_self"
+            },
+            {
+              "title": "Tarifs",
+              "url": "/pricing",
+              "target": "_self"
+            },
+            {
+              "title": "Mes dessins",
+              "url": "/my-drawings",
+              "target": "_self"
+            },
+            {
+              "title": "Crédits gratuits",
+              "url": "/free-credits",
+              "target": "_self"
+            },
+            {
+              "title": "Contactez-nous",
+              "url": "mailto:hi@picturetodrawing.com",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "Email",
+          "icon": "RiMailLine",
+          "url": "mailto:hi@picturetodrawing.com",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "Politique de confidentialité",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Conditions d'utilisation",
+          "url": "/terms-of-service"
+        },
+        {
+          "title": "Politique de remboursement",
+          "url": "/refund-policy"
+        }
+      ]
+    }
+  }
+}
