@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "Créditos Gratis - Foto en Dibujo",
+    "description": "¡Gana créditos gratis registrándote diariamente! Completa desafíos y obtén recompensas.",
+    "robots": {
+      "index": false,
+      "follow": false
+    }
+  },
+  "hero": {
+    "title": "Créditos Gratis",
+    "description": "¡Gana créditos gratis registrándote diariamente! Completa desafíos y obtén recompensas."
+  }
+}

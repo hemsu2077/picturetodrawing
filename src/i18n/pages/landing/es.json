@@ -1,0 +1,515 @@
+{
+  "template": "picturetodrawing-template-one",
+  "theme": "light",
+  "header": {
+    "brand": {
+      "title": "Foto en Dibujo",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "Foto en Dibujo"
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "Herramientas de Dibujo IA",
+          "children": [
+            {
+              "title": "Foto en Dibujo",
+              "url": "/",
+              "target": "_self",
+              "icon": "RiBrushLine"
+            },
+            {
+              "title": "Foto en Dibujo de líneas",
+              "url": "/photo-to-line-drawing",
+              "target": "_self",
+              "icon": "RiColorFilterAiLine"
+            }
+          ]
+        },
+        {
+          "title": "Precios",
+          "url": "/pricing",
+          "icon": ""
+        },
+        {
+          "title": "Mis Dibujos",
+          "url": "/my-drawings",
+          "icon": ""
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "title": "Créditos Gratis",
+        "url": "/free-credits",
+        "target": "_self",
+        "variant": "outline",
+        "icon": "RiGiftLine"
+      }
+    ],
+
+    "show_sign": true,
+    "show_theme": false,
+    "show_locale": true
+  },
+  "hero": {
+    "title": "Transforma tu Foto en Dibujo en Segundos",
+    "highlight_text": "Foto en Dibujo",
+    "description": "Experimenta la magia de la conversión de fotos a bocetos con IA",
+    "announcement": {
+      "label": "NUEVO",
+      "title": "🍌 Nano Banana",
+      "url": "/#drawing-generator"
+    },
+    "tip": "Gratis para Probar, 100% Seguro, Resultados Instantáneos",
+    "tip_items": [
+      {
+        "text": "Gratis para Probar",
+        "icon": "Gift"
+      },
+      {
+        "text": "100% Seguro",
+        "icon": "Shield"
+      },
+      {
+        "text": "Sin Registro Requerido",
+        "icon": "Zap"
+      }
+    ],
+    "buttons": [
+      {
+        "title": "Probar Gratis",
+        "icon": "RiFlashlightFill",
+        "url": "/#drawing-generator",
+        "target": "_self",
+        "variant": "default"
+      }
+    ],
+    "show_happy_users": true,
+    "show_badge": false
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "Resultados de Calidad Profesional de Foto a Dibujo",
+    "label": "Introducción",
+    "description": "",
+    "image": {
+      "src": "https://files.picturetodrawing.com/sample/draw-introduce.mp4"
+    },
+    "items": [
+      {
+        "title": "Renderizado Artístico Auténtico",
+        "description": "Cada conversión de foto a boceto preserva texturas naturales, sombras y detalles que hacen que tu dibujo parezca creado a mano por un artista profesional.",
+        "icon": "RiPaintBrushLine"
+      },
+      {
+        "title": "Salida de Alta Resolución",
+        "description": "Descarga tus conversiones de foto a dibujo en alta resolución, perfectas para imprimir, enmarcar o compartir en redes sociales.",
+        "icon": "RiHdLine"
+      },
+      {
+        "title": "Privacidad Protegida",
+        "description": "Tus fotos se procesan de forma segura y se eliminan automáticamente después de la conversión. Nunca almacenamos ni compartimos tus imágenes personales.",
+        "icon": "RiShieldCheckLine"
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "¿Por qué Elegir Nuestro Convertidor de Foto a Dibujo?",
+    "label": "Beneficios",
+    "description": "Transforma cualquier foto en dibujo con estilos artísticos auténticos y una increíble preservación de detalles.",
+    "items": [
+      {
+        "title": "Tecnología de IA Avanzada",
+        "description": "Nuestra inteligencia artificial de vanguardia analiza cada detalle de tu foto para crear conversiones auténticas de foto a dibujo que mantienen la esencia y emoción de tu imagen original.",
+        "icon": "RiBrainLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+        }
+      },
+      {
+        "title": "Múltiples Estilos Artísticos",
+        "description": "Elige entre bocetos a lápiz, dibujos al carbón, pinturas a acuarela e ilustraciones con tinta. Cada estilo de foto a boceto está cuidadosamente elaborado para ofrecer interpretaciones artísticas únicas de tus fotos.",
+        "icon": "RiPaletteLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
+        }
+      },
+      {
+        "title": "Procesamiento Relámpago",
+        "description": "Experimenta la transformación instantánea de foto a dibujo. Nuestros servidores optimizados procesan tu conversión de foto a boceto en segundos, no en minutos, entregando resultados profesionales sin espera.",
+        "icon": "RiFlashlightLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "Cómo Convertir Foto en Dibujo",
+    "description": "Transforma cualquier foto en boceto o dibujo artístico con nuestro proceso intuitivo. No se necesitan habilidades técnicas, solo sigue estos simples pasos para crear impresionantes conversiones de foto a dibujo.",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "image_position": "left",
+    "text_align": "center",
+    "items": [
+      {
+        "title": "Sube tu Foto",
+        "description": "Simplemente arrastra y suelta tu imagen o haz clic para explorar. Nuestro convertidor de foto a dibujo admite JPG, PNG y otros formatos populares. Tu foto se procesará de forma segura con completa protección de privacidad.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+        }
+      },
+      {
+        "title": "Elige tu Estilo Artístico",
+        "description": "Selecciona de nuestra colección de estilos artísticos que incluye boceto a lápiz, dibujo al carbón, pintura a acuarela e ilustración con tinta. Cada estilo de foto a dibujo ofrece cualidades estéticas únicas para tu transformación.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
+        }
+      },
+      {
+        "title": "Descarga tu Obra de Arte",
+        "description": "Observa cómo nuestra IA transforma tu foto en dibujo en segundos. Previsualiza tu resultado de conversión y descárgalo en alta resolución. Perfecto para imprimir, compartir o crear regalos personalizados.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "Preguntas Frecuentes",
+    "title": "Preguntas Frecuentes sobre la Conversión de Foto a Dibujo",
+    "description": "Obtén respuestas a preguntas comunes sobre nuestro convertidor de foto a boceto y la tecnología de foto a dibujo.",
+    "items": [
+      {
+        "title": "¿Cómo funciona la tecnología IA de foto a dibujo?",
+        "description": "Nuestra inteligencia artificial avanzada analiza la composición, iluminación, texturas y detalles de tu foto para crear conversiones auténticas de foto a dibujo. La IA entiende técnicas artísticas como sombreado, grosor de línea y renderizado de texturas para producir resultados de foto a boceto que imitan obras de arte dibujadas a mano tradicionalmente. A diferencia de los filtros simples, nuestra tecnología preserva la esencia emocional y los detalles finos de tu fotografía original."
+      },
+      {
+        "title": "¿Qué estilos artísticos están disponibles para la conversión de foto a boceto?",
+        "description": "Nuestro convertidor de foto a dibujo ofrece múltiples estilos artísticos que incluyen bocetos realistas a lápiz, dibujos dramáticos al carbón, delicadas pinturas a acuarela, audaces ilustraciones con tinta y obras de arte a lápiz de color. Cada estilo de foto a boceto utiliza diferentes algoritmos para lograr efectos artísticos auténticos. Puedes experimentar con varios estilos para encontrar la estética perfecta de foto a dibujo para tu imagen."
+      },
+      {
+        "title": "¿Es segura mi foto al usar tu servicio de foto a dibujo?",
+        "description": "¡Absolutamente! La privacidad y seguridad son nuestras máximas prioridades. Tus fotos se procesan en servidores seguros y se eliminan automáticamente después de que se complete tu conversión de foto a dibujo. Nunca almacenamos, compartimos o usamos tus imágenes para ningún otro propósito. Todo el procesamiento de foto a boceto ocurre a través de conexiones cifradas, asegurando que tus fotos personales permanezcan completamente privadas y seguras."
+      },
+      {
+        "title": "¿Cuánto tiempo toma la conversión de foto a dibujo?",
+        "description": "El tiempo de procesamiento depende de tu tipo de cuenta: los usuarios gratuitos pueden esperar que las conversiones se completen en 50-60 segundos, mientras que los suscriptores premium disfrutan de procesamiento prioritario con resultados en solo 20-30 segundos. El tamaño y complejidad de la imagen pueden afectar ligeramente el tiempo de procesamiento, pero nuestros servidores de IA optimizados aseguran calidad consistente sin importar la velocidad."
+      },
+      {
+        "title": "¿Qué resolución puedo descargar para mis resultados de foto a boceto?",
+        "description": "Puedes descargar tus conversiones de foto a dibujo en múltiples resoluciones, incluyendo la resolución completa de tu foto original. Nuestra IA mantiene la calidad de la imagen durante todo el proceso de foto a boceto, asegurando que tus dibujos artísticos sean adecuados para imprimir, uso profesional o compartir en redes sociales de alta calidad. Los usuarios premium pueden acceder a salidas de aún mayor resolución para impresión de formato grande y aplicaciones comerciales."
+      },
+      {
+        "title": "¿Puedo usar el convertidor de foto a dibujo en dispositivos móviles?",
+        "description": "¡Sí! Nuestro convertidor de foto a boceto funciona perfectamente en smartphones y tabletas. El diseño responsivo asegura una conversión fluida de foto a dibujo en todos los dispositivos. Puedes subir fotos directamente desde tu cámara móvil o galería, aplicar estilos artísticos y descargar resultados instantáneamente. La experiencia móvil mantiene todas las características y calidad de la versión de escritorio, haciendo la transformación artística de foto a boceto disponible en cualquier lugar."
+      },
+      {
+        "title": "¿Necesito registrarme para usar el convertidor de foto a dibujo?",
+        "description": "Aunque crear una cuenta desbloquea todo el potencial de nuestro servicio de foto a dibujo, ¡puedes probar nuestro convertidor de foto a boceto sin registrarte! Cada día obtienes una conversión gratuita de foto a dibujo para experimentar nuestra tecnología IA. Una vez que usas tu prueba diaria, necesitarás crear una cuenta para continuar transformando tus fotos en dibujos. Los usuarios registrados disfrutan de conversiones ilimitadas de foto a dibujo, velocidades de procesamiento más rápidas y acceso a estilos artísticos premium para sus creaciones de foto a boceto."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "¿Listo para Transformar tus Fotos en Dibujos Espectaculares?",
+    "description": "Únete a miles de usuarios satisfechos que confían en nuestro convertidor de foto a boceto con IA. Experimenta resultados de calidad profesional de foto a dibujo en segundos, con completa protección de privacidad y estilos artísticos auténticos.",
+    "buttons": [
+      {
+        "title": "Comienza tu Conversión de Foto a Dibujo Ahora",
+        "url": "/#drawing-generator",
+        "target": "_self",
+        "icon": "GoArrowUpRight"
+      }
+    ]
+  },
+ 
+  "transformation_examples": {
+    "name": "transformation_examples",
+    "title": "Ejemplos de Transformación de Foto a Dibujo",
+    "description": "Ve los increíbles resultados de nuestro convertidor de foto a dibujo con IA. Estos ejemplos reales demuestran la calidad y autenticidad artística de nuestra tecnología de foto a dibujo en diferentes temas y estilos.",
+    "items": [
+      {
+        "title": "Boceto a Lápiz",
+        "description": "Dibujo clásico a lápiz de grafito con sombreado realista y preservación de detalles finos. Perfecto para crear obras de arte atemporales y elegantes que capturan la esencia de tu foto original con texturas sutiles y gradientes naturales.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch.webp"
+        },
+        "children": [
+          {
+            "description": "Ideal para retratos, dibujos arquitectónicos e ilustraciones detalladas donde la precisión y los valores artísticos tradicionales importan más."
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Convierte tu foto en dibujo",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "Dibujo de Líneas",
+        "description": "Arte de líneas limpio y minimalista con trazos audaces y contornos claros. Crea obras de arte modernas y llamativas que enfatizan la forma y estructura mientras eliminan detalles innecesarios para una estética contemporánea.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-line-drawing.webp"
+        },
+        "children": [
+          {
+            "description": "Perfecto para logos, ilustraciones técnicas y proyectos de diseño gráfico moderno que requieren claridad e impacto visual."
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Convierte tu foto en dibujo",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "Dibujo a Lápiz de Color",
+        "description": "Obra de arte vibrante a lápiz de color con texturas ricas y colores superpuestos. Da vida a tus fotos con el calor y carácter de ilustraciones coloreadas a mano, preservando variaciones sutiles de color.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing.webp"
+        },
+        "children": [
+          {
+            "description": "Excelente para retratos infantiles, ilustraciones de mascotas y obras de arte donde el color juega un papel crucial en la expresión emocional."
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Convierte tu foto en dibujo",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "Pintura a Acuarela",
+        "description": "Efectos suaves y fluidos de acuarela con hermosa mezcla de colores y pinceladas artísticas. Crea obras de arte oníricas y etéreas con la delicada transparencia y flujo orgánico de las pinturas a acuarela tradicionales.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting.webp"
+        },
+        "children": [
+          {
+            "description": "Perfecto para paisajes, arreglos florales y proyectos artísticos que se benefician de una estética romántica y pictórica."
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Convierte tu foto en dibujo",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      }
+    ]
+  },
+  "perfect_uses": {
+    "name": "perfect_uses",
+    "title": "Usos Perfectos para la Conversión de Foto a Dibujo",
+    "description": "Descubre las infinitas posibilidades de nuestra tecnología de foto a dibujo. Desde regalos personales hasta proyectos profesionales, nuestro convertidor de foto a dibujo satisface diversas necesidades creativas con calidad excepcional.",
+    "items": [
+      {
+        "title": "Regalos Personalizados",
+        "description": "Crea regalos únicos y sinceros convirtiendo fotos familiares queridas en dibujos artísticos. Perfectos para aniversarios, cumpleaños y ocasiones especiales que merecen recuerdos memorables de foto a dibujo.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-gift.webp?v=20250815"
+        }
+      },
+      {
+        "title": "Contenido para Redes Sociales",
+        "description": "Destácate en Instagram, Facebook y otras plataformas con contenido artístico de foto a dibujo. Nuestros estilos de foto a dibujo crean publicaciones atractivas que captan atención y aumentan el compromiso.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-social.webp?v=20250815"
+        }
+      },
+      {
+        "title": "Materiales de Marketing",
+        "description": "Mejora folletos, sitios web y anuncios con obras de arte distintivas de foto a boceto. Nuestro convertidor de foto a dibujo ayuda a las empresas a crear identidad visual memorable que las diferencia de la competencia.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-marketing.webp?v=20250815"
+        }
+      },
+      {
+        "title": "Decoración del Hogar",
+        "description": "Transforma tus fotografías favoritas en arte de pared elegante usando nuestra tecnología de foto a dibujo. Crea decoración del hogar cohesiva con obras de arte personalizadas de foto a boceto que reflejen tu estilo.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-decoration.webp?v=20250815"
+        }
+      },
+      {
+        "title": "Proyectos Educativos",
+        "description": "Profesores y estudiantes usan nuestro convertidor de foto a boceto para educación artística, presentaciones y asignaturas creativas. La tecnología de foto a dibujo ayuda a ilustrar conceptos e inspirar el aprendizaje artístico.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-educational.webp?v=20250815"
+        }
+      },
+      {
+        "title": "Portafolios Creativos",
+        "description": "Artistas, diseñadores y creativos mejoran sus portafolios con diversos estilos de foto a boceto. Nuestro convertidor de foto a dibujo demuestra versatilidad y visión artística a través de diferentes medios.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-creative.webp?v=20250815"
+        }
+      }
+    ]
+  },
+  "comparison": {
+    "name": "comparison",
+    "title": "Nuestra IA de Foto a Dibujo vs Filtros Tradicionales",
+    "description": "Compara nuestra tecnología avanzada de foto a dibujo con IA con filtros de foto básicos. Experimenta la calidad superior y autenticidad que distingue nuestro convertidor de foto a boceto de la competencia.",
+    "items": [
+      {
+        "title": "Foto Original",
+        "description": "Fotografía digital estándar lista para transformación artística usando diferentes métodos.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/compare-original.webp"
+        }
+      },
+      {
+        "title": "Filtro Tradicional",
+        "description": "Apariencia artificial y sobreprocesada con detalles perdidos y aspecto de foto a boceto poco realista.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/compare-traditional.webp"
+        }
+      },
+      {
+        "title": "Nuestro Resultado IA",
+        "description": "Foto a dibujo auténtica y detallada con texturas preservadas y flujo artístico natural.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/compare-ai.webp"
+        }
+      }
+    ]
+  },
+  "ai_excellence": {
+    "name": "ai_excellence",
+    "title": "Por qué Nuestra IA de Foto a Dibujo Excelle",
+    "description": "Nuestra tecnología de inteligencia artificial de vanguardia establece nuevos estándares en la conversión de foto a boceto, entregando calidad inigualable y autenticidad artística.",
+    "items": [
+      {
+        "title": "Redes Neuronales Avanzadas",
+        "description": "Nuestra IA utiliza sofisticados algoritmos de aprendizaje profundo entrenados en millones de muestras artísticas para entender y replicar técnicas de dibujo auténticas."
+      },
+      {
+        "title": "Adaptación de Estilos",
+        "description": "La tecnología se adapta automáticamente a diferentes tipos de imágenes, optimizando la conversión de foto a dibujo para retratos, paisajes y otros temas."
+      },
+      {
+        "title": "Aseguramiento de Calidad",
+        "description": "Controles de calidad incorporados aseguran que cada conversión de foto a boceto cumpla con nuestros altos estándares de excelencia artística y preservación de detalles."
+      },
+      {
+        "title": "Aprendizaje Continuo",
+        "description": "Nuestra IA mejora constantemente a través de comentarios de usuarios y nuevos datos de entrenamiento, asegurando que los resultados de foto a dibujo mejoren con el tiempo."
+      }
+    ],
+    "image": {
+      "src": "/imgs/ai-excellence/technology.jpg"
+    },
+    "buttons": [
+      {
+        "title": "Experimenta la Excelencia IA",
+        "url": "/pricing",
+        "target": "_self",
+        "icon": "RiRobot2Line"
+      }
+    ]
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "Foto en Dibujo",
+      "description": "Transforma tus fotos en obras de arte espectaculares con nuestro convertidor de foto a dibujo con IA. Resultados profesionales de foto a boceto en segundos.",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "Foto en Dibujo"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2025 • Foto en Dibujo Todos los derechos reservados.",
+    "nav": {
+      "items": [
+        {
+          "title": "Acerca de",
+          "children": [
+            {
+              "title": "Foto en Dibujo",
+              "url": "/",
+              "target": "_self"
+            },
+            {
+              "title": "Foto en Dibujo de líneas",
+              "url": "/photo-to-line-drawing",
+              "target": "_self"
+            },
+            {
+              "title": "Precios",
+              "url": "/pricing",
+              "target": "_self"
+            },
+            {
+              "title": "Mis Dibujos",
+              "url": "/my-drawings",
+              "target": "_self"
+            },
+            {
+              "title": "Créditos Gratis",
+              "url": "/free-credits",
+              "target": "_self"
+            },
+            {
+              "title": "Contáctanos",
+              "url": "mailto:hi@picturetodrawing.com",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "Email",
+          "icon": "RiMailLine",
+          "url": "mailto:hi@picturetodrawing.com",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "Política de Privacidad",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "Términos de Servicio",
+          "url": "/terms-of-service"
+        },
+        {
+          "title": "Política de Reembolso",
+          "url": "/refund-policy"
+        }
+      ]
+    }
+  }
+}

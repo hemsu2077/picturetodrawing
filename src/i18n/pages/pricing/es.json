@@ -1,0 +1,352 @@
+{
+  "pricing": {
+    "name": "pricing",
+    "label": "Precios",
+    "title": "Precios",
+    "description": "Transforma tus fotos en obras de arte espectaculares con Foto en Dibujo.",
+    "groups": [
+      {
+        "name": "monthly",
+        "title": "Mensual"
+      },
+      {
+        "name": "yearly",
+        "title": "Anual",
+        "is_featured": true,
+        "label": "ahorra 30%"
+      },
+      {
+        "name": "one-time",
+        "title": "Paga según usas"
+      }
+    ],
+    "items": [
+      {
+        "title": "Básico",
+        "description": "Perfecto para probar nuestro servicio de dibujo IA.",
+        "features_title": "Incluye",
+        "features": [
+          "100 créditos, válidos por 2 meses",
+          "Sin marca de agua",
+          "Generación rápida",
+          "Descarga HD",
+          "Aproximadamente $0.2 por dibujo"
+        ],
+        "interval": "one-time",
+        "amount": 999,
+        "currency": "USD",
+        "price": "$9.99",
+        "unit": "único",
+        "is_featured": false,
+        "tip": "Excelente para uso ocasional",
+        "button": {
+          "title": "Comenzar",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "basic",
+        "product_name": "Básico Único",
+        "credits": 100,
+        "valid_months": 2,
+        "group": "one-time"
+      },
+      {
+        "title": "Estándar",
+        "description": "Ideal para usuarios regulares que crean arte con frecuencia.",
+        "features_title": "Incluye",
+        "features": [
+          "400 créditos, válidos por 6 meses",
+          "Sin marca de agua",
+          "Generación rápida",
+          "Descarga HD",
+          "Aproximadamente $0.1 por dibujo"
+        ],
+        "interval": "one-time",
+        "amount": 1999,
+        "currency": "USD",
+        "price": "$19.99",
+        "unit": "único",
+        "is_featured": false,
+        "tip": "La opción más popular",
+        "button": {
+          "title": "Comenzar",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard",
+        "product_name": "Estándar Único",
+        "credits": 400,
+        "valid_months": 6,
+        "group": "one-time"
+      },
+      {
+        "title": "Premium",
+        "description": "Para usuarios avanzados y profesionales creativos.",
+        "features_title": "Incluye",
+        "label": "Popular",
+        "features": [
+          "800 créditos, válidos por 12 meses",
+          "Sin marca de agua",
+          "Generación rápida",
+          "Descarga HD",
+          "Aproximadamente $0.075 por dibujo"
+        ],
+        "interval": "one-time",
+        "amount": 2999,
+        "currency": "USD",
+        "price": "$29.99",
+        "unit": "único",
+        "is_featured": true,
+        "tip": "El mejor valor para usuarios intensivos",
+        "button": {
+          "title": "Comenzar",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "premium",
+        "product_name": "Premium Único",
+        "credits": 800,
+        "valid_months": 12,
+        "group": "one-time"
+      },
+      {
+        "title": "Básico",
+        "description": "Suministro mensual constante para creadores regulares.",
+        "features_title": "Incluye",
+        "features": [
+          "200 créditos por mes",
+          "Sin marca de agua",
+          "Generación rápida",
+          "Descarga HD",
+          "Derechos de uso comercial",
+          "Soporte prioritario al cliente",
+          "Aproximadamente $0.1 por dibujo"
+        ],
+        "interval": "month",
+        "amount": 999,
+        "currency": "USD",
+        "price": "$9.99",
+        "unit": "/ mes",
+        "is_featured": false,
+        "tip": "Renovación automática, cancela cuando quieras",
+        "button": {
+          "title": "Suscribirse",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "basic-monthly",
+        "product_name": "Básico Mensual",
+        "credits": 200,
+        "valid_months": 1,
+        "group": "monthly"
+      },
+      {
+        "title": "Estándar",
+        "description": "Más créditos para creadores activos y equipos pequeños.",
+        "label": "Popular",
+        "features_title": "Incluye",
+        "features": [
+          "400 créditos por mes",
+          "Sin marca de agua",
+          "Generación rápida",
+          "Descarga HD",
+          "Derechos de uso comercial",
+          "Soporte prioritario al cliente",
+          "Aproximadamente $0.85 por dibujo"
+        ],
+        "interval": "month",
+        "amount": 1699,
+        "currency": "USD",
+        "price": "$16.99",
+        "unit": "/ mes",
+        "is_featured": true,
+        "tip": "Renovación automática, cancela cuando quieras",
+        "button": {
+          "title": "Suscribirse",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard-monthly",
+        "product_name": "Estándar Mensual",
+        "credits": 400,
+        "valid_months": 1,
+        "group": "monthly"
+      },
+      {
+        "title": "Premium",
+        "description": "Créditos máximos para agencias y usuarios avanzados.",
+        "features_title": "Incluye",
+        "features": [
+          "1000 créditos por mes",
+          "Sin marca de agua",
+          "Generación rápida",
+          "Descarga HD",
+          "Derechos de uso comercial",
+          "Soporte prioritario al cliente",
+          "Aproximadamente $0.06 por dibujo"
+        ],
+        "interval": "month",
+        "amount": 2999,
+        "currency": "USD",
+        "price": "$29.99",
+        "unit": "/ mes",
+        "is_featured": false,
+        "tip": "Renovación automática, cancela cuando quieras",
+        "button": {
+          "title": "Suscribirse",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "premium-monthly",
+        "product_name": "Premium Mensual",
+        "credits": 1000,
+        "valid_months": 1,
+        "group": "monthly"
+      },
+      {
+        "title": "Básico",
+        "description": "Total $83.88/año, Ahorra con facturación anual para creadores constantes.",
+        "features_title": "Incluye",
+        "features": [
+          "200 créditos por mes (2400 créditos por año)",
+          "Sin marca de agua",
+          "Generación rápida",
+          "Descarga HD",
+          "Derechos de uso comercial",
+          "Aproximadamente $0.07 por dibujo"
+        ],
+        "interval": "year",
+        "amount": 8388,
+        "currency": "USD",
+        "price": "$6.99",
+        "original_price": "$9.99",
+        "unit": "/ mes",
+        "is_featured": false,
+        "tip": "Renovación automática, cancela cuando quieras",
+        "button": {
+          "title": "Suscribirse Anualmente",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "basic-yearly",
+        "product_name": "Básico Anual",
+        "credits": 2400,
+        "valid_months": 12,
+        "group": "yearly"
+      },
+      {
+        "title": "Estándar",
+        "description": "Total $143.88/año, El mejor valor para empresas y equipos en crecimiento.",
+        "label": "Popular",
+        "features_title": "Incluye",
+        "features": [
+          "400 créditos por mes (4800 créditos por año)",
+          "Sin marca de agua",
+          "Generación rápida",
+          "Descarga HD",
+          "Derechos de uso comercial",
+          "Soporte prioritario al cliente",
+          "Aproximadamente $0.06 por dibujo"
+        ],
+        "interval": "year",
+        "amount": 14388,
+        "currency": "USD",
+        "price": "$11.99",
+        "original_price": "$16.99",
+        "unit": "/ mes",
+        "is_featured": true,
+        "tip": "Renovación automática, cancela cuando quieras",
+        "button": {
+          "title": "Suscribirse Anualmente",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard-yearly",
+        "product_name": "Estándar Anual",
+        "credits": 4800,
+        "valid_months": 12,
+        "group": "yearly"
+      },
+      {
+        "title": "Premium",
+        "description": "Total $251.88/año, Máximo ahorro para usuarios de alto volumen.",
+        "features_title": "Incluye",
+        "features": [
+          "1000 créditos por mes (12000 créditos por año)",
+          "Sin marca de agua",
+          "Generación rápida",
+          "Descarga HD",
+          "Derechos de uso comercial",
+          "Soporte prioritario al cliente",
+          "Aproximadamente $0.04 por dibujo"
+        ],
+        "interval": "year",
+        "amount": 25188,
+        "currency": "USD",
+        "price": "$20.99",
+        "original_price": "$29.99",
+        "unit": "/ mes",
+        "is_featured": false,
+        "tip": "Renovación automática, cancela cuando quieras",
+        "button": {
+          "title": "Suscribirse Anualmente",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "premium-yearly",
+        "product_name": "Premium Anual",
+        "credits": 12000,
+        "valid_months": 12,
+        "group": "yearly"
+      }
+    ]
+  },
+
+
+
+ "faq": {
+     "name": "faq",
+     "label": "",
+     "title": "Preguntas Frecuentes",
+     "description": "¿Tienes preguntas sobre nuestro servicio de IA de foto a dibujo? Encuentra respuestas abajo o contacta a nuestro equipo de soporte.",
+     "groups": [],
+     "items": [
+       {
+         "title": "¿Qué pasa cuando me quedo sin créditos?",
+         "description": "Para los planes de suscripción (Mensual/Anual), tus créditos se restablecen automáticamente al inicio de cada ciclo de facturación. Para los usuarios de Paga según usas, necesitarás comprar un nuevo paquete de créditos para continuar transformando fotos en dibujos. Siempre puedes actualizar a un plan de suscripción para renovaciones automáticas."
+       },
+       {
+         "title": "¿Cuánto tiempo son válidos mis créditos?",
+         "description": "Los créditos de Paga según usas tienen diferentes períodos de validez: Básico (2 meses), Estándar (6 meses), Premium (12 meses). Los créditos de suscripción (Mensual/Anual) se restablecen en tu fecha de facturación. Recomendamos usar tus créditos antes de que expiren para obtener el máximo valor."
+       },
+       {
+         "title": "¿Cuántos dibujos puedo crear con mis créditos?",
+         "description": "Cada transformación de foto a dibujo típicamente usa 2 créditos. Entonces con 100 créditos (Básico), puedes crear 50 dibujos. Con 200 créditos (Estándar Mensual), puedes generar 100 dibujos por mes. El uso exacto puede variar según la complejidad de la imagen y el estilo."
+       },
+       {
+         "title": "¿Puedo obtener un reembolso por créditos no utilizados?",
+         "description": "Debido a los recursos computacionales requeridos para la transformación de imágenes con IA, no podemos ofrecer reembolsos por créditos comprados. Sin embargo, los créditos de Paga según usas tienen períodos de validez extendidos, dándote mucho tiempo para usarlos. Para suscripciones, puedes cancelar en cualquier momento para evitar cargos futuros."
+       },
+       {
+         "title": "¿Cuál es la diferencia entre los planes?",
+         "description": "Paga según usas ofrece compras únicas con diferentes cantidades de créditos y períodos de validez - perfecto para uso ocasional. Los planes mensuales proporcionan renovaciones regulares de créditos con derechos comerciales y soporte prioritario. Los planes anuales ofrecen los mismos beneficios que los mensuales pero con ahorros significativos (hasta 30% de descuento)."
+       },
+       {
+         "title": "¿Cómo gestiono o cancelo mi suscripción?",
+         "description": "Puedes gestionar tu suscripción, ver el uso y cancelar en cualquier momento en tu panel de cuenta bajo 'Mis Créditos' o 'Mi Cuenta'. Las compras de Paga según usas no requieren cancelación ya que son pagos únicos."
+       },
+       {
+         "title": "¿Qué estilos de dibujo puedo crear?",
+         "description": "Nuestra IA puede transformar tus fotos en varios estilos artísticos incluyendo boceto a lápiz, dibujo al carbón, pintura a acuarela, arte de líneas, dibujo a lápiz de color y arte con tinta. Puedes elegir tu estilo preferido durante el proceso de conversión para que coincida con tu visión artística."
+       },
+       {
+         "title": "¿Puedo usar los dibujos generados comercialmente?",
+         "description": "¡Sí! Los planes de suscripción Mensual y Anual incluyen derechos completos de uso comercial. Puedes usar los dibujos generados para tu negocio, proyectos de clientes, materiales de marketing o cualquier propósito comercial. Los planes de Paga según usas son solo para uso personal."
+       },
+       {
+         "title": "¿Qué pasa si no estoy satisfecho con un dibujo generado?",
+         "description": "Aunque no podemos ofrecer reembolsos, puedes probar diferentes estilos artísticos o ajustar tu foto para obtener mejores resultados usando tus créditos. Nuestra IA funciona mejor con fotos claras y bien iluminadas. Contacta a nuestro equipo de soporte si necesitas ayuda optimizando tus imágenes para la mejor transformación artística."
+       }
+     ]
+  }
+}
