@@ -1,0 +1,352 @@
+{
+  "pricing": {
+    "name": "pricing",
+    "label": "价格",
+    "title": "价格方案",
+    "description": "使用图片转手绘将您的照片转换为精美艺术作品。",
+    "groups": [
+      {
+        "name": "monthly",
+        "title": "月付"
+      },
+      {
+        "name": "yearly",
+        "title": "年付",
+        "is_featured": true,
+        "label": "节省30%"
+      },
+      {
+        "name": "one-time",
+        "title": "按需付费"
+      }
+    ],
+    "items": [
+      {
+        "title": "基础版",
+        "description": "完美适合试用我们的AI绘画服务。",
+        "features_title": "包含功能",
+        "features": [
+          "100积分，有效期2个月",
+          "无水印",
+          "快速生成",
+          "高清下载",
+          "每幅手绘约0.2美元"
+        ],
+        "interval": "one-time",
+        "amount": 999,
+        "currency": "USD",
+        "price": "$9.99",
+        "unit": "one-time",
+        "is_featured": false,
+        "tip": "适合偶尔使用",
+        "button": {
+          "title": "立即开始",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "basic",
+        "product_name": "基础版一次性",
+        "credits": 100,
+        "valid_months": 2,
+        "group": "one-time"
+      },
+      {
+        "title": "标准版",
+        "description": "最适合经常创作艺术作品的常规用户。",
+        "features_title": "包含功能",
+        "features": [
+          "400积分，有效期6个月",
+          "无水印",
+          "快速生成",
+          "高清下载",
+          "每幅手绘约0.1美元"
+        ],
+        "interval": "one-time",
+        "amount": 1999,
+        "currency": "USD",
+        "price": "$19.99",
+        "unit": "one-time",
+        "is_featured": false,
+        "tip": "最受欢迎的选择",
+        "button": {
+          "title": "立即开始",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard",
+        "product_name": "标准版一次性",
+        "credits": 400,
+        "valid_months": 6,
+        "group": "one-time"
+      },
+      {
+        "title": "高级版",
+        "description": "适合重度用户和创意专业人士。",
+        "features_title": "包含功能",
+        "label": "热门",
+        "features": [
+          "800积分，有效期12个月",
+          "无水印",
+          "快速生成",
+          "高清下载",
+          "每幅手绘约0.075美元"
+        ],
+        "interval": "one-time",
+        "amount": 2999,
+        "currency": "USD",
+        "price": "$29.99",
+        "unit": "one-time",
+        "is_featured": true,
+        "tip": "重度用户最佳价值",
+        "button": {
+          "title": "立即开始",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "premium",
+        "product_name": "高级版一次性",
+        "credits": 800,
+        "valid_months": 12,
+        "group": "one-time"
+      },
+      {
+        "title": "基础版",
+        "description": "为常规创作者提供稳定的月度供应。",
+        "features_title": "包含功能",
+        "features": [
+          "每月200积分",
+          "无水印",
+          "快速生成",
+          "高清下载",
+          "商业使用权",
+          "优先客户支持",
+          "每幅手绘约0.1美元"
+        ],
+        "interval": "month",
+        "amount": 999,
+        "currency": "USD",
+        "price": "$9.99",
+        "unit": "/ month",
+        "is_featured": false,
+        "tip": "自动续费，随时取消",
+        "button": {
+          "title": "订阅",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "basic-monthly",
+        "product_name": "基础版月付",
+        "credits": 200,
+        "valid_months": 1,
+        "group": "monthly"
+      },
+      {
+        "title": "标准版",
+        "description": "为活跃创作者和小团队提供更多积分。",
+        "label": "热门",
+        "features_title": "包含功能",
+        "features": [
+          "每月400积分",
+          "无水印",
+          "快速生成",
+          "高清下载",
+          "商业使用权",
+          "优先客户支持",
+          "每幅手绘约0.85美元"
+        ],
+        "interval": "month",
+        "amount": 1699,
+        "currency": "USD",
+        "price": "$16.99",
+        "unit": "/ month",
+        "is_featured": true,
+        "tip": "自动续费，随时取消",
+        "button": {
+          "title": "订阅",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard-monthly",
+        "product_name": "标准版月付",
+        "credits": 400,
+        "valid_months": 1,
+        "group": "monthly"
+      },
+      {
+        "title": "高级版",
+        "description": "为代理机构和重度用户提供最大积分。",
+        "features_title": "包含功能",
+        "features": [
+          "每月1000积分",
+          "无水印",
+          "快速生成",
+          "高清下载",
+          "商业使用权",
+          "优先客户支持",
+          "每幅手绘约0.06美元"
+        ],
+        "interval": "month",
+        "amount": 2999,
+        "currency": "USD",
+        "price": "$29.99",
+        "unit": "/ month",
+        "is_featured": false,
+        "tip": "自动续费，随时取消",
+        "button": {
+          "title": "订阅",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "premium-monthly",
+        "product_name": "高级版月付",
+        "credits": 1000,
+        "valid_months": 1,
+        "group": "monthly"
+      },
+      {
+        "title": "基础版",
+        "description": "总计$83.88/年，为持续创作者节省年费。",
+        "features_title": "包含功能",
+        "features": [
+          "每月200积分（每年2400积分）",
+          "无水印",
+          "快速生成",
+          "高清下载",
+          "商业使用权",
+          "每幅手绘约0.07美元"
+        ],
+        "interval": "year",
+        "amount": 8388,
+        "currency": "USD",
+        "price": "$6.99",
+        "original_price": "$9.99",
+        "unit": "/ month",
+        "is_featured": false,
+        "tip": "自动续费，随时取消",
+        "button": {
+          "title": "年度订阅",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "basic-yearly",
+        "product_name": "基础版年付",
+        "credits": 2400,
+        "valid_months": 12,
+        "group": "yearly"
+      },
+      {
+        "title": "标准版",
+        "description": "总计$143.88/年，为成长中的企业和团队提供最佳价值。",
+        "label": "热门",
+        "features_title": "包含功能",
+        "features": [
+          "每月400积分（每年4800积分）",
+          "无水印",
+          "快速生成",
+          "高清下载",
+          "商业使用权",
+          "优先客户支持",
+          "每幅手绘约0.06美元"
+        ],
+        "interval": "year",
+        "amount": 14388,
+        "currency": "USD",
+        "price": "$11.99",
+        "original_price": "$16.99",
+        "unit": "/ month",
+        "is_featured": true,
+        "tip": "自动续费，随时取消",
+        "button": {
+          "title": "年度订阅",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "standard-yearly",
+        "product_name": "标准版年付",
+        "credits": 4800,
+        "valid_months": 12,
+        "group": "yearly"
+      },
+      {
+        "title": "高级版",
+        "description": "总计$251.88/年，为大量用户提供最大节省。",
+        "features_title": "包含功能",
+        "features": [
+          "每月1000积分（每年12000积分）",
+          "无水印",
+          "快速生成",
+          "高清下载",
+          "商业使用权",
+          "优先客户支持",
+          "每幅手绘约0.04美元"
+        ],
+        "interval": "year",
+        "amount": 25188,
+        "currency": "USD",
+        "price": "$20.99",
+        "original_price": "$29.99",
+        "unit": "/ month",
+        "is_featured": false,
+        "tip": "自动续费，随时取消",
+        "button": {
+          "title": "年度订阅",
+          "url": "/#pricing",
+          "icon": "RiFlashlightFill"
+        },
+        "product_id": "premium-yearly",
+        "product_name": "高级版年付",
+        "credits": 12000,
+        "valid_months": 12,
+        "group": "yearly"
+      }
+    ]
+  },
+
+
+
+ "faq": {
+     "name": "faq",
+     "label": "",
+     "title": "常见问题",
+     "description": "对我们的AI图片转手绘服务有疑问？在下方找到答案或联系我们的支持团队。",
+     "groups": [],
+     "items": [
+       {
+         "title": "积分用完后会发生什么？",
+         "description": "对于订阅计划（月付/年付），您的积分会在每个计费周期开始时自动重置。对于按需付费用户，您需要购买新的积分包才能继续将照片转换为手绘。您可以随时升级到订阅计划以获得自动续费。"
+       },
+       {
+         "title": "我的积分有效期多长？",
+         "description": "按需付费积分有不同的有效期：基础版（2个月）、标准版（6个月）、高级版（12个月）。订阅积分（月付/年付）在您的计费日期重置。我们建议您在积分过期前使用以获得最大价值。"
+       },
+       {
+         "title": "用我的积分可以创建多少幅手绘作品？",
+         "description": "每次照片转手绘转换通常使用2积分。因此，100积分（基础版）可以创建50幅手绘。200积分（标准版月付）每月可以生成100幅手绘。实际使用量可能因图片复杂性和风格而异。"
+       },
+       {
+         "title": "未使用的积分可以退款吗？",
+         "description": "由于AI图像转换需要大量计算资源，我们无法为已购买的积分提供退款。但是，按需付费积分有延长的有效期，给您充足的时间使用。对于订阅，您可以随时取消以防止未来的费用。"
+       },
+       {
+         "title": "各套餐有什么区别？",
+         "description": "按需付费提供一次性购买，具有不同的积分数量和有效期 - 完美适合偶尔使用。月付计划提供定期积分续费，包含商业权利和优先支持。年付计划提供与月付相同的好处，但有显著节省（高达30%折扣）。"
+       },
+       {
+         "title": "如何管理或取消我的订阅？",
+         "description": "您可以在账户仪表板中的'我的积分'或'我的账户'下随时管理您的订阅、查看使用情况和取消订阅。按需付费购买不需要取消，因为它们是一次性付款。"
+       },
+       {
+         "title": "我可以创建哪些手绘风格？",
+         "description": "我们的AI可以将您的照片转换为各种艺术风格，包括铅笔素描、炭笔画、水彩画、线条画、彩色铅笔画和水墨画。您可以在转换过程中选择您喜欢的风格以匹配您的艺术愿景。"
+       },
+       {
+         "title": "我可以将生成的手绘作品用于商业用途吗？",
+         "description": "可以！月付和年付订阅计划包含完整的商业使用权。您可以将生成的手绘作品用于您的业务、客户项目、营销材料或任何商业目的。按需付费计划仅供个人使用。"
+       },
+       {
+         "title": "如果我对生成的手绘作品不满意怎么办？",
+         "description": "虽然我们无法提供退款，但您可以尝试不同的艺术风格或调整您的照片以使用积分获得更好的效果。我们的AI在清晰、光线充足的照片上效果最佳。如果您需要帮助优化图像以获得最佳艺术转换效果，请联系我们的支持团队。"
+       }
+     ]
+  }
+}

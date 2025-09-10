@@ -53,7 +53,7 @@
 
     "show_sign": true,
     "show_theme": false,
-    "show_locale": false
+    "show_locale": true
   },
   "hero": {
     "title": "Transform Your Picture to Drawing in Seconds",
@@ -65,6 +65,20 @@
       "url": "/#drawing-generator"
     },
     "tip": "Free to Try, 100% Secure, Instant Results",
+    "tip_items": [
+      {
+        "text": "Free to Try",
+        "icon": "Gift"
+      },
+      {
+        "text": "100% Secure",
+        "icon": "Shield"
+      },
+      {
+        "text": "No Sign-up Required",
+        "icon": "Zap"
+      }
+    ],
     "buttons": [
       {
         "title": "Try for Free",
@@ -233,6 +247,15 @@
           {
             "description": "Ideal for portraits, architectural drawings, and detailed illustrations where precision and traditional artistic values matter most."
           }
+        ],
+        "buttons": [
+          {
+            "title": "Convert your photo to drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
         ]
       },
       {
@@ -244,6 +267,15 @@
         "children": [
           {
             "description": "Perfect for logos, technical illustrations, and modern graphic design projects that require clarity and visual impact."
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Convert your photo to drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
           }
         ]
       },
@@ -257,6 +289,15 @@
           {
             "description": "Excellent for children's portraits, pet illustrations, and artwork where color plays a crucial role in emotional expression."
           }
+        ],
+        "buttons": [
+          {
+            "title": "Convert your photo to drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
         ]
       },
       {
@@ -268,6 +309,15 @@
         "children": [
           {
             "description": "Perfect for landscapes, floral arrangements, and artistic projects that benefit from a romantic, painterly aesthetic."
+          }
+        ],
+        "buttons": [
+          {
+            "title": "Convert your photo to drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
           }
         ]
       }

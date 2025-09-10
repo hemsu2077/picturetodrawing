@@ -18,6 +18,20 @@ export default function Hero({ hero, backgroundVariant = 'default' }: HeroProps)
     return null;
   }
 
+  // Icon mapping for tip items
+  const getIcon = (iconName: string) => {
+    switch (iconName) {
+      case 'Gift':
+        return Gift;
+      case 'Shield':
+        return Shield;
+      case 'Zap':
+        return Zap;
+      default:
+        return Gift;
+    }
+  };
+
   const highlightText = hero.highlight_text;
   let texts = null;
   if (highlightText) {
@@ -92,20 +106,17 @@ export default function Hero({ hero, backgroundVariant = 'default' }: HeroProps)
                 })}
               </div>
             )}
-            {hero.tip && (
+            {hero.tip_items && hero.tip_items.length > 0 && (
               <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
-                <div className="flex items-center gap-2">
-                  <Gift className="h-4 w-4 text-primary" />
-                  <span className="text-sm text-muted-foreground">Free to Try</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Shield className="h-4 w-4 text-primary" />
-                  <span className="text-sm text-muted-foreground">100% Secure</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Zap className="h-4 w-4 text-primary" />
-                  <span className="text-sm text-muted-foreground">No Sign-up Required</span>
-                </div>
+                {hero.tip_items.map((item, index) => {
+                  const IconComponent = getIcon(item.icon);
+                  return (
+                    <div key={index} className="flex items-center gap-2">
+                      <IconComponent className="h-4 w-4 text-primary" />
+                      <span className="text-sm text-muted-foreground">{item.text}</span>
+                    </div>
+                  );
+                })}
               </div>
             )}
             {hero.show_happy_users && <HappyUsers />}

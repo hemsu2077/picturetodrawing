@@ -77,7 +77,7 @@ export default function TransformationExamples({ section }: { section: SectionTy
                   >
                     <a href="#drawing-generator" target="_self">
                       <Icon name="RiBrushLine" className="mr-2 text-lg" />
-                     Convert your photo to drawing
+                     {item.buttons?.[0]?.title}
                     </a>
                   </Button>
                 </div>

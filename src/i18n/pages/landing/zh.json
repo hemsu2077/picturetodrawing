@@ -1,0 +1,510 @@
+{
+  "template": "picturetodrawing-template-one",
+  "theme": "light",
+  "header": {
+    "brand": {
+      "title": "图片转手绘",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "图片转手绘"
+      },
+      "url": "/"
+    },
+    "nav": {
+      "items": [
+        {
+          "title": "AI绘画工具",
+          "children": [
+            {
+              "title": "图片转手绘",
+              "url": "/",
+              "target": "_self",
+              "icon": "RiBrushLine"
+            },
+            {
+              "title": "照片转线条画",
+              "url": "/photo-to-line-drawing",
+              "target": "_self",
+              "icon": "RiColorFilterAiLine"
+            }
+          ]
+        },
+        {
+          "title": "价格",
+          "url": "/pricing",
+          "icon": ""
+        },
+        {
+          "title": "我的手绘作品",
+          "url": "/my-drawings",
+          "icon": ""
+        }
+      ]
+    },
+    "buttons": [
+      {
+        "title": "免费积分",
+        "url": "/free-credits",
+        "target": "_self",
+        "variant": "outline",
+        "icon": "RiGiftLine"
+      }
+    ],
+
+    "show_sign": true,
+    "show_theme": false,
+    "show_locale": true
+  },
+  "hero": {
+    "title": "秒速转换，图片转手绘",
+    "highlight_text": "图片转手绘",
+    "description": "体验AI驱动的图片转手绘神奇效果",
+    "announcement": {
+      "label": "新品",
+      "title": "🍌 Nano Banana",
+      "url": "/#drawing-generator"
+    },
+    "tip": "免费试用，100%安全，即时出图",
+    "tip_items": [
+      {
+        "text": "免费试用",
+        "icon": "Gift"
+      },
+      {
+        "text": "100% 安全",
+        "icon": "Shield"
+      },
+      {
+        "text": "无需注册",
+        "icon": "Zap"
+      }
+    ],
+    "buttons": [
+      {
+        "title": "免费试用",
+        "icon": "RiFlashlightFill",
+        "url": "/#drawing-generator",
+        "target": "_self",
+        "variant": "default"
+      }
+    ],
+    "show_happy_users": true,
+    "show_badge": false
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "专业级图片转手绘效果",
+    "label": "产品介绍",
+    "description": "",
+    "image": {
+      "src": "https://files.picturetodrawing.com/sample/draw-introduce.mp4"
+    },
+    "items": [
+      {
+        "title": "真实艺术渲染",
+        "description": "每次图片转手绘都保留自然纹理、阴影和细节，让您的作品看起来像专业艺术家手绘的一样。",
+        "icon": "RiPaintBrushLine"
+      },
+      {
+        "title": "高分辨率输出",
+        "description": "下载您的图片转手绘作品，支持高分辨率，完美适合打印、装裱或在社交媒体上分享。",
+        "icon": "RiHdLine"
+      },
+      {
+        "title": "隐私保护",
+        "description": "您的照片经过安全处理，转换后自动删除。我们绝不会存储或分享您的个人图片。",
+        "icon": "RiShieldCheckLine"
+      }
+    ]
+  },
+  "benefit": {
+    "name": "benefit",
+    "title": "为什么选择我们的图片转手绘工具？",
+    "label": "产品优势",
+    "description": "用真实的艺术风格和惊人的细节保留，将任何图片转换为手绘作品。",
+    "items": [
+      {
+        "title": "先进AI技术",
+        "description": "我们最前沿的人工智能技术会分析您照片的每一个细节，创造出保持原始图片精髓和情感的真实图片转手绘效果。",
+        "icon": "RiBrainLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+        }
+      },
+      {
+        "title": "多种艺术风格",
+        "description": "从铅笔素描、炭笔画、水彩画到水墨插画，每种照片转素描风格都经过精心设计，为您的图片提供独特的艺术诠释。",
+        "icon": "RiPaletteLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
+        }
+      },
+      {
+        "title": "闪电般快速处理",
+        "description": "体验即时的图片转手绘转换。我们的优化服务器在几秒钟内完成照片转素描处理，而不是几分钟，无需等待即可获得专业效果。",
+        "icon": "RiFlashlightLine",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
+        }
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "如何将图片转换为手绘",
+    "description": "通过我们直观的流程，将任何照片转换为素描或艺术手绘。无需技术技能 - 只需按照这些简单步骤，就能创造出令人惊艳的图片转手绘效果。",
+    "image": {
+      "src": "/imgs/features/1.png"
+    },
+    "image_position": "left",
+    "text_align": "center",
+    "items": [
+      {
+        "title": "上传您的照片",
+        "description": "只需拖放图片或点击浏览。我们的图片转手绘转换器支持JPG、PNG和其他流行格式。您的照片将在完全隐私保护下安全处理。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+        }
+      },
+      {
+        "title": "选择艺术风格",
+        "description": "从我们的艺术风格系列中选择，包括铅笔素描、炭笔画、水彩画和水墨插画。每种图片转手绘风格都为您的转换提供独特的美学品质。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
+        }
+      },
+      {
+        "title": "下载您的艺术作品",
+        "description": "观看我们的AI在几秒钟内将您的图片转换为手绘。预览转换后的图片转手绘结果并以高分辨率下载。完美适合打印、分享或制作个性化礼物。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+        }
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "常见问题",
+    "title": "关于图片转手绘的常见问题",
+    "description": "获取关于我们的照片转素描转换器和图片转手绘技术的常见问题解答。",
+    "items": [
+      {
+        "title": "图片转手绘的AI技术如何工作？",
+        "description": "我们先进的人工智能会分析您照片的构图、光线、纹理和细节，创造出真实的图片转手绘效果。AI理解着色、线条粗细和纹理渲染等艺术技巧，产生模仿传统手绘艺术的照片转素描结果。与简单滤镜不同，我们的技术保留了原始照片的情感精髓和精细细节。"
+      },
+      {
+        "title": "照片转素描转换有哪些艺术风格？",
+        "description": "我们的图片转手绘转换器提供多种艺术风格，包括逼真的铅笔素描、戏剧性的炭笔画、精致的水彩画、大胆的水墨插画和彩色铅笔画。每种照片转素描风格都使用不同的算法来实现真实的艺术效果。您可以尝试各种风格，为您的图片找到完美的图片转手绘美学效果。"
+      },
+      {
+        "title": "使用图片转手绘服务时我的照片安全吗？",
+        "description": "绝对安全！隐私和安全是我们的首要任务。您的照片在安全服务器上处理，图片转手绘转换完成后会自动删除。我们绝不会存储、分享或为其他目的使用您的图片。所有照片转素描处理都通过加密连接进行，确保您的个人照片完全私密和安全。"
+      },
+      {
+        "title": "图片转手绘转换需要多长时间？",
+        "description": "处理时间取决于您的账户类型：免费用户可以预期在50-60秒内完成转换，而高级订阅用户享受优先处理，仅需20-30秒即可获得结果。图片大小和复杂性可能会稍微影响处理时间，但我们优化的AI服务器确保无论速度如何都能保持一致的质量。"
+      },
+      {
+        "title": "我可以什么分辨率下载照片转素描结果？",
+        "description": "您可以以多种分辨率下载图片转手绘转换结果，包括原始照片的完整分辨率。我们的AI在整个照片转素描过程中保持图像质量，确保您的艺术手绘作品适合打印、专业使用或高质量的社交媒体分享。高级用户可以获得更高分辨率的输出，用于大幅面打印和商业应用。"
+      },
+      {
+        "title": "我可以在移动设备上使用图片转手绘转换器吗？",
+        "description": "可以！我们的照片转素描转换器在智能手机和平板电脑上完美运行。响应式设计确保在所有设备上无缝进行图片转手绘转换。您可以直接从移动相机或相册上传照片，应用艺术风格，并即时下载结果。移动体验保持了桌面版本的所有功能和质量，使艺术性的照片转素描转换随时随地可用。"
+      },
+      {
+        "title": "我需要注册才能使用图片转手绘转换器吗？",
+        "description": "虽然创建账户可以解锁我们图片转手绘服务的全部潜力，但您可以在不注册的情况下试用我们的照片转素描转换器！每天，您都可以获得一次免费的图片转手绘转换来体验我们的AI技术。一旦您的每日试用用完，您需要创建账户才能继续将照片转换为手绘。注册用户享受无限的图片转手绘转换、更快的处理速度和访问高级艺术风格来进行照片转素描创作。"
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "准备好将您的图片转换为精美手绘了吗？",
+    "description": "加入数千位满意用户的行列，他们信任我们AI驱动的照片转素描转换器。在几秒钟内体验专业质量的图片转手绘效果，拥有完全的隐私保护和真实的艺术风格。",
+    "buttons": [
+      {
+        "title": "立即开始您的图片转手绘转换",
+        "url": "/#drawing-generator",
+        "target": "_self",
+        "icon": "GoArrowUpRight"
+      }
+    ]
+  },
+ 
+  "transformation_examples": {
+    "name": "transformation_examples",
+    "title": "图片转手绘转换案例",
+    "description": "查看我们AI驱动的图片转手绘转换器的惊人效果。这些真实案例展示了我们图片转手绘技术在不同主题和风格下的质量和艺术真实性。",
+    "items": [
+      {
+        "title": "铅笔素描",
+        "description": "经典石墨铅笔绘画，具有逼真的着色和精细细节保留。完美适合创造永恒、优雅的艺术作品，用微妙的纹理和自然的渐变捕捉原始照片的精髓。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch.webp"
+        },
+        "children": [
+          {
+            "description": "理想用于肖像、建筑绘图和详细插图，这些场合中精确性和传统艺术价值最重要。"
+          }
+        ],
+        "buttons": [
+          {
+            "title": "将您的图片转手绘",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "线条画",
+        "description": "干净、极简的线条艺术，具有大胆的笔触和清晰的轮廓。创造现代、引人注目的艺术作品，强调形式和结构，同时去除不必要的细节，呈现当代美学。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-line-drawing.webp"
+        },
+        "children": [
+          {
+            "description": "完美适合标志、技术插图和需要清晰度和视觉冲击力的现代平面设计项目。"
+          }
+        ],
+        "buttons": [
+          {
+            "title": "将您的图片转手绘",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "彩色铅笔画",
+        "description": "充满活力的彩色铅笔艺术作品，具有丰富的纹理和层次化的色彩。用手绘插图的温暖和特色让您的照片栩栩如生，保留微妙的色彩变化。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing.webp"
+        },
+        "children": [
+          {
+            "description": "非常适合儿童肖像、宠物插图和色彩在情感表达中起关键作用的艺术作品。"
+          }
+        ],
+        "buttons": [
+          {
+            "title": "将您的图片转手绘",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "水彩画",
+        "description": "柔和、流动的水彩效果，具有美丽的色彩混合和艺术笔触。创造梦幻、空灵的艺术作品，具有传统水彩画的精致透明度和有机流动感。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting.webp"
+        },
+        "children": [
+          {
+            "description": "完美适合风景、花卉布置和受益于浪漫、绘画美学风格的艺术项目。"
+          }
+        ],
+        "buttons": [
+          {
+            "title": "将您的图片转手绘",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      }
+    ]
+  },
+  "perfect_uses": {
+    "name": "perfect_uses",
+    "title": "图片转手绘的完美用途",
+    "description": "发现我们图片转手绘技术的无限可能性。从个人礼物到专业项目，我们的图片转手绘转换器以卓越的质量满足多样化的创意需求。",
+    "items": [
+      {
+        "title": "个性化礼物",
+        "description": "通过将珍贵的家庭照片转换为艺术手绘来创造独特、充满心意的礼物。完美适合纪念日、生日和值得纪念的图片转手绘纪念品的特殊场合。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-gift.webp?v=20250815"
+        }
+      },
+      {
+        "title": "社交媒体内容",
+        "description": "在Instagram、Facebook和其他平台上用艺术性的图片转手绘内容脱颖而出。我们的图片转手绘风格创造引人入胜的帖子，吸引注意力并增加参与度。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-social.webp?v=20250815"
+        }
+      },
+      {
+        "title": "营销材料",
+        "description": "用独特的照片转素描艺术作品提升小册子、网站和广告。我们的图片转手绘转换器帮助企业创造令人难忘的视觉品牌，区别于竞争对手。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-marketing.webp?v=20250815"
+        }
+      },
+      {
+        "title": "家居装饰",
+        "description": "使用我们的图片转手绘技术将您最喜欢的照片转换为优雅的墙面艺术。创造统一的家居装饰，用个性化的照片转素描艺术作品反映您的风格。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-decoration.webp?v=20250815"
+        }
+      },
+      {
+        "title": "教育项目",
+        "description": "教师和学生使用我们的照片转素描转换器进行艺术教育、演示和创意作业。图片转手绘技术帮助说明概念并激发艺术学习。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-educational.webp?v=20250815"
+        }
+      },
+      {
+        "title": "创意作品集",
+        "description": "艺术家、设计师和创意人员用多样的照片转素描风格增强他们的作品集。我们的图片转手绘转换器展示了在不同媒介上的多功能性和艺术视野。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/uses-creative.webp?v=20250815"
+        }
+      }
+    ]
+  },
+  "comparison": {
+    "name": "comparison",
+    "title": "我们的图片转手绘AI与传统滤镜对比",
+    "description": "将我们先进的AI驱动图片转手绘技术与基本照片滤镜进行比较。体验我们照片转素描转换器的卓越质量和真实性，使其在竞争中脱颖而出。",
+    "items": [
+      {
+        "title": "原始照片",
+        "description": "标准数字照片，准备使用不同方法进行艺术转换。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/compare-original.webp"
+        }
+      },
+      {
+        "title": "传统滤镜",
+        "description": "人工、过度处理的外观，失去细节，不真实的照片转素描外观。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/compare-traditional.webp"
+        }
+      },
+      {
+        "title": "我们的AI结果",
+        "description": "真实、详细的图片转手绘，保留纹理和自然的艺术流动感。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/compare-ai.webp"
+        }
+      }
+    ]
+  },
+  "ai_excellence": {
+    "name": "ai_excellence",
+    "title": "为什么我们的图片转手绘AI如此出色",
+    "description": "我们最前沿的人工智能技术在照片转素描转换方面设立了新标准，提供无与伦比的质量和艺术真实性。",
+    "items": [
+      {
+        "title": "先进神经网络",
+        "description": "我们的AI使用复杂的深度学习算法，在数百万艺术样本上训练，以理解和复制真实的绘画技巧。"
+      },
+      {
+        "title": "风格自适应",
+        "description": "该技术自动适应不同类型的图像，为肖像、风景和其他主题优化图片转手绘转换。"
+      },
+      {
+        "title": "质量保证",
+        "description": "内置质量检查确保每次照片转素描转换都符合我们对艺术卓越性和细节保留的高标准。"
+      },
+      {
+        "title": "持续学习",
+        "description": "我们的AI通过用户反馈和新的训练数据不断改进，确保图片转手绘结果随时间推移变得更好。"
+      }
+    ],
+    "image": {
+      "src": "/imgs/ai-excellence/technology.jpg"
+    },
+    "buttons": [
+      {
+        "title": "体验AI卓越性",
+        "url": "/pricing",
+        "target": "_self",
+        "icon": "RiRobot2Line"
+      }
+    ]
+  },
+  "footer": {
+    "name": "footer",
+    "brand": {
+      "title": "图片转手绘",
+      "description": "使用我们AI驱动的图片转手绘转换器将您的照片转换为精美艺术作品。几秒钟内获得专业质量的照片转素描结果。",
+      "logo": {
+        "src": "/logo.png",
+        "alt": "图片转手绘"
+      },
+      "url": "/"
+    },
+    "copyright": "© 2025 • 图片转手绘 版权所有。",
+    "nav": {
+      "items": [
+        {
+          "title": "关于",
+          "children": [
+            {
+              "title": "首页",
+              "url": "/",
+              "target": "_self"
+            },
+            {
+              "title": "价格",
+              "url": "/pricing",
+              "target": "_self"
+            },
+            {
+              "title": "我的手绘作品",
+              "url": "/my-drawings",
+              "target": "_self"
+            },
+            {
+              "title": "免费积分",
+              "url": "/free-credits",
+              "target": "_self"
+            },
+            {
+              "title": "联系我们",
+              "url": "mailto:hi@picturetodrawing.com",
+              "target": "_self"
+            }
+          ]
+        }
+      ]
+    },
+    "social": {
+      "items": [
+        {
+          "title": "邮箱",
+          "icon": "RiMailLine",
+          "url": "mailto:hi@picturetodrawing.com",
+          "target": "_self"
+        }
+      ]
+    },
+    "agreement": {
+      "items": [
+        {
+          "title": "隐私政策",
+          "url": "/privacy-policy"
+        },
+        {
+          "title": "服务条款",
+          "url": "/terms-of-service"
+        },
+        {
+          "title": "退款政策",
+          "url": "/refund-policy"
+        }
+      ]
+    }
+  }
+}
