@@ -201,6 +201,7 @@
     "processing": "Processing...",
     "free": "FREE",
     "try_free_hint": "Try free once daily • No Sign-up required",
+    "signup_free_credits_hint": "Sign up for 6 free credits",
     "select_image_first": "Please select an image first",
     "insufficient_credits": "Insufficient credits",
     "daily_trial_used": "Daily trial already used",

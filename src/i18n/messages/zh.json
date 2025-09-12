@@ -201,6 +201,7 @@
     "processing": "处理中...",
     "free": "免费",
     "try_free_hint": "每日免费试用一次 • 无需注册",
+    "signup_free_credits_hint": "注册获得6个免费积分",
     "select_image_first": "请先选择图片",
     "insufficient_credits": "积分不足",
     "daily_trial_used": "今日免费试用已用完",

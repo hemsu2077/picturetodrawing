@@ -201,6 +201,7 @@
     "processing": "Procesando...",
     "free": "GRATIS",
     "try_free_hint": "Prueba gratis una vez al día • No se requiere registro",
+    "signup_free_credits_hint": "Regístrate y obtén 6 créditos gratis",
     "select_image_first": "Por favor, selecciona una imagen primero",
     "insufficient_credits": "Créditos insuficientes",
     "daily_trial_used": "Prueba diaria ya utilizada",

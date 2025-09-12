@@ -201,6 +201,7 @@
     "processing": "処理中...",
     "free": "無料",
     "try_free_hint": "1日1回無料体験 • 登録不要",
+    "signup_free_credits_hint": "登録して6つの無料クレジットを獲得",
     "select_image_first": "まず画像を選択してください",
     "insufficient_credits": "クレジットが不足しています",
     "daily_trial_used": "本日の無料体験は使用済みです",

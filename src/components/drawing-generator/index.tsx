@@ -341,9 +341,12 @@ export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch' }: 
               </Button>
               
               {/* Trial hint text */}
-              {!session?.user?.uuid && trialStatus?.canUseTrial && (
+              {!session?.user?.uuid && (
                 <p className="text-xs text-center text-muted-foreground">
-                  {t('drawing_generator.try_free_hint')}
+                  {trialStatus?.canUseTrial 
+                    ? t('drawing_generator.try_free_hint')
+                    : t('drawing_generator.signup_free_credits_hint')
+                  }
                 </p>
               )}
             </div>
