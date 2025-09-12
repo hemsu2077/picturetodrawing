@@ -226,7 +226,12 @@ export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch' }: 
 
       // API returns {code: 0, message: "ok", data: [...]}
       if (data.code === 0 && data.data) {
-        // Store the result for display immediately
+         // Only paid users get instant results, everyone else waits
+         if (isPaidUser !== true) {
+          await new Promise(resolve => setTimeout(resolve, 20000)); // 20 seconds
+        }
+        
+        // Store the result for display after waiting (if needed)
         setTrialResult(data.data);
         
         // Clear the new drawing state since generation is complete
