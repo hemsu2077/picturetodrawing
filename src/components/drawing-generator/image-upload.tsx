@@ -112,13 +112,14 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
       ) : (
         <div
           className={cn(
-            "border-2 border-dashed rounded-lg p-6 text-center transition-colors h-108 lg:h-128 flex flex-col items-center justify-center",
+            "border-2 border-dashed rounded-lg p-6 text-center transition-colors h-108 lg:h-128 flex flex-col items-center justify-center cursor-pointer",
             "hover:border-primary/50 hover:bg-accent/50",
             isDragging && "border-primary bg-accent"
           )}
           onDrop={handleDrop}
           onDragOver={handleDragOver}
           onDragLeave={handleDragLeave}
+          onClick={openFileDialog}
         >
           <div className="flex flex-col items-center gap-4 mb-6">
             <div className="p-4 rounded-full bg-muted">
@@ -133,7 +134,11 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
                 {t('daily_checkin.supported_formats')}
               </p>
             </div>
-            <Button variant="outline" className="mt-2" onClick={openFileDialog}>
+            <Button 
+              variant="outline" 
+              className="mt-2 pointer-events-none" 
+              onClick={(e) => e.stopPropagation()}
+            >
               <Upload className="h-4 w-4 mr-2" />
               {t('daily_checkin.choose_file')}
             </Button>
