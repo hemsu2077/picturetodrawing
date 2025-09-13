@@ -94,7 +94,7 @@ export default function Hero({ hero, backgroundVariant = 'default' }: HeroProps)
                       className="flex items-center"
                     >
                       <Button
-                        className="w-full"
+                        className="w-full text-md py-6 rounded-full"
                         size="lg"
                         variant={item.variant || "default"}
                       >

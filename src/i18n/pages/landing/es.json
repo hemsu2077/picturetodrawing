@@ -81,7 +81,7 @@
     ],
     "buttons": [
       {
-        "title": "Probar Gratis",
+        "title": "Comenzar Gratis",
         "icon": "RiFlashlightFill",
         "url": "/#drawing-generator",
         "target": "_self",

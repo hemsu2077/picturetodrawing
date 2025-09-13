@@ -8,7 +8,7 @@ export default function PerfectUses({ section }: { section: SectionType }) {
   }
 
   return (
-    <section id={section.name} className="py-16 bg-orange-50">
+    <section id={section.name} className="py-16">
       <div className="container mx-auto px-4 sm:px-6">
         <div className="mx-auto flex max-w-4xl flex-col items-center gap-4 text-center">
           <h2 className="mb-4 text-pretty text-2xl font-bold sm:text-3xl lg:text-4xl">

@@ -43,7 +43,7 @@
     },
     "buttons": [
       {
-        "title": "無料クレジット",
+        "title": "無料でお試し",
         "url": "/free-credits",
         "target": "_self",
         "variant": "outline",
