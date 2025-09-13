@@ -159,15 +159,15 @@ export function RecentDrawings({
   }
 
   // Show loading state if no drawings yet and not generating (logged-in users only)
-  if (session?.user?.uuid && loading && drawings.length === 0 && !isGenerating && !error) {
-    return (
-      <Card className={cn("p-6", className)}>
-        <div className="flex items-center justify-center py-8">
-          <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
-        </div>
-      </Card>
-    );
-  }
+  // if (session?.user?.uuid && loading && drawings.length === 0 && !isGenerating && !error) {
+  //   return (
+  //     <Card className={cn("p-6 shadow-none border-primary/60", className)}>
+  //       <div className="flex items-center justify-center py-8">
+  //         <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
+  //       </div>
+  //     </Card>
+  //   );
+  // }
 
   // Don't show if no drawings and not generating and no error and no trial result
   if (drawings.length === 0 && !isGenerating && !error && !trialResult) {
@@ -231,7 +231,7 @@ export function RecentDrawings({
                     </>
                   ) : (
                     <>
-                      {/* 暂时让所有用户使用相同的进度条 */}
+                      {/* All users use the same progress bar */}
                       {/* {isPaidUser === true ? (
                         // Paid user: fast loading
                         <>

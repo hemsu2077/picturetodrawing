@@ -1,36 +1,75 @@
+"use client";
+
+import { useState } from "react";
 import { Badge } from "@/components/ui/badge";
 import { Section as SectionType } from "@/types/blocks/section";
+import { ChevronDown } from "lucide-react";
 
 export default function FAQ({ section }: { section: SectionType }) {
+  const [openItems, setOpenItems] = useState<Set<number>>(new Set());
+
   if (section.disabled) {
     return null;
   }
 
+  const toggleItem = (index: number) => {
+    const newOpenItems = new Set(openItems);
+    if (newOpenItems.has(index)) {
+      newOpenItems.delete(index);
+    } else {
+      newOpenItems.add(index);
+    }
+    setOpenItems(newOpenItems);
+  };
+
   return (
-    <section id={section.name} className="py-16">
-      <div className="container">
-        <div className="text-center">
+    <section id={section.name} className="py-20">
+      <div className="container max-w-3xl">
+        <div className="text-center mb-16">
           {section.label && (
-            <Badge className="text-xs font-medium">{section.label}</Badge>
+            <Badge variant="outline" className="text-xs font-medium mb-4">
+              {section.label}
+            </Badge>
           )}
-          <h2 className="mt-4 text-4xl font-semibold">{section.title}</h2>
-          <p className="mt-6 font-medium text-muted-foreground">
+          <h2 className="text-3xl md:text-4xl font-semibold tracking-tight mb-4">
+            {section.title}
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
             {section.description}
           </p>
         </div>
-        <div className="mx-auto mt-14 grid gap-8 md:grid-cols-2 md:gap-12">
+        
+        <div className="space-y-2 max-w-3xl mx-auto">
           {section.items?.map((item, index) => (
-            <div key={index} className="flex gap-4">
-              <span className="flex size-6 shrink-0 items-center justify-center rounded-sm border border-primary font-mono text-xs text-primary">
-                {index + 1}
-              </span>
-              <div>
-                <div className="mb-2 flex items-center justify-between">
-                  <h3 className="font-semibold">{item.title}</h3>
+            <div
+              key={index}
+              className="border border-border rounded-lg overflow-hidden bg-card"
+            >
+              <button
+                onClick={() => toggleItem(index)}
+                className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-muted/50 transition-colors duration-200"
+              >
+                <h3 className="font-medium text-foreground pr-4">
+                  {item.title}
+                </h3>
+                <ChevronDown
+                  className={`h-5 w-5 text-muted-foreground transition-transform duration-200 flex-shrink-0 ${
+                    openItems.has(index) ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+              <div
+                className={`transition-all duration-300 ease-in-out ${
+                  openItems.has(index)
+                    ? "max-h-96 opacity-100"
+                    : "max-h-0 opacity-0"
+                }`}
+              >
+                <div className="px-6 pb-4 pt-0">
+                  <p className="text-muted-foreground leading-relaxed">
+                    {item.description}
+                  </p>
                 </div>
-                <p className="text-md text-muted-foreground">
-                  {item.description}
-                </p>
               </div>
             </div>
           ))}
