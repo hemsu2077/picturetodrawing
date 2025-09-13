@@ -11,120 +11,122 @@
     "show_badge": false
   },
   "transformation_examples": {
-    "name": "transformation_examples",
-    "title": "Stunning Photo to Line Drawing Results Across All Categories",
-    "description": "Discover the incredible versatility of our photo to line drawing converter. These real transformations showcase how our AI technology creates beautiful line art from everyday photos, professional shots, and everything in between.",
-    "items": [
-      {
-        "title": "Portrait Photo to Line Drawing Transformation",
-        "description": "Transform your favorite portraits into elegant line art with artistic precision. Our photo to line drawing converter captures facial features, expressions, and personality in clean, professional line work that's perfect for gifts, wall art, or digital projects.",
-        "label": "Portrait",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-portrait.webp",
-          "alt": "Portrait Photo to Line Drawing"
-        },
-      "buttons": [
-          {
-            "title": "Try Photo to Line Drawing Now",
-            "icon": "RiFlashlightFill",
-            "url": "/#drawing-generator",
-            "target": "_self",
-            "variant": "default"
-          }
-        ]
-      },
-      {
-        "title": "Beloved Pet Photos Become Beautiful Line Art",
-        "description": "Turn your cherished pet photos into heartwarming line drawings that capture their unique personality and charm. Perfect for creating memorable keepsakes, custom gifts, or adding a personal touch to your home decor.",
-        "label": "Pet",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-pet.webp",
-          "alt": "Pet Photo to Line Drawing"
-        },
+      "name": "transformation_examples",
+      "title": "全カテゴリーで魅せる写真を線描画の驚きの変身",
+      "description": "私たちの写真を線描画コンバーターの信じられないほどの多才さを発見してください。これらの実際の変換例は、AIテクノロジーが日常の写真、プロの撮影写真、そしてそれ以外のすべてから美しい線画アートをどのように作成するかを展示しています。",
+      "items": [
+        {
+          "title": "ポートレート写真を線描画への変換",
+          "description": "お気に入りのポートレートを芸術的な精度で優雅な線画に変換しましょう。私たちの写真を線描画コンバーターは、顔の特徴、表情、そして個性をクリーンでプロフェッショナルな線画として捉え、ギフト、壁面アート、またはデジタルプロジェクトに最適です。",
+          "label": "ポートレート",
+          "image": {
+            "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-portrait.webp",
+            "alt": "ポートレート写真を線描画"
+          },
         "buttons": [
-          {
-            "title": "Start Photo to Line Drawing",
-            "icon": "RiFlashlightFill",
-            "url": "/#drawing-generator",
-            "target": "_self",
-            "variant": "default"
-          }
-        ]
-      },
-      {
-        "title": "Architectural Photography Meets Line Drawing Style",
-        "description": "Convert architectural photos into precise, technical line drawings that highlight structural details and design elements. Ideal for architects, designers, and anyone who appreciates the beauty of built environments.",
-        "label": "Architecture",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
-          "alt": "Architecture Photo to Line Drawing"
+            {
+              "title": "今すぐ写真を線描画を試す",
+              "icon": "RiFlashlightFill",
+              "url": "/#drawing-generator",
+              "target": "_self",
+              "variant": "default"
+            }
+          ]
         },
-        "buttons": [
-          {
-            "title": "Create Photo to Line Drawing",
-            "icon": "RiFlashlightFill",
-            "url": "/#drawing-generator",
-            "target": "_self",
-            "variant": "default"
-          }
-        ]
-      },
-      {
-        "title": "Product Photography Enhanced with Line Drawing Conversion",
-        "description": "Transform product photos into clean, minimalist line art perfect for catalogs, technical documentation, or modern marketing materials. Our photo to line drawing tool simplifies complex products while maintaining essential details.",
-        "label": "Product",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
-          "alt": "Product Photo to Line Drawing"
+        {
+          "title": "愛すべきペットの写真が美しい線画に",
+          "description":
+  "大切なペットの写真を、彼ら独自の個性と魅力を捉えた心温まる線画に変えましょう。思い出に残る記念品、カスタムメイドのギフト、またはご自宅のインテリアに個人的なタッチを加えるのに最適です。",
+          "label": "ペット",
+          "image": {
+            "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-pet.webp",
+            "alt": "ペット写真を線描画"
+          },
+          "buttons": [
+            {
+              "title": "写真を線描画を開始",
+              "icon": "RiFlashlightFill",
+              "url": "/#drawing-generator",
+              "target": "_self",
+              "variant": "default"
+            }
+          ]
         },
-        "buttons": [
-          {
-            "title": "Generate Photo to Line Drawing",
-            "icon": "RiFlashlightFill",
-            "url": "/#drawing-generator",
-            "target": "_self",
-            "variant": "default"
-          }
-        ]
-      },
-      {
-        "title": "Nature's Beauty Captured in Photo to Line Drawing Art",
-        "description": "Experience the serene beauty of natural landscapes transformed into artistic line drawings. From mountain vistas to forest scenes, our converter brings out the essential forms and textures that make nature so captivating.",
-        "label": "Nature",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
-          "alt": "Nature Photo to Line Drawing"
+        {
+          "title": "建築写真が線描画スタイルと出会う",
+          "description": "建築写真を、構造的な詳細やデザイン要素を際立たせる正確で技術的な線画に変換しましょう。建築家、デザイナー、そして建築環境の美しさを鑑賞するすべての方に理想的です。",
+          "label": "建築",
+          "image": {
+            "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
+            "alt": "建築写真を線描画"
+          },
+          "buttons": [
+            {
+              "title": "写真を線描画を作成",
+              "icon": "RiFlashlightFill",
+              "url": "/#drawing-generator",
+              "target": "_self",
+              "variant": "default"
+            }
+          ]
         },
-        "buttons": [
-          {
-            "title": "Transform Photo to Line Drawing",
-            "icon": "RiFlashlightFill",
-            "url": "/#drawing-generator",
-            "target": "_self",
-            "variant": "default"
-          }
-        ]
-      },
-      {
-        "title": "Vehicle Photos Transformed into Technical Line Illustrations",
-        "description": "Convert vehicle photography into precise line art perfect for technical manuals, design documentation, or automotive enthusiast projects. Our photo to line drawing technology captures the essential lines and proportions of any vehicle.",
-        "label": "Vehicle",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
-          "alt": "Vehicle Photo to Line Drawing"
+        {
+          "title": "プロダクト写真が線描画変換で向上",
+          "description": "プロダクト写真を、カタログ、技術文書、またはモダンなマーケティング資料に最適なクリーンでミニマルな線画アートに変換しましょう。私たちの写真を線描画ツールは、複雑なプロダクトを簡素化しながら、本質的なディテールを保持します。",
+          "label": "プロダクト",
+          "image": {
+            "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
+            "alt": "プロダクト写真を線描画"
+          },
+          "buttons": [
+            {
+              "title": "写真を線描画を生成",
+              "icon": "RiFlashlightFill",
+              "url": "/#drawing-generator",
+              "target": "_self",
+              "variant": "default"
+            }
+          ]
         },
-        "buttons": [
-          {
-            "title": "Convert Photo to Line Drawing",
-            "icon": "RiFlashlightFill",
-            "url": "/#drawing-generator",
-            "target": "_self",
-            "variant": "default"
-          }
-        ]
-      }
-    ]
-  },
+        {
+          "title": "自然の美しさが写真を線描画アートで捉えられる",
+          "description":
+  "芸術的な線画に変換された自然の風景の穏やかな美しさを体験してください。山の眺望から森の光景まで、私たちのコンバーターは、自然をそう魅力的にする本質的な形と質感を引き出します。",
+          "label": "自然",
+          "image": {
+            "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
+            "alt": "自然写真を線描画"
+          },
+          "buttons": [
+            {
+              "title": "写真を線描画に変換",
+              "icon": "RiFlashlightFill",
+              "url": "/#drawing-generator",
+              "target": "_self",
+              "variant": "default"
+            }
+          ]
+        },
+        {
+          "title": "車両写真が技術線画イラストに変身",
+          "description": "車両写真を、技術マニュアル、デザイン文書、または自動車愛好家のプロジェクトに最適な正確な線画に変換しましょう。私たちの写真を線描画テクノロジーは、あらゆる車両の本質的なラインとプロポーションを捉えます。",
+          "label": "車両",
+          "image": {
+            "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
+            "alt": "車両写真を線描画"
+          },
+          "buttons": [
+            {
+              "title": "写真を線描画に変換",
+              "icon": "RiFlashlightFill",
+              "url": "/#drawing-generator",
+              "target": "_self",
+              "variant": "default"
+            }
+          ]
+        }
+      ]
+    },
   "usage": {
     "name": "usage",
     "title": "写真を線描画に変換する方法",
