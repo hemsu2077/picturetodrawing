@@ -12,20 +12,20 @@
   },
   "transformation_examples": {
     "name": "transformation_examples",
-    "title": "Stunning Photo to Line Drawing Results Across All Categories",
-    "description": "Discover the incredible versatility of our photo to line drawing converter. These real transformations showcase how our AI technology creates beautiful line art from everyday photos, professional shots, and everything in between.",
+    "title": "모든 카테고리에서 펼쳐지는 놀라운 사진을 선화 그림으로 변환 결과",
+    "description": "우리의 사진을 선화 그림으로 변환 변환기의 놀라운 다양성을 발견해보세요. 이러한 실제 변환 예시들은 AI 기술이 일상적인 사진, 전문적인 사진 영, 그리고 그 외 모든 것들로부터 아름다운 선화 아트를 어떻게 만들어내는지 보여줍니다.",
     "items": [
       {
-        "title": "Portrait Photo to Line Drawing Transformation",
-        "description": "Transform your favorite portraits into elegant line art with artistic precision. Our photo to line drawing converter captures facial features, expressions, and personality in clean, professional line work that's perfect for gifts, wall art, or digital projects.",
-        "label": "Portrait",
+        "title": "초상화 사진을 선화 그림으로 변환하기",
+        "description": "가장 좋아하는 초상화를 예술적 정밀함으로 우아한 선화로 변환해보세요. 우리의 사진을 선화 그림으로 변환 변환기는 얼굴 특징, 표정, 그리고 개성을 깔끔하고 전문적인 선화 작업으로 포착하여 선물, 벽면 아트, 또는 디지털 프로젝트에 완벽합니다.",
+        "label": "초상화",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-portrait.webp",
-          "alt": "Portrait Photo to Line Drawing"
+          "alt": "초상화 사진을 선화 그림으로 변환"
         },
       "buttons": [
           {
-            "title": "Try Photo to Line Drawing Now",
+            "title": "지금 바로 사진을 선화 그림으로 변환해보기",
             "icon": "RiFlashlightFill",
             "url": "/#drawing-generator",
             "target": "_self",
@@ -34,16 +34,16 @@
         ]
       },
       {
-        "title": "Beloved Pet Photos Become Beautiful Line Art",
-        "description": "Turn your cherished pet photos into heartwarming line drawings that capture their unique personality and charm. Perfect for creating memorable keepsakes, custom gifts, or adding a personal touch to your home decor.",
-        "label": "Pet",
+        "title": "소중한 반려동물 사진이 아름다운 선화가 되다",
+        "description": "소중한 반려동물 사진들을 그들만의 독특한 개성과 매력을 담아낸 따뜻한 선화로 바꿔보세요. 잊을 수 없는 추억거리, 맞춤 선물, 또는 집 안의 인테리어에 개인적인 터치를 더하는 데 완벽합니다.",
+        "label": "반려동물",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-pet.webp",
-          "alt": "Pet Photo to Line Drawing"
+          "alt": "반려동물 사진을 선화 그림으로 변환"
         },
         "buttons": [
           {
-            "title": "Start Photo to Line Drawing",
+            "title": "사진을 선화 그림으로 변환 시작하기",
             "icon": "RiFlashlightFill",
             "url": "/#drawing-generator",
             "target": "_self",
@@ -52,16 +52,16 @@
         ]
       },
       {
-        "title": "Architectural Photography Meets Line Drawing Style",
-        "description": "Convert architectural photos into precise, technical line drawings that highlight structural details and design elements. Ideal for architects, designers, and anyone who appreciates the beauty of built environments.",
-        "label": "Architecture",
+        "title": "건축 사진이 선화 스타일을 만나다",
+        "description": "건축 사진을 구조적 세부사항과 디자인 요소를 강조하는 정밀하고 기술적인 선화로 변환해보세요. 건축가, 디자이너, 그리고 건축된 환경의 아름다움을 감상하는 모든 분들께 이상적입니다.",
+        "label": "건축",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
-          "alt": "Architecture Photo to Line Drawing"
+          "alt": "건축 사진을 선화 그림으로 변환"
         },
         "buttons": [
           {
-            "title": "Create Photo to Line Drawing",
+            "title": "사진을 선화 그림으로 변환 만들기",
             "icon": "RiFlashlightFill",
             "url": "/#drawing-generator",
             "target": "_self",
@@ -70,16 +70,16 @@
         ]
       },
       {
-        "title": "Product Photography Enhanced with Line Drawing Conversion",
-        "description": "Transform product photos into clean, minimalist line art perfect for catalogs, technical documentation, or modern marketing materials. Our photo to line drawing tool simplifies complex products while maintaining essential details.",
-        "label": "Product",
+        "title": "제품 사진이 선화 변환으로 향상되다",
+        "description": "제품 사진을 카탈로그, 기술 문서, 또는 현대적인 마케팅 자료에 완벽한 깔끔하고 미니멀한 선화 아트로 변환해보세요. 우리의 사진을 선화 그림으로 변환 도구는 복잡한 제품을 단순화하면서도 핵심적인 세부사항을 유지합니다.",
+        "label": "제품",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
-          "alt": "Product Photo to Line Drawing"
+          "alt": "제품 사진을 선화 그림으로 변환"
         },
         "buttons": [
           {
-            "title": "Generate Photo to Line Drawing",
+            "title": "사진을 선화 그림으로 변환 생성하기",
             "icon": "RiFlashlightFill",
             "url": "/#drawing-generator",
             "target": "_self",
@@ -88,16 +88,16 @@
         ]
       },
       {
-        "title": "Nature's Beauty Captured in Photo to Line Drawing Art",
-        "description": "Experience the serene beauty of natural landscapes transformed into artistic line drawings. From mountain vistas to forest scenes, our converter brings out the essential forms and textures that make nature so captivating.",
-        "label": "Nature",
+        "title": "자연의 아름다움이 사진을 선화 그림으로 변환 아트에 담기다",
+        "description": "예술적인 선화로 변환된 자연의 평화로운 아름다움을 경험해보세요. 산의 전경에서 숲의 장면까지, 우리의 변환기는 자연을 그토록 매혹적으로 만드는 핵심적인 형태와 질감을 이끌어냅니다.",
+        "label": "자연",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
-          "alt": "Nature Photo to Line Drawing"
+          "alt": "자연 사진을 선화 그림으로 변환"
         },
         "buttons": [
           {
-            "title": "Transform Photo to Line Drawing",
+            "title": "사진을 선화 그림으로 변환하기",
             "icon": "RiFlashlightFill",
             "url": "/#drawing-generator",
             "target": "_self",
@@ -106,16 +106,16 @@
         ]
       },
       {
-        "title": "Vehicle Photos Transformed into Technical Line Illustrations",
-        "description": "Convert vehicle photography into precise line art perfect for technical manuals, design documentation, or automotive enthusiast projects. Our photo to line drawing technology captures the essential lines and proportions of any vehicle.",
-        "label": "Vehicle",
+        "title": "차량 사진이 기술적 선화 일러스트로 변신하다",
+        "description": "차량 사진을 기술 매뉴얼, 디자인 문서, 또는 자동차 애호가 프로젝트에 완벽한 정밀한 선화로 변환해보세요. 우리의 사진을 선화 그림으로 변환 기술은 모든 차량의 핵심적인 라인과 비율을 포착합니다.",
+        "label": "차량",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
-          "alt": "Vehicle Photo to Line Drawing"
+          "alt": "차량 사진을 선화 그림으로 변환"
         },
         "buttons": [
           {
-            "title": "Convert Photo to Line Drawing",
+            "title": "사진을 선화 그림으로 변환하기",
             "icon": "RiFlashlightFill",
             "url": "/#drawing-generator",
             "target": "_self",

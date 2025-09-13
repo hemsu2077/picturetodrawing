@@ -11,120 +11,120 @@
     "show_badge": false
   },
  "transformation_examples": {
-    "name": "transformation_examples",
-    "title": "Stunning Photo to Line Drawing Results Across All Categories",
-    "description": "Discover the incredible versatility of our photo to line drawing converter. These real transformations showcase how our AI technology creates beautiful line art from everyday photos, professional shots, and everything in between.",
-    "items": [
-      {
-        "title": "Portrait Photo to Line Drawing Transformation",
-        "description": "Transform your favorite portraits into elegant line art with artistic precision. Our photo to line drawing converter captures facial features, expressions, and personality in clean, professional line work that's perfect for gifts, wall art, or digital projects.",
-        "label": "Portrait",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-portrait.webp",
-          "alt": "Portrait Photo to Line Drawing"
-        },
+  "name": "transformation_examples",
+  "title": "各类风格的惊艳图片转线稿效果展示",
+  "description": "探索我们图片转线稿工具的强大功能！这些真实案例展示了 AI 技术如何将日常照片、专业摄影作品，甚至各种不同类型的图片，转换成极具艺术感的线稿作品。",
+  "items": [
+    {
+      "title": "人像照片转线稿效果",
+      "description": "将你最喜欢的人像照片转换为优雅精致的线条画。我们的图片转线稿工具能够精准捕捉五官细节、表情和个性，用清晰专业的线稿呈现，特别适合用于礼物、装饰画或各类数字创作项目。",
+      "label": "Portrait",
+      "image": {
+        "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-portrait.webp",
+        "alt": "人像照片转线稿"
+      },
       "buttons": [
-          {
-            "title": "Try Photo to Line Drawing Now",
-            "icon": "RiFlashlightFill",
-            "url": "/#drawing-generator",
-            "target": "_self",
-            "variant": "default"
-          }
-        ]
+        {
+          "title": "立即体验图片转线稿",
+          "icon": "RiFlashlightFill",
+          "url": "/#drawing-generator",
+          "target": "_self",
+          "variant": "default"
+        }
+      ]
+    },
+    {
+      "title": "宠物照片变身温暖线稿",
+      "description": "把你心爱的宠物照片转换成充满温度的线稿作品，完美展现它们独特的个性与魅力。非常适合制作纪念礼品、定制礼物，或为家居装饰增添独特的个人风格。",
+      "label": "Pet",
+      "image": {
+        "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-pet.webp",
+        "alt": "宠物照片转线稿"
       },
-      {
-        "title": "Beloved Pet Photos Become Beautiful Line Art",
-        "description": "Turn your cherished pet photos into heartwarming line drawings that capture their unique personality and charm. Perfect for creating memorable keepsakes, custom gifts, or adding a personal touch to your home decor.",
-        "label": "Pet",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-pet.webp",
-          "alt": "Pet Photo to Line Drawing"
-        },
-        "buttons": [
-          {
-            "title": "Start Photo to Line Drawing",
-            "icon": "RiFlashlightFill",
-            "url": "/#drawing-generator",
-            "target": "_self",
-            "variant": "default"
-          }
-        ]
+      "buttons": [
+        {
+          "title": "开始图片转线稿",
+          "icon": "RiFlashlightFill",
+          "url": "/#drawing-generator",
+          "target": "_self",
+          "variant": "default"
+        }
+      ]
+    },
+    {
+      "title": "建筑照片转换成专业线稿",
+      "description": "将建筑摄影作品转换为精确、专业的线条图，突出结构细节和设计元素。非常适合建筑师、设计师，或任何热爱建筑艺术与空间美学的人士使用。",
+      "label": "Architecture",
+      "image": {
+        "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
+        "alt": "建筑照片转线稿"
       },
-      {
-        "title": "Architectural Photography Meets Line Drawing Style",
-        "description": "Convert architectural photos into precise, technical line drawings that highlight structural details and design elements. Ideal for architects, designers, and anyone who appreciates the beauty of built environments.",
-        "label": "Architecture",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
-          "alt": "Architecture Photo to Line Drawing"
-        },
-        "buttons": [
-          {
-            "title": "Create Photo to Line Drawing",
-            "icon": "RiFlashlightFill",
-            "url": "/#drawing-generator",
-            "target": "_self",
-            "variant": "default"
-          }
-        ]
+      "buttons": [
+        {
+          "title": "创建图片转线稿",
+          "icon": "RiFlashlightFill",
+          "url": "/#drawing-generator",
+          "target": "_self",
+          "variant": "default"
+        }
+      ]
+    },
+    {
+      "title": "产品摄影结合线稿风格，简洁又专业",
+      "description": "将产品照片转换为简洁、干净的线条画，非常适合用于产品目录、技术文档或现代营销素材。我们的图片转线稿工具能让复杂的产品设计更加清晰，同时保留关键细节。",
+      "label": "Product",
+      "image": {
+        "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
+        "alt": "产品照片转线稿"
       },
-      {
-        "title": "Product Photography Enhanced with Line Drawing Conversion",
-        "description": "Transform product photos into clean, minimalist line art perfect for catalogs, technical documentation, or modern marketing materials. Our photo to line drawing tool simplifies complex products while maintaining essential details.",
-        "label": "Product",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
-          "alt": "Product Photo to Line Drawing"
-        },
-        "buttons": [
-          {
-            "title": "Generate Photo to Line Drawing",
-            "icon": "RiFlashlightFill",
-            "url": "/#drawing-generator",
-            "target": "_self",
-            "variant": "default"
-          }
-        ]
+      "buttons": [
+        {
+          "title": "生成图片转线稿",
+          "icon": "RiFlashlightFill",
+          "url": "/#drawing-generator",
+          "target": "_self",
+          "variant": "default"
+        }
+      ]
+    },
+    {
+      "title": "大自然风光化为线稿艺术",
+      "description": "感受自然风光被转换成艺术线稿的独特魅力！无论是壮丽的山景、幽静的森林还是其他自然景观，我们的工具都能呈现出最纯粹的形态与纹理，展现自然之美。",
+      "label": "Nature",
+      "image": {
+        "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
+        "alt": "自然照片转线稿"
       },
-      {
-        "title": "Nature's Beauty Captured in Photo to Line Drawing Art",
-        "description": "Experience the serene beauty of natural landscapes transformed into artistic line drawings. From mountain vistas to forest scenes, our converter brings out the essential forms and textures that make nature so captivating.",
-        "label": "Nature",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
-          "alt": "Nature Photo to Line Drawing"
-        },
-        "buttons": [
-          {
-            "title": "Transform Photo to Line Drawing",
-            "icon": "RiFlashlightFill",
-            "url": "/#drawing-generator",
-            "target": "_self",
-            "variant": "default"
-          }
-        ]
+      "buttons": [
+        {
+          "title": "立即转换图片转线稿",
+          "icon": "RiFlashlightFill",
+          "url": "/#drawing-generator",
+          "target": "_self",
+          "variant": "default"
+        }
+      ]
+    },
+    {
+      "title": "车辆照片转换为专业技术线稿",
+      "description": "将车辆摄影图片转换为精确的线条图，非常适合用于技术手册、设计文档或汽车爱好者的创作项目。我们的图片转线稿技术能够完整展现车辆的结构线条与比例细节。",
+      "label": "Vehicle",
+      "image": {
+        "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
+        "alt": "车辆照片转线稿"
       },
-      {
-        "title": "Vehicle Photos Transformed into Technical Line Illustrations",
-        "description": "Convert vehicle photography into precise line art perfect for technical manuals, design documentation, or automotive enthusiast projects. Our photo to line drawing technology captures the essential lines and proportions of any vehicle.",
-        "label": "Vehicle",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
-          "alt": "Vehicle Photo to Line Drawing"
-        },
-        "buttons": [
-          {
-            "title": "Convert Photo to Line Drawing",
-            "icon": "RiFlashlightFill",
-            "url": "/#drawing-generator",
-            "target": "_self",
-            "variant": "default"
-          }
-        ]
-      }
-    ]
-  },
+      "buttons": [
+        {
+          "title": "转换图片转线稿",
+          "icon": "RiFlashlightFill",
+          "url": "/#drawing-generator",
+          "target": "_self",
+          "variant": "default"
+        }
+      ]
+    }
+  ]
+},
   "usage": {
     "name": "usage",
     "title": "图片转线稿使用方法",
