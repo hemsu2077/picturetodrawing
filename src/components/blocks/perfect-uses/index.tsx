@@ -1,6 +1,6 @@
 import Icon from "@/components/icon";
 import { Section as SectionType } from "@/types/blocks/section";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function PerfectUses({ section }: { section: SectionType }) {
   if (section.disabled) {
@@ -8,42 +8,51 @@ export default function PerfectUses({ section }: { section: SectionType }) {
   }
 
   return (
-    <section id={section.name} className="py-16">
-      <div className="container mx-auto px-4 sm:px-6">
-        <div className="mx-auto flex max-w-4xl flex-col items-center gap-4 text-center">
-          <h2 className="mb-4 text-pretty text-2xl font-bold sm:text-3xl lg:text-4xl">
+    <section id={section.name} className="py-24 bg-background">
+      <div className="container max-w-6xl mx-auto px-6">
+        <div className="mx-auto max-w-3xl text-center mb-16 animate-in fade-in duration-700 slide-in-from-bottom-4">
+          <h2 className="mb-6 text-3xl md:text-4xl font-bold tracking-tight text-foreground">
             {section.title}
           </h2>
-          <p className="mb-12 max-w-2xl text-muted-foreground text-base sm:text-lg leading-relaxed">
+          <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
             {section.description}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 max-w-4xl mx-auto">
           {section.items?.map((item, i) => (
-            <Card key={i} className="bg-white border-none shadow-none transition-colors duration-200">
-              {item.image && (
-                <div className="flex justify-center mb-4">
-                  <div className="w-32 h-32 overflow-hidden rounded-lg">
-                    <img
-                      src={item.image.src}
-                      alt={item.title + " - Picture to Drawing"}
-                      className="w-full h-full object-cover"
-                    />
+            <div 
+              key={i} 
+              className="group animate-in fade-in duration-700 slide-in-from-bottom-4 fill-mode-both h-full"
+              style={{ animationDelay: `${300 + i * 100}ms` }}
+            >
+              <Card className="border-0 bg-card/30 backdrop-blur-sm hover:bg-card/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg p-4 md:p-6 text-center h-full flex flex-col">
+                <CardContent className="p-0 space-y-3 md:space-y-4 flex flex-col flex-1">
+                  {item.image && (
+                    <div className="flex justify-center flex-shrink-0">
+                      <div className="relative">
+                        <div className="w-16 h-16 md:w-20 md:h-20 overflow-hidden rounded-xl transition-all duration-300 group-hover:scale-110">
+                          <img
+                            src={item.image.src}
+                            alt={item.title + " - Picture to Drawing"}
+                            className="w-full h-full object-cover"
+                          />
+                        </div>
+                        <div className="absolute -inset-1 bg-primary/10 rounded-xl blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+                      </div>
+                    </div>
+                  )}
+                  <div className="space-y-2 flex-1 flex flex-col justify-center">
+                    <h3 className="text-sm md:text-base font-medium text-foreground transition-colors duration-200 group-hover:text-primary">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs md:text-sm text-muted-foreground leading-relaxed">
+                      {item.description}
+                    </p>
                   </div>
-                </div>
-              )}
-              <CardHeader className="pb-0">
-                <CardTitle className="text-lg sm:text-xl text-gray-900 text-center">
-                  {item.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="pt-0">
-                <p className="text-muted-foreground leading-relaxed text-sm sm:text-base text-center">
-                  {item.description}
-                </p>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </div>
           ))}
         </div>
       </div>
