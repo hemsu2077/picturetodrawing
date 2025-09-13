@@ -5,146 +5,123 @@
   },
   "hero": {
     "title": "Transformez instantanément une photo en dessin au trait",
-    "announcement": {
-      "label": "NOUVEAU",
-      "title": "🍌 Nano Banana",
-      "url": "/photo-to-line-drawing#drawing-generator"
-    },
     "highlight_text": "photo en dessin au trait",
     "description": "Convertissez n'importe quelle photo en dessin au trait net et professionnel sans compétences artistiques.",
-    "tip": "Essai gratuit, 100% sécurisé, résultats instantanés",
-    "tip_items": [
-      {
-        "text": "Essai gratuit",
-        "icon": "Gift"
-      },
-      {
-        "text": "100% sécurisé",
-        "icon": "Shield"
-      },
-      {
-        "text": "Sans inscription",
-        "icon": "Zap"
-      }
-    ],
-    "buttons": [
-      {
-        "title": "Essayer gratuitement",
-        "icon": "RiFlashlightFill",
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self",
-        "variant": "default"
-      }
-    ],
-    "show_happy_users": true,
+    "show_happy_users": false,
     "show_badge": false
   },
-  "showcase": {
-    "name": "showcase",
-    "title": "Résultats époustouflants de conversion photo en dessin au trait pour toutes les catégories",
+  "transformation_examples": {
+    "name": "transformation_examples",
+    "title": "Stunning Photo to Line Drawing Results Across All Categories",
+    "description": "Discover the incredible versatility of our photo to line drawing converter. These real transformations showcase how our AI technology creates beautiful line art from everyday photos, professional shots, and everything in between.",
     "items": [
       {
-        "title": "Transformation de portrait en dessin au trait",
-        "description": "Transformez des portraits en dessins au trait élégants avec une précision artistique.",
+        "title": "Portrait Photo to Line Drawing Transformation",
+        "description": "Transform your favorite portraits into elegant line art with artistic precision. Our photo to line drawing converter captures facial features, expressions, and personality in clean, professional line work that's perfect for gifts, wall art, or digital projects.",
         "label": "Portrait",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-portrait.webp",
-          "alt": "Portrait transformé en dessin au trait"
+          "alt": "Portrait Photo to Line Drawing"
         },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
+      "buttons": [
+          {
+            "title": "Try Photo to Line Drawing Now",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "Style architectural en dessin au trait",
-        "description": "Transformez des photos architecturales en dessins au trait précis pour usage technique.",
+        "title": "Beloved Pet Photos Become Beautiful Line Art",
+        "description": "Turn your cherished pet photos into heartwarming line drawings that capture their unique personality and charm. Perfect for creating memorable keepsakes, custom gifts, or adding a personal touch to your home decor.",
+        "label": "Pet",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-pet.webp",
+          "alt": "Pet Photo to Line Drawing"
+        },
+        "buttons": [
+          {
+            "title": "Start Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "Architectural Photography Meets Line Drawing Style",
+        "description": "Convert architectural photos into precise, technical line drawings that highlight structural details and design elements. Ideal for architects, designers, and anyone who appreciates the beauty of built environments.",
         "label": "Architecture",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
-          "alt": "Architecture transformée en dessin au trait"
+          "alt": "Architecture Photo to Line Drawing"
         },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
+        "buttons": [
+          {
+            "title": "Create Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "Photo de produit en dessin au trait pour design",
-        "description": "Convertissez des photos de produits en dessins au trait nets pour documentation de design.",
-        "label": "Produit",
+        "title": "Product Photography Enhanced with Line Drawing Conversion",
+        "description": "Transform product photos into clean, minimalist line art perfect for catalogs, technical documentation, or modern marketing materials. Our photo to line drawing tool simplifies complex products while maintaining essential details.",
+        "label": "Product",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
-          "alt": "Produit transformé en dessin au trait"
+          "alt": "Product Photo to Line Drawing"
         },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
+        "buttons": [
+          {
+            "title": "Generate Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "Illustration de véhicule en dessin au trait",
-        "description": "Convertissez des photos de véhicules en dessins au trait techniques pour projets de documentation.",
-        "label": "Véhicule",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
-          "alt": "Véhicule transformé en dessin au trait"
-        },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
-      },
-      {
-        "title": "Art de nature en dessin au trait",
-        "description": "Transformez des photos de nature en dessins au trait artistiques mettant en valeur la beauté naturelle.",
+        "title": "Nature's Beauty Captured in Photo to Line Drawing Art",
+        "description": "Experience the serene beauty of natural landscapes transformed into artistic line drawings. From mountain vistas to forest scenes, our converter brings out the essential forms and textures that make nature so captivating.",
         "label": "Nature",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
-          "alt": "Nature transformée en dessin au trait"
+          "alt": "Nature Photo to Line Drawing"
         },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
+        "buttons": [
+          {
+            "title": "Transform Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "Conversion de photo d'animal en dessin au trait",
-        "description": "Transformez les photos de vos animaux bien-aimés en dessins au trait qui capturent leur personnalité unique.",
-        "label": "Animal",
+        "title": "Vehicle Photos Transformed into Technical Line Illustrations",
+        "description": "Convert vehicle photography into precise line art perfect for technical manuals, design documentation, or automotive enthusiast projects. Our photo to line drawing technology captures the essential lines and proportions of any vehicle.",
+        "label": "Vehicle",
         "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-pet.webp",
-          "alt": "Animal transformé en dessin au trait"
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
+          "alt": "Vehicle Photo to Line Drawing"
         },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
-      }
-    ]
-  },
-  "feature": {
-    "name": "feature",
-    "title": "Fonctionnalités de conversion photo en dessin au trait",
-    "description": "Que vous soyez amateur, designer professionnel ou artisan, notre outil de conversion photo en dessin au trait vous offre tout ce dont vous avez besoin.",
-    "items": [
-      {
-        "title": "Aucune compétence en dessin requise",
-        "description": "Transformez n'importe quelle photo en dessin au trait professionnel sans aucune formation artistique. Parfait pour les débutants comme pour les experts.",
-        "icon": "RiMagicLine"
-      },
-      {
-        "title": "Traitement ultra-rapide",
-        "description": "Obtenez vos dessins au trait en quelques secondes, pas en heures. Notre IA optimisée garantit des temps de traitement rapides pour tous vos projets.",
-        "icon": "RiFlashlightLine"
-      },
-      {
-        "title": "Paramètres personnalisables",
-        "description": "Ajustez l'épaisseur des traits, le niveau de détail et le contraste pour obtenir le style de dessin au trait parfait pour vos besoins spécifiques.",
-        "icon": "RiSettings3Line"
-      },
-      {
-        "title": "Formats de sortie multiples",
-        "description": "Téléchargez vos dessins au trait au format PNG, SVG ou PDF. Compatible avec les logiciels de broderie, les découpeuses laser et les programmes de design.",
-        "icon": "RiDownloadLine"
-      },
-      {
-        "title": "Confidentialité protégée",
-        "description": "Vos photos sont traitées de manière sécurisée et ne sont jamais stockées sur nos serveurs. Confidentialité et protection des données garanties.",
-        "icon": "RiShieldCheckLine"
-      },
-      {
-        "title": "Fonctionne partout",
-        "description": "Utilisez notre convertisseur photo en dessin au trait sur n'importe quel appareil - ordinateur, tablette ou mobile. Aucune installation de logiciel requise.",
-        "icon": "RiSmartphoneLine"
+        "buttons": [
+          {
+            "title": "Convert Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       }
     ]
   },
@@ -223,105 +200,6 @@
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self",
         "icon": "GoArrowUpRight"
-      }
-    ]
-  },
- 
-  
-  "use_cases": {
-    "name": "use_cases",
-    "title": "Applications de conversion photo en dessin au trait dans divers secteurs",
-    "description": "Des projets personnels aux applications professionnelles, découvrez comment la conversion photo en dessin au trait transforme les flux de travail créatifs dans tous les secteurs.",
-    "items": [
-      {
-        "title": "Artisanat et loisirs",
-        "description": "Transformez vos photos en motifs et guides pratiques pour vos projets créatifs.",
-        "icon": "RiScissorsLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-coloring-page.webp",
-          "alt": "cas d'usage photo en dessin au trait - page à colorier"
-        },
-        "children": [
-          "Motifs de broderie à partir de photos de famille",
-          "Pages à colorier personnalisées pour enfants",
-          "Guides pour pyrogravure et gravure",
-          "Pochoirs pour projets de peinture"
-        ]
-      },
-      {
-        "title": "Art numérique et design",
-        "description": "Utilisez la conversion photo en dessin au trait comme base pour vos créations numériques.",
-        "icon": "RiPaintBrushLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-logo.webp",
-          "alt": "cas d'usage photo en dessin au trait - logo"
-        },
-        "children": [
-          "Couches de base pour peintures numériques",
-          "Guides de référence pour illustrations",
-          "Création de logos minimalistes",
-          "Graphiques pour sites web et applications"
-        ]
-      },
-      {
-        "title": "Cadeaux personnalisés",
-        "description": "Créez des cadeaux significatifs avec des conversions photo en dessin au trait.",
-        "icon": "RiGiftLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-t-shirt.webp",
-          "alt": "cas d'usage photo en dessin au trait - t-shirt"
-        },
-        "children": [
-          "Portraits d'animaux sur mugs personnalisés",
-          "Dessins au trait de famille pour décoration murale",
-          "Designs de t-shirts personnalisés",
-          "Œuvres d'art d'affiche personnalisées"
-        ]
-      },
-      {
-        "title": "Fabrication professionnelle",
-        "description": "Convertissez des photos en dessins au trait précis pour applications industrielles.",
-        "icon": "RiSettings3Line",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-manufacturing.webp",
-          "alt": "cas d'usage photo en dessin au trait - fabrication"
-        },
-        "children": [
-          "Génération de trajectoires pour découpe laser",
-          "Parcours d'outils pour machines CNC",
-          "Création d'art pour traceur",
-          "Simplification de diagrammes techniques"
-        ]
-      },
-      {
-        "title": "Tatouage et art corporel",
-        "description": "La conversion photo en dessin au trait crée des modèles parfaits pour l'art corporel.",
-        "icon": "RiHeartLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-tattoo.webp",
-          "alt": "cas d'usage photo en dessin au trait - tatouage"
-        },
-        "children": [
-          "Modèles pour designs de tatouage",
-          "Création de motifs pour henné",
-          "Pochoirs pour art corporel",
-          "Visuels pour consultation avec artiste"
-        ]
-      },
-      {
-        "title": "Éducation et formation",
-        "description": "Simplifiez des images complexes en supports pédagogiques clairs.",
-        "icon": "RiGraduationCapLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-education.webp",
-          "alt": "cas d'usage photo en dessin au trait - éducation"
-        },
-        "children": [
-          "Diagrammes anatomiques simplifiés",
-          "Contours d'équipements techniques",
-          "Graphiques pour matériel pédagogique",
-          "Fiches d'activité pour étudiants"
-        ]
       }
     ]
   }

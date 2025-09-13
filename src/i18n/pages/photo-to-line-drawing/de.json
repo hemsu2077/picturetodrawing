@@ -5,146 +5,123 @@
   },
   "hero": {
     "title": "Wandeln Sie Fotos sofort in Strichzeichnungen um",
-    "announcement": {
-      "label": "NEU",
-      "title": "🍌 Nano Banana",
-      "url": "/photo-to-line-drawing#drawing-generator"
-    },
     "highlight_text": "Foto in Strichzeichnung",
     "description": "Wandeln Sie jedes Foto ohne Zeichenfähigkeiten in saubere, professionelle Linienkunst um.",
-    "tip": "Kostenlos testen, 100% sicher, sofortige Ergebnisse",
-    "tip_items": [
-      {
-        "text": "Kostenlos testen",
-        "icon": "Gift"
-      },
-      {
-        "text": "100% sicher",
-        "icon": "Shield"
-      },
-      {
-        "text": "Keine Anmeldung erforderlich",
-        "icon": "Zap"
-      }
-    ],
-    "buttons": [
-      {
-        "title": "Kostenlos testen",
-        "icon": "RiFlashlightFill",
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self",
-        "variant": "default"
-      }
-    ],
-    "show_happy_users": true,
+    "show_happy_users": false,
     "show_badge": false
   },
-  "showcase": {
-    "name": "showcase",
-    "title": "Beeindruckende Foto-in-Strichzeichnung Ergebnisse in allen Kategorien",
+  "transformation_examples": {
+    "name": "transformation_examples",
+    "title": "Stunning Photo to Line Drawing Results Across All Categories",
+    "description": "Discover the incredible versatility of our photo to line drawing converter. These real transformations showcase how our AI technology creates beautiful line art from everyday photos, professional shots, and everything in between.",
     "items": [
       {
-        "title": "Porträt-Foto-in-Strichzeichnung-Transformation",
-        "description": "Verwandeln Sie Porträts mit künstlerischer Präzision in elegante Linienkunst.",
-        "label": "Porträt",
+        "title": "Portrait Photo to Line Drawing Transformation",
+        "description": "Transform your favorite portraits into elegant line art with artistic precision. Our photo to line drawing converter captures facial features, expressions, and personality in clean, professional line work that's perfect for gifts, wall art, or digital projects.",
+        "label": "Portrait",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-portrait.webp",
-          "alt": "Porträt-Foto in Strichzeichnung"
+          "alt": "Portrait Photo to Line Drawing"
         },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
+      "buttons": [
+          {
+            "title": "Try Photo to Line Drawing Now",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "Architektonischer Foto-in-Strichzeichnung-Stil",
-        "description": "Verwandeln Sie architektonische Fotos in präzise Strichzeichnungen für den technischen Einsatz.",
-        "label": "Architektur",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
-          "alt": "Architektur-Foto in Strichzeichnung"
-        },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
-      },
-      {
-        "title": "Produktfoto-in-Strichzeichnung für Design",
-        "description": "Wandeln Sie Produktfotos in saubere Linienkunst für Designdokumentation um.",
-        "label": "Produkt",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
-          "alt": "Produktfoto in Strichzeichnung"
-        },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
-      },
-      {
-        "title": "Fahrzeugfoto-in-Strichzeichnung-Illustration",
-        "description": "Wandeln Sie Fahrzeugfotos in technische Linienkunst für Dokumentationsprojekte um.",
-        "label": "Fahrzeug",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
-          "alt": "Fahrzeugfoto in Strichzeichnung"
-        },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
-      },
-      {
-        "title": "Naturfoto-in-Strichzeichnung-Kunst",
-        "description": "Verwandeln Sie Naturfotos in künstlerische Strichzeichnungen, die natürliche Schönheit hervorheben.",
-        "label": "Natur",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
-          "alt": "Naturfoto in Strichzeichnung"
-        },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
-      },
-      {
-        "title": "Haustierfoto-in-Strichzeichnung-Umwandlung",
-        "description": "Verwandeln Sie Ihre geliebten Haustierfotos in Strichzeichnungen, die ihre einzigartige Persönlichkeit einfangen.",
-        "label": "Haustier",
+        "title": "Beloved Pet Photos Become Beautiful Line Art",
+        "description": "Turn your cherished pet photos into heartwarming line drawings that capture their unique personality and charm. Perfect for creating memorable keepsakes, custom gifts, or adding a personal touch to your home decor.",
+        "label": "Pet",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-pet.webp",
-          "alt": "Haustierfoto in Strichzeichnung"
+          "alt": "Pet Photo to Line Drawing"
         },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
-      }
-    ]
-  },
-  "feature": {
-    "name": "feature",
-    "title": "Foto-in-Strichzeichnung Funktionen",
-    "description": "Ob Sie Hobbyist, professioneller Designer oder Handwerker sind, unser Foto-in-Strichzeichnung-Tool bietet alles, was Sie benötigen.",
-    "items": [
-      {
-        "title": "Keine Zeichenfähigkeiten erforderlich",
-        "description": "Verwandeln Sie jedes Foto ohne künstlerischen Hintergrund in professionelle Linienkunst. Perfekt für Anfänger und Experten gleichermaßen.",
-        "icon": "RiMagicLine"
+        "buttons": [
+          {
+            "title": "Start Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "Blitzschnelle Verarbeitung",
-        "description": "Erhalten Sie Ihre Strichzeichnung-Ergebnisse in Sekunden, nicht in Stunden. Unsere optimierte KI gewährleistet schnelle Bearbeitungszeiten für alle Ihre Projekte.",
-        "icon": "RiFlashlightLine"
+        "title": "Architectural Photography Meets Line Drawing Style",
+        "description": "Convert architectural photos into precise, technical line drawings that highlight structural details and design elements. Ideal for architects, designers, and anyone who appreciates the beauty of built environments.",
+        "label": "Architecture",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
+          "alt": "Architecture Photo to Line Drawing"
+        },
+        "buttons": [
+          {
+            "title": "Create Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "Anpassbare Einstellungen",
-        "description": "Passen Sie Linienstärke, Detailgrad und Kontrast an, um den perfekten Linienkunst-Stil für Ihre spezifischen Projektanforderungen zu erhalten.",
-        "icon": "RiSettings3Line"
+        "title": "Product Photography Enhanced with Line Drawing Conversion",
+        "description": "Transform product photos into clean, minimalist line art perfect for catalogs, technical documentation, or modern marketing materials. Our photo to line drawing tool simplifies complex products while maintaining essential details.",
+        "label": "Product",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
+          "alt": "Product Photo to Line Drawing"
+        },
+        "buttons": [
+          {
+            "title": "Generate Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "Mehrere Ausgabeformate",
-        "description": "Laden Sie Ihre Strichzeichnungen als PNG, SVG oder PDF herunter. Kompatibel mit Stickerei-Software, Lasercuttern und Designprogrammen.",
-        "icon": "RiDownloadLine"
+        "title": "Nature's Beauty Captured in Photo to Line Drawing Art",
+        "description": "Experience the serene beauty of natural landscapes transformed into artistic line drawings. From mountain vistas to forest scenes, our converter brings out the essential forms and textures that make nature so captivating.",
+        "label": "Nature",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
+          "alt": "Nature Photo to Line Drawing"
+        },
+        "buttons": [
+          {
+            "title": "Transform Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "Datenschutz geschützt",
-        "description": "Ihre Fotos werden sicher verarbeitet und niemals auf unseren Servern gespeichert. Vollständiger Datenschutz und Datenschutz garantiert.",
-        "icon": "RiShieldCheckLine"
-      },
-      {
-        "title": "Funktioniert überall",
-        "description": "Verwenden Sie unseren Foto-in-Strichzeichnung-Konverter auf jedem Gerät - Desktop, Tablet oder Mobil. Keine Softwareinstallation erforderlich.",
-        "icon": "RiSmartphoneLine"
+        "title": "Vehicle Photos Transformed into Technical Line Illustrations",
+        "description": "Convert vehicle photography into precise line art perfect for technical manuals, design documentation, or automotive enthusiast projects. Our photo to line drawing technology captures the essential lines and proportions of any vehicle.",
+        "label": "Vehicle",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
+          "alt": "Vehicle Photo to Line Drawing"
+        },
+        "buttons": [
+          {
+            "title": "Convert Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       }
     ]
   },
@@ -223,105 +200,6 @@
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self",
         "icon": "GoArrowUpRight"
-      }
-    ]
-  },
- 
-  
-  "use_cases": {
-    "name": "use_cases",
-    "title": "Foto-in-Strichzeichnung Anwendungen in verschiedenen Branchen",
-    "description": "Von persönlichen Handarbeiten bis zu professionellen Projekten, entdecken Sie, wie Foto-in-Strichzeichnung kreative Arbeitsabläufe in verschiedenen Branchen transformiert.",
-    "items": [
-      {
-        "title": "Handwerk & Hobbys",
-        "description": "Verwandeln Sie Ihre Fotos in praktische Muster und Anleitungen für kreative Projekte.",
-        "icon": "RiScissorsLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-coloring-page.webp",
-          "alt": "Foto-in-Strichzeichnung Anwendungsfall - Malvorlage"
-        },
-        "children": [
-          "Stickmuster aus Familienfotos",
-          "Personalisierte Malvorlagen für Kinder",
-          "Pyrografie- und Gravieranleitungen",
-          "Schablonen für Malprojekte"
-        ]
-      },
-      {
-        "title": "Digitale Kunst & Design",
-        "description": "Verwenden Sie Foto-in-Strichzeichnung als Grundlage für digitale kreative Arbeit.",
-        "icon": "RiPaintBrushLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-logo.webp",
-          "alt": "Foto-in-Strichzeichnung Anwendungsfall - Logo"
-        },
-        "children": [
-          "Grundebenen für digitale Gemälde",
-          "Referenzanleitungen für Illustrationen",
-          "Erstellung minimalistischer Logos",
-          "Website- und App-Grafiken"
-        ]
-      },
-      {
-        "title": "Personalisierte Geschenke",
-        "description": "Erstellen Sie bedeutungsvolle Geschenke mit Foto-in-Strichzeichnung-Umwandlungen.",
-        "icon": "RiGiftLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-t-shirt.webp",
-          "alt": "Foto-in-Strichzeichnung Anwendungsfall - T-Shirt"
-        },
-        "children": [
-          "Haustierporträts auf personalisierten Tassen",
-          "Familien-Linienkunst für Wanddeko",
-          "Personalisierte T-Shirt-Designs",
-          "Benutzerdefinierte Poster-Kunstwerke"
-        ]
-      },
-      {
-        "title": "Professionelle Fertigung",
-        "description": "Wandeln Sie Fotos in präzise Strichzeichnungen für industrielle Anwendungen um.",
-        "icon": "RiSettings3Line",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-manufacturing.webp",
-          "alt": "Foto-in-Strichzeichnung Anwendungsfall - Fertigung"
-        },
-        "children": [
-          "Laser-Schneidpfad-Generierung",
-          "CNC-Maschinen-Werkzeugpfade",
-          "Plotter-Kunst-Erstellung",
-          "Vereinfachung technischer Diagramme"
-        ]
-      },
-      {
-        "title": "Tätowierung & Körperkunst",
-        "description": "Foto-in-Strichzeichnung erstellt perfekte Vorlagen für Körperkunst.",
-        "icon": "RiHeartLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-tattoo.webp",
-          "alt": "Foto-in-Strichzeichnung Anwendungsfall - Tätowierung"
-        },
-        "children": [
-          "Tätowierungs-Design-Vorlagen",
-          "Henna-Muster-Erstellung",
-          "Körperkunst-Schablonen",
-          "Visuale für Künstlerberatung"
-        ]
-      },
-      {
-        "title": "Bildung & Ausbildung",
-        "description": "Vereinfachen Sie komplexe Bilder in klare Bildungsmaterialien.",
-        "icon": "RiGraduationCapLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-education.webp",
-          "alt": "Foto-in-Strichzeichnung Anwendungsfall - Bildung"
-        },
-        "children": [
-          "Vereinfachte anatomische Diagramme",
-          "Technische Geräte-Umrisszeichnungen",
-          "Grafiken für Bildungsmaterial",
-          "Schüleraktivitätsbögen"
-        ]
       }
     ]
   }

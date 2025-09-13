@@ -5,146 +5,123 @@
   },
   "hero": {
     "title": "秒速照片轉線稿",
-    "announcement": {
-      "label": "新品",
-      "title": "🍌 Nano Banana",
-      "url": "/photo-to-line-drawing#drawing-generator"
-    },
     "highlight_text": "照片轉線稿",
     "description": "無需繪畫技能，一鍵將任意照片轉換為專業級清晰線條藝術。",
-    "tip": "免費試用，100%安全，即時出圖",
-    "tip_items": [
-      {
-        "text": "免費試用",
-        "icon": "Gift"
-      },
-      {
-        "text": "100% 安全",
-        "icon": "Shield"
-      },
-      {
-        "text": "無需註冊",
-        "icon": "Zap"
-      }
-    ],
-    "buttons": [
-      {
-        "title": "免費試用",
-        "icon": "RiFlashlightFill",
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self",
-        "variant": "default"
-      }
-    ],
-    "show_happy_users": true,
+    "show_happy_users": false,
     "show_badge": false
   },
-  "showcase": {
-    "name": "showcase",
-    "title": "全品類照片轉線稿精彩效果展示",
+  "transformation_examples": {
+    "name": "transformation_examples",
+    "title": "Stunning Photo to Line Drawing Results Across All Categories",
+    "description": "Discover the incredible versatility of our photo to line drawing converter. These real transformations showcase how our AI technology creates beautiful line art from everyday photos, professional shots, and everything in between.",
     "items": [
       {
-        "title": "人像照片轉線稿藝術",
-        "description": "將人像照片轉換為優雅線條藝術，藝術精度完美呈現。",
-        "label": "人像",
+        "title": "Portrait Photo to Line Drawing Transformation",
+        "description": "Transform your favorite portraits into elegant line art with artistic precision. Our photo to line drawing converter captures facial features, expressions, and personality in clean, professional line work that's perfect for gifts, wall art, or digital projects.",
+        "label": "Portrait",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-portrait.webp",
-          "alt": "人像照片轉線稿"
+          "alt": "Portrait Photo to Line Drawing"
         },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
+      "buttons": [
+          {
+            "title": "Try Photo to Line Drawing Now",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "建築照片轉線稿風格",
-        "description": "將建築照片轉換為精確線稿，滿足專業技術使用需求。",
-        "label": "建築",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
-          "alt": "建築照片轉線稿"
-        },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
-      },
-      {
-        "title": "產品照片轉線稿設計",
-        "description": "將產品照片轉換為清晰線條藝術，用於設計文檔製作。",
-        "label": "產品",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
-          "alt": "產品照片轉線稿"
-        },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
-      },
-      {
-        "title": "車輛照片轉線稿插圖",
-        "description": "將車輛照片轉換為技術性線條藝術，用於文檔項目。",
-        "label": "車輛",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
-          "alt": "車輛照片轉線稿"
-        },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
-      },
-      {
-        "title": "自然照片轉線稿藝術",
-        "description": "將自然風光照片轉換為藝術線條畫，突顯自然之美。",
-        "label": "自然",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
-          "alt": "自然照片轉線稿"
-        },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
-      },
-      {
-        "title": "寵物照片轉線稿轉換",
-        "description": "將您心愛的寵物照片轉換為線稿，捕捉牠們獨特的個性魅力。",
-        "label": "寵物",
+        "title": "Beloved Pet Photos Become Beautiful Line Art",
+        "description": "Turn your cherished pet photos into heartwarming line drawings that capture their unique personality and charm. Perfect for creating memorable keepsakes, custom gifts, or adding a personal touch to your home decor.",
+        "label": "Pet",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-pet.webp",
-          "alt": "寵物照片轉線稿"
+          "alt": "Pet Photo to Line Drawing"
         },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
-      }
-    ]
-  },
-  "feature": {
-    "name": "feature",
-    "title": "照片轉線稿功能特點",
-    "description": "無論您是愛好者、專業設計師還是手工藝人，我們的照片轉線稿工具都能滿足您的所有需求。",
-    "items": [
-      {
-        "title": "無需繪畫技能",
-        "description": "無需任何藝術背景，即可將任意照片轉換為專業線條藝術。完美適合初學者和專家使用。",
-        "icon": "RiMagicLine"
+        "buttons": [
+          {
+            "title": "Start Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "閃電般快速處理",
-        "description": "幾秒鐘內獲得線稿結果，而非數小時。我們優化的AI確保所有項目的快速週轉時間。",
-        "icon": "RiFlashlightLine"
+        "title": "Architectural Photography Meets Line Drawing Style",
+        "description": "Convert architectural photos into precise, technical line drawings that highlight structural details and design elements. Ideal for architects, designers, and anyone who appreciates the beauty of built environments.",
+        "label": "Architecture",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
+          "alt": "Architecture Photo to Line Drawing"
+        },
+        "buttons": [
+          {
+            "title": "Create Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "可自訂設置",
-        "description": "調整線條粗細、細節程度和對比度，為特定項目需求獲得完美的線條藝術風格。",
-        "icon": "RiSettings3Line"
+        "title": "Product Photography Enhanced with Line Drawing Conversion",
+        "description": "Transform product photos into clean, minimalist line art perfect for catalogs, technical documentation, or modern marketing materials. Our photo to line drawing tool simplifies complex products while maintaining essential details.",
+        "label": "Product",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
+          "alt": "Product Photo to Line Drawing"
+        },
+        "buttons": [
+          {
+            "title": "Generate Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "多種輸出格式",
-        "description": "將線稿下載為PNG、SVG或PDF格式。相容刺繡軟體、雷射切割機和設計程式。",
-        "icon": "RiDownloadLine"
+        "title": "Nature's Beauty Captured in Photo to Line Drawing Art",
+        "description": "Experience the serene beauty of natural landscapes transformed into artistic line drawings. From mountain vistas to forest scenes, our converter brings out the essential forms and textures that make nature so captivating.",
+        "label": "Nature",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
+          "alt": "Nature Photo to Line Drawing"
+        },
+        "buttons": [
+          {
+            "title": "Transform Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "隱私保護",
-        "description": "您的照片經過安全處理，絕不會儲存在我們的伺服器上。保證完全的隱私和數據保護。",
-        "icon": "RiShieldCheckLine"
-      },
-      {
-        "title": "隨處可用",
-        "description": "在任何設備上使用我們的照片轉線稿轉換器 - 桌面、平板或手機。無需安裝軟體。",
-        "icon": "RiSmartphoneLine"
+        "title": "Vehicle Photos Transformed into Technical Line Illustrations",
+        "description": "Convert vehicle photography into precise line art perfect for technical manuals, design documentation, or automotive enthusiast projects. Our photo to line drawing technology captures the essential lines and proportions of any vehicle.",
+        "label": "Vehicle",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
+          "alt": "Vehicle Photo to Line Drawing"
+        },
+        "buttons": [
+          {
+            "title": "Convert Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       }
     ]
   },
@@ -223,105 +200,6 @@
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self",
         "icon": "GoArrowUpRight"
-      }
-    ]
-  },
- 
-  
-  "use_cases": {
-    "name": "use_cases",
-    "title": "照片轉線稿在各行業的應用",
-    "description": "從個人手工藝到專業項目，了解照片轉線稿如何改變各行業的創意工作流程。",
-    "items": [
-      {
-        "title": "手工藝與愛好",
-        "description": "將您的照片轉換為實用圖案和指南，用於創意項目製作。",
-        "icon": "RiScissorsLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-coloring-page.webp",
-          "alt": "照片轉線稿應用 - 塗色頁"
-        },
-        "children": [
-          "家庭照片刺繡圖案",
-          "兒童定制塗色頁", 
-          "木刻和雕刻指南",
-          "繪畫項目模板"
-        ]
-      },
-      {
-        "title": "數位藝術與設計",
-        "description": "使用照片轉線稿作為數位創意工作的基礎。",
-        "icon": "RiPaintBrushLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-logo.webp",
-          "alt": "照片轉線稿應用 - 標誌"
-        },
-        "children": [
-          "數位繪畫基礎圖層",
-          "插圖參考指南",
-          "極簡標誌創作",
-          "網站和應用程式圖形"
-        ]
-      },
-      {
-        "title": "個人化禮物",
-        "description": "透過照片轉線稿轉換製作有意義的心意禮物。",
-        "icon": "RiGiftLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-t-shirt.webp",
-          "alt": "照片轉線稿應用 - T恤"
-        },
-        "children": [
-          "定制馬克杯寵物肖像",
-          "牆面裝飾家庭線條藝術",
-          "個人化T恤設計", 
-          "定制海報藝術作品"
-        ]
-      },
-      {
-        "title": "專業製造業",
-        "description": "將照片轉換為精確線稿，用於工業應用。",
-        "icon": "RiSettings3Line",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-manufacturing.webp",
-          "alt": "照片轉線稿應用 - 製造業"
-        },
-        "children": [
-          "雷射切割路徑生成",
-          "CNC機床刀具路徑",
-          "繪圖機藝術創作",
-          "技術圖表簡化"
-        ]
-      },
-      {
-        "title": "紋身與身體藝術",
-        "description": "照片轉線稿為身體藝術創建完美模板。",
-        "icon": "RiHeartLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-tattoo.webp",
-          "alt": "照片轉線稿應用 - 紋身"
-        },
-        "children": [
-          "紋身設計模板",
-          "海娜圖案創作",
-          "身體藝術模板",
-          "藝術家諮詢視覺材料"
-        ]
-      },
-      {
-        "title": "教育培訓",
-        "description": "將複雜圖像簡化為清晰的教育材料。",
-        "icon": "RiGraduationCapLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-education.webp",
-          "alt": "照片轉線稿應用 - 教育"
-        },
-        "children": [
-          "簡化解剖圖表",
-          "技術設備輪廓圖",
-          "教育材料圖形",
-          "學生活動表格"
-        ]
       }
     ]
   }

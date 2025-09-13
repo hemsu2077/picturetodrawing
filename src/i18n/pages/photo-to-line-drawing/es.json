@@ -5,146 +5,123 @@
   },
   "hero": {
     "title": "Transforma Foto en Dibujo de Líneas al Instante",
-    "announcement": {
-      "label": "NUEVO",
-      "title": "🍌 Nano Banana",
-      "url": "/photo-to-line-drawing#drawing-generator"
-    },
     "highlight_text": "Foto en Dibujo de Líneas",
     "description": "Convierte cualquier foto en arte de líneas limpio y profesional sin habilidades de dibujo.",
-    "tip": "Gratis para Probar, 100% Seguro, Resultados Instantáneos",
-    "tip_items": [
-      {
-        "text": "Gratis para Probar",
-        "icon": "Gift"
-      },
-      {
-        "text": "100% Seguro",
-        "icon": "Shield"
-      },
-      {
-        "text": "Sin Registro Requerido",
-        "icon": "Zap"
-      }
-    ],
-    "buttons": [
-      {
-        "title": "Probar Gratis",
-        "icon": "RiFlashlightFill",
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self",
-        "variant": "default"
-      }
-    ],
-    "show_happy_users": true,
+    "show_happy_users": false,
     "show_badge": false
   },
-  "showcase": {
-    "name": "showcase",
-    "title": "Resultados Espectaculares de Foto a Dibujo de Líneas en Todas las Categorías",
+  "transformation_examples": {
+    "name": "transformation_examples",
+    "title": "Stunning Photo to Line Drawing Results Across All Categories",
+    "description": "Discover the incredible versatility of our photo to line drawing converter. These real transformations showcase how our AI technology creates beautiful line art from everyday photos, professional shots, and everything in between.",
     "items": [
       {
-        "title": "Transformación de Retrato a Dibujo de Líneas",
-        "description": "Transforma retratos en arte de líneas elegante con precisión artística.",
-        "label": "Retrato",
+        "title": "Portrait Photo to Line Drawing Transformation",
+        "description": "Transform your favorite portraits into elegant line art with artistic precision. Our photo to line drawing converter captures facial features, expressions, and personality in clean, professional line work that's perfect for gifts, wall art, or digital projects.",
+        "label": "Portrait",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-portrait.webp",
-          "alt": "Retrato a Dibujo de Líneas"
+          "alt": "Portrait Photo to Line Drawing"
         },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
+      "buttons": [
+          {
+            "title": "Try Photo to Line Drawing Now",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "Estilo Arquitectónico de Foto a Dibujo de Líneas",
-        "description": "Transforma fotos arquitectónicas en dibujos de líneas precisos para uso técnico.",
-        "label": "Arquitectura",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
-          "alt": "Arquitectura a Dibujo de Líneas"
-        },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
-      },
-      {
-        "title": "Producto a Dibujo de Líneas para Diseño",
-        "description": "Convierte fotos de productos en arte de líneas limpio para documentación de diseño.",
-        "label": "Producto",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
-          "alt": "Producto a Dibujo de Líneas"
-        },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
-      },
-      {
-        "title": "Ilustración de Vehículo a Dibujo de Líneas",
-        "description": "Convierte fotos de vehículos en arte de líneas técnico para proyectos de documentación.",
-        "label": "Vehículo",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
-          "alt": "Vehículo a Dibujo de Líneas"
-        },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
-      },
-      {
-        "title": "Arte de Naturaleza a Dibujo de Líneas",
-        "description": "Transforma fotos de naturaleza en dibujos de líneas artísticos que resaltan la belleza natural.",
-        "label": "Naturaleza",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
-          "alt": "Naturaleza a Dibujo de Líneas"
-        },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
-      },
-      {
-        "title": "Conversión de Mascota a Dibujo de Líneas",
-        "description": "Convierte las fotos queridas de tus mascotas en dibujos de líneas que capturan su personalidad única.",
-        "label": "Mascota",
+        "title": "Beloved Pet Photos Become Beautiful Line Art",
+        "description": "Turn your cherished pet photos into heartwarming line drawings that capture their unique personality and charm. Perfect for creating memorable keepsakes, custom gifts, or adding a personal touch to your home decor.",
+        "label": "Pet",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-pet.webp",
-          "alt": "Mascota a Dibujo de Líneas"
+          "alt": "Pet Photo to Line Drawing"
         },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
-      }
-    ]
-  },
-  "feature": {
-    "name": "feature",
-    "title": "Características de Foto a Dibujo de Líneas",
-    "description": "Ya seas aficionado, diseñador profesional o artesano, nuestra herramienta de foto a dibujo de líneas proporciona todo lo que necesitas.",
-    "items": [
-      {
-        "title": "Sin Habilidades de Dibujo Requeridas",
-        "description": "Transforma cualquier foto en arte de líneas profesional sin ningún conocimiento artístico. Perfecto para principiantes y expertos por igual.",
-        "icon": "RiMagicLine"
+        "buttons": [
+          {
+            "title": "Start Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "Procesamiento Relámpago",
-        "description": "Obtén tus resultados de dibujo de líneas en segundos, no en horas. Nuestra IA optimizada asegura tiempos de entrega rápidos para todos tus proyectos.",
-        "icon": "RiFlashlightLine"
+        "title": "Architectural Photography Meets Line Drawing Style",
+        "description": "Convert architectural photos into precise, technical line drawings that highlight structural details and design elements. Ideal for architects, designers, and anyone who appreciates the beauty of built environments.",
+        "label": "Architecture",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
+          "alt": "Architecture Photo to Line Drawing"
+        },
+        "buttons": [
+          {
+            "title": "Create Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "Configuraciones Personalizables",
-        "description": "Ajusta el grosor de línea, nivel de detalle y contraste para obtener el estilo de arte de líneas perfecto para tus necesidades específicas del proyecto.",
-        "icon": "RiSettings3Line"
+        "title": "Product Photography Enhanced with Line Drawing Conversion",
+        "description": "Transform product photos into clean, minimalist line art perfect for catalogs, technical documentation, or modern marketing materials. Our photo to line drawing tool simplifies complex products while maintaining essential details.",
+        "label": "Product",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
+          "alt": "Product Photo to Line Drawing"
+        },
+        "buttons": [
+          {
+            "title": "Generate Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "Múltiples Formatos de Salida",
-        "description": "Descarga tus dibujos de líneas como PNG, SVG o PDF. Compatible con software de bordado, cortadoras láser y programas de diseño.",
-        "icon": "RiDownloadLine"
+        "title": "Nature's Beauty Captured in Photo to Line Drawing Art",
+        "description": "Experience the serene beauty of natural landscapes transformed into artistic line drawings. From mountain vistas to forest scenes, our converter brings out the essential forms and textures that make nature so captivating.",
+        "label": "Nature",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
+          "alt": "Nature Photo to Line Drawing"
+        },
+        "buttons": [
+          {
+            "title": "Transform Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "Privacidad Protegida",
-        "description": "Tus fotos se procesan de forma segura y nunca se almacenan en nuestros servidores. Privacidad completa y protección de datos garantizada.",
-        "icon": "RiShieldCheckLine"
-      },
-      {
-        "title": "Funciona en Todas Partes",
-        "description": "Usa nuestro convertidor de foto a dibujo de líneas en cualquier dispositivo - escritorio, tableta o móvil. No se requiere instalación de software.",
-        "icon": "RiSmartphoneLine"
+        "title": "Vehicle Photos Transformed into Technical Line Illustrations",
+        "description": "Convert vehicle photography into precise line art perfect for technical manuals, design documentation, or automotive enthusiast projects. Our photo to line drawing technology captures the essential lines and proportions of any vehicle.",
+        "label": "Vehicle",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
+          "alt": "Vehicle Photo to Line Drawing"
+        },
+        "buttons": [
+          {
+            "title": "Convert Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       }
     ]
   },
@@ -223,105 +200,6 @@
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self",
         "icon": "GoArrowUpRight"
-      }
-    ]
-  },
- 
-  
-  "use_cases": {
-    "name": "use_cases",
-    "title": "Aplicaciones de Foto a Dibujo de Líneas en Diversas Industrias",
-    "description": "Desde manualidades personales hasta proyectos profesionales, descubre cómo la foto a dibujo de líneas transforma flujos de trabajo creativos en todas las industrias.",
-    "items": [
-      {
-        "title": "Manualidades y Pasatiempos",
-        "description": "Transforma tus fotos en patrones y guías prácticas para proyectos creativos.",
-        "icon": "RiScissorsLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-coloring-page.webp",
-          "alt": "caso de uso de foto a dibujo de líneas - página para colorear"
-        },
-        "children": [
-          "Patrones de bordado a partir de fotos familiares",
-          "Páginas para colorear personalizadas para niños", 
-          "Guías para pirograbado y grabado",
-          "Plantillas para proyectos de pintura"
-        ]
-      },
-      {
-        "title": "Arte Digital y Diseño",
-        "description": "Usa foto a dibujo de líneas como base para trabajo creativo digital.",
-        "icon": "RiPaintBrushLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-logo.webp",
-          "alt": "caso de uso de foto a dibujo de líneas - logo"
-        },
-        "children": [
-          "Capas base para pinturas digitales",
-          "Guías de referencia para ilustraciones",
-          "Creación de logos minimalistas",
-          "Gráficos para sitios web y aplicaciones"
-        ]
-      },
-      {
-        "title": "Regalos Personalizados",
-        "description": "Crea regalos significativos con conversiones de foto a dibujo de líneas.",
-        "icon": "RiGiftLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-t-shirt.webp",
-          "alt": "caso de uso de foto a dibujo de líneas - camiseta"
-        },
-        "children": [
-          "Retratos de mascotas en tazas personalizadas",
-          "Arte de líneas familiar para decoración de pared",
-          "Diseños personalizados para camisetas", 
-          "Arte de póster personalizado"
-        ]
-      },
-      {
-        "title": "Fabricación Profesional",
-        "description": "Convierte fotos en dibujos de líneas precisos para aplicaciones industriales.",
-        "icon": "RiSettings3Line",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-manufacturing.webp",
-          "alt": "caso de uso de foto a dibujo de líneas - fabricación"
-        },
-        "children": [
-          "Generación de rutas de corte láser",
-          "Rutas de herramienta para máquinas CNC",
-          "Creación de arte de plotter",
-          "Simplificación de diagramas técnicos"
-        ]
-      },
-      {
-        "title": "Tatuajes y Arte Corporal",
-        "description": "La foto a dibujo de líneas crea plantillas perfectas para arte corporal.",
-        "icon": "RiHeartLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-tattoo.webp",
-          "alt": "caso de uso de foto a dibujo de líneas - tatuaje"
-        },
-        "children": [
-          "Plantillas de diseño de tatuajes",
-          "Creación de patrones de henna",
-          "Plantillas de arte corporal",
-          "Visuales para consulta con artistas"
-        ]
-      },
-      {
-        "title": "Educación y Formación",
-        "description": "Simplifica imágenes complejas en materiales educativos claros.",
-        "icon": "RiGraduationCapLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-education.webp",
-          "alt": "caso de uso de foto a dibujo de líneas - educación"
-        },
-        "children": [
-          "Diagramas anatómicos simplificados",
-          "Contornos de equipo técnico",
-          "Gráficos de material educativo",
-          "Hojas de actividad para estudiantes"
-        ]
       }
     ]
   }

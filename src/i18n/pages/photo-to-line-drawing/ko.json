@@ -5,146 +5,123 @@
   },
   "hero": {
     "title": "사진을 선화 그림으로 즉시 변환하세요",
-    "announcement": {
-      "label": "NEW",
-      "title": "🍌 Nano Banana",
-      "url": "/photo-to-line-drawing#drawing-generator"
-    },
     "highlight_text": "사진을 선화 그림으로",
     "description": "그림 실력 없이도 어떤 사진이든 깨끗하고 전문적인 선화 예술로 변환하세요.",
-    "tip": "무료 체험, 100% 안전, 즉시 결과",
-    "tip_items": [
-      {
-        "text": "무료 체험",
-        "icon": "Gift"
-      },
-      {
-        "text": "100% 안전",
-        "icon": "Shield"
-      },
-      {
-        "text": "가입 불필요",
-        "icon": "Zap"
-      }
-    ],
-    "buttons": [
-      {
-        "title": "무료 체험하기",
-        "icon": "RiFlashlightFill",
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self",
-        "variant": "default"
-      }
-    ],
-    "show_happy_users": true,
+    "show_happy_users": false,
     "show_badge": false
   },
-  "showcase": {
-    "name": "showcase",
-    "title": "모든 카테고리에서 놀라운 사진을 선화 그림으로 변환 결과",
+  "transformation_examples": {
+    "name": "transformation_examples",
+    "title": "Stunning Photo to Line Drawing Results Across All Categories",
+    "description": "Discover the incredible versatility of our photo to line drawing converter. These real transformations showcase how our AI technology creates beautiful line art from everyday photos, professional shots, and everything in between.",
     "items": [
       {
-        "title": "인물 사진을 선화 그림으로 변환",
-        "description": "예술적 정밀도로 인물사진을 우아한 선화 예술로 변환하세요.",
-        "label": "인물",
+        "title": "Portrait Photo to Line Drawing Transformation",
+        "description": "Transform your favorite portraits into elegant line art with artistic precision. Our photo to line drawing converter captures facial features, expressions, and personality in clean, professional line work that's perfect for gifts, wall art, or digital projects.",
+        "label": "Portrait",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-portrait.webp",
-          "alt": "인물 사진을 선화 그림으로"
+          "alt": "Portrait Photo to Line Drawing"
         },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
+      "buttons": [
+          {
+            "title": "Try Photo to Line Drawing Now",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "건축 사진을 선화 그림 스타일로",
-        "description": "기술적 용도를 위해 건축 사진을 정밀한 선화 그림으로 변환하세요.",
-        "label": "건축",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
-          "alt": "건축 사진을 선화 그림으로"
-        },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
-      },
-      {
-        "title": "디자인을 위한 제품 사진을 선화 그림으로",
-        "description": "디자인 문서화를 위해 제품 사진을 깨끗한 선화 예술로 변환하세요.",
-        "label": "제품",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
-          "alt": "제품 사진을 선화 그림으로"
-        },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
-      },
-      {
-        "title": "차량 사진을 선화 그림 일러스트로",
-        "description": "문서화 프로젝트를 위해 차량 사진을 기술적 선화 예술로 변환하세요.",
-        "label": "차량",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
-          "alt": "차량 사진을 선화 그림으로"
-        },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
-      },
-      {
-        "title": "자연 사진을 선화 그림 예술로",
-        "description": "자연의 아름다움을 강조하는 예술적 선화 그림으로 자연 사진을 변환하세요.",
-        "label": "자연",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
-          "alt": "자연 사진을 선화 그림으로"
-        },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
-      },
-      {
-        "title": "반려동물 사진을 선화 그림으로 변환",
-        "description": "사랑하는 반려동물의 독특한 개성을 담은 선화 그림으로 변환하세요.",
-        "label": "반려동물",
+        "title": "Beloved Pet Photos Become Beautiful Line Art",
+        "description": "Turn your cherished pet photos into heartwarming line drawings that capture their unique personality and charm. Perfect for creating memorable keepsakes, custom gifts, or adding a personal touch to your home decor.",
+        "label": "Pet",
         "image": {
           "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-pet.webp",
-          "alt": "반려동물 사진을 선화 그림으로"
+          "alt": "Pet Photo to Line Drawing"
         },
-        "url": "/photo-to-line-drawing#drawing-generator",
-        "target": "_self"
-      }
-    ]
-  },
-  "feature": {
-    "name": "feature",
-    "title": "사진을 선화 그림으로 변환 기능",
-    "description": "취미로 하시는 분, 전문 디자이너, 공예가 등 누구든지 저희 사진을 선화 그림으로 변환 도구가 필요한 모든 것을 제공합니다.",
-    "items": [
-      {
-        "title": "그림 실력 불필요",
-        "description": "예술적 배경 없이도 어떤 사진이든 전문적인 선화 예술로 변환하세요. 초보자와 전문가 모두에게 완벽합니다.",
-        "icon": "RiMagicLine"
+        "buttons": [
+          {
+            "title": "Start Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "번개처럼 빠른 처리",
-        "description": "몇 시간이 아닌 몇 초 만에 선화 그림 결과를 얻으세요. 저희의 최적화된 AI가 모든 프로젝트에 빠른 처리 시간을 보장합니다.",
-        "icon": "RiFlashlightLine"
+        "title": "Architectural Photography Meets Line Drawing Style",
+        "description": "Convert architectural photos into precise, technical line drawings that highlight structural details and design elements. Ideal for architects, designers, and anyone who appreciates the beauty of built environments.",
+        "label": "Architecture",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
+          "alt": "Architecture Photo to Line Drawing"
+        },
+        "buttons": [
+          {
+            "title": "Create Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "사용자 지정 설정",
-        "description": "선의 두께, 디테일 수준, 대비를 조정하여 특정 프로젝트 요구에 맞는 완벽한 선화 예술 스타일을 얻으세요.",
-        "icon": "RiSettings3Line"
+        "title": "Product Photography Enhanced with Line Drawing Conversion",
+        "description": "Transform product photos into clean, minimalist line art perfect for catalogs, technical documentation, or modern marketing materials. Our photo to line drawing tool simplifies complex products while maintaining essential details.",
+        "label": "Product",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
+          "alt": "Product Photo to Line Drawing"
+        },
+        "buttons": [
+          {
+            "title": "Generate Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "다양한 출력 형식",
-        "description": "선화 그림을 PNG, SVG 또는 PDF로 다운로드하세요. 자수 소프트웨어, 레이저 커터, 디자인 프로그램과 호환됩니다.",
-        "icon": "RiDownloadLine"
+        "title": "Nature's Beauty Captured in Photo to Line Drawing Art",
+        "description": "Experience the serene beauty of natural landscapes transformed into artistic line drawings. From mountain vistas to forest scenes, our converter brings out the essential forms and textures that make nature so captivating.",
+        "label": "Nature",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
+          "alt": "Nature Photo to Line Drawing"
+        },
+        "buttons": [
+          {
+            "title": "Transform Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       },
       {
-        "title": "개인정보 보호",
-        "description": "당신의 사진은 안전하게 처리되며 저희 서버에 저장되지 않습니다. 완전한 개인정보 보호와 데이터 보안을 보장합니다.",
-        "icon": "RiShieldCheckLine"
-      },
-      {
-        "title": "모든 기기에서 작동",
-        "description": "데스크톱, 태블릿, 모바일 등 어떤 기기에서도 사진을 선화 그림으로 변환기를 사용하세요. 소프트웨어 설치가 필요 없습니다.",
-        "icon": "RiSmartphoneLine"
+        "title": "Vehicle Photos Transformed into Technical Line Illustrations",
+        "description": "Convert vehicle photography into precise line art perfect for technical manuals, design documentation, or automotive enthusiast projects. Our photo to line drawing technology captures the essential lines and proportions of any vehicle.",
+        "label": "Vehicle",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
+          "alt": "Vehicle Photo to Line Drawing"
+        },
+        "buttons": [
+          {
+            "title": "Convert Photo to Line Drawing",
+            "icon": "RiFlashlightFill",
+            "url": "/#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
       }
     ]
   },
@@ -223,105 +200,6 @@
         "url": "/photo-to-line-drawing#drawing-generator",
         "target": "_self",
         "icon": "GoArrowUpRight"
-      }
-    ]
-  },
- 
-  
-  "use_cases": {
-    "name": "use_cases",
-    "title": "다양한 산업 분야의 사진을 선화 그림으로 변환 활용법",
-    "description": "개인 수공예부터 전문 프로젝트까지, 사진을 선화 그림으로 변환이 다양한 산업 분야의 창작 워크플로를 어떻게 변화시키는지 발견해보세요.",
-    "items": [
-      {
-        "title": "수공예 & 취미",
-        "description": "사진을 창의적 프로젝트를 위한 실용적인 패턴과 가이드로 변환하세요.",
-        "icon": "RiScissorsLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-coloring-page.webp",
-          "alt": "사진을 선화 그림으로 변환 활용 사례 - 컬러링북"
-        },
-        "children": [
-          "가족 사진에서 자수 패턴",
-          "아이들을 위한 맞춤 컬러링북", 
-          "목공 태우기 및 조각 가이드",
-          "페인팅 프로젝트용 스텐실"
-        ]
-      },
-      {
-        "title": "디지털 아트 & 디자인",
-        "description": "디지털 창작 작업의 기초로 사진을 선화 그림으로 변환을 활용하세요.",
-        "icon": "RiPaintBrushLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-logo.webp",
-          "alt": "사진을 선화 그림으로 변환 활용 사례 - 로고"
-        },
-        "children": [
-          "디지털 페인팅의 기본 레이어",
-          "일러스트레이션을 위한 참고 가이드",
-          "미니멀 로고 제작",
-          "웹사이트 및 앱 그래픽"
-        ]
-      },
-      {
-        "title": "개인화된 선물",
-        "description": "사진을 선화 그림으로 변환으로 의미 있는 선물을 만들어보세요.",
-        "icon": "RiGiftLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-t-shirt.webp",
-          "alt": "사진을 선화 그림으로 변환 활용 사례 - 티셔츠"
-        },
-        "children": [
-          "맞춤 머그에 반려동물 초상화",
-          "벽면 장식용 가족 선화 예술",
-          "개인화된 티셔츠 디자인", 
-          "맞춤 포스터 예술 작품"
-        ]
-      },
-      {
-        "title": "전문 제조업",
-        "description": "산업 응용을 위해 사진을 정밀한 선화 그림으로 변환하세요.",
-        "icon": "RiSettings3Line",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-manufacturing.webp",
-          "alt": "사진을 선화 그림으로 변환 활용 사례 - 제조업"
-        },
-        "children": [
-          "레이저 커팅 경로 생성",
-          "CNC 기계 도구 경로",
-          "플로터 아트 제작",
-          "기술 다이어그램 단순화"
-        ]
-      },
-      {
-        "title": "타투 & 바디 아트",
-        "description": "사진을 선화 그림으로 변환으로 바디 아트를 위한 완벽한 템플릿을 만들어보세요.",
-        "icon": "RiHeartLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-tattoo.webp",
-          "alt": "사진을 선화 그림으로 변환 활용 사례 - 타투"
-        },
-        "children": [
-          "타투 디자인 템플릿",
-          "헤나 패턴 제작",
-          "바디 아트 스텐실",
-          "아티스트 상담용 비주얼"
-        ]
-      },
-      {
-        "title": "교육 & 훈련",
-        "description": "복잡한 이미지를 명확한 교육 자료로 단순화하세요.",
-        "icon": "RiGraduationCapLine",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-usecase-education.webp",
-          "alt": "사진을 선화 그림으로 변환 활용 사례 - 교육"
-        },
-        "children": [
-          "단순화된 해부학 다이어그램",
-          "기술 장비 아웃라인",
-          "교육 자료 그래픽",
-          "학생 활동 시트"
-        ]
       }
     ]
   }
