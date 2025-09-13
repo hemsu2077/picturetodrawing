@@ -300,7 +300,7 @@ export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch' }: 
   return (
     <div className={cn("w-full max-w-5xl mx-auto space-y-4 mb-16 sm:space-y-6 px-2 sm:px-4", className)}>
       {/* Main Input Card */}
-      <Card className="p-4 sm:p-6 md:p-8 border-none">
+      <Card className="p-4 sm:p-6 md:p-8 shadow-none border-primary/60">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
           {/* Left Side - Image Upload */}
           <div className="space-y-3 sm:space-y-4">

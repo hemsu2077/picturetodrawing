@@ -8,7 +8,7 @@ export default function Feature3({ section }: { section: SectionType }) {
   }
 
   return (
-    <section className="py-20 lg:py-24 bg-gradient-to-b from-primary/2 to-transparent relative overflow-hidden">
+    <section className="py-20 lg:py-24">
       {/* Subtle background elements */}
       <div className="absolute top-0 left-1/4 w-72 h-72 bg-gradient-to-br from-blue-100/20 to-purple-100/20 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-gradient-to-br from-indigo-100/20 to-pink-100/20 rounded-full blur-3xl"></div>

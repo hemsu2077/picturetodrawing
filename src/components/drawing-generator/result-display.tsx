@@ -191,7 +191,7 @@ export function RecentDrawings({
 
   return (
     <>
-      <Card className={cn("p-6 border-none", className)}>
+      <Card className={cn("p-6 shadow-none border-primary/60", className)}>
         <div className="space-y-6">
           {/* Header */}
           <div className="flex items-center justify-between">
