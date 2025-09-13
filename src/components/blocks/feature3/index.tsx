@@ -49,7 +49,7 @@ export default function Feature3({ section }: { section: SectionType }) {
                 <div className="space-y-4">
                   {/* Icon container */}
                   <div className="relative">
-                    <div className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-primary/10 shadow-sm">
+                    <div className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-background shadow-sm">
                       {index === 0 && <Upload className="h-6 w-6 md:h-8 md:w-8 text-primary" />}
                       {index === 1 && <Wand2 className="h-6 w-6 md:h-8 md:w-8 text-primary" />}
                       {index === 2 && <Download className="h-6 w-6 md:h-8 md:w-8 text-primary" />}
