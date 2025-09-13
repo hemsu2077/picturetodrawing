@@ -11,120 +11,120 @@
     "show_badge": false
   },
   "transformation_examples": {
-    "name": "transformation_examples",
-    "title": "Stunning Photo to Line Drawing Results Across All Categories",
-    "description": "Discover the incredible versatility of our photo to line drawing converter. These real transformations showcase how our AI technology creates beautiful line art from everyday photos, professional shots, and everything in between.",
-    "items": [
-      {
-        "title": "Portrait Photo to Line Drawing Transformation",
-        "description": "Transform your favorite portraits into elegant line art with artistic precision. Our photo to line drawing converter captures facial features, expressions, and personality in clean, professional line work that's perfect for gifts, wall art, or digital projects.",
-        "label": "Portrait",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-portrait.webp",
-          "alt": "Portrait Photo to Line Drawing"
-        },
-      "buttons": [
-          {
-            "title": "Try Photo to Line Drawing Now",
-            "icon": "RiFlashlightFill",
-            "url": "/#drawing-generator",
-            "target": "_self",
-            "variant": "default"
-          }
-        ]
-      },
-      {
-        "title": "Beloved Pet Photos Become Beautiful Line Art",
-        "description": "Turn your cherished pet photos into heartwarming line drawings that capture their unique personality and charm. Perfect for creating memorable keepsakes, custom gifts, or adding a personal touch to your home decor.",
-        "label": "Pet",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-pet.webp",
-          "alt": "Pet Photo to Line Drawing"
-        },
+      "name": "transformation_examples",
+      "title": "Beeindruckende Foto in Strichzeichnung Ergebnisse in allen Kategorien",
+      "description": "Entdecken Sie die erstaunliche Vielseitigkeit unseres Foto in Strichzeichnung Konverters. Diese echten Transformationen zeigen, wie unsere KI-Technologie wunderschöne Strichzeichnungen aus Alltagsfotos, Profiaufnahmen und allem dazwischen erschafft.",
+      "items": [
+        {
+          "title": "Portrait Foto in Strichzeichnung Verwandlung",
+          "description": "Verwandeln Sie Ihre Lieblingsporträts in elegante Strichzeichnungen mit künstlerischer Präzision. Unser Foto in Strichzeichnung Konverter erfasst Gesichtszüge, Ausdrücke und Persönlichkeit in sauberer, professioneller Linienarbeit - perfekt für Geschenke, Wandbilder oder digitale Projekte.",
+          "label": "Portrait",
+          "image": {
+            "src":"https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-portrait.webp",
+            "alt": "Portrait Foto in Strichzeichnung"
+          },
         "buttons": [
-          {
-            "title": "Start Photo to Line Drawing",
-            "icon": "RiFlashlightFill",
-            "url": "/#drawing-generator",
-            "target": "_self",
-            "variant": "default"
-          }
-        ]
-      },
-      {
-        "title": "Architectural Photography Meets Line Drawing Style",
-        "description": "Convert architectural photos into precise, technical line drawings that highlight structural details and design elements. Ideal for architects, designers, and anyone who appreciates the beauty of built environments.",
-        "label": "Architecture",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
-          "alt": "Architecture Photo to Line Drawing"
+            {
+              "title": "Jetzt Foto in Strichzeichnung ausprobieren",
+              "icon": "RiFlashlightFill",
+              "url": "/#drawing-generator",
+              "target": "_self",
+              "variant": "default"
+            }
+          ]
         },
-        "buttons": [
-          {
-            "title": "Create Photo to Line Drawing",
-            "icon": "RiFlashlightFill",
-            "url": "/#drawing-generator",
-            "target": "_self",
-            "variant": "default"
-          }
-        ]
-      },
-      {
-        "title": "Product Photography Enhanced with Line Drawing Conversion",
-        "description": "Transform product photos into clean, minimalist line art perfect for catalogs, technical documentation, or modern marketing materials. Our photo to line drawing tool simplifies complex products while maintaining essential details.",
-        "label": "Product",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
-          "alt": "Product Photo to Line Drawing"
+        {
+          "title": "Lieb gewonnene Haustierfotos werden zu wunderschöner Strichkunst",
+          "description": "Verwandeln Sie Ihre kostbaren Haustierfotos in herzerwärmende Strichzeichnungen, die ihre einzigartige Persönlichkeit und ihren Charme einfangen. Perfekt für die Erstellung unvergesslicher Andenken, personalisierter Geschenke oder um Ihrer Wohnungseinrichtung eine persönliche Note zu verleihen.",
+          "label": "Haustier",
+          "image": {
+            "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-pet.webp",
+            "alt": "Haustier Foto in Strichzeichnung"
+          },
+          "buttons": [
+            {
+              "title": "Foto in Strichzeichnung starten",
+              "icon": "RiFlashlightFill",
+              "url": "/#drawing-generator",
+              "target": "_self",
+              "variant": "default"
+            }
+          ]
         },
-        "buttons": [
-          {
-            "title": "Generate Photo to Line Drawing",
-            "icon": "RiFlashlightFill",
-            "url": "/#drawing-generator",
-            "target": "_self",
-            "variant": "default"
-          }
-        ]
-      },
-      {
-        "title": "Nature's Beauty Captured in Photo to Line Drawing Art",
-        "description": "Experience the serene beauty of natural landscapes transformed into artistic line drawings. From mountain vistas to forest scenes, our converter brings out the essential forms and textures that make nature so captivating.",
-        "label": "Nature",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
-          "alt": "Nature Photo to Line Drawing"
+        {
+          "title": "Architekturfotografie trifft auf Strichzeichnung Stil",
+          "description": "Konvertieren Sie Architekturfotos in präzise, technische Strichzeichnungen, die strukturelle Details und Designelemente hervorheben. Ideal für Architekten, Designer und alle, die die Schönheit gebauter Umgebungen schätzen.",
+          "label": "Architektur",
+          "image": {
+            "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-architecture.webp",
+            "alt": "Architektur Foto in Strichzeichnung"
+          },
+          "buttons": [
+            {
+              "title": "Foto in Strichzeichnung erstellen",
+              "icon": "RiFlashlightFill",
+              "url": "/#drawing-generator",
+              "target": "_self",
+              "variant": "default"
+            }
+          ]
         },
-        "buttons": [
-          {
-            "title": "Transform Photo to Line Drawing",
-            "icon": "RiFlashlightFill",
-            "url": "/#drawing-generator",
-            "target": "_self",
-            "variant": "default"
-          }
-        ]
-      },
-      {
-        "title": "Vehicle Photos Transformed into Technical Line Illustrations",
-        "description": "Convert vehicle photography into precise line art perfect for technical manuals, design documentation, or automotive enthusiast projects. Our photo to line drawing technology captures the essential lines and proportions of any vehicle.",
-        "label": "Vehicle",
-        "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
-          "alt": "Vehicle Photo to Line Drawing"
+        {
+          "title": "Produktfotografie aufgewertet mit Foto in Strichzeichnung Konvertierung",
+          "description": "Verwandeln Sie Produktfotos in saubere, minimalistische Strichkunst - perfekt für Kataloge, technische Dokumentationen oder modernes Marketingmaterial. Unser Foto in Strichzeichnung Tool vereinfacht komplexe Produkte und behält dabei wesentliche Details.",
+          "label": "Produkt",
+          "image": {
+            "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-product.webp",
+            "alt": "Produkt Foto in Strichzeichnung"
+          },
+          "buttons": [
+            {
+              "title": "Foto in Strichzeichnung generieren",
+              "icon": "RiFlashlightFill",
+              "url": "/#drawing-generator",
+              "target": "_self",
+              "variant": "default"
+            }
+          ]
         },
-        "buttons": [
-          {
-            "title": "Convert Photo to Line Drawing",
-            "icon": "RiFlashlightFill",
-            "url": "/#drawing-generator",
-            "target": "_self",
-            "variant": "default"
-          }
-        ]
-      }
-    ]
-  },
+        {
+          "title": "Natürliche Schönheit eingefangen in Foto in Strichzeichnung Kunst",
+          "description": "Erleben Sie die sanfte Schönheit natürlicher Landschaften, die in künstlerische Strichzeichnungen verwandelt wurden. Von Bergpanoramen bis hin zu Waldszenen - unser Konverter bringt die wesentlichen Formen und Texturen zum Vorschein, die die Natur so faszinierend machen.",
+          "label": "Natur",
+          "image": {
+            "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-nature.webp",
+            "alt": "Natur Foto in Strichzeichnung"
+          },
+          "buttons": [
+            {
+              "title": "Foto in Strichzeichnung transformieren",
+              "icon": "RiFlashlightFill",
+              "url": "/#drawing-generator",
+              "target": "_self",
+              "variant": "default"
+            }
+          ]
+        },
+        {
+          "title": "Fahrzeugfotos verwandelt in technische Strichillustrationen",
+          "description": "Konvertieren Sie Fahrzeugfotografie in präzise Strichkunst - perfekt für technische Handbücher, Designdokumentationen oder Automobil-Enthusiasten-Projekte. Unsere Foto in Strichzeichnung Technologie erfasst die wesentlichen Linien und Proportionen jedes Fahrzeugs.",
+          "label": "Fahrzeug",
+          "image": {
+            "src": "https://files.picturetodrawing.com/photo-to-line-drawing/photo-to-line-drawing-vehicle.webp",
+            "alt": "Fahrzeug Foto in Strichzeichnung"
+          },
+          "buttons": [
+            {
+              "title": "Foto in Strichzeichnung konvertieren",
+              "icon": "RiFlashlightFill",
+              "url": "/#drawing-generator",
+              "target": "_self",
+              "variant": "default"
+            }
+          ]
+        }
+      ]
+    },
   "usage": {
     "name": "usage",
     "title": "Wie Foto-in-Strichzeichnung funktioniert",
