@@ -241,7 +241,8 @@
         "title": "Bleistiftskizze",
         "description": "Klassische Bleistiftzeichnung mit realistischer Schattierung und feiner Detailbewahrung. Perfekt zum Erstellen zeitloser, eleganter Kunstwerke, die das Wesen Ihres Originalfotos mit subtilen Texturen und natürlichen Farbverläufen einfangen.",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch.webp"
+          "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch.webp",
+          "alt": "Bild-zu-Zeichnung - Bleistiftskizze"
         },
         "children": [
           {
@@ -262,7 +263,8 @@
         "title": "Strichzeichnung",
         "description": "Saubere, minimalistische Linienkunst mit kühnen Strichen und klaren Konturen. Schafft moderne, auffällige Kunstwerke, die Form und Struktur betonen, während unnötige Details für ein zeitgenössisches Ästhetik entfernt werden.",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-line-drawing.webp"
+          "src": "https://files.picturetodrawing.com/sample/example-line-drawing.webp",
+          "alt": "Bild-zu-Zeichnung - Strichzeichnung"
         },
         "children": [
           {
@@ -283,7 +285,8 @@
         "title": "Buntstiftzeichnung",
         "description": "Lebendige Buntstiftkunst mit reichen Texturen und geschichteten Farben. Verleiht Ihren Fotos mit der Wärme und dem Charakter von handkolorierten Illustrationen Leben und bewahrt subtile Farbvariationen.",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing.webp"
+          "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing.webp",
+          "alt": "Bild-zu-Zeichnung - Buntstiftzeichnung"
         },
         "children": [
           {
@@ -304,7 +307,8 @@
         "title": "Aquarellmalerei",
         "description": "Weiche, fließende Aquarelleffekte mit wunderschönem Farbverlauf und künstlerischen Pinselstrichen. Schafft traumhafte, ätherische Kunstwerke mit der zarten Transparenz und organischen Fluss traditioneller Aquarellmalereien.",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting.webp"
+          "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting.webp",
+          "alt": "Bild-zu-Zeichnung - Aquarellmalerei"
         },
         "children": [
           {

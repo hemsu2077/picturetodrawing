@@ -241,7 +241,8 @@
         "title": "鉛筆スケッチ",
         "description": "リアルな陰影と細部の保存を備えたクラシックな石墨鉛筆ドローイング。微妙な質感と自然なグラデーションで元の写真の本質を捉える、永遠のエレガントなアートワーク作成に最適です。",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch.webp"
+          "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch.webp",
+          "alt": "写真イラスト化 - 鉛筆スケッチ"
         },
         "children": [
           {
@@ -262,7 +263,8 @@
         "title": "線画",
         "description": "大胆なストロークと明確な輪郭を持つクリーンでミニマルな線画。不要なディテールを削除し、形と構造を強調することで、現代的で印象的なアートワークを作成します。",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-line-drawing.webp"
+          "src": "https://files.picturetodrawing.com/sample/example-line-drawing.webp",
+          "alt": "写真イラスト化 - 線画"
         },
         "children": [
           {
@@ -283,7 +285,8 @@
         "title": "色鉛筆画",
         "description": "豊かな質感と層状の色を持つ鮮やかな色鉛筆アートワーク。手彩色イラストの温かみと性格で写真を命を吹き込み、微妙な色の変化を保存します。",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing.webp"
+          "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing.webp",
+          "alt": "写真イラスト化 - 色鉛筆画"
         },
         "children": [
           {
@@ -304,7 +307,8 @@
         "title": "水彩画",
         "description": "美しい色のブレンドと芸術的なブラシストロークを持つ柔らかく流れるような水彩効果。伝統的な水彩画の繊細な透明性と有機的な流れで、夢のようなエーテリアルなアートワークを作成します。",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting.webp"
+          "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting.webp",
+          "alt": "写真イラスト化 - 水彩画"
         },
         "children": [
           {

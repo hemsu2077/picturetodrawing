@@ -8,6 +8,7 @@ import Showcase1 from "@/components/blocks/showcase1";
 import UseCases from "@/components/blocks/use-cases";
 import { getPhotoToLineDrawingPage } from "@/services/page";
 import DrawingGenerator from "@/components/drawing-generator";
+import TransformationExamples from "@/components/blocks/transformation-examples";
 
 export async function generateMetadata({
   params,
@@ -46,10 +47,7 @@ export default async function PhotoToLineDrawingPage({
       <div id="drawing-generator">
         <DrawingGenerator defaultStyle="line-drawing" />
       </div>
-      {page.showcase && <Showcase1 section={page.showcase} />}
-      {page.feature && <Feature section={page.feature} />}
-      {page.benefit && <Feature2 section={page.benefit} />}
-      {page.use_cases && <UseCases section={page.use_cases} />}
+      {page.transformation_examples && <TransformationExamples section={page.transformation_examples} />}
       {page.usage && <Feature3 section={page.usage} />}
       {page.faq && <FAQ section={page.faq} />}
       {page.cta && <CTA section={page.cta} />}

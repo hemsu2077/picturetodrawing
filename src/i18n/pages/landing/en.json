@@ -241,7 +241,8 @@
         "title": "Pencil Sketch",
         "description": "Classic graphite pencil drawing with realistic shading and fine detail preservation. Perfect for creating timeless, elegant artwork that captures the essence of your original photo with subtle textures and natural gradients.",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch.webp"
+          "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch.webp",
+          "alt": "Picture to Drawing - Pencil Sketch"
         },
         "children": [
           {
@@ -262,7 +263,8 @@
         "title": "Line Drawing",
         "description": "Clean, minimalist line art with bold strokes and clear contours. Creates modern, striking artwork that emphasizes form and structure while removing unnecessary details for a contemporary aesthetic.",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-line-drawing.webp"
+          "src": "https://files.picturetodrawing.com/sample/example-line-drawing.webp",
+          "alt": "Picture to Drawing - Line Drawing"
         },
         "children": [
           {
@@ -283,7 +285,8 @@
         "title": "Color Pencil Drawing",
         "description": "Vibrant colored pencil artwork with rich textures and layered colors. Brings your photos to life with the warmth and character of hand-colored illustrations, preserving subtle color variations.",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing.webp"
+          "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing.webp",
+          "alt": "Picture to Drawing - Color Pencil Drawing"
         },
         "children": [
           {
@@ -304,7 +307,8 @@
         "title": "Watercolor Painting",
         "description": "Soft, flowing watercolor effects with beautiful color blending and artistic brushstrokes. Creates dreamy, ethereal artwork with the delicate transparency and organic flow of traditional watercolor paintings.",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting.webp"
+          "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting.webp",
+          "alt": "Picture to Drawing - Watercolor Painting"
         },
         "children": [
           {

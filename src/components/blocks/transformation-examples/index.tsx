@@ -35,7 +35,7 @@ export default function TransformationExamples({ section }: { section: SectionTy
                     <div className="absolute -inset-4 bg-gradient-to-r from-background via-muted/20 to-background rounded-3xl blur-xl opacity-50 transition-opacity duration-500 group-hover:opacity-70"></div>
                     <img
                       src={item.image.src}
-                      alt={item.title + " - Picture to Drawing style example"}
+                      alt={item.image.alt}
                       className="relative w-[80%] justify-self-center rounded-lg object-contain aspect-square transition-all duration-300 hover:scale-[1.02]"
                     />
                     <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-accent/5 blur-3xl rounded-full transition-all duration-500 group-hover:bg-accent/10"></div>
