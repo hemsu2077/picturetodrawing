@@ -8,7 +8,7 @@ export default function PerfectUses({ section }: { section: SectionType }) {
   }
 
   return (
-    <section id={section.name} className="py-24 bg-background">
+    <section id={section.name} className="py-16">
       <div className="container max-w-6xl mx-auto px-6">
         <div className="mx-auto max-w-3xl text-center mb-16 animate-in fade-in duration-700 slide-in-from-bottom-4">
           <h2 className="mb-6 text-3xl md:text-4xl font-bold tracking-tight text-foreground">
@@ -26,7 +26,7 @@ export default function PerfectUses({ section }: { section: SectionType }) {
               className="group animate-in fade-in duration-700 slide-in-from-bottom-4 fill-mode-both h-full"
               style={{ animationDelay: `${300 + i * 100}ms` }}
             >
-              <Card className="border-0 bg-card/30 backdrop-blur-sm hover:bg-card/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg p-4 md:p-6 text-center h-full flex flex-col">
+              <Card className="border-0 bg-white backdrop-blur-sm hover:bg-card/50 transition-all duration-300 hover:scale-[1.02] hover:shadow-lg p-4 md:p-6 text-center h-full flex flex-col">
                 <CardContent className="p-0 space-y-3 md:space-y-4 flex flex-col flex-1">
                   {item.image && (
                     <div className="flex justify-center flex-shrink-0">

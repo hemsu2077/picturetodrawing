@@ -1,5 +1,5 @@
 :root {
-  --background: oklch(1 0 0);
+  --background: oklch(0.994 0.002 32.1);
   --foreground: oklch(0.1450 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.1450 0 0);
@@ -9,9 +9,9 @@
   --primary-foreground: oklch(0.9850 0 0);
   --secondary: oklch(0.9105 0.0046 78.2968);
   --secondary-foreground: oklch(0.3920 0.0078 75.3204);
-  --muted: oklch(0.9700 0 0);
+  --muted: oklch(0.94 0.008 32.1);
   --muted-foreground: oklch(0.5560 0 0);
-  --accent: oklch(0.9700 0 0);
+  --accent: oklch(0.94 0.008 32.1);
   --accent-foreground: oklch(0.2050 0 0);
   --destructive: oklch(0.5770 0.2450 27.3250);
   --destructive-foreground: oklch(1 0 0);

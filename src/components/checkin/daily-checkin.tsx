@@ -161,7 +161,7 @@ export default function DailyCheckin() {
             <Calendar className="h-4 w-4" />
             <span className="text-primary">
               {statusLoading ? (
-                <div className="animate-pulse inline-block w-16 h-4 bg-muted rounded"></div>
+                <div className="animate-pulse inline-block w-16 h-4 bg-card rounded"></div>
               ) : (
                 t("daily_checkin.checked_in_days", { 
                   days: status.consecutive_days, 
@@ -190,8 +190,8 @@ export default function DailyCheckin() {
                 ${day.completed 
                   ? 'border-primary bg-primary/5 dark:bg-primary/5' 
                   : day.isToday 
-                    ? 'border-purple-500 bg-purple-50 dark:bg-purple-900/20 ring-2 ring-purple-500/20' 
-                    : 'border-muted bg-muted/30'
+                    ? 'border-indigo-500 bg-indigo-50 dark:bg-indigo-900/20 ring-2 ring-indigo-500/20' 
+                    : 'border-primary/5 bg-card'
                 }
               `}
             >
@@ -201,8 +201,8 @@ export default function DailyCheckin() {
                 ${day.completed 
                   ? 'bg-primary text-primary-foreground' 
                   : day.isToday
-                    ? 'bg-purple-500 text-white'
-                    : 'bg-muted text-muted-foreground'
+                    ? 'bg-indigo-500 text-white'
+                    : 'bg-primary/5 text-muted-foreground'
                 }
               `}>
                 {day.completed ? '✓' : `+${day.credits}`}
@@ -210,7 +210,7 @@ export default function DailyCheckin() {
               
               {/* Day Label */}
               <span className={`text-[10px] sm:text-xs font-medium ${
-                day.completed ? 'text-primary dark:text-primary' : day.isToday ? 'text-purple-600 dark:text-purple-400' : ''
+                day.completed ? 'text-primary dark:text-primary' : day.isToday ? 'text-indigo-600 dark:text-indigo-400' : ''
               }`}>
                 {t("daily_checkin.day", { day: day.day })}
               </span>

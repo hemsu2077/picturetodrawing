@@ -23,7 +23,7 @@ export default function FAQ({ section }: { section: SectionType }) {
   };
 
   return (
-    <section id={section.name} className="py-20">
+    <section id={section.name} className="py-16">
       <div className="container max-w-3xl">
         <div className="text-center mb-16">
           {section.label && (

@@ -42,7 +42,7 @@ export default function Feature2({ section }: { section: SectionType }) {
   }, [api, currentAccordion]);
 
   return (
-    <section id={section.name} className="py-32">
+    <section id={section.name} className="py-16">
       <div className="container">
         <div className="mx-auto grid gap-20 lg:grid-cols-2">
           <div>

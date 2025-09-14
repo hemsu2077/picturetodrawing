@@ -8,7 +8,7 @@ export default function Feature1({ section }: { section: SectionType }) {
   }
 
   return (
-    <section id={section.name} className="py-24 bg-background">
+    <section id={section.name} className="py-16 bg-background">
       <div className="container max-w-6xl mx-auto px-6">
         <div className="grid items-center gap-16 lg:grid-cols-2 lg:gap-20 animate-in fade-in duration-700 slide-in-from-bottom-4">
           {section.image && (

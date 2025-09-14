@@ -9,7 +9,7 @@ export default function Comparison({ section }: { section: SectionType }) {
   }
 
   return (
-    <section id={section.name} className="py-24 bg-background">
+    <section id={section.name} className="py-16 bg-background">
       <div className="container max-w-6xl mx-auto px-6">
         <div className="mx-auto max-w-3xl text-center mb-16 animate-in fade-in duration-700 slide-in-from-bottom-4">
           <h2 className="mb-6 text-3xl md:text-4xl font-bold tracking-tight text-foreground">

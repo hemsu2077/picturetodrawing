@@ -164,7 +164,7 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
                   className={`rounded-lg p-4 sm:p-6 ${
                     item.is_featured
                       ? "border-primary border-2 bg-card text-card-foreground"
-                      : "border-muted border"
+                      : "border-muted border bg-card"
                   }`}
                 >
                   <div className="flex h-full flex-col justify-between gap-3 sm:gap-5">

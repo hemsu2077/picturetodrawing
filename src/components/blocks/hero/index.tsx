@@ -2,7 +2,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import HappyUsers from "./happy-users";
 import HeroBg from "./bg";
-import LineDrawingBg from "./line-drawing-bg";
 import { Hero as HeroType } from "@/types/blocks/hero";
 import Icon from "@/components/icon";
 import { Link } from "@/i18n/navigation";
@@ -40,7 +39,7 @@ export default function Hero({ hero, backgroundVariant = 'default' }: HeroProps)
 
   return (
     <>
-      {backgroundVariant === 'line-drawing' ? <LineDrawingBg /> : <HeroBg />}
+      <HeroBg />
       <section className="py-12 lg:py-24">
         <div className="container">
           {hero.show_badge && (
@@ -68,7 +67,7 @@ export default function Hero({ hero, backgroundVariant = 'default' }: HeroProps)
             {texts && texts.length > 1 ? (
               <h1 className="mx-auto mb-3 mt-4 max-w-6xl text-balance text-4xl font-semibold lg:mb-7 lg:text-7xl">
                 {texts[0]}
-                <span className="bg-clip-text text-transparent bg-gradient-to-r dark:from-indigo-300 via-foreground/90 dark:to-rose-300 from-indigo-800 to-rose-700 snipcss0-3-5-8">
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FC5C7D] to-[#5e52d0] snipcss0-3-5-8">
                   {highlightText}
                 </span>
                 {texts[1]}

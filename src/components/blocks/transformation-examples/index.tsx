@@ -8,7 +8,7 @@ export default function TransformationExamples({ section }: { section: SectionTy
   }
 
   return (
-    <section id={section.name} className="py-24 bg-background">
+    <section id={section.name} className="py-16 bg-background">
       <div className="container max-w-6xl mx-auto px-6">
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center mb-16 animate-in fade-in duration-700 slide-in-from-bottom-4">
@@ -80,7 +80,7 @@ export default function TransformationExamples({ section }: { section: SectionTy
                   <Button
                     variant="outline"
                     size="lg"
-                    className="transition-all duration-200 hover:bg-primary hover:text-primary-foreground hover:border-primary hover:scale-105 group"
+                    className="transition-all bg-white duration-200 hover:bg-primary hover:text-primary-foreground hover:border-primary hover:scale-105 group"
                     asChild
                   >
                     <a href="#drawing-generator" target="_self">
