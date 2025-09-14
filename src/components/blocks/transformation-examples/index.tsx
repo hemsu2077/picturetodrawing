@@ -21,7 +21,7 @@ export default function TransformationExamples({ section }: { section: SectionTy
         </div>
 
         {/* Examples Grid */}
-        <div className="space-y-0">
+        <div className="space-y-20">
           {section.items?.map((item, i) => (
             <div 
               key={i} 
@@ -36,7 +36,7 @@ export default function TransformationExamples({ section }: { section: SectionTy
                     <img
                       src={item.image.src}
                       alt={item.image.alt}
-                      className="relative w-[80%] justify-self-center rounded-lg object-contain aspect-square transition-all duration-300 hover:scale-[1.02]"
+                      className="relative w-full justify-self-center rounded-lg object-cover aspect-3/2 transition-all duration-300 hover:scale-[1.02]"
                     />
                     <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-accent/5 blur-3xl rounded-full transition-all duration-500 group-hover:bg-accent/10"></div>
                   </div>

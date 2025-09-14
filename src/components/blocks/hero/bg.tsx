@@ -5,7 +5,7 @@ export default function Bg() {
        <div 
         className="absolute inset-0"
         style={{
-          background: 'linear-gradient(to bottom, #f1edeb 0%, #f5f0ed 30%, #f8f4f1 60%, transparent 100%)'
+          background: 'linear-gradient(to bottom,rgba(241, 235, 235, 0.57) 0%,rgba(245, 240, 237, 0.51) 30%,rgba(248, 244, 241, 0.43) 60%, transparent 100%)'
         }}
       />
 

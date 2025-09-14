@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { ImageUpload } from './image-upload';
@@ -55,6 +55,7 @@ export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch' }: 
   const [trialStatus, setTrialStatus] = useState<TrialStatus | null>(null);
   const [isCheckingTrialStatus, setIsCheckingTrialStatus] = useState(false);
   const [trialResult, setTrialResult] = useState<any>(null);
+  const resultDisplayRef = useRef<HTMLDivElement>(null);
 
   // Load pricing data
   useEffect(() => {
@@ -176,6 +177,14 @@ export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch' }: 
     setIsGenerating(true);
     setError(null);
     setNewDrawing({ style: selectedStyle, ratio: selectedRatio });
+
+    // scroll to result display area
+    setTimeout(() => {
+      resultDisplayRef.current?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }, 100);
 
     try {
       let imageData: string;
@@ -355,13 +364,15 @@ export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch' }: 
       </Card>
 
       {/* Recent Drawings */}
-      <RecentDrawings
-        isGenerating={isGenerating}
-        newDrawing={newDrawing}
-        error={error}
-        isPaidUser={isPaidUser}
-        trialResult={trialResult}
-      />
+      <div ref={resultDisplayRef}>
+        <RecentDrawings
+          isGenerating={isGenerating}
+          newDrawing={newDrawing}
+          error={error}
+          isPaidUser={isPaidUser}
+          trialResult={trialResult}
+        />
+      </div>
 
       {/* Pricing Modal */}
       {pricingData && (
