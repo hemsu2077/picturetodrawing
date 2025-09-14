@@ -161,8 +161,6 @@ export default function Header({ header }: { header: HeaderType }) {
             </div>
           </div>
           <div className="shrink-0 flex gap-2 items-center">
-            {header.show_locale && <LocaleToggle />}
-            {header.show_theme && <ThemeToggle />}
 
             {header.buttons?.map((item, i) => {
               return (
@@ -171,7 +169,7 @@ export default function Header({ header }: { header: HeaderType }) {
                   variant={item.variant}
                   className={cn(
                     item.url === "/free-credits" && 
-                    "border-none bg-gradient-to-r from-purple-50/80 to-orange-50/80 hover:from-purple-100/90 hover:to-orange-100/90 text-primary hover:text-purple-800 shadow-sm hover:shadow-md transition-all duration-200"
+                    "bg-transparent border-none hover:bg-gradient-to-r from-purple-50/80 to-orange-50/80 text-primary hover:text-purple-800 shadow-none hover:shadow-sm transition-all duration-200"
                   )}
                   onClick={(e) => handleFreeCreditsClick(e, item.url as string)}
                 >
@@ -190,6 +188,8 @@ export default function Header({ header }: { header: HeaderType }) {
                 </Button>
               );
             })}
+                        {header.show_locale && <LocaleToggle />}
+                        {header.show_theme && <ThemeToggle />}
             {header.show_sign && <SignToggle />}
           </div>
         </nav>
