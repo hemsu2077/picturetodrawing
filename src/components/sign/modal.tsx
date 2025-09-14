@@ -1,7 +1,7 @@
 "use client";
 
 import * as React from "react";
-
+import Image from "next/image";
 import {
   Dialog,
   DialogContent,
@@ -35,6 +35,8 @@ export default function SignModal() {
 
   const [open, setOpen] = React.useState(false);
   const isDesktop = useMediaQuery("(min-width: 768px)");
+
+
 
   if (isDesktop) {
     return (
@@ -91,16 +93,22 @@ function ProfileForm({ className }: React.ComponentProps<"form">) {
       </Button> */}
 
       {process.env.NEXT_PUBLIC_AUTH_GOOGLE_ENABLED === "true" && (
-        <Button
-          variant="outline"
-          className="w-full flex items-center gap-2"
-          onClick={() => {
-            signIn("google");
-          }}
-        >
-          <SiGoogle className="w-4 h-4" />
-          {t("sign_modal.google_sign_in")}
-        </Button>
+                <Button
+                variant="default"
+                className="w-full h-10 flex items-center justify-center gap-3 text-white font-medium bg-primary hover:bg-primary/90 rounded-lg transition-colors duration-200"
+                onClick={() => {
+                  signIn("google");
+                }}
+              >
+                <Image
+                  src="/imgs/logos/google.svg"
+                  alt="Google"
+                  width={20}
+                  height={20}
+                  className="flex-shrink-0"
+                />
+                {t("sign_modal.google_sign_in")}
+              </Button>
       )}
 
       {process.env.NEXT_PUBLIC_AUTH_GITHUB_ENABLED === "true" && (

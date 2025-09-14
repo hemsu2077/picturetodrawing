@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { SiGithub, SiGoogle } from "react-icons/si";
+import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -37,14 +38,22 @@ export default function SignForm({
           <div className="grid gap-6">
             <div className="flex flex-col gap-4">
               {process.env.NEXT_PUBLIC_AUTH_GOOGLE_ENABLED === "true" && (
-                <Button
-                  variant="outline"
-                  className="w-full"
-                  onClick={() => signIn("google")}
-                >
-                  <SiGoogle className="w-4 h-4" />
-                  {t("sign_modal.google_sign_in")}
-                </Button>
+                 <Button
+                 variant="default"
+                 className="w-full h-10 flex items-center justify-center gap-3 text-white font-medium bg-primary hover:bg-primary/90 rounded-lg transition-colors duration-200"
+                 onClick={() => {
+                   signIn("google");
+                 }}
+               >
+                 <Image
+                   src="/imgs/logos/google.svg"
+                   alt="Google"
+                   width={20}
+                   height={20}
+                   className="flex-shrink-0"
+                 />
+                 {t("sign_modal.google_sign_in")}
+               </Button>
               )}
               {process.env.NEXT_PUBLIC_AUTH_GITHUB_ENABLED === "true" && (
                 <Button
