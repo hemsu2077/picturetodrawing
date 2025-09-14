@@ -241,7 +241,7 @@
         "title": "Boceto a Lápiz",
         "description": "Dibujo clásico a lápiz de grafito con sombreado realista y preservación de detalles finos. Perfecto para crear obras de arte atemporales y elegantes que capturan la esencia de tu foto original con texturas sutiles y gradientes naturales.",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch.webp",
+          "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch2.webp",
           "alt": "Foto en Dibujo - Boceto a Lápiz"
         },
         "children": [
@@ -263,7 +263,7 @@
         "title": "Dibujo de Líneas",
         "description": "Arte de líneas limpio y minimalista con trazos audaces y contornos claros. Crea obras de arte modernas y llamativas que enfatizan la forma y estructura mientras eliminan detalles innecesarios para una estética contemporánea.",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-line-drawing.webp",
+          "src": "https://files.picturetodrawing.com/sample/example-line-drawing2.webp",
           "alt": "Foto en Dibujo - Dibujo de Líneas"
         },
         "children": [
@@ -285,7 +285,7 @@
         "title": "Dibujo a Lápiz de Color",
         "description": "Obra de arte vibrante a lápiz de color con texturas ricas y colores superpuestos. Da vida a tus fotos con el calor y carácter de ilustraciones coloreadas a mano, preservando variaciones sutiles de color.",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing.webp",
+          "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing2.webp",
           "alt": "Foto en Dibujo - Dibujo a Lápiz de Color"
         },
         "children": [
@@ -307,7 +307,7 @@
         "title": "Pintura a Acuarela",
         "description": "Efectos suaves y fluidos de acuarela con hermosa mezcla de colores y pinceladas artísticas. Crea obras de arte oníricas y etéreas con la delicada transparencia y flujo orgánico de las pinturas a acuarela tradicionales.",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting.webp",
+          "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting2.webp",
           "alt": "Foto en Dibujo - Pintura a Acuarela"
         },
         "children": [

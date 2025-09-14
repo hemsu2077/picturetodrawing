@@ -241,7 +241,7 @@
         "title": "鉛筆素描",
         "description": "經典石墨鉛筆繪畫，具有寫實陰影和精細細節保留。適合創造永恆、優雅的藝術作品，捕捉原始照片的本質，呈現細膩紋理和自然漸層。",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch.webp",
+          "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch2.webp",
           "alt": "照片轉手繪 - 鉛筆素描"
         },
         "children": [
@@ -263,7 +263,7 @@
         "title": "線條畫",
         "description": "簡潔、極簡線條藝術，具有大膽線條和清晰輪廓。創造現代、引人注目的藝術作品，強調形式和結構，同時去除不必要的細節，營造當代美感。",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-line-drawing.webp",
+          "src": "https://files.picturetodrawing.com/sample/example-line-drawing2.webp",
           "alt": "照片轉手繪 - 線條畫"
         },
         "children": [
@@ -285,7 +285,7 @@
         "title": "彩色鉛筆畫",
         "description": "充滿活力的彩色鉛筆藝術品，具有豐富紋理和層次色彩。為您的照片注入生命，帶有手繪插圖的溫暖和特色，保留細膩的色彩變化。",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing.webp",
+          "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing2.webp",
           "alt": "照片轉手繪 - 彩色鉛筆畫"
         },
         "children": [
@@ -307,7 +307,7 @@
         "title": "水彩畫",
         "description": "柔和、流動的水彩效果，具有美麗的色彩混合和藝術筆觸。創造夢幻、空靈的藝術作品，具有傳統水彩畫的細膩透明度和有機流動感。",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting.webp",
+          "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting2.webp",
           "alt": "照片轉手繪 - 水彩畫"  
         },
         "children": [

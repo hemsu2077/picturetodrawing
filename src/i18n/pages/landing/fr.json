@@ -241,7 +241,7 @@
         "title": "Croquis au crayon",
         "description": "Dessin au crayon graphite classique avec un ombrage réaliste et une conservation des détails fins. Parfait pour créer des œuvres d'art intemporelles et élégantes qui capturent l'essence de votre photo originale avec des textures subtiles et des dégradés naturels.",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch.webp",
+          "src": "https://files.picturetodrawing.com/sample/example-pencil-sketch2.webp",
           "alt": "Photo en Dessin - Croquis au crayon"
         },
         "children": [
@@ -263,7 +263,7 @@
         "title": "Dessin au trait",
         "description": "Art linéaire épuré et minimaliste avec des traits audacieux et des contours clairs. Crée des œuvres d'art modernes et frappantes qui mettent l'accent sur la forme et la structure tout en éliminant les détails superflus pour une esthétique contemporaine.",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-line-drawing.webp",
+          "src": "https://files.picturetodrawing.com/sample/example-line-drawing2.webp",
           "alt": "Photo en Dessin - Dessin au trait"
         },
         "children": [
@@ -285,7 +285,7 @@
         "title": "Dessin aux crayons de couleur",
         "description": "Œuvre vibrante aux crayons de couleur avec des textures riches et des couleurs superposées. Donne vie à vos photos avec la chaleur et le caractère des illustrations coloriées à la main, en préservant les variations de couleur subtiles.",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing.webp",
+          "src": "https://files.picturetodrawing.com/sample/example-color-pencil-drawing2.webp",
           "alt": "Photo en Dessin - Dessin aux crayons de couleur"
         },
         "children": [
@@ -307,7 +307,7 @@
         "title": "Aquarelle",
         "description": "Effets d'aquarelle doux et fluides avec de magnifiques mélanges de couleurs et des coups de pinceau artistiques. Crée des œuvres d'art oniriques et éthérées avec la transparence délicate et le flux organique des aquarelles traditionnelles.",
         "image": {
-          "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting.webp",
+          "src": "https://files.picturetodrawing.com/sample/example-watercolor-painting2.webp",
           "alt": "Photo en Dessin - Aquarelle"
         },
         "children": [
