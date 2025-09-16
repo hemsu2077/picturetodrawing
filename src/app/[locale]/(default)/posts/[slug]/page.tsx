@@ -1,3 +1,5 @@
+export const revalidate = 300;
+
 import { PostStatus, findPostBySlug } from "@/models/post";
 
 import BlogDetail from "@/components/blocks/blog-detail";

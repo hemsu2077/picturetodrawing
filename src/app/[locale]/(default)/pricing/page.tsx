@@ -1,3 +1,6 @@
+export const dynamic = "force-static";
+export const revalidate = 3600;
+
 import Pricing from "@/components/blocks/pricing";
 import { getPricingPage } from "@/services/page";
 import FAQ from "@/components/blocks/faq";

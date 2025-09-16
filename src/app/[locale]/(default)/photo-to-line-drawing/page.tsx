@@ -1,3 +1,6 @@
+export const dynamic = "force-static";
+export const revalidate = 3600;
+
 import CTA from "@/components/blocks/cta";
 import FAQ from "@/components/blocks/faq";
 import Feature from "@/components/blocks/feature";

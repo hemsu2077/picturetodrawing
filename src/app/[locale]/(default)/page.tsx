@@ -1,3 +1,6 @@
+export const dynamic = "force-static";
+export const revalidate = 3600;
+
 import AIExcellence from "@/components/blocks/ai-excellence";
 import ArtStyles from "@/components/blocks/art-styles";
 import Branding from "@/components/blocks/branding";

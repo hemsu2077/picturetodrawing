@@ -1,3 +1,5 @@
+export const revalidate = 300;
+
 import Blog from "@/components/blocks/blog";
 import { BlogItem, Blog as BlogType } from "@/types/blocks/blog";
 import { getPostsByLocale } from "@/models/post";

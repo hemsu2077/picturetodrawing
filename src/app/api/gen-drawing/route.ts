@@ -28,7 +28,9 @@ try {
     if (trialCheck.canUseTrial) {
       // User can use daily trial
       isTrialUsage = true;
-      console.log(`Using daily trial for ${userUuid ? `user ${userUuid}` : 'anonymous user'}`);
+      if (process.env.NODE_ENV !== 'production') {
+        console.log(`Using daily trial for ${userUuid ? `user ${userUuid}` : 'anonymous user'}`);
+      }
     } else if (isAuthEnabled()) {
       // Trial already used, check authentication and credits
       if (!userUuid) {
@@ -90,7 +92,9 @@ try {
     // Check if image is already a URL (sample image)
     if (image.startsWith('https://')) {
       inputImageUrl = image;
-      console.log("Using sample image URL:", inputImageUrl);
+      if (process.env.NODE_ENV !== 'production') {
+        console.log("Using sample image URL:", inputImageUrl);
+      }
     } else {
       // Upload the input image to get a URL
       const storage = newStorage();
@@ -106,7 +110,9 @@ try {
           disposition: "inline",
         });
         inputImageUrl = inputUploadResult.url;
-        console.log("Input image uploaded to:", inputImageUrl);
+        if (process.env.NODE_ENV !== 'production') {
+          console.log("Input image uploaded to:", inputImageUrl);
+        }
       } catch (uploadError) {
         console.error("Failed to upload input image:", uploadError);
         throw new Error("Failed to upload input image");
@@ -149,9 +155,8 @@ try {
 
     const { images, warnings } = await generateImage(generateOptions);
 
-      if (warnings.length > 0) {
+      if (warnings.length > 0 && process.env.NODE_ENV !== 'production') {
         console.warn("Generation warnings:", warnings);
-        // Don't throw error for warnings, just log them
       }
 
       if (!images || images.length === 0) {
@@ -195,7 +200,9 @@ try {
                 created_at: currentTime,
                 updated_at: currentTime,
               });
-              console.log(`Image data stored to database for ${userUuid ? `user ${userUuid}` : 'trial user'}`);
+              if (process.env.NODE_ENV !== 'production') {
+                console.log(`Image data stored to database for ${userUuid ? `user ${userUuid}` : 'trial user'}`);
+              }
             } catch (dbError) {
               console.error("Failed to store image data to database:", dbError);
               // Don't fail the request if database storage fails
@@ -208,7 +215,9 @@ try {
             filename,
           };
         } catch (err) {
-          console.log("upload file failed:", err);
+          if (process.env.NODE_ENV !== 'production') {
+            console.log("upload file failed:", err);
+          }
           return {
             provider,
             filename,
@@ -222,7 +231,9 @@ try {
       // Record daily trial usage
       try {
         await recordDailyTrial(userUuid || undefined);
-        console.log(`Daily trial recorded for ${userUuid ? `user ${userUuid}` : 'anonymous user'}`);
+        if (process.env.NODE_ENV !== 'production') {
+          console.log(`Daily trial recorded for ${userUuid ? `user ${userUuid}` : 'anonymous user'}`);
+        }
       } catch (trialError) {
         console.error("Failed to record daily trial:", trialError);
         // Don't fail the request if trial recording fails
@@ -235,7 +246,9 @@ try {
           trans_type: CreditsTransType.DrawingGeneration,
           credits: 2,
         });
-        console.log(`Successfully deducted 2 credits from user ${userUuid}`);
+        if (process.env.NODE_ENV !== 'production') {
+          console.log(`Successfully deducted 2 credits from user ${userUuid}`);
+        }
       } catch (creditError) {
         console.error("Failed to deduct credits:", creditError);
         // Note: We don't fail the request if credit deduction fails
