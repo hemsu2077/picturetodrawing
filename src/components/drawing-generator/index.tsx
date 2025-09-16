@@ -21,6 +21,7 @@ import { RiCoinsLine } from 'react-icons/ri';
 interface DrawingGeneratorProps {
   className?: string;
   defaultStyle?: string;
+  defaultModel?: string;
 }
 
 interface TrialStatus {
@@ -29,7 +30,7 @@ interface TrialStatus {
   isLoggedIn: boolean;
 }
 
-export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch' }: DrawingGeneratorProps) {
+export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch', defaultModel = 'default' }: DrawingGeneratorProps) {
   const { data: session } = isAuthEnabled() ? useSession() : { data: null };
   const { setShowSignModal, showPricingModal, setShowPricingModal } = useAppContext();
   const locale = useLocale();
@@ -37,7 +38,7 @@ export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch' }: 
   
   const [selectedImage, setSelectedImage] = useState<{ file: File | string; preview: string } | null>(null);
   const [selectedStyle, setSelectedStyle] = useState(defaultStyle);
-  const [selectedModel, setSelectedModel] = useState('default');
+  const [selectedModel, setSelectedModel] = useState(defaultModel);
   const [selectedRatio, setSelectedRatio] = useState('auto');
 
   // Auto-set ratio to 'auto' when nano-banana is selected

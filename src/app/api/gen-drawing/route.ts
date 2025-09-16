@@ -8,6 +8,7 @@ import { isAuthEnabled } from "@/lib/auth";
 import { insertImage } from "@/models/image";
 import { getUuid } from "@/lib/hash";
 import { checkDailyTrial, recordDailyTrial } from "@/services/trial";
+import { getDrawingPrompt } from "@/config/drawing-prompts";
 
 export async function POST(req: Request) {
 try {
@@ -63,28 +64,11 @@ try {
       return respErr("Missing required parameters: style and image");
     }
 
-    // Map style IDs to descriptive prompts
-    const styleMap: Record<string, string> = {
-      'pencil-sketch': 'black and white pencil sketch',
-      'charcoal-drawing': 'black and white charcoal drawing',
-      'color-pencil-drawing': 'color pencil drawing',
-      'watercolor-painting': 'watercolor painting',
-      'inkart': 'ink art',
-      'superhero-comic': 'American superhero comic style, rough lines, exaggerated colors. Just like a real comic',
-      'manga': 'Japanese/Korean manga style, clean lines, black and white tones, expressive emotions, dynamic composition. Just like a real manga'
-    };
-
-    // Special handling for line-drawing with custom prompt
-    let prompt: string;
-    if (style === 'line-drawing') {
-      prompt = 'Convert this photo into a clean black and white line illustration. Keep only the main outlines, no shading. Make it look like a coloring book page with clear contours and simplified details. Remove the background and focus on the subject.';
-    } else {
-      const styleName = styleMap[style] || style;
-      prompt = `transform the image to a drawing, the drawing should be in the style of ${styleName}, Try to make it look as painted as possible.`;
-    }
-    
     // Select model based on user choice
     const selectedModel = model === 'nano-banana' ? "google/nano-banana" : "black-forest-labs/flux-kontext-pro";
+    
+    // Get model-specific prompt for the requested style
+    const prompt = getDrawingPrompt(model, style);
     
     
     let inputImageUrl: string;

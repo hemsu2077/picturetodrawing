@@ -48,7 +48,7 @@ export default async function PhotoToLineDrawingPage({
     <>
       {page.hero && <Hero hero={page.hero} backgroundVariant="line-drawing" />}
       <div id="drawing-generator">
-        <DrawingGenerator defaultStyle="line-drawing" />
+        <DrawingGenerator defaultStyle="line-drawing" defaultModel="nano-banana" />
       </div>
       {page.transformation_examples && <TransformationExamples section={page.transformation_examples} />}
       {page.usage && <Feature3 section={page.usage} />}
