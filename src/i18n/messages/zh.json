@@ -236,6 +236,14 @@
       "watercolor_painting": "水彩画",
       "inkart": "水墨画",
       "superhero_comic": "超级英雄漫画",
+      "pure_cartoon": "纯卡通",
+      "studio_ghibli": "吉卜力工作室",
+      "pixar_3d": "皮克斯3D",
+      "disney_3d": "迪士尼3D",
+      "simpsons": "辛普森一家",
+      "clay": "黏土风格",
+      "south_park": "南方公园",
+      "pixel_art": "像素艺术",
       "manga": "日式漫画"
     },
     "style_modal": {

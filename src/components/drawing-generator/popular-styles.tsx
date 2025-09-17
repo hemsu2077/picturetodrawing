@@ -4,17 +4,18 @@ import React from 'react';
 import { cn } from '@/lib/utils';
 import { useTranslations } from 'next-intl';
 import { Badge } from '@/components/ui/badge';
-import { getPopularStyles } from '@/config/drawing-styles';
+import { getPopularStyles, type PopularStylesConfigKey } from '@/config/drawing-styles';
 
 interface PopularStylesProps {
   selectedStyle: string;
   onStyleChange: (style: string) => void;
   className?: string;
+  configKey?: PopularStylesConfigKey;
 }
 
-export function PopularStyles({ selectedStyle, onStyleChange, className }: PopularStylesProps) {
+export function PopularStyles({ selectedStyle, onStyleChange, className, configKey = 'default' }: PopularStylesProps) {
   const t = useTranslations();
-  const popularStyles = getPopularStyles(t);
+  const popularStyles = getPopularStyles(t, configKey);
 
   return (
     <div className={cn("space-y-2", className)}>

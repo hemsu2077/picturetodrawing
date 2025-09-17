@@ -17,11 +17,13 @@ import { isAuthEnabled } from '@/lib/auth';
 import { useLocale, useTranslations } from 'next-intl';
 import { Pricing } from '@/types/blocks/pricing';
 import { RiCoinsLine } from 'react-icons/ri';
+import { type PopularStylesConfigKey } from '@/config/drawing-styles';
 
 interface DrawingGeneratorProps {
   className?: string;
   defaultStyle?: string;
   defaultModel?: string;
+  popularStylesKey?: PopularStylesConfigKey;
 }
 
 interface TrialStatus {
@@ -30,7 +32,12 @@ interface TrialStatus {
   isLoggedIn: boolean;
 }
 
-export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch', defaultModel = 'default' }: DrawingGeneratorProps) {
+export function DrawingGenerator({
+  className,
+  defaultStyle = 'pencil-sketch',
+  defaultModel = 'default',
+  popularStylesKey = 'default'
+}: DrawingGeneratorProps) {
   const { data: session } = isAuthEnabled() ? useSession() : { data: null };
   const { setShowSignModal, showPricingModal, setShowPricingModal } = useAppContext();
   const locale = useLocale();
@@ -327,6 +334,7 @@ export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch', de
               selectedStyle={selectedStyle}
               onStyleChange={setSelectedStyle}
               className="border-0 shadow-none p-0"
+              popularStylesKey={popularStylesKey}
             />
             
             {/* Model and Ratio in one row on desktop, two rows on mobile */}

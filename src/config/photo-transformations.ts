@@ -11,8 +11,8 @@ export const photoTransformationConfigMap = {
   "photo-to-cartoon": {
     slug: "photo-to-cartoon",
     generator: {
-      defaultStyle: "superhero-comic",
-      defaultModel: "nano-banana",
+      defaultStyle: "pure-cartoon",
+      defaultModel: "default",
     },
   },
 } as const;

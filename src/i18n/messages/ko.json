@@ -236,6 +236,14 @@
       "watercolor_painting": "수채화",
       "inkart": "먹 그림",
       "superhero_comic": "히어로 만화",
+      "pure_cartoon": "Pure Cartoon",
+      "studio_ghibli": "Studio Ghibli",
+      "pixar_3d": "Pixar 3D",
+      "disney_3d": "Disney 3D",
+      "simpsons": "Simpsons",
+      "clay": "Clay",
+      "south_park": "South Park",
+      "pixel_art": "Pixel Art",
       "manga": "망가"
     },
     "style_modal": {

@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { cn } from '@/lib/utils';
 import { useTranslations } from 'next-intl';
+import { type PopularStylesConfigKey } from '@/config/drawing-styles';
 import { StyleModal } from './style-modal';
 import { StyleSwitcher } from './style-switcher';
 import { PopularStyles } from './popular-styles';
@@ -11,9 +12,10 @@ interface StyleSelectorProps {
   selectedStyle: string;
   onStyleChange: (style: string) => void;
   className?: string;
+  popularStylesKey?: PopularStylesConfigKey;
 }
 
-export function StyleSelector({ selectedStyle, onStyleChange, className }: StyleSelectorProps) {
+export function StyleSelector({ selectedStyle, onStyleChange, className, popularStylesKey = 'default' }: StyleSelectorProps) {
   const t = useTranslations();
   const [showStyleModal, setShowStyleModal] = useState(false);
 
@@ -43,6 +45,7 @@ export function StyleSelector({ selectedStyle, onStyleChange, className }: Style
         <PopularStyles
           selectedStyle={selectedStyle}
           onStyleChange={handleStyleSelect}
+          configKey={popularStylesKey}
         />
       </div>
 

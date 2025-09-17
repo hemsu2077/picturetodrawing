@@ -236,6 +236,14 @@
       "watercolor_painting": "水彩画",
       "inkart": "インクアート",
       "superhero_comic": "スーパーヒーローコミック",
+      "pure_cartoon": "ピュアカートゥーン",
+      "studio_ghibli": "スタジオジブリ",
+      "pixar_3d": "ピクサー3D",
+      "disney_3d": "ディズニー3D",
+      "simpsons": "シンプソンズ",
+      "clay": "クレイ",
+      "south_park": "サウスパーク",
+      "pixel_art": "ピクセルアート",
       "manga": "マンガ"
     },
     "style_modal": {
