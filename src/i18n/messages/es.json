@@ -238,6 +238,11 @@
       "superhero_comic": "Cómic de Superhéroe",
       "manga": "Manga"
     },
+    "style_modal": {
+      "title": "Seleccionar Estilo",
+      "popular_styles": "Estilos Populares",
+      "select_style": "Cambiar Estilo"
+    },
     "models": {
       "classic": "Clásico",
       "classic_description": "Dibujo natural",

@@ -56,9 +56,9 @@ export function RatioSelector({ selectedRatio, onRatioChange, disabled = false, 
   const ASPECT_RATIOS = getAspectRatios(t);
 
   return (
-    <div className={cn("space-y-4", className)}>
+    <div className={cn("space-y-2", className)}>
       <div>
-        <p className="text-sm text-muted-foreground mt-1">
+        <p className="text-sm text-muted-foreground">
           {t('drawing_generator.aspect_ratio')}
         </p>
       </div>

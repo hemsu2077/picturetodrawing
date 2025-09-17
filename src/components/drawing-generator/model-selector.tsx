@@ -35,7 +35,7 @@ export function ModelSelector({ selectedModel, onModelChange, className }: Model
   const AI_MODELS = getAiModels(t);
 
   return (
-    <div className={cn("space-y-4", className)}>
+    <div className={cn("space-y-2", className)}>
       <div>
         <p className="text-sm text-muted-foreground">
           {t('drawing_generator.ai_model')}

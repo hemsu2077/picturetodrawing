@@ -328,17 +328,21 @@ export function DrawingGenerator({ className, defaultStyle = 'pencil-sketch', de
               onStyleChange={setSelectedStyle}
               className="border-0 shadow-none p-0"
             />
-            <ModelSelector
-              selectedModel={selectedModel}
-              onModelChange={setSelectedModel}
-              className="border-0 shadow-none p-0"
-            />
-            <RatioSelector
-              selectedRatio={selectedRatio}
-              onRatioChange={setSelectedRatio}
-              disabled={selectedModel === 'nano-banana'}
-              className="border-0 shadow-none p-0"
-            />
+            
+            {/* Model and Ratio in one row on desktop, two rows on mobile */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <ModelSelector
+                selectedModel={selectedModel}
+                onModelChange={setSelectedModel}
+                className="border-0 shadow-none p-0"
+              />
+              <RatioSelector
+                selectedRatio={selectedRatio}
+                onRatioChange={setSelectedRatio}
+                disabled={selectedModel === 'nano-banana'}
+                className="border-0 shadow-none p-0"
+              />
+            </div>
             
             <div className="space-y-2">
               <Button

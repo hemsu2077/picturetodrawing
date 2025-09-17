@@ -238,6 +238,11 @@
       "superhero_comic": "スーパーヒーローコミック",
       "manga": "マンガ"
     },
+    "style_modal": {
+      "title": "スタイルを選択",
+      "popular_styles": "人気のスタイル",
+      "select_style": "スタイルを変更"
+    },
     "models": {
       "classic": "クラシック",
       "classic_description": "自然な絵画",

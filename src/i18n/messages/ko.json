@@ -238,6 +238,11 @@
       "superhero_comic": "히어로 만화",
       "manga": "망가"
     },
+    "style_modal": {
+      "title": "스타일 선택",
+      "popular_styles": "인기 스타일",
+      "select_style": "스타일 변경"
+    },
     "models": {
       "classic": "클식",
       "classic_description": "자연스러운 그림",

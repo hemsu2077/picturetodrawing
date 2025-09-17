@@ -238,6 +238,11 @@
       "superhero_comic": "超級英雄漫畫",
       "manga": "日式漫畫"
     },
+    "style_modal": {
+      "title": "選擇風格",
+      "popular_styles": "熱門風格",
+      "select_style": "更改風格"
+    },
     "models": {
       "classic": "經典",
       "classic_description": "自然手繪風格",
