@@ -117,7 +117,7 @@ export default function SignUser({ user }: { user: User }) {
               </span>
             )}
             </div>
-            <Button variant="outline" size="sm" className="w-24 text-xs" asChild>
+            <Button variant="outline" size="sm" className="text-xs whitespace-nowrap">
               <Link href="/pricing" target="_self">
                 {t("user.recharge")}
               </Link>

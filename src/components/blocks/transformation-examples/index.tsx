@@ -80,7 +80,7 @@ export default function TransformationExamples({ section }: { section: SectionTy
                   <Button
                     variant="outline"
                     size="lg"
-                    className="transition-all bg-background text-primary border-primary duration-200 hover:bg-black hover:text-primary-foreground hover:scale-105 group"
+                    className="transition-all bg-background text-primary border-primary duration-200 hover:!bg-black hover:text-primary-foreground hover:scale-105 group"
                     asChild
                   >
                     <a href="#drawing-generator" target="_self">
