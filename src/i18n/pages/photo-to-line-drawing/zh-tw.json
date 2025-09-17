@@ -108,39 +108,46 @@
   ]
 },
 
-  "usage": {
-    "name": "usage",
-    "title": "照片轉線稿使用方法",
-    "description": "我們先進的AI技術只需3個簡單步驟即可將您的照片轉換為清晰線條藝術。",
-    "image": {
-      "src": "/imgs/features/1.png"
-    },
-    "image_position": "left",
-    "text_align": "center",
-    "items": [
-      {
-        "title": "上傳您的照片",
-        "description": "只需拖放圖片或從設備中選擇。我們支援所有常見照片格式，包括JPG、PNG、WebP和HEIC。",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
-        }
-      },
-      {
-        "title": "選擇線稿風格",
-        "description": "我們的智慧演算法分析您的照片以識別關鍵輪廓、邊緣和重要細節，創建清晰的線稿轉換。",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
-        }
-      },
-      {
-        "title": "下載您的藝術作品",
-        "description": "獲得多種格式的高品質線條藝術。完美適合列印、數位項目或導入設計軟體。",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
-        }
-      }
-    ]
+"usage": {
+  "name": "usage",
+  "title": "照片轉線稿使用教學",
+  "description": "讓我們來看看如何運用最新的邊緣偵測技術，將您的照片轉換成簡約清晰的線稿，無論是技術插圖還是藝術創作都能完美呈現。",
+  "image": {
+    "src": "/imgs/features/1.png"
   },
+  "image_position": "left",
+  "text_align": "center",
+  "items": [
+    {
+      "title": "上傳您的照片",
+      "description": "從您的裝置選擇任何照片 - 人像、建築、商品或自然風景都非常適合。我們支援多種格式，包括JPG、PNG、WebP和HEIC，輕鬆上傳不費力。",
+      "image": {
+        "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+      }
+    },
+    {
+      "title": "選擇你的線稿模型",
+      "description": "根據不同的線稿風格選擇模型。Nano Banana 模型能生成乾淨、精準的線條，非常適合現代插畫；經典 模型則呈現出更自然、手繪感強烈的有機紋理。",
+      "image": {
+        "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
+      }
+    },
+    {
+      "title": "智慧轉換處理",
+      "description": "我們的系統會自動分析照片中的輪廓和結構，保留重要的線條特徵，同時去除不必要的雜訊，讓線稿更加清晰乾淨。",
+      "image": {
+        "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
+      }
+    },
+    {
+      "title": "下載您的線稿作品",
+      "description": "以高品質格式保存您的線稿作品。完美適用於列印、數位項目，或在您喜歡的設計軟體中進行後期編輯。",
+      "image": {
+        "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+      }
+    }
+  ]
+},
   "faq": {
     "name": "faq",
     "label": "常見問題",

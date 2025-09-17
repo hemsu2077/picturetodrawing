@@ -125,39 +125,46 @@
         }
       ]
     },
-  "usage": {
-    "name": "usage",
-    "title": "Comment fonctionne la conversion photo en dessin au trait",
-    "description": "Notre technologie IA avancée convertit vos photos en dessins au trait nets en seulement 3 étapes simples.",
-    "image": {
-      "src": "/imgs/features/1.png"
+    "usage": {
+      "name": "usage", 
+      "title": "Comment transformer vos photos en dessins au trait",
+      "description": "Découvrez comment notre technologie de pointe transforme vos photos en élégants dessins au trait, parfaits pour vos projets artistiques et techniques.",
+      "image": {
+        "src": "/imgs/features/1.png"
+      },
+      "image_position": "left",
+      "text_align": "center",
+      "items": [
+        {
+          "title": "Choisissez votre photo",
+          "description": "Importez n'importe quelle photo depuis votre appareil - portraits, architecture, objets ou paysages. Notre convertisseur traite facilement les formats JPG, PNG, WebP et HEIC.",
+          "image": {
+            "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+          }
+        },
+        {
+          "title": "Choisissez votre modèle de dessin au trait",
+          "description": "Sélectionnez parmi nos modèles pour différents styles de line art. Le modèle Nano Banana offre des lignes nettes et précises, parfaites pour des illustrations modernes. Le modèle Classique, quant à lui, crée un rendu plus naturel, avec une texture organique rappelant le dessin à la main.",
+          "image": {
+            "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
+          }
+        },
+        {
+          "title": "Transformation instantanée",
+          "description": "Notre moteur de conversion utilise l'intelligence artificielle pour détecter les contours et les éléments essentiels de votre photo, en éliminant les détails superflus.",
+          "image": {
+            "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
+          }
+        },
+        {
+          "title": "Téléchargez votre création",
+          "description": "Récupérez votre dessin au trait dans différents formats : SVG vectoriel pour le design professionnel, PNG haute résolution pour l'impression, ou PDF pour vos documents. Parfait pour la broderie, la découpe laser ou la CAO.",
+          "image": {
+            "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+          }
+        }
+      ]
     },
-    "image_position": "left",
-    "text_align": "center",
-    "items": [
-      {
-        "title": "Téléchargez votre photo",
-        "description": "Glissez-déposez simplement votre image ou sélectionnez-la depuis votre appareil. Nous supportons tous les formats photo courants incluant JPG, PNG, WebP et HEIC.",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
-        }
-      },
-      {
-        "title": "Choisissez le style de dessin au trait",
-        "description": "Notre algorithme intelligent analyse votre photo pour identifier les contours, bords et détails importants, créant une conversion en dessin au trait nette.",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
-        }
-      },
-      {
-        "title": "Téléchargez votre œuvre d'art",
-        "description": "Obtenez votre dessin au trait de haute qualité dans plusieurs formats. Parfait pour impression, projets numériques ou importation dans des logiciels de design.",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
-        }
-      }
-    ]
-  },
   "faq": {
     "name": "faq",
     "label": "FAQ",

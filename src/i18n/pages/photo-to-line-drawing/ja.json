@@ -127,39 +127,46 @@
         }
       ]
     },
-  "usage": {
-    "name": "usage",
-    "title": "写真を線描画に変換する方法",
-    "description": "私たちの高度なAI技術が、たった3つの簡単なステップで写真をクリーンな線画に変換します。",
-    "image": {
-      "src": "/imgs/features/1.png"
+    "usage": {
+      "name": "usage", 
+      "title": "写真を線描画に変換する方法",
+      "description": "写真から不要な要素を取り除き、シンプルで美しい線描画を作成する技術をご紹介します。イラストや設計図に最適な、クリーンな線画を簡単に生成できます。",
+      "image": {
+        "src": "/imgs/features/1.png"
+      },
+      "image_position": "left",
+      "text_align": "center",
+      "items": [
+        {
+          "title": "写真をアップロード",
+          "description": "お手持ちの写真をアップロードするだけで始められます。人物、建物、商品、風景など、どんな写真でもOK。JPG、PNG、WebP、HEICなど、主要な画像形式に対応しています。",
+          "image": {
+            "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+          }
+        },
+        {
+          "title": "ラインアートモデルを選択",
+          "description": "さまざまなラインアートスタイルに合わせてモデルをお選びください。Nano Bananaモデルは、モダンなイラストにぴったりなクリーンで精密な線を描きます。一方、クラシックモデルは、手描きのような自然な風合いと有機的なテクスチャーを表現します。",
+          "image": {
+            "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
+          }
+        },
+        {
+          "title": "AIが線画を生成",
+          "description": "最新のAI技術が写真の輪郭や構造を自動で認識。余分な情報を取り除き、本質的な線だけを抽出して美しい線描画を作り出します。",
+          "image": {
+            "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
+          }
+        },
+        {
+          "title": "作品をダウンロード",
+          "description": "完成した線描画は、用途に応じて様々な形式でダウンロードできます。デザイン作業用のSVG、印刷用の高解像度PNG、ドキュメント用のPDFなど、CADソフトや刺繍機、レーザーカッターにも対応。",
+          "image": {
+            "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+          }
+        }
+      ]
     },
-    "image_position": "left",
-    "text_align": "center",
-    "items": [
-      {
-        "title": "写真をアップロード",
-        "description": "画像をドラッグ＆ドロップするか、デバイスから選択するだけ。JPG、PNG、WebP、HEICなど、すべての一般的な写真フォーマットに対応。",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
-        }
-      },
-      {
-        "title": "線描画スタイルを選択",
-        "description": "私たちのインテリジェントなアルゴリズムが写真を分析して輪郭、エッジ、重要な詳細を識別し、クリーンな線描画を作成。",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
-        }
-      },
-      {
-        "title": "アートワークをダウンロード",
-        "description": "高品質な線画を複数のフォーマットで取得。印刷、デジタルプロジェクト、またはデザインソフトウェアへのインポートに最適。",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
-        }
-      }
-    ]
-  },
   "faq": {
     "name": "faq",
     "label": "FAQ",

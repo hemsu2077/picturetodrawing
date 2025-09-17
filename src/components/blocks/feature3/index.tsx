@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Section as SectionType } from "@/types/blocks/section";
 import { Upload, Wand2, Download } from "lucide-react";
+import { RiFlashlightLine } from "react-icons/ri";
 
 export default function Feature3({ section }: { section: SectionType }) {
   if (section.disabled) {
@@ -30,8 +31,8 @@ export default function Feature3({ section }: { section: SectionType }) {
         </div>
 
         {/* Horizontal Layout */}
-        <div className="max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 md:gap-12 relative">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-4 gap-8 md:gap-12 relative">
             {/* Connection lines */}
             <div className="absolute top-12 left-0 right-0 hidden md:flex items-center justify-between px-12">
               <div className="flex-1 h-px bg-gradient-to-r from-transparent via-border/30 to-border/30"></div>
@@ -52,7 +53,8 @@ export default function Feature3({ section }: { section: SectionType }) {
                     <div className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-white shadow-sm">
                       {index === 0 && <Upload className="h-6 w-6 md:h-8 md:w-8 text-primary" />}
                       {index === 1 && <Wand2 className="h-6 w-6 md:h-8 md:w-8 text-primary" />}
-                      {index === 2 && <Download className="h-6 w-6 md:h-8 md:w-8 text-primary" />}
+                      {index === 2 && <RiFlashlightLine className="h-6 w-6 md:h-8 md:w-8 text-primary" />}
+                      {index === 3 && <Download className="h-6 w-6 md:h-8 md:w-8 text-primary" />}
                     </div>
                   </div>
 

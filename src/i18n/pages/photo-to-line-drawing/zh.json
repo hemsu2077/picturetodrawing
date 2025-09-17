@@ -125,39 +125,46 @@
     }
   ]
 },
-  "usage": {
-    "name": "usage",
-    "title": "图片转线稿使用方法",
-    "description": "我们先进的AI技术只需3个简单步骤即可将您的照片转换为清晰线条艺术。",
-    "image": {
-      "src": "/imgs/features/1.png"
-    },
-    "image_position": "left",
-    "text_align": "center",
-    "items": [
-      {
-        "title": "上传您的照片",
-        "description": "只需拖放图片或从设备中选择。我们支持所有常见照片格式，包括JPG、PNG、WebP和HEIC。",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
-        }
-      },
-      {
-        "title": "选择线稿风格",
-        "description": "我们的智能算法分析您的照片以识别关键轮廓、边缘和重要细节，创建清晰的线稿转换。",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
-        }
-      },
-      {
-        "title": "下载您的艺术作品",
-        "description": "获得多种格式的高质量线条艺术。完美适合打印、数字项目或导入设计软件。",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
-        }
-      }
-    ]
+"usage": {
+  "name": "usage",
+  "title": "如何使用图片转线稿",
+  "description": "了解我们的智能技术如何将您的照片转换成清晰简约的线稿，完美适用于技术插图和艺术创作。",
+  "image": {
+    "src": "/imgs/features/1.png"
   },
+  "image_position": "left",
+  "text_align": "center",
+  "items": [
+    {
+      "title": "上传您的照片",
+      "description": "从您的设备上传任意照片 - 人像、建筑、产品或自然风光都能完美转换。支持JPG、PNG、WebP和HEIC等常见图片格式。",
+      "image": {
+        "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+      }
+    },
+    {
+      "title": "选择你的线稿模型",
+      "description": "根据不同的线稿风格选择模型。Nano Banana 模型可生成干净、精准的线条，非常适合现代插画；经典 模型则呈现出更加自然、富有手绘质感的有机纹理。",
+      "image": {
+        "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
+      }
+    },
+    {
+      "title": "快速处理生成",
+      "description": "先进的AI技术能快速识别图像中的轮廓和结构特征，自动过滤多余细节，生成清晰的线条艺术作品。",
+      "image": {
+        "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
+      }
+    },
+    {
+      "title": "下载您的线稿作品",
+      "description": "以高质量格式保存您的线稿作品。完美适用于打印、数字项目，或在您喜欢的设计软件中进行后期编辑。",
+      "image": {
+        "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+      }
+    }
+  ]
+},
   "faq": {
     "name": "faq",
     "label": "常见问题",

@@ -151,8 +151,8 @@
   },
   "usage": {
     "name": "usage",
-    "title": "How to Convert Picture to Drawing",
-    "description": "Transform any photo to sketch or artistic drawing with our intuitive process. No technical skills needed - just follow these simple steps to create stunning picture to drawing conversions.",
+    "title": "The Art of Digital Picture to Drawing Transformation",
+    "description": "Experience the seamless blend of photography and traditional artistry through AI-powered sketch generation. Turn memories into timeless artistic expressions with professional-grade drawing techniques.",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -160,22 +160,29 @@
     "text_align": "center",
     "items": [
       {
-        "title": "Upload Your Photo",
-        "description": "Simply drag and drop your image or click to browse. Our picture to drawing converter supports JPG, PNG, and other popular formats. Your photo will be processed securely with complete privacy protection.",
+        "title": "Begin with Your Favorite Photo",
+        "description": "Start by selecting a meaningful photograph - family portraits, travel memories, or special moments work beautifully. The platform accepts various formats and ensures complete privacy during processing.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
       },
       {
-        "title": "Choose Your Art Style",
-        "description": "Select from our collection of artistic styles including pencil sketch, charcoal drawing, watercolor painting, and ink illustration. Each picture to drawing style offers unique aesthetic qualities for your picture to drawing transformation.",
+        "title": "Select Traditional Art Medium",
+        "description": "Choose from authentic artistic techniques like graphite pencil sketching, dramatic charcoal shading, delicate watercolor washes, or bold ink illustrations. Each medium recreates genuine artistic textures and characteristics.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
         }
       },
       {
-        "title": "Download Your Artwork",
-        "description": "Watch as our AI transforms your picture to drawing in seconds. Preview your converted picture to drawing result and download in high resolution. Perfect for printing, sharing, or creating personalized gifts.",
+        "title": "Initiate Artistic Rendering",
+        "description": "Begin the transformation where sophisticated AI mimics traditional drawing methods. The system studies composition, lighting, and subject matter to recreate authentic artistic techniques with remarkable accuracy.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
+        }
+      },
+      {
+        "title": "Collect Your Artistic Masterpiece",
+        "description": "Receive your hand-drawn style artwork in gallery-quality resolution. Ideal for framing, gifting, or creating lasting keepsakes that bridge the gap between photography and traditional fine art.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }

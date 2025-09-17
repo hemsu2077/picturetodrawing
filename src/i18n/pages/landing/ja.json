@@ -151,8 +151,8 @@
   },
   "usage": {
     "name": "usage",
-    "title": "写真をイラストに変換する方法",
-    "description": "直感的なプロセスで、あらゆる写真をスケッチや芸術的なイラストに変換。技術的なスキルは不要 - これらの簡単なステップに従うだけで、素晴らしい写真イラスト化が作成できます。",
+    "title": "写真イラスト化の魅力",
+    "description": "AIが実現する写真とアートの融合。大切な思い出を、プロフェッショナルな手描き風イラストとして永遠に残せます。",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -160,22 +160,29 @@
     "text_align": "center",
     "items": [
       {
-        "title": "写真をアップロード",
-        "description": "画像をドラッグ＆ドロップするか、クリックして参照。写真イラスト化コンバーターはJPG、PNG、その他人気形式をサポート。写真は完全なプライバシー保護で安全に処理されます。",
+        "title": "お気に入りの写真を選ぶ",
+        "description": "家族写真、旅の思い出、特別な瞬間など、大切な写真をアップロード。様々な形式に対応し、プライバシーも万全です。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
       },
       {
         "title": "アートスタイルを選択",
-        "description": "鉛筆スケッチ、木炭画、水彩画、インクイラストを含むアーティスティックスタイルのコレクションから選択。各写真イラスト化スタイルは、変換にユニークな美的特性を提供します。",
+        "description": "鉛筆画、木炭画、水彩画、インクイラストなど、本格的な画風から選べます。それぞれのスタイルが持つ独特の質感や特徴を忠実に再現します。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
         }
       },
       {
-        "title": "アートワークをダウンロード",
-        "description": "AIが写真を数秒でイラストに変換する様子を鑑賞。変換された写真イラスト化結果をプレビューし、高解像度でダウンロード。印刷、共有、パーソナライズされたギフト作成に最適です。",
+        "title": "変換をスタート",
+        "description": "高度なAIが伝統的な描画技法を再現。構図、光の当たり方、被写体の特徴を分析し、驚くほど本物に近い仕上がりを実現します。",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
+        }
+      },
+      {
+        "title": "作品の完成",
+        "description": "ギャラリー品質の手描き風アートワークが完成。額装して飾ったり、ギフトとして贈ったり、写真とアートの架け橋となる思い出の一枚に。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }

@@ -80,11 +80,10 @@ export default function TransformationExamples({ section }: { section: SectionTy
                   <Button
                     variant="outline"
                     size="lg"
-                    className="transition-all bg-white duration-200 hover:bg-primary hover:text-primary-foreground hover:border-primary hover:scale-105 group"
+                    className="transition-all bg-background text-primary border-primary duration-200 hover:bg-black hover:text-primary-foreground hover:scale-105 group"
                     asChild
                   >
                     <a href="#drawing-generator" target="_self">
-                      <Icon name="RiBrushLine" className="mr-2 text-lg transition-transform duration-200 group-hover:rotate-12" />
                       {item.buttons?.[0]?.title}
                     </a>
                   </Button>

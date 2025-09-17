@@ -127,8 +127,8 @@
   },
   "usage": {
     "name": "usage",
-    "title": "How Photo to Line Drawing Works",
-    "description": "Our advanced AI technology converts your photos into clean line art in just 3 simple steps.",
+    "title": "Photo to Line Drawing Usage",
+    "description": "Discover how edge detection technology transforms complex photographs into clean, minimalist line drawings perfect for technical illustrations and artistic projects.",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -136,22 +136,29 @@
     "text_align": "center",
     "items": [
       {
-        "title": "Upload Your Photo",
-        "description": "Simply drag and drop your image or select from your device. We support all common photo formats including JPG, PNG, WebP and HEIC.",
+        "title": "Import Your Source Image",
+        "description": "Load any photograph from your device - portraits, architecture, products, or nature scenes work exceptionally well. The converter handles JPG, PNG, WebP, and HEIC files seamlessly.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
       },
       {
-        "title": "Choose Line Drawing Style",
-        "description": "Our intelligent algorithm analyzes your photo to identify key contours, edges, and important details, creating a clean line drawing conversion.",
+        "title": "Select Your Line Drawing Model",
+        "description": "Choose between our available models for different line art styles. Nano Banana model produces clean, precise lines perfect for modern illustrations, while Classic model creates more natural hand-drawn effects with organic textures.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
         }
       },
       {
-        "title": "Download Your Artwork",
-        "description": "Get your high-quality line art in multiple formats. Perfect for printing, digital projects, or importing into design software.",
+        "title": "Execute Edge Detection Algorithm",
+        "description": "Activate the conversion engine which uses computer vision to detect edges, contours, and structural elements. The system isolates essential lines while removing photographic noise and unnecessary details.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
+        }
+      },
+      {
+        "title": "Download Your Line Art",
+        "description": "Save your completed line drawing in high-quality format. Perfect for printing, digital projects, or further editing in your favorite design software.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }

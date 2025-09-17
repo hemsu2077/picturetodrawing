@@ -128,8 +128,8 @@
   },
   "usage": {
     "name": "usage",
-    "title": "Cómo Funciona Foto a Dibujo de Líneas",
-    "description": "Nuestra tecnología avanzada de IA convierte tus fotos en arte de líneas limpio en solo 3 simples pasos.",
+    "title": "Cómo Crear tu Dibujo de Líneas",
+    "description": "Descubre cómo nuestra tecnología convierte tus fotos en elegantes dibujos de líneas, ideales para ilustraciones técnicas y proyectos artísticos.",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -138,21 +138,28 @@
     "items": [
       {
         "title": "Sube tu Foto",
-        "description": "Simplemente arrastra y suelta tu imagen o selecciona de tu dispositivo. Apoyamos todos los formatos de foto comunes incluyendo JPG, PNG, WebP y HEIC.",
+        "description": "Carga cualquier foto desde tu dispositivo - retratos, edificios, productos o paisajes naturales. Nuestro convertidor procesa sin problemas archivos JPG, PNG, WebP y HEIC.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
       },
       {
-        "title": "Elige Estilo de Dibujo de Líneas",
-        "description": "Nuestro algoritmo inteligente analiza tu foto para identificar contornos clave, bordes y detalles importantes, creando una conversión limpia de dibujo de líneas.",
+        "title": "Selecciona tu modelo de dibujo en línea",
+        "description": "Elige entre nuestros modelos disponibles para diferentes estilos de arte lineal. El modelo Nano Banana produce líneas limpias y precisas, ideales para ilustraciones modernas. El modelo Clásico crea un estilo más natural y artesanal, con texturas orgánicas.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
         }
       },
       {
-        "title": "Descarga tu Obra de Arte",
-        "description": "Obtén tu arte de líneas de alta calidad en múltiples formatos. Perfecto para imprimir, proyectos digitales o importar a software de diseño.",
+        "title": "Deja que la IA Haga su Magia",
+        "description": "Nuestro sistema inteligente detecta automáticamente los bordes, contornos y elementos estructurales de tu foto, eliminando detalles innecesarios para crear un dibujo limpio y profesional.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
+        }
+      },
+      {
+        "title": "Téléchargez Votre Art Linéaire",
+        "description": "Sauvegardez votre dessin au trait terminé en format haute qualité. Parfait pour l'impression, les projets numériques ou pour une édition ultérieure dans votre logiciel de conception préféré.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }

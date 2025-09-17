@@ -151,31 +151,38 @@
   },
   "usage": {
     "name": "usage",
-    "title": "Cómo Convertir Foto en Dibujo",
-    "description": "Transforma cualquier foto en boceto o dibujo artístico con nuestro proceso intuitivo. No se necesitan habilidades técnicas, solo sigue estos simples pasos para crear impresionantes conversiones de foto a dibujo.",
+    "title": "El arte de transformar fotos en dibujos",
+    "description": "Descubre cómo la inteligencia artificial convierte tus fotografías en obras de arte únicas. Dale vida a tus recuerdos con técnicas artísticas profesionales.",
     "image": {
       "src": "/imgs/features/1.png"
     },
-    "image_position": "left",
+    "image_position": "left", 
     "text_align": "center",
     "items": [
       {
-        "title": "Sube tu Foto",
-        "description": "Simplemente arrastra y suelta tu imagen o haz clic para explorar. Nuestro convertidor de foto a dibujo admite JPG, PNG y otros formatos populares. Tu foto se procesará de forma segura con completa protección de privacidad.",
+        "title": "Elige tu foto favorita",
+        "description": "Sube la foto que quieras transformar - retratos familiares, momentos especiales o recuerdos de viaje. Aceptamos varios formatos y garantizamos total privacidad durante el proceso.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
       },
       {
-        "title": "Elige tu Estilo Artístico",
-        "description": "Selecciona de nuestra colección de estilos artísticos que incluye boceto a lápiz, dibujo al carbón, pintura a acuarela e ilustración con tinta. Cada estilo de foto a dibujo ofrece cualidades estéticas únicas para tu transformación.",
+        "title": "Escoge el estilo artístico",
+        "description": "Tenemos varios estilos clásicos disponibles: desde bocetos a lápiz y carboncillo hasta acuarelas y tinta china. Cada técnica reproduce fielmente las texturas y características del arte tradicional.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
         }
       },
       {
-        "title": "Descarga tu Obra de Arte",
-        "description": "Observa cómo nuestra IA transforma tu foto en dibujo en segundos. Previsualiza tu resultado de conversión y descárgalo en alta resolución. Perfecto para imprimir, compartir o crear regalos personalizados.",
+        "title": "Comienza la transformación",
+        "description": "Nuestra IA avanzada analiza la composición, la luz y el tema para recrear técnicas artísticas auténticas con una precisión sorprendente.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
+        }
+      },
+      {
+        "title": "Descarga tu obra maestra",
+        "description": "Recibe tu dibujo en alta calidad, perfecto para enmarcar, regalar o crear recuerdos únicos que combinan la fotografía con el arte tradicional.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }

@@ -152,7 +152,7 @@
   "usage": {
     "name": "usage",
     "title": "사진을 그림으로 변환하는 방법",
-    "description": "직관적인 과정으로 어떤 사진이든 스케치나 예술적 그림으로 변환하세요. 기술적 지식이 필요 없습니다 - 간단한 단계만 따라하면 멋진 사진을 그림으로 변환할 수 있습니다.",
+    "description": "AI 기술로 사진의 감동을 예술적인 그림으로 표현해보세요. 소중한 순간을 전문가급 드로잉 기법으로 영원히 간직할 수 있습니다.",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -160,22 +160,29 @@
     "text_align": "center",
     "items": [
       {
-        "title": "사진 업로드",
-        "description": "단순히 이미지를 드래그 앤 드롭하거나 클릭하여 찾아보세요. 저희 사진을 그림으로 변환기는 JPG, PNG 및 기타 인기 있는 형식을 지원합니다. 당신의 사진은 완전한 개인정보 보호와 함께 안전하게 처리됩니다.",
+        "title": "마음에 드는 사진 선택하기",
+        "description": "가족사진, 여행 추억, 특별한 순간이 담긴 사진을 선택하세요. 다양한 형식을 지원하며 개인정보는 철저히 보호됩니다.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
       },
       {
-        "title": "예술 스타일 선택",
-        "description": "연필 스케치, 목탄화, 수채화, 잉크 일러스트를 포함한 예술적 스타일 컴렉션에서 선택하세요. 각 사진을 그림으로 변환 스타일은 당신의 사진을 그림으로 변환하는 데 독특한 미적 특성을 제공합니다.",
+        "title": "원하는 그림 스타일 고르기",
+        "description": "연필 스케치, 목탄화, 수채화, 펜화 등 다양한 화풍 중에서 선택하세요. 각각의 스타일은 고유한 질감과 특징을 살려 표현됩니다.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
         }
       },
       {
-        "title": "예술 작품 다운로드",
-        "description": "저희 AI가 몇 초 만에 당신의 사진을 그림으로 변환하는 모습을 지켜보세요. 변환된 사진을 그림으로 변환 결과를 미리 보고 고해상도로 다운로드하세요. 인쇄, 공유 또는 개인화된 선물 제작에 완벽합니다.",
+        "title": "그림 변환 시작하기",
+        "description": "AI가 전통적인 드로잉 기법을 바탕으로 사진을 분석합니다. 구도, 빛, 주제를 정밀하게 파악하여 실제 그림과 같은 결과물을 만들어냅니다.",
+        "image": {
+          "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
+        }
+      },
+      {
+        "title": "완성된 작품 받아보기",
+        "description": "갤러리급 고해상도의 수작업 스타일 그림을 받아보세요. 액자로 제작하거나 선물용으로도 완벽하며, 사진과 순수미술의 경계를 넘나드는 특별한 작품을 만들 수 있습니다.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }

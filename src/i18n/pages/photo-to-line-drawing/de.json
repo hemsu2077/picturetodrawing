@@ -125,39 +125,46 @@
         }
       ]
     },
-  "usage": {
-    "name": "usage",
-    "title": "Wie Foto-in-Strichzeichnung funktioniert",
-    "description": "Unsere fortschrittliche KI-Technologie wandelt Ihre Fotos in nur 3 einfachen Schritten in saubere Linienkunst um.",
-    "image": {
-      "src": "/imgs/features/1.png"
+    "usage": {
+      "name": "usage", 
+      "title": "So funktioniert die Foto-in-Strichzeichnung-Umwandlung",
+      "description": "Entdecken Sie, wie unsere innovative Technologie Ihre Fotos in ausdrucksstarke Strichzeichnungen verwandelt - ideal für technische Illustrationen und künstlerische Projekte.",
+      "image": {
+        "src": "/imgs/features/1.png"
+      },
+      "image_position": "left",
+      "text_align": "center",
+      "items": [
+        {
+          "title": "Foto hochladen",
+          "description": "Laden Sie ein beliebiges Foto von Ihrem Gerät hoch - ob Porträts, Architektur, Produkte oder Naturaufnahmen. Unser Konverter verarbeitet problemlos JPG, PNG, WebP und HEIC Dateien.",
+          "image": {
+            "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+          }
+        },
+        {
+          "title": "Wähle dein Linienzeichnungsmodell",
+          "description": "Wähle zwischen unseren verfügbaren Modellen für verschiedene Line-Art-Stile. Das Nano Banana Modell liefert saubere, präzise Linien – ideal für moderne Illustrationen. Das Klassisch Modell erzeugt dagegen einen natürlicheren, handgezeichneten Look mit organischen Texturen.",
+          "image": {
+            "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
+          }
+        },
+        {
+          "title": "KI-gestützte Umwandlung starten",
+          "description": "Unsere intelligente Software erkennt automatisch Kanten, Konturen und wichtige Bildelemente. Dabei werden störende Details entfernt und die wesentlichen Linien hervorgehoben.",
+          "image": {
+            "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
+          }
+        },
+        {
+          "title": "Strichzeichnung herunterladen",
+          "description": "Speichern Sie Ihre fertige Strichzeichnung in hoher Qualität. Perfekt zum Drucken, für digitale Projekte oder zur weiteren Bearbeitung in Ihrer bevorzugten Design-Software.",
+          "image": {
+            "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
+          }
+        }
+      ]
     },
-    "image_position": "left",
-    "text_align": "center",
-    "items": [
-      {
-        "title": "Laden Sie Ihr Foto hoch",
-        "description": "Ziehen Sie einfach Ihr Bild per Drag & Drop oder wählen Sie es von Ihrem Gerät aus. Wir unterstützen alle gängigen Fotoformate einschließlich JPG, PNG, WebP und HEIC.",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
-        }
-      },
-      {
-        "title": "Wählen Sie den Strichzeichnungs-Stil",
-        "description": "Unser intelligenter Algorithmus analysiert Ihr Foto, um wichtige Konturen, Kanten und wichtige Details zu identifizieren und erstellt eine saubere Strichzeichnungsumwandlung.",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
-        }
-      },
-      {
-        "title": "Laden Sie Ihr Kunstwerk herunter",
-        "description": "Erhalten Sie Ihre hochwertige Linienkunst in mehreren Formaten. Perfekt zum Drucken, für digitale Projekte oder zum Importieren in Designsoftware.",
-        "image": {
-          "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
-        }
-      }
-    ]
-  },
   "faq": {
     "name": "faq",
     "label": "FAQ",
