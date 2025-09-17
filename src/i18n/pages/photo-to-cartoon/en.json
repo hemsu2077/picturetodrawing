@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "title": "Photo to Cartoon Converter - Free AI Cartoon Maker",
+    "description": "Turn your photos into vibrant cartoon art with our AI-powered cartoonizer. Perfect for profile pictures, gifts, and creative projects."
+  },
+  "hero": {
+    "title": "Create Cartoon Versions of Any Photo in Seconds",
+    "highlight_text": "Photo to Cartoon",
+    "description": "Upload a picture and let our AI transform it into a playful cartoon illustration—no drawing skills required.",
+    "show_happy_users": false,
+    "show_badge": false,
+    "buttons": [
+      {
+        "title": "Try the Cartoon Maker",
+        "url": "/photo-to-cartoon#drawing-generator",
+        "target": "_self"
+      }
+    ]
+  },
+  "transformation_examples": {
+    "name": "transformation_examples",
+    "title": "See What the Cartoon Maker Can Do",
+    "description": "A few quick examples of portraits and pets converted into colorful cartoon styles.",
+    "items": [
+      {
+        "title": "Cartoon Portrait",
+        "description": "Transform selfies and portraits into bold cartoon avatars with clean outlines and vibrant colors.",
+        "label": "Portrait",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-portrait.webp",
+          "alt": "Cartoon portrait example"
+        },
+        "buttons": [
+          {
+            "title": "Cartoonize My Photo",
+            "url": "/photo-to-cartoon#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "Cartoon Pet",
+        "description": "Turn your favorite pet photos into adorable cartoon companions ready for stickers or gifts.",
+        "label": "Pet",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-pet.webp",
+          "alt": "Cartoon pet example"
+        },
+        "buttons": [
+          {
+            "title": "Start Cartoon Conversion",
+            "url": "/photo-to-cartoon#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "How the Cartoon Converter Works",
+    "description": "Three simple steps to transform any picture into a cartoon illustration.",
+    "items": [
+      {
+        "title": "Upload a Photo",
+        "description": "Select a portrait, pet, or any image you want to cartoonize."
+      },
+      {
+        "title": "Pick the Cartoon Style",
+        "description": "Choose your favorite cartoon look—classic comic, manga, or bold color styles."
+      },
+      {
+        "title": "Download and Share",
+        "description": "Export the cartoon image in high resolution, ready for social media or printing."
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Photo to Cartoon FAQs",
+    "description": "Answers to common questions about turning photos into cartoons.",
+    "items": [
+      {
+        "title": "What types of photos work best?",
+        "description": "Clear portraits and pet photos with good lighting produce the best cartoon conversions, but the AI can handle a wide range of images."
+      },
+      {
+        "title": "Can I customize the cartoon style?",
+        "description": "Yes, pick from several cartoon presets such as comic book, manga, or watercolor-inspired looks."
+      },
+      {
+        "title": "Is the cartoon maker free to try?",
+        "description": "You can generate a few free previews each day. Upgrade for faster processing and unlimited downloads."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Ready to Cartoonize Your Photos?",
+    "description": "Join thousands of creators turning their images into unique cartoon art in seconds.",
+    "buttons": [
+      {
+        "title": "Cartoonize a Photo Now",
+        "url": "/photo-to-cartoon#drawing-generator",
+        "target": "_self"
+      }
+    ]
+  }
+}

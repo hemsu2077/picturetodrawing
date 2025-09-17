@@ -16,14 +16,14 @@
           "title": "AI Drawing Tools",
           "children": [
             {
-              "title": "Picture to Drawing",
-              "url": "/",
-              "target": "_self",
-              "icon": "RiBrushLine"
-            },
-            {
               "title": "Photo to line drawing",
               "url": "/photo-to-line-drawing",
+              "target": "_self",
+              "icon": "RiColorFilterAiLine"
+            },
+            {
+              "title": "Photo to Cartoon ",
+              "url": "/photo-to-cartoon",
               "target": "_self",
               "icon": "RiColorFilterAiLine"
             }

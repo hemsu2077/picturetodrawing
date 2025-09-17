@@ -26,7 +26,7 @@ export interface LandingPage {
   footer?: Footer;
 }
 
-export interface PhotoToLineDrawingPage {
+export interface PhotoTransformationPage {
   meta?: {
     title?: string;
     description?: string;
