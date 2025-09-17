@@ -17,6 +17,32 @@
       }
     ]
   },
+  "introduce": {
+    "name": "introduce",
+    "title": "Professional Quality Picture to Drawing Results",
+    "label": "Introduce",
+    "description": "",
+    "image": {
+      "src": "https://files.picturetodrawing.com/sample/draw-introduce.mp4"
+    },
+    "items": [
+      {
+        "title": "Authentic Artistic Rendering",
+        "description": "Every photo to sketch conversion preserves natural textures, shadows, and details that make your drawing look hand-crafted by a professional artist.",
+        "icon": "RiPaintBrushLine"
+      },
+      {
+        "title": "High Resolution Output",
+        "description": "Download your picture to drawing conversions in high resolution, perfect for printing, framing, or sharing on social media platforms.",
+        "icon": "RiHdLine"
+      },
+      {
+        "title": "Privacy Protected",
+        "description": "Your photos are processed securely and automatically deleted after conversion. We never store or share your personal images.",
+        "icon": "RiShieldCheckLine"
+      }
+    ]
+  },
   "transformation_examples": {
     "name": "transformation_examples",
     "title": "See What the Cartoon Maker Can Do",

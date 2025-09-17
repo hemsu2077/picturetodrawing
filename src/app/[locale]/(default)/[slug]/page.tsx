@@ -4,6 +4,7 @@ export const revalidate = 3600;
 import { notFound } from "next/navigation";
 import CTA from "@/components/blocks/cta";
 import FAQ from "@/components/blocks/faq";
+import Feature1 from "@/components/blocks/feature1";
 import Feature from "@/components/blocks/feature";
 import Feature3 from "@/components/blocks/feature3";
 import Hero from "@/components/blocks/hero";
@@ -85,6 +86,7 @@ export default async function PhotoTransformationPage({
           popularStylesKey={typedSlug}
         />
       </div>
+      {page.introduce && <Feature1 section={page.introduce} />}
       {page.transformation_examples && (
         <TransformationExamples section={page.transformation_examples} />
       )}
