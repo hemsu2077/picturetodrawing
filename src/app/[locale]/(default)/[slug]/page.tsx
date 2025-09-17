@@ -40,7 +40,6 @@ export async function generateMetadata({
   }
 
   const page = await getPhotoTransformationPage(slug as PhotoTransformationSlug, locale);
-  const { metaDefaults } = getPhotoTransformationConfig(slug as PhotoTransformationSlug);
 
   const normalizedBaseUrl = process.env.NEXT_PUBLIC_WEB_URL
     ? process.env.NEXT_PUBLIC_WEB_URL.replace(/\/+$/, "")
@@ -52,8 +51,8 @@ export async function generateMetadata({
     : localizedPath;
 
   return {
-    title: page.meta?.title || metaDefaults.title,
-    description: page.meta?.description || metaDefaults.description,
+    title: page.meta?.title,
+    description: page.meta?.description,
     alternates: {
       canonical: canonicalUrl || undefined,
     },
@@ -74,11 +73,11 @@ export default async function PhotoTransformationPage({
 
   const typedSlug = slug as PhotoTransformationSlug;
   const page = await getPhotoTransformationPage(typedSlug, locale);
-  const { generator, heroBackgroundVariant } = getPhotoTransformationConfig(typedSlug);
+  const { generator} = getPhotoTransformationConfig(typedSlug);
 
   return (
     <>
-      {page.hero && <Hero hero={page.hero} backgroundVariant={heroBackgroundVariant} />}
+      {page.hero && <Hero hero={page.hero} />}
       <div id="drawing-generator">
         <DrawingGenerator
           defaultStyle={generator.defaultStyle}
