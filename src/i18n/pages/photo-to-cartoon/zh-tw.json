@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "title": "照片轉卡通 AI | 免費開始",
+    "description": "使用AI照片轉卡通工具，一鍵把人像、毛孩、合照變成高畫質卡通插畫。雲端快速渲染，免費試用，是社群頭像、送禮與商業素材的首選。"
+  },
+  "hero": {
+    "title": "AI照片轉卡通變身工具",
+    "highlight_text": "照片轉卡通",
+    "description": "只要上傳照片，AI立即生成專屬卡通角色。支援人像、寵物、情侶照，免費體驗就能秒出圖，照片轉卡通就是這麼省事。",
+    "show_happy_users": false,
+    "show_badge": false
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "為什麼選擇我們的AI照片轉卡通服務",
+    "label": "功能亮點",
+    "description": "先進的AI模型能辨識五官、光影與細節，讓照片轉卡通後依舊保留原本神韻，從社群自用到商業設計都能派上用場。",
+    "image": {
+      "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-introduce.webp?v=1",
+      "alt": "照片轉卡通功能亮點"
+    },
+    "items": [
+      {
+        "title": "智慧描繪，保留特色",
+        "description": "AI精準分析臉部比例、表情與背景構圖，照片轉卡通後依然還原你的神情，同時增添卡通魅力。",
+        "icon": "RiBrainLine"
+      },
+      {
+        "title": "多樣卡通風格自由換",
+        "description": "從迪士尼感、日系動漫到歐美漫畫、水彩插畫，照片轉卡通提供多種模板，輕鬆搭配你的創作需求。",
+        "icon": "RiPaletteLine"
+      },
+      {
+        "title": "雲端加速，秒級完成",
+        "description": "全程雲端運算，不需安裝軟體，幾秒鐘就能完成照片轉卡通並下載高清檔案，立即分享不等待。",
+        "icon": "RiFlashlightLine"
+      }
+    ]
+  },
+  "transformation_examples": {
+    "name": "transformation_examples",
+    "title": "真實的照片轉卡通靈感案例",
+    "description": "看看使用者如何把日常照片變成色彩飽滿的卡通角色。每個範例都展現照片轉卡通在人物、毛孩與專業形象上的無限可能。",
+    "items": [
+      {
+        "title": "人像照片轉卡通",
+        "description": "將自拍或寫真轉換成吸睛的卡通頭像，適合社群頭貼、情侶背景或數位收藏，照片轉卡通同時保留你的神情與氣質。",
+        "label": "人物",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase1.webp",
+          "alt": "人像照片轉卡通示例"
+        },
+        "buttons": [
+          {
+            "title": "立即生成卡通頭像",
+            "url": "/photo-to-cartoon#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "毛孩照片轉卡通",
+        "description": "讓毛小孩化身超萌卡通夥伴，打造客製貼紙、節慶卡片或紀念禮物，照片轉卡通完整保留牠的招牌表情。",
+        "label": "寵物",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase2.webp",
+          "alt": "毛孩照片轉卡通插畫"
+        },
+        "buttons": [
+          {
+            "title": "打造毛孩卡通形象",
+            "url": "/photo-to-cartoon#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "全家福照片轉卡通",
+        "description": "把珍藏的家庭合影轉為溫馨卡通海報，適合做成掛畫、相簿或節慶禮盒，照片轉卡通讓回憶更有故事感。",
+        "label": "家庭",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase3.webp",
+          "alt": "家庭照片轉卡通作品"
+        },
+        "buttons": [
+          {
+            "title": "立即轉換家庭合照",
+            "url": "/photo-to-cartoon#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "職場形象照片轉卡通",
+        "description": "替履歷、LinkedIn或企業官網製作具親和力的卡通頭像，照片轉卡通兼具專業與創意，讓你從眾人中跳出來。",
+        "label": "職場",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase4.webp",
+          "alt": "職場頭像照片轉卡通"
+        },
+        "buttons": [
+          {
+            "title": "打造專業卡通頭像",
+            "url": "/photo-to-cartoon#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "照片轉卡通操作指南",
+    "description": "依照以下步驟，幾秒鐘就能完成照片轉卡通並下載高清作品。",
+    "items": [
+      {
+        "title": "挑選並上傳照片",
+        "description": "建議使用光線均勻、五官清楚的人像或毛孩照片，讓AI更容易完成照片轉卡通。"
+      },
+      {
+        "title": "選擇喜歡的卡通風格",
+        "description": "從多種畫風中挑出最對味的樣式，也能快速切換比較不同的照片轉卡通效果。"
+      },
+      {
+        "title": "啟動照片轉卡通",
+        "description": "按下生成鍵，AI會分析臉部特徵、膚色與背景，迅速輸出自然又可愛的卡通造型。"
+      },
+      {
+        "title": "下載並分享卡通作品",
+        "description": "預覽確認後即可下載高畫質檔案，作為社群頭像、送禮或印刷素材，隨時分享照片轉卡通的成果。"
+      }
+    ]
+  },
+  "benefits": {
+    "name": "benefits",
+    "title": "照片轉卡通的熱門應用情境",
+    "description": "善用照片轉卡通的創意火花，為生活、社群與品牌注入新鮮感。",
+    "items": [
+      {
+        "title": "送禮更有溫度",
+        "description": "把家人或好友的照片轉卡通，製作生日、紀念日或節慶禮物，獨一無二又超有心。",
+        "icon": "RiGiftLine"
+      },
+      {
+        "title": "社群版面超吸睛",
+        "description": "用卡通頭像或插畫打造辨識度，照片轉卡通讓你的貼文在IG、Threads或社團更容易被記住。",
+        "icon": "RiInstagramLine"
+      },
+      {
+        "title": "品牌溝通更親切",
+        "description": "把團隊照片、活動花絮轉成卡通素材，用於官網、海報或簡報，照片轉卡通創造更友善的品牌形象。",
+        "icon": "RiBriefcaseLine"
+      },
+      {
+        "title": "創意專案無限延伸",
+        "description": "將照片轉卡通後應用在手帳、教學、短影片或IP周邊，為靈感開啟更多延伸玩法。",
+        "icon": "RiPaintBrushLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "關於照片轉卡通的常見問題",
+    "description": "掌握AI照片轉卡通的優勢、速度、安全性與授權規範。",
+    "items": [
+      {
+        "title": "AI照片轉卡通與一般濾鏡有何差別？",
+        "description": "一般濾鏡多半只是疊加效果，而AI照片轉卡通會重新描繪線條與上色，依照臉型、光影打造專屬卡通角色。"
+      },
+      {
+        "title": "哪些照片最適合做照片轉卡通？",
+        "description": "光線均勻、五官清楚的人像或毛孩照片效果最佳，小型團體照也沒問題。解析度愈高，照片轉卡通後的細節愈漂亮。"
+      },
+      {
+        "title": "可以切換不同的卡通風格嗎？",
+        "description": "當然可以！平台提供多種畫風，隨時預覽比較，找到最符合你用途的照片轉卡通樣式。"
+      },
+      {
+        "title": "照片轉卡通需要花多久？",
+        "description": "一般使用者約30到60秒就能完成，會員還可享有優先處理。系統持續優化速度同時維持最佳畫質。"
+      },
+      {
+        "title": "使用照片轉卡通服務是否安全？",
+        "description": "我們採用加密傳輸並在安全伺服器處理，照片僅用於生成卡通效果，完成後會自動刪除，全程守護你的隱私。"
+      },
+      {
+        "title": "生成的卡通圖片可以怎麼使用？",
+        "description": "透過照片轉卡通產出的作品都屬於你，可自由用於社群分享、商業宣傳、周邊印刷等場景，沒有額外限制。"
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "準備好把照片轉卡通了嗎？",
+    "description": "數萬創作者與設計師都信任這款AI照片轉卡通工具，把日常照片變成令人驚豔的卡通作品。立即體驗，把靈感化作精彩作品。",
+    "buttons": [
+      {
+        "title": "立即開始照片轉卡通",
+        "url": "/photo-to-cartoon#drawing-generator",
+        "target": "_self"
+      }
+    ]
+  }
+}

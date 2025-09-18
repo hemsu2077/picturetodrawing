@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "title": "Photo en dessin animé avec IA | Essai gratuit",
+    "description": "Transformez n’importe quelle photo en dessin animé en quelques secondes grâce à l’IA. Portraits, animaux ou photos de groupe : obtenez des illustrations nettes pour les réseaux sociaux, les cadeaux personnalisés ou votre marque."
+  },
+  "hero": {
+    "title": "Outil IA Photo en dessin animé",
+    "highlight_text": "Photo en dessin animé",
+    "description": "Importez votre image préférée et laissez l’IA la convertir instantanément en dessin animé. Idéal pour selfies, couples ou animaux de compagnie : testez gratuitement et surprenez votre entourage.",
+    "show_happy_users": false,
+    "show_badge": false
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "Pourquoi choisir notre convertisseur Photo en dessin animé",
+    "label": "Atouts",
+    "description": "Nos modèles propriétaires analysent expressions, lumières et textures afin de préserver la personnalité de la photo tout en lui apportant une touche illustrée professionnelle.",
+    "image": {
+      "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-introduce.webp?v=1",
+      "alt": "Fonctionnalités du convertisseur Photo en dessin animé"
+    },
+    "items": [
+      {
+        "title": "Une véritable illustration, pas un simple filtre",
+        "description": "L’IA redessine traits, ombres et couleurs pour maintenir votre identité visuelle tout en offrant un rendu cartoon cohérent.",
+        "icon": "RiBrainLine"
+      },
+      {
+        "title": "Styles variés pour chaque univers",
+        "description": "Disney, anime japonais, bande dessinée ou aquarelle : explorez plusieurs esthétiques avant de finaliser votre photo en dessin animé.",
+        "icon": "RiPaletteLine"
+      },
+      {
+        "title": "Résultat express et haute définition",
+        "description": "Notre infrastructure cloud délivre votre illustration en quelques secondes, sans installation logicielle et prête à être téléchargée en HD.",
+        "icon": "RiFlashlightLine"
+      }
+    ]
+  },
+  "transformation_examples": {
+    "name": "transformation_examples",
+    "title": "Inspiration réelle : Photo en dessin animé",
+    "description": "Découvrez comment la communauté transforme ses souvenirs en dessins animés colorés. Des portraits aux moments familiaux, les possibilités sont infinies.",
+    "items": [
+      {
+        "title": "Portrait transformé en avatar",
+        "description": "Convertissez selfies ou photos de couple en avatars cartoon percutants pour WhatsApp, Instagram ou comme cadeau unique. L’IA conserve vos expressions et ajoute un style illustré irrésistible.",
+        "label": "Portrait",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase1.webp",
+          "alt": "Portrait converti en dessin animé"
+        },
+        "buttons": [
+          {
+            "title": "Créer mon avatar cartoon",
+            "url": "/photo-to-cartoon#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "Animaux de compagnie en personnages",
+        "description": "Transformez votre chien ou votre chat en héros de bande dessinée pour stickers, calendriers ou souvenirs encadrés. Chaque détail est valorisé lors du passage en dessin animé.",
+        "label": "Animaux",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase2.webp",
+          "alt": "Animal converti en dessin animé"
+        },
+        "buttons": [
+          {
+            "title": "Caricaturer mon animal",
+            "url": "/photo-to-cartoon#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "Souvenir familial illustré",
+        "description": "Transformez une photo de famille en affiche chaleureuse à offrir pour un anniversaire, Noël ou un album souvenir. Le dessin animé reflète la complicité de chaque sourire.",
+        "label": "Famille",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase3.webp",
+          "alt": "Famille convertie en dessin animé"
+        },
+        "buttons": [
+          {
+            "title": "Convertir ma photo de famille",
+            "url": "/photo-to-cartoon#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "Avatar professionnel plein de caractère",
+        "description": "Créez une version cartoon de votre portrait corporate pour LinkedIn, présentations ou page équipe. Le rendu reste professionnel tout en apportant une touche conviviale.",
+        "label": "Pro",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase4.webp",
+          "alt": "Portrait professionnel en dessin animé"
+        },
+        "buttons": [
+          {
+            "title": "Générer mon avatar pro",
+            "url": "/photo-to-cartoon#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "Comment transformer une photo en dessin animé",
+    "description": "Suivez ces étapes simples et récupérez votre illustration en quelques minutes.",
+    "items": [
+      {
+        "title": "Choisissez et importez votre photo",
+        "description": "Sélectionnez une image bien éclairée avec des traits nets : portrait, animal ou groupe, tout fonctionne avec notre IA."
+      },
+      {
+        "title": "Testez différents styles",
+        "description": "Essayez plusieurs rendus cartoon et gardez celui qui correspond le mieux à votre projet avant le téléchargement."
+      },
+      {
+        "title": "Lancez la conversion IA",
+        "description": "Un clic suffit : l’IA réinterprète couleurs, contours et arrière-plan pour créer un dessin animé harmonieux."
+      },
+      {
+        "title": "Téléchargez et partagez",
+        "description": "Vérifiez le résultat, récupérez le fichier HD et diffusez-le sur les réseaux, en impression ou en cadeau personnalisé."
+      }
+    ]
+  },
+  "benefits": {
+    "name": "benefits",
+    "title": "Quand utiliser la transformation Photo en dessin animé",
+    "description": "Multipliez les usages personnels et professionnels grâce à votre nouvelle illustration.",
+    "items": [
+      {
+        "title": "Cadeaux mémorables",
+        "description": "Offrez une caricature personnalisée pour un anniversaire, un mariage ou un départ : une attention unique qui marque les esprits.",
+        "icon": "RiGiftLine"
+      },
+      {
+        "title": "Profils sociaux différenciants",
+        "description": "Utilisez votre dessin animé comme photo de profil ou contenu sur Instagram, TikTok ou LinkedIn pour attirer l’œil immédiatement.",
+        "icon": "RiInstagramLine"
+      },
+      {
+        "title": "Branding chaleureux",
+        "description": "Convertissez photos d’équipe ou visuels produits en dessins animés pour votre site, vos newsletters ou vos campagnes et humanisez votre communication.",
+        "icon": "RiBriefcaseLine"
+      },
+      {
+        "title": "Projets créatifs sans limite",
+        "description": "Intégrez vos dessins animés dans carnets, ateliers, webcomics ou merchandising et décuplez vos idées.",
+        "icon": "RiPaintBrushLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Questions fréquentes sur la Photo en dessin animé",
+    "description": "Tout savoir sur notre outil IA : qualité, délais, sécurité et droits d’utilisation.",
+    "items": [
+      {
+        "title": "En quoi l’IA diffère-t-elle d’un filtre classique ?",
+        "description": "Un filtre applique un simple effet. Notre IA redessine la scène, ajoute volumes et nuances pour livrer un véritable dessin animé personnalisé."
+      },
+      {
+        "title": "Quelles photos offrent le meilleur rendu ?",
+        "description": "Les clichés bien éclairés avec le visage dégagé donnent des résultats optimaux. Les animaux et petits groupes fonctionnent aussi, surtout en haute résolution."
+      },
+      {
+        "title": "Puis-je tester plusieurs styles ?",
+        "description": "Oui, changez de style à volonté avant la validation et choisissez celui qui correspond le mieux à votre cible ou à votre plateforme."
+      },
+      {
+        "title": "Combien de temps dure la conversion ?",
+        "description": "En moyenne, le dessin animé est prêt en 30 à 60 secondes. Les comptes premium bénéficient d’un traitement prioritaire encore plus rapide."
+      },
+      {
+        "title": "Mes photos sont-elles en sécurité ?",
+        "description": "Nous chiffrons les transferts et traitons les images sur des serveurs sécurisés. Elles sont utilisées uniquement pour la conversion puis supprimées automatiquement."
+      },
+      {
+        "title": "Quels droits ai-je sur le dessin animé obtenu ?",
+        "description": "L’illustration vous appartient entièrement : utilisez-la librement sur les réseaux, en impression, pour des campagnes ou des projets commerciaux."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Prêt à transformer votre photo en dessin animé ?",
+    "description": "Des milliers de créateurs et de marques utilisent déjà notre IA pour donner vie à leurs images. Lancez-vous aujourd’hui et créez votre style signature.",
+    "buttons": [
+      {
+        "title": "Convertir ma photo en dessin animé",
+        "url": "/photo-to-cartoon#drawing-generator",
+        "target": "_self"
+      }
+    ]
+  }
+}

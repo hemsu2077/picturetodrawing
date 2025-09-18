@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "title": "Foto in Cartoon umwandeln mit KI | Gratis testen",
+    "description": "Wandle jedes Foto mit KI in eine Cartoon-Illustration um. Ideal für Portraits, Haustiere und Gruppenbilder – sekundenschnell, hochauflösend und perfekt für Social Media, Geschenke oder Branding."
+  },
+  "hero": {
+    "title": "KI-Tool zum Foto in Cartoon umwandeln",
+    "highlight_text": "Foto in Cartoon umwandeln",
+    "description": "Lade dein Lieblingsfoto hoch und erhalte in Sekunden eine individuelle Cartoon-Version. Funktioniert für Selfies, Pärchenbilder und Haustiere – kostenlos ausprobieren und sofort begeistern.",
+    "show_happy_users": false,
+    "show_badge": false
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "Warum unser KI-Tool zum Foto in Cartoon umwandeln?",
+    "label": "Highlights",
+    "description": "Unsere eigens trainierten Modelle erfassen Mimik, Licht und Farbnuancen, damit deine Cartoon-Version authentisch bleibt und trotzdem eine frische Illustrations-Ästhetik erhält – perfekt für private und berufliche Zwecke.",
+    "image": {
+      "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-introduce.webp?v=1",
+      "alt": "Vorstellung des Foto in Cartoon umwandeln Tools"
+    },
+    "items": [
+      {
+        "title": "Cleveres Zeichnen statt Filter",
+        "description": "Die KI analysiert Gesichtszüge, Proportionen und Hintergrund und zeichnet Linien sowie Schattierungen neu. So bleibt dein Wiedererkennungswert erhalten, während das Foto in Cartoon umgewandelt wird.",
+        "icon": "RiBrainLine"
+      },
+      {
+        "title": "Cartoon-Stile für jeden Geschmack",
+        "description": "Disney-inspiriert, Anime, Graphic-Novel oder Aquarell: Wähle den Stil, der zu deiner Marke oder Persönlichkeit passt, und sieh sofort das Foto in Cartoon umgewandelt.",
+        "icon": "RiPaletteLine"
+      },
+      {
+        "title": "Rendern in Sekundenschnelle",
+        "description": "Dank Cloud-Infrastruktur erhältst du dein Ergebnis meist in unter einer Minute – ganz ohne Softwareinstallation und direkt downloadbereit in hoher Auflösung.",
+        "icon": "RiFlashlightLine"
+      }
+    ]
+  },
+  "transformation_examples": {
+    "name": "transformation_examples",
+    "title": "Reale Beispiele: Foto in Cartoon umwandeln",
+    "description": "So verwandeln Nutzer:innen ihre Fotos in lebendige Cartoons. Lass dich inspirieren, wie vielseitig sich die Umwandlung für Alltag, Erinnerungen und Business einsetzen lässt.",
+    "items": [
+      {
+        "title": "Portrait zum Cartoon-Avatar",
+        "description": "Mach aus Selfies oder Paarfotos aufmerksamkeitsstarke Cartoon-Avatare für WhatsApp, Instagram oder als persönliches Geschenk. Die KI bewahrt deine Ausdrücke und verleiht ihnen charmante Cartoon-Details.",
+        "label": "Portrait",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase1.webp",
+          "alt": "Portrait Foto in Cartoon umgewandelt"
+        },
+        "buttons": [
+          {
+            "title": "Mein Portrait umwandeln",
+            "url": "/photo-to-cartoon#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "Haustierfoto als Cartoon-Geschichte",
+        "description": "Verwandle Hund oder Katze in eine gezeichnete Figur für Sticker, Kalender oder Erinnerungsalben. Die Cartoon-Umwandlung hebt Fellstruktur und typische Posen liebenswert hervor.",
+        "label": "Haustier",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase2.webp",
+          "alt": "Haustier Foto in Cartoon umgewandelt"
+        },
+        "buttons": [
+          {
+            "title": "Haustier-Cartoon erstellen",
+            "url": "/photo-to-cartoon#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "Familienmoment als Cartoon-Poster",
+        "description": "Lass eure Familienfotos in liebevoll illustrierte Poster verwandeln – ideal für Wohnzimmereinrichtung, Fotobücher oder Jubiläumspräsente, die lange in Erinnerung bleiben.",
+        "label": "Familie",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase3.webp",
+          "alt": "Familienfoto in Cartoon umgewandelt"
+        },
+        "buttons": [
+          {
+            "title": "Familienfoto umwandeln",
+            "url": "/photo-to-cartoon#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "Business-Avatar mit Charakter",
+        "description": "Erstelle freundliche Cartoon-Versionen deiner Business-Portraits für LinkedIn, Pitch-Decks oder Teamseiten. So bleibt dein Auftritt professionell und gleichzeitig sympathisch.",
+        "label": "Business",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase4.webp",
+          "alt": "Business Portrait Foto in Cartoon umgewandelt"
+        },
+        "buttons": [
+          {
+            "title": "Business-Avatar erstellen",
+            "url": "/photo-to-cartoon#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "So wandelst du ein Foto in Cartoon um",
+    "description": "Folge diesen Schritten und sichere dir in wenigen Momenten deinen Cartoon-Look.",
+    "items": [
+      {
+        "title": "Foto auswählen und hochladen",
+        "description": "Wähle ein gut ausgeleuchtetes Bild mit klar erkennbaren Gesichtszügen – egal ob Selfie, Haustier oder Gruppenfoto."
+      },
+      {
+        "title": "Lieblingsstil festlegen",
+        "description": "Teste verschiedene Cartoon-Stile und finde den Look, der zu deinem Projekt passt. Du kannst jederzeit zwischen den Varianten wechseln."
+      },
+      {
+        "title": "KI-Rendering starten",
+        "description": "Mit einem Klick startet die Umwandlung. Die KI analysiert Details wie Hauttöne, Haare und Hintergrund und erstellt eine stimmige Cartoon-Version."
+      },
+      {
+        "title": "Cartoon speichern und teilen",
+        "description": "Prüfe das Ergebnis, lade die hochauflösende Datei herunter und verwende sie für Social Media, Prints oder Überraschungsgeschenke."
+      }
+    ]
+  },
+  "benefits": {
+    "name": "benefits",
+    "title": "Wann sich Foto in Cartoon umwandeln besonders lohnt",
+    "description": "In diesen Situationen sorgt dein Cartoon-Bild für Begeisterung und Wiedererkennung.",
+    "items": [
+      {
+        "title": "Persönliche Geschenkideen",
+        "description": "Verwandle Fotos von Familie und Freund:innen in Cartoons für Geburtstage, Jubiläen oder Feiertage – individuell, emotional und garantiert einzigartig.",
+        "icon": "RiGiftLine"
+      },
+      {
+        "title": "Social-Media-Auftritte",
+        "description": "Mit Cartoon-Avataren und Illustrationen stichst du in Feeds hervor und stärkst deine persönliche Marke auf Instagram, TikTok oder LinkedIn.",
+        "icon": "RiInstagramLine"
+      },
+      {
+        "title": "Markenauftritt mit Herz",
+        "description": "Wandle Teamfotos oder Produktshots in Cartoons um und nutze sie für Website, Präsentationen oder Kampagnen – nahbar, kreativ und markenkonform.",
+        "icon": "RiBriefcaseLine"
+      },
+      {
+        "title": "Kreative Projekte",
+        "description": "Nutze die Cartoon-Version für Scrapbooks, Unterrichtsmaterialien, Webcomics oder Merchandise. Die Möglichkeiten wachsen mit jedem neuen Motiv.",
+        "icon": "RiPaintBrushLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Häufige Fragen zum Foto in Cartoon umwandeln",
+    "description": "Alles, was du über unser KI-Tool wissen musst – von der Technik bis zu Sicherheit und Nutzungsrechten.",
+    "items": [
+      {
+        "title": "Was unterscheidet euer KI-Tool von herkömmlichen Filtern?",
+        "description": "Filter legen meist nur Effekte über das Originalfoto. Unsere KI rekonstruiert Linien, Licht und Farben und erzeugt so eine echte Cartoon-Zeichnung mit individuellem Stil."
+      },
+      {
+        "title": "Welche Fotos liefern die besten Ergebnisse?",
+        "description": "Fotos mit guter Beleuchtung und klar sichtbaren Gesichtern funktionieren am besten. Auch Haustiere oder kleine Gruppen lassen sich hervorragend als Cartoon darstellen, besonders in hoher Auflösung."
+      },
+      {
+        "title": "Kann ich verschiedene Cartoon-Stile ausprobieren?",
+        "description": "Ja, du kannst jederzeit zwischen mehreren Illustrationsstilen wechseln und vor dem Download vergleichen, welche Version dir am besten gefällt."
+      },
+      {
+        "title": "Wie lange dauert das Foto in Cartoon umwandeln?",
+        "description": "In der Regel ist dein Cartoon innerhalb von 30 bis 60 Sekunden fertig. Premium-Nutzer:innen profitieren von priorisierten Renderzeiten für besonders schnelle Ergebnisse."
+      },
+      {
+        "title": "Sind meine Bilder beim Upload sicher?",
+        "description": "Wir setzen auf verschlüsselte Übertragung und verarbeiten Fotos auf sicheren Servern. Die Bilder werden ausschließlich zur Cartoon-Umwandlung genutzt und anschließend automatisch gelöscht."
+      },
+      {
+        "title": "Welche Rechte habe ich an meinem Cartoon-Bild?",
+        "description": "Alle erstellten Cartoon-Illustrationen gehören dir. Du darfst sie frei für Social Media, Printprodukte, Marketing oder kommerzielle Projekte einsetzen."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "Bereit, dein Foto in Cartoon umzuwandeln?",
+    "description": "Tausende Kreative und Unternehmen nutzen bereits unsere KI, um Erinnerungen und Markenauftritte in lebendige Cartoons zu verwandeln. Starte jetzt und kreiere deinen eigenen Signature-Look.",
+    "buttons": [
+      {
+        "title": "Jetzt Foto in Cartoon umwandeln",
+        "url": "/photo-to-cartoon#drawing-generator",
+        "target": "_self"
+      }
+    ]
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "title": "Foto a caricatura con IA | Prueba gratis",
+    "description": "Convierte cualquier foto a caricatura con inteligencia artificial. Obtén ilustraciones nítidas para retratos, mascotas y grupos en segundos, ideales para redes sociales, regalos personalizados y branding."
+  },
+  "hero": {
+    "title": "Herramienta IA de Foto a caricatura",
+    "highlight_text": "Foto a caricatura",
+    "description": "Sube tu foto favorita y deja que la IA la transforme en una caricatura única en cuestión de segundos. Funciona con selfies, parejas y mascotas; pruébalo gratis y sorprende a tu audiencia al instante.",
+    "show_happy_users": false,
+    "show_badge": false
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "Por qué elegir nuestro conversor de Foto a caricatura",
+    "label": "Funciones clave",
+    "description": "Nuestro modelo propio analiza gestos, iluminación y texturas para conservar la esencia de la foto original y darle un toque ilustrado perfecto para uso personal o profesional.",
+    "image": {
+      "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-introduce.webp?v=1",
+      "alt": "Funciones del conversor Foto a caricatura"
+    },
+    "items": [
+      {
+        "title": "Caricaturas inteligentes, no filtros",
+        "description": "La IA redibuja rasgos, líneas y sombras con precisión para que la versión en caricatura mantenga tu identidad y se vea auténticamente artística.",
+        "icon": "RiBrainLine"
+      },
+      {
+        "title": "Estilos para cada ocasión",
+        "description": "Disney, anime, cómic o acuarela: prueba varias estéticas y encuentra la que mejor represente tu historia al convertir la foto a caricatura.",
+        "icon": "RiPaletteLine"
+      },
+      {
+        "title": "Resultados en segundos",
+        "description": "Gracias al procesamiento en la nube, obtienes archivos en alta resolución sin descargar software. Sube, convierte la foto a caricatura y comparte al momento.",
+        "icon": "RiFlashlightLine"
+      }
+    ]
+  },
+  "transformation_examples": {
+    "name": "transformation_examples",
+    "title": "Inspiración real: Foto a caricatura",
+    "description": "Descubre cómo otras personas transforman recuerdos cotidianos en caricaturas llenas de color. Verás que la conversión es ideal para redes, regalos o proyectos creativos.",
+    "items": [
+      {
+        "title": "Retrato convertido en avatar",
+        "description": "Convierte selfies o fotos de pareja en caricaturas que destacan en WhatsApp, Instagram o como regalo sorpresa. La IA preserva expresiones y suma detalles ilustrados irresistibles.",
+        "label": "Retrato",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase1.webp",
+          "alt": "Retrato convertido de foto a caricatura"
+        },
+        "buttons": [
+          {
+            "title": "Crear mi avatar caricatura",
+            "url": "/photo-to-cartoon#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "Mascotas con estilo caricaturesco",
+        "description": "Transforma la foto de tu peludo en un personaje entrañable para stickers, calendarios o cuadros decorativos. Cada rasgo queda resaltado al pasar la foto a caricatura.",
+        "label": "Mascotas",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase2.webp",
+          "alt": "Mascota convertida de foto a caricatura"
+        },
+        "buttons": [
+          {
+            "title": "Diseñar caricatura de mi mascota",
+            "url": "/photo-to-cartoon#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "Caricatura familiar para recordar",
+        "description": "Convierte tu foto familiar favorita en un póster ilustrado ideal para enmarcar, regalar en aniversarios o incluir en álbumes. El resultado conserva la complicidad de cada abrazo.",
+        "label": "Familia",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase3.webp",
+          "alt": "Familia convertida de foto a caricatura"
+        },
+        "buttons": [
+          {
+            "title": "Transformar mi foto familiar",
+            "url": "/photo-to-cartoon#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "Avatar profesional con personalidad",
+        "description": "Genera una versión caricaturesca de tu retrato corporativo para LinkedIn, presentaciones o la web de tu empresa. Un toque creativo que te mantiene profesional y cercano a la vez.",
+        "label": "Profesional",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase4.webp",
+          "alt": "Retrato profesional de foto a caricatura"
+        },
+        "buttons": [
+          {
+            "title": "Crear mi avatar profesional",
+            "url": "/photo-to-cartoon#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "Cómo pasar una foto a caricatura paso a paso",
+    "description": "Sigue estas indicaciones para obtener tu caricatura en minutos y sin complicaciones.",
+    "items": [
+      {
+        "title": "Selecciona y carga tu foto",
+        "description": "Elige una imagen con buena luz y rasgos definidos. Puede ser un retrato, una mascota o una foto grupal; la IA hará el resto."
+      },
+      {
+        "title": "Explora estilos de caricatura",
+        "description": "Prueba los diferentes estilos disponibles y quédate con el que mejor refleje tu idea. Puedes cambiar de look antes de descargar."
+      },
+      {
+        "title": "Genera la caricatura con IA",
+        "description": "Pulsa en generar y nuestra IA reinterpretará colores, trazos y fondos para entregar una versión ilustrada equilibrada y expresiva."
+      },
+      {
+        "title": "Descarga y comparte",
+        "description": "Revisa el resultado, descarga el archivo en alta resolución y úsalo en redes, impresiones o regalos personalizados al instante."
+      }
+    ]
+  },
+  "benefits": {
+    "name": "benefits",
+    "title": "Momentos perfectos para convertir una foto a caricatura",
+    "description": "Aprovecha tu nueva caricatura para destacar en distintos ámbitos personales y profesionales.",
+    "items": [
+      {
+        "title": "Regalos con valor sentimental",
+        "description": "Sorprende en cumpleaños, aniversarios o fiestas con una caricatura personalizada. Es un detalle único que se guarda para siempre.",
+        "icon": "RiGiftLine"
+      },
+      {
+        "title": "Perfiles sociales diferenciales",
+        "description": "Usa la caricatura como foto de perfil o contenido en Instagram, TikTok o LinkedIn; captarás más miradas desde el primer scroll.",
+        "icon": "RiInstagramLine"
+      },
+      {
+        "title": "Branding cercano y creativo",
+        "description": "Transforma fotos de equipo o de productos en caricaturas para tu web, campañas o presentaciones y conecta con tu audiencia con un tono más humano.",
+        "icon": "RiBriefcaseLine"
+      },
+      {
+        "title": "Proyectos creativos sin límites",
+        "description": "Integra caricaturas en cuadernos, clases, cómics digitales o merchandising. Convertir foto a caricatura abre un universo de ideas.",
+        "icon": "RiPaintBrushLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Preguntas frecuentes sobre Foto a caricatura",
+    "description": "Resolvemos las dudas más comunes sobre nuestra herramienta de IA, tiempos de entrega, seguridad y derechos de uso.",
+    "items": [
+      {
+        "title": "¿En qué se diferencia de un filtro tradicional?",
+        "description": "Los filtros solo aplican efectos. Aquí la IA analiza la foto y vuelve a dibujar líneas, sombras y colores para crear una caricatura genuina y personalizada."
+      },
+      {
+        "title": "¿Qué fotos funcionan mejor para la conversión?",
+        "description": "Las imágenes bien iluminadas y con el rostro claro ofrecen resultados óptimos. También puedes convertir fotos de mascotas o grupos; mientras más resolución, más detalle."
+      },
+      {
+        "title": "¿Puedo probar distintos estilos de caricatura?",
+        "description": "Claro. Explora varias estéticas antes de descargar y elige la versión que encaje mejor con tu proyecto o plataforma."
+      },
+      {
+        "title": "¿Cuánto tarda en convertir la foto a caricatura?",
+        "description": "Generalmente la IA entrega la ilustración en 30 a 60 segundos. Las cuentas premium tienen prioridad de procesamiento para resultados aún más rápidos."
+      },
+      {
+        "title": "¿Mis fotos están seguras?",
+        "description": "Trabajamos con servidores seguros y conexiones cifradas. Tus fotos se usan solo para generar la caricatura y se eliminan automáticamente al finalizar."
+      },
+      {
+        "title": "¿Qué derechos tengo sobre la caricatura?",
+        "description": "La caricatura es completamente tuya. Puedes emplearla en redes, impresiones, campañas comerciales o cualquier proyecto sin restricciones adicionales."
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "¿Listo para convertir tu foto a caricatura?",
+    "description": "Miles de creadores y marcas ya usan nuestra IA para transformar recuerdos en ilustraciones memorables. Empieza hoy y dale un estilo inconfundible a tus imágenes.",
+    "buttons": [
+      {
+        "title": "Convertir foto a caricatura ahora",
+        "url": "/photo-to-cartoon#drawing-generator",
+        "target": "_self"
+      }
+    ]
+  }
+}

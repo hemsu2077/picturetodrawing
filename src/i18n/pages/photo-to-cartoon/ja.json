@@ -1,0 +1,209 @@
+{
+  "meta": {
+    "title": "写真をカートゥーンにするAI | 無料体験できるオンライン変換",
+    "description": "AIで写真をカートゥーンに変換し、ポートレートやペット、集合写真を数秒で高精細なイラストに。SNSアイコン、ギフト、ブランド素材にも最適。今すぐ無料で試せます。"
+  },
+  "hero": {
+    "title": "写真をカートゥーンにするAI変換ツール",
+    "highlight_text": "写真をカートゥーンに",
+    "description": "お気に入りの写真をアップロードするだけで、AIが瞬時にカートゥーン化。人物、ペット、カップル写真まで幅広く対応し、無料で仕上がりをチェックできます。",
+    "show_happy_users": false,
+    "show_badge": false
+  },
+  "introduce": {
+    "name": "introduce",
+    "title": "写真をカートゥーンにするならこのAIを選ぶ理由",
+    "label": "主な特徴",
+    "description": "独自開発のAIが表情や光のニュアンスまで解析し、写真の魅力を残しながらプロ品質のカートゥーンに仕上げます。個人利用はもちろん、ビジネスにもぴったりです。",
+    "image": {
+      "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-introduce.webp?v=1",
+      "alt": "写真をカートゥーンにするAIの特徴"
+    },
+    "items": [
+      {
+        "title": "AIが表情と光を再描画",
+        "description": "顔立ちやライティング、背景バランスまで細かく分析。写真をカートゥーンに変えても本人らしさがしっかり残ります。",
+        "icon": "RiBrainLine"
+      },
+      {
+        "title": "豊富なカートゥーンスタイル",
+        "description": "ディズニー風、アニメ調、アメコミ風、水彩タッチなど、多彩なスタイルをワンクリックで比較できます。",
+        "icon": "RiPaletteLine"
+      },
+      {
+        "title": "クラウド処理で高速出力",
+        "description": "ソフト不要でブラウザから完結。写真をカートゥーンにした高解像度データを数秒でダウンロード可能です。",
+        "icon": "RiFlashlightLine"
+      }
+    ]
+  },
+  "transformation_examples": {
+    "name": "transformation_examples",
+    "title": "写真をカートゥーンにした実例ギャラリー",
+    "description": "日常のスナップがどのようにカートゥーン化されるかをご紹介。SNSアイコンからギフトまで、使い道のヒントが見つかります。",
+    "items": [
+      {
+        "title": "ポートレートを魅せるアバターに",
+        "description": "自撮りやカップルフォトをカラフルなカートゥーンに。InstagramやLINEのアイコン、プレゼントにも大活躍です。",
+        "label": "ポートレート",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase1.webp",
+          "alt": "ポートレートのカートゥーン化"
+        },
+        "buttons": [
+          {
+            "title": "ポートレートをカートゥーン化",
+            "url": "/photo-to-cartoon#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "ペット写真をキャラクターに",
+        "description": "大切な愛犬・愛猫がマンガの主人公に早変わり。ステッカーやカレンダー、記念グッズ作りにぴったりです。",
+        "label": "ペット",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase2.webp",
+          "alt": "ペット写真のカートゥーン化"
+        },
+        "buttons": [
+          {
+            "title": "ペットをカートゥーンに",
+            "url": "/photo-to-cartoon#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "家族の思い出をイラストポスターに",
+        "description": "家族写真や集合写真を温かみのあるカートゥーンにして、フォトブックや壁掛けポスターで残しましょう。",
+        "label": "ファミリー",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase3.webp",
+          "alt": "家族写真のカートゥーン化"
+        },
+        "buttons": [
+          {
+            "title": "家族写真を変換",
+            "url": "/photo-to-cartoon#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      },
+      {
+        "title": "ビジネスでも映えるアバター",
+        "description": "LinkedInや会社プロフィール向けに、親しみやすく印象に残るカートゥーンアバターを作成。プロの雰囲気はそのままです。",
+        "label": "ビジネス",
+        "image": {
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase4.webp",
+          "alt": "ビジネス向けカートゥーンアバター"
+        },
+        "buttons": [
+          {
+            "title": "ビジネス用に作成",
+            "url": "/photo-to-cartoon#drawing-generator",
+            "target": "_self",
+            "variant": "default"
+          }
+        ]
+      }
+    ]
+  },
+  "usage": {
+    "name": "usage",
+    "title": "写真をカートゥーンにする手順",
+    "description": "4ステップでプロ仕上げのカートゥーンイラストを作成できます。",
+    "items": [
+      {
+        "title": "写真を選んでアップロード",
+        "description": "明るくピントの合った写真を選ぶと、より鮮明なカートゥーンになります。人物・ペット・集合写真すべてOK。"
+      },
+      {
+        "title": "好みのスタイルを選択",
+        "description": "複数のカートゥーンスタイルを切り替え比較し、理想のテイストを見つけましょう。"
+      },
+      {
+        "title": "AI変換をスタート",
+        "description": "ボタンを押すだけでAIが自動解析。色味や線画を調整し、写真をカートゥーンに仕上げます。"
+      },
+      {
+        "title": "仕上がりを保存・共有",
+        "description": "完成したイラストを高解像度でダウンロードし、SNSのアイコンや印刷物、ギフトに活用できます。"
+      }
+    ]
+  },
+  "benefits": {
+    "name": "benefits",
+    "title": "写真をカートゥーンにする活用シーン",
+    "description": "個人の思い出からビジネス用途まで、さまざまなシーンで価値を発揮します。",
+    "items": [
+      {
+        "title": "心を動かすオリジナルギフト",
+        "description": "誕生日や記念日に、写真をカートゥーンにしたイラストをプレゼント。忘れられない一品になります。",
+        "icon": "RiGiftLine"
+      },
+      {
+        "title": "SNSで差がつくプロフィール",
+        "description": "アイコンや投稿にカートゥーンを使えば、InstagramやX、TikTokでひと目で印象に残ります。",
+        "icon": "RiInstagramLine"
+      },
+      {
+        "title": "ブランドコミュニケーション強化",
+        "description": "チーム写真やサービス紹介をカートゥーン化し、Webサイトや資料で親しみやすさと独自性を演出。",
+        "icon": "RiBriefcaseLine"
+      },
+      {
+        "title": "クリエイティブな制作物",
+        "description": "学習教材、同人誌、ワークショップ資料、グッズ制作など、写真をカートゥーンにすることでアイデアが広がります。",
+        "icon": "RiPaintBrushLine"
+      }
+    ]
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "写真をカートゥーンに関するよくある質問",
+    "description": "AI変換の仕組みや安全性、活用範囲についての疑問にお答えします。",
+    "items": [
+      {
+        "title": "一般的なフィルターと何が違いますか？",
+        "description": "従来のフィルターは写真に効果を重ねるだけですが、当社のAIは輪郭や陰影を描き直し、写真をカートゥーンにする本格的なイラストを生成します。"
+      },
+      {
+        "title": "どんな写真が変換に向いていますか？",
+        "description": "明るさが均一で顔立ちがはっきりした写真がベスト。ペットや複数人の写真も、高解像度ならディテールまで再現できます。"
+      },
+      {
+        "title": "スタイルは自由に切り替えられますか？",
+        "description": "はい、複数のカートゥーンスタイルを生成でき、ダウンロード前に違いを確認しながら最適なものを選べます。"
+      },
+      {
+        "title": "変換にはどのくらい時間がかかりますか？",
+        "description": "通常は30〜60秒ほどで写真をカートゥーンに変換できます。プレミアムプランでは優先処理でさらに高速です。"
+      },
+      {
+        "title": "アップロードした写真の安全性は？",
+        "description": "通信を暗号化し、安全なサーバーで処理しています。写真はカートゥーン化後に自動削除され、再利用されることはありません。"
+      },
+      {
+        "title": "完成したイラストの権利はどうなりますか？",
+        "description": "生成されたカートゥーンイラストの利用権はすべてユーザーに帰属します。SNSや印刷物、商用プロジェクトにも自由にお使いいただけます。"
+      }
+    ]
+  },
+  "cta": {
+    "name": "cta",
+    "title": "今すぐ写真をカートゥーンに変換しよう",
+    "description": "世界中のクリエイターやブランドが、このAIで写真をカートゥーンにして個性を演出しています。さっそく試して、あなたのイメージを新しく描き出しましょう。",
+    "buttons": [
+      {
+        "title": "写真をカートゥーンに変換する",
+        "url": "/photo-to-cartoon#drawing-generator",
+        "target": "_self"
+      }
+    ]
+  }
+}
