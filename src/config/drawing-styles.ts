@@ -16,7 +16,7 @@ const DEFAULT_POPULAR_STYLES = [
 export const POPULAR_STYLES_CONFIG = {
   default: DEFAULT_POPULAR_STYLES,
   'photo-to-line-drawing': DEFAULT_POPULAR_STYLES,
-  'photo-to-cartoon': ['ghibli-style', 'pixar-3d', 'simpsons', 'pixel-art', 'clay']
+  'photo-to-cartoon': ['ghibli-style', 'pure-cartoon', 'simpsons', 'pixel-art', 'clay']
 } as const;
 
 export type PopularStylesConfigKey = keyof typeof POPULAR_STYLES_CONFIG;
