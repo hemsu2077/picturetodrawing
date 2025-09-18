@@ -16,7 +16,7 @@ const DEFAULT_POPULAR_STYLES = [
 export const POPULAR_STYLES_CONFIG = {
   default: DEFAULT_POPULAR_STYLES,
   'photo-to-line-drawing': DEFAULT_POPULAR_STYLES,
-  'photo-to-cartoon': ['studio-ghibli', 'pixar-3d', 'simpsons', 'pixel-art', 'clay']
+  'photo-to-cartoon': ['ghibli-style', 'pixar-3d', 'simpsons', 'pixel-art', 'clay']
 } as const;
 
 export type PopularStylesConfigKey = keyof typeof POPULAR_STYLES_CONFIG;
@@ -30,7 +30,7 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
   {
     id: 'line-drawing',
     name: t('drawing_generator.styles.line_drawing'),
-    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/line-drawing.webp'
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/line-drawing.webp?v=2'
   },
   {
     id: 'charcoal-drawing',
@@ -58,9 +58,9 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/pure-cartoon.webp'
   },
   {
-    id: 'studio-ghibli',
+    id: 'ghibli-style',
     name: t('drawing_generator.styles.studio_ghibli'),
-    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/studio-ghibli.webp'
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/ghibli-style.webp'
   },
   {
     id: 'pixar-3d',
@@ -78,9 +78,14 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/simpsons.webp'
   },
   {
-    id: 'clay',
-    name: t('drawing_generator.styles.clay'),
-    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/clay.webp'
+    id: 'superhero-comic',
+    name: t('drawing_generator.styles.superhero_comic'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/superhero-comic.webp'
+  },
+  {
+    id: 'manga',
+    name: t('drawing_generator.styles.manga'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/manga.webp'
   },
   {
     id: 'south-park',
@@ -93,15 +98,11 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/pixel-art.webp'
   },
   {
-    id: 'superhero-comic',
-    name: t('drawing_generator.styles.superhero_comic'),
-    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/superhero-comic.webp'
+    id: 'clay',
+    name: t('drawing_generator.styles.clay'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/clay.webp'
   },
-  {
-    id: 'manga',
-    name: t('drawing_generator.styles.manga'),
-    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/manga.webp'
-  },
+
 ];
 
 export const getPopularStyles = (t: any, configKey: PopularStylesConfigKey = 'default'): StyleOption[] => {
