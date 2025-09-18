@@ -47,7 +47,7 @@
         "description": "Transform selfies and family photos into expressive cartoon portraits perfect for social media profiles, personalized gifts, or digital art collections. The photo to cartoon process preserves facial expressions while adding irresistible cartoon charm.",
         "label": "Portrait",
         "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-portrait.webp",
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase1.webp",
           "alt": "Photo to cartoon portrait"
         },
         "buttons": [
@@ -64,7 +64,7 @@
         "description": "Turn beloved pet photos into adorable cartoon companions through seamless photo to cartoon conversion. Perfect for creating custom stickers, greeting cards, or memorable keepsakes that capture your furry friend's personality.",
         "label": "Pet",
         "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-pet.webp",
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase2.webp",
           "alt": "Pet photo to cartoon"
         },
         "buttons": [
@@ -81,7 +81,7 @@
         "description": "Convert precious family moments into timeless cartoon artwork that captures the joy and connection of your loved ones. Perfect for creating custom wall art, photo albums, or anniversary gifts that celebrate your family story.",
         "label": "Family",
         "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-family.webp",
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase3.webp",
           "alt": "Family photo to cartoon"
         },
         "buttons": [
@@ -98,7 +98,7 @@
         "description": "Create unique cartoon versions of professional headshots for LinkedIn profiles, business cards, or company websites. Advanced photo to cartoon AI maintains professionalism while adding approachable cartoon appeal that helps you stand out.",
         "label": "Professional",
         "image": {
-          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-professional.webp",
+          "src": "https://files.picturetodrawing.com/photo-to-cartoon/photo-to-cartoon-usecase4.webp",
           "alt": "Professional headshot converted to cartoon avatar"
         },
         "buttons": [
