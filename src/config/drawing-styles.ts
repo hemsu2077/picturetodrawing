@@ -105,6 +105,17 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
 
 ];
 
+export const STYLES_RECOMMEND_CLASSIC = [
+  'pure-cartoon',
+  'ghibli-style',
+  'pixar-3d',
+  'disney-3d',
+  'simpsons',
+  'south-park',
+  'pixel-art',
+  'clay'
+] as const;
+
 export const getPopularStyles = (t: any, configKey: PopularStylesConfigKey = 'default'): StyleOption[] => {
   const allStyles = getAllDrawingStyles(t);
   const popularIds = POPULAR_STYLES_CONFIG[configKey] ?? POPULAR_STYLES_CONFIG.default;

@@ -255,7 +255,8 @@
       "classic": "經典",
       "classic_description": "自然手繪風格",
       "nano_banana": "Nano Banana 🍌",
-      "nano_banana_description": "創意風格"
+      "nano_banana_description": "創意風格",
+      "try_classic_hint": "👉 經典"
     },
     "ratios": {
       "auto": "自動",

@@ -343,6 +343,7 @@ export function DrawingGenerator({
                 selectedModel={selectedModel}
                 onModelChange={setSelectedModel}
                 className="border-0 shadow-none p-0"
+                selectedStyle={selectedStyle}
               />
               <RatioSelector
                 selectedRatio={selectedRatio}

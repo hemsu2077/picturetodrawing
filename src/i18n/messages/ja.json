@@ -255,7 +255,8 @@
       "classic": "クラシック",
       "classic_description": "自然な絵画",
       "nano_banana": "Nano Banana 🍌",
-      "nano_banana_description": "クリエイティブスタイル"
+      "nano_banana_description": "クリエイティブスタイル",
+      "try_classic_hint": "👉 クラシック"
     },
     "ratios": {
       "auto": "自動",

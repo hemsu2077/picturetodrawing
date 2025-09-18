@@ -256,7 +256,8 @@
       "classic": "Klassisch",
       "classic_description": "Natürliche Zeichnung",
       "nano_banana": "Nano Banana 🍌",
-      "nano_banana_description": "Kreativer Stil"
+      "nano_banana_description": "Kreativer Stil",
+      "try_classic_hint": "👉 Klassisch"
     },
     "ratios": {
       "auto": "Auto",

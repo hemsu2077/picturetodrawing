@@ -252,10 +252,11 @@
       "select_style": "스타일 변경"
     },
     "models": {
-      "classic": "클식",
+      "classic": "클래식",
       "classic_description": "자연스러운 그림",
       "nano_banana": "Nano Banana 🍌",
-      "nano_banana_description": "창의적인 스타일"
+      "nano_banana_description": "창의적인 스타일",
+      "try_classic_hint": "👉 클래식"
     },
     "ratios": {
       "auto": "자동",
