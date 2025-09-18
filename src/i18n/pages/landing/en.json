@@ -463,16 +463,6 @@
           "title": "About",
           "children": [
             {
-              "title": "Picture to Drawing",
-              "url": "/",
-              "target": "_self"
-            },
-            {
-              "title": "Photo to Line Drawing",
-              "url": "/photo-to-line-drawing",
-              "target": "_self"
-            },
-            {
               "title": "Pricing",
               "url": "/pricing",
               "target": "_self"
@@ -490,6 +480,21 @@
             {
               "title": "Contact Us",
               "url": "mailto:hi@picturetodrawing.com",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "AI Drawing Tools",
+          "children": [
+            {
+              "title": "Photo to Line Drawing",
+              "url": "/photo-to-line-drawing",
+              "target": "_self"
+            },
+            {
+              "title": "Photo to Cartoon",
+              "url": "/photo-to-cartoon",
               "target": "_self"
             }
           ]

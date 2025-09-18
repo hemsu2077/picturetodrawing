@@ -16,16 +16,16 @@
           "title": "AI 드로잉 도구",
           "children": [
             {
-              "title": "사진을 그림으로",
-              "url": "/",
-              "target": "_self",
-              "icon": "RiBrushLine"
-            },
-            {
               "title": "사진을 선화 그림으로",
               "url": "/photo-to-line-drawing",
               "target": "_self",
               "icon": "RiColorFilterAiLine"
+            },
+            {
+              "title": "사진을 만화로 바꿔주는",
+              "url": "/photo-to-cartoon",
+              "target": "_self",
+              "icon": "RiBearSmileLine"
             }
           ]
         },
@@ -463,16 +463,6 @@
           "title": "소개",
           "children": [
             {
-              "title": "사진을 그림으로",
-              "url": "/",
-              "target": "_self"
-            },
-            {
-              "title": "사진을 선화 그림으로",
-              "url": "/photo-to-line-drawing",
-              "target": "_self"
-            },
-            {
               "title": "요금제",
               "url": "/pricing",
               "target": "_self"
@@ -490,6 +480,21 @@
             {
               "title": "문의하기",
               "url": "mailto:hi@picturetodrawing.com",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "AI 드로잉 도구",
+          "children": [
+            {
+              "title": "사진을 선화 그림으로",
+              "url": "/photo-to-line-drawing",
+              "target": "_self"
+            },
+            {
+              "title": "사진을 만화로 바꿔주는",
+              "url": "/photo-to-cartoon",
               "target": "_self"
             }
           ]

@@ -16,16 +16,16 @@
           "title": "AI繪畫工具",
           "children": [
             {
-              "title": "照片轉手繪",
-              "url": "/",
-              "target": "_self",
-              "icon": "RiBrushLine"
-            },
-            {
               "title": "照片轉線稿",
               "url": "/photo-to-line-drawing",
               "target": "_self",
               "icon": "RiColorFilterAiLine"
+            },
+            {
+              "title": "照片轉卡通",
+              "url": "/photo-to-cartoon",
+              "target": "_self",
+              "icon": "RiBearSmileLine"
             }
           ]
         },
@@ -463,16 +463,6 @@
           "title": "關於",
           "children": [
             {
-              "title": "照片轉手繪",
-              "url": "/",
-              "target": "_self"
-            },
-            {
-              "title": "照片轉線稿",
-              "url": "/photo-to-line-drawing",
-              "target": "_self"
-            },
-            {
               "title": "價格",
               "url": "/pricing",
               "target": "_self"
@@ -490,6 +480,21 @@
             {
               "title": "聯繫我們",
               "url": "mailto:hi@picturetodrawing.com",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "AI繪畫工具",
+          "children": [
+            {
+              "title": "照片轉線稿",
+              "url": "/photo-to-line-drawing",
+              "target": "_self"
+            },
+            {
+              "title": "照片轉卡通",
+              "url": "/photo-to-cartoon",
               "target": "_self"
             }
           ]

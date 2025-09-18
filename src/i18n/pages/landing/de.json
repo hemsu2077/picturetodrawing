@@ -16,16 +16,16 @@
           "title": "KI-Zeichnungstools",
           "children": [
             {
-              "title": "Bild zu Zeichnung",
-              "url": "/",
-              "target": "_self",
-              "icon": "RiBrushLine"
-            },
-            {
               "title": "Foto in Strichzeichnung",
               "url": "/photo-to-line-drawing",
               "target": "_self",
               "icon": "RiColorFilterAiLine"
+            },
+            {
+              "title": "Foto in Cartoon umwandeln",
+              "url": "/photo-to-cartoon",
+              "target": "_self",
+              "icon": "RiBearSmileLine"
             }
           ]
         },
@@ -463,16 +463,6 @@
           "title": "Über",
           "children": [
             {
-              "title": "Bild zu Zeichnung",
-              "url": "/",
-              "target": "_self"
-            },
-            {
-              "title": "Foto in Strichzeichnung",
-              "url": "/photo-to-line-drawing",
-              "target": "_self"
-            },
-            {
               "title": "Preise",
               "url": "/pricing",
               "target": "_self"
@@ -490,6 +480,21 @@
             {
               "title": "Kontaktieren Sie uns",
               "url": "mailto:hi@picturetodrawing.com",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "KI-Zeichnungstools",
+          "children": [
+            {
+              "title": "Foto in Strichzeichnung",
+              "url": "/photo-to-line-drawing",
+              "target": "_self"
+            },
+            {
+              "title": "Foto in Cartoon umwandeln",
+              "url": "/photo-to-cartoon",
               "target": "_self"
             }
           ]

@@ -16,16 +16,16 @@
           "title": "AI描画ツール",
           "children": [
             {
-              "title": "写真イラスト化",
-              "url": "/",
-              "target": "_self",
-              "icon": "RiBrushLine"
-            },
-            {
               "title": "写真を線描画",
               "url": "/photo-to-line-drawing",
               "target": "_self",
               "icon": "RiColorFilterAiLine"
+            },
+            {
+              "title": " 写真をカートゥーンに",
+              "url": "/photo-to-cartoon",
+              "target": "_self",
+              "icon": "RiBearSmileLine"
             }
           ]
         },
@@ -463,16 +463,6 @@
           "title": "About",
           "children": [
             {
-              "title": "写真イラスト化",
-              "url": "/",
-              "target": "_self"
-            },
-            {
-              "title": "写真を線描画",
-              "url": "/photo-to-line-drawing",
-              "target": "_self"
-            },
-            {
               "title": "料金プラン",
               "url": "/pricing",
               "target": "_self"
@@ -490,6 +480,21 @@
             {
               "title": "お問い合わせ",
               "url": "mailto:hi@picturetodrawing.com",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "AI描画ツール",
+          "children": [
+            {
+              "title": "写真を線描画",
+              "url": "/photo-to-line-drawing",
+              "target": "_self"
+            },
+            {
+              "title": "写真をカートゥーンに",
+              "url": "/photo-to-cartoon",
               "target": "_self"
             }
           ]

@@ -16,16 +16,16 @@
           "title": "Outils de dessin IA",
           "children": [
             {
-              "title": "Photo en dessin",
-              "url": "/",
-              "target": "_self",
-              "icon": "RiBrushLine"
-            },
-            {
               "title": "Photo en dessin au trait",
               "url": "/photo-to-line-drawing",
               "target": "_self",
               "icon": "RiColorFilterAiLine"
+            },
+            {
+              "title": "Photo en dessin animé",
+              "url": "/photo-to-cartoon",
+              "target": "_self",
+              "icon": "RiBearSmileLine"
             }
           ]
         },
@@ -463,16 +463,6 @@
           "title": "À propos",
           "children": [
             {
-              "title": "Photo en dessin",
-              "url": "/",
-              "target": "_self"
-            },
-            {
-              "title": "Photo en dessin au trait",
-              "url": "/photo-to-line-drawing",
-              "target": "_self"
-            },
-            {
               "title": "Tarifs",
               "url": "/pricing",
               "target": "_self"
@@ -490,6 +480,21 @@
             {
               "title": "Contactez-nous",
               "url": "mailto:hi@picturetodrawing.com",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Outils de dessin IA",
+          "children": [
+            {
+              "title": "Photo en dessin au crayon",
+              "url": "/photo-to-line-drawing",
+              "target": "_self"
+            },
+            {
+              "title": "Photo en dessin animé",
+              "url": "/photo-to-cartoon",
               "target": "_self"
             }
           ]
