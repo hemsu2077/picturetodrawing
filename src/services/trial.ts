@@ -44,17 +44,25 @@ export async function checkDailyTrial(userUuid?: string): Promise<TrialCheckResu
   try {
     const today = getTodayString();
     const clientIP = await getClientIP();
-    
-    // Check if trial already used today for this IP (regardless of login status)
-    const existingTrial = await db()
-      .select()
-      .from(dailyTrials)
-      .where(
-        and(
+
+    // For logged in users, block by either user or IP; otherwise block by IP only
+    const trialCondition = userUuid
+      ? and(
+          eq(dailyTrials.trial_date, today),
+          or(
+            eq(dailyTrials.user_uuid, userUuid),
+            eq(dailyTrials.ip_address, clientIP)
+          )
+        )
+      : and(
           eq(dailyTrials.trial_date, today),
           eq(dailyTrials.ip_address, clientIP)
-        )
-      )
+        );
+
+    const existingTrial = await db()
+      .select({ id: dailyTrials.id })
+      .from(dailyTrials)
+      .where(trialCondition)
       .limit(1);
     
     const canUseTrial = existingTrial.length === 0;
@@ -78,15 +86,27 @@ export async function recordDailyTrial(userUuid?: string): Promise<void> {
   try {
     const today = getTodayString();
     const clientIP = await getClientIP();
-    
-    await db().insert(dailyTrials).values({
-      user_uuid: userUuid || null,
-      ip_address: clientIP,
-      trial_date: today,
-      created_at: new Date(getIsoTimestr()),
-    });
-    
-    console.log(`Daily trial recorded for ${userUuid ? `user ${userUuid}` : `IP ${clientIP}`}`);
+
+    const insertResult = await db()
+      .insert(dailyTrials)
+      .values({
+        user_uuid: userUuid || null,
+        ip_address: clientIP,
+        trial_date: today,
+        created_at: new Date(getIsoTimestr()),
+      })
+      .onConflictDoNothing()
+      .returning({ id: dailyTrials.id });
+
+    if (insertResult.length > 0) {
+      console.log(`Daily trial recorded for ${userUuid ? `user ${userUuid}` : `IP ${clientIP}`}`);
+    } else if (process.env.NODE_ENV !== "production") {
+      console.log(
+        `Daily trial already recorded for ${
+          userUuid ? `user ${userUuid}` : `IP ${clientIP}`
+        } on ${today}, skipping insert.`
+      );
+    }
   } catch (error) {
     console.error('Error recording daily trial:', error);
     throw error;
