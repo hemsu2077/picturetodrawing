@@ -498,6 +498,16 @@
               "target": "_self"
             }
           ]
+        },
+        {
+          "title": "Friends",
+          "children": [
+            {
+              "title": "Fast Wan",
+              "url": "https://fast-wan.com/",
+              "target": "_blank"
+            }
+          ]
         }
       ]
     },
