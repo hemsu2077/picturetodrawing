@@ -506,6 +506,11 @@
               "title": "Fast Wan",
               "url": "https://fast-wan.com/",
               "target": "_blank"
+            },
+            {
+              "title": "AIStage",
+              "url": "https://aistage.net",
+              "target": "_blank"
             }
           ]
         }
