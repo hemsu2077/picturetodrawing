@@ -105,7 +105,7 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
   {
     id: 'superhero-comic',
     name: t('drawing_generator.styles.superhero_comic'),
-    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/superhero-comic.webp'
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/superhero-comic.webp?v=2'
   },
   {
     id: 'manga',
@@ -133,14 +133,14 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/rick-morty.webp'
   },
   {
-    id: 'pixel-art',
-    name: t('drawing_generator.styles.pixel_art'),
-    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/pixel-art.webp'
-  },
-  {
     id: 'snoopy',
     name: t('drawing_generator.styles.snoopy'),
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/snoopy.webp'
+  },
+  {
+    id: 'pixel-art',
+    name: t('drawing_generator.styles.pixel_art'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/pixel-art.webp'
   },
   {
     id: 'clay',
