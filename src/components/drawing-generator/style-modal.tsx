@@ -25,44 +25,59 @@ export function StyleModal({ open, onClose, selectedStyle, onStyleSelect }: Styl
 
   return (
     <Dialog open={open} onOpenChange={onClose}>
-      <DialogContent className="max-w-4xl max-h-[80vh] overflow-hidden">
-        <DialogHeader>
-          <DialogTitle>{t('drawing_generator.style_modal.title')}</DialogTitle>
+      <DialogContent className="max-w-5xl max-h-[85vh] overflow-hidden p-0 gap-0">
+        <DialogHeader className="px-6 pt-6 pb-4">
+          <DialogTitle className="text-xl">{t('drawing_generator.style_modal.title')}</DialogTitle>
         </DialogHeader>
         
-        <div className="overflow-y-auto max-h-[60vh] pr-2">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+        <div className="overflow-y-auto max-h-[70vh] pl-6 py-6 pr-2">
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 pr-4">
             {allStyles.map((style) => (
               <div
                 key={style.id}
                 className={cn(
-                  "relative cursor-pointer rounded-lg border-2 overflow-hidden transition-all",
-                  "hover:border-primary/50 hover:shadow-md",
+                  "group cursor-pointer rounded-xl overflow-hidden transition-all duration-200",
+                  "hover:shadow-lg",
                   selectedStyle === style.id 
-                    ? "border-primary ring-2 ring-primary/20" 
-                    : "border-border"
+                    ? "ring-2 ring-primary shadow-md" 
+                    : "hover:ring-2 hover:ring-primary/30"
                 )}
                 onClick={() => handleStyleSelect(style.id)}
               >
-                <div className="aspect-square relative">
-                  <img
-                    src={style.image}
-                    alt={style.name + " - Picture to Drawing style"}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black/20 flex items-end">
-                    <div className="w-full p-2 bg-gradient-to-t from-black/60 to-transparent">
-                      <p className="text-white text-sm font-medium text-center">
-                        {style.name}
-                      </p>
-                    </div>
+                <div className="relative">
+                  <div className="aspect-[4/3] relative overflow-hidden bg-muted">
+                    <img
+                      src={style.image}
+                      alt={style.name + " - Picture to Drawing style"}
+                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                    {selectedStyle === style.id && (
+                      <div className="absolute top-2 right-2 w-5 h-5 bg-primary rounded-full flex items-center justify-center shadow-lg">
+                        <svg
+                          className="w-3 h-3 text-white"
+                          fill="none"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path d="M5 13l4 4L19 7" />
+                        </svg>
+                      </div>
+                    )}
+                  </div>
+                  <div className="px-2 py-2.5 bg-card">
+                    <p className={cn(
+                      "text-xs font-medium text-center truncate transition-colors",
+                      selectedStyle === style.id 
+                        ? "text-primary" 
+                        : "text-foreground/80 group-hover:text-foreground"
+                    )}>
+                      {style.name}
+                    </p>
                   </div>
                 </div>
-                {selectedStyle === style.id && (
-                  <div className="absolute top-2 right-2 w-4 h-4 bg-primary rounded-full flex items-center justify-center">
-                    <div className="w-2 h-2 bg-white rounded-full" />
-                  </div>
-                )}
               </div>
             ))}
           </div>
