@@ -33,6 +33,11 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/line-drawing.webp?v=2'
   },
   {
+    id: 'line-drawing-2',
+    name: t('drawing_generator.styles.line_drawing_2'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/line-drawing-2.webp'
+  },
+  {
     id: 'charcoal-drawing',
     name: t('drawing_generator.styles.charcoal_drawing'),
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/charcoal-drawing.webp'
@@ -48,6 +53,21 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/color-pencil-drawing.webp'
   },
   {
+    id: 'kawaii-pastel-doodle',
+    name: t('drawing_generator.styles.kawaii_pastel_doodle'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/kawaii-pastel-doodle.webp'
+  },
+  {
+    id: 'van-gogh',
+    name: t('drawing_generator.styles.van_gogh'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/van-gogh.webp'
+  },
+  {
+    id: 'pop-art',
+    name: t('drawing_generator.styles.pop_art'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/pop-art.webp'
+  },
+  {
     id: 'inkart',
     name: t('drawing_generator.styles.inkart'),
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/inkart.webp'
@@ -61,6 +81,11 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
     id: 'ghibli-style',
     name: t('drawing_generator.styles.studio_ghibli'),
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/ghibli-style.webp'
+  },
+  {
+    id: '90s-retro-anime',
+    name: t('drawing_generator.styles.90s_retro_anime'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/90s-retro-anime.webp'
   },
   {
     id: 'pixar-3d',
@@ -88,14 +113,34 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/manga.webp'
   },
   {
+    id: 'cyberpunk-neon',
+    name: t('drawing_generator.styles.cyberpunk_neon'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/cyberpunk-neon.webp'
+  },
+  {
+    id: 'gta-style',
+    name: t('drawing_generator.styles.gta_style'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/gta-style.webp'
+  },
+  {
     id: 'south-park',
     name: t('drawing_generator.styles.south_park'),
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/south-park.webp'
   },
   {
+    id: 'rick-morty',
+    name: t('drawing_generator.styles.rick_morty'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/rick-morty.webp'
+  },
+  {
     id: 'pixel-art',
     name: t('drawing_generator.styles.pixel_art'),
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/pixel-art.webp'
+  },
+  {
+    id: 'snoopy',
+    name: t('drawing_generator.styles.snoopy'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/snoopy.webp'
   },
   {
     id: 'clay',
