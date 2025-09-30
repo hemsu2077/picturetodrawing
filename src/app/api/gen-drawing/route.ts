@@ -8,7 +8,7 @@ import { isAuthEnabled } from "@/lib/auth";
 import { insertImage } from "@/models/image";
 import { getUuid } from "@/lib/hash";
 import { checkDailyTrial, recordDailyTrial } from "@/services/trial";
-import { getDrawingPrompt } from "@/config/drawing-prompts";
+import { getDrawingPrompt, getModelForStyle } from "@/config/drawing-prompts";
 
 export async function POST(req: Request) {
 try {
@@ -57,18 +57,19 @@ try {
       );
     }
 
-    const { style, model, image, ratio } = await req.json();
+    const { style, image, ratio } = await req.json();
 
     // Validate required inputs
     if (!style || !image) {
       return respErr("Missing required parameters: style and image");
     }
 
-    // Select model based on user choice
-    const selectedModel = model === 'nano-banana' ? "google/nano-banana" : "black-forest-labs/flux-kontext-pro";
+    // Auto-select model based on style
+    const modelType = getModelForStyle(style);
+    const selectedModel = modelType === 'nano-banana' ? "google/nano-banana" : "black-forest-labs/flux-kontext-pro";
     
     // Get model-specific prompt for the requested style
-    const prompt = getDrawingPrompt(model, style);
+    const prompt = getDrawingPrompt(modelType, style);
     
     
     let inputImageUrl: string;
@@ -106,7 +107,7 @@ try {
     
     // Configure provider options based on model
     let providerOptions: any;
-    if (model === 'nano-banana') {
+    if (modelType === 'nano-banana') {
       // Nano Banana uses image_input array and doesn't support ratio
       providerOptions = {
         replicate: {
@@ -133,7 +134,7 @@ try {
     };
 
     // Only add aspectRatio for default model
-    if (model !== 'nano-banana') {
+    if (modelType !== 'nano-banana') {
       generateOptions.aspectRatio = ratio || "match_input_image";
     }
 
@@ -176,7 +177,7 @@ try {
                 original_image_url: inputImageUrl,
                 generated_image_url: res.url || "",
                 style: style,
-                model: model || "default",
+                model: modelType,
                 ratio: ratio || "match_input_image",
                 provider: provider,
                 filename: filename,

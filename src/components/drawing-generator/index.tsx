@@ -5,11 +5,9 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { ImageUpload } from './image-upload';
 import { StyleSelector } from './style-selector';
-import { ModelSelector } from './model-selector';
 import { RatioSelector } from './ratio-selector';
 import { RecentDrawings } from './result-display';
 import PricingModal from '@/components/pricing-modal';
-import { Wand2 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useSession } from 'next-auth/react';
 import { useAppContext } from '@/contexts/app';
@@ -18,11 +16,11 @@ import { useLocale, useTranslations } from 'next-intl';
 import { Pricing } from '@/types/blocks/pricing';
 import { RiCoinsLine } from 'react-icons/ri';
 import { type PopularStylesConfigKey } from '@/config/drawing-styles';
+import { getModelForStyle } from '@/config/drawing-prompts';
 
 interface DrawingGeneratorProps {
   className?: string;
   defaultStyle?: string;
-  defaultModel?: string;
   popularStylesKey?: PopularStylesConfigKey;
 }
 
@@ -35,7 +33,6 @@ interface TrialStatus {
 export function DrawingGenerator({
   className,
   defaultStyle = 'pencil-sketch',
-  defaultModel = 'default',
   popularStylesKey = 'default'
 }: DrawingGeneratorProps) {
   const { data: session } = isAuthEnabled() ? useSession() : { data: null };
@@ -45,15 +42,15 @@ export function DrawingGenerator({
   
   const [selectedImage, setSelectedImage] = useState<{ file: File | string; preview: string } | null>(null);
   const [selectedStyle, setSelectedStyle] = useState(defaultStyle);
-  const [selectedModel, setSelectedModel] = useState(defaultModel);
   const [selectedRatio, setSelectedRatio] = useState('auto');
 
-  // Auto-set ratio to 'auto' when nano-banana is selected
+  // Auto-set ratio to 'auto' when nano-banana model is used
   useEffect(() => {
-    if (selectedModel === 'nano-banana') {
+    const modelType = getModelForStyle(selectedStyle);
+    if (modelType === 'nano-banana') {
       setSelectedRatio('auto');
     }
-  }, [selectedModel]);
+  }, [selectedStyle]);
   const [isGenerating, setIsGenerating] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [newDrawing, setNewDrawing] = useState<{ style: string; ratio: string } | null>(null);
@@ -214,7 +211,6 @@ export function DrawingGenerator({
         },
         body: JSON.stringify({
           style: selectedStyle,
-          model: selectedModel,
           image: imageData,
           ratio: selectedRatio === 'auto' ? null : selectedRatio,
         }),
@@ -337,21 +333,12 @@ export function DrawingGenerator({
               popularStylesKey={popularStylesKey}
             />
             
-            {/* Model and Ratio in one row on desktop, two rows on mobile */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <ModelSelector
-                selectedModel={selectedModel}
-                onModelChange={setSelectedModel}
-                className="border-0 shadow-none p-0"
-                selectedStyle={selectedStyle}
-              />
-              <RatioSelector
-                selectedRatio={selectedRatio}
-                onRatioChange={setSelectedRatio}
-                disabled={selectedModel === 'nano-banana'}
-                className="border-0 shadow-none p-0"
-              />
-            </div>
+            <RatioSelector
+              selectedRatio={selectedRatio}
+              onRatioChange={setSelectedRatio}
+              disabled={getModelForStyle(selectedStyle) === 'nano-banana'}
+              className="border-0 shadow-none p-0"
+            />
             
             <div className="space-y-2">
               <Button

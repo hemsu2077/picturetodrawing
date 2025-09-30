@@ -4,15 +4,12 @@ export const photoTransformationConfigMap = {
     slug: "photo-to-line-drawing",
     generator: {
       defaultStyle: "line-drawing",
-      defaultModel: "nano-banana",
     },
-
   },
   "photo-to-cartoon": {
     slug: "photo-to-cartoon",
     generator: {
       defaultStyle: "pure-cartoon",
-      defaultModel: "default",
     },
   },
 } as const;

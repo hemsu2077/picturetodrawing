@@ -7,6 +7,15 @@ export interface DrawingPromptConfig {
   };
 }
 
+// Styles that should use nano-banana model
+// All other styles will use flux-kontext-pro (default)
+const NANO_BANANA_STYLES = ['line-drawing' ] as const;
+
+// Helper function to determine which model to use for a given style
+export function getModelForStyle(style: string): 'nano-banana' | 'flux-kontext-pro' {
+  return NANO_BANANA_STYLES.includes(style as any) ? 'nano-banana' : 'flux-kontext-pro';
+}
+
 export const drawingPrompts: DrawingPromptConfig = {
   'nano-banana': {
     'line-drawing': 'Convert images to line art. Only keep outlines, no shading. Make it look like a coloring book page with clear contours and simplified details.',
@@ -27,7 +36,7 @@ export const drawingPrompts: DrawingPromptConfig = {
     'manga': 'transform the image to a drawing, the drawing should be in the style of Japanese/Korean manga style, clean lines, black and white tones, expressive emotions, dynamic composition. Just like a real manga, Try to make it look as painted as possible.'
   },
   'flux-kontext-pro': {
-    'line-drawing': 'Change this picture to a clean black and white line illustration. Make it look like a coloring book page with clear contours and simplified details.',
+    'line-drawing-2': 'Change this picture to a clean black and white line illustration. Make it look like a coloring book page with clear contours and simplified details.',
     'pencil-sketch': 'transform the image to a drawing, the drawing should be in the style of black and white pencil sketch, Try to make it look as painted as possible.',
     'charcoal-drawing': 'transform the image to a drawing, the drawing should be in the style of black and white charcoal drawing, Try to make it look as painted as possible.',
     'color-pencil-drawing': 'transform the image to a drawing, the drawing should be in the style of color pencil drawing, Try to make it look as painted as possible.',
