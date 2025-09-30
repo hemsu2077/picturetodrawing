@@ -145,7 +145,7 @@
       },
       {
         "title": "Selecciona tu modelo de dibujo en línea",
-        "description": "Elige entre nuestros modelos disponibles para diferentes estilos de arte lineal. El modelo Nano Banana produce líneas limpias y precisas, ideales para ilustraciones modernas. El modelo Clásico crea un estilo más natural y artesanal, con texturas orgánicas.",
+        "description": "Elige entre nuestros modelos disponibles para diferentes estilos de arte lineal. El estilo Dibujo de Líneas produce líneas limpias y precisas, ideales para ilustraciones modernas. El estilo Dibujo de Líneas 2 crea un estilo más natural y artesanal, con texturas orgánicas.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
         }

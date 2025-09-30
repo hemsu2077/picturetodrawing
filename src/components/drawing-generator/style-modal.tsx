@@ -36,7 +36,7 @@ export function StyleModal({ open, onClose, selectedStyle, onStyleSelect }: Styl
               <div
                 key={style.id}
                 className={cn(
-                  "group cursor-pointer rounded-xl overflow-hidden transition-all duration-200",
+                  "group border cursor-pointer rounded-xl overflow-hidden transition-all duration-200",
                   "hover:shadow-lg",
                   selectedStyle === style.id 
                     ? "ring-2 ring-primary shadow-md" 
@@ -45,7 +45,7 @@ export function StyleModal({ open, onClose, selectedStyle, onStyleSelect }: Styl
                 onClick={() => handleStyleSelect(style.id)}
               >
                 <div className="relative">
-                  <div className="aspect-[4/3] relative overflow-hidden bg-muted">
+                  <div className="aspect-square relative overflow-hidden bg-muted">
                     <img
                       src={style.image}
                       alt={style.name + " - Picture to Drawing style"}

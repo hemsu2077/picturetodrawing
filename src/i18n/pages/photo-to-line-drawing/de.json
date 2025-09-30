@@ -144,7 +144,7 @@
         },
         {
           "title": "Wähle dein Linienzeichnungsmodell",
-          "description": "Wähle zwischen unseren verfügbaren Modellen für verschiedene Line-Art-Stile. Das Nano Banana Modell liefert saubere, präzise Linien – ideal für moderne Illustrationen. Das Klassisch Modell erzeugt dagegen einen natürlicheren, handgezeichneten Look mit organischen Texturen.",
+          "description": "Wähle zwischen unseren verfügbaren Modellen für verschiedene Line-Art-Stile. Das Strichzeichnung Stil liefert saubere, präzise Linien – ideal für moderne Illustrationen. Das Strichzeichnung 2 Stil erzeugt dagegen einen natürlicheren, handgezeichneten Look mit organischen Texturen.",
           "image": {
             "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
           }

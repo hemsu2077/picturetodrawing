@@ -127,7 +127,7 @@
     },
     {
       "title": "選擇你的線稿模型",
-      "description": "根據不同的線稿風格選擇模型。Nano Banana 模型能生成乾淨、精準的線條，非常適合現代插畫；經典 模型則呈現出更自然、手繪感強烈的有機紋理。",
+      "description": "根據不同的線稿風格選擇模型。線條畫風格能生成乾淨、精準的線條，非常適合現代插畫；線條畫2風格則呈現出更自然、手繪感強烈的有機紋理。",
       "image": {
         "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
       }

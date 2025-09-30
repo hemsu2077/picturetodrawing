@@ -144,7 +144,7 @@
         },
         {
           "title": "Choisissez votre modèle de dessin au trait",
-          "description": "Sélectionnez parmi nos modèles pour différents styles de line art. Le modèle Nano Banana offre des lignes nettes et précises, parfaites pour des illustrations modernes. Le modèle Classique, quant à lui, crée un rendu plus naturel, avec une texture organique rappelant le dessin à la main.",
+          "description": "Sélectionnez parmi nos modèles pour différents styles de line art. Le style Dessin au trait offre des lignes nettes et précises, parfaites pour des illustrations modernes. Le style Dessin au trait 2, quant à lui, crée un rendu plus naturel, avec une texture organique rappelant le dessin à la main.",
           "image": {
             "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
           }

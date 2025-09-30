@@ -144,7 +144,7 @@
       },
       {
         "title": "Select Your Line Drawing Model",
-        "description": "Choose between our available models for different line art styles. Nano Banana model produces clean, precise lines perfect for modern illustrations, while Classic model creates more natural hand-drawn effects with organic textures.",
+        "description": "Choose between our available models for different line art styles. Line Drawing style produces clean, precise lines perfect for modern illustrations, while Line Drawing 2 style creates more natural hand-drawn effects with organic textures.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
         }
