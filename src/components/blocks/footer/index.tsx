@@ -94,7 +94,7 @@ export default function Footer({ footer }: { footer: FooterType }) {
             )}
           </div>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <a href="https://www.toolify.ai/tool/picture-to-drawing-1" target="_blank" rel="noopener noreferrer"><img src="https://www.toolify.ai/3.3.2/img/logo.f3a91ce.png" alt="U-Tools badge" width="160" height="54"/></a>
+            <a href="https://www.toolify.ai/tool/picture-to-drawing-1" target="_blank" rel="noopener noreferrer"><img src="https://cdn.toolify.ai/featured_light.svg" alt="U-Tools badge" width="160" height="54"/></a>
             <a href="https://fazier.com/launches/picturetodrawing.com" target="_blank"><img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=neutral" width="160" height="60" alt="Fazier badge" /></a>
             <a href="https://turbo0.com/item/picture-to-drawing" target="_blank" rel="noopener noreferrer"><img src="https://img.turbo0.com/badge-listed-light.svg" alt="Listed on Turbo0" width="120" height="54"/></a>       
             <a href="https://twelve.tools" target="_blank"><img src="https://twelve.tools/badge2-light.svg" alt="Featured on Twelve Tools" width="150" height="54"/></a>
