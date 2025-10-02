@@ -102,7 +102,8 @@ export default function Footer({ footer }: { footer: FooterType }) {
             <a href="https://tinylaunch.com" target="_blank" rel="noopener"> <img src="https://tinylaunch.com/tinylaunch_badge_featured_on.svg" alt="TinyLaunch Badge" width="140" height="54"/></a>
             <a href="https://dang.ai/" target="_blank" ><img src="https://cdn.prod.website-files.com/63d8afd87da01fb58ea3fbcb/6487e2868c6c8f93b4828827_dang-badge.png" alt="Dang.ai" width="120" height="54"/></a>
             <a href="https://toolsfine.com/" target="_blank" ><img src="https://toolsfine.com/wp-content/uploads/2023/08/Toolsfine-logo-day-0531-80x320-1.webp" alt="Toolsfine" width="120" height="54"/></a>
-            <a href="https://findly.tools/picture-to-drawing?utm_source=picture-to-drawing" target="_blank"> <img  src="https://findly.tools/badges/findly-tools-badge-light.svg" alt="Featured on findly.tools"  width="120" /></a>  
+            <a href="https://findly.tools/picture-to-drawing?utm_source=picture-to-drawing" target="_blank"> <img  src="https://findly.tools/badges/findly-tools-badge-light.svg" alt="Featured on findly.tools"  width="120" /></a>
+            <a href="https://dofollow.tools" target="_blank"><img src="https://dofollow.tools/badge/badge_light.svg" alt="Featured on Dofollow.Tools" width="135" height="30" /></a>
           </div>
         </footer>
       </div>
