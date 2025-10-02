@@ -104,8 +104,8 @@ export default function Footer({ footer }: { footer: FooterType }) {
             <a href="https://toolsfine.com/" target="_blank" ><img src="https://toolsfine.com/wp-content/uploads/2023/08/Toolsfine-logo-day-0531-80x320-1.webp" alt="Toolsfine" width="120" height="54"/></a>
             <a href="https://findly.tools/picture-to-drawing?utm_source=picture-to-drawing" target="_blank"> <img  src="https://findly.tools/badges/findly-tools-badge-light.svg" alt="Featured on findly.tools"  width="120" /></a>
             <a href="https://dofollow.tools" target="_blank"><img src="https://dofollow.tools/badge/badge_light.svg" alt="Featured on Dofollow.Tools" width="135" height="30" /></a>
-            <a href="https://uno.directory" target="_blank" rel="noopener noreferrer"><img src="https://uno.directory/badges/uno-directory.svg" alt="Uno Directory" width="130" height="20" /></a>
             <a href="https://launchboard.dev" target="_blank" rel="noopener noreferrer"><img src="https://launchboard.dev/launchboard-badge.png" alt="Launched on LaunchBoard - Product Launch Platform" width="100" height="20" /> </a>
+            <a href="https://startupslab.site" target="_blank" rel="noopener"> <img src="https://cdn.startupslab.site/site-images/badge-light.png" alt="Featured on Startups Lab" width="120" height="20" /> </a>
           </div>
         </footer>
       </div>
