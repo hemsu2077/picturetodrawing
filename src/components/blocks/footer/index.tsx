@@ -106,6 +106,7 @@ export default function Footer({ footer }: { footer: FooterType }) {
             <a href="https://dofollow.tools" target="_blank"><img src="https://dofollow.tools/badge/badge_light.svg" alt="Featured on Dofollow.Tools" width="135" height="30" /></a>
             <a href="https://launchboard.dev" target="_blank" rel="noopener noreferrer"><img src="https://launchboard.dev/launchboard-badge.png" alt="Launched on LaunchBoard - Product Launch Platform" width="100" height="20" /> </a>
             <a href="https://startupslab.site" target="_blank" rel="noopener"> <img src="https://cdn.startupslab.site/site-images/badge-light.png" alt="Featured on Startups Lab" width="120" height="20" /> </a>
+            <a href="https://topfreeaitools.com/ai/picture-to-drawing" target="_blank"><img src="https://ff65dcf08ebd5eb1c022b44dd88016ac.cdn.bubble.io/f1724746116087x632750678197528400/badge%20white.png?_gl=1*1wvcbnr*_gcl_au*MTg3MzI0ODMyLjE3MjE2MjAzNjA.*_ga*NTIyODE4MzEyLjE3MDU5OTg0MTc.*_ga_BFPVR2DEE2*MTcyNDc0NTM2OS4yMjkuMS4xNzI0NzQ2MjY2LjYwLjAuMA.." alt="Featured on Top Free AI Tools" width="180" height="54" /></a>
           </div>
         </footer>
       </div>
