@@ -109,56 +109,58 @@ export default function PricingModal({ open, onOpenChange, pricing }: PricingMod
         </DialogHeader>
 
         {basicPlan ? (
-          <Card className="mt-4 border-0 shadow-sm bg-white">
-            <CardHeader className="text-center pb-3 px-5">
-              <CardTitle className="text-xl font-bold mb-2">
+          <Card className="mt-4 shadow-sm !py-4 !gap-3">
+            <CardHeader className="text-center !px-5 !pb-2 !gap-1">
+              <CardTitle className="text-lg font-semibold">
                 {basicPlan.title}
               </CardTitle>
               <div className="flex items-baseline justify-center gap-1">
-                <span className="text-4xl font-bold text-gray-900">
+                <span className="text-3xl font-bold text-foreground">
                   {basicPlan.price}
                 </span>
-                <span className="text-base font-medium text-gray-500 ml-1">
+                <span className="text-sm font-medium text-muted-foreground ml-1">
                   {basicPlan.unit}
                 </span>
               </div>
             </CardHeader>
-            <CardContent className="px-5 pb-4">
+            <CardContent className="!px-5 !pb-3">
               {basicPlan.features_title && (
-                <div className="text-center mb-4">
-                  <span className="inline-block px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold uppercase tracking-wider rounded-full">
+                <div className="mb-3 text-center">
+                  <span className="inline-block rounded-full bg-primary/10 px-2.5 py-1 text-xs font-semibold uppercase tracking-wide text-muted-foreground">
                     {basicPlan.features_title}
                   </span>
                 </div>
               )}
-              <div className="space-y-3">
+              <div className="space-y-2.5">
                 {featuresToDisplay.map((feature, index) => (
-                  <div key={`${basicPlan.product_id}-feature-${index}`} className="flex items-start gap-3">
-                    <div className="flex-shrink-0 w-4 h-4 bg-green-100 rounded-full flex items-center justify-center mt-0.5">
-                      <Check className="h-2.5 w-2.5 text-green-600 stroke-[2.5]" />
+                  <div key={`${basicPlan.product_id}-feature-${index}`} className="flex items-start gap-2.5">
+                    <div className="flex-shrink-0 w-4 h-4 bg-primary/10 rounded-full flex items-center justify-center mt-0.5">
+                      <Check className="h-2.5 w-2.5 text-primary" />
                     </div>
-                    <span className="text-sm text-gray-700 font-medium">{feature}</span>
+                    <span className="text-sm text-foreground/90">{feature}</span>
                   </div>
                 ))}
               </div>
             </CardContent>
-            <CardFooter className="px-5 pt-1 flex flex-col gap-3">
+            <CardFooter className="flex flex-col gap-2 !px-5 !pt-0">
               <Button 
-                className="w-full h-10 text-sm font-semibold rounded-lg shadow-md hover:shadow-lg transition-shadow" 
+                className="w-full h-10 text-sm font-semibold rounded-lg shadow-sm hover:shadow transition-shadow" 
                 onClick={handleCheckout} 
                 disabled={isCheckingOut}
               >
                 {isCheckingOut && <Loader className="mr-2 h-4 w-4 animate-spin" />}
                 {t("cta")}
               </Button>
-              <Link href="/pricing" className="text-xs text-gray-500 hover:text-primary transition-colors text-center font-medium">
+              <Link href={`/${locale || "en"}/pricing`} className="text-xs text-muted-foreground hover:text-primary transition-colors text-center font-medium">
                 {t("view_all")}
               </Link>
             </CardFooter>
           </Card>
         ) : (
-          <div className="mt-6 text-sm text-center text-muted-foreground">
-            <p>{t("view_all")}</p>
+          <div className="mt-6 text-sm text-center">
+            <Link href={`/${locale || "en"}/pricing`} className="text-muted-foreground hover:text-primary transition-colors font-medium">
+              {t("view_all")}
+            </Link>
           </div>
         )}
       </DialogContent>
