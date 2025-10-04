@@ -251,7 +251,7 @@
       "pure_cartoon": "Dibujo Animado",
       "studio_ghibli": "Estilo Ghibli",
       "pixar_3d": "Pixar 3D",
-      "disney_3d": "Disney 3D", 
+      "disney_3d": "Disney 3D",
       "simpsons": "Los Simpson",
       "clay": "Claymation",
       "south_park": "South Park",
@@ -279,5 +279,12 @@
       "wide": "Panorámico",
       "tall": "Alto"
     }
+  },
+  "pricing_modal": {
+    "headline": "Créditos insuficientes",
+    "description": "Mejora tu plan para seguir transformando tus fotos en dibujos.",
+    "cancel_anytime": "Cancela en cualquier momento",
+    "cta": "Comenzar",
+    "view_all": "Ver todos los planes"
   }
 }

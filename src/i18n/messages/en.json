@@ -279,5 +279,12 @@
       "wide": "Wide",
       "tall": "Tall"
     }
+  },
+  "pricing_modal": {
+    "headline": "Insufficient credits",
+    "description": "Upgrade to keep transforming your photos into drawings.",
+    "cancel_anytime": "Cancel anytime",
+    "cta": "Get started",
+    "view_all": "View all plans"
   }
 }

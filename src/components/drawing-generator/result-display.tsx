@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Loader2, Eye, ArrowRight, Zap } from 'lucide-react';
+import { Image, Eye, ArrowRight, Zap } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useSession } from 'next-auth/react';
 import { isAuthEnabled } from '@/lib/auth';
@@ -315,7 +315,7 @@ export function RecentDrawings({
             {!showProgressCard && !error && !trialDrawing && session?.user?.uuid && drawings.length < 4 && Array.from({ length: 4 - drawings.length }).map((_, index) => (
               <Card key={`empty-${index}`} className="aspect-square p-0 relative overflow-hidden shadow-none border-dashed">
                 <div className="absolute inset-0 flex items-center justify-center bg-gray-50">
-                  <Eye className="h-8 w-8 text-gray-300" />
+                  <Image className="h-8 w-8 text-gray-300" />
                 </div>
               </Card>
             ))}

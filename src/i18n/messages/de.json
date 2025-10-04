@@ -251,7 +251,7 @@
       "pure_cartoon": "Reiner Cartoon",
       "studio_ghibli": "Ghibli-Stil",
       "pixar_3d": "Pixar 3D",
-      "disney_3d": "Disney 3D", 
+      "disney_3d": "Disney 3D",
       "simpsons": "Die Simpsons",
       "clay": "Claymation",
       "south_park": "South Park",
@@ -263,7 +263,6 @@
       "popular_styles": "Beliebte Stile",
       "select_style": "Stil ändern"
     },
-
     "models": {
       "classic": "Klassisch",
       "classic_description": "Natürliche Zeichnung",
@@ -280,5 +279,12 @@
       "wide": "Breit",
       "tall": "Hoch"
     }
+  },
+  "pricing_modal": {
+    "headline": "Nicht genügend Credits",
+    "description": "Upgrade durchführen, um weiterhin deine Fotos in Zeichnungen zu verwandeln.",
+    "cancel_anytime": "Jederzeit kündbar",
+    "cta": "Jetzt starten",
+    "view_all": "Alle Tarife ansehen"
   }
 }

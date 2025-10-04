@@ -279,5 +279,12 @@
       "wide": "寬螢幕",
       "tall": "長螢幕"
     }
+  },
+  "pricing_modal": {
+    "headline": "積分不足",
+    "description": "升級方案，持續將照片變成手繪。",
+    "cancel_anytime": "隨時取消",
+    "cta": "立即開始",
+    "view_all": "查看所有方案"
   }
 }

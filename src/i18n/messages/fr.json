@@ -279,5 +279,12 @@
       "wide": "Large",
       "tall": "Haut"
     }
+  },
+  "pricing_modal": {
+    "headline": "Crédits insuffisants",
+    "description": "Passez à une offre supérieure pour continuer à transformer vos photos en dessins.",
+    "cancel_anytime": "Annulez à tout moment",
+    "cta": "Commencer",
+    "view_all": "Voir toutes les offres"
   }
 }
