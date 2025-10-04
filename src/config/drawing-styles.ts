@@ -25,7 +25,7 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
   {
     id: 'pencil-sketch',
     name: t('drawing_generator.styles.pencil_sketch'),
-    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/pencil-sketch.webp'
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/pencil-sketch.webp?v=1.1'
   },
   {
     id: 'pencil-sketch-2',
