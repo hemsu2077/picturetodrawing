@@ -230,8 +230,11 @@
     "sample_alt": "Beispiel {index}",
     "styles": {
       "pencil_sketch": "Bleistiftskizze",
+      "pencil_sketch_2": "Bleistiftskizze 2",
       "line_drawing": "Strichzeichnung",
       "line_drawing_2": "Strichzeichnung 2",
+      "line_art": "Linienkunst",
+      "bold_outline": "Fettumrandete Zeichnung",
       "kawaii_pastel_doodle": "Kawaii Pastell Gekritzel",
       "van_gogh": "Van Gogh Stil",
       "pop_art": "Pop Art",

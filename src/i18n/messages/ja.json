@@ -230,8 +230,11 @@
     "sample_alt": "サンプル{index}",
     "styles": {
       "pencil_sketch": "鉛筆スケッチ",
+      "pencil_sketch_2": "鉛筆スケッチ 2",
       "line_drawing": "線描画",
       "line_drawing_2": "線描画 2",
+      "line_art": "線画アート",
+      "bold_outline": "太字のアウトライン",
       "kawaii_pastel_doodle": "かわいいパステル落書き",
       "van_gogh": "ゴッホ風",
       "pop_art": "ポップアート",

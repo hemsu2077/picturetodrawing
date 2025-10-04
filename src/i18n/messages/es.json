@@ -230,8 +230,11 @@
     "sample_alt": "Muestra {index}",
     "styles": {
       "pencil_sketch": "Boceto a Lápiz",
+      "pencil_sketch_2": "Boceto a Lápiz 2",
       "line_drawing": "Dibujo de Líneas",
       "line_drawing_2": "Dibujo de Líneas 2",
+      "line_art": "Arte de Líneas",
+      "bold_outline": "Contorno Fuerte",
       "kawaii_pastel_doodle": "Garabato Kawaii Pastel",
       "van_gogh": "Estilo Van Gogh",
       "pop_art": "Arte Pop",

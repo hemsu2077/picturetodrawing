@@ -7,15 +7,15 @@ export interface StyleOption {
 // Popular styles configuration for different pages/contexts
 const DEFAULT_POPULAR_STYLES = [
   'pencil-sketch',
+  'pencil-sketch-2',
   'line-drawing',
   'watercolor-painting',
   'inkart',
-  'superhero-comic'
 ] as const;
 
 export const POPULAR_STYLES_CONFIG = {
   default: DEFAULT_POPULAR_STYLES,
-  'photo-to-line-drawing': DEFAULT_POPULAR_STYLES,
+  'photo-to-line-drawing': ['line-drawing', 'line-drawing-2', 'line-art', 'bold-outline', 'pencil-sketch'],
   'photo-to-cartoon': ['ghibli-style', 'pure-cartoon', 'simpsons', 'manga', '90s-retro-anime']
 } as const;
 
@@ -28,6 +28,11 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/pencil-sketch.webp'
   },
   {
+    id: 'pencil-sketch-2',
+    name: t('drawing_generator.styles.pencil_sketch_2'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/pencil-sketch-2.webp'
+  },
+  {
     id: 'line-drawing',
     name: t('drawing_generator.styles.line_drawing'),
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/line-drawing.webp?v=2'
@@ -38,6 +43,16 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/line-drawing-2.webp'
   },
   {
+    id: 'line-art',
+    name: t('drawing_generator.styles.line_art'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/line-art.webp'
+  },
+  {
+    id: 'bold-outline',
+    name: t('drawing_generator.styles.bold_outline'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/bold-outline.webp'
+  },
+  {
     id: 'charcoal-drawing',
     name: t('drawing_generator.styles.charcoal_drawing'),
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/charcoal-drawing.webp'
@@ -45,7 +60,7 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
   {
     id: 'watercolor-painting',
     name: t('drawing_generator.styles.watercolor_painting'),
-    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/watercolor-painting.webp'
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/water-color.webp'
   },
   {
     id: 'color-pencil-drawing',

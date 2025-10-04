@@ -4,7 +4,7 @@ export type DrawingPromptConfig = Record<string, string>;
 
 // Styles that should use nano-banana model
 // All other styles will use flux-kontext-pro (default)
-const NANO_BANANA_STYLES = new Set(['line-drawing']);
+const NANO_BANANA_STYLES = new Set(['line-drawing', 'line-art']);
 
 // Helper function to determine which model to use for a given style
 export function getModelForStyle(style: string): 'nano-banana' | 'flux-kontext-pro' {
@@ -14,7 +14,10 @@ export function getModelForStyle(style: string): 'nano-banana' | 'flux-kontext-p
 export const drawingPrompts: DrawingPromptConfig = {
   'line-drawing': 'Convert images to line art. Only keep outlines, no shading. Make it look like a coloring book page with clear contours and simplified details.',
   'line-drawing-2': 'Change this picture to a clean black and white line illustration. Make it look like a coloring book page with clear contours and simplified details.',
+  'bold-outline': 'transform to black-and-white cartoon line art . Clean bold outlines, coloring book style with no shading',
+  'line-art': 'Convert photo to artistic minimalist continuous line illustration, abstract expression, black and white',
   'pencil-sketch': 'transform the image to a drawing, the drawing should be in the style of black and white pencil sketch, Try to make it look as painted as possible.',
+  'pencil-sketch-2': 'transform the image to a drawing, the drawing should be in the style of black and white pencil sketch, Try to make it look as painted as possible.',
   'charcoal-drawing': 'transform the image to a drawing, the drawing should be in the style of black and white charcoal drawing, Try to make it look as painted as possible.',
   'color-pencil-drawing': 'transform the image to a drawing, the drawing should be in the style of color pencil drawing, Try to make it look as painted as possible.',
   'kawaii-pastel-doodle': 'Transform to Kawaii pastel doodle while maintaining the exact original composition and placement',

@@ -230,8 +230,11 @@
     "sample_alt": "샘플 {index}",
     "styles": {
       "pencil_sketch": "연필 스케치",
+      "pencil_sketch_2": "연필 스케치 2",
       "line_drawing": "선화 그림",
       "line_drawing_2": "선화 그림 2",
+      "line_art": "라인 아트",
+      "bold_outline": "굵은 선 윤곽",
       "kawaii_pastel_doodle": "카와이 파스텔 낙서",
       "van_gogh": "반 고흐",
       "pop_art": "팝 아트",

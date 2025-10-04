@@ -230,8 +230,11 @@
     "sample_alt": "Exemple {index}",
     "styles": {
       "pencil_sketch": "Croquis au crayon",
+      "pencil_sketch_2": "Croquis au crayon 2",
       "line_drawing": "Dessin au trait",
       "line_drawing_2": "Dessin au trait 2",
+      "line_art": "Art de lignes",
+      "bold_outline": "Contour fort",
       "kawaii_pastel_doodle": "Gribouillage Kawaii Pastel",
       "van_gogh": "Style Van Gogh",
       "pop_art": "Pop Art",

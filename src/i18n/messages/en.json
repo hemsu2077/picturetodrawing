@@ -230,8 +230,11 @@
     "sample_alt": "Sample {index}",
     "styles": {
       "pencil_sketch": "Pencil Sketch",
+      "pencil_sketch_2": "Pencil Sketch 2",
       "line_drawing": "Line Drawing",
       "line_drawing_2": "Line Drawing 2",
+      "line_art": "Line Art",
+      "bold_outline": "Bold Outline",
       "kawaii_pastel_doodle": "Kawaii Pastel Doodle",
       "van_gogh": "Van Gogh",
       "pop_art": "Pop Art",
