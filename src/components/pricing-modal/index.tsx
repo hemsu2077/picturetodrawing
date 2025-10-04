@@ -109,39 +109,49 @@ export default function PricingModal({ open, onOpenChange, pricing }: PricingMod
         </DialogHeader>
 
         {basicPlan ? (
-          <Card className="mt-4 bg-card text-card-foreground border border-border">
-            <CardHeader className="items-center gap-2 text-center">
-              <CardTitle className="text-xl font-semibold">
+          <Card className="mt-4 border-0 shadow-sm bg-white">
+            <CardHeader className="text-center pb-3 px-5">
+              <CardTitle className="text-xl font-bold mb-2">
                 {basicPlan.title}
               </CardTitle>
-              <div className="text-4xl font-bold">
-                {basicPlan.price}{" "}
-                <span className="text-base font-medium text-muted-foreground">
+              <div className="flex items-baseline justify-center gap-1">
+                <span className="text-4xl font-bold text-gray-900">
+                  {basicPlan.price}
+                </span>
+                <span className="text-base font-medium text-gray-500 ml-1">
                   {basicPlan.unit}
                 </span>
               </div>
             </CardHeader>
-            <CardContent className="flex flex-col gap-4">
+            <CardContent className="px-5 pb-4">
               {basicPlan.features_title && (
-                <p className="text-sm font-medium text-muted-foreground text-center uppercase tracking-wide">
-                  {basicPlan.features_title}
-                </p>
+                <div className="text-center mb-4">
+                  <span className="inline-block px-2.5 py-1 bg-gray-100 text-gray-600 text-xs font-semibold uppercase tracking-wider rounded-full">
+                    {basicPlan.features_title}
+                  </span>
+                </div>
               )}
-              <ul className="flex flex-col gap-3">
+              <div className="space-y-3">
                 {featuresToDisplay.map((feature, index) => (
-                  <li key={`${basicPlan.product_id}-feature-${index}`} className="flex items-start gap-3 text-sm">
-                    <Check className="mt-0.5 h-4 w-4 text-primary shrink-0" />
-                    <span>{feature}</span>
-                  </li>
+                  <div key={`${basicPlan.product_id}-feature-${index}`} className="flex items-start gap-3">
+                    <div className="flex-shrink-0 w-4 h-4 bg-green-100 rounded-full flex items-center justify-center mt-0.5">
+                      <Check className="h-2.5 w-2.5 text-green-600 stroke-[2.5]" />
+                    </div>
+                    <span className="text-sm text-gray-700 font-medium">{feature}</span>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </CardContent>
-            <CardFooter className="flex flex-col gap-3">
-              <Button className="w-full" size="lg" onClick={handleCheckout} disabled={isCheckingOut}>
+            <CardFooter className="px-5 pt-1 flex flex-col gap-3">
+              <Button 
+                className="w-full h-10 text-sm font-semibold rounded-lg shadow-md hover:shadow-lg transition-shadow" 
+                onClick={handleCheckout} 
+                disabled={isCheckingOut}
+              >
                 {isCheckingOut && <Loader className="mr-2 h-4 w-4 animate-spin" />}
                 {t("cta")}
               </Button>
-              <Link href="/pricing" className="text-sm text-muted-foreground hover:text-primary transition-colors text-center">
+              <Link href="/pricing" className="text-xs text-gray-500 hover:text-primary transition-colors text-center font-medium">
                 {t("view_all")}
               </Link>
             </CardFooter>
