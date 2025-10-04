@@ -7,13 +7,14 @@ import { getUserCredits, decreaseCredits, CreditsTransType } from "@/services/cr
 import { isAuthEnabled } from "@/lib/auth";
 import { insertImage } from "@/models/image";
 import { getUuid } from "@/lib/hash";
-import { checkDailyTrial, recordDailyTrial } from "@/services/trial";
+import { checkDailyTrial, recordDailyTrial, getClientIP } from "@/services/trial";
 import { getDrawingPrompt, getModelForStyle } from "@/config/drawing-prompts";
 
 export async function POST(req: Request) {
 try {
     let userUuid = "";
     let isTrialUsage = false;
+    const clientIP = await getClientIP();
     
     // Get user session if auth is enabled
     if (isAuthEnabled()) {
@@ -30,7 +31,7 @@ try {
       // User can use daily trial
       isTrialUsage = true;
       if (process.env.NODE_ENV !== 'production') {
-        console.log(`Using daily trial for ${userUuid ? `user ${userUuid}` : 'anonymous user'}`);
+        console.log(`Using daily trial for ${userUuid ? `user ${userUuid}` : `IP ${clientIP}`}`);
       }
     } else if (isAuthEnabled()) {
       // Trial already used, check authentication and credits
@@ -170,10 +171,11 @@ try {
             try {
               const imageUuid = getUuid();
               const currentTime = new Date();
+              const ownerIdentifier = userUuid || clientIP;
               
               await insertImage({
                 uuid: imageUuid,
-                user_uuid: userUuid || "", // Empty string for trial users
+                user_uuid: ownerIdentifier,
                 original_image_url: inputImageUrl,
                 generated_image_url: res.url || "",
                 style: style,
@@ -186,7 +188,7 @@ try {
                 updated_at: currentTime,
               });
               if (process.env.NODE_ENV !== 'production') {
-                console.log(`Image data stored to database for ${userUuid ? `user ${userUuid}` : 'trial user'}`);
+                console.log(`Image data stored to database for ${userUuid ? `user ${userUuid}` : `trial IP ${clientIP}`}`);
               }
             } catch (dbError) {
               console.error("Failed to store image data to database:", dbError);
@@ -217,7 +219,7 @@ try {
       try {
         await recordDailyTrial(userUuid || undefined);
         if (process.env.NODE_ENV !== 'production') {
-          console.log(`Daily trial recorded for ${userUuid ? `user ${userUuid}` : 'anonymous user'}`);
+          console.log(`Daily trial recorded for ${userUuid ? `user ${userUuid}` : `IP ${clientIP}`}`);
         }
       } catch (trialError) {
         console.error("Failed to record daily trial:", trialError);

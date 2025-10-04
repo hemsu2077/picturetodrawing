@@ -152,6 +152,7 @@ export function RecentDrawings({
   };
 
   // Show for both logged-in users and trial users with results
+  const canManageDrawings = Boolean(session?.user?.uuid);
   const shouldShow = session?.user?.uuid || trialResult || isGenerating || error;
   
   if (!shouldShow) {
@@ -327,12 +328,12 @@ export function RecentDrawings({
         drawing={selectedDrawing}
         isOpen={!!selectedDrawing}
         onClose={() => setSelectedDrawing(null)}
-        showDeleteButton={true}
-        onDelete={(drawing) => {
+        showDeleteButton={canManageDrawings}
+        onDelete={canManageDrawings ? (drawing) => {
           setSelectedDrawing(null);
           setDrawingToDelete(drawing);
           setIsDeleteDialogOpen(true);
-        }}
+        } : undefined}
       />
 
       {/* Delete Confirmation Dialog */}
