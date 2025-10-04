@@ -4,7 +4,7 @@ export type DrawingPromptConfig = Record<string, string>;
 
 // Styles that should use nano-banana model
 // All other styles will use flux-kontext-pro (default)
-const NANO_BANANA_STYLES = new Set(['line-drawing', 'line-art']);
+const NANO_BANANA_STYLES = new Set(['line-drawing', 'line-art', "pencil-sketch-2"]);
 
 // Helper function to determine which model to use for a given style
 export function getModelForStyle(style: string): 'nano-banana' | 'flux-kontext-pro' {

@@ -7,10 +7,10 @@ export interface StyleOption {
 // Popular styles configuration for different pages/contexts
 const DEFAULT_POPULAR_STYLES = [
   'pencil-sketch',
-  'pencil-sketch-2',
   'line-drawing',
   'watercolor-painting',
   'inkart',
+  'superhero-comic'
 ] as const;
 
 export const POPULAR_STYLES_CONFIG = {

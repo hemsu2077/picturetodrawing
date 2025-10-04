@@ -41,8 +41,9 @@ export function PopularStyles({ selectedStyle, onStyleChange, className, configK
                 alt={style.name + " - Popular style"}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-black/20 flex items-end">
-                <div className="w-full p-2 bg-gradient-to-t from-black/60 to-transparent">
+              <div className="absolute inset-0">
+                <div className="absolute inset-x-0 bottom-0 h-1/3 pointer-events-none bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                <div className="absolute inset-x-0 bottom-0 px-2 pb-2">
                   <p className="text-white text-xs font-medium text-center truncate">
                     {style.name}
                   </p>
