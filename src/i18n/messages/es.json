@@ -256,7 +256,15 @@
       "clay": "Claymation",
       "south_park": "South Park",
       "pixel_art": "Arte Pixelado",
-      "manga": "Manga"
+      "manga": "Manga",
+      "oil_painting": "Oil Painting",
+      "splash_watercolor_art": "Splash Watercolor Art",
+      "psychedelic_art": "Psychedelic Art",
+      "graffiti_street_art": "Graffiti Street Art",
+      "shounen_anime": "Shounen Anime",
+      "shoujo_anime": "Shoujo Anime",
+      "3d_chibi": "3D Chibi",
+      "low_poly": "Low Poly"
     },
     "style_modal": {
       "title": "Seleccionar Estilo",

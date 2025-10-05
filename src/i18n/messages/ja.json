@@ -256,7 +256,15 @@
       "clay": "クレイアニメ",
       "south_park": "サウスパーク",
       "pixel_art": "ピクセルアート",
-      "manga": "マンガ"
+      "manga": "マンガ",
+      "oil_painting": "Oil Painting",
+      "splash_watercolor_art": "Splash Watercolor Art",
+      "psychedelic_art": "Psychedelic Art",
+      "graffiti_street_art": "Graffiti Street Art",
+      "shounen_anime": "Shounen Anime",
+      "shoujo_anime": "Shoujo Anime",
+      "3d_chibi": "3D Chibi",
+      "low_poly": "Low Poly"
     },
     "style_modal": {
       "title": "スタイルを選択",

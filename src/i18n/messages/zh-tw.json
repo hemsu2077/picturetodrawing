@@ -256,7 +256,15 @@
       "clay": "黏土風格",
       "south_park": "南方公園",
       "pixel_art": "像素藝術",
-      "manga": "日式漫畫"
+      "manga": "日式漫畫",
+      "oil_painting": "Oil Painting",
+      "splash_watercolor_art": "Splash Watercolor Art",
+      "psychedelic_art": "Psychedelic Art",
+      "graffiti_street_art": "Graffiti Street Art",
+      "shounen_anime": "Shounen Anime",
+      "shoujo_anime": "Shoujo Anime",
+      "3d_chibi": "3D Chibi",
+      "low_poly": "Low Poly"
     },
     "style_modal": {
       "title": "選擇風格",

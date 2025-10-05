@@ -256,7 +256,15 @@
       "clay": "클레이 애니메이션",
       "south_park": "사우스 파크",
       "pixel_art": "픽셀 아트",
-      "manga": "망가"
+      "manga": "망가",
+      "oil_painting": "Oil Painting",
+      "splash_watercolor_art": "Splash Watercolor Art",
+      "psychedelic_art": "Psychedelic Art",
+      "graffiti_street_art": "Graffiti Street Art",
+      "shounen_anime": "Shounen Anime",
+      "shoujo_anime": "Shoujo Anime",
+      "3d_chibi": "3D Chibi",
+      "low_poly": "Low Poly"
     },
     "style_modal": {
       "title": "스타일 선택",

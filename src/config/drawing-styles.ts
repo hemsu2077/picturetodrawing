@@ -58,14 +58,24 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/charcoal-drawing.webp'
   },
   {
-    id: 'watercolor-painting',
-    name: t('drawing_generator.styles.watercolor_painting'),
-    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/water-color.webp'
+    id: 'inkart',
+    name: t('drawing_generator.styles.inkart'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/inkart.webp'
   },
   {
     id: 'color-pencil-drawing',
     name: t('drawing_generator.styles.color_pencil_drawing'),
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/color-pencil-drawing.webp'
+  },
+  {
+    id: 'watercolor-painting',
+    name: t('drawing_generator.styles.watercolor_painting'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/water-color.webp'
+  },
+  {
+    id: 'splash-watercolor-art',
+    name: t('drawing_generator.styles.splash_watercolor_art'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/splash-watercolor.webp?v=2'
   },
   {
     id: 'kawaii-pastel-doodle',
@@ -78,14 +88,24 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/van-gogh.webp'
   },
   {
+    id: 'oil-painting',
+    name: t('drawing_generator.styles.oil_painting'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/oil-painting.webp'
+  },
+  {
     id: 'pop-art',
     name: t('drawing_generator.styles.pop_art'),
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/pop-art.webp'
   },
   {
-    id: 'inkart',
-    name: t('drawing_generator.styles.inkart'),
-    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/inkart.webp'
+    id: 'psychedelic-art',
+    name: t('drawing_generator.styles.psychedelic_art'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/psychedelic-art.webp'
+  },
+  {
+    id: 'graffiti-street-art',
+    name: t('drawing_generator.styles.graffiti_street_art'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/graffiti-street-art.webp'
   },
   {
     id: 'pure-cartoon',
@@ -103,6 +123,16 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/90s-retro-anime.webp'
   },
   {
+    id: 'shounen-anime',
+    name: t('drawing_generator.styles.shounen_anime'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/shounen-anime.webp'
+  },
+  {
+    id: 'shoujo-anime',
+    name: t('drawing_generator.styles.shoujo_anime'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/shoujo-anime.webp'
+  },
+  {
     id: 'pixar-3d',
     name: t('drawing_generator.styles.pixar_3d'),
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/pixar-3d.webp'
@@ -111,6 +141,11 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
     id: 'disney-3d',
     name: t('drawing_generator.styles.disney_3d'),
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/disney-3d.webp'
+  },
+  {
+    id: '3d-chibi',
+    name: t('drawing_generator.styles.3d_chibi'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/3d-chibi.webp'
   },
   {
     id: 'simpsons',
@@ -161,6 +196,11 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
     id: 'clay',
     name: t('drawing_generator.styles.clay'),
     image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/clay.webp'
+  },
+  {
+    id: 'low-poly',
+    name: t('drawing_generator.styles.low_poly'),
+    image: 'https://pub-66460257279749d4984c90d98154f46d.r2.dev/styles/low-poly.webp'
   },
 
 ];

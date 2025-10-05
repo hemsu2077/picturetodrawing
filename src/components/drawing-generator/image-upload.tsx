@@ -21,10 +21,10 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
 
   // Sample images URLs
   const sampleImages = [
-    'https://files.picturetodrawing.com/sample/sample-1.webp?v=1',
-    'https://files.picturetodrawing.com/sample/sample-2.webp?v=1',
-    'https://files.picturetodrawing.com/sample/sample-3.webp?v=1',
-    'https://files.picturetodrawing.com/sample/sample-4.webp?v=1',
+    'https://files.picturetodrawing.com/sample/sample-1.webp',
+    'https://files.picturetodrawing.com/sample/sample-2.webp',
+    'https://files.picturetodrawing.com/sample/sample-3.webp',
+    'https://files.picturetodrawing.com/sample/sample-4.webp',
   ];
 
   const handleFileSelect = (file: File) => {
