@@ -257,14 +257,14 @@
       "south_park": "南方公园",
       "pixel_art": "像素艺术",
       "manga": "日式漫画",
-      "oil_painting": "Oil Painting",
-      "splash_watercolor_art": "Splash Watercolor Art",
-      "psychedelic_art": "Psychedelic Art",
-      "graffiti_street_art": "Graffiti Street Art",
-      "shounen_anime": "Shounen Anime",
-      "shoujo_anime": "Shoujo Anime",
-      "3d_chibi": "3D Chibi",
-      "low_poly": "Low Poly"
+      "oil_painting": "油画",
+      "splash_watercolor_art": "泼墨水彩艺术",
+      "psychedelic_art": "迷幻艺术",
+      "graffiti_street_art": "涂鸦街头艺术",
+      "shounen_anime": "少年动漫",
+      "shoujo_anime": "少女动漫",
+      "3d_chibi": "3D萌系",
+      "low_poly": "低多边形"
     },
     "style_modal": {
       "title": "选择风格",

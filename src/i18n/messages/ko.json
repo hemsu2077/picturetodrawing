@@ -257,14 +257,14 @@
       "south_park": "사우스 파크",
       "pixel_art": "픽셀 아트",
       "manga": "망가",
-      "oil_painting": "Oil Painting",
-      "splash_watercolor_art": "Splash Watercolor Art",
-      "psychedelic_art": "Psychedelic Art",
-      "graffiti_street_art": "Graffiti Street Art",
-      "shounen_anime": "Shounen Anime",
-      "shoujo_anime": "Shoujo Anime",
-      "3d_chibi": "3D Chibi",
-      "low_poly": "Low Poly"
+      "oil_painting": "유화",
+      "splash_watercolor_art": "스플래시 수채화 아트",
+      "psychedelic_art": "사이키델릭 아트",
+      "graffiti_street_art": "그래피티 스트리트 아트",
+      "shounen_anime": "소년 애니메이션",
+      "shoujo_anime": "소녀 애니메이션",
+      "3d_chibi": "3D 치비",
+      "low_poly": "로우 폴리"
     },
     "style_modal": {
       "title": "스타일 선택",

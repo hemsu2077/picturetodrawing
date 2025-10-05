@@ -257,14 +257,14 @@
       "south_park": "サウスパーク",
       "pixel_art": "ピクセルアート",
       "manga": "マンガ",
-      "oil_painting": "Oil Painting",
-      "splash_watercolor_art": "Splash Watercolor Art",
-      "psychedelic_art": "Psychedelic Art",
-      "graffiti_street_art": "Graffiti Street Art",
-      "shounen_anime": "Shounen Anime",
-      "shoujo_anime": "Shoujo Anime",
-      "3d_chibi": "3D Chibi",
-      "low_poly": "Low Poly"
+      "oil_painting": "油絵",
+      "splash_watercolor_art": "スプラッシュ水彩アート",
+      "psychedelic_art": "サイケデリックアート",
+      "graffiti_street_art": "グラフィティストリートアート",
+      "shounen_anime": "少年アニメ",
+      "shoujo_anime": "少女アニメ",
+      "3d_chibi": "3Dちび",
+      "low_poly": "ローポリ"
     },
     "style_modal": {
       "title": "スタイルを選択",

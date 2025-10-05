@@ -38,7 +38,7 @@ export function PopularStyles({ selectedStyle, onStyleChange, className, configK
             <div className="aspect-square relative">
               <img
                 src={style.image}
-                alt={style.name + " - Popular style"}
+                alt={style.name + " - Picture to Drawing Styles"}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0">
