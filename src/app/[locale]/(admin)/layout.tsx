@@ -52,6 +52,11 @@ export default async function AdminLayout({
           url: "/admin/orders",
         },
         {
+          title: "Credits",
+          icon: "RiCoinLine",
+          url: "/admin/credits",
+        },
+        {
           title: "Posts",
           url: "/admin/posts",
           icon: "RiArticleLine",

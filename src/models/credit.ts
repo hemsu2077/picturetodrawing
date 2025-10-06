@@ -74,3 +74,32 @@ export async function getCreditsByUserUuid(
 
   return data;
 }
+
+export async function getAllCredits(
+  page: number = 1,
+  limit: number = 50
+): Promise<(typeof credits.$inferSelect)[] | undefined> {
+  const data = await db()
+    .select()
+    .from(credits)
+    .orderBy(desc(credits.created_at))
+    .limit(limit)
+    .offset((page - 1) * limit);
+
+  return data;
+}
+
+export async function getSystemAddedCredits(
+  page: number = 1,
+  limit: number = 50
+): Promise<(typeof credits.$inferSelect)[] | undefined> {
+  const data = await db()
+    .select()
+    .from(credits)
+    .where(eq(credits.trans_type, "system_add"))
+    .orderBy(desc(credits.created_at))
+    .limit(limit)
+    .offset((page - 1) * limit);
+
+  return data;
+}
