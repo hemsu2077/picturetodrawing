@@ -32,12 +32,9 @@ import { Menu } from "lucide-react";
 import SignToggle from "@/components/sign/toggle";
 import ThemeToggle from "@/components/theme/toggle";
 import { cn } from "@/lib/utils";
-import { useAppContext } from "@/contexts/app";
-import { isAuthEnabled } from "@/lib/auth";
 import { useRouter } from "@/i18n/navigation";
 
 export default function Header({ header }: { header: HeaderType }) {
-  const { user, setShowSignModal } = useAppContext();
   const router = useRouter();
 
   if (header.disabled) {
@@ -45,13 +42,7 @@ export default function Header({ header }: { header: HeaderType }) {
   }
 
   const handleFreeCreditsClick = (e: React.MouseEvent, url: string) => {
-    // Check if this is the Free Credits button and auth is enabled
-    if (url.includes('/free-credits') && isAuthEnabled() && !user) {
-      e.preventDefault();
-      setShowSignModal(true);
-      return;
-    }
-    // For other buttons or when user is logged in, proceed normally
+    // Navigate to the URL - the page will handle showing login landing if needed
     router.push(url);
   };
 

@@ -152,6 +152,8 @@
   "my_drawings": {
     "title": "Mis Dibujos",
     "description": "{count} dibujos en total",
+    "meta_title": "Mis Dibujos - Foto en Dibujo IA",
+    "meta_description": "Ve y gestiona todos tus dibujos generados por IA en un solo lugar. Accede a tu colección de bocetos, pinturas y creaciones artísticas.",
     "no_drawings_title": "Aún No Hay Dibujos",
     "no_drawings_description": "Aún no has creado ningún dibujo. ¡Comienza convirtiendo tu primera imagen!",
     "convert_to_drawing": "Convertir en Dibujo",
@@ -294,5 +296,12 @@
     "cancel_anytime": "Cancela en cualquier momento",
     "cta": "Comenzar",
     "view_all": "Ver todos los planes"
+  },
+  "login_required": {
+    "my_drawings_title": "Inicia sesión para ver tus dibujos",
+    "my_drawings_description": "Ve y gestiona todos tus dibujos en un solo lugar",
+    "free_credits_title": "Inicia sesión para obtener créditos gratis",
+    "free_credits_description": "Regístrate diariamente para ganar créditos gratis",
+    "sign_in_button": "Iniciar sesión"
   }
 }

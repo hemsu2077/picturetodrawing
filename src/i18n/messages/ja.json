@@ -152,6 +152,8 @@
   "my_drawings": {
     "title": "マイイラスト",
     "description": "合計{count}件のイラスト",
+    "meta_title": "マイイラスト - 写真イラスト化AI",
+    "meta_description": "AI生成されたすべてのイラストを一箇所で表示・管理できます。スケッチ、絵画、アート作品のコレクションにアクセスしましょう。",
     "no_drawings_title": "まだイラストがありません",
     "no_drawings_description": "まだイラストを作成していません。最初の画像を変換してみましょう！",
     "convert_to_drawing": "イラストに変換",
@@ -294,5 +296,12 @@
     "cancel_anytime": "いつでも解約可能",
     "cta": "今すぐ始める",
     "view_all": "すべてのプランを見る"
+  },
+  "login_required": {
+    "my_drawings_title": "サインインしてイラストを表示",
+    "my_drawings_description": "すべてのイラストを一箇所で表示・管理",
+    "free_credits_title": "サインインして無料クレジットを取得",
+    "free_credits_description": "毎日チェックインして無料クレジットを獲得",
+    "sign_in_button": "サインイン"
   }
 }

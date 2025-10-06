@@ -152,6 +152,8 @@
   "my_drawings": {
     "title": "Mes dessins",
     "description": "{count} dessins au total",
+    "meta_title": "Mes Dessins - Photo en dessin IA",
+    "meta_description": "Visualisez et gérez tous vos dessins générés par IA en un seul endroit. Accédez à votre collection de croquis, peintures et créations artistiques.",
     "no_drawings_title": "Aucun dessin pour l'instant",
     "no_drawings_description": "Vous n'avez pas encore créé de dessins. Commencez par convertir votre première image !",
     "convert_to_drawing": "Convertir en dessin",
@@ -294,5 +296,12 @@
     "cancel_anytime": "Annulez à tout moment",
     "cta": "Commencer",
     "view_all": "Voir toutes les offres"
+  },
+  "login_required": {
+    "my_drawings_title": "Connectez-vous pour voir vos dessins",
+    "my_drawings_description": "Visualisez et gérez tous vos dessins en un seul endroit",
+    "free_credits_title": "Connectez-vous pour obtenir des crédits gratuits",
+    "free_credits_description": "Enregistrez-vous quotidiennement pour gagner des crédits gratuits",
+    "sign_in_button": "Se connecter"
   }
 }

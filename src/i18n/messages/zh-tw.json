@@ -152,6 +152,8 @@
   "my_drawings": {
     "title": "我的手繪作品",
     "description": "共{count}幅手繪作品",
+    "meta_title": "我的手繪作品 - 圖片轉手繪 AI",
+    "meta_description": "在一個地方查看和管理您所有的AI生成手繪作品。訪問您的素描、繪畫和藝術創作集合。",
     "no_drawings_title": "暫無手繪作品",
     "no_drawings_description": "您還沒有創建任何手繪作品。快來轉換您的第一張圖片吧！",
     "convert_to_drawing": "轉換為手繪",
@@ -294,5 +296,12 @@
     "cancel_anytime": "隨時取消",
     "cta": "立即開始",
     "view_all": "查看所有方案"
+  },
+  "login_required": {
+    "my_drawings_title": "登入查看您的手繪作品",
+    "my_drawings_description": "查看和管理您的所有手繪作品",
+    "free_credits_title": "登入獲取免費積分",
+    "free_credits_description": "每日簽到賺取免費積分",
+    "sign_in_button": "登入"
   }
 }

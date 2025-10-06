@@ -152,6 +152,8 @@
   "my_drawings": {
     "title": "My Drawings",
     "description": "{count} total drawings",
+    "meta_title": "My Drawings - Picture to Drawing AI",
+    "meta_description": "View and manage all your AI-generated drawings in one place. Access your collection of sketches, paintings, and artistic creations.",
     "no_drawings_title": "No Drawings Yet",
     "no_drawings_description": "You haven't created any drawings yet. Start by converting your first image!",
     "convert_to_drawing": "Convert to Drawing",
@@ -294,5 +296,12 @@
     "cancel_anytime": "Cancel anytime",
     "cta": "Get started",
     "view_all": "View all plans"
+  },
+  "login_required": {
+    "my_drawings_title": "Sign in to view your drawings",
+    "my_drawings_description": "View and manage all your drawings in one place",
+    "free_credits_title": "Sign in to get free credits",
+    "free_credits_description": "Check in daily to earn free credits",
+    "sign_in_button": "Sign In"
   }
 }

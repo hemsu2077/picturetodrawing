@@ -15,7 +15,7 @@ interface MyDrawingsClientProps {
   drawings: Drawing[];
 }
 
-const ITEMS_PER_PAGE = 12;
+const ITEMS_PER_PAGE = 15;
 
 export default function MyDrawingsClient({ drawings }: MyDrawingsClientProps) {
   const t = useTranslations();
@@ -95,7 +95,7 @@ export default function MyDrawingsClient({ drawings }: MyDrawingsClientProps) {
         </p>
       </div>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-8">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4 mb-8">
         {currentDrawings.map((drawing) => (
           <DrawingCard
             key={drawing.uuid}

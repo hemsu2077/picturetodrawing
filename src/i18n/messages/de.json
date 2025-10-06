@@ -152,6 +152,8 @@
   "my_drawings": {
     "title": "Meine Zeichnungen",
     "description": "{count} Zeichnungen insgesamt",
+    "meta_title": "Meine Zeichnungen - Bild zu Zeichnung KI",
+    "meta_description": "Sehen und verwalten Sie alle Ihre KI-generierten Zeichnungen an einem Ort. Greifen Sie auf Ihre Sammlung von Skizzen, Gemälden und künstlerischen Kreationen zu.",
     "no_drawings_title": "Noch keine Zeichnungen",
     "no_drawings_description": "Sie haben noch keine Zeichnungen erstellt. Beginnen Sie mit der Umwandlung Ihres ersten Bildes!",
     "convert_to_drawing": "In Zeichnung umwandeln",
@@ -294,5 +296,12 @@
     "cancel_anytime": "Jederzeit kündbar",
     "cta": "Jetzt starten",
     "view_all": "Alle Tarife ansehen"
+  },
+  "login_required": {
+    "my_drawings_title": "Melden Sie sich an, um Ihre Zeichnungen anzuzeigen",
+    "my_drawings_description": "Sehen und verwalten Sie alle Ihre Zeichnungen an einem Ort",
+    "free_credits_title": "Melden Sie sich an, um kostenlose Credits zu erhalten",
+    "free_credits_description": "Täglich einchecken, um kostenlose Credits zu verdienen",
+    "sign_in_button": "Anmelden"
   }
 }

@@ -31,12 +31,6 @@ export default async function ({ children }: { children: ReactNode }) {
           is_active: false,
         },
         {
-          title: t("my_drawings.title"),
-          url: "/my-drawings",
-          icon: "RiImageLine",
-          is_active: false,
-        },
-        {
           title: t("user.my_orders"),
           url: "/my-orders",
           icon: "RiShoppingBagLine",
