@@ -506,6 +506,11 @@
               "title": "AIStage",
               "url": "https://aistage.net",
               "target": "_blank"
+            },
+            {
+              "title": "AIToolly",
+              "url": "https://aitoolly.com/",
+              "target": "_blank"
             }
           ]
         }
