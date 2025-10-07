@@ -101,6 +101,7 @@ export default function Footer({ footer }: { footer: FooterType }) {
             <a title="ai tools code.market" href="https://code.market?code.market=verified"><img alt="ai tools code.market" title="ai tools code.market" src="https://code.market/assets/manage-product/featured-logo-bright.svg" width="160" height="54"/></a>
             <a href="https://tinylaunch.com" target="_blank" rel="noopener"> <img src="https://tinylaunch.com/tinylaunch_badge_featured_on.svg" alt="TinyLaunch Badge" width="140" height="54"/></a>
             <a href="https://dang.ai/" target="_blank" ><img src="https://cdn.prod.website-files.com/63d8afd87da01fb58ea3fbcb/6487e2868c6c8f93b4828827_dang-badge.png" alt="Dang.ai" width="120" height="54"/></a>
+            <a href="https://www.saasbaba.com/" target="_blank" rel="noopener noreferrer"><img src="https://saasbaba.com/wp-content/uploads/2023/05/featured-on-sb.png" alt="SaasBaba.com" width="120" height="38"/></a>
           </div>
         </footer>
       </div>
