@@ -101,12 +101,6 @@ export default function Footer({ footer }: { footer: FooterType }) {
             <a title="ai tools code.market" href="https://code.market?code.market=verified"><img alt="ai tools code.market" title="ai tools code.market" src="https://code.market/assets/manage-product/featured-logo-bright.svg" width="160" height="54"/></a>
             <a href="https://tinylaunch.com" target="_blank" rel="noopener"> <img src="https://tinylaunch.com/tinylaunch_badge_featured_on.svg" alt="TinyLaunch Badge" width="140" height="54"/></a>
             <a href="https://dang.ai/" target="_blank" ><img src="https://cdn.prod.website-files.com/63d8afd87da01fb58ea3fbcb/6487e2868c6c8f93b4828827_dang-badge.png" alt="Dang.ai" width="120" height="54"/></a>
-            <a href="https://toolsfine.com/" target="_blank" ><img src="https://toolsfine.com/wp-content/uploads/2023/08/Toolsfine-logo-day-0531-80x320-1.webp" alt="Toolsfine" width="120" height="54"/></a>
-            <a href="https://findly.tools/picture-to-drawing?utm_source=picture-to-drawing" target="_blank"> <img  src="https://findly.tools/badges/findly-tools-badge-light.svg" alt="Featured on findly.tools"  width="120" /></a>
-            <a href="https://dofollow.tools" target="_blank"><img src="https://dofollow.tools/badge/badge_light.svg" alt="Featured on Dofollow.Tools" width="135" height="30" /></a>
-            <a href="https://launchboard.dev" target="_blank" rel="noopener noreferrer"><img src="https://launchboard.dev/launchboard-badge.png" alt="Launched on LaunchBoard - Product Launch Platform" width="100" height="20" /> </a>
-            <a href="https://startupslab.site" target="_blank" rel="noopener"> <img src="https://cdn.startupslab.site/site-images/badge-light.png" alt="Featured on Startups Lab" width="120" height="20" /> </a>
-            <a href="https://topfreeaitools.com/ai/picture-to-drawing" target="_blank"><img src="https://ff65dcf08ebd5eb1c022b44dd88016ac.cdn.bubble.io/f1724746116087x632750678197528400/badge%20white.png?_gl=1*1wvcbnr*_gcl_au*MTg3MzI0ODMyLjE3MjE2MjAzNjA.*_ga*NTIyODE4MzEyLjE3MDU5OTg0MTc.*_ga_BFPVR2DEE2*MTcyNDc0NTM2OS4yMjkuMS4xNzI0NzQ2MjY2LjYwLjAuMA.." alt="Featured on Top Free AI Tools" width="180" height="54" /></a>
           </div>
         </footer>
       </div>
