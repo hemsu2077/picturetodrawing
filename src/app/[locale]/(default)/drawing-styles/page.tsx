@@ -1,79 +1,64 @@
 import { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 import { getAllDrawingStyles } from '@/config/drawing-styles';
-import { STYLE_CATEGORIES, STYLE_METADATA } from '@/config/style-categories';
+import { STYLE_CATEGORIES } from '@/config/style-categories';
 import { CategorySection, CategoryNav, Breadcrumb } from '@/components/drawing-styles';
 import { Button } from '@/components/ui/button';
 import { Link } from '@/i18n/navigation';
 import { Sparkles } from 'lucide-react';
+import { getDrawingStylesPage } from '@/services/page';
 
-export const metadata: Metadata = {
-  title: 'Drawing Styles for Photos | 38+ Styles | Picture to Drawing',
-  description: 'Explore 38+ drawing styles for your photos. From line drawings to watercolor art, anime to 3D cartoon styles. Find the perfect style for your image transformation.',
-  openGraph: {
-    title: 'Drawing Styles for Photos | Picture to Drawing',
-    description: 'Discover 38+ unique drawing styles to transform your photos. Line art, watercolor, anime, cartoon, and more.',
-    type: 'website',
-  },
-  alternates: {
-    canonical: '/drawing-styles'
-  },
-  robots: {
-    index: true,
-    follow: true
-  }
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const page = await getDrawingStylesPage(locale);
+  
+  const normalizedBaseUrl = process.env.NEXT_PUBLIC_WEB_URL
+    ? process.env.NEXT_PUBLIC_WEB_URL.replace(/\/+$/, '')
+    : undefined;
+  const localizedPath =
+    locale && locale !== 'en' ? `/${locale}/drawing-styles` : '/drawing-styles';
+  const canonicalUrl = normalizedBaseUrl
+    ? `${normalizedBaseUrl}${localizedPath}`
+    : localizedPath;
 
-export default function DrawingStylesPage() {
-  // For now, use a simple translation function (will be replaced with i18n later)
-  const t = (key: string) => {
-    // Simple mapping for now
-    const translations: Record<string, string> = {
-      'drawing_generator.styles.pencil_sketch': 'Pencil Sketch',
-      'drawing_generator.styles.pencil_sketch_2': 'Pencil Sketch 2',
-      'drawing_generator.styles.line_drawing': 'Line Drawing',
-      'drawing_generator.styles.line_drawing_2': 'Line Drawing 2',
-      'drawing_generator.styles.line_art': 'Line Art',
-      'drawing_generator.styles.bold_outline': 'Bold Outline',
-      'drawing_generator.styles.charcoal_drawing': 'Charcoal Drawing',
-      'drawing_generator.styles.inkart': 'Ink Art',
-      'drawing_generator.styles.simple_drawing': 'Simple Drawing',
-      'drawing_generator.styles.color_pencil_drawing': 'Color Pencil Drawing',
-      'drawing_generator.styles.watercolor_painting': 'Watercolor Painting',
-      'drawing_generator.styles.splash_watercolor_art': 'Splash Watercolor Art',
-      'drawing_generator.styles.kawaii_pastel_doodle': 'Kawaii Pastel Doodle',
-      'drawing_generator.styles.van_gogh': 'Van Gogh Style',
-      'drawing_generator.styles.oil_painting': 'Oil Painting',
-      'drawing_generator.styles.pop_art': 'Pop Art',
-      'drawing_generator.styles.psychedelic_art': 'Psychedelic Art',
-      'drawing_generator.styles.graffiti_street_art': 'Graffiti Street Art',
-      'drawing_generator.styles.pure_cartoon': 'Pure Cartoon',
-      'drawing_generator.styles.studio_ghibli': 'Studio Ghibli',
-      'drawing_generator.styles.90s_retro_anime': '90s Retro Anime',
-      'drawing_generator.styles.shounen_anime': 'Shounen Anime',
-      'drawing_generator.styles.shoujo_anime': 'Shoujo Anime',
-      'drawing_generator.styles.pixar_3d': 'Pixar 3D',
-      'drawing_generator.styles.disney_3d': 'Disney 3D',
-      'drawing_generator.styles.3d_chibi': '3D Chibi',
-      'drawing_generator.styles.simpsons': 'Simpsons',
-      'drawing_generator.styles.superhero_comic': 'Superhero Comic',
-      'drawing_generator.styles.manga': 'Manga',
-      'drawing_generator.styles.cyberpunk_neon': 'Cyberpunk Neon',
-      'drawing_generator.styles.gta_style': 'GTA Style',
-      'drawing_generator.styles.south_park': 'South Park',
-      'drawing_generator.styles.rick_morty': 'Rick & Morty',
-      'drawing_generator.styles.snoopy': 'Snoopy',
-      'drawing_generator.styles.pixel_art': 'Pixel Art',
-      'drawing_generator.styles.clay': 'Clay Style',
-      'drawing_generator.styles.low_poly': 'Low Poly',
-    };
-    return translations[key] || key;
+  return {
+    title: page.meta?.title,
+    description: page.meta?.description,
+    openGraph: {
+      title: page.meta?.title,
+      description: page.meta?.description,
+      type: 'website',
+    },
+    alternates: {
+      canonical: canonicalUrl || undefined,
+    },
+    robots: {
+      index: true,
+      follow: true
+    }
   };
+}
+
+export default async function DrawingStylesPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'drawing_generator' });
+  const page = await getDrawingStylesPage(locale);
 
   const allStyles = getAllDrawingStyles(t);
 
-  // Organize styles by category
+  // Organize styles by category with i18n
   const categorizedStyles = STYLE_CATEGORIES.map((category) => ({
     ...category,
+    name: page.categories?.[category.id]?.name || category.name,
+    description: page.categories?.[category.id]?.description || category.description,
     styles: category.styles
       .map((styleId) => allStyles.find((s) => s.id === styleId))
       .filter((style): style is NonNullable<typeof style> => style !== undefined)
@@ -83,8 +68,8 @@ export default function DrawingStylesPage() {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
-    name: 'Drawing Styles for Photos',
-    description: 'Explore 38+ drawing styles for your photos. From line drawings to watercolor art, anime to 3D cartoon styles.',
+    name: page.structured_data?.name,
+    description: page.structured_data?.description,
     url: `${process.env.NEXT_PUBLIC_WEB_URL}/drawing-styles`,
     breadcrumb: {
       '@type': 'BreadcrumbList',
@@ -92,13 +77,13 @@ export default function DrawingStylesPage() {
         {
           '@type': 'ListItem',
           position: 1,
-          name: 'Home',
+          name: page.structured_data?.breadcrumb_home,
           item: process.env.NEXT_PUBLIC_WEB_URL
         },
         {
           '@type': 'ListItem',
           position: 2,
-          name: 'Drawing Styles',
+          name: page.structured_data?.breadcrumb_drawing_styles,
           item: `${process.env.NEXT_PUBLIC_WEB_URL}/drawing-styles`
         }
       ]
@@ -116,29 +101,30 @@ export default function DrawingStylesPage() {
       {/* Hero Section */}
       <section className="py-12 lg:py-16 border-b">
         <div className="container">
-          <Breadcrumb items={[{ label: 'Drawing Styles' }]} />
+          <Breadcrumb 
+            items={[{ label: page.breadcrumb?.drawing_styles || 'Drawing Styles' }]} 
+            homeLabel={page.breadcrumb?.home}
+          />
           
           <div className="max-w-3xl space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
               <Sparkles className="size-4" />
-              38+ Unique Styles
+              {page.hero?.badge}
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-              Drawing Styles for Photos
+              {page.hero?.title}
             </h1>
             
             <p className="text-xl text-muted-foreground leading-relaxed">
-              Transform your photos with our collection of 38+ professional drawing styles. 
-              From classic line drawings to modern anime art, find the perfect style to bring 
-              your creative vision to life.
+              {page.hero?.description}
             </p>
           </div>
         </div>
       </section>
 
       {/* Category Navigation */}
-      <CategoryNav categories={STYLE_CATEGORIES} />
+      <CategoryNav categories={categorizedStyles} />
 
       {/* Category Sections */}
       <div className="container py-12 space-y-20">
@@ -149,7 +135,8 @@ export default function DrawingStylesPage() {
             name={category.name}
             description={category.description}
             styles={category.styles}
-            styleMetadata={STYLE_METADATA}
+            styleMetadata={page.style_metadata || {}}
+            styleCardLabels={page.style_card}
           />
         ))}
       </div>
@@ -159,15 +146,14 @@ export default function DrawingStylesPage() {
         <div className="container">
           <div className="max-w-3xl mx-auto text-center space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold">
-              Ready to Transform Your Photos?
+              {page.cta?.title}
             </h2>
             <p className="text-lg text-muted-foreground">
-              Start creating stunning artwork with our AI-powered drawing generator. 
-              Try any style for free today.
+              {page.cta?.description}
             </p>
             <Button asChild size="lg" className="mt-4">
               <Link href="/#drawing-generator">
-                Get Started Free
+                {page.cta?.button}
               </Link>
             </Button>
           </div>

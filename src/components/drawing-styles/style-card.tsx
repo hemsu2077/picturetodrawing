@@ -12,6 +12,8 @@ interface StyleCardProps {
   description: string;
   hasLandingPage?: boolean;
   landingPageUrl?: string;
+  learnMoreLabel?: string;
+  tryNowLabel?: string;
   className?: string;
 }
 
@@ -22,6 +24,8 @@ export function StyleCard({
   description,
   hasLandingPage = false,
   landingPageUrl,
+  learnMoreLabel,
+  tryNowLabel,
   className
 }: StyleCardProps) {
   const router = useRouter();
@@ -51,7 +55,7 @@ export function StyleCard({
       <div className="relative aspect-[4/3] overflow-hidden bg-muted">
         <Image
           src={image}
-          alt={`${name} style example`}
+          alt={`${name} - Picture to Drawing Styles`}
           fill
           className="object-cover transition-transform duration-300 group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -74,7 +78,7 @@ export function StyleCard({
         </div>
 
         <div className="flex items-center justify-between text-sm text-muted-foreground">
-          <span>{hasLandingPage ? 'Learn More' : 'Try Now'}</span>
+          <span>{tryNowLabel}</span>
           <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
         </div>
       </div>

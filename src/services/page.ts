@@ -1,4 +1,4 @@
-import { LandingPage, PricingPage, ShowcasePage, PhotoTransformationPage } from "@/types/pages/landing";
+import { LandingPage, PricingPage, ShowcasePage, PhotoTransformationPage, DrawingStylesPage } from "@/types/pages/landing";
 import { FreeCreditsPage } from "@/types/pages/free-credits";
 import { PhotoTransformationSlug } from "@/config/photo-transformations";
 
@@ -29,10 +29,14 @@ export async function getFreeCreditsPage(locale: string): Promise<FreeCreditsPag
   return (await getPage("free-credits", locale)) as FreeCreditsPage;
 }
 
+export async function getDrawingStylesPage(locale: string): Promise<DrawingStylesPage> {
+  return (await getPage("drawing-styles", locale)) as DrawingStylesPage;
+}
+
 export async function getPage(
   name: string,
   locale: string
-): Promise<LandingPage | PricingPage | ShowcasePage | PhotoTransformationPage | FreeCreditsPage> {
+): Promise<LandingPage | PricingPage | ShowcasePage | PhotoTransformationPage | FreeCreditsPage | DrawingStylesPage> {
   try {
     if (locale === "zh-CN") {
       locale = "zh";

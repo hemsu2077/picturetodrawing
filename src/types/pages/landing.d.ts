@@ -63,3 +63,45 @@ export interface PricingPage {
 export interface ShowcasePage {
   showcase?: Section;
 }
+
+export interface DrawingStylesPage {
+  meta?: {
+    title?: string;
+    description?: string;
+  };
+  hero?: {
+    badge?: string;
+    title?: string;
+    description?: string;
+  };
+  breadcrumb?: {
+    home?: string;
+    drawing_styles?: string;
+  };
+  categories?: {
+    [key: string]: {
+      name?: string;
+      description?: string;
+    };
+  };
+  style_metadata?: {
+    [key: string]: {
+      description?: string;
+    };
+  };
+  style_card?: {
+    learn_more?: string;
+    try_now?: string;
+  };
+  cta?: {
+    title?: string;
+    description?: string;
+    button?: string;
+  };
+  structured_data?: {
+    name?: string;
+    description?: string;
+    breadcrumb_home?: string;
+    breadcrumb_drawing_styles?: string;
+  };
+}

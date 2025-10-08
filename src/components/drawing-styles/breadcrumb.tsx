@@ -8,9 +8,10 @@ interface BreadcrumbItem {
 
 interface BreadcrumbProps {
   items: BreadcrumbItem[];
+  homeLabel?: string;
 }
 
-export function Breadcrumb({ items }: BreadcrumbProps) {
+export function Breadcrumb({ items, homeLabel }: BreadcrumbProps) {
   return (
     <nav aria-label="Breadcrumb" className="mb-8">
       <ol className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -20,7 +21,7 @@ export function Breadcrumb({ items }: BreadcrumbProps) {
             className="flex items-center hover:text-foreground transition-colors"
           >
             <Home className="size-4" />
-            <span className="sr-only">Home</span>
+            <span className="sr-only">{homeLabel || 'Home'}</span>
           </Link>
         </li>
         

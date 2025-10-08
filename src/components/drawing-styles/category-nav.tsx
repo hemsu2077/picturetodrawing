@@ -2,10 +2,14 @@
 
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { StyleCategory } from '@/config/style-categories';
+interface Category {
+  id: string;
+  name: string;
+  [key: string]: any;
+}
 
 interface CategoryNavProps {
-  categories: StyleCategory[];
+  categories: Category[];
 }
 
 export function CategoryNav({ categories }: CategoryNavProps) {

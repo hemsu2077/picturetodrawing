@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "Drawing Styles for Photos | 38+ Styles | Picture to Drawing",
+    "description": "Explore 38+ drawing styles for your photos. From line drawings to watercolor art, anime to 3D cartoon styles. Find the perfect style for your image transformation."
+  },
+  "hero": {
+    "badge": "38+ Unique Styles",
+    "title": "Drawing Styles for Photos",
+    "description": "Transform your photos with our collection of 38+ professional drawing styles. From classic line drawings to modern anime art, find the perfect style to bring your creative vision to life."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "drawing_styles": "Drawing Styles"
+  },
+  "categories": {
+    "drawing": {
+      "name": "Photo to Drawing",
+      "description": "Transform your photos into classic line drawings and sketches. Perfect for creating artistic portraits, illustrations, and minimalist designs with clean lines and elegant simplicity."
+    },
+    "art": {
+      "name": "Photo to Art",
+      "description": "Convert your photos into stunning artistic masterpieces. From watercolor paintings to Van Gogh-inspired styles, explore various painting techniques and artistic expressions."
+    },
+    "cartoon": {
+      "name": "Photo to Cartoon",
+      "description": "Turn your photos into fun cartoon characters. Choose from popular cartoon styles including Simpsons, South Park, Rick & Morty, and more iconic animation styles."
+    },
+    "anime": {
+      "name": "Photo to Anime",
+      "description": "Transform your photos into beautiful anime and manga art. From Studio Ghibli to modern anime styles, create stunning Japanese animation-inspired artwork."
+    },
+    "modern": {
+      "name": "Photo to 3D & Modern",
+      "description": "Explore contemporary and digital art styles. From pixel art to cyberpunk aesthetics, discover modern artistic transformations for your photos."
+    }
+  },
+  "style_metadata": {
+    "line-drawing": {
+      "description": "Convert your photos into elegant line drawings with clean, minimalist strokes."
+    },
+    "ghibli-style": {
+      "description": "Transform your photos into magical Studio Ghibli-inspired anime art."
+    },
+    "line-drawing-2": {
+      "description": "Alternative line drawing style with softer, more organic lines."
+    },
+    "line-art": {
+      "description": "Clean line art style perfect for coloring books and illustrations."
+    },
+    "bold-outline": {
+      "description": "Strong, bold outlines that make your photos pop with comic-style edges."
+    },
+    "pencil-sketch": {
+      "description": "Realistic pencil sketch effect with natural shading and texture."
+    },
+    "pencil-sketch-2": {
+      "description": "Softer pencil sketch style with delicate strokes and subtle details."
+    },
+    "charcoal-drawing": {
+      "description": "Dramatic charcoal drawing effect with rich blacks and expressive marks."
+    },
+    "simple-drawing": {
+      "description": "Minimalist drawing style with simplified shapes and clean lines."
+    },
+    "inkart": {
+      "description": "Traditional ink art style with flowing brushstrokes and artistic flair."
+    },
+    "watercolor-painting": {
+      "description": "Beautiful watercolor painting effect with soft colors and fluid textures."
+    },
+    "splash-watercolor-art": {
+      "description": "Dynamic watercolor style with vibrant splashes and artistic energy."
+    },
+    "oil-painting": {
+      "description": "Classic oil painting effect with rich textures and painterly brushwork."
+    },
+    "van-gogh": {
+      "description": "Transform photos into Van Gogh-inspired masterpieces with swirling brushstrokes."
+    },
+    "pop-art": {
+      "description": "Bold pop art style with vibrant colors and graphic design elements."
+    },
+    "psychedelic-art": {
+      "description": "Trippy psychedelic art with vivid colors and surreal patterns."
+    },
+    "graffiti-street-art": {
+      "description": "Urban graffiti style with street art aesthetics and bold colors."
+    },
+    "kawaii-pastel-doodle": {
+      "description": "Cute kawaii style with pastel colors and adorable doodle elements."
+    },
+    "color-pencil-drawing": {
+      "description": "Colored pencil drawing effect with vibrant hues and sketch texture."
+    },
+    "pure-cartoon": {
+      "description": "Classic cartoon style with bold outlines and vibrant colors."
+    },
+    "simpsons": {
+      "description": "Transform into a Simpsons character with iconic yellow skin and style."
+    },
+    "south-park": {
+      "description": "Become a South Park character with the show's distinctive art style."
+    },
+    "rick-morty": {
+      "description": "Rick and Morty style transformation with the show's unique aesthetic."
+    },
+    "snoopy": {
+      "description": "Peanuts-inspired style with Snoopy's classic comic strip look."
+    },
+    "superhero-comic": {
+      "description": "Epic superhero comic book style with dynamic action and bold colors."
+    },
+    "pixar-3d": {
+      "description": "Pixar-style 3D animation look with smooth rendering and charm."
+    },
+    "disney-3d": {
+      "description": "Disney 3D animation style with magical and polished aesthetics."
+    },
+    "90s-retro-anime": {
+      "description": "Nostalgic 90s anime style with retro aesthetics and classic look."
+    },
+    "shounen-anime": {
+      "description": "Action-packed shounen anime style with dynamic energy and bold lines."
+    },
+    "shoujo-anime": {
+      "description": "Beautiful shoujo anime style with sparkles and romantic aesthetics."
+    },
+    "manga": {
+      "description": "Black and white manga style perfect for comic book illustrations."
+    },
+    "3d-chibi": {
+      "description": "Adorable 3D chibi style with cute proportions and charm."
+    },
+    "pixel-art": {
+      "description": "Retro pixel art style reminiscent of classic video games."
+    },
+    "clay": {
+      "description": "Claymation style with tactile, sculpted appearance."
+    },
+    "low-poly": {
+      "description": "Modern low-poly 3D style with geometric facets and clean edges."
+    },
+    "cyberpunk-neon": {
+      "description": "Futuristic cyberpunk style with neon lights and dystopian aesthetics."
+    },
+    "gta-style": {
+      "description": "GTA-inspired art style with urban edge and game aesthetics."
+    }
+  },
+  "style_card": {
+    "try_now": "Try Now"
+  },
+  "cta": {
+    "title": "Ready to Transform Your Photos?",
+    "description": "Start creating stunning artwork with our AI-powered drawing generator. Try any style for free today.",
+    "button": "Get Started Free"
+  },
+  "structured_data": {
+    "name": "Drawing Styles for Photos",
+    "description": "Explore 38+ drawing styles for your photos. From line drawings to watercolor art, anime to 3D cartoon styles.",
+    "breadcrumb_home": "Home",
+    "breadcrumb_drawing_styles": "Drawing Styles"
+  }
+}
