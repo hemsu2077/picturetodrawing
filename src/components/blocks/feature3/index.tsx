@@ -1,7 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { Section as SectionType } from "@/types/blocks/section";
-import { Upload, Wand2, Download } from "lucide-react";
-import { RiFlashlightLine } from "react-icons/ri";
+import { Upload, Wand2, Download, Zap } from "lucide-react";
 
 export default function Feature3({ section }: { section: SectionType }) {
   if (section.disabled) {
@@ -53,7 +52,7 @@ export default function Feature3({ section }: { section: SectionType }) {
                     <div className="inline-flex items-center justify-center w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-white shadow-sm">
                       {index === 0 && <Upload className="h-6 w-6 md:h-8 md:w-8 text-primary" />}
                       {index === 1 && <Wand2 className="h-6 w-6 md:h-8 md:w-8 text-primary" />}
-                      {index === 2 && <RiFlashlightLine className="h-6 w-6 md:h-8 md:w-8 text-primary" />}
+                      {index === 2 && <Zap className="h-6 w-6 md:h-8 md:w-8 text-primary" />}
                       {index === 3 && <Download className="h-6 w-6 md:h-8 md:w-8 text-primary" />}
                     </div>
                   </div>

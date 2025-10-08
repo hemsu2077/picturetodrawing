@@ -9,7 +9,11 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Icon from "@/components/icon";
 import { Label } from "@/components/ui/label";
-import { toast } from "sonner";
+// Defer sonner until actually needed
+const showError = async (msg: string) => {
+  const { toast } = await import("sonner");
+  toast.error(msg);
+};
 import { useAppContext } from "@/contexts/app";
 import { useLocale } from "next-intl";
 
@@ -65,13 +69,13 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
 
       const { code, message, data } = await response.json();
       if (code !== 0) {
-        toast.error(message);
+        await showError(message);
         return;
       }
 
       const { checkout_url } = data;
       if (!checkout_url) {
-        toast.error("checkout failed");
+        await showError("checkout failed");
         return;
       }
 
@@ -79,7 +83,7 @@ export default function Pricing({ pricing }: { pricing: PricingType }) {
     } catch (e) {
       console.log("checkout failed: ", e);
 
-      toast.error("checkout failed");
+      await showError("checkout failed");
     } finally {
       setIsLoading(false);
       setProductId(null);

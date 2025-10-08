@@ -10,7 +10,11 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 import { Button } from "@/components/ui/button";
 import { Pricing as PricingType, PricingItem } from "@/types/blocks/pricing";
 import { useAppContext } from "@/contexts/app";
-import { toast } from "sonner";
+// Defer sonner until it's used
+const showError = async (msg: string) => {
+  const { toast } = await import("sonner");
+  toast.error(msg);
+};
 
 interface PricingModalProps {
   open: boolean;
@@ -46,7 +50,7 @@ export default function PricingModal({ open, onOpenChange, pricing }: PricingMod
 
   const handleCheckout = async () => {
     if (!basicPlan) {
-      toast.error("Plan not available");
+      await showError("Plan not available");
       return;
     }
 
@@ -77,20 +81,20 @@ export default function PricingModal({ open, onOpenChange, pricing }: PricingMod
 
       const { code, message, data } = await response.json();
       if (code !== 0) {
-        toast.error(message || "checkout failed");
+        await showError(message || "checkout failed");
         return;
       }
 
       const { checkout_url: checkoutUrl } = data || {};
       if (!checkoutUrl) {
-        toast.error("checkout failed");
+        await showError("checkout failed");
         return;
       }
 
       window.location.href = checkoutUrl;
     } catch (error) {
       console.error("Checkout failed", error);
-      toast.error("checkout failed");
+      await showError("checkout failed");
     } finally {
       setIsCheckingOut(false);
     }

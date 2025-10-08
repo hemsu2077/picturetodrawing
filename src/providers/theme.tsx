@@ -3,7 +3,7 @@
 import { ThemeProvider as NextThemesProvider } from "next-themes";
 import { ReactNode, useEffect } from "react";
 import { useLocale } from "next-intl";
-import { Toaster } from "sonner";
+import LazyToaster from "@/components/lazy-toaster";
 import { isAuthEnabled } from "@/lib/auth";
 import SignModal from "@/components/sign/modal";
 import Analytics from "@/components/analytics";
@@ -27,7 +27,7 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
     >
       {children}
 
-      <Toaster position="top-center" richColors />
+      <LazyToaster />
       <Analytics />
 
       {isAuthEnabled() && <SignModal />}

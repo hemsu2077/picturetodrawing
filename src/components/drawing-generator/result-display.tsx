@@ -8,7 +8,12 @@ import { Image, Eye, ArrowRight, Zap } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useSession } from 'next-auth/react';
 import { isAuthEnabled } from '@/lib/auth';
-import { toast } from 'sonner';
+// Lazy toast to avoid loading on initial paint
+const showToast = async (type: 'success' | 'error', message: string) => {
+  const { toast } = await import('sonner');
+  if (type === 'success') toast.success(message);
+  else toast.error(message);
+};
 import { useTranslations } from 'next-intl';
 import { Drawing } from './shared-types';
 import { formatStyle } from './shared-utils';
@@ -140,12 +145,12 @@ export function RecentDrawings({
       }
 
       setDrawings(prev => prev.filter(d => d.uuid !== drawing.uuid));
-      toast.success(t("my_drawings.delete_success"));
+      await showToast('success', t("my_drawings.delete_success"));
       setIsDeleteDialogOpen(false);
       setDrawingToDelete(null);
     } catch (error) {
       console.error("Error deleting drawing:", error);
-      toast.error(t("my_drawings.delete_failed"));
+      await showToast('error', t("my_drawings.delete_failed"));
     } finally {
       setIsDeleting(false);
     }
