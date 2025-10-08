@@ -53,6 +53,7 @@ export default async function DrawingStylesPage({
   const page = await getDrawingStylesPage(locale);
 
   const allStyles = getAllDrawingStyles(t);
+  const totalStylesCount = allStyles.length;
 
   // Organize styles by category with i18n
   const categorizedStyles = STYLE_CATEGORIES.map((category) => ({
@@ -109,7 +110,7 @@ export default async function DrawingStylesPage({
           <div className="max-w-3xl space-y-6">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
               <Sparkles className="size-4" />
-              {page.hero?.badge}
+              {totalStylesCount}+ {page.hero?.badge}
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
