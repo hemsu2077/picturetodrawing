@@ -62,16 +62,16 @@
     "tip": "Free to Try, 100% Secure, Instant Results",
     "tip_items": [
       {
-        "text": "Free to Try",
+        "text": "10 Credits for New Users",
         "icon": "Gift"
       },
       {
-        "text": "100% Secure",
-        "icon": "Shield"
+        "text": "Daily Free Use",
+        "icon": "CalendarCheck"
       },
       {
-        "text": "Try Without Sign-up",
-        "icon": "Zap"
+        "text": "Create Like a Pro",
+        "icon": "Fan"
       }
     ],
     "buttons": [
@@ -83,7 +83,7 @@
         "variant": "default"
       }
     ],
-    "show_happy_users": true,
+    "show_happy_users": false,
     "show_badge": false
   },
   "introduce": {

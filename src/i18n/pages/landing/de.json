@@ -62,16 +62,16 @@
     "tip": "Kostenlos testen, 100% sicher, sofortige Ergebnisse",
     "tip_items": [
       {
-        "text": "Kostenlos testen",
+        "text": "10 Credits für neue Benutzer",
         "icon": "Gift"
       },
       {
-        "text": "100% sicher",
-        "icon": "Shield"
+        "text": "Täglich Gratis",
+        "icon": "CalendarCheck"
       },
       {
-        "text": "Ohne Anmeldung Testen",
-        "icon": "Zap"
+        "text": "Wie ein Profi erstellen",
+        "icon": "Fan"
       }
     ],
     "buttons": [

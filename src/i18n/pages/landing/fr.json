@@ -62,16 +62,16 @@
     "tip": "Essai gratuit, 100% sécurisé, résultats instantanés",
     "tip_items": [
       {
-        "text": "Essai gratuit",
+        "text": "10 crédits pour les nouveaux utilisateurs",
         "icon": "Gift"
       },
       {
-        "text": "100% sécurisé",
-        "icon": "Shield"
+        "text": "Gratuit Quotidien",
+        "icon": "CalendarCheck"
       },
       {
-        "text": "Essayez Sans Inscription",
-        "icon": "Zap"
+        "text": "Créer comme un pro",
+        "icon": "Fan"
       }
     ],
     "buttons": [

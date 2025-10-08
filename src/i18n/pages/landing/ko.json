@@ -62,16 +62,16 @@
     "tip": "무료 체험, 100% 안전, 즉시 결과",
     "tip_items": [
       {
-        "text": "무료 체험",
+        "text": "신규 사용자에게 10크레딧",
         "icon": "Gift"
       },
       {
-        "text": "100% 안전",
-        "icon": "Shield"
+        "text": "매일 무료",
+        "icon": "CalendarCheck"
       },
       {
-        "text": "가입 없이 체험 가능",
-        "icon": "Zap"
+        "text": "전문가처럼 만들기",
+        "icon": "Fan"
       }
     ],
     "buttons": [

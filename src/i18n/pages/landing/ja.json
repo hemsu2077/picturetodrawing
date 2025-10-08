@@ -62,16 +62,16 @@
     "tip": "無料でお試し・100%安全・即時結果",
     "tip_items": [
       {
-        "text": "無料でお試し",
+        "text": "新規ユーザーに10クレジット",
         "icon": "Gift"
       },
       {
-        "text": "100%安全",
-        "icon": "Shield"
+        "text": "毎日無料",
+        "icon": "CalendarCheck"
       },
       {
-        "text": "登録なしで試用可能",
-        "icon": "Zap"
+        "text": "プロのように作成",
+        "icon": "Fan"
       }
     ],
     "buttons": [

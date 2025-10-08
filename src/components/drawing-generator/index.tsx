@@ -173,8 +173,8 @@ export function DrawingGenerator({
       return;
     }
 
-    // Check if user needs authentication (only if auth is enabled and no trial available)
-    if (isAuthEnabled() && !session && !trialStatus?.canUseTrial) {
+    // Daily trial now requires login - show login modal if not authenticated
+    if (isAuthEnabled() && !session) {
       setShowSignModal(true);
       return;
     }
@@ -351,12 +351,13 @@ export function DrawingGenerator({
               </Button>
               
               {/* Trial hint text */}
-              {!session?.user?.uuid && (
+              {!session?.user?.uuid ? (
                 <p className="text-xs text-center text-muted-foreground">
-                  {trialStatus?.canUseTrial 
-                    ? t('drawing_generator.try_free_hint')
-                    : t('drawing_generator.signup_free_credits_hint')
-                  }
+                  {t('drawing_generator.login_for_free_trial_hint')}
+                </p>
+              ) : trialStatus?.canUseTrial && (
+                <p className="text-xs text-center text-muted-foreground">
+                  {t('drawing_generator.free_trial_available_hint')}
                 </p>
               )}
             </div>

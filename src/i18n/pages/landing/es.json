@@ -62,16 +62,16 @@
     "tip": "Gratis para Probar, 100% Seguro, Resultados Instantáneos",
     "tip_items": [
       {
-        "text": "Gratis para Probar",
+        "text": "10 créditos para nuevos usuarios",
         "icon": "Gift"
       },
       {
-        "text": "100% Seguro",
-        "icon": "Shield"
+        "text": "Gratis Diario",
+        "icon": "CalendarCheck"
       },
       {
-        "text": "Prueba Sin Registrarte",
-        "icon": "Zap"
+        "text": "Crear como un profesional",
+        "icon": "Fan"
       }
     ],
     "buttons": [

@@ -39,30 +39,29 @@ export function getTodayString(): string {
   return new Date().toISOString().split('T')[0];
 }
 
-// Check if user can use daily trial
+// Check if user can use daily trial (requires login)
 export async function checkDailyTrial(userUuid?: string): Promise<TrialCheckResult> {
   try {
+    // Daily trial now requires login
+    if (!userUuid) {
+      return {
+        canUseTrial: false,
+        isTrialUsage: false
+      };
+    }
+
     const today = getTodayString();
-    const clientIP = await getClientIP();
 
-    // For logged in users, block by either user or IP; otherwise block by IP only
-    const trialCondition = userUuid
-      ? and(
-          eq(dailyTrials.trial_date, today),
-          or(
-            eq(dailyTrials.user_uuid, userUuid),
-            eq(dailyTrials.ip_address, clientIP)
-          )
-        )
-      : and(
-          eq(dailyTrials.trial_date, today),
-          eq(dailyTrials.ip_address, clientIP)
-        );
-
+    // Check if user has already used trial today
     const existingTrial = await db()
       .select({ id: dailyTrials.id })
       .from(dailyTrials)
-      .where(trialCondition)
+      .where(
+        and(
+          eq(dailyTrials.trial_date, today),
+          eq(dailyTrials.user_uuid, userUuid)
+        )
+      )
       .limit(1);
     
     const canUseTrial = existingTrial.length === 0;
@@ -81,16 +80,20 @@ export async function checkDailyTrial(userUuid?: string): Promise<TrialCheckResu
   }
 }
 
-// Record daily trial usage
+// Record daily trial usage (requires login)
 export async function recordDailyTrial(userUuid?: string): Promise<void> {
   try {
+    if (!userUuid) {
+      throw new Error('User UUID is required for daily trial');
+    }
+
     const today = getTodayString();
     const clientIP = await getClientIP();
 
     const insertResult = await db()
       .insert(dailyTrials)
       .values({
-        user_uuid: userUuid || null,
+        user_uuid: userUuid,
         ip_address: clientIP,
         trial_date: today,
         created_at: new Date(getIsoTimestr()),
@@ -99,12 +102,10 @@ export async function recordDailyTrial(userUuid?: string): Promise<void> {
       .returning({ id: dailyTrials.id });
 
     if (insertResult.length > 0) {
-      console.log(`Daily trial recorded for ${userUuid ? `user ${userUuid}` : `IP ${clientIP}`}`);
+      console.log(`Daily trial recorded for user ${userUuid}`);
     } else if (process.env.NODE_ENV !== "production") {
       console.log(
-        `Daily trial already recorded for ${
-          userUuid ? `user ${userUuid}` : `IP ${clientIP}`
-        } on ${today}, skipping insert.`
+        `Daily trial already recorded for user ${userUuid} on ${today}, skipping insert.`
       );
     }
   } catch (error) {

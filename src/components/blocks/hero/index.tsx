@@ -5,7 +5,7 @@ import HeroBg from "./bg";
 import { Hero as HeroType } from "@/types/blocks/hero";
 import Icon from "@/components/icon";
 import { Link } from "@/i18n/navigation";
-import { Gift, Shield, Zap } from "lucide-react";
+import { Gift, Shield, Zap, Fan, CalendarCheck } from "lucide-react";
 
 interface HeroProps {
   hero: HeroType;
@@ -26,6 +26,10 @@ export default function Hero({ hero, backgroundVariant = 'default' }: HeroProps)
         return Shield;
       case 'Zap':
         return Zap;
+      case 'Fan':
+        return Fan;
+      case 'CalendarCheck':
+        return CalendarCheck;
       default:
         return Gift;
     }

@@ -62,16 +62,16 @@
     "tip": "免費試用，100%安全，即時出圖",
     "tip_items": [
       {
-        "text": "免費試用",
+        "text": "新用戶贈送10點數",
         "icon": "Gift"
       },
       {
-        "text": "100% 安全",
-        "icon": "Shield"
+        "text": "每日限免",
+        "icon": "CalendarCheck"
       },
       {
-        "text": "無需註冊即可試用",
-        "icon": "Zap"
+        "text": "專業級創作",
+        "icon": "Fan"
       }
     ],
     "buttons": [

@@ -24,25 +24,25 @@ try {
       }
     }
 
-    // Check daily trial availability
+    // Daily trial now requires login
+    if (!userUuid && isAuthEnabled()) {
+      return Response.json(
+        { code: -1, message: "Authentication required" }, 
+        { status: 401 }
+      );
+    }
+
+    // Check daily trial availability (only for logged-in users)
     const trialCheck = await checkDailyTrial(userUuid || undefined);
     
-    if (trialCheck.canUseTrial) {
-      // User can use daily trial
+    if (trialCheck.canUseTrial && userUuid) {
+      // Logged-in user can use daily trial
       isTrialUsage = true;
       if (process.env.NODE_ENV !== 'production') {
-        console.log(`Using daily trial for ${userUuid ? `user ${userUuid}` : `IP ${clientIP}`}`);
+        console.log(`Using daily trial for user ${userUuid}`);
       }
-    } else if (isAuthEnabled()) {
-      // Trial already used, check authentication and credits
-      if (!userUuid) {
-        return Response.json(
-          { code: -1, message: "Authentication required or daily trial already used" }, 
-          { status: 401 }
-        );
-      }
-
-      // Check user credits
+    } else if (userUuid) {
+      // Trial already used, check user credits
       const userCredits = await getUserCredits(userUuid);
       if (userCredits.left_credits < 2) {
         return Response.json(
@@ -51,10 +51,10 @@ try {
         );
       }
     } else {
-      // Auth disabled but trial used
+      // No user and auth disabled (shouldn't happen but handle it)
       return Response.json(
-        { code: -1, message: "Daily trial already used" }, 
-        { status: 429 }
+        { code: -1, message: "Authentication required" }, 
+        { status: 401 }
       );
     }
 
@@ -166,16 +166,15 @@ try {
             disposition: "inline",
           });
 
-          // Store image data to database (for both logged-in and trial users)
-          if (userUuid || isTrialUsage) {
+          // Store image data to database (only for logged-in users)
+          if (userUuid) {
             try {
               const imageUuid = getUuid();
               const currentTime = new Date();
-              const ownerIdentifier = userUuid || clientIP;
               
               await insertImage({
                 uuid: imageUuid,
-                user_uuid: ownerIdentifier,
+                user_uuid: userUuid,
                 original_image_url: inputImageUrl,
                 generated_image_url: res.url || "",
                 style: style,
@@ -188,7 +187,7 @@ try {
                 updated_at: currentTime,
               });
               if (process.env.NODE_ENV !== 'production') {
-                console.log(`Image data stored to database for ${userUuid ? `user ${userUuid}` : `trial IP ${clientIP}`}`);
+                console.log(`Image data stored to database for user ${userUuid}`);
               }
             } catch (dbError) {
               console.error("Failed to store image data to database:", dbError);
@@ -214,12 +213,12 @@ try {
     );
 
     // Handle credits and trial recording after successful generation
-    if (isTrialUsage) {
-      // Record daily trial usage
+    if (isTrialUsage && userUuid) {
+      // Record daily trial usage for logged-in user
       try {
-        await recordDailyTrial(userUuid || undefined);
+        await recordDailyTrial(userUuid);
         if (process.env.NODE_ENV !== 'production') {
-          console.log(`Daily trial recorded for ${userUuid ? `user ${userUuid}` : `IP ${clientIP}`}`);
+          console.log(`Daily trial recorded for user ${userUuid}`);
         }
       } catch (trialError) {
         console.error("Failed to record daily trial:", trialError);

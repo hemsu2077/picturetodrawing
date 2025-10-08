@@ -15,13 +15,22 @@ export async function GET() {
       }
     }
 
-    // Check daily trial availability
-    const trialCheck = await checkDailyTrial(userUuid || undefined);
+    // Daily trial now requires login
+    if (!userUuid) {
+      return respData({
+        canUseTrial: false,
+        isTrialUsage: false,
+        isLoggedIn: false
+      });
+    }
+
+    // Check daily trial availability for logged-in user
+    const trialCheck = await checkDailyTrial(userUuid);
     
     return respData({
       canUseTrial: trialCheck.canUseTrial,
       isTrialUsage: trialCheck.isTrialUsage,
-      isLoggedIn: !!userUuid
+      isLoggedIn: true
     });
   } catch (error) {
     console.error("Error checking trial status:", error);
