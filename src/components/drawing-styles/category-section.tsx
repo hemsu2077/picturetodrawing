@@ -51,7 +51,7 @@ export function CategorySection({
               id={style.id}
               name={style.name}
               image={style.image}
-              description={i18nMetadata?.description || staticMetadata?.description || ''}
+              description={i18nMetadata?.description || ''}
               hasLandingPage={staticMetadata?.hasLandingPage}
               landingPageUrl={staticMetadata?.landingPageUrl}
               learnMoreLabel={styleCardLabels?.learn_more}

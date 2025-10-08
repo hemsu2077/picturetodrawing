@@ -58,8 +58,8 @@ export default async function DrawingStylesPage({
   // Organize styles by category with i18n
   const categorizedStyles = STYLE_CATEGORIES.map((category) => ({
     ...category,
-    name: page.categories?.[category.id]?.name || category.name,
-    description: page.categories?.[category.id]?.description || category.description,
+    name: page.categories?.[category.id]?.name || '',
+    description: page.categories?.[category.id]?.description || '',
     styles: category.styles
       .map((styleId) => allStyles.find((s) => s.id === styleId))
       .filter((style): style is NonNullable<typeof style> => style !== undefined)

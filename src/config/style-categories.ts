@@ -1,7 +1,5 @@
 export interface StyleCategory {
   id: string;
-  name: string;
-  description: string;
   slug: string;
   styles: string[]; // style IDs
 }
@@ -10,15 +8,12 @@ export interface StyleMetadata {
   id: string;
   hasLandingPage: boolean;
   landingPageUrl?: string;
-  description: string;
 }
 
 export const STYLE_CATEGORIES: StyleCategory[] = [
   {
     id: 'drawing',
-    name: 'Photo to Drawing',
     slug: 'drawing',
-    description: 'Transform your photos into classic line drawings and sketches. Perfect for creating artistic portraits, illustrations, and minimalist designs with clean lines and elegant simplicity.',
     styles: [
       'pencil-sketch',
       'pencil-sketch-2',
@@ -33,9 +28,7 @@ export const STYLE_CATEGORIES: StyleCategory[] = [
   },
   {
     id: 'art',
-    name: 'Photo to Art',
     slug: 'art',
-    description: 'Convert your photos into stunning artistic masterpieces. From watercolor paintings to Van Gogh-inspired styles, explore various painting techniques and artistic expressions.',
     styles: [
       'watercolor-painting',
       'splash-watercolor-art',
@@ -50,9 +43,7 @@ export const STYLE_CATEGORIES: StyleCategory[] = [
   },
   {
     id: 'cartoon',
-    name: 'Photo to Cartoon',
     slug: 'cartoon',
-    description: 'Turn your photos into fun cartoon characters. Choose from popular cartoon styles including Simpsons, South Park, Rick & Morty, and more iconic animation styles.',
     styles: [
       'pure-cartoon',
       'simpsons',
@@ -66,9 +57,7 @@ export const STYLE_CATEGORIES: StyleCategory[] = [
   },
   {
     id: 'anime',
-    name: 'Photo to Anime',
     slug: 'anime',
-    description: 'Transform your photos into beautiful anime and manga art. From Studio Ghibli to modern anime styles, create stunning Japanese animation-inspired artwork.',
     styles: [
       'ghibli-style',
       '90s-retro-anime',
@@ -80,9 +69,7 @@ export const STYLE_CATEGORIES: StyleCategory[] = [
   },
   {
     id: 'modern',
-    name: 'Photo to 3D & Modern',
     slug: 'modern',
-    description: 'Explore contemporary and digital art styles. From pixel art to cyberpunk aesthetics, discover modern artistic transformations for your photos.',
     styles: [
       'pixel-art',
       'clay',
@@ -97,205 +84,168 @@ export const STYLE_METADATA: Record<string, StyleMetadata> = {
   'line-drawing': {
     id: 'line-drawing',
     hasLandingPage: true,
-    landingPageUrl: '/photo-to-line-drawing',
-    description: 'Convert your photos into elegant line drawings with clean, minimalist strokes.'
+    landingPageUrl: '/photo-to-line-drawing'
   },
   'ghibli-style': {
     id: 'ghibli-style',
     hasLandingPage: true,
-    landingPageUrl: '/photo-to-cartoon',
-    description: 'Transform your photos into magical Studio Ghibli-inspired anime art.'
+    landingPageUrl: '/photo-to-cartoon'
   },
   'line-drawing-2': {
     id: 'line-drawing-2',
     hasLandingPage: true,
-    landingPageUrl: '/photo-to-line-drawing',
-    description: 'Alternative line drawing style with softer, more organic lines.'
+    landingPageUrl: '/photo-to-line-drawing'
   },
   'line-art': {
     id: 'line-art',
     hasLandingPage: true,
-    landingPageUrl: '/photo-to-line-drawing',
-    description: 'Clean line art style perfect for coloring books and illustrations.'
+    landingPageUrl: '/photo-to-line-drawing'
   },
   'bold-outline': {
     id: 'bold-outline',
     hasLandingPage: true,
-    landingPageUrl: '/photo-to-line-drawing',
-    description: 'Strong, bold outlines that make your photos pop with comic-style edges.'
+    landingPageUrl: '/photo-to-line-drawing'
   },
   'pencil-sketch': {
     id: 'pencil-sketch',
-    hasLandingPage: false,
-    description: 'Realistic pencil sketch effect with natural shading and texture.'
+    hasLandingPage: false
   },
   'pencil-sketch-2': {
     id: 'pencil-sketch-2',
-    hasLandingPage: false,
-    description: 'Softer pencil sketch style with delicate strokes and subtle details.'
+    hasLandingPage: false
   },
   'charcoal-drawing': {
     id: 'charcoal-drawing',
-    hasLandingPage: false,
-    description: 'Dramatic charcoal drawing effect with rich blacks and expressive marks.'
+    hasLandingPage: false
   },
   'simple-drawing': {
     id: 'simple-drawing',
-    hasLandingPage: false,
-    description: 'Minimalist drawing style with simplified shapes and clean lines.'
+    hasLandingPage: false
   },
   'inkart': {
     id: 'inkart',
-    hasLandingPage: false,
-    description: 'Traditional ink art style with flowing brushstrokes and artistic flair.'
+    hasLandingPage: false
   },
   'watercolor-painting': {
     id: 'watercolor-painting',
-    hasLandingPage: false,
-    description: 'Beautiful watercolor painting effect with soft colors and fluid textures.'
+    hasLandingPage: false
   },
   'splash-watercolor-art': {
     id: 'splash-watercolor-art',
-    hasLandingPage: false,
-    description: 'Dynamic watercolor style with vibrant splashes and artistic energy.'
+    hasLandingPage: false
   },
   'oil-painting': {
     id: 'oil-painting',
-    hasLandingPage: false,
-    description: 'Classic oil painting effect with rich textures and painterly brushwork.'
+    hasLandingPage: false
   },
   'van-gogh': {
     id: 'van-gogh',
-    hasLandingPage: false,
-    description: 'Transform photos into Van Gogh-inspired masterpieces with swirling brushstrokes.'
+    hasLandingPage: false
   },
   'pop-art': {
     id: 'pop-art',
-    hasLandingPage: false,
-    description: 'Bold pop art style with vibrant colors and graphic design elements.'
+    hasLandingPage: false
   },
   'psychedelic-art': {
     id: 'psychedelic-art',
-    hasLandingPage: false,
-    description: 'Trippy psychedelic art with vivid colors and surreal patterns.'
+    hasLandingPage: false
   },
   'graffiti-street-art': {
     id: 'graffiti-street-art',
-    hasLandingPage: false,
-    description: 'Urban graffiti style with street art aesthetics and bold colors.'
+    hasLandingPage: false
   },
   'kawaii-pastel-doodle': {
     id: 'kawaii-pastel-doodle',
-    hasLandingPage: false,
-    description: 'Cute kawaii style with pastel colors and adorable doodle elements.'
+    hasLandingPage: false
   },
   'color-pencil-drawing': {
     id: 'color-pencil-drawing',
-    hasLandingPage: false,
-    description: 'Colored pencil drawing effect with vibrant hues and sketch texture.'
+    hasLandingPage: false
   },
   'pure-cartoon': {
     id: 'pure-cartoon',
     hasLandingPage: true,
-    landingPageUrl: '/photo-to-cartoon',
-    description: 'Classic cartoon style with bold outlines and vibrant colors.'
+    landingPageUrl: '/photo-to-cartoon'
   },
   'simpsons': {
     id: 'simpsons',
     hasLandingPage: true,
-    landingPageUrl: '/photo-to-cartoon',
-    description: 'Transform into a Simpsons character with iconic yellow skin and style.'
+    landingPageUrl: '/photo-to-cartoon'
   },
   'south-park': {
     id: 'south-park',
     hasLandingPage: true,
-    landingPageUrl: '/photo-to-cartoon',
-    description: 'Become a South Park character with the show\'s distinctive art style.'
+    landingPageUrl: '/photo-to-cartoon'
   },
   'rick-morty': {
     id: 'rick-morty',
     hasLandingPage: true,
-    landingPageUrl: '/photo-to-cartoon',
-    description: 'Rick and Morty style transformation with the show\'s unique aesthetic.'
+    landingPageUrl: '/photo-to-cartoon'
   },
   'snoopy': {
     id: 'snoopy',
     hasLandingPage: true,
-    landingPageUrl: '/photo-to-cartoon',
-    description: 'Peanuts-inspired style with Snoopy\'s classic comic strip look.'
+    landingPageUrl: '/photo-to-cartoon'
   },
   'superhero-comic': {
     id: 'superhero-comic',
     hasLandingPage: true,
-    landingPageUrl: '/photo-to-cartoon',
-    description: 'Epic superhero comic book style with dynamic action and bold colors.'
+    landingPageUrl: '/photo-to-cartoon'
   },
   'pixar-3d': {
     id: 'pixar-3d',
     hasLandingPage: true,
-    landingPageUrl: '/photo-to-cartoon',
-    description: 'Pixar-style 3D animation look with smooth rendering and charm.'
+    landingPageUrl: '/photo-to-cartoon'
   },
   'disney-3d': {
     id: 'disney-3d',
     hasLandingPage: true,
-    landingPageUrl: '/photo-to-cartoon',
-    description: 'Disney 3D animation style with magical and polished aesthetics.'
+    landingPageUrl: '/photo-to-cartoon'
   },
   '90s-retro-anime': {
     id: '90s-retro-anime',
     hasLandingPage: true,
-    landingPageUrl: '/photo-to-cartoon',
-    description: 'Nostalgic 90s anime style with retro aesthetics and classic look.'
+    landingPageUrl: '/photo-to-cartoon'
   },
   'shounen-anime': {
     id: 'shounen-anime',
     hasLandingPage: true,
-    landingPageUrl: '/photo-to-cartoon',
-    description: 'Action-packed shounen anime style with dynamic energy and bold lines.'
+    landingPageUrl: '/photo-to-cartoon'
   },
   'shoujo-anime': {
     id: 'shoujo-anime',
     hasLandingPage: true,
-    landingPageUrl: '/photo-to-cartoon',
-    description: 'Beautiful shoujo anime style with sparkles and romantic aesthetics.'
+    landingPageUrl: '/photo-to-cartoon'
   },
   'manga': {
     id: 'manga',
     hasLandingPage: true,
-    landingPageUrl: '/photo-to-cartoon',
-    description: 'Black and white manga style perfect for comic book illustrations.'
+    landingPageUrl: '/photo-to-cartoon'
   },
   '3d-chibi': {
     id: '3d-chibi',
     hasLandingPage: true,
-    landingPageUrl: '/photo-to-cartoon',
-    description: 'Adorable 3D chibi style with cute proportions and charm.'
+    landingPageUrl: '/photo-to-cartoon'
   },
   'pixel-art': {
     id: 'pixel-art',
-    hasLandingPage: false,
-    description: 'Retro pixel art style reminiscent of classic video games.'
+    hasLandingPage: false
   },
   'clay': {
     id: 'clay',
-    hasLandingPage: false,
-    description: 'Claymation style with tactile, sculpted appearance.'
+    hasLandingPage: false
   },
   'low-poly': {
     id: 'low-poly',
-    hasLandingPage: false,
-    description: 'Modern low-poly 3D style with geometric facets and clean edges.'
+    hasLandingPage: false
   },
   'cyberpunk-neon': {
     id: 'cyberpunk-neon',
-    hasLandingPage: false,
-    description: 'Futuristic cyberpunk style with neon lights and dystopian aesthetics.'
+    hasLandingPage: false
   },
   'gta-style': {
     id: 'gta-style',
-    hasLandingPage: false,
-    description: 'GTA-inspired art style with urban edge and game aesthetics.'
+    hasLandingPage: false
   }
 };
 
