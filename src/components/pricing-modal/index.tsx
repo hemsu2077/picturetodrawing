@@ -36,7 +36,7 @@ export default function PricingModal({ open, onOpenChange, pricing }: PricingMod
       return [] as string[];
     }
 
-    const featureIndices = [0, 2, 3];
+    const featureIndices = [0, 1, 3];
     const selected = featureIndices
       .map((index) => basicPlan.features?.[index])
       .filter((feature): feature is string => Boolean(feature));

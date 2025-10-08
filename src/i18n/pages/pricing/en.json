@@ -31,10 +31,10 @@
         "features_title": "Includes",
         "features": [
           "100 credits, valid for 2 months",
+          "50 image generations",
           "No watermark",
           "2x Fast generation",
-          "HD download",
-          "About $0.2 per drawing"
+          "HD download"
         ],
         "interval": "one-time",
         "amount": 999,
@@ -60,10 +60,10 @@
         "features_title": "Includes",
         "features": [
           "400 credits, valid for 6 months",
+          "200 image generations",
           "No watermark",
           "2x Fast generation",
-          "HD download",
-          "About $0.1 per drawing"
+          "HD download"
         ],
         "interval": "one-time",
         "amount": 1999,
@@ -90,10 +90,10 @@
         "label": "Popular",
         "features": [
           "800 credits, valid for 12 months",
+          "400 image generations",
           "No watermark",
           "2x Fast generation",
-          "HD download",
-          "About $0.075 per drawing"
+          "HD download"
         ],
         "interval": "one-time",
         "amount": 2999,
@@ -119,12 +119,12 @@
         "features_title": "Includes",
         "features": [
           "200 credits per month",
+          "100 image generations",
           "No watermark",
           "2x Fast generation",
           "HD download",
           "Commercial use rights",
-          "Priority customer support",
-          "About $0.1 per drawing"
+          "Priority customer support"
         ],
         "interval": "month",
         "amount": 999,
@@ -151,12 +151,12 @@
         "features_title": "Includes",
         "features": [
           "400 credits per month",
+          "200 image generations",
           "No watermark",
           "2x Fast generation",
           "HD download",
           "Commercial use rights",
-          "Priority customer support",
-          "About $0.085 per drawing"
+          "Priority customer support"
         ],
         "interval": "month",
         "amount": 1699,
@@ -182,12 +182,12 @@
         "features_title": "Includes",
         "features": [
           "1000 credits per month",
+          "500 image generations",
           "No watermark",
           "2x Fast generation",
           "HD download",
           "Commercial use rights",
-          "Priority customer support",
-          "About $0.06 per drawing"
+          "Priority customer support"
         ],
         "interval": "month",
         "amount": 2999,
@@ -212,12 +212,12 @@
         "description": "Total $83.88/year, Save with annual billing for consistent creators.",
         "features_title": "Includes",
         "features": [
-          "200 credits per month (2400 credits per year)",
+          "2400 credits per year (200 credits per month)",
+          "1200 image generations",
           "No watermark",
           "2x Fast generation",
           "HD download",
-          "Commercial use rights",
-          "About $0.07 per drawing"
+          "Commercial use rights"
         ],
         "interval": "year",
         "amount": 8388,
@@ -244,13 +244,13 @@
         "label": "Popular",
         "features_title": "Includes",
         "features": [
-          "400 credits per month (4800 credits per year)",
+          "4800 credits per year (400 credits per month)",
+          "2400 image generations",
           "No watermark",
           "2x Fast generation",
           "HD download",
           "Commercial use rights",
-          "Priority customer support",
-          "About $0.06 per drawing"
+          "Priority customer support"
         ],
         "interval": "year",
         "amount": 14388,
@@ -276,13 +276,13 @@
         "description": "Total $251.88/year, Maximum savings for high-volume users.",
         "features_title": "Includes",
         "features": [
-          "1000 credits per month (12000 credits per year)",
+          "12000 credits per year (1000 credits per month)",
+          "6000 image generations",
           "No watermark",
           "2x Fast generation",
           "HD download",
           "Commercial use rights",
-          "Priority customer support",
-          "About $0.04 per drawing"
+          "Priority customer support"
         ],
         "interval": "year",
         "amount": 25188,

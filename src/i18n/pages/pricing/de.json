@@ -31,10 +31,10 @@
         "features_title": "Enthält",
         "features": [
           "100 Credits, gültig für 2 Monate",
+          "50 Bildgenerierungen",
           "Kein Wasserzeichen",
           "2x Schnelle Generierung",
-          "HD-Download",
-          "Etwa 0,2 $ pro Zeichnung"
+          "HD-Download"
         ],
         "interval": "one-time",
         "amount": 999,
@@ -60,10 +60,10 @@
         "features_title": "Enthält",
         "features": [
           "400 Credits, gültig für 6 Monate",
+          "200 Bildgenerierungen",
           "Kein Wasserzeichen",
           "2x Schnelle Generierung",
-          "HD-Download",
-          "Etwa 0,1 $ pro Zeichnung"
+          "HD-Download"
         ],
         "interval": "one-time",
         "amount": 1999,
@@ -90,10 +90,10 @@
         "label": "Beliebt",
         "features": [
           "800 Credits, gültig für 12 Monate",
+          "400 Bildgenerierungen",
           "Kein Wasserzeichen",
           "2x Schnelle Generierung",
-          "HD-Download",
-          "Etwa 0,075 $ pro Zeichnung"
+          "HD-Download"
         ],
         "interval": "one-time",
         "amount": 2999,
@@ -119,12 +119,12 @@
         "features_title": "Enthält",
         "features": [
           "200 Credits pro Monat",
+          "100 Bildgenerierungen",
           "Kein Wasserzeichen",
           "2x Schnelle Generierung",
           "HD-Download",
           "Kommerzielle Nutzungsrechte",
-          "Priorisierter Kundensupport",
-          "Etwa 0,1 $ pro Zeichnung"
+          "Priorisierter Kundensupport"
         ],
         "interval": "month",
         "amount": 999,
@@ -151,12 +151,12 @@
         "features_title": "Enthält",
         "features": [
           "400 Credits pro Monat",
+          "200 Bildgenerierungen",
           "Kein Wasserzeichen",
           "2x Schnelle Generierung",
           "HD-Download",
           "Kommerzielle Nutzungsrechte",
-          "Priorisierter Kundensupport",
-          "Etwa 0,085 $ pro Zeichnung"
+          "Priorisierter Kundensupport"
         ],
         "interval": "month",
         "amount": 1699,
@@ -182,12 +182,12 @@
         "features_title": "Enthält",
         "features": [
           "1000 Credits pro Monat",
+          "500 Bildgenerierungen",
           "Kein Wasserzeichen",
           "2x Schnelle Generierung",
           "HD-Download",
           "Kommerzielle Nutzungsrechte",
-          "Priorisierter Kundensupport",
-          "Etwa 0,06 $ pro Zeichnung"
+          "Priorisierter Kundensupport"
         ],
         "interval": "month",
         "amount": 2999,
@@ -212,12 +212,12 @@
         "description": "Insgesamt 83,88 $/Jahr, sparen Sie mit jährlicher Abrechnung für konsistente Ersteller.",
         "features_title": "Enthält",
         "features": [
-          "200 Credits pro Monat (2400 Credits pro Jahr)",
+          "2400 Credits pro Jahr (200 Credits pro Monat)",
+          "1200 Bildgenerierungen",
           "Kein Wasserzeichen",
           "2x Schnelle Generierung",
           "HD-Download",
-          "Kommerzielle Nutzungsrechte",
-          "Etwa 0,07 $ pro Zeichnung"
+          "Kommerzielle Nutzungsrechte"
         ],
         "interval": "year",
         "amount": 8388,
@@ -244,13 +244,13 @@
         "label": "Beliebt",
         "features_title": "Enthält",
         "features": [
-          "400 Credits pro Monat (4800 Credits pro Jahr)",
+          "4800 Credits pro Jahr (400 Credits pro Monat)",
+          "2400 Bildgenerierungen",
           "Kein Wasserzeichen",
           "2x Schnelle Generierung",
           "HD-Download",
           "Kommerzielle Nutzungsrechte",
-          "Priorisierter Kundensupport",
-          "Etwa 0,06 $ pro Zeichnung"
+          "Priorisierter Kundensupport"
         ],
         "interval": "year",
         "amount": 14388,
@@ -276,13 +276,13 @@
         "description": "Insgesamt 251,88 $/Jahr, maximale Ersparnis für Nutzer mit hohem Volumen.",
         "features_title": "Enthält",
         "features": [
-          "1000 Credits pro Monat (12000 Credits pro Jahr)",
+          "12000 Credits pro Jahr (1000 Credits pro Monat)",
+          "6000 Bildgenerierungen",
           "Kein Wasserzeichen",
           "2x Schnelle Generierung",
           "HD-Download",
           "Kommerzielle Nutzungsrechte",
-          "Priorisierter Kundensupport",
-          "Etwa 0,04 $ pro Zeichnung"
+          "Priorisierter Kundensupport"
         ],
         "interval": "year",
         "amount": 25188,

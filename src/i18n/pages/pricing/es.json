@@ -31,10 +31,10 @@
         "features_title": "Incluye",
         "features": [
           "100 créditos, válidos por 2 meses",
+          "50 generaciones de imágenes",
           "Sin marca de agua",
           "2x Generación rápida",
-          "Descarga HD",
-          "Aproximadamente $0.2 por dibujo"
+          "Descarga HD"
         ],
         "interval": "one-time",
         "amount": 999,
@@ -60,10 +60,10 @@
         "features_title": "Incluye",
         "features": [
           "400 créditos, válidos por 6 meses",
+          "200 generaciones de imágenes",
           "Sin marca de agua",
           "2x Generación rápida",
-          "Descarga HD",
-          "Aproximadamente $0.1 por dibujo"
+          "Descarga HD"
         ],
         "interval": "one-time",
         "amount": 1999,
@@ -90,10 +90,10 @@
         "label": "Popular",
         "features": [
           "800 créditos, válidos por 12 meses",
+          "400 generaciones de imágenes",
           "Sin marca de agua",
           "2x Generación rápida",
-          "Descarga HD",
-          "Aproximadamente $0.075 por dibujo"
+          "Descarga HD"
         ],
         "interval": "one-time",
         "amount": 2999,
@@ -119,12 +119,12 @@
         "features_title": "Incluye",
         "features": [
           "200 créditos por mes",
+          "100 generaciones de imágenes",
           "Sin marca de agua",
           "2x Generación rápida",
           "Descarga HD",
           "Derechos de uso comercial",
-          "Soporte prioritario al cliente",
-          "Aproximadamente $0.1 por dibujo"
+          "Soporte prioritario al cliente"
         ],
         "interval": "month",
         "amount": 999,
@@ -151,12 +151,12 @@
         "features_title": "Incluye",
         "features": [
           "400 créditos por mes",
+          "200 generaciones de imágenes",
           "Sin marca de agua",
           "2x Generación rápida",
           "Descarga HD",
           "Derechos de uso comercial",
-          "Soporte prioritario al cliente",
-          "Aproximadamente $0.085 por dibujo"
+          "Soporte prioritario al cliente"
         ],
         "interval": "month",
         "amount": 1699,
@@ -182,12 +182,12 @@
         "features_title": "Incluye",
         "features": [
           "1000 créditos por mes",
+          "500 generaciones de imágenes",
           "Sin marca de agua",
           "2x Generación rápida",
           "Descarga HD",
           "Derechos de uso comercial",
-          "Soporte prioritario al cliente",
-          "Aproximadamente $0.06 por dibujo"
+          "Soporte prioritario al cliente"
         ],
         "interval": "month",
         "amount": 2999,
@@ -212,12 +212,12 @@
         "description": "Total $83.88/año, Ahorra con facturación anual para creadores constantes.",
         "features_title": "Incluye",
         "features": [
-          "200 créditos por mes (2400 créditos por año)",
+          "2400 créditos por año (200 créditos por mes)",
+          "1200 generaciones de imágenes",
           "Sin marca de agua",
           "2x Generación rápida",
           "Descarga HD",
-          "Derechos de uso comercial",
-          "Aproximadamente $0.07 por dibujo"
+          "Derechos de uso comercial"
         ],
         "interval": "year",
         "amount": 8388,
@@ -244,13 +244,13 @@
         "label": "Popular",
         "features_title": "Incluye",
         "features": [
-          "400 créditos por mes (4800 créditos por año)",
+          "4800 créditos por año (400 créditos por mes)",
+          "2400 generaciones de imágenes",
           "Sin marca de agua",
           "2x Generación rápida",
           "Descarga HD",
           "Derechos de uso comercial",
-          "Soporte prioritario al cliente",
-          "Aproximadamente $0.06 por dibujo"
+          "Soporte prioritario al cliente"
         ],
         "interval": "year",
         "amount": 14388,
@@ -276,13 +276,13 @@
         "description": "Total $251.88/año, Máximo ahorro para usuarios de alto volumen.",
         "features_title": "Incluye",
         "features": [
-          "1000 créditos por mes (12000 créditos por año)",
+          "12000 créditos por año (1000 créditos por mes)",
+          "6000 generaciones de imágenes",
           "Sin marca de agua",
           "2x Generación rápida",
           "Descarga HD",
           "Derechos de uso comercial",
-          "Soporte prioritario al cliente",
-          "Aproximadamente $0.04 por dibujo"
+          "Soporte prioritario al cliente"
         ],
         "interval": "year",
         "amount": 25188,
