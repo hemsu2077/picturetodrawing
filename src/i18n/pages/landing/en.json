@@ -74,15 +74,6 @@
         "icon": "Fan"
       }
     ],
-    "buttons": [
-      {
-        "title": "Start for Free",
-        "icon": "RiFlashlightFill",
-        "url": "/#drawing-generator",
-        "target": "_self",
-        "variant": "default"
-      }
-    ],
     "show_happy_users": false,
     "show_badge": false
   },

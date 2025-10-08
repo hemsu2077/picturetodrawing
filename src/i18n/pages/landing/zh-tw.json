@@ -41,17 +41,7 @@
         }
       ]
     },
-    "buttons": [
-      {
-        "title": "免費點數",
-        "url": "/free-credits",
-        "target": "_self",
-        "variant": "outline",
-        "icon": "RiGiftLine"
-      }
-    ],
-
-    "show_sign": true,
+    "show_sign": false,
     "show_theme": false,
     "show_locale": true
   },

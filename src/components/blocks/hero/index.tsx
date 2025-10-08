@@ -44,7 +44,7 @@ export default function Hero({ hero, backgroundVariant = 'default' }: HeroProps)
   return (
     <>
       <HeroBg />
-      <section className="py-12 lg:py-24">
+      <section className="py-8 lg:py-16">
         <div className="container">
           {hero.show_badge && (
             <div className="flex items-center justify-center mb-8">
@@ -110,13 +110,24 @@ export default function Hero({ hero, backgroundVariant = 'default' }: HeroProps)
               </div>
             )}
             {hero.tip_items && hero.tip_items.length > 0 && (
-              <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8">
+              <div className="mt-6 inline-flex flex-wrap items-center justify-center gap-x-5 gap-y-2 px-4 py-2 rounded-xl bg-gradient-to-br from-primary/5 via-transparent to-primary/5 border border-primary/10">
                 {hero.tip_items.map((item, index) => {
                   const IconComponent = getIcon(item.icon);
                   return (
-                    <div key={index} className="flex items-center gap-2">
-                      <IconComponent className="h-4 w-4 text-primary" />
-                      <span className="text-sm text-muted-foreground">{item.text}</span>
+                    <div 
+                      key={index} 
+                      className="flex items-center gap-1.5"
+                    >
+                      <div className="relative">
+                        <div className="absolute inset-0 bg-indigo-500/20 blur-sm rounded-full"></div>
+                        <IconComponent className="relative h-3.5 w-3.5 text-indigo-500" />
+                      </div>
+                      <span className="text-xs font-medium text-foreground/90">
+                        {item.text}
+                      </span>
+                      {index < (hero.tip_items?.length ?? 0) - 1 && (
+                        <div className="ml-3 h-3 w-px bg-border/50"></div>
+                      )}
                     </div>
                   );
                 })}
