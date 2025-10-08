@@ -105,14 +105,19 @@ drawing-styles
 Based on [src/config/drawing-styles.ts](cci:7://file:///Users/hem/vscode/picturetodrawing/src/config/drawing-styles.ts:0:0-0:0), organize into:
 
 **1. Photo to Drawing** (Line-based, Sketch-based)
-- Line Drawing, Line Drawing 2, Line Art, Bold Outline
-- Pencil Sketch, Pencil Sketch 2
+- Line Drawing, 
+- Line Drawing 2, 
+- Line Art, 
+- Bold Outline
+- Pencil Sketch, 
+- Pencil Sketch 2
 - Charcoal Drawing
 - Simple Drawing
 - Ink Art
 
 **2. Photo to Art** (Painting, Artistic)
-- Watercolor Painting, Splash Watercolor Art
+- Watercolor Painting, 
+- Splash Watercolor Art
 - Oil Painting
 - Van Gogh Style
 - Pop Art
@@ -121,22 +126,30 @@ Based on [src/config/drawing-styles.ts](cci:7://file:///Users/hem/vscode/picture
 - Kawaii Pastel Doodle
 - Color Pencil Drawing
 
-**3. Photo to Cartoon & Anime**
+**3. Photo to Cartoon**
 - Pure Cartoon
-- Ghibli Style
-- 90s Retro Anime, Shounen Anime, Shoujo Anime
-- Manga
-- Simpsons, South Park, Rick & Morty, Snoopy
+- Simpsons
+- South Park
+- Rick & Morty
+- Snoopy
 - Superhero Comic
+- Pixar 3D
+- Disney 3D
+
+**4.Photo to Anime**
+- Ghibli Style
+- 90s Retro Anime
+- Shounen Anime
+- Shoujo Anime
+- Manga
+- 3D Chibi
 
 **4. Photo to 3D & Modern**
-- Pixar 3D, Disney 3D, 3D Chibi
 - Pixel Art
 - Clay Style
 - Low Poly
 - Cyberpunk Neon
 - GTA Style
-
 #### Technical Implementation
 
 **1. Breadcrumb Navigation**
