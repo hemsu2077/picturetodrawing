@@ -25,7 +25,7 @@ export function DrawingDetailModal({
   showDeleteButton = false,
   onDelete
 }: DrawingDetailModalProps) {
-  const t = useTranslations();
+  const t = useTranslations('drawing_generator');
   if (!drawing) return null;
 
   return (
@@ -35,7 +35,7 @@ export function DrawingDetailModal({
           <div className="relative aspect-square bg-gray-100 rounded-lg md:col-span-2">
             <Image
               src={drawing.generated_image_url}
-              alt={t('drawing_generator.drawing_alt', { style: drawing.style })}
+              alt={t('drawing_alt', { style: drawing.style })}
               fill
               className="object-contain rounded-lg"
             />
@@ -43,27 +43,27 @@ export function DrawingDetailModal({
           
           <div className="space-y-4">
             <DialogHeader>
-              <DialogTitle>{t('drawing_generator.drawing_details')}</DialogTitle>
+              <DialogTitle>{t('drawing_details')}</DialogTitle>
             </DialogHeader>
             
             <div className="space-y-3">
               <div>
-                <label className="text-xs font-medium text-gray-500">{t('drawing_generator.style')}</label>
+                <label className="text-xs font-medium text-gray-500">{t('style')}</label>
                 <p className="text-gray-900">{formatStyle(drawing.style)}</p>
               </div>
               
               <div>
-                <label className="text-xs font-medium text-gray-500">{t('drawing_generator.ai_model_label')}</label>
+                <label className="text-xs font-medium text-gray-500">{t('ai_model_label')}</label>
                 <p className="text-gray-900">{formatModel(drawing.model)}</p>
               </div>
               
               <div>
-                <label className="text-xs font-medium text-gray-500">{t('drawing_generator.aspect_ratio_label')}</label>
+                <label className="text-xs font-medium text-gray-500">{t('aspect_ratio_label')}</label>
                 <p className="text-gray-900">{formatRatio(drawing.ratio)}</p>
               </div>
               
               <div>
-                <label className="text-xs font-medium text-gray-500">{t('drawing_generator.created')}</label>
+                <label className="text-xs font-medium text-gray-500">{t('created')}</label>
                 <p className="text-gray-900">{formatDate(drawing.created_at)}</p>
               </div>
             </div>
@@ -74,7 +74,7 @@ export function DrawingDetailModal({
                 className="flex items-center gap-2"
               >
                 <Download className="w-4 h-4" />
-                {t('drawing_generator.download')}
+                {t('download')}
               </Button>
               
               {showDeleteButton && onDelete && (
@@ -87,7 +87,7 @@ export function DrawingDetailModal({
                   className="flex items-center gap-2"
                 >
                   <Trash2 className="w-4 h-4" />
-                  {t('drawing_generator.delete')}
+                  {t('delete')}
                 </Button>
               )}
             </div>

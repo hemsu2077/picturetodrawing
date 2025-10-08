@@ -21,51 +21,51 @@ interface RatioSelectorProps {
 const getAspectRatios = (t: any): RatioOption[] => [
   {
     value: 'auto',
-    label: t('drawing_generator.ratios.auto'),
-    description: t('drawing_generator.ratios.auto_description')
+    label: t('ratios.auto'),
+    description: t('ratios.auto_description')
   },
   {
     value: '1:1',
     label: '1:1',
-    description: t('drawing_generator.ratios.square')
+    description: t('ratios.square')
   },
   {
     value: '4:3',
     label: '4:3',
-    description: t('drawing_generator.ratios.landscape')
+    description: t('ratios.landscape')
   },
   {
     value: '3:4',
     label: '3:4',
-    description: t('drawing_generator.ratios.portrait')
+    description: t('ratios.portrait')
   },
   {
     value: '16:9',
     label: '16:9',
-    description: t('drawing_generator.ratios.wide')
+    description: t('ratios.wide')
   },
   {
     value: '9:16',
     label: '9:16',
-    description: t('drawing_generator.ratios.tall')
+    description: t('ratios.tall')
   }
 ];
 
 export function RatioSelector({ selectedRatio, onRatioChange, disabled = false, className }: RatioSelectorProps) {
-  const t = useTranslations();
+  const t = useTranslations('drawing_generator');
   const ASPECT_RATIOS = getAspectRatios(t);
 
   return (
     <div className={cn("space-y-2", className)}>
       <div>
         <p className="text-sm text-muted-foreground">
-          {t('drawing_generator.aspect_ratio')}
+          {t('aspect_ratio')}
         </p>
       </div>
       
       <Select value={disabled ? 'auto' : selectedRatio} onValueChange={disabled ? undefined : onRatioChange} disabled={disabled}>
         <SelectTrigger className="w-full">
-          <SelectValue placeholder={t('drawing_generator.select_aspect_ratio')} />
+          <SelectValue placeholder={t('select_aspect_ratio')} />
         </SelectTrigger>
         <SelectContent>
           {ASPECT_RATIOS.map((ratio) => (

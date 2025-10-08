@@ -27,7 +27,7 @@ export function DrawingCard({
   showToast = false,
   className 
 }: DrawingCardProps) {
-  const t = useTranslations();
+  const t = useTranslations('drawing_generator');
   return (
     <Card 
       className={cn(
@@ -39,7 +39,7 @@ export function DrawingCard({
       <div className="aspect-square relative">
         <Image
           src={drawing.generated_image_url}
-          alt={t('drawing_generator.drawing_alt', { style: drawing.style })}
+          alt={t('drawing_alt', { style: drawing.style })}
           fill
           className="object-cover transition-transform group-hover:scale-105"
         />
@@ -64,7 +64,7 @@ export function DrawingCard({
                 handleDownload(drawing, showToast);
               }}
               className="opacity-0 group-hover:opacity-100 transition-opacity bg-primary/60 hover:bg-primary text-white p-1.5 rounded-full"
-              title={t('drawing_generator.download_tooltip')}
+              title={t('download_tooltip')}
             >
               <Download className="w-3 h-3" />
             </button>
@@ -78,7 +78,7 @@ export function DrawingCard({
                 onDelete();
               }}
               className="opacity-0 group-hover:opacity-100 transition-opacity bg-red-500 hover:bg-red-600 text-white p-1.5 rounded-full"
-              title={t('drawing_generator.delete_tooltip')}
+              title={t('delete_tooltip')}
             >
               <Trash2 className="w-3 h-3" />
             </button>

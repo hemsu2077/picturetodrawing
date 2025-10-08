@@ -14,7 +14,7 @@ interface StyleSwitcherProps {
 }
 
 export function StyleSwitcher({ selectedStyle, onClick, className }: StyleSwitcherProps) {
-  const t = useTranslations();
+  const t = useTranslations('drawing_generator');
   const allStyles = getAllDrawingStyles(t);
   
   const currentStyle = allStyles.find(style => style.id === selectedStyle);
@@ -31,14 +31,14 @@ export function StyleSwitcher({ selectedStyle, onClick, className }: StyleSwitch
         <div className="w-28 h-28 flex-shrink-0 bg-muted">
           <img
             src={displayStyle.image}
-            alt={displayStyle.name}
+            alt={displayStyle.name + ' - Picture to Drawing'} 
             className="w-full h-full object-cover"
           />
         </div>
         <div className="flex flex-col items-start px-4 flex-1">
           <span className="font-semibold text-base">{displayStyle.name}</span>
           <span className="text-sm text-muted-foreground">
-            {t('drawing_generator.style_modal.select_style')}
+            {t('style_modal.select_style')}
           </span>
         </div>
         <div className="px-4">

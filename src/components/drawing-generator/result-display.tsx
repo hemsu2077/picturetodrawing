@@ -40,7 +40,7 @@ export function RecentDrawings({
   trialResult = null
 }: RecentDrawingsProps) {
   const { data: session } = isAuthEnabled() ? useSession() : { data: null };
-  const t = useTranslations();
+  const t = useTranslations('drawing_generator');
   const [drawings, setDrawings] = useState<Drawing[]>([]);
   const [selectedDrawing, setSelectedDrawing] = useState<Drawing | null>(null);
   const [loading, setLoading] = useState(false);
@@ -198,16 +198,16 @@ export function RecentDrawings({
           <div className="flex items-center justify-between">
             <div>
               <h3 className="text-lg font-medium">
-                {session?.user?.uuid ? t('drawing_generator.recent_drawings') : t('drawing_generator.your_drawing')}
+                {session?.user?.uuid ? t('recent_drawings') : t('your_drawing')}
               </h3>
               <p className="text-sm text-muted-foreground mt-1">
-                {session?.user?.uuid ? t('drawing_generator.latest_artwork') : t('drawing_generator.generated_result')}
+                {session?.user?.uuid ? t('latest_artwork') : t('generated_result')}
               </p>
             </div>
             {session?.user?.uuid && drawings.length > 0 && (
               <Link href="/my-drawings">
                 <Button variant="outline" size="sm">
-                  {t('drawing_generator.view_all')}
+                  {t('view_all')}
                   <ArrowRight className="h-4 w-4 ml-1" />
                 </Button>
               </Link>
@@ -226,7 +226,7 @@ export function RecentDrawings({
                         <span className="text-destructive text-sm">⚠</span>
                       </div>
                       <div className="text-xs text-center px-2">
-                        <div className="font-medium text-destructive">{t('drawing_generator.failed')}</div>
+                        <div className="font-medium text-destructive">{t('failed')}</div>
                         <div className="text-muted-foreground mt-1 break-words whitespace-pre-wrap">{error}</div>
                       </div>
                     </>
@@ -243,7 +243,7 @@ export function RecentDrawings({
                             strokeWidth={3}
                           />
                           <div className="text-xs text-center px-2">
-                            <div className="text-muted-foreground mt-1">{t('drawing_generator.about_20_30_seconds')}</div>
+                            <div className="text-muted-foreground mt-1">{t('about_20_30_seconds')}</div>
                           </div>
                         </>
                       ) : (
@@ -256,14 +256,14 @@ export function RecentDrawings({
                             strokeWidth={3}
                           />
                           <div className="text-xs text-center px-2">
-                            <div className="text-muted-foreground mt-1">{t('drawing_generator.about_50_60_seconds')}</div>
+                            <div className="text-muted-foreground mt-1">{t('about_50_60_seconds')}</div>
                             <Button
                               variant="outline"
                               size="sm"
                               className="mt-2 h-8 text-xs hidden sm:block"
                               onClick={() => window.open('/pricing', '_blank')}
                             >
-                              {t('drawing_generator.upgrade_for_speed')}
+                              {t('upgrade_for_speed')}
                             </Button>
                           </div>
                         </>
@@ -277,7 +277,7 @@ export function RecentDrawings({
                         strokeWidth={3}
                       />
                       <div className="text-xs text-center px-2">
-                        <div className="text-muted-foreground mt-1">{t('drawing_generator.about_20_30_seconds')}</div>
+                        <div className="text-muted-foreground mt-1">{t('about_20_30_seconds')}</div>
                       </div>
                     </>
                   )}

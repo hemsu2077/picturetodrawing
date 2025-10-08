@@ -14,14 +14,14 @@ interface PopularStylesProps {
 }
 
 export function PopularStyles({ selectedStyle, onStyleChange, className, configKey = 'default' }: PopularStylesProps) {
-  const t = useTranslations();
+  const t = useTranslations('drawing_generator');
   const popularStyles = getPopularStyles(t, configKey);
 
   return (
     <div className={cn("space-y-2", className)}>
       <div className="flex items-center gap-2">
         <p className="text-xs text-muted-foreground">
-          {t('drawing_generator.style_modal.popular_styles')}
+          {t('style_modal.popular_styles')}
         </p>
       </div>
       <div className="grid grid-cols-3 sm:grid-cols-5 gap-3">

@@ -16,7 +16,7 @@ interface StyleSelectorProps {
 }
 
 export function StyleSelector({ selectedStyle, onStyleChange, className, popularStylesKey = 'default' }: StyleSelectorProps) {
-  const t = useTranslations();
+  const t = useTranslations('drawing_generator');
   const [showStyleModal, setShowStyleModal] = useState(false);
 
   const handleStyleModalOpen = () => {
@@ -33,7 +33,7 @@ export function StyleSelector({ selectedStyle, onStyleChange, className, popular
 
   return (
     <div className={cn("space-y-4", className)}>
-       <p className="text-lg font-medium text-foreground">{t('drawing_generator.drawing_style')}</p>
+       <p className="text-lg font-medium text-foreground">{t('drawing_style')}</p>
       
       {/* Drawing Style and Popular Styles - Grouped together */}
       <div className="space-y-2">

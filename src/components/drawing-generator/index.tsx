@@ -39,7 +39,7 @@ export function DrawingGenerator({
   const { data: session } = isAuthEnabled() ? useSession() : { data: null };
   const { setShowSignModal, showPricingModal, setShowPricingModal } = useAppContext();
   const locale = useLocale();
-  const t = useTranslations();
+  const t = useTranslations('drawing_generator');
   const searchParams = useSearchParams();
   
   // Get style from URL parameter, fallback to defaultStyle
@@ -182,7 +182,7 @@ export function DrawingGenerator({
 
   const handleGenerate = async () => {
     if (!selectedImage) {
-      setError(t('drawing_generator.select_image_first'));
+      setError(t('select_image_first'));
       return;
     }
 
@@ -238,15 +238,15 @@ export function DrawingGenerator({
           return;
         } else if (response.status === 402) {
           // Insufficient credits - show pricing modal
-          setError(data.message || t('drawing_generator.insufficient_credits'));
+          setError(data.message || t('insufficient_credits'));
           setShowPricingModal(true);
           return;
         } else if (response.status === 429) {
           // Daily trial already used
-          setError(data.message || t('drawing_generator.daily_trial_used'));
+          setError(data.message || t('daily_trial_used'));
           return;
         }
-        setError(data.message || t('drawing_generator.generation_failed'));
+        setError(data.message || t('generation_failed'));
         return;
       }
 
@@ -269,12 +269,12 @@ export function DrawingGenerator({
           setTrialStatus(prev => prev ? { ...prev, canUseTrial: false, isTrialUsage: false } : null);
         }
       } else {
-        setError(data.message || t('drawing_generator.generation_failed'));
+        setError(data.message || t('generation_failed'));
         return;
       }
     } catch (err) {
       // Handle network or other unexpected errors quietly
-      setError(err instanceof Error ? err.message : t('drawing_generator.unexpected_error'));
+      setError(err instanceof Error ? err.message : t('unexpected_error'));
     } finally {
       setIsGenerating(false);
     }
@@ -286,8 +286,8 @@ export function DrawingGenerator({
       return (
         <>
           <div className="animate-spin rounded-full h-3 w-3 sm:h-4 sm:w-4 border-b-2 border-white mr-2" />
-          <span className="hidden sm:inline">{t('drawing_generator.generating')}</span>
-          <span className="sm:hidden">{t('drawing_generator.processing')}</span>
+          <span className="hidden sm:inline">{t('generating')}</span>
+          <span className="sm:hidden">{t('processing')}</span>
         </>
       );
     }
@@ -296,8 +296,8 @@ export function DrawingGenerator({
     if (isCheckingTrialStatus || trialStatus === null) {
       return (
         <>
-          <span className="hidden sm:inline">{t('drawing_generator.convert_to_drawing')}</span>
-          <span className="sm:hidden">{t('drawing_generator.convert')}</span>
+          <span className="hidden sm:inline">{t('convert_to_drawing')}</span>
+          <span className="sm:hidden">{t('convert')}</span>
         </>
       );
     }
@@ -305,18 +305,18 @@ export function DrawingGenerator({
     if (trialStatus?.canUseTrial) {
       return (
         <>
-          <span className="hidden sm:inline">{t('drawing_generator.convert_to_drawing')}</span>
-          <span className="sm:hidden">{t('drawing_generator.convert')}</span>
+          <span className="hidden sm:inline">{t('convert_to_drawing')}</span>
+          <span className="sm:hidden">{t('convert')}</span>
           <RiCoinsLine className="inline-block ml-2" />
-          <span className="text-sm">{t('drawing_generator.free')}</span>
+          <span className="text-sm">{t('free')}</span>
         </>
       );
     }
 
     return (
       <>
-        <span className="hidden sm:inline">{t('drawing_generator.convert_to_drawing')}</span>
-        <span className="sm:hidden">{t('drawing_generator.convert')}</span>
+        <span className="hidden sm:inline">{t('convert_to_drawing')}</span>
+        <span className="sm:hidden">{t('convert')}</span>
         <RiCoinsLine className="inline-block ml-2" />
         <span className="text-sm">2</span>
       </>
@@ -366,11 +366,11 @@ export function DrawingGenerator({
               {/* Trial hint text */}
               {!session?.user?.uuid ? (
                 <p className="text-xs text-center text-muted-foreground">
-                  {t('drawing_generator.login_for_free_trial_hint')}
+                  {t('login_for_free_trial_hint')}
                 </p>
               ) : trialStatus?.canUseTrial && (
                 <p className="text-xs text-center text-muted-foreground">
-                  {t('drawing_generator.free_trial_available_hint')}
+                  {t('free_trial_available_hint')}
                 </p>
               )}
             </div>

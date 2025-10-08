@@ -15,7 +15,7 @@ interface StyleModalProps {
 }
 
 export function StyleModal({ open, onClose, selectedStyle, onStyleSelect }: StyleModalProps) {
-  const t = useTranslations();
+  const t = useTranslations('drawing_generator');
   const allStyles = getAllDrawingStyles(t);
 
   const handleStyleSelect = (styleId: string) => {
@@ -27,7 +27,7 @@ export function StyleModal({ open, onClose, selectedStyle, onStyleSelect }: Styl
     <Dialog open={open} onOpenChange={onClose}>
       <DialogContent className="max-w-5xl max-h-[85vh] overflow-hidden p-0 gap-0">
         <DialogHeader className="px-6 pt-6 pb-4">
-          <DialogTitle className="text-xl">{t('drawing_generator.style_modal.title')}</DialogTitle>
+          <DialogTitle className="text-xl">{t('style_modal.title')}</DialogTitle>
         </DialogHeader>
         
         <div className="overflow-y-auto max-h-[70vh] pl-6 py-6 pr-2">
