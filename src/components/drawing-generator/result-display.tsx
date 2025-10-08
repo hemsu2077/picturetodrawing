@@ -46,6 +46,7 @@ export function RecentDrawings({
 }: RecentDrawingsProps) {
   const { data: session } = isAuthEnabled() ? useSession() : { data: null };
   const t = useTranslations('drawing_generator');
+  const tMy = useTranslations('my_drawings');
   const [drawings, setDrawings] = useState<Drawing[]>([]);
   const [selectedDrawing, setSelectedDrawing] = useState<Drawing | null>(null);
   const [loading, setLoading] = useState(false);
@@ -145,12 +146,12 @@ export function RecentDrawings({
       }
 
       setDrawings(prev => prev.filter(d => d.uuid !== drawing.uuid));
-      await showToast('success', t("my_drawings.delete_success"));
+      await showToast('success', tMy('delete_success'));
       setIsDeleteDialogOpen(false);
       setDrawingToDelete(null);
     } catch (error) {
       console.error("Error deleting drawing:", error);
-      await showToast('error', t("my_drawings.delete_failed"));
+      await showToast('error', tMy('delete_failed'));
     } finally {
       setIsDeleting(false);
     }
