@@ -30,6 +30,11 @@
           ]
         },
         {
+          "title": "繪畫風格合集",
+          "url": "/drawing-styles",
+          "icon": ""
+        },
+        {
           "title": "價格",
           "url": "/pricing",
           "icon": ""
@@ -41,7 +46,16 @@
         }
       ]
     },
-    "show_sign": false,
+    "buttons": [
+      {
+        "title": "免費點數",
+        "url": "/free-credits",
+        "target": "_self",
+        "variant": "outline",
+        "icon": "RiGiftLine"
+      }
+    ],
+    "show_sign": true,
     "show_theme": false,
     "show_locale": true
   },
@@ -62,15 +76,6 @@
       {
         "text": "專業級創作",
         "icon": "Fan"
-      }
-    ],
-    "buttons": [
-      {
-        "title": "免費試用",
-        "icon": "RiFlashlightFill",
-        "url": "/#drawing-generator",
-        "target": "_self",
-        "variant": "default"
       }
     ],
     "show_happy_users": true,
@@ -480,6 +485,11 @@
             {
               "title": "照片轉卡通",
               "url": "/photo-to-cartoon",
+              "target": "_self"
+            },
+            {
+              "title": "繪畫風格合集",
+              "url": "/drawing-styles",
               "target": "_self"
             }
           ]

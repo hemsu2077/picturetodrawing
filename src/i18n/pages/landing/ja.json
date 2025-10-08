@@ -30,6 +30,11 @@
           ]
         },
         {
+          "title": "スタイルギャラリー",
+          "url": "/drawing-styles",
+          "icon": ""
+        },
+        {
           "title": "料金プラン",
           "url": "/pricing",
           "icon": ""
@@ -481,6 +486,11 @@
             {
               "title": "写真をカートゥーンに",
               "url": "/photo-to-cartoon",
+              "target": "_self"
+            },
+            {
+              "title": "スタイルギャラリー",
+              "url": "/drawing-styles",
               "target": "_self"
             }
           ]

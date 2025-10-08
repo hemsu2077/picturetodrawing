@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "Estilos de Dibujo para Fotos | Transforma Imágenes con IA",
+    "description": "Descubre todos los estilos de dibujo para tus fotos. Convierte imágenes en dibujos de líneas, acuarelas, anime, caricaturas y estilos 3D modernos. Encuentra tu estilo artístico perfecto."
+  },
+  "hero": {
+    "badge": "Explora Nuestros Estilos",
+    "title": "Estilos de Dibujo para Fotos",
+    "description": "Transforma tus fotos con nuestra amplia colección de estilos de dibujo profesionales. Desde dibujos de líneas clásicos hasta arte anime moderno, pinturas a acuarela y caricaturas 3D—descubre el estilo perfecto para dar vida a tu visión creativa."
+  },
+  "breadcrumb": {
+    "home": "Inicio",
+    "drawing_styles": "Estilos de Dibujo"
+  },
+  "categories": {
+    "drawing": {
+      "name": "Foto en Dibujo",
+      "description": "Convierte tus fotos en elegantes dibujos de líneas y bocetos con trazos limpios y minimalistas. Perfecto para crear retratos artísticos, páginas de libros para colorear, diseños de tatuajes e ilustraciones atemporales que capturan la esencia de tus imágenes."
+    },
+    "art": {
+      "name": "Foto en Arte",
+      "description": "Transforma tus fotos en impresionantes obras maestras artísticas inspiradas en técnicas de pintura famosas. Experimenta la belleza de la acuarela, pintura al óleo, las pinceladas arremolinadas de Van Gogh, el vibrante arte pop y más—llevando arte de calidad museística a tus imágenes."
+    },
+    "cartoon": {
+      "name": "Foto a caricatura",
+      "description": "¡Conviértete en tu personaje de caricatura favorito! Transfórmate en Los Simpson, South Park, Rick y Morty, Disney, Pixar o héroes clásicos de cómics. Perfecto para avatares de redes sociales, regalos y fotos de perfil divertidas."
+    },
+    "anime": {
+      "name": "Foto en Anime",
+      "description": "¡Entra al mundo de la animación japonesa! Transforma tus fotos en hermoso arte anime y manga con la magia de Studio Ghibli, estéticas nostálgicas del anime de los 90, estilos de acción shounen o diseños románticos shoujo. Perfecto para fanáticos del anime y cosplayers."
+    },
+    "modern": {
+      "name": "Foto en 3D y Moderno",
+      "description": "¡Explora estilos de arte digital de vanguardia! Transforma tus fotos en arte pixelado retro, claymation táctil, diseños geométricos low-poly, neón cyberpunk futurista o estéticas urbanas inspiradas en GTA. Perfecto para gamers y entusiastas del arte digital."
+    }
+  },
+  "style_metadata": {
+    "line-drawing": {
+      "description": "Crea elegante arte de líneas con trazos limpios y minimalistas—perfecto para tatuajes, logos e ilustraciones modernas."
+    },
+    "ghibli-style": {
+      "description": "Experimenta la magia de Studio Ghibli con estéticas anime oníricas pintadas a mano que aportan calidez y asombro a tus fotos."
+    },
+    "line-drawing-2": {
+      "description": "Arte de líneas más suave con trazos orgánicos y fluidos que capturan el movimiento natural y la gracia."
+    },
+    "line-art": {
+      "description": "Contornos nítidos y limpios ideales para libros de colorear, ilustraciones infantiles y arte imprimible."
+    },
+    "bold-outline": {
+      "description": "Contornos audaces y dramáticos que hacen que tus imágenes destaquen con energía de cómic e impacto visual."
+    },
+    "pencil-sketch": {
+      "description": "Boceto a lápiz auténtico con sombreado realista, textura y el encanto atemporal del arte dibujado a mano."
+    },
+    "pencil-sketch-2": {
+      "description": "Trabajo delicado a lápiz con sombreado suave y detalles sutiles que capturan una belleza artística gentil."
+    },
+    "charcoal-drawing": {
+      "description": "Arte dramático al carbón con negros profundos, trazos expresivos y contraste poderoso para retratos impactantes."
+    },
+    "simple-drawing": {
+      "description": "Estilo minimalista con formas simplificadas y líneas limpias—perfecto para diseños modernos y despejados."
+    },
+    "inkart": {
+      "description": "Arte tradicional con tinta con pinceladas fluidas y elegancia caligráfica inspirada en la pintura del este asiático."
+    },
+    "watercolor-painting": {
+      "description": "Acuarela suave y onírica con mezclas de colores delicadas y texturas fluidas que evocan emoción y tranquilidad."
+    },
+    "splash-watercolor-art": {
+      "description": "Explosiones vibrantes de acuarela con salpicaduras dinámicas y estallidos de color enérgicos para arte audaz y expresivo."
+    },
+    "oil-painting": {
+      "description": "Rica pintura al óleo con pinceladas gruesas y texturizadas y la elegancia atemporal del arte clásico."
+    },
+    "van-gogh": {
+      "description": "Estilo icónico de Van Gogh con pinceladas arremolinadas y expresivas que aportan magia postimpresionista a tus fotos."
+    },
+    "pop-art": {
+      "description": "Arte pop audaz inspirado en Warhol con colores vibrantes, alto contraste y estéticas icónicas de diseño gráfico."
+    },
+    "psychedelic-art": {
+      "description": "Arte psicodélico alucinante con colores vívidos, patrones surrealistas y viajes visuales inspirados en los años 60."
+    },
+    "graffiti-street-art": {
+      "description": "Graffiti urbano con estilo callejero, texturas de pintura en aerosol y colores audaces que capturan la cultura de la ciudad."
+    },
+    "kawaii-pastel-doodle": {
+      "description": "Adorable estilo kawaii con colores pastel suaves, garabatos lindos y el encanto de la cultura japonesa de la ternura."
+    },
+    "color-pencil-drawing": {
+      "description": "Arte vibrante a lápiz de color con tonos ricos, textura visible y la calidez de los dibujos coloreados a mano."
+    },
+    "pure-cartoon": {
+      "description": "Estilo de caricatura clásico con contornos audaces y colores vibrantes—perfecto para diseños de personajes divertidos y juguetones."
+    },
+    "simpsons": {
+      "description": "¡Conviértete en residente de Springfield! Obtén la icónica piel amarilla, ojos grandes y el look característico de Los Simpson."
+    },
+    "south-park": {
+      "description": "Únete a la pandilla en South Park con el distintivo estilo de animación recortada y encanto peculiar del programa."
+    },
+    "rick-morty": {
+      "description": "¡Get schwifty! Transfórmate al universo de Rick y Morty con la estética de caricatura sci-fi del programa."
+    },
+    "snoopy": {
+      "description": "Encanto clásico de Peanuts con el estilo atemporal de tira cómica de Snoopy—simple, conmovedor y nostálgico."
+    },
+    "superhero-comic": {
+      "description": "Transformación épica de superhéroe con poses dinámicas, colores audaces y energía de acción clásica de cómic."
+    },
+    "pixar-3d": {
+      "description": "Magia de Pixar con renderizado 3D suave, rasgos expresivos y ese encanto conmovedor característico."
+    },
+    "disney-3d": {
+      "description": "Encanto de Disney con animación 3D pulida, estéticas mágicas y belleza de cuento de hadas."
+    },
+    "90s-retro-anime": {
+      "description": "Anime nostálgico de los 90 con estéticas retro, vibras clásicas de animación cel y encanto vintage de animación japonesa."
+    },
+    "shounen-anime": {
+      "description": "Estilo shounen lleno de acción con energía dinámica, líneas audaces y el espíritu de batallas épicas de anime."
+    },
+    "shoujo-anime": {
+      "description": "Estilo shoujo romántico con efectos brillantes, rasgos suaves y estéticas manga oníricas para hermosos retratos."
+    },
+    "manga": {
+      "description": "Manga clásico en blanco y negro con entintado dramático, tonos de pantalla y auténtico estilo de cómic japonés."
+    },
+    "3d-chibi": {
+      "description": "Chibi 3D súper lindo con cabezas grandes, cuerpos pequeños y encanto kawaii irresistible—perfecto para avatares adorables."
+    },
+    "pixel-art": {
+      "description": "Arte pixelado retro de 8 bits con estéticas nostálgicas de videojuegos—perfecto para gamers y entusiastas retro."
+    },
+    "clay": {
+      "description": "Estilo claymation táctil con texturas esculpidas y encanto de animación stop-motion—único y juguetón."
+    },
+    "low-poly": {
+      "description": "Arte geométrico moderno con facetas low-poly, bordes limpios y estéticas contemporáneas de diseño 3D."
+    },
+    "cyberpunk-neon": {
+      "description": "Cyberpunk futurista con luces de neón brillantes, vibras distópicas y estéticas urbanas de ciencia ficción."
+    },
+    "gta-style": {
+      "description": "Estilo urbano inspirado en GTA con estilo callejero, estéticas de videojuego y ese look icónico de Grand Theft Auto."
+    }
+  },
+  "style_card": {
+    "try_now": "Probar Ahora"
+  },
+  "cta": {
+    "title": "¿Listo para Transformar tus Fotos?",
+    "description": "Comienza a crear obras de arte impresionantes con nuestro generador de foto en dibujo con IA. Elige cualquier estilo y da vida a tu visión creativa—¡pruébalo gratis hoy!",
+    "button": "Probar Gratis Ahora"
+  },
+  "structured_data": {
+    "name": "Estilos de Dibujo para Fotos",
+    "description": "Descubre diversos estilos de dibujo para fotos. Transforma fotos en dibujos de líneas, arte de acuarela, anime, caricaturas y estilos 3D modernos.",
+    "breadcrumb_home": "Inicio",
+    "breadcrumb_drawing_styles": "Estilos de Dibujo para Fotos"
+  }
+}

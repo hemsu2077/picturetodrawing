@@ -487,6 +487,11 @@
               "title": "Photo to Cartoon",
               "url": "/photo-to-cartoon",
               "target": "_self"
+            },
+            {
+              "title": "Drawing Styles",
+              "url": "/drawing-styles",
+              "target": "_self"
             }
           ]
         },

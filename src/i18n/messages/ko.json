@@ -266,7 +266,8 @@
       "shounen_anime": "소년 애니메이션",
       "shoujo_anime": "소녀 애니메이션",
       "3d_chibi": "3D 치비",
-      "low_poly": "로우 폴리"
+      "low_poly": "로우 폴리",
+      "simple_drawing": "간단한 그림"
     },
     "style_modal": {
       "title": "스타일 선택",

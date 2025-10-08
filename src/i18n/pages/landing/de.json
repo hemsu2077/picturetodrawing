@@ -30,6 +30,11 @@
           ]
         },
         {
+          "title": "Zeichenstil-Galerie",
+          "url": "/drawing-styles",
+          "icon": ""
+        },
+        {
           "title": "Preise",
           "url": "/pricing",
           "icon": ""
@@ -481,6 +486,11 @@
             {
               "title": "Foto in Cartoon umwandeln",
               "url": "/photo-to-cartoon",
+              "target": "_self"
+            },
+            {
+              "title": "Zeichenstil-Galerie",
+              "url": "/drawing-styles",
               "target": "_self"
             }
           ]

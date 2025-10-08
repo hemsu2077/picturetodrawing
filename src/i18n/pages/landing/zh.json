@@ -30,6 +30,11 @@
           ]
         },
         {
+          "title": "绘画风格合集",
+          "url": "/drawing-styles",
+          "icon": ""
+        },
+        {
           "title": "价格",
           "url": "/pricing",
           "icon": ""
@@ -41,6 +46,7 @@
         }
       ]
     },
+    
     "buttons": [
       {
         "title": "免费积分",
@@ -481,6 +487,11 @@
             {
               "title": "图片转卡通",
               "url": "/photo-to-cartoon",
+              "target": "_self"
+            },
+            {
+              "title": "绘画风格合集",
+              "url": "/drawing-styles",
               "target": "_self"
             }
           ]

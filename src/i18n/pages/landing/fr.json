@@ -30,6 +30,11 @@
           ]
         },
         {
+          "title": "Galerie de Styles",
+          "url": "/drawing-styles",
+          "icon": ""
+        },
+        {
           "title": "Tarifs",
           "url": "/pricing",
           "icon": ""
@@ -481,6 +486,11 @@
             {
               "title": "Photo en dessin animé",
               "url": "/photo-to-cartoon",
+              "target": "_self"
+            },
+            {
+              "title": "Galerie de Styles",
+              "url": "/drawing-styles",
               "target": "_self"
             }
           ]

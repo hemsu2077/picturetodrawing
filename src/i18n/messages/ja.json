@@ -266,7 +266,9 @@
       "shounen_anime": "少年アニメ",
       "shoujo_anime": "少女アニメ",
       "3d_chibi": "3Dちび",
-      "low_poly": "ローポリ"
+      "low_poly": "ローポリ",
+      "simple_drawing":"シンプルな絵"
+
     },
     "style_modal": {
       "title": "スタイルを選択",

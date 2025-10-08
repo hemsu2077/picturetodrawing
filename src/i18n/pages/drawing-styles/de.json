@@ -1,0 +1,164 @@
+{
+  "meta": {
+    "title": "Zeichenstile für Fotos | KI-gestützte Bild-zu-Zeichnung Stile",
+    "description": "Entdecke vielfältige Zeichenstile für deine Fotos. Verwandle Bilder in Strichzeichnungen, Aquarellkunst, Anime, Cartoons und moderne 3D-Stile. Finde deinen perfekten künstlerischen Look."
+  },
+  "hero": {
+    "badge": "Entdecke unsere Stile",
+    "title": "Zeichenstile für deine Fotos",
+    "description": "Verwandle deine Fotos mit unserer vielfältigen Sammlung professioneller Zeichenstile. Von klassischen Strichzeichnungen über moderne Anime-Kunst, Aquarellmalereien bis hin zu 3D-Cartoons – entdecke den perfekten Stil für deine kreative Vision."
+  },
+  "breadcrumb": {
+    "home": "Startseite",
+    "drawing_styles": "Zeichenstile"
+  },
+  "categories": {
+    "drawing": {
+      "name": "Foto zu Zeichnung",
+      "description": "Verwandle deine Fotos in elegante Strichzeichnungen und Skizzen mit klaren, minimalistischen Linien. Perfekt für künstlerische Porträts, Ausmalbilder, Tattoo-Designs und zeitlose Illustrationen, die das Wesen deiner Bilder einfangen."
+    },
+    "art": {
+      "name": "Foto zu Kunst",
+      "description": "Verwandle deine Fotos in beeindruckende Kunstwerke, inspiriert von berühmten Maltechniken. Erlebe die Schönheit von Aquarell, Ölmalerei, Van Goghs wirbelnden Pinselstrichen, lebendiger Pop-Art und mehr – bringe Museumsqualität in deine Bilder."
+    },
+    "cartoon": {
+      "name": "Foto in Cartoon umwandeln",
+      "description": "Werde zu deiner Lieblings-Cartoonfigur! Verwandle dich in Simpsons, South Park, Rick & Morty, Disney, Pixar oder klassische Comic-Helden. Perfekt für Social-Media-Avatare, Geschenke und lustige Profilbilder."
+    },
+    "anime": {
+      "name": "Foto zu Anime",
+      "description": "Tauche ein in die Welt der japanischen Animation! Verwandle deine Fotos in wunderschöne Anime- und Manga-Kunst mit Studio-Ghibli-Magie, nostalgischen 90er-Anime-Ästhetiken, Shounen-Action-Stilen oder romantischen Shoujo-Designs. Perfekt für Anime-Fans und Cosplayer."
+    },
+    "modern": {
+      "name": "Foto zu 3D & Modern",
+      "description": "Erkunde modernste digitale Kunststile! Verwandle deine Fotos in Retro-Pixelkunst, haptische Claymation, geometrische Low-Poly-Designs, futuristische Cyberpunk-Neon-Ästhetik oder urbane GTA-inspirierte Looks. Perfekt für Gamer und Digital-Art-Enthusiasten."
+    }
+  },
+  "style_metadata": {
+    "line-drawing": {
+      "description": "Erstelle elegante Linienkunst mit klaren, minimalistischen Strichen – perfekt für Tattoos, Logos und moderne Illustrationen."
+    },
+    "ghibli-style": {
+      "description": "Erlebe die Magie von Studio Ghibli mit verträumten, handgemalten Anime-Ästhetiken, die Wärme und Zauber in deine Fotos bringen."
+    },
+    "line-drawing-2": {
+      "description": "Weichere Linienkunst mit organischen, fließenden Strichen, die natürliche Bewegung und Anmut einfangen."
+    },
+    "line-art": {
+      "description": "Klare, saubere Konturen – ideal für Malbücher, Kinderillustrationen und druckbare Kunst."
+    },
+    "bold-outline": {
+      "description": "Kräftige, dramatische Konturen, die deine Bilder mit Comic-Energie und visueller Wirkung hervorstechen lassen."
+    },
+    "pencil-sketch": {
+      "description": "Authentische Bleistiftskizze mit realistischer Schattierung, Textur und dem zeitlosen Charme handgezeichneter Kunst."
+    },
+    "pencil-sketch-2": {
+      "description": "Zarte Bleistiftarbeit mit sanfter Schattierung und subtilen Details, die sanfte, künstlerische Schönheit einfangen."
+    },
+    "charcoal-drawing": {
+      "description": "Dramatische Kohlekunst mit tiefen Schwarztönen, ausdrucksstarken Strichen und kraftvollem Kontrast für eindrucksvolle Porträts."
+    },
+    "simple-drawing": {
+      "description": "Minimalistischer Stil mit vereinfachten Formen und klaren Linien – perfekt für moderne, aufgeräumte Designs."
+    },
+    "inkart": {
+      "description": "Traditionelle Tusche-Kunst mit fließenden Pinselstrichen und kalligrafischer Eleganz, inspiriert von ostasiatischer Malerei."
+    },
+    "watercolor-painting": {
+      "description": "Sanftes, verträumtes Aquarell mit zarten Farbverläufen und fließenden Texturen, die Emotionen und Ruhe hervorrufen."
+    },
+    "splash-watercolor-art": {
+      "description": "Lebendige Aquarell-Explosionen mit dynamischen Spritzern und energiegeladenen Farbausbrüchen für ausdrucksstarke Kunst."
+    },
+    "oil-painting": {
+      "description": "Reichhaltige Ölmalerei mit dicken, texturierten Pinselstrichen und der zeitlosen Eleganz klassischer Kunst."
+    },
+    "van-gogh": {
+      "description": "Ikonischer Van-Gogh-Stil mit wirbelnden, ausdrucksstarken Pinselstrichen, die postimpressionistische Magie in deine Fotos bringen."
+    },
+    "pop-art": {
+      "description": "Kräftige Warhol-inspirierte Pop-Art mit lebendigen Farben, hohem Kontrast und ikonischer Grafikdesign-Ästhetik."
+    },
+    "psychedelic-art": {
+      "description": "Bewusstseinserweiternde psychedelische Kunst mit leuchtenden Farben, surrealen Mustern und 60er-Jahre-inspirierten visuellen Trips."
+    },
+    "graffiti-street-art": {
+      "description": "Urbanes Graffiti mit Street-Art-Kante, Sprühfarben-Texturen und kräftigen Farben, die Stadtkultur einfangen."
+    },
+    "kawaii-pastel-doodle": {
+      "description": "Bezaubernder Kawaii-Stil mit sanften Pastellfarben, niedlichen Kritzeleien und dem Charme japanischer Niedlichkeitskultur."
+    },
+    "color-pencil-drawing": {
+      "description": "Lebendige Buntstiftkunst mit satten Farbtönen, sichtbarer Textur und der Wärme handkolorierter Zeichnungen."
+    },
+    "pure-cartoon": {
+      "description": "Klassischer Cartoon-Stil mit kräftigen Konturen und lebendigen Farben – perfekt für lustige, verspielte Charakterdesigns."
+    },
+    "simpsons": {
+      "description": "Werde zum Springfield-Bewohner! Erhalte die ikonische gelbe Haut, große Augen und den typischen Simpsons-Look."
+    },
+    "south-park": {
+      "description": "Schließe dich der Gang in South Park an mit dem charakteristischen Ausschneide-Animationsstil und skurrilem Charme der Serie."
+    },
+    "rick-morty": {
+      "description": "Get schwifty! Verwandle dich ins Rick-and-Morty-Universum mit der Sci-Fi-Cartoon-Ästhetik der Serie."
+    },
+    "snoopy": {
+      "description": "Klassischer Peanuts-Charme mit Snoopys zeitlosem Comic-Strip-Stil – einfach, herzerwärmend und nostalgisch."
+    },
+    "superhero-comic": {
+      "description": "Epische Superhelden-Verwandlung mit dynamischen Posen, kräftigen Farben und klassischer Comic-Action-Energie."
+    },
+    "pixar-3d": {
+      "description": "Pixar-Magie mit glatter 3D-Darstellung, ausdrucksstarken Gesichtszügen und dem typischen herzerwärmenden Charme."
+    },
+    "disney-3d": {
+      "description": "Disney-Zauber mit polierter 3D-Animation, magischer Ästhetik und Märchenschönheit."
+    },
+    "90s-retro-anime": {
+      "description": "Nostalgischer 90er-Anime mit Retro-Ästhetik, klassischen Cel-Animations-Vibes und Vintage-Charme japanischer Animation."
+    },
+    "shounen-anime": {
+      "description": "Actiongeladener Shounen-Stil mit dynamischer Energie, kräftigen Linien und dem Geist epischer Anime-Kämpfe."
+    },
+    "shoujo-anime": {
+      "description": "Romantischer Shoujo-Stil mit funkelnden Effekten, sanften Zügen und verträumter Manga-Ästhetik für wunderschöne Porträts."
+    },
+    "manga": {
+      "description": "Klassisches Schwarz-Weiß-Manga mit dramatischer Tuschearbeit, Rasterfolien und authentischem japanischem Comic-Stil."
+    },
+    "3d-chibi": {
+      "description": "Superniedlicher 3D-Chibi mit großem Kopf, winzigem Körper und unwiderstehlichem Kawaii-Charme – perfekt für bezaubernde Avatare."
+    },
+    "pixel-art": {
+      "description": "Retro-8-Bit-Pixelkunst mit nostalgischer Videospiel-Ästhetik – perfekt für Gamer und Retro-Enthusiasten."
+    },
+    "clay": {
+      "description": "Haptischer Claymation-Stil mit modellierten Texturen und Stop-Motion-Animations-Charme – einzigartig und verspielt."
+    },
+    "low-poly": {
+      "description": "Moderne geometrische Kunst mit Low-Poly-Facetten, klaren Kanten und zeitgenössischer 3D-Design-Ästhetik."
+    },
+    "cyberpunk-neon": {
+      "description": "Futuristischer Cyberpunk mit leuchtenden Neonlichtern, dystopischen Vibes und Sci-Fi-Urban-Ästhetik."
+    },
+    "gta-style": {
+      "description": "GTA-inspirierter urbaner Stil mit Street-Edge, Game-Ästhetik und dem ikonischen Grand-Theft-Auto-Look."
+    }
+  },
+  "style_card": {
+    "try_now": "Jetzt ausprobieren"
+  },
+  "cta": {
+    "title": "Bereit, deine Fotos zu verwandeln?",
+    "description": "Beginne jetzt mit der Erstellung beeindruckender Kunstwerke mit unserem KI-gestützten Bild-zu-Zeichnung-Generator. Wähle einen beliebigen Stil und erwecke deine kreative Vision zum Leben – teste es heute kostenlos!",
+    "button": "Jetzt kostenlos testen"
+  },
+  "structured_data": {
+    "name": "Zeichenstile für Fotos",
+    "description": "Entdecke vielfältige Zeichenstile für deine Fotos. Verwandle Bilder in Strichzeichnungen, Aquarellkunst, Anime, Cartoons und moderne 3D-Stile.",
+    "breadcrumb_home": "Startseite",
+    "breadcrumb_drawing_styles": "Zeichenstile"
+  }
+}
