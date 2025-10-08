@@ -108,18 +108,20 @@ export const STYLE_METADATA: Record<string, StyleMetadata> = {
   },
   'line-drawing-2': {
     id: 'line-drawing-2',
-    hasLandingPage: false,
+    hasLandingPage: true,
     landingPageUrl: '/photo-to-line-drawing',
     description: 'Alternative line drawing style with softer, more organic lines.'
   },
   'line-art': {
     id: 'line-art',
-    hasLandingPage: false,
+    hasLandingPage: true,
+    landingPageUrl: '/photo-to-line-drawing',
     description: 'Clean line art style perfect for coloring books and illustrations.'
   },
   'bold-outline': {
     id: 'bold-outline',
-    hasLandingPage: false,
+    hasLandingPage: true,
+    landingPageUrl: '/photo-to-line-drawing',
     description: 'Strong, bold outlines that make your photos pop with comic-style edges.'
   },
   'pencil-sketch': {
@@ -194,67 +196,80 @@ export const STYLE_METADATA: Record<string, StyleMetadata> = {
   },
   'pure-cartoon': {
     id: 'pure-cartoon',
-    hasLandingPage: false,
+    hasLandingPage: true,
+    landingPageUrl: '/photo-to-cartoon',
     description: 'Classic cartoon style with bold outlines and vibrant colors.'
   },
   'simpsons': {
     id: 'simpsons',
-    hasLandingPage: false,
+    hasLandingPage: true,
+    landingPageUrl: '/photo-to-cartoon',
     description: 'Transform into a Simpsons character with iconic yellow skin and style.'
   },
   'south-park': {
     id: 'south-park',
-    hasLandingPage: false,
+    hasLandingPage: true,
+    landingPageUrl: '/photo-to-cartoon',
     description: 'Become a South Park character with the show\'s distinctive art style.'
   },
   'rick-morty': {
     id: 'rick-morty',
-    hasLandingPage: false,
+    hasLandingPage: true,
+    landingPageUrl: '/photo-to-cartoon',
     description: 'Rick and Morty style transformation with the show\'s unique aesthetic.'
   },
   'snoopy': {
     id: 'snoopy',
-    hasLandingPage: false,
+    hasLandingPage: true,
+    landingPageUrl: '/photo-to-cartoon',
     description: 'Peanuts-inspired style with Snoopy\'s classic comic strip look.'
   },
   'superhero-comic': {
     id: 'superhero-comic',
-    hasLandingPage: false,
+    hasLandingPage: true,
+    landingPageUrl: '/photo-to-cartoon',
     description: 'Epic superhero comic book style with dynamic action and bold colors.'
   },
   'pixar-3d': {
     id: 'pixar-3d',
-    hasLandingPage: false,
+    hasLandingPage: true,
+    landingPageUrl: '/photo-to-cartoon',
     description: 'Pixar-style 3D animation look with smooth rendering and charm.'
   },
   'disney-3d': {
     id: 'disney-3d',
-    hasLandingPage: false,
+    hasLandingPage: true,
+    landingPageUrl: '/photo-to-cartoon',
     description: 'Disney 3D animation style with magical and polished aesthetics.'
   },
   '90s-retro-anime': {
     id: '90s-retro-anime',
-    hasLandingPage: false,
+    hasLandingPage: true,
+    landingPageUrl: '/photo-to-cartoon',
     description: 'Nostalgic 90s anime style with retro aesthetics and classic look.'
   },
   'shounen-anime': {
     id: 'shounen-anime',
-    hasLandingPage: false,
+    hasLandingPage: true,
+    landingPageUrl: '/photo-to-cartoon',
     description: 'Action-packed shounen anime style with dynamic energy and bold lines.'
   },
   'shoujo-anime': {
     id: 'shoujo-anime',
-    hasLandingPage: false,
+    hasLandingPage: true,
+    landingPageUrl: '/photo-to-cartoon',
     description: 'Beautiful shoujo anime style with sparkles and romantic aesthetics.'
   },
   'manga': {
     id: 'manga',
-    hasLandingPage: false,
+    hasLandingPage: true,
+    landingPageUrl: '/photo-to-cartoon',
     description: 'Black and white manga style perfect for comic book illustrations.'
   },
   '3d-chibi': {
     id: '3d-chibi',
-    hasLandingPage: false,
+    hasLandingPage: true,
+    landingPageUrl: '/photo-to-cartoon',
     description: 'Adorable 3D chibi style with cute proportions and charm.'
   },
   'pixel-art': {

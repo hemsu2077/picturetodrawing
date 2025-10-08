@@ -27,11 +27,15 @@ export function StyleCard({
   const router = useRouter();
 
   const handleClick = () => {
+    // Always include style parameter
+    const styleParam = `?style=${id}#drawing-generator`;
+    
     if (hasLandingPage && landingPageUrl) {
-      router.push(landingPageUrl);
+      // Navigate to landing page with style parameter
+      router.push(`${landingPageUrl}${styleParam}`);
     } else {
-      // Scroll to drawing generator and pre-select this style
-      router.push(`/?style=${id}#drawing-generator`);
+      // Navigate to homepage with style parameter
+      router.push(`/${styleParam}`);
     }
   };
 
