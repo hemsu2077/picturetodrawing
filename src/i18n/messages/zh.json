@@ -266,7 +266,8 @@
       "shounen_anime": "少年动漫",
       "shoujo_anime": "少女动漫",
       "3d_chibi": "3D萌系",
-      "low_poly": "低多边形"
+      "low_poly": "低多边形",
+      "simple_drawing": "简笔插画"
     },
     "style_modal": {
       "title": "选择风格",

@@ -63,6 +63,11 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
     image: 'https://files.picturetodrawing.com/styles/inkart.webp'
   },
   {
+    id: 'simple-drawing',
+    name: t('drawing_generator.styles.simple_drawing'),
+    image: 'https://files.picturetodrawing.com/styles/simple-drawing.webp'
+  },
+  {
     id: 'color-pencil-drawing',
     name: t('drawing_generator.styles.color_pencil_drawing'),
     image: 'https://files.picturetodrawing.com/styles/color-pencil-drawing.webp'

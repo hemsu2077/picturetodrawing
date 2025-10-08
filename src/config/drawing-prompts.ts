@@ -21,6 +21,7 @@ export const drawingPrompts: DrawingPromptConfig = {
   'charcoal-drawing': 'transform the image to a drawing, the drawing should be in the style of black and white charcoal drawing, Try to make it look as painted as possible.',
   'color-pencil-drawing': 'transform the image to a drawing, the drawing should be in the style of color pencil drawing, Try to make it look as painted as possible.',
   'splash-watercolor-art': 'transform to romantic watercolor portrait, expressive paint splashes, artistic ink and paint strokes, textured paper background, expressive composition, keeping the original subject recognizable and centered, while allowing colorful splashes around it for artistic energy',
+  'simple-drawing': 'transform to a simple drawing with bold clear outlines, bright colors, smooth shapes, and a playful minimalist style',
   'kawaii-pastel-doodle': 'Transform to Kawaii pastel doodle while maintaining the exact original composition and placement',
   'watercolor-painting': 'transform the image to a drawing, the drawing should be in the style of watercolor painting, Try to make it look as painted as possible.',
   'inkart': 'transform the image to a drawing, the drawing should be in the style of ink art, Try to make it look as painted as possible.',
