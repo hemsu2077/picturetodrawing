@@ -55,7 +55,7 @@ export function CategoryNav({ categories }: CategoryNavProps) {
   };
 
   return (
-    <nav className="sticky top-16 z-10 bg-background/95 backdrop-blur-sm py-4 mb-12">
+    <nav className="sticky top-16 z-10  backdrop-blur-sm py-8">
       <div className="container">
         <div className="flex items-center gap-2 overflow-x-auto scrollbar-hide">
           {categories.map((category) => (
@@ -66,7 +66,7 @@ export function CategoryNav({ categories }: CategoryNavProps) {
                 'px-4 py-2 rounded-full text-sm font-medium whitespace-nowrap transition-all',
                 activeId === category.id
                   ? 'bg-primary text-primary-foreground shadow-sm'
-                  : 'bg-secondary text-secondary-foreground hover:bg-secondary/80'
+                  : 'bg-muted/50 text-secondary-foreground hover:bg-muted'
               )}
             >
               {category.name}

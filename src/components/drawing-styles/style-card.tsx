@@ -67,19 +67,20 @@ export function StyleCard({
       </div>
 
       {/* Content */}
-      <div className="p-4 space-y-3">
+      <div className="p-3 md:p-4 space-y-2 md:space-y-3">
         <div className="space-y-1">
-          <h3 className="font-semibold text-lg leading-tight group-hover:text-primary transition-colors">
+          <h3 className="font-semibold text-base md:text-lg leading-tight group-hover:text-primary transition-colors">
             {name}
           </h3>
-          <p className="text-sm text-muted-foreground line-clamp-2">
+          {/* Hide description on mobile to save space */}
+          <p className="hidden md:block text-sm text-muted-foreground line-clamp-2">
             {description}
           </p>
         </div>
 
-        <div className="flex items-center justify-between text-sm text-muted-foreground">
+        <div className="flex items-center justify-between text-xs md:text-sm text-muted-foreground">
           <span>{tryNowLabel}</span>
-          <ArrowRight className="size-4 transition-transform group-hover:translate-x-0.5" />
+          <ArrowRight className="size-3 md:size-4 transition-transform group-hover:translate-x-0.5" />
         </div>
       </div>
     </div>

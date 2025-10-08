@@ -100,7 +100,7 @@ export default async function DrawingStylesPage({
       />
 
       {/* Hero Section */}
-      <section className="py-12 lg:py-16 border-b">
+      <section className="py-8 lg:py-12 bg-muted/50">
         <div className="container">
           <Breadcrumb 
             items={[{ label: page.breadcrumb?.drawing_styles || 'Drawing Styles' }]} 
@@ -117,7 +117,7 @@ export default async function DrawingStylesPage({
               {page.hero?.title}
             </h1>
             
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-md md:text-xl text-muted-foreground leading-relaxed">
               {page.hero?.description}
             </p>
           </div>
@@ -128,7 +128,7 @@ export default async function DrawingStylesPage({
       <CategoryNav categories={categorizedStyles} />
 
       {/* Category Sections */}
-      <div className="container py-12 space-y-20">
+      <div className="container py-6 md:py-12 space-y-12 md:space-y-20">
         {categorizedStyles.map((category) => (
           <CategorySection
             key={category.id}
