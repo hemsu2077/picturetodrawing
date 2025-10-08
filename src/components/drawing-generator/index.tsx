@@ -17,6 +17,7 @@ import { Pricing } from '@/types/blocks/pricing';
 import { RiCoinsLine } from 'react-icons/ri';
 import { type PopularStylesConfigKey } from '@/config/drawing-styles';
 import { getModelForStyle } from '@/config/drawing-prompts';
+import { useSearchParams } from 'next/navigation';
 
 interface DrawingGeneratorProps {
   className?: string;
@@ -39,10 +40,22 @@ export function DrawingGenerator({
   const { setShowSignModal, showPricingModal, setShowPricingModal } = useAppContext();
   const locale = useLocale();
   const t = useTranslations();
+  const searchParams = useSearchParams();
+  
+  // Get style from URL parameter, fallback to defaultStyle
+  const urlStyle = searchParams.get('style');
+  const initialStyle = urlStyle || defaultStyle;
   
   const [selectedImage, setSelectedImage] = useState<{ file: File | string; preview: string } | null>(null);
-  const [selectedStyle, setSelectedStyle] = useState(defaultStyle);
+  const [selectedStyle, setSelectedStyle] = useState(initialStyle);
   const [selectedRatio, setSelectedRatio] = useState('auto');
+
+  // Update style when URL parameter changes
+  useEffect(() => {
+    if (urlStyle && urlStyle !== selectedStyle) {
+      setSelectedStyle(urlStyle);
+    }
+  }, [urlStyle]);
 
   // Auto-set ratio to 'auto' when nano-banana model is used
   useEffect(() => {
