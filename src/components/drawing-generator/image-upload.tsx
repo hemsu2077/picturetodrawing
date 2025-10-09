@@ -94,7 +94,7 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
       />
       
       {selectedImage ? (
-        <div className="relative w-full rounded-lg border-2 border-border overflow-hidden bg-white flex items-center justify-center aspect-video">
+        <div className="relative h-108 rounded-lg border-2 border-border overflow-hidden bg-white flex items-center justify-center">
           <img
             src={selectedImage.preview}
             alt={t('drawing_generator.selected_image_alt')}
@@ -112,7 +112,7 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
       ) : (
         <div
           className={cn(
-            "border-2 border-dashed rounded-lg p-3 text-center transition-colors w-full flex flex-col justify-center cursor-pointer aspect-video",
+            "border-2 border-dashed rounded-lg p-6 text-center transition-colors h-108 flex flex-col items-center justify-center cursor-pointer",
             "hover:border-primary/50 hover:bg-accent/20",
             isDragging && "border-primary bg-accent/20"
           )}
@@ -121,25 +121,36 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
           onDragLeave={handleDragLeave}
           onClick={openFileDialog}
         >
-          <div className="flex flex-col items-center gap-1">
-            <div className="p-3 rounded-full bg-primary/5">
-              <ImageIcon className="h-6 w-6 text-muted-foreground" />
+          <div className="flex flex-col items-center gap-4 mb-6">
+            <div className="p-4 rounded-full bg-primary/5">
+              <ImageIcon className="h-8 w-8 text-muted-foreground" />
             </div>
             <div className="space-y-2">
-              <h3 className="text-md font-medium">{t('daily_checkin.upload_picture')}</h3>
-              <p className="text-xs text-muted-foreground leading-tight">
+              <h3 className="text-lg font-medium">{t('daily_checkin.upload_picture')}</h3>
+              <p className="text-sm text-muted-foreground">
                 {t('daily_checkin.drag_drop_hint')}
               </p>
+              <p className="text-xs text-muted-foreground">
+                {t('daily_checkin.supported_formats')}
+              </p>
             </div>
+            <Button 
+              variant="outline" 
+              className="mt-2 pointer-events-none" 
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Upload className="h-4 w-4 mr-2" />
+              {t('daily_checkin.choose_file')}
+            </Button>
           </div>
           
-          <div className="w-full pt-4 border-t mt-3">
-            <p className="text-xs text-muted-foreground mb-2">{t('daily_checkin.try_samples')}</p>
-            <div className="flex items-center justify-center gap-1">
+          <div className="max-w-sm py-4">
+            <p className="text-sm font-medium text-muted-foreground mb-3">{t('daily_checkin.try_samples')}</p>
+            <div className="grid grid-cols-4 gap-2 px-4 lg:px-16">
               {sampleImages.map((sampleUrl, index) => (
                 <div
                   key={index}
-                  className="relative w-12 h-12 rounded-sm overflow-hidden cursor-pointer border border-border hover:border-primary/50 transition-colors flex-shrink-0"
+                  className="relative aspect-square rounded-sm overflow-hidden cursor-pointer"
                   onClick={(e) => {
                     e.stopPropagation();
                     handleSampleImageSelect(sampleUrl);
