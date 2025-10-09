@@ -323,22 +323,30 @@ export function DrawingGenerator({
       {/* Main Input Card */}
       <Card className="p-4 border-none">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-          {/* Left Side - Image Upload (2 columns) */}
+          {/* Left Side - Style Preview + Image Upload (2 columns) */}
           <div className="lg:col-span-2">
-            <ImageUpload
-              onImageSelect={handleImageSelect}
-              selectedImage={selectedImage}
-              className=""
-            />
+            <div className="border border-border rounded-lg p-6 flex flex-col gap-4 lg:h-[620px] items-center justify-center">
+              {/* Style Preview on top - constrained width */}
+              <div className="w-full max-w-xl flex-shrink-0">
+                <StylePreview
+                  selectedStyle={selectedStyle}
+                  className=""
+                />
+              </div>
+              
+              {/* Image Upload below - constrained width */}
+              <div className="flex-1 min-h-0 w-full max-w-md flex items-center justify-center">
+                <ImageUpload
+                  onImageSelect={handleImageSelect}
+                  selectedImage={selectedImage}
+                  className="h-full w-full"
+                />
+              </div>
+            </div>
           </div>
 
           {/* Right Side - Controls (1 column) */}
           <div className="lg:col-span-1 space-y-4">
-            <StylePreview
-              selectedStyle={selectedStyle}
-              className=""
-            />
-            
             <StyleSelector
               selectedStyle={selectedStyle}
               onStyleChange={setSelectedStyle}

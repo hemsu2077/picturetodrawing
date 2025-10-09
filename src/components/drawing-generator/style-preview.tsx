@@ -20,12 +20,17 @@ export function StylePreview({ selectedStyle, className }: StylePreviewProps) {
 
   return (
     <div className={cn("", className)}>
-      <div className="relative rounded-lg overflow-hidden border-2 border-border bg-muted aspect-video">
+      <div className="relative rounded-lg overflow-hidden bg-muted aspect-video shadow-lg">
         <img
           src={displayStyle.image}
           alt={displayStyle.name + ' - Picture to Drawing Style Preview'}
           className="w-full h-full object-cover"
         />
+        <div className="absolute top-3 right-3 px-3 py-1.5 bg-black/70 backdrop-blur-sm rounded-md">
+          <p className="text-white text-xs md:text-sm font-medium whitespace-nowrap">
+            {displayStyle.name}
+          </p>
+        </div>
       </div>
     </div>
   );
