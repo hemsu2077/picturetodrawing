@@ -42,11 +42,13 @@ export function StyleSelector({ selectedStyle, onStyleChange, className, popular
   ];
 
   return (
-    <div className={cn("space-y-3 border rounded-lg p-4 bg-card", className)}>
-      <p className="text-sm font-medium text-foreground">{t('drawing_style')}</p>
+    <div className={cn("space-y-3 border rounded-lg bg-card", className)}>
+      <div className="px-4 pt-4">
+        <p className="text-sm font-medium text-foreground">{t('drawing_style')}</p>
+      </div>
       
       {/* Category Tabs */}
-      <div className="flex flex-wrap gap-1">
+      <div className="flex flex-wrap gap-1 px-4">
         {categories.map((category) => (
           <button
             key={category.id}
@@ -64,7 +66,7 @@ export function StyleSelector({ selectedStyle, onStyleChange, className, popular
       </div>
       
       {/* Styles Grid - Fixed height */}
-      <div className="h-[240px] overflow-y-auto pr-1">
+      <div className="h-[240px] overflow-y-auto px-4 pb-4 pt-4">
         <div className="grid grid-cols-3 lg:grid-cols-4 gap-2">
           {filteredStyles.map((style) => (
             <div
@@ -103,7 +105,7 @@ export function StyleSelector({ selectedStyle, onStyleChange, className, popular
                 </div>
                 <div className="px-1.5 py-1.5 bg-card">
                   <p className={cn(
-                    "text-xs font-medium text-center truncate transition-colors",
+                    "text-xs font-medium text-center transition-colors line-clamp-2",
                     selectedStyle === style.id 
                       ? "text-primary" 
                       : "text-foreground/80 group-hover:text-foreground"
