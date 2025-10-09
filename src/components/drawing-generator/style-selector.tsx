@@ -41,10 +41,24 @@ export function StyleSelector({ selectedStyle, onStyleChange, className, popular
     }))
   ];
 
+  // Get selected style name
+  const selectedStyleName = useMemo(() => {
+    const style = allStyles.find(s => s.id === selectedStyle);
+    return style?.name || '';
+  }, [selectedStyle, allStyles]);
+
   return (
     <div className={cn("space-y-3 rounded-lg bg-card", className)}>
-      <div className="px-4 pt-4">
+      <div className="px-4 pt-4 flex items-center justify-between">
         <p className="text-md font-medium text-foreground">{t('drawing_style')}</p>
+        {selectedStyleName && (
+          <div className="flex items-center gap-1.5 max-w-[200px]">
+            <span className="w-2 h-2 rounded-full bg-green-500 flex-shrink-0"></span>
+            <p className="text-xs font-medium text-foreground truncate">
+              {selectedStyleName}
+            </p>
+          </div>
+        )}
       </div>
       
       {/* Category Tabs */}

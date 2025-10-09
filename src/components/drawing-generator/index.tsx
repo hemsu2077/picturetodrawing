@@ -322,10 +322,10 @@ export function DrawingGenerator({
     <div className={cn("w-full max-w-7xl mx-auto space-y-4 mb-16 sm:space-y-6 px-2", className)}>
       {/* Main Input Card */}
       <div className="border-none py-0">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-          {/* Left Side - Style Preview + Image Upload (2 columns) */}
-          <div className="lg:col-span-2">
-            <div className="bg-background border border-border/60 rounded-lg p-6 flex flex-col gap-4 h-[480px] md:h-[640px] items-center justify-center shadow-sm">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {/* Left Side - Style Preview + Image Upload */}
+          <div className="md:col-span-1 lg:col-span-2">
+            <div className="bg-background border border-border/60 rounded-lg p-6 flex flex-col gap-4 h-[480px] sm:h-[580px] lg:h-[640px] items-center justify-center shadow-sm">
               {/* Style Preview on top - constrained width */}
               <div className="w-full max-w-2xl flex-shrink-0">
                 <StylePreview
@@ -345,8 +345,8 @@ export function DrawingGenerator({
             </div>
           </div>
 
-          {/* Right Side - Controls (1 column) */}
-          <div className="lg:col-span-1 border border-border/60 space-y-4 rounded-lg shadow-sm">
+          {/* Right Side - Controls */}
+          <div className="md:col-span-1 lg:col-span-1 border border-border/60 space-y-4 rounded-lg shadow-sm">
             <StyleSelector
               selectedStyle={selectedStyle}
               onStyleChange={setSelectedStyle}
