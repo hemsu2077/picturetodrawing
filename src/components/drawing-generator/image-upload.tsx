@@ -94,7 +94,7 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
       />
       
       {selectedImage ? (
-        <div className="relative w-full rounded-lg border-2 border-border overflow-hidden bg-white flex items-center justify-center aspect-square lg:aspect-[3/2]">
+        <div className="relative w-full rounded-lg border-2 border-border overflow-hidden bg-white flex items-center justify-center aspect-video">
           <img
             src={selectedImage.preview}
             alt={t('drawing_generator.selected_image_alt')}
@@ -112,7 +112,7 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
       ) : (
         <div
           className={cn(
-            "border-2 border-dashed rounded-lg p-3 text-center transition-colors w-full flex flex-col justify-center cursor-pointer aspect-square lg:aspect-[3/2]",
+            "border-2 border-dashed rounded-lg p-3 text-center transition-colors w-full flex flex-col justify-center cursor-pointer aspect-video",
             "hover:border-primary/50 hover:bg-accent/20",
             isDragging && "border-primary bg-accent/20"
           )}

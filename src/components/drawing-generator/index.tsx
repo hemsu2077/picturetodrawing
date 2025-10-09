@@ -323,22 +323,27 @@ export function DrawingGenerator({
       {/* Main Input Card */}
       <Card className="p-4 border-none">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-          {/* Left Side - Style Preview (2 columns) */}
-          <div className="lg:col-span-2 space-y-3">
-            <StylePreview
-              selectedStyle={selectedStyle}
-              className=""
-            />
+          {/* Left Side - Style Preview & Image Upload in a container (2 columns) */}
+          <div className="lg:col-span-2">
+            <div className="border border-border rounded-lg p-4 space-y-3">
+              <div className="max-w-md mx-auto">
+                <StylePreview
+                  selectedStyle={selectedStyle}
+                  className=""
+                />
+              </div>
+              <div className="max-w-md mx-auto">
+                <ImageUpload
+                  onImageSelect={handleImageSelect}
+                  selectedImage={selectedImage}
+                  className=""
+                />
+              </div>
+            </div>
           </div>
 
-          {/* Right Side - Image Upload & Controls (1 column) */}
+          {/* Right Side - Controls (1 column) */}
           <div className="lg:col-span-1 space-y-4">
-            <ImageUpload
-              onImageSelect={handleImageSelect}
-              selectedImage={selectedImage}
-              className=""
-            />
-            
             <StyleSelector
               selectedStyle={selectedStyle}
               onStyleChange={setSelectedStyle}

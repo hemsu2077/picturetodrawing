@@ -66,7 +66,7 @@ export function StyleSelector({ selectedStyle, onStyleChange, className, popular
       </div>
       
       {/* Styles Grid - Fixed height */}
-      <div className="h-[240px] overflow-y-auto px-4 pb-4 pt-4">
+      <div className="h-[420px] overflow-y-auto px-4 pb-4 pt-4">
         <div className="grid grid-cols-3 lg:grid-cols-4 gap-2">
           {filteredStyles.map((style) => (
             <div
@@ -81,7 +81,7 @@ export function StyleSelector({ selectedStyle, onStyleChange, className, popular
               onClick={() => onStyleChange(style.id)}
             >
               <div className="relative">
-                <div className="aspect-[4/3] relative overflow-hidden bg-muted">
+                <div className="aspect-square relative overflow-hidden bg-muted">
                   <img
                     src={style.image}
                     alt={style.name + " - Picture to Drawing style"}
