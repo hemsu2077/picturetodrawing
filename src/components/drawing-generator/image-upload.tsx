@@ -112,7 +112,7 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
       ) : (
         <div
           className={cn(
-            "border-2 border-dashed rounded-lg p-3 text-center transition-colors w-full flex flex-col cursor-pointer aspect-square lg:aspect-[3/2]",
+            "border-2 border-dashed rounded-lg p-3 text-center transition-colors w-full flex flex-col justify-center cursor-pointer aspect-square lg:aspect-[3/2]",
             "hover:border-primary/50 hover:bg-accent/20",
             isDragging && "border-primary bg-accent/20"
           )}
@@ -121,7 +121,7 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
           onDragLeave={handleDragLeave}
           onClick={openFileDialog}
         >
-          <div className="flex flex-col items-center gap-1 py-2">
+          <div className="flex flex-col items-center gap-1">
             <div className="p-3 rounded-full bg-primary/5">
               <ImageIcon className="h-6 w-6 text-muted-foreground" />
             </div>
@@ -133,7 +133,7 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
             </div>
           </div>
           
-          <div className="w-full pt-4 border-t mt-1">
+          <div className="w-full pt-4 border-t mt-3">
             <p className="text-xs text-muted-foreground mb-2">{t('daily_checkin.try_samples')}</p>
             <div className="flex items-center justify-center gap-1">
               {sampleImages.map((sampleUrl, index) => (
