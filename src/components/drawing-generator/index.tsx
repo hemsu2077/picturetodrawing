@@ -321,13 +321,13 @@ export function DrawingGenerator({
   return (
     <div className={cn("w-full max-w-7xl mx-auto space-y-4 mb-16 sm:space-y-6 px-2", className)}>
       {/* Main Input Card */}
-      <Card className="p-4 border-none">
+      <div className="border-none py-0">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
           {/* Left Side - Style Preview + Image Upload (2 columns) */}
           <div className="lg:col-span-2">
-            <div className="border border-border rounded-lg p-6 flex flex-col gap-4 lg:h-[620px] items-center justify-center">
+            <div className="bg-background border border-border/60 rounded-lg p-6 flex flex-col gap-4 h-[480px] md:h-[640px] items-center justify-center shadow-sm">
               {/* Style Preview on top - constrained width */}
-              <div className="w-full max-w-xl flex-shrink-0">
+              <div className="w-full max-w-2xl flex-shrink-0">
                 <StylePreview
                   selectedStyle={selectedStyle}
                   className=""
@@ -346,7 +346,7 @@ export function DrawingGenerator({
           </div>
 
           {/* Right Side - Controls (1 column) */}
-          <div className="lg:col-span-1 space-y-4">
+          <div className="lg:col-span-1 border border-border/60 space-y-4 rounded-lg shadow-sm">
             <StyleSelector
               selectedStyle={selectedStyle}
               onStyleChange={setSelectedStyle}
@@ -357,10 +357,10 @@ export function DrawingGenerator({
             <RatioSelector
               selectedRatio={selectedRatio}
               onRatioChange={setSelectedRatio}
-              className=""
+              className="px-4"
             />
             
-            <div className="space-y-1.5 pt-1">
+            <div className="space-y-1.5 pt-1 px-4 pb-4">
               <Button
                 onClick={handleGenerate}
                 disabled={!selectedImage || isGenerating || isCheckingTrialStatus}
@@ -383,7 +383,7 @@ export function DrawingGenerator({
             </div>
           </div>
         </div>
-      </Card>
+      </div>
 
       {/* Recent Drawings */}
       <div ref={resultDisplayRef}>

@@ -42,9 +42,9 @@ export function StyleSelector({ selectedStyle, onStyleChange, className, popular
   ];
 
   return (
-    <div className={cn("space-y-3 border rounded-lg bg-card", className)}>
+    <div className={cn("space-y-3 rounded-lg bg-card", className)}>
       <div className="px-4 pt-4">
-        <p className="text-sm font-medium text-foreground">{t('drawing_style')}</p>
+        <p className="text-md font-medium text-foreground">{t('drawing_style')}</p>
       </div>
       
       {/* Category Tabs */}
@@ -66,7 +66,7 @@ export function StyleSelector({ selectedStyle, onStyleChange, className, popular
       </div>
       
       {/* Styles Grid - Fixed height */}
-      <div className="h-[420px] overflow-y-auto px-4 pb-4 pt-4">
+      <div className="h-[400px] overflow-y-auto px-4 pb-4 pt-4 border-y border-border/50">
         <div className="grid grid-cols-3 lg:grid-cols-4 gap-2">
           {filteredStyles.map((style) => (
             <div

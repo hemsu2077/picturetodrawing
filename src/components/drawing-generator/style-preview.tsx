@@ -27,7 +27,7 @@ export function StylePreview({ selectedStyle, className }: StylePreviewProps) {
           className="w-full h-full object-cover"
         />
         <div className="absolute top-3 right-3 px-3 py-1.5 bg-black/70 backdrop-blur-sm rounded-md">
-          <p className="text-white text-xs md:text-sm font-medium whitespace-nowrap">
+          <p className="text-white text-xs font-medium whitespace-nowrap">
             {displayStyle.name}
           </p>
         </div>
