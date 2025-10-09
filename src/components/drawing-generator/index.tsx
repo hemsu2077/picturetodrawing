@@ -57,13 +57,7 @@ export function DrawingGenerator({
     }
   }, [urlStyle]);
 
-  // Auto-set ratio to 'auto' when nano-banana model is used
-  useEffect(() => {
-    const modelType = getModelForStyle(selectedStyle);
-    if (modelType === 'nano-banana') {
-      setSelectedRatio('auto');
-    }
-  }, [selectedStyle]);
+  // Preserve selected ratio across styles; nano-banana now supports ratios
   const [isGenerating, setIsGenerating] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [newDrawing, setNewDrawing] = useState<{ style: string; ratio: string } | null>(null);
@@ -349,7 +343,6 @@ export function DrawingGenerator({
             <RatioSelector
               selectedRatio={selectedRatio}
               onRatioChange={setSelectedRatio}
-              disabled={getModelForStyle(selectedStyle) === 'nano-banana'}
               className="border-0 shadow-none p-0"
             />
             

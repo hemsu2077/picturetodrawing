@@ -109,10 +109,12 @@ try {
     // Configure provider options based on model
     let providerOptions: any;
     if (modelType === 'nano-banana') {
-      // Nano Banana uses image_input array and doesn't support ratio
+      // Nano Banana now supports aspect_ratio
+      const aspect = ratio || "match_input_image";
       providerOptions = {
         replicate: {
           image_input: [inputImageUrl],
+          aspect_ratio: aspect,
           output_format: "png",
         },
       };
@@ -134,7 +136,7 @@ try {
       providerOptions,
     };
 
-    // Only add aspectRatio for default model
+    // Only add aspectRatio for default model (AI SDK maps to provider param)
     if (modelType !== 'nano-banana') {
       generateOptions.aspectRatio = ratio || "match_input_image";
     }
