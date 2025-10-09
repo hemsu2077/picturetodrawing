@@ -1,11 +1,12 @@
 "use client";
 
-import React from 'react';
+import React, { useState, useMemo } from 'react';
 import { cn } from '@/lib/utils';
 import { useTranslations } from 'next-intl';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { getAllDrawingStyles, type StyleOption } from '@/config/drawing-styles';
+import { STYLE_CATEGORIES } from '@/config/style-categories';
 
 interface StyleModalProps {
   open: boolean;
@@ -16,27 +17,72 @@ interface StyleModalProps {
 
 export function StyleModal({ open, onClose, selectedStyle, onStyleSelect }: StyleModalProps) {
   const t = useTranslations('drawing_generator');
+  const [activeCategory, setActiveCategory] = useState('all');
   const allStyles = getAllDrawingStyles(t);
+
+  // Filter styles based on active category
+  const filteredStyles = useMemo(() => {
+    if (activeCategory === 'all') {
+      return allStyles;
+    }
+    
+    const category = STYLE_CATEGORIES.find(cat => cat.id === activeCategory);
+    if (!category) return allStyles;
+    
+    return allStyles.filter(style => category.styles.includes(style.id));
+  }, [activeCategory, allStyles]);
 
   const handleStyleSelect = (styleId: string) => {
     onStyleSelect(styleId);
     onClose();
   };
 
+  // Category tabs configuration
+  const categories = [
+    { id: 'all', label: t('categories.all') },
+    ...STYLE_CATEGORIES.map(cat => ({
+      id: cat.id,
+      label: t(`categories.${cat.id}`)
+    }))
+  ];
+
   return (
     <Dialog open={open} onOpenChange={onClose}>
       <DialogContent className="max-w-5xl max-h-[85vh] overflow-hidden p-0 gap-0">
-        <DialogHeader className="px-6 pt-6 pb-4">
+        <DialogHeader className="px-6 pt-6 pb-3">
           <DialogTitle className="text-xl">{t('style_modal.title')}</DialogTitle>
         </DialogHeader>
         
-        <div className="overflow-y-auto max-h-[70vh] pl-6 py-6 pr-2">
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 pr-4">
-            {allStyles.map((style) => (
+        {/* Category Tabs */}
+        <div className="px-6 pb-3 border-b">
+          <div className="flex gap-2 overflow-x-auto scrollbar-hide">
+            {categories.map((category) => (
+              <Button
+                key={category.id}
+                variant={activeCategory === category.id ? "default" : "ghost"}
+                size="sm"
+                onClick={() => setActiveCategory(category.id)}
+                className={cn(
+                  "whitespace-nowrap text-sm transition-all",
+                  activeCategory === category.id 
+                    ? "shadow-sm" 
+                    : "hover:bg-accent"
+                )}
+              >
+                {category.label}
+              </Button>
+            ))}
+          </div>
+        </div>
+        
+        {/* Styles Grid */}
+        <div className="overflow-y-auto max-h-[calc(85vh-140px)] pl-6 py-4 pr-2">
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 pr-4">
+            {filteredStyles.map((style) => (
               <div
                 key={style.id}
                 className={cn(
-                  "group border cursor-pointer rounded-xl overflow-hidden transition-all duration-200",
+                  "group border cursor-pointer rounded-lg overflow-hidden transition-all duration-200",
                   "hover:shadow-lg",
                   selectedStyle === style.id 
                     ? "ring-2 ring-primary shadow-md" 
@@ -67,7 +113,7 @@ export function StyleModal({ open, onClose, selectedStyle, onStyleSelect }: Styl
                       </div>
                     )}
                   </div>
-                  <div className="px-2 py-2.5 bg-card">
+                  <div className="px-2 py-2 bg-card">
                     <p className={cn(
                       "text-xs font-medium text-center truncate transition-colors",
                       selectedStyle === style.id 

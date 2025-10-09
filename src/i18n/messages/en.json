@@ -274,6 +274,14 @@
       "popular_styles": "Popular Styles",
       "select_style": "Change Style"
     },
+    "categories": {
+      "all": "All",
+      "drawing": "Drawing",
+      "art": "Art",
+      "cartoon": "Cartoon",
+      "anime": "Anime",
+      "modern": "Modern"
+    },
     "style_preview_title": "Style Preview",
     "style_preview_hint": "This is how your image will be transformed",
     "models": {

@@ -274,6 +274,14 @@
       "popular_styles": "熱門風格",
       "select_style": "更改風格"
     },
+    "categories": {
+      "all": "全部",
+      "drawing": "繪畫",
+      "art": "藝術",
+      "cartoon": "卡通",
+      "anime": "動漫",
+      "modern": "現代"
+    },
     "style_preview_title": "風格預覽",
     "style_preview_hint": "這是您的圖片將被轉換的效果",
     "models": {

@@ -274,6 +274,14 @@
       "popular_styles": "인기 스타일",
       "select_style": "스타일 변경"
     },
+    "categories": {
+      "all": "전체",
+      "drawing": "드로잉",
+      "art": "아트",
+      "cartoon": "카툰",
+      "anime": "애니메이션",
+      "modern": "모던"
+    },
     "models": {
       "classic": "클래식",
       "classic_description": "자연스러운 그림",

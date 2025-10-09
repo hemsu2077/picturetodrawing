@@ -274,6 +274,14 @@
       "popular_styles": "Styles populaires",
       "select_style": "Changer le style"
     },
+    "categories": {
+      "all": "Tous",
+      "drawing": "Dessin",
+      "art": "Art",
+      "cartoon": "Dessin Animé",
+      "anime": "Anime",
+      "modern": "Moderne"
+    },
     "models": {
       "classic": "Classique",
       "classic_description": "Dessin naturel",

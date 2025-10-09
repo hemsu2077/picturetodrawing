@@ -275,6 +275,14 @@
       "popular_styles": "人気のスタイル",
       "select_style": "スタイルを変更"
     },
+    "categories": {
+      "all": "すべて",
+      "drawing": "ドローイング",
+      "art": "アート",
+      "cartoon": "カートゥーン",
+      "anime": "アニメ",
+      "modern": "モダン"
+    },
     "models": {
       "classic": "クラシック",
       "classic_description": "自然な絵画",
