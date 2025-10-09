@@ -6,7 +6,6 @@ import { Download, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useTranslations } from 'next-intl';
 import { ProgressCircle } from './progress-circle';
-import { Ripple } from '@/components/ui/ripple';
 import Image from 'next/image';
 
 interface GenerationProgressProps {
@@ -94,37 +93,28 @@ export function GenerationProgress({
             </Button>
           </div>
         ) : isGenerating ? (
-          // Generating state with Ripple background
-          <div className="relative flex flex-col items-center justify-center w-full h-full bg-gradient-to-br from-background via-background to-muted/20">
-            <Ripple mainCircleSize={120} mainCircleOpacity={0.3} numCircles={5} />
-            <div className="relative z-10 flex flex-col items-center justify-center gap-6">
-              <div className="relative">
-                <div className="absolute inset-0 bg-primary/5 rounded-full blur-2xl animate-pulse" />
-                <ProgressCircle 
-                  duration={progressDuration} 
-                  className="relative" 
-                  size={100} 
-                  strokeWidth={3}
-                />
-              </div>
-              <div className="text-sm text-center text-muted-foreground font-medium">
-                {progressText}
-              </div>
+          // Generating state
+          <div className="flex flex-col items-center justify-center gap-6">
+            <ProgressCircle 
+              duration={progressDuration} 
+              size={100} 
+              strokeWidth={3}
+            />
+            <div className="text-sm text-center text-muted-foreground font-medium">
+              {progressText}
             </div>
           </div>
         ) : generatedImageUrl ? (
           // Success state - show generated image
           <div className="relative w-full h-full flex items-center justify-center">
-            <div className="relative max-w-full max-h-full border border-border/50 rounded-lg">
-              <Image
-                src={generatedImageUrl}
-                alt="Generated drawing"
-                width={800}
-                height={800}
-                className="rounded-lg object-contain max-w-full max-h-[calc(100vh-300px)]"
-                unoptimized
-              />
-            </div>
+            <Image
+              src={generatedImageUrl}
+              alt="Generated drawing - Picture to Drawing"
+              width={800}
+              height={800}
+              className="rounded-lg object-contain max-w-full max-h-full bg-primary/10"
+              unoptimized
+            />
           </div>
         ) : null}
       </div>

@@ -369,7 +369,7 @@ export function DrawingGenerator({
                   </div>
                   
                   {/* Image Upload below - constrained width */}
-                  <div className="flex-1 min-h-0 w-full max-w-md flex items-center justify-center">
+                  <div className="flex-1 min-h-0 w-full max-w-2xl flex items-center justify-center">
                     <ImageUpload
                       onImageSelect={handleImageSelect}
                       selectedImage={selectedImage}
