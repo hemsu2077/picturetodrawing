@@ -1,13 +1,12 @@
 "use client";
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Card } from '@/components/ui/card';
 import { ImageUpload } from './image-upload';
 import { StyleSelector } from './style-selector';
 import { StylePreview } from './style-preview';
 import { RatioSelector } from './ratio-selector';
-import { RecentDrawings } from './result-display';
+import { GenerationProgress } from './generation-progress';
 import PricingModal from '@/components/pricing-modal';
 import { cn } from '@/lib/utils';
 import { useSession } from 'next-auth/react';
@@ -67,8 +66,8 @@ export function DrawingGenerator({
   const [isCheckingPaidStatus, setIsCheckingPaidStatus] = useState(false);
   const [trialStatus, setTrialStatus] = useState<TrialStatus | null>(null);
   const [isCheckingTrialStatus, setIsCheckingTrialStatus] = useState(false);
-  const [trialResult, setTrialResult] = useState<any>(null);
-  const resultDisplayRef = useRef<HTMLDivElement>(null);
+  const [generatedImageUrl, setGeneratedImageUrl] = useState<string | null>(null);
+  const [showGenerationView, setShowGenerationView] = useState(false);
 
   // Load pricing data
   useEffect(() => {
@@ -105,8 +104,10 @@ export function DrawingGenerator({
         const response = await fetch('/api/check-paid-status');
         if (response.ok) {
           const data = await response.json();
+          console.log('[DrawingGenerator] check-paid-status response:', data);
           if (data.code === 0) {
             setIsPaidUser(data.data.isPaid);
+            console.log('[DrawingGenerator] isPaidUser set to:', data.data.isPaid);
           } else {
             setIsPaidUser(false);
           }
@@ -161,6 +162,16 @@ export function DrawingGenerator({
     setError(null);
   };
 
+  const handleCloseGeneration = () => {
+    // Reset all generation-related state
+    setShowGenerationView(false);
+    setIsGenerating(false);
+    setGeneratedImageUrl(null);
+    setError(null);
+    setSelectedImage(null);
+    setNewDrawing(null);
+  };
+
   const convertImageToBase64 = (file: File): Promise<string> => {
     return new Promise((resolve, reject) => {
       const reader = new FileReader();
@@ -189,15 +200,16 @@ export function DrawingGenerator({
 
     setIsGenerating(true);
     setError(null);
+    setGeneratedImageUrl(null);
+    setShowGenerationView(true);
     setNewDrawing({ style: selectedStyle, ratio: selectedRatio });
 
-    // scroll to result display area
-    setTimeout(() => {
-      resultDisplayRef.current?.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start'
-      });
-    }, 100);
+    // Record start time for calculating total duration
+    const startTime = Date.now();
+    const targetDuration = isPaidUser === true ? 0 : 50000; // 0ms for paid, 50s for free
+    
+    // Debug: Log user payment status
+    console.log('[DrawingGenerator] isPaidUser:', isPaidUser, 'targetDuration:', targetDuration);
 
     try {
       let imageData: string;
@@ -247,13 +259,22 @@ export function DrawingGenerator({
 
       // API returns {code: 0, message: "ok", data: [...]}
       if (data.code === 0 && data.data) {
-         // Only paid users get instant results, everyone else waits
-         if (isPaidUser !== true) {
-          await new Promise(resolve => setTimeout(resolve, 20000)); // 20 seconds
+        // Calculate elapsed time and remaining wait time
+        const elapsedTime = Date.now() - startTime;
+        const remainingTime = Math.max(0, targetDuration - elapsedTime);
+        
+        // Debug: Log timing information
+        console.log('[DrawingGenerator] API elapsed:', elapsedTime + 'ms', 'remaining wait:', remainingTime + 'ms');
+        
+        // Wait for remaining time to reach target duration
+        if (remainingTime > 0) {
+          await new Promise(resolve => setTimeout(resolve, remainingTime));
         }
         
-        // Store the result for display after waiting (if needed)
-        setTrialResult(data.data);
+        // Store the generated image URL
+        if (data.data[0]?.url) {
+          setGeneratedImageUrl(data.data[0].url);
+        }
         
         // Clear the new drawing state since generation is complete
         setNewDrawing(null);
@@ -323,25 +344,40 @@ export function DrawingGenerator({
       {/* Main Input Card */}
       <div className="border-none py-0">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {/* Left Side - Style Preview + Image Upload */}
+          {/* Left Side - Style Preview + Image Upload OR Generation Progress */}
           <div className="md:col-span-1 lg:col-span-2">
             <div className="bg-background border border-border/60 rounded-lg p-6 flex flex-col gap-4 h-[480px] sm:h-[580px] lg:h-[640px] items-center justify-center shadow-sm">
-              {/* Style Preview on top - constrained width */}
-              <div className="w-full max-w-2xl flex-shrink-0">
-                <StylePreview
-                  selectedStyle={selectedStyle}
-                  className=""
+              {showGenerationView ? (
+                // Show generation progress/result
+                <GenerationProgress
+                  isGenerating={isGenerating}
+                  generatedImageUrl={generatedImageUrl}
+                  error={error}
+                  onClose={handleCloseGeneration}
+                  className="w-full h-full"
+                  isPaidUser={isPaidUser}
                 />
-              </div>
-              
-              {/* Image Upload below - constrained width */}
-              <div className="flex-1 min-h-0 w-full max-w-md flex items-center justify-center">
-                <ImageUpload
-                  onImageSelect={handleImageSelect}
-                  selectedImage={selectedImage}
-                  className="h-full w-full"
-                />
-              </div>
+              ) : (
+                // Show normal style preview and image upload
+                <>
+                  {/* Style Preview on top - constrained width */}
+                  <div className="w-full max-w-2xl flex-shrink-0">
+                    <StylePreview
+                      selectedStyle={selectedStyle}
+                      className=""
+                    />
+                  </div>
+                  
+                  {/* Image Upload below - constrained width */}
+                  <div className="flex-1 min-h-0 w-full max-w-md flex items-center justify-center">
+                    <ImageUpload
+                      onImageSelect={handleImageSelect}
+                      selectedImage={selectedImage}
+                      className="h-full w-full"
+                    />
+                  </div>
+                </>
+              )}
             </div>
           </div>
 
@@ -385,16 +421,6 @@ export function DrawingGenerator({
         </div>
       </div>
 
-      {/* Recent Drawings */}
-      <div ref={resultDisplayRef}>
-        <RecentDrawings
-          isGenerating={isGenerating}
-          newDrawing={newDrawing}
-          error={error}
-          isPaidUser={isPaidUser}
-          trialResult={trialResult}
-        />
-      </div>
 
       {/* Pricing Modal */}
       {pricingData && (

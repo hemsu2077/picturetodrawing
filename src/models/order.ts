@@ -52,6 +52,26 @@ export async function getFirstPaidOrderByUserUuid(
   return order;
 }
 
+export async function getLatestPaidOrderByUserUuid(
+  user_uuid: string
+): Promise<typeof orders.$inferSelect | undefined> {
+  const now = new Date();
+  const [order] = await db()
+    .select()
+    .from(orders)
+    .where(
+      and(
+        eq(orders.user_uuid, user_uuid),
+        eq(orders.status, OrderStatus.Paid),
+        gte(orders.expired_at, now)
+      )
+    )
+    .orderBy(desc(orders.expired_at))
+    .limit(1);
+
+  return order;
+}
+
 export async function getFirstPaidOrderByUserEmail(
   user_email: string
 ): Promise<typeof orders.$inferSelect | undefined> {
