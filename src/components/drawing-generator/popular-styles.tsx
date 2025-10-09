@@ -24,7 +24,7 @@ export function PopularStyles({ selectedStyle, onStyleChange, className, configK
           {t('style_modal.popular_styles')}
         </p>
       </div>
-      <div className="grid grid-cols-3 sm:grid-cols-5 gap-3">
+      <div className="grid grid-cols-3 sm:grid-cols-5 gap-1">
         {popularStyles.map((style) => (
           <div
             key={style.id}

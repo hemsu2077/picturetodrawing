@@ -32,8 +32,8 @@ export function StyleSelector({ selectedStyle, onStyleChange, className, popular
   };
 
   return (
-    <div className={cn("space-y-4", className)}>
-       <p className="text-lg font-medium text-foreground">{t('drawing_style')}</p>
+    <div className={cn("space-y-2", className)}>
+       <p className="text-sm font-medium text-foreground">{t('drawing_style')}</p>
       
       {/* Drawing Style and Popular Styles - Grouped together */}
       <div className="space-y-2">

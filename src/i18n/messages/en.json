@@ -274,6 +274,8 @@
       "popular_styles": "Popular Styles",
       "select_style": "Change Style"
     },
+    "style_preview_title": "Style Preview",
+    "style_preview_hint": "This is how your image will be transformed",
     "models": {
       "classic": "Classic",
       "classic_description": "Natural drawing",

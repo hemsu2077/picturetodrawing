@@ -56,34 +56,33 @@ export function RatioSelector({ selectedRatio, onRatioChange, disabled = false, 
   const ASPECT_RATIOS = getAspectRatios(t);
 
   return (
-    <div className={cn("space-y-2", className)}>
-      <div>
-        <p className="text-sm text-muted-foreground">
+    <div className={cn("", className)}>
+      <div className="flex items-center gap-2">
+        <p className="text-xs text-muted-foreground whitespace-nowrap">
           {t('aspect_ratio')}
         </p>
-      </div>
-      
-      <Select value={disabled ? 'auto' : selectedRatio} onValueChange={disabled ? undefined : onRatioChange} disabled={disabled}>
-        <SelectTrigger className="w-full">
-          <SelectValue placeholder={t('select_aspect_ratio')} />
-        </SelectTrigger>
-        <SelectContent>
-          {ASPECT_RATIOS.map((ratio) => (
-            <SelectItem key={ratio.value} value={ratio.value}>
-              <div className="flex items-center gap-3">
-                <div className="flex items-center justify-between flex-1">
-                  <span className="font-medium">{ratio.label}</span>
-                  {ratio.description && (
-                    <span className="text-xs text-muted-foreground ml-2">
-                      {ratio.description}
-                    </span>
-                  )}
+        <Select value={disabled ? 'auto' : selectedRatio} onValueChange={disabled ? undefined : onRatioChange} disabled={disabled}>
+          <SelectTrigger className="h-9 text-sm flex-1">
+            <SelectValue placeholder={t('select_aspect_ratio')} />
+          </SelectTrigger>
+          <SelectContent>
+            {ASPECT_RATIOS.map((ratio) => (
+              <SelectItem key={ratio.value} value={ratio.value}>
+                <div className="flex items-center gap-2">
+                  <div className="flex items-center justify-between flex-1">
+                    <span className="font-medium text-sm">{ratio.label}</span>
+                    {ratio.description && (
+                      <span className="text-xs text-muted-foreground ml-2">
+                        {ratio.description}
+                      </span>
+                    )}
+                  </div>
                 </div>
-              </div>
-            </SelectItem>
-          ))}
-        </SelectContent>
-      </Select>
+              </SelectItem>
+            ))}
+          </SelectContent>
+        </Select>
+      </div>
     </div>
   );
 }

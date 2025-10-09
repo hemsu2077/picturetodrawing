@@ -5,6 +5,7 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { ImageUpload } from './image-upload';
 import { StyleSelector } from './style-selector';
+import { StylePreview } from './style-preview';
 import { RatioSelector } from './ratio-selector';
 import { RecentDrawings } from './result-display';
 import PricingModal from '@/components/pricing-modal';
@@ -318,39 +319,44 @@ export function DrawingGenerator({
   };
 
   return (
-    <div className={cn("w-full max-w-5xl mx-auto space-y-4 mb-16 sm:space-y-6 px-2 sm:px-4", className)}>
+    <div className={cn("w-full max-w-7xl mx-auto space-y-4 mb-16 sm:space-y-6 px-8 sm:px-2", className)}>
       {/* Main Input Card */}
       <Card className="p-4 sm:p-6 md:p-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
-          {/* Left Side - Image Upload */}
-          <div className="space-y-3 sm:space-y-4">
-            <ImageUpload
-              onImageSelect={handleImageSelect}
-              selectedImage={selectedImage}
-              className="border-0 shadow-none"
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
+          {/* Left Side - Style Preview (2 columns) */}
+          <div className="lg:col-span-2 space-y-3 sm:space-y-4">
+            <StylePreview
+              selectedStyle={selectedStyle}
+              className=""
             />
           </div>
 
-          {/* Right Side - All Controls */}
-          <div className="space-y-4 sm:space-y-6">
+          {/* Right Side - Image Upload & Controls (1 column) */}
+          <div className="lg:col-span-1 space-y-4">
+            <ImageUpload
+              onImageSelect={handleImageSelect}
+              selectedImage={selectedImage}
+              className=""
+            />
+            
             <StyleSelector
               selectedStyle={selectedStyle}
               onStyleChange={setSelectedStyle}
-              className="border-0 shadow-none p-0"
+              className=""
               popularStylesKey={popularStylesKey}
             />
             
             <RatioSelector
               selectedRatio={selectedRatio}
               onRatioChange={setSelectedRatio}
-              className="border-0 shadow-none p-0"
+              className=""
             />
             
-            <div className="space-y-2">
+            <div className="space-y-1.5 pt-1">
               <Button
                 onClick={handleGenerate}
                 disabled={!selectedImage || isGenerating || isCheckingTrialStatus}
-                className="w-full h-11 sm:h-12 text-base sm:text-lg"
+                className="w-full h-10 text-sm"
                 size="lg"
               >
                 {getButtonContent()}

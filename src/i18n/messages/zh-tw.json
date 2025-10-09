@@ -274,6 +274,8 @@
       "popular_styles": "熱門風格",
       "select_style": "更改風格"
     },
+    "style_preview_title": "風格預覽",
+    "style_preview_hint": "這是您的圖片將被轉換的效果",
     "models": {
       "classic": "經典",
       "classic_description": "自然手繪風格",
