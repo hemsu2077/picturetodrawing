@@ -6,7 +6,6 @@ import { Download, X, Zap } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useTranslations } from 'next-intl';
 import { ProgressCircle } from './progress-circle';
-import { AnimatedGradientBackground } from './animated-gradient-background';
 import Image from 'next/image';
 import { useAppContext } from '@/contexts/app';
 
@@ -105,18 +104,18 @@ export function GenerationProgress({
         {error ? (
           // Error state with gradient background
           <div className="relative flex flex-col items-center justify-center rounded-lg w-full h-full overflow-hidden">
-            <AnimatedGradientBackground gradientId="errorGradient" />
+           
 
             {/* Content layer */}
             <div className="relative z-10 flex flex-col items-center justify-center text-center px-4">
               {/* Illustration - hidden on mobile */}
               <div className="mb-3 hidden lg:block">
                 <Image
-                  src="https://files.picturetodrawing.com/ui/loading-drawing.webp"
+                  src="https://files.picturetodrawing.com/ui/loading-drawing.webp?v=0.1"
                   alt="Loading illustration"
                   width={200}
                   height={200}
-                  className="w-auto h-auto max-h-40 opacity-60"
+                  className="w-auto h-auto max-h-48 opacity-60"
                   unoptimized
                 />
               </div>
@@ -131,18 +130,17 @@ export function GenerationProgress({
         ) : isGenerating ? (
           // Generating state with elegant gradient background
           <div className="relative flex flex-col items-center justify-center rounded-lg w-full h-full overflow-hidden">
-            <AnimatedGradientBackground gradientId="generatingGradient" />
 
             {/* Content layer */}
             <div className="relative z-10 flex flex-col items-center justify-center gap-3">
               {/* Illustration - hidden on mobile */}
               <div className="mb-1 hidden lg:block">
                 <Image
-                  src="https://files.picturetodrawing.com/ui/loading-drawing.webp"
+                  src="https://files.picturetodrawing.com/ui/loading-drawing.webp?v=0.1"
                   alt="Loading illustration"
                   width={200}
                   height={200}
-                  className="w-auto h-auto max-h-40 opacity-60"
+                  className="w-auto h-auto max-h-48 opacity-60"
                   unoptimized
                 />
               </div>
@@ -158,7 +156,7 @@ export function GenerationProgress({
               {/* Speed indicator */}
               {isPaidUser === true ? (
                 // 2x speed badge for paid users - Clean white badge with green text
-                <div className="relative flex items-center gap-1 px-2.5 py-1 rounded-full bg-white dark:bg-white/95 dark:border-green-300/30">
+                <div className="relative flex items-center gap-1 px-2.5 py-1 border border-border rounded-full bg-white dark:bg-white/95 dark:border-green-300/30">
                   <Zap className="h-2.5 w-2.5 text-green-600 dark:text-green-500" fill="currentColor" />
                   <span className="text-[10px] font-semibold text-primary tracking-tight">2×</span>
                 </div>

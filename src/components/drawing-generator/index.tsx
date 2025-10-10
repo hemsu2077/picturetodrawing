@@ -41,6 +41,7 @@ export function DrawingGenerator({
   const locale = useLocale();
   const t = useTranslations('drawing_generator');
   const searchParams = useSearchParams();
+  const generationAreaRef = React.useRef<HTMLDivElement>(null);
   
   // Get style from URL parameter, fallback to defaultStyle
   const urlStyle = searchParams.get('style');
@@ -155,11 +156,19 @@ export function DrawingGenerator({
   const handleImageSelect = (file: File | string, preview: string) => {
     if (file && preview) {
       setSelectedImage({ file, preview });
+      // Clear previous results when new image is selected
+      setError(null);
     } else {
+      // When clearing image, only reset generation view if it's in error state
       setSelectedImage(null);
+      if (error) {
+        setShowGenerationView(false);
+        setIsGenerating(false);
+        setGeneratedImageUrl(null);
+        setError(null);
+        setNewDrawing(null);
+      }
     }
-    // Clear previous results when new image is selected
-    setError(null);
   };
 
   const handleCloseGeneration = () => {
@@ -203,6 +212,13 @@ export function DrawingGenerator({
     setGeneratedImageUrl(null);
     setShowGenerationView(true);
     setNewDrawing({ style: selectedStyle, ratio: selectedRatio });
+
+    // Scroll to generation area on mobile after a short delay to ensure DOM update
+    setTimeout(() => {
+      if (generationAreaRef.current && window.innerWidth < 768) {
+        generationAreaRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
 
     // Record start time for calculating total duration
     const startTime = Date.now();
@@ -345,11 +361,11 @@ export function DrawingGenerator({
       <div className="border-none py-0">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* Left Side - Style Preview + Image Upload OR Generation Progress */}
-          <div className="md:col-span-1 lg:col-span-2">
-            <div className="bg-background border border-border/60 rounded-lg p-6 flex flex-col gap-4 h-[540px] sm:h-[640px] items-center justify-center shadow-sm">
+          <div ref={generationAreaRef} className="md:col-span-1 lg:col-span-2">
+            <div className="bg-background border border-border/60 rounded-lg p-4 flex flex-col gap-4 h-[520px] sm:h-[640px] items-center justify-center shadow-sm">
               {/* Style Preview on top - full width OR Generation Progress */}
               <div className="w-full flex-shrink-0">
-                {showGenerationView ? (
+                {showGenerationView && (isGenerating || error || generatedImageUrl) ? (
                   <GenerationProgress
                     isGenerating={isGenerating}
                     generatedImageUrl={generatedImageUrl}
