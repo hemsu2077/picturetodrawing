@@ -6,11 +6,13 @@ import { cn } from '@/lib/utils';
 interface ProgressCircleProps {
   duration: number; // total duration (seconds)
   className?: string;
+  onProgressChange?: (progress: number) => void; // callback to notify parent of progress changes
 }
 
 export function ProgressCircle({ 
   duration, 
-  className
+  className,
+  onProgressChange
 }: ProgressCircleProps) {
   const [progress, setProgress] = useState(0);
   const [startTime] = useState(() => Date.now());
@@ -24,6 +26,7 @@ export function ProgressCircle({
       const newProgress = Math.min((elapsed / (duration * 1000)) * 100, 100);
       
       setProgress(newProgress);
+      onProgressChange?.(newProgress);
 
       if (now < endTime) {
         requestAnimationFrame(updateProgress);
@@ -35,7 +38,7 @@ export function ProgressCircle({
     return () => {
       // requestAnimationFrame will stop automatically when component unmounts
     };
-  }, []);
+  }, [onProgressChange]);
 
   return (
     <div className={cn("relative w-full max-w-md", className)}>

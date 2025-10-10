@@ -27,10 +27,29 @@ export function GenerationProgress({
   isPaidUser = null
 }: GenerationProgressProps) {
   const t = useTranslations('drawing_generator');
+  const [currentProgress, setCurrentProgress] = React.useState(0);
   
   // Free users: 60s progress bar, Paid users: 30s progress bar
   const progressDuration = isPaidUser === true ? 30 : 60;
-  const progressText = isPaidUser === true ? t('about_20_30_seconds') : t('about_50_60_seconds');
+  
+  // Dynamic progress text based on percentage (using non-round numbers to feel more natural)
+  const getProgressText = (progress: number): string => {
+    if (progress < 28) {
+      return t('progress_analyzing'); // 🧠 Analyzing your image...
+    } else if (progress < 73) {
+      return t('progress_creating'); // 🎨 Creating the base composition...
+    } else if (progress < 94) {
+      return t('progress_enhancing'); // ✨ Enhancing details...
+    } else {
+      return t('progress_almost_ready'); // 💫 Almost ready!
+    }
+  };
+  
+  const progressText = getProgressText(currentProgress);
+  
+  const handleProgressChange = React.useCallback((progress: number) => {
+    setCurrentProgress(progress);
+  }, []);
 
   const handleDownload = async () => {
     if (!generatedImageUrl) return;
@@ -107,6 +126,7 @@ export function GenerationProgress({
             <div className="relative z-10 flex flex-col items-center justify-center gap-8">
               <ProgressCircle 
                 duration={progressDuration}
+                onProgressChange={handleProgressChange}
               />
               <div className="text-sm text-center text-muted-foreground font-medium px-4">
                 {progressText}
