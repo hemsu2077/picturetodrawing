@@ -360,8 +360,8 @@ export function DrawingGenerator({
               ) : (
                 // Show normal style preview and image upload
                 <>
-                  {/* Style Preview on top - constrained width */}
-                  <div className="w-full max-w-2xl flex-shrink-0">
+                  {/* Style Preview on top - full width */}
+                  <div className="w-full flex-shrink-0">
                     <StylePreview
                       selectedStyle={selectedStyle}
                       className=""
@@ -369,7 +369,7 @@ export function DrawingGenerator({
                   </div>
                   
                   {/* Image Upload below - constrained width */}
-                  <div className="flex-1 min-h-0 w-full max-w-2xl flex items-center justify-center">
+                  <div className="flex-1 min-h-0 w-full flex items-center justify-center">
                     <ImageUpload
                       onImageSelect={handleImageSelect}
                       selectedImage={selectedImage}

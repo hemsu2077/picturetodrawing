@@ -20,7 +20,7 @@ export function StylePreview({ selectedStyle, className }: StylePreviewProps) {
 
   return (
     <div className={cn("", className)}>
-      <div className="relative rounded-lg overflow-hidden bg-muted aspect-video shadow-lg">
+      <div className="relative rounded-lg overflow-hidden bg-muted aspect-video">
         <img
           src={displayStyle.image}
           alt={displayStyle.name + ' - Picture to Drawing Style Preview'}
