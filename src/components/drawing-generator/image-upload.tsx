@@ -112,54 +112,60 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
       ) : (
         <div
           className={cn(
-            "rounded-lg p-4 text-center transition-all h-full flex flex-col items-center justify-center cursor-pointer",
-            "hover:border-2 hover:border-dashed hover:border-primary/50 hover:bg-accent/20",
-            isDragging && "border-2 border-dashed border-primary bg-accent/20"
+            "border-2 border-dashed rounded-lg p-4 transition-all h-full cursor-pointer",
+            "hover:border-dashed hover:border-primary/50 hover:bg-accent/20",
+            isDragging && "border-primary bg-accent/20"
           )}
           onDrop={handleDrop}
           onDragOver={handleDragOver}
           onDragLeave={handleDragLeave}
           onClick={openFileDialog}
         >
-          <div className="flex flex-col items-center gap-2 mb-3">
-            <Button 
-              variant="outline"
-              size="default"
-              className="pointer-events-none" 
-              onClick={(e) => e.stopPropagation()}
-            >
-              <Upload className="h-4 w-4 mr-2" />
-              {t('daily_checkin.upload_picture')}
-            </Button>
-            <div className="space-y-1 text-center">
-              <p className="text-xs text-muted-foreground">
-                {t('daily_checkin.drag_drop_hint')}
-              </p>
-              <p className="text-xs text-muted-foreground">
-                {t('daily_checkin.supported_formats')}
-              </p>
-            </div>
-          </div>
-          
-          <div className="w-full max-w-3xs py-2">
-            <p className="text-xs font-medium text-muted-foreground mb-2">{t('daily_checkin.try_samples')}</p>
-            <div className="grid grid-cols-4 gap-1.5 px-2">
-              {sampleImages.map((sampleUrl, index) => (
-                <div
-                  key={index}
-                  className="relative aspect-square rounded-sm overflow-hidden cursor-pointer"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    handleSampleImageSelect(sampleUrl);
-                  }}
+          <div className="h-full flex flex-col lg:flex-row gap-6 md:gap-8">
+            {/* Left side - Upload section */}
+            <div className="flex-1 flex flex-col items-center justify-center text-center">
+              <div className="flex flex-col items-center gap-2">
+                <Button 
+                  variant="outline"
+                  size="default"
+                  className="pointer-events-none" 
+                  onClick={(e) => e.stopPropagation()}
                 >
-                  <img
-                    src={sampleUrl}
-                    alt={t('drawing_generator.sample_alt', { index: index + 1 })}
-                    className="w-full h-full hover:scale-105 transition-transform object-cover"
-                  />
+                  <Upload className="h-4 w-4 mr-2" />
+                  {t('daily_checkin.upload_picture')}
+                </Button>
+                <div className="space-y-1 text-center">
+                  <p className="text-xs text-muted-foreground">
+                    {t('daily_checkin.drag_drop_hint')}
+                  </p>
+                  <p className="text-xs text-muted-foreground">
+                    {t('daily_checkin.supported_formats')}
+                  </p>
                 </div>
-              ))}
+              </div>
+            </div>
+            
+            {/* Right side - Sample images section */}
+            <div className="flex-1 flex flex-col items-center justify-center">
+              <p className="text-xs font-medium text-muted-foreground mb-3">{t('daily_checkin.try_samples')}</p>
+              <div className="flex gap-2 w-full max-w-[240px]">
+                {sampleImages.map((sampleUrl, index) => (
+                  <div
+                    key={index}
+                    className="relative aspect-square rounded-md overflow-hidden cursor-pointer border border-border hover:border-primary"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      handleSampleImageSelect(sampleUrl);
+                    }}
+                  >
+                    <img
+                      src={sampleUrl}
+                      alt={t('drawing_generator.sample_alt', { index: index + 1 })}
+                      className="w-full h-full hover:scale-105 transition-transform object-cover"
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

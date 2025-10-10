@@ -346,7 +346,7 @@ export function DrawingGenerator({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* Left Side - Style Preview + Image Upload OR Generation Progress */}
           <div className="md:col-span-1 lg:col-span-2">
-            <div className="bg-background border border-border/60 rounded-lg p-6 flex flex-col gap-4 h-[480px] sm:h-[580px] lg:h-[640px] items-center justify-center shadow-sm">
+            <div className="bg-background border border-border/60 rounded-lg p-6 flex flex-col gap-4 h-[540px] sm:h-[640px] items-center justify-center shadow-sm">
               {showGenerationView ? (
                 // Show generation progress/result
                 <GenerationProgress
