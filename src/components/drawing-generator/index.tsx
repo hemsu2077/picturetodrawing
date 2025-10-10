@@ -163,13 +163,13 @@ export function DrawingGenerator({
   };
 
   const handleCloseGeneration = () => {
-    // Reset all generation-related state
+    // Reset generation-related state but keep the uploaded image
     setShowGenerationView(false);
     setIsGenerating(false);
     setGeneratedImageUrl(null);
     setError(null);
-    setSelectedImage(null);
     setNewDrawing(null);
+    // Keep selectedImage so user can see their uploaded image
   };
 
   const convertImageToBase64 = (file: File): Promise<string> => {
@@ -347,37 +347,33 @@ export function DrawingGenerator({
           {/* Left Side - Style Preview + Image Upload OR Generation Progress */}
           <div className="md:col-span-1 lg:col-span-2">
             <div className="bg-background border border-border/60 rounded-lg p-6 flex flex-col gap-4 h-[540px] sm:h-[640px] items-center justify-center shadow-sm">
-              {showGenerationView ? (
-                // Show generation progress/result
-                <GenerationProgress
-                  isGenerating={isGenerating}
-                  generatedImageUrl={generatedImageUrl}
-                  error={error}
-                  onClose={handleCloseGeneration}
-                  className="w-full h-full"
-                  isPaidUser={isPaidUser}
+              {/* Style Preview on top - full width OR Generation Progress */}
+              <div className="w-full flex-shrink-0">
+                {showGenerationView ? (
+                  <GenerationProgress
+                    isGenerating={isGenerating}
+                    generatedImageUrl={generatedImageUrl}
+                    error={error}
+                    onClose={handleCloseGeneration}
+                    className="w-full"
+                    isPaidUser={isPaidUser}
+                  />
+                ) : (
+                  <StylePreview
+                    selectedStyle={selectedStyle}
+                    className=""
+                  />
+                )}
+              </div>
+              
+              {/* Image Upload below - always visible */}
+              <div className="flex-1 min-h-0 w-full flex items-center justify-center">
+                <ImageUpload
+                  onImageSelect={handleImageSelect}
+                  selectedImage={selectedImage}
+                  className="h-full w-full"
                 />
-              ) : (
-                // Show normal style preview and image upload
-                <>
-                  {/* Style Preview on top - full width */}
-                  <div className="w-full flex-shrink-0">
-                    <StylePreview
-                      selectedStyle={selectedStyle}
-                      className=""
-                    />
-                  </div>
-                  
-                  {/* Image Upload below - constrained width */}
-                  <div className="flex-1 min-h-0 w-full flex items-center justify-center">
-                    <ImageUpload
-                      onImageSelect={handleImageSelect}
-                      selectedImage={selectedImage}
-                      className="h-full w-full"
-                    />
-                  </div>
-                </>
-              )}
+              </div>
             </div>
           </div>
 

@@ -77,7 +77,7 @@ export function GenerationProgress({
   };
 
   return (
-    <div className={cn("relative w-full h-full flex items-center justify-center rounded-lg", className)}>
+    <div className={cn("relative w-full aspect-video flex items-center justify-center rounded-lg overflow-hidden", className)}>
       {/* Close and Download buttons - shown when generation is complete */}
       {!isGenerating && !error && generatedImageUrl && (
         <div className="absolute top-4 right-4 z-10 flex gap-4">
@@ -108,31 +108,24 @@ export function GenerationProgress({
             <AnimatedGradientBackground gradientId="errorGradient" />
 
             {/* Content layer */}
-            <div className="relative z-10 flex flex-col items-center justify-center text-center max-w-md px-4">
-              {/* Illustration */}
-              <div className="mb-6">
+            <div className="relative z-10 flex flex-col items-center justify-center text-center px-4">
+              {/* Illustration - hidden on mobile */}
+              <div className="mb-3 hidden lg:block">
                 <Image
                   src="https://files.picturetodrawing.com/ui/loading-drawing.webp"
                   alt="Loading illustration"
-                  width={800}
-                  height={800}
-                  className="w-auto h-auto opacity-60"
+                  width={200}
+                  height={200}
+                  className="w-auto h-auto max-h-40 opacity-60"
                   unoptimized
                 />
               </div>
               
-              <div className="w-16 h-16 rounded-full bg-destructive/10 flex items-center justify-center mb-4">
-                <span className="text-destructive text-2xl">⚠</span>
+              <div className="w-12 h-12 rounded-full bg-destructive/10 flex items-center justify-center mb-2">
+                <span className="text-destructive text-xl">⚠</span>
               </div>
-              <div className="text-base font-medium text-destructive mb-2">{t('failed')}</div>
-              <div className="text-sm text-muted-foreground break-words whitespace-pre-wrap">{error}</div>
-              <Button
-                variant="outline"
-                onClick={onClose}
-                className="mt-6"
-              >
-                {t('try_again') || 'Try Again'}
-              </Button>
+              <div className="text-sm font-medium text-destructive mb-1">{t('failed')}</div>
+              <div className="text-xs text-muted-foreground break-words whitespace-pre-wrap">{error}</div>
             </div>
           </div>
         ) : isGenerating ? (
@@ -141,15 +134,15 @@ export function GenerationProgress({
             <AnimatedGradientBackground gradientId="generatingGradient" />
 
             {/* Content layer */}
-            <div className="relative z-10 flex flex-col items-center justify-center gap-6">
-              {/* Illustration */}
-              <div className="mb-2">
+            <div className="relative z-10 flex flex-col items-center justify-center gap-3">
+              {/* Illustration - hidden on mobile */}
+              <div className="mb-1 hidden lg:block">
                 <Image
                   src="https://files.picturetodrawing.com/ui/loading-drawing.webp"
                   alt="Loading illustration"
-                  width={800}
-                  height={800}
-                  className="w-auto h-auto opacity-60"
+                  width={200}
+                  height={200}
+                  className="w-auto h-auto max-h-40 opacity-60"
                   unoptimized
                 />
               </div>
@@ -158,7 +151,7 @@ export function GenerationProgress({
                 duration={progressDuration}
                 onProgressChange={handleProgressChange}
               />
-              <div className="text-sm text-center text-muted-foreground px-4">
+              <div className="text-xs text-center text-muted-foreground px-4">
                 {progressText}
               </div>
               
@@ -175,9 +168,9 @@ export function GenerationProgress({
                   variant="outline"
                   size="sm"
                   onClick={handleUpgrade}
-                  className="gap-2 bg-background/50 backdrop-blur-sm hover:bg-background/80 transition-all"
+                  className="gap-2 h-8 text-xs bg-background/50 backdrop-blur-sm hover:bg-background/80 transition-all"
                 >
-                  <Zap className="h-4 w-4" />
+                  <Zap className="h-3 w-3" />
                   {t('upgrade_for_speed')}
                 </Button>
               )}
