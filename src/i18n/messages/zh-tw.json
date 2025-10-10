@@ -192,9 +192,9 @@
     "deleting": "刪除中..."
   },
   "drawing_generator": {
-    "drawing_style": "手繪風格",
+    "drawing_style": "選擇風格",
     "ai_model": "AI模型",
-    "aspect_ratio": "長寬比",
+    "aspect_ratio": "比例",
     "select_ai_model": "選擇AI模型",
     "select_aspect_ratio": "選擇長寬比",
     "convert_to_drawing": "轉換為手繪",
@@ -226,7 +226,7 @@
     "drawing_details": "手繪詳情",
     "style": "風格",
     "ai_model_label": "AI模型",
-    "aspect_ratio_label": "長寬比",
+    "aspect_ratio_label": "比例",
     "created": "創建時間",
     "download": "下載",
     "delete": "刪除",
@@ -298,7 +298,7 @@
     },
     "ratios": {
       "auto": "自動",
-      "auto_description": "匹配輸入圖片",
+      "auto_description": "自動匹配",
       "square": "正方形",
       "landscape": "橫向",
       "portrait": "縱向",

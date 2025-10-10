@@ -192,9 +192,9 @@
     "deleting": "削除中..."
   },
   "drawing_generator": {
-    "drawing_style": "絵画スタイル",
+    "drawing_style": "スタイルを選択",
     "ai_model": "AIモデル",
-    "aspect_ratio": "アスペクト比",
+    "aspect_ratio": "比率",
     "select_ai_model": "AIモデルを選択",
     "select_aspect_ratio": "アスペクト比を選択",
     "convert_to_drawing": "イラストに変換",
@@ -226,7 +226,7 @@
     "drawing_details": "イラスト詳細",
     "style": "スタイル",
     "ai_model_label": "AIモデル",
-    "aspect_ratio_label": "アスペクト比",
+    "aspect_ratio_label": "比率",
     "created": "作成日",
     "download": "ダウンロード",
     "delete": "削除",
@@ -297,7 +297,7 @@
     },
     "ratios": {
       "auto": "自動",
-      "auto_description": "入力画像に合わせる",
+      "auto_description": "自動調整",
       "square": "正方形",
       "landscape": "横向き",
       "portrait": "縦向き",

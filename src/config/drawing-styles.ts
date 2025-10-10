@@ -4,23 +4,6 @@ export interface StyleOption {
   image: string;
 }
 
-// Popular styles configuration for different pages/contexts
-const DEFAULT_POPULAR_STYLES = [
-  'pencil-sketch',
-  'line-drawing',
-  'watercolor-painting',
-  'inkart',
-  'superhero-comic'
-] as const;
-
-export const POPULAR_STYLES_CONFIG = {
-  default: DEFAULT_POPULAR_STYLES,
-  'photo-to-line-drawing': ['line-drawing', 'line-drawing-2', 'line-art', 'bold-outline', 'pencil-sketch'],
-  'photo-to-cartoon': ['ghibli-style', 'pure-cartoon', 'simpsons', 'manga', '90s-retro-anime']
-} as const;
-
-export type PopularStylesConfigKey = keyof typeof POPULAR_STYLES_CONFIG;
-
 export const getAllDrawingStyles = (t: any): StyleOption[] => [
   {
     id: 'pencil-sketch',
@@ -209,12 +192,3 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
   },
 
 ];
-
-export const getPopularStyles = (t: any, configKey: PopularStylesConfigKey = 'default'): StyleOption[] => {
-  const allStyles = getAllDrawingStyles(t);
-  const popularIds = POPULAR_STYLES_CONFIG[configKey] ?? POPULAR_STYLES_CONFIG.default;
-  
-  return popularIds
-    .map(id => allStyles.find(style => style.id === id))
-    .filter((style): style is StyleOption => style !== undefined);
-};

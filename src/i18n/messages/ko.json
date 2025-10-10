@@ -192,9 +192,9 @@
     "deleting": "삭제 중..."
   },
   "drawing_generator": {
-    "drawing_style": "그림 스타일",
+    "drawing_style": "스타일 선택",
     "ai_model": "AI 모델",
-    "aspect_ratio": "종횡비",
+    "aspect_ratio": "비율",
     "select_ai_model": "AI 모델 선택",
     "select_aspect_ratio": "종횡비 선택",
     "convert_to_drawing": "그림으로 변환",
@@ -226,7 +226,7 @@
     "drawing_details": "그림 세부정보",
     "style": "스타일",
     "ai_model_label": "AI 모델",
-    "aspect_ratio_label": "종횡비",
+    "aspect_ratio_label": "비율",
     "created": "생성됨",
     "download": "다운로드",
     "delete": "삭제",
@@ -296,7 +296,7 @@
     },
     "ratios": {
       "auto": "자동",
-      "auto_description": "입력 이미지와 일치",
+      "auto_description": "자동 조정",
       "square": "정사각형",
       "landscape": "가로",
       "portrait": "세로",

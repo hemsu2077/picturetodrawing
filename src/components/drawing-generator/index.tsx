@@ -15,14 +15,13 @@ import { isAuthEnabled } from '@/lib/auth';
 import { useLocale, useTranslations } from 'next-intl';
 import { Pricing } from '@/types/blocks/pricing';
 import { RiCoinsLine } from 'react-icons/ri';
-import { type PopularStylesConfigKey } from '@/config/drawing-styles';
 import { getModelForStyle } from '@/config/drawing-prompts';
 import { useSearchParams } from 'next/navigation';
 
 interface DrawingGeneratorProps {
   className?: string;
   defaultStyle?: string;
-  popularStylesKey?: PopularStylesConfigKey;
+  defaultCategory?: string;
 }
 
 interface TrialStatus {
@@ -34,7 +33,7 @@ interface TrialStatus {
 export function DrawingGenerator({
   className,
   defaultStyle = 'pencil-sketch',
-  popularStylesKey = 'default'
+  defaultCategory
 }: DrawingGeneratorProps) {
   const { data: session } = isAuthEnabled() ? useSession() : { data: null };
   const { setShowSignModal, showPricingModal, setShowPricingModal } = useAppContext();
@@ -399,7 +398,7 @@ export function DrawingGenerator({
               selectedStyle={selectedStyle}
               onStyleChange={setSelectedStyle}
               className=""
-              popularStylesKey={popularStylesKey}
+              defaultCategory={defaultCategory}
             />
             
             <RatioSelector

@@ -82,7 +82,7 @@ export default async function PhotoTransformationPage({
       <div id="drawing-generator">
         <DrawingGenerator
           defaultStyle={generator.defaultStyle}
-          popularStylesKey={typedSlug}
+          defaultCategory={generator.defaultCategory}
         />
       </div>
       {page.introduce && <Feature1 section={page.introduce} />}

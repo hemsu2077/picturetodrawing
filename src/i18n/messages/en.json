@@ -192,9 +192,9 @@
     "deleting": "Deleting..."
   },
   "drawing_generator": {
-    "drawing_style": "Drawing Style",
+    "drawing_style": "Choose Style",
     "ai_model": "AI model",
-    "aspect_ratio": "Aspect Ratio",
+    "aspect_ratio": "Ratio",
     "select_ai_model": "Select AI model",
     "select_aspect_ratio": "Select aspect ratio",
     "convert_to_drawing": "Convert to Drawing",
@@ -226,7 +226,7 @@
     "drawing_details": "Drawing Details",
     "style": "Style",
     "ai_model_label": "AI Model",
-    "aspect_ratio_label": "Aspect Ratio",
+    "aspect_ratio_label": "Ratio",
     "created": "Created",
     "download": "Download",
     "delete": "Delete",
@@ -298,7 +298,7 @@
     },
     "ratios": {
       "auto": "Auto",
-      "auto_description": "Match input image",
+      "auto_description": "Auto match",
       "square": "Square",
       "landscape": "Landscape",
       "portrait": "Portrait",

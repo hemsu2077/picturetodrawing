@@ -3,7 +3,6 @@
 import React, { useState, useMemo } from 'react';
 import { cn } from '@/lib/utils';
 import { useTranslations } from 'next-intl';
-import { type PopularStylesConfigKey } from '@/config/drawing-styles';
 import { getAllDrawingStyles } from '@/config/drawing-styles';
 import { STYLE_CATEGORIES } from '@/config/style-categories';
 import { Button } from '@/components/ui/button';
@@ -12,12 +11,12 @@ interface StyleSelectorProps {
   selectedStyle: string;
   onStyleChange: (style: string) => void;
   className?: string;
-  popularStylesKey?: PopularStylesConfigKey;
+  defaultCategory?: string;
 }
 
-export function StyleSelector({ selectedStyle, onStyleChange, className, popularStylesKey = 'default' }: StyleSelectorProps) {
+export function StyleSelector({ selectedStyle, onStyleChange, className, defaultCategory }: StyleSelectorProps) {
   const t = useTranslations('drawing_generator');
-  const [activeCategory, setActiveCategory] = useState('all');
+  const [activeCategory, setActiveCategory] = useState(defaultCategory || 'all');
   const allStyles = getAllDrawingStyles(t);
 
   // Filter styles based on active category

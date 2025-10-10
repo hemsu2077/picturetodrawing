@@ -192,9 +192,9 @@
     "deleting": "Wird gelöscht..."
   },
   "drawing_generator": {
-    "drawing_style": "Zeichenstil",
+    "drawing_style": "Stil wählen",
     "ai_model": "KI-Modell",
-    "aspect_ratio": "Seitenverhältnis",
+    "aspect_ratio": "Verhältnis",
     "select_ai_model": "KI-Modell auswählen",
     "select_aspect_ratio": "Seitenverhältnis auswählen",
     "convert_to_drawing": "In Zeichnung umwandeln",
@@ -226,7 +226,7 @@
     "drawing_details": "Zeichnungsdetails",
     "style": "Stil",
     "ai_model_label": "KI-Modell",
-    "aspect_ratio_label": "Seitenverhältnis",
+    "aspect_ratio_label": "Verhältnis",
     "created": "Erstellt",
     "download": "Herunterladen",
     "delete": "Löschen",
@@ -296,7 +296,7 @@
     },
     "ratios": {
       "auto": "Auto",
-      "auto_description": "Eingabebild anpassen",
+      "auto_description": "Auto anpassen",
       "square": "Quadrat",
       "landscape": "Querformat",
       "portrait": "Hochformat",
