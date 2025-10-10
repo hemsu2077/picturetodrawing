@@ -6,6 +6,7 @@ import { Download, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useTranslations } from 'next-intl';
 import { ProgressCircle } from './progress-circle';
+import { AnimatedGradientBackground } from './animated-gradient-background';
 import Image from 'next/image';
 
 interface GenerationProgressProps {
@@ -51,7 +52,7 @@ export function GenerationProgress({
   };
 
   return (
-    <div className={cn("relative w-full h-full flex items-center justify-center", className)}>
+    <div className={cn("relative w-full h-full flex items-center justify-center rounded-lg", className)}>
       {/* Close and Download buttons - shown when generation is complete */}
       {!isGenerating && !error && generatedImageUrl && (
         <div className="absolute top-4 right-4 z-10 flex gap-2">
@@ -77,31 +78,39 @@ export function GenerationProgress({
       {/* Content */}
       <div className="flex flex-col items-center justify-center w-full h-full">
         {error ? (
-          // Error state
-          <div className="flex flex-col items-center justify-center text-center max-w-md">
-            <div className="w-16 h-16 rounded-full bg-destructive/10 flex items-center justify-center mb-4">
-              <span className="text-destructive text-2xl">⚠</span>
+          // Error state with gradient background
+          <div className="relative flex flex-col items-center justify-center w-full h-full overflow-hidden">
+            <AnimatedGradientBackground gradientId="errorGradient" />
+
+            {/* Content layer */}
+            <div className="relative z-10 flex flex-col items-center justify-center text-center max-w-md px-4">
+              <div className="w-16 h-16 rounded-full bg-destructive/10 flex items-center justify-center mb-4">
+                <span className="text-destructive text-2xl">⚠</span>
+              </div>
+              <div className="text-base font-medium text-destructive mb-2">{t('failed')}</div>
+              <div className="text-sm text-muted-foreground break-words whitespace-pre-wrap">{error}</div>
+              <Button
+                variant="outline"
+                onClick={onClose}
+                className="mt-6"
+              >
+                {t('try_again') || 'Try Again'}
+              </Button>
             </div>
-            <div className="text-base font-medium text-destructive mb-2">{t('failed')}</div>
-            <div className="text-sm text-muted-foreground break-words whitespace-pre-wrap">{error}</div>
-            <Button
-              variant="outline"
-              onClick={onClose}
-              className="mt-6"
-            >
-              {t('try_again') || 'Try Again'}
-            </Button>
           </div>
         ) : isGenerating ? (
-          // Generating state
-          <div className="flex flex-col items-center justify-center gap-6">
-            <ProgressCircle 
-              duration={progressDuration} 
-              size={100} 
-              strokeWidth={3}
-            />
-            <div className="text-sm text-center text-muted-foreground font-medium">
-              {progressText}
+          // Generating state with elegant gradient background
+          <div className="relative flex flex-col items-center justify-center w-full h-full overflow-hidden">
+            <AnimatedGradientBackground gradientId="generatingGradient" />
+
+            {/* Content layer */}
+            <div className="relative z-10 flex flex-col items-center justify-center gap-8">
+              <ProgressCircle 
+                duration={progressDuration}
+              />
+              <div className="text-sm text-center text-muted-foreground font-medium px-4">
+                {progressText}
+              </div>
             </div>
           </div>
         ) : generatedImageUrl ? (

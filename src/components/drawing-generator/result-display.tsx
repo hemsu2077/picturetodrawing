@@ -278,9 +278,7 @@ export function RecentDrawings({
                       {/* all users use the same progress bar */}
                       <ProgressCircle 
                         duration={40} 
-                        className="mb-3" 
-                        size={48} 
-                        strokeWidth={3}
+                        className="mb-3"
                       />
                       <div className="text-xs text-center px-2">
                         <div className="text-muted-foreground mt-1">{t('about_20_30_seconds')}</div>
