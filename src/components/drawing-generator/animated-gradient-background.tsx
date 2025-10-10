@@ -10,14 +10,14 @@ export function AnimatedGradientBackground({
   gradientId = 'lineGradient1' 
 }: AnimatedGradientBackgroundProps) {
   return (
-    <div className="absolute inset-0 bg-[#f6f4f4] dark:bg-gray-900">
+    <div className="absolute inset-0 bg-[#f9f9f9] dark:bg-gray-900">
       {/* Paper texture overlay */}
       <div 
         className="absolute inset-0"
         style={{
           backgroundImage: 'url(/imgs/paper-texture.webp)',
           backgroundRepeat: 'repeat',
-          opacity: 0.15,
+          opacity: 0.1,
         }}
       />
       

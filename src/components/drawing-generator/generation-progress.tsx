@@ -109,6 +109,18 @@ export function GenerationProgress({
 
             {/* Content layer */}
             <div className="relative z-10 flex flex-col items-center justify-center text-center max-w-md px-4">
+              {/* Illustration */}
+              <div className="mb-6">
+                <Image
+                  src="https://files.picturetodrawing.com/ui/loading-drawing.webp"
+                  alt="Loading illustration"
+                  width={800}
+                  height={800}
+                  className="w-auto h-auto opacity-60"
+                  unoptimized
+                />
+              </div>
+              
               <div className="w-16 h-16 rounded-full bg-destructive/10 flex items-center justify-center mb-4">
                 <span className="text-destructive text-2xl">⚠</span>
               </div>
@@ -130,6 +142,18 @@ export function GenerationProgress({
 
             {/* Content layer */}
             <div className="relative z-10 flex flex-col items-center justify-center gap-6">
+              {/* Illustration */}
+              <div className="mb-2">
+                <Image
+                  src="https://files.picturetodrawing.com/ui/loading-drawing.webp"
+                  alt="Loading illustration"
+                  width={800}
+                  height={800}
+                  className="w-auto h-auto opacity-60"
+                  unoptimized
+                />
+              </div>
+              
               <ProgressCircle 
                 duration={progressDuration}
                 onProgressChange={handleProgressChange}
