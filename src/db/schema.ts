@@ -159,15 +159,16 @@ export const checkins = pgTable("pic_to_dra_checkins", {
 ]);
 
 // Daily Trials table - for tracking daily free trials
+// Now requires login, so only user_uuid constraint is needed
 export const dailyTrials = pgTable("pic_to_dra_daily_trials", {
   id: integer().primaryKey().generatedAlwaysAsIdentity(),
-  user_uuid: varchar({ length: 255 }), // nullable for non-logged-in users
-  ip_address: varchar({ length: 45 }).notNull(), // supports both IPv4 and IPv6
+  user_uuid: varchar({ length: 255 }).notNull(), // Required - daily trial requires login
+  ip_address: varchar({ length: 45 }).notNull(), // Stored for logging/analytics only
   trial_date: varchar({ length: 10 }).notNull(), // YYYY-MM-DD format
   created_at: timestamp({ withTimezone: true }),
 }, (table) => [
   // Ensure one trial per user per day (for logged-in users)
   unique("user_daily_trial_unique").on(table.user_uuid, table.trial_date),
-  // Ensure one trial per IP per day (for non-logged-in users)
-  unique("ip_daily_trial_unique").on(table.ip_address, table.trial_date),
+  // IP constraint removed - was causing conflicts in local dev and is no longer needed
+  // since daily trial now requires login
 ]);

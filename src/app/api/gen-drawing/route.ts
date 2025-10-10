@@ -38,9 +38,6 @@ try {
     if (trialCheck.canUseTrial && userUuid) {
       // Logged-in user can use daily trial
       isTrialUsage = true;
-      if (process.env.NODE_ENV !== 'production') {
-        console.log(`Using daily trial for user ${userUuid}`);
-      }
     } else if (userUuid) {
       // Trial already used, check user credits
       const userCredits = await getUserCredits(userUuid);
@@ -219,12 +216,9 @@ try {
       // Record daily trial usage for logged-in user
       try {
         await recordDailyTrial(userUuid);
-        if (process.env.NODE_ENV !== 'production') {
-          console.log(`Daily trial recorded for user ${userUuid}`);
-        }
       } catch (trialError) {
-        console.error("Failed to record daily trial:", trialError);
-        // Don't fail the request if trial recording fails
+        console.error('CRITICAL: Failed to record daily trial:', trialError);
+        // Don't fail the request as image is already generated, but this needs investigation
       }
     } else if (userUuid) {
       // Deduct credits for non-trial usage
@@ -234,11 +228,8 @@ try {
           trans_type: CreditsTransType.DrawingGeneration,
           credits: 2,
         });
-        if (process.env.NODE_ENV !== 'production') {
-          console.log(`Successfully deducted 2 credits from user ${userUuid}`);
-        }
       } catch (creditError) {
-        console.error("Failed to deduct credits:", creditError);
+        console.error('Failed to deduct credits:', creditError);
         // Note: We don't fail the request if credit deduction fails
         // as the image has already been generated successfully
       }

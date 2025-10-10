@@ -1,6 +1,6 @@
 import { dailyTrials } from "@/db/schema";
 import { db } from "@/db";
-import { and, eq, or } from "drizzle-orm";
+import { and, eq, or, desc } from "drizzle-orm";
 import { getIsoTimestr } from "@/lib/time";
 import { headers } from "next/headers";
 
@@ -34,7 +34,8 @@ export async function getClientIP(): Promise<string> {
   return '127.0.0.1';
 }
 
-// Get today's date in YYYY-MM-DD format
+// Get today's date in YYYY-MM-DD format (UTC timezone)
+// IMPORTANT: Always use UTC to avoid timezone inconsistencies
 export function getTodayString(): string {
   return new Date().toISOString().split('T')[0];
 }
@@ -90,7 +91,7 @@ export async function recordDailyTrial(userUuid?: string): Promise<void> {
     const today = getTodayString();
     const clientIP = await getClientIP();
 
-    const insertResult = await db()
+    await db()
       .insert(dailyTrials)
       .values({
         user_uuid: userUuid,
@@ -98,16 +99,7 @@ export async function recordDailyTrial(userUuid?: string): Promise<void> {
         trial_date: today,
         created_at: new Date(getIsoTimestr()),
       })
-      .onConflictDoNothing()
-      .returning({ id: dailyTrials.id });
-
-    if (insertResult.length > 0) {
-      console.log(`Daily trial recorded for user ${userUuid}`);
-    } else if (process.env.NODE_ENV !== "production") {
-      console.log(
-        `Daily trial already recorded for user ${userUuid} on ${today}, skipping insert.`
-      );
-    }
+      .onConflictDoNothing();
   } catch (error) {
     console.error('Error recording daily trial:', error);
     throw error;
