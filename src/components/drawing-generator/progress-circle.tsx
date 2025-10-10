@@ -73,7 +73,7 @@ export function ProgressCircle({
 
         {/* Progress percentage */}
         <div className="text-center">
-          <div className="text-3xl font-bold tracking-tight text-foreground">
+          <div className="text-5xl font-bold tracking-tight text-foreground">
             {Math.round(progress)}<span className="text-xl text-muted-foreground"> %</span>
           </div>
         </div>

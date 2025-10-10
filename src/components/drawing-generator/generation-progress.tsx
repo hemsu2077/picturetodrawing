@@ -2,12 +2,13 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Download, X } from 'lucide-react';
+import { Download, X, Zap } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useTranslations } from 'next-intl';
 import { ProgressCircle } from './progress-circle';
 import { AnimatedGradientBackground } from './animated-gradient-background';
 import Image from 'next/image';
+import { useAppContext } from '@/contexts/app';
 
 interface GenerationProgressProps {
   isGenerating: boolean;
@@ -27,6 +28,7 @@ export function GenerationProgress({
   isPaidUser = null
 }: GenerationProgressProps) {
   const t = useTranslations('drawing_generator');
+  const { setShowPricingModal } = useAppContext();
   const [currentProgress, setCurrentProgress] = React.useState(0);
   
   // Free users: 60s progress bar, Paid users: 30s progress bar
@@ -51,6 +53,10 @@ export function GenerationProgress({
     setCurrentProgress(progress);
   }, []);
 
+  const handleUpgrade = () => {
+    setShowPricingModal(true);
+  };
+
   const handleDownload = async () => {
     if (!generatedImageUrl) return;
 
@@ -74,20 +80,20 @@ export function GenerationProgress({
     <div className={cn("relative w-full h-full flex items-center justify-center rounded-lg", className)}>
       {/* Close and Download buttons - shown when generation is complete */}
       {!isGenerating && !error && generatedImageUrl && (
-        <div className="absolute top-4 right-4 z-10 flex gap-2">
+        <div className="absolute top-4 right-4 z-10 flex gap-4">
           <Button
-            variant="secondary"
+            variant="outline"
             size="icon"
             onClick={handleDownload}
-            className="h-9 w-9 rounded-full shadow-lg"
+            className="h-9 w-9 rounded-full shadow-lg cursor-pointer hover:bg-background hover:scale-110 transition-all"
           >
             <Download className="h-4 w-4" />
           </Button>
           <Button
-            variant="secondary"
+            variant="outline"
             size="icon"
             onClick={onClose}
-            className="h-9 w-9 rounded-full shadow-lg"
+            className="h-9 w-9 rounded-full shadow-lg cursor-pointer hover:bg-background hover:scale-110 transition-all"
           >
             <X className="h-4 w-4" />
           </Button>
@@ -98,7 +104,7 @@ export function GenerationProgress({
       <div className="flex flex-col items-center justify-center w-full h-full">
         {error ? (
           // Error state with gradient background
-          <div className="relative flex flex-col items-center justify-center w-full h-full overflow-hidden">
+          <div className="relative flex flex-col items-center justify-center rounded-lg w-full h-full overflow-hidden">
             <AnimatedGradientBackground gradientId="errorGradient" />
 
             {/* Content layer */}
@@ -119,18 +125,38 @@ export function GenerationProgress({
           </div>
         ) : isGenerating ? (
           // Generating state with elegant gradient background
-          <div className="relative flex flex-col items-center justify-center w-full h-full overflow-hidden">
+          <div className="relative flex flex-col items-center justify-center rounded-lg w-full h-full overflow-hidden">
             <AnimatedGradientBackground gradientId="generatingGradient" />
 
             {/* Content layer */}
-            <div className="relative z-10 flex flex-col items-center justify-center gap-8">
+            <div className="relative z-10 flex flex-col items-center justify-center gap-6">
               <ProgressCircle 
                 duration={progressDuration}
                 onProgressChange={handleProgressChange}
               />
-              <div className="text-sm text-center text-muted-foreground font-medium px-4">
+              <div className="text-sm text-center text-muted-foreground px-4">
                 {progressText}
               </div>
+              
+              {/* Speed indicator */}
+              {isPaidUser === true ? (
+                // 2x speed badge for paid users - Clean white badge with green text
+                <div className="relative flex items-center gap-1 px-2.5 py-1 rounded-full bg-white dark:bg-white/95 dark:border-green-300/30">
+                  <Zap className="h-2.5 w-2.5 text-green-600 dark:text-green-500" fill="currentColor" />
+                  <span className="text-[10px] font-semibold text-primary tracking-tight">2×</span>
+                </div>
+              ) : (
+                // Upgrade button for free users
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={handleUpgrade}
+                  className="gap-2 bg-background/50 backdrop-blur-sm hover:bg-background/80 transition-all"
+                >
+                  <Zap className="h-4 w-4" />
+                  {t('upgrade_for_speed')}
+                </Button>
+              )}
             </div>
           </div>
         ) : generatedImageUrl ? (
@@ -141,7 +167,7 @@ export function GenerationProgress({
               alt="Generated drawing - Picture to Drawing"
               width={800}
               height={800}
-              className="rounded-lg object-contain max-w-full max-h-full bg-primary/10"
+              className="rounded-lg object-contain max-w-full max-h-full bg-muted/50"
               unoptimized
             />
           </div>
