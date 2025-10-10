@@ -112,7 +112,7 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
       ) : (
         <div
           className={cn(
-            "border-2 border-dashed rounded-lg p-4 transition-all h-full cursor-pointer",
+            "border-2 border-dashed rounded-lg p-4 h-full cursor-pointer",
             "hover:border-dashed hover:border-primary/50 hover:bg-accent/20",
             isDragging && "border-primary bg-accent/20"
           )}
