@@ -138,8 +138,8 @@
   },
   "usage": {
     "name": "usage",
-    "title": "图片转手绘的艺术之旅",
-    "description": "通过AI智能技术，将您的照片转换成精美手绘艺术作品。让每一张照片都成为永恒的艺术表达。",
+    "title": "4步完成图片转手绘",
+    "description": "用我们简单易用的图片转手绘工具，将照片变成精美手绘。上传、选择风格，几秒钟就能生成手绘作品。",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -147,29 +147,29 @@
     "text_align": "center",
     "items": [
       {
-        "title": "选择您喜爱的照片",
-        "description": "上传您想要转换的照片 - 无论是全家福、旅行照还是生活瞬间都可以。我们支持多种图片格式，并确保您的照片安全私密。",
+        "title": "上传图片",
+        "description": "点击上传或拖拽照片到页面。支持JPG、PNG、WEBP和HEIC格式。也可以试试我们的示例图片，体验图片转手绘的效果。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
       },
       {
-        "title": "挑选手绘风格",
-        "description": "提供多种经典手绘风格供您选择，包括铅笔素描、炭笔画、水彩画和水墨画等。每种风格都能完美还原手绘的质感和特色。",
+        "title": "选择手绘风格",
+        "description": "浏览多种手绘风格，包括铅笔素描、炭笔画、水彩、水墨、动漫等。每种风格都能让图片呈现独特的艺术效果。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
         }
       },
       {
-        "title": "开始智能转换",
-        "description": "先进的AI技术模拟真实手绘过程，通过分析构图、光影和主题，精准还原艺术家的绘画技法。",
+        "title": "选择图片比例",
+        "description": "为图片转手绘选择合适的画面比例。选择自动保持原始尺寸，或根据需要选择1:1、3:4、4:3、9:16或16:9。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
         }
       },
       {
-        "title": "获取艺术杰作",
-        "description": "下载画廊级质量的手绘作品。完美适合装裱、送礼或收藏，将普通照片提升为独特的艺术品。",
+        "title": "生成并下载",
+        "description": "点击转换按钮开始图片转手绘。每天免费体验1次，或使用积分进行更多转换。完成后即可下载高清手绘作品。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }

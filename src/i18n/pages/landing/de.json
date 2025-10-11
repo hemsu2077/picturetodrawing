@@ -137,8 +137,8 @@
   },
   "usage": {
     "name": "usage",
-    "title": "Die Kunst der digitalen Bild-zu-Zeichnung-Verwandlung",
-    "description": "Entdecken Sie die perfekte Verschmelzung von Fotografie und traditioneller Kunst durch KI-gestützte Zeichnungserstellung. Verwandeln Sie Ihre Erinnerungen in zeitlose künstlerische Ausdrucksformen.",
+    "title": "Bild zu Zeichnung in 4 einfachen Schritten",
+    "description": "Verwandeln Sie Ihre Fotos in schöne Zeichnungen mit unserem einfachen Bild-zu-Zeichnung-Konverter. Hochladen, Stil wählen und Zeichnung in Sekunden erstellen.",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -146,29 +146,29 @@
     "text_align": "center",
     "items": [
       {
-        "title": "Wählen Sie Ihr Lieblingsfoto aus",
-        "description": "Laden Sie ein bedeutungsvolles Foto hoch - ob Familienporträts, Reiseerinnerungen oder besondere Momente. Unser System verarbeitet verschiedene Bildformate und garantiert dabei absolute Vertraulichkeit.",
+        "title": "Bild hochladen",
+        "description": "Klicken Sie zum Hochladen oder ziehen Sie Ihr Foto per Drag & Drop. Unterstützt JPG, PNG, WEBP und HEIC. Sie können auch unsere Beispielbilder ausprobieren, um zu sehen, wie die Bild-zu-Zeichnung-Umwandlung funktioniert.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
       },
       {
-        "title": "Kunsttechnik auswählen",
-        "description": "Entscheiden Sie sich zwischen klassischen Techniken wie Bleistiftskizzen, ausdrucksstarken Kohlezeichnungen, zarten Aquarellen oder markanten Tusche-Illustrationen. Jede Technik erzeugt authentische künstlerische Texturen.",
+        "title": "Zeichenstil wählen",
+        "description": "Durchsuchen Sie verschiedene Zeichenstile wie Bleistiftskizze, Kohle, Aquarell, Tusche, Anime und mehr. Jeder Stil verleiht Ihrem Bild einen einzigartigen künstlerischen Look.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
         }
       },
       {
-        "title": "KI-Transformation starten",
-        "description": "Starten Sie die Umwandlung, bei der unsere KI traditionelle Zeichentechniken nachahmt. Das System analysiert Bildaufbau, Beleuchtung und Motiv, um authentische künstlerische Techniken präzise nachzubilden.",
+        "title": "Bildformat auswählen",
+        "description": "Wählen Sie Ihr bevorzugtes Seitenverhältnis für die Bild-zu-Zeichnung-Ausgabe. Wählen Sie Auto für Originalgröße oder 1:1, 3:4, 4:3, 9:16 oder 16:9 je nach Bedarf.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
         }
       },
       {
-        "title": "Ihr Kunstwerk herunterladen",
-        "description": "Erhalten Sie Ihre handgezeichnet wirkende Kunst in Galeriequalität. Perfekt zum Einrahmen, Verschenken oder als bleibende Erinnerung, die die Brücke zwischen Fotografie und traditioneller Kunst schlägt.",
+        "title": "Erstellen und herunterladen",
+        "description": "Klicken Sie auf Konvertieren, um Ihr Bild zu Zeichnung umzuwandeln. Erhalten Sie täglich 1 kostenlosen Versuch oder nutzen Sie Credits für weitere Umwandlungen. Laden Sie Ihre Zeichnung in hoher Auflösung herunter.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }

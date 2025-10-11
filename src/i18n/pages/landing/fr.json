@@ -137,8 +137,8 @@
   },
   "usage": {
     "name": "usage",
-    "title": "L'art de la transformation photo en dessin",
-    "description": "Découvrez la fusion parfaite entre photographie et art traditionnel grâce à notre technologie IA. Transformez vos souvenirs en expressions artistiques intemporelles avec des techniques de dessin professionnelles.",
+    "title": "Comment convertir une photo en dessin en 4 étapes",
+    "description": "Transformez vos photos en beaux dessins avec notre convertisseur facile à utiliser. Téléchargez, sélectionnez le style et générez votre dessin en quelques secondes.",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -146,29 +146,29 @@
     "text_align": "center",
     "items": [
       {
-        "title": "Choisissez votre photo préférée",
-        "description": "Commencez par sélectionner une photo qui vous tient à cœur - portraits de famille, souvenirs de voyage ou moments spéciaux. Notre plateforme accepte divers formats et garantit une confidentialité totale pendant le traitement.",
+        "title": "Téléchargez votre photo",
+        "description": "Cliquez pour télécharger ou glissez-déposez votre photo. Compatible avec JPG, PNG, WEBP et HEIC. Vous pouvez aussi essayer nos images d'exemple pour voir comment fonctionne la conversion photo en dessin.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
       },
       {
-        "title": "Sélectionnez votre style artistique",
-        "description": "Optez pour des techniques artistiques authentiques comme le croquis au crayon graphite, l'ombrage au fusain dramatique, les délicates touches d'aquarelle ou les illustrations à l'encre audacieuses. Chaque médium reproduit fidèlement les textures et caractéristiques artistiques.",
+        "title": "Choisissez le style de dessin",
+        "description": "Parcourez plusieurs styles de dessin comme le croquis au crayon, le fusain, l'aquarelle, l'encre, l'anime et plus encore. Chaque style donne à votre photo un aspect artistique unique.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
         }
       },
       {
-        "title": "Lancez la transformation artistique",
-        "description": "Démarrez la conversion où notre IA sophistiquée imite les méthodes de dessin traditionnelles. Le système analyse la composition, l'éclairage et le sujet pour recréer des techniques artistiques authentiques avec une précision remarquable.",
+        "title": "Sélectionnez le ratio d'image",
+        "description": "Choisissez votre format d'image préféré pour la sortie photo en dessin. Sélectionnez auto pour conserver les dimensions d'origine, ou choisissez 1:1, 3:4, 4:3, 9:16 ou 16:9 selon vos besoins.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
         }
       },
       {
-        "title": "Récupérez votre chef-d'œuvre",
-        "description": "Recevez votre œuvre d'art en qualité galerie. Idéal pour l'encadrement, les cadeaux ou la création de souvenirs durables qui allient photographie et beaux-arts traditionnels.",
+        "title": "Générez et téléchargez",
+        "description": "Cliquez sur convertir pour transformer votre photo en dessin. Obtenez 1 essai gratuit par jour, ou utilisez des crédits pour plus de conversions. Téléchargez votre dessin en haute résolution.",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }

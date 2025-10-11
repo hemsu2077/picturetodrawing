@@ -137,8 +137,8 @@
   },
   "usage": {
     "name": "usage",
-    "title": "写真イラスト化の魅力",
-    "description": "AIが実現する写真とアートの融合。大切な思い出を、プロフェッショナルな手描き風イラストとして永遠に残せます。",
+    "title": "写真イラスト化の簡単4ステップ",
+    "description": "使いやすい写真イラスト化ツールで、写真を美しいイラストに変換。アップロード、スタイル選択、数秒で完成。",
     "image": {
       "src": "/imgs/features/1.png"
     },
@@ -146,29 +146,29 @@
     "text_align": "center",
     "items": [
       {
-        "title": "お気に入りの写真を選ぶ",
-        "description": "家族写真、旅の思い出、特別な瞬間など、大切な写真をアップロード。様々な形式に対応し、プライバシーも万全です。",
+        "title": "写真をアップロード",
+        "description": "クリックまたはドラッグ&ドロップで写真をアップロード。JPG、PNG、WEBP、HEIC形式に対応。サンプル画像で写真イラスト化の効果を試すこともできます。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
       },
       {
-        "title": "アートスタイルを選択",
-        "description": "鉛筆画、木炭画、水彩画、インクイラストなど、本格的な画風から選べます。それぞれのスタイルが持つ独特の質感や特徴を忠実に再現します。",
+        "title": "イラストスタイルを選択",
+        "description": "鉛筆スケッチ、木炭画、水彩画、インク、アニメなど、多彩なスタイルから選択。それぞれのスタイルが写真に独特のアート表現を与えます。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-style.webp"
         }
       },
       {
-        "title": "変換をスタート",
-        "description": "高度なAIが伝統的な描画技法を再現。構図、光の当たり方、被写体の特徴を分析し、驚くほど本物に近い仕上がりを実現します。",
+        "title": "画像比率を選択",
+        "description": "写真イラスト化の出力に適したアスペクト比を選択。自動で元のサイズを保持するか、1:1、3:4、4:3、9:16、16:9から選べます。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-speed.webp"
         }
       },
       {
-        "title": "作品の完成",
-        "description": "ギャラリー品質の手描き風アートワークが完成。額装して飾ったり、ギフトとして贈ったり、写真とアートの架け橋となる思い出の一枚に。",
+        "title": "生成してダウンロード",
+        "description": "変換ボタンをクリックして写真イラスト化を開始。毎日1回無料トライアル、またはクレジットで追加変換が可能。高解像度でダウンロードできます。",
         "image": {
           "src": "https://files.picturetodrawing.com/sample/benifit-ai.webp"
         }
