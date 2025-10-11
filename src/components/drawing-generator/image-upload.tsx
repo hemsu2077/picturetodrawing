@@ -152,7 +152,12 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
                 {sampleImages.map((sampleUrl, index) => (
                   <div
                     key={index}
-                    className="relative aspect-square rounded-md overflow-hidden cursor-pointer border border-border hover:border-primary"
+                    className="relative flex-1 rounded-md overflow-hidden cursor-pointer border border-border hover:border-primary"
+                    style={{ 
+                      aspectRatio: '1 / 1',
+                      minWidth: 0,
+                      minHeight: 0
+                    }}
                     onClick={(e) => {
                       e.stopPropagation();
                       handleSampleImageSelect(sampleUrl);
@@ -164,6 +169,7 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
                       className="w-full h-full hover:scale-105 transition-transform object-cover"
                       loading="lazy"
                       decoding="async"
+                      style={{ display: 'block' }}
                     />
                   </div>
                 ))}
