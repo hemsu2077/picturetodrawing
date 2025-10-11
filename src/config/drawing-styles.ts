@@ -10,7 +10,7 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
     id: 'pencil-sketch',
     name: t('styles.pencil_sketch'),
     image: 'https://files.picturetodrawing.com/styles/pencil-sketch.webp?v=1.1',
-    preview: 'https://files.picturetodrawing.com/styles/sample/sample-pencil-sketch.webp?v=1.1'
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-pencil-sketch.webp?v=1.0'
   },
   {
     id: 'pencil-sketch-2',
@@ -46,7 +46,7 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
     id: 'charcoal-drawing',
     name: t('styles.charcoal_drawing'),
     image: 'https://files.picturetodrawing.com/styles/charcoal-drawing.webp',
-    preview: 'https://files.picturetodrawing.com/styles/sample/sample-charcoal-drawing.webp?v=1.1'
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-charcoal-drawing.webp?v=1.0'
   },
   {
     id: 'inkart',
