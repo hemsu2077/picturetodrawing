@@ -3,6 +3,11 @@
     "title": "照片轉線稿工具 - 免費線上轉換",
     "description": "輕鬆將照片轉換為線稿。一鍵將任意圖片轉換為清晰的線條藝術，適用於刺繡、紋身、手工藝和數位藝術創作。"
   },
+  "breadcrumb": {
+    "home": "首頁",
+    "drawing_styles": "繪畫風格",
+    "current": "照片轉線稿"
+  },
   "hero": {
     "title": "秒速照片轉線稿",
     "highlight_text": "照片轉線稿",
@@ -192,5 +197,12 @@
         "icon": "GoArrowUpRight"
       }
     ]
+  },
+  "structured_data": {
+    "name": "照片轉線稿工具",
+    "description": "輕鬆將照片轉換為線稿。一鍵將任意圖片轉換為清晰的線條藝術，適用於刺繡、紋身、手工藝和數位藝術創作。",
+    "breadcrumb_home": "首頁",
+    "breadcrumb_drawing_styles": "圖片轉繪畫風格",
+    "breadcrumb_current": "照片轉線稿工具"
   }
 }

@@ -3,6 +3,11 @@
     "title": "图片转卡通 AI | 免费开始",
     "description": "使用AI图片转卡通工具，一键把人物照、宠物照、合影变成高清卡通插画。云端极速渲染，免费试用，打造适合社交头像、礼物与商业素材的独特卡通风格。"
   },
+  "breadcrumb": {
+    "home": "首页",
+    "drawing_styles": "绘画风格",
+    "current": "图片转卡通"
+  },
   "hero": {
     "title": "AI图片转卡通转换器",
     "highlight_text": "图片转卡通",
@@ -205,5 +210,12 @@
         "target": "_self"
       }
     ]
+  },
+  "structured_data": {
+    "name": "AI图片转卡通转换器",
+    "description": "使用AI图片转卡通工具，一键把人物照、宠物照、合影变成高清卡通插画。",
+    "breadcrumb_home": "首页",
+    "breadcrumb_drawing_styles": "图片转绘画风格",
+    "breadcrumb_current": "AI图片转卡通转换器"
   }
 }

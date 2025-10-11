@@ -3,6 +3,11 @@
     "title": "写真を線描画に変換 - 無料でお試し",
     "description": "写真を簡単に線描画に変換。刺繍、タトゥー、クラフト、デジタルアートのためのクリーンな線画を即座に作成。"
   },
+  "breadcrumb": {
+    "home": "ホーム",
+    "drawing_styles": "描画スタイル",
+    "current": "写真を線描画に"
+  },
   "hero": {
     "title": "写真を線描画に変換する魔法のツール",
     "highlight_text": "写真を線描画",
@@ -211,5 +216,12 @@
         "icon": "GoArrowUpRight"
       }
     ]
+  },
+  "structured_data": {
+    "name": "写真を線描画に変換ツール",
+    "description": "写真を簡単に線描画に変換。刺繍、タトゥー、クラフト、デジタルアートのためのクリーンな線画を即座に作成。",
+    "breadcrumb_home": "ホーム",
+    "breadcrumb_drawing_styles": "写真を描画スタイルに",
+    "breadcrumb_current": "写真を線描画に変換ツール"
   }
 }

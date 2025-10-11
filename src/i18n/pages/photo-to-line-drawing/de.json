@@ -3,6 +3,11 @@
     "title": "Foto in Strichzeichnung Konverter - Kostenlos testen",
     "description": "Wandeln Sie mühelos Fotos in Strichzeichnungen um. Verwandeln Sie jedes Foto in saubere Linienkunst für Stickerei, Tätowierungen, Handwerk und digitale Kunst."
   },
+  "breadcrumb": {
+    "home": "Startseite",
+    "drawing_styles": "Zeichenstile",
+    "current": "Foto in Strichzeichnung"
+  },
   "hero": {
     "title": "Wandeln Sie Fotos sofort in Strichzeichnungen um",
     "highlight_text": "Foto in Strichzeichnung",
@@ -209,5 +214,12 @@
         "icon": "GoArrowUpRight"
       }
     ]
+  },
+  "structured_data": {
+    "name": "Foto in Strichzeichnung Konverter",
+    "description": "Wandeln Sie mühelos Fotos in Strichzeichnungen um. Verwandeln Sie jedes Foto in saubere Linienkunst für Stickerei, Tätowierungen, Handwerk und digitale Kunst.",
+    "breadcrumb_home": "Startseite",
+    "breadcrumb_drawing_styles": "Foto in Zeichenstile",
+    "breadcrumb_current": "Foto in Strichzeichnung Konverter"
   }
 }

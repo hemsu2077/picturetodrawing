@@ -22,7 +22,7 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
     id: 'line-drawing',
     name: t('styles.line_drawing'),
     image: 'https://files.picturetodrawing.com/styles/line-drawing.webp?v=2',
-    preview: 'https://files.picturetodrawing.com/styles/sample/sample-line-drawing.webp?v=1.1'
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-line-drawing.webp?v=1.0'
   },
   {
     id: 'line-drawing-2',

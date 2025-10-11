@@ -3,6 +3,11 @@
     "title": "Foto in Cartoon umwandeln mit KI | Gratis testen",
     "description": "Wandle jedes Foto mit KI in eine Cartoon-Illustration um. Ideal für Portraits, Haustiere und Gruppenbilder – sekundenschnell, hochauflösend und perfekt für Social Media, Geschenke oder Branding."
   },
+  "breadcrumb": {
+    "home": "Startseite",
+    "drawing_styles": "Zeichenstile",
+    "current": "Foto in Cartoon"
+  },
   "hero": {
     "title": "KI-Tool zum Foto in Cartoon umwandeln",
     "highlight_text": "Foto in Cartoon umwandeln",
@@ -205,5 +210,12 @@
         "target": "_self"
       }
     ]
+  },
+  "structured_data": {
+    "name": "KI-Tool zum Foto in Cartoon umwandeln",
+    "description": "Wandle jedes Foto mit KI in eine Cartoon-Illustration um. Ideal für Portraits, Haustiere und Gruppenbilder – sekundenschnell, hochauflösend.",
+    "breadcrumb_home": "Startseite",
+    "breadcrumb_drawing_styles": "Foto in Zeichenstile",
+    "breadcrumb_current": "KI-Tool zum Foto in Cartoon umwandeln"
   }
 }

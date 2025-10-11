@@ -3,6 +3,11 @@
     "title": "Photo to Cartoon AI | Start for Free",
     "description": "Convert any photo to cartoon instantly with our AI-powered cartoon maker. Transform portraits, pets, and images into vibrant cartoon illustrations. Free to try, professional results."
   },
+  "breadcrumb": {
+    "home": "Home",
+    "drawing_styles": "Drawing Styles",
+    "current": "Photo to Cartoon"
+  },
   "hero": {
     "title": "Photo to Cartoon AI Converter",
     "highlight_text": "Photo to Cartoon",
@@ -205,5 +210,12 @@
         "target": "_self"
       }
     ]
+  },
+  "structured_data": {
+    "name": "Photo to Cartoon AI Converter",
+    "description": "Convert any photo to cartoon instantly with our AI-powered cartoon maker. Transform portraits, pets, and images into vibrant cartoon illustrations.",
+    "breadcrumb_home": "Home",
+    "breadcrumb_drawing_styles": "Picture to Drawing Styles",
+    "breadcrumb_current": "Photo to Cartoon AI Converter"
   }
 }

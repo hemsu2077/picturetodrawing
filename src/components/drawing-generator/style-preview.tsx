@@ -26,7 +26,7 @@ export function StylePreview({ selectedStyle, className }: StylePreviewProps) {
           alt={displayStyle.name + ' - Picture to Drawing Style Preview'}
           className="w-full h-full object-cover"
         />
-        <div className="absolute top-3 right-3 px-3 py-1.5 bg-black/70 backdrop-blur-sm rounded-md">
+        <div className="absolute top-2 right-2 px-2 py-1 bg-black/70 backdrop-blur-sm rounded-md">
           <p className="text-white text-xs font-medium whitespace-nowrap">
             {displayStyle.name}
           </p>

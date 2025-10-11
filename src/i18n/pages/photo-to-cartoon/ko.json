@@ -3,6 +3,11 @@
     "title": "사진을 만화로 바꿔주는 AI | 무료 온라인 변환기",
     "description": "AI로 사진을 만화로 바꿔주는 서비스. 인물, 반려동물, 단체 사진까지 몇 초 만에 고화질 카툰 아트로 완성됩니다. SNS 프로필, 맞춤형 선물, 브랜드 콘텐츠에 활용해 보세요."
   },
+  "breadcrumb": {
+    "home": "홈",
+    "drawing_styles": "그림 스타일",
+    "current": "사진을 만화로"
+  },
   "hero": {
     "title": "사진을 만화로 바꿔주는 AI 변환기",
     "highlight_text": "사진을 만화로 바꿔주는",
@@ -205,5 +210,12 @@
         "target": "_self"
       }
     ]
+  },
+  "structured_data": {
+    "name": "사진을 만화로 바꿔주는 AI 변환기",
+    "description": "AI로 사진을 만화로 바꿔주는 서비스. 인물, 반려동물, 단체 사진까지 몇 초 만에 고화질 카툰 아트로 완성됩니다.",
+    "breadcrumb_home": "홈",
+    "breadcrumb_drawing_styles": "사진을 그림 스타일로",
+    "breadcrumb_current": "사진을 만화로 바꿔주는 AI 변환기"
   }
 }

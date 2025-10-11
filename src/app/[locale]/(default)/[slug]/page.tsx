@@ -11,6 +11,7 @@ import Hero from "@/components/blocks/hero";
 import TransformationExamples from "@/components/blocks/transformation-examples";
 import UseCases from "@/components/blocks/use-cases";
 import DrawingGenerator from "@/components/drawing-generator";
+import { Breadcrumb } from "@/components/drawing-styles";
 import { 
   getPhotoTransformationConfig, 
   photoTransformationSlugs,
@@ -76,15 +77,74 @@ export default async function PhotoTransformationPage({
   const page = await getPhotoTransformationPage(typedSlug, locale);
   const { generator} = getPhotoTransformationConfig(typedSlug);
 
+  // Structured data for SEO
+  const normalizedBaseUrl = process.env.NEXT_PUBLIC_WEB_URL
+    ? process.env.NEXT_PUBLIC_WEB_URL.replace(/\/+$/, '')
+    : '';
+  const localizedPath = locale && locale !== 'en' ? `/${locale}/${slug}` : `/${slug}`;
+  
+  const structuredData = page.structured_data ? {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    name: page.structured_data.name,
+    description: page.structured_data.description,
+    url: `${normalizedBaseUrl}${localizedPath}`,
+    breadcrumb: {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: page.structured_data.breadcrumb_home,
+          item: normalizedBaseUrl || process.env.NEXT_PUBLIC_WEB_URL
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: page.structured_data.breadcrumb_drawing_styles,
+          item: `${normalizedBaseUrl}/drawing-styles`
+        },
+        {
+          '@type': 'ListItem',
+          position: 3,
+          name: page.structured_data.breadcrumb_current,
+          item: `${normalizedBaseUrl}${localizedPath}`
+        }
+      ]
+    }
+  } : null;
+
   return (
     <>
-      {page.hero && <Hero hero={page.hero} />}
+      {/* Structured Data */}
+      {structuredData && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+      )}
+
+      {/* Breadcrumb Navigation */}
+      {page.breadcrumb && (
+        <section className="pt-2">
+          <div className="container">
+            <Breadcrumb 
+              items={[
+                { label: page.breadcrumb.drawing_styles || 'Drawing Styles', href: '/drawing-styles' },
+                { label: page.breadcrumb.current || slug }
+              ]} 
+              homeLabel={page.breadcrumb.home}
+            />
+          </div>
+        </section>
+      )}
       <div id="drawing-generator">
         <DrawingGenerator
           defaultStyle={generator.defaultStyle}
           defaultCategory={generator.defaultCategory}
         />
       </div>
+      {page.hero && <Hero hero={page.hero} />}
       {page.introduce && <Feature1 section={page.introduce} />}
       {page.transformation_examples && (
         <TransformationExamples section={page.transformation_examples} />

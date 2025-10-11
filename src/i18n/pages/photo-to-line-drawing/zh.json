@@ -3,6 +3,11 @@
     "title": "图片转线稿工具 - 免费在线转换",
     "description": "轻松将照片转换为线稿。一键将任意图片转换为清晰的线条艺术，适用于刺绣、纹身、手工艺和数字艺术创作。"
   },
+  "breadcrumb": {
+    "home": "首页",
+    "drawing_styles": "绘画风格",
+    "current": "图片转线稿"
+  },
   "hero": {
     "title": "秒速图片转线稿",
     "highlight_text": "图片转线稿",
@@ -209,5 +214,12 @@
         "icon": "GoArrowUpRight"
       }
     ]
+  },
+  "structured_data": {
+    "name": "图片转线稿工具",
+    "description": "轻松将照片转换为线稿。一键将任意图片转换为清晰的线条艺术，适用于刺绣、纹身、手工艺和数字艺术创作。",
+    "breadcrumb_home": "首页",
+    "breadcrumb_drawing_styles": "图片转绘画风格",
+    "breadcrumb_current": "图片转线稿工具"
   }
 }

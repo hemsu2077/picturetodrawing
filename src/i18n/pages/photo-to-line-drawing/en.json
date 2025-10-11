@@ -3,6 +3,11 @@
     "title": "Photo to Line Drawing Converter - Free to Try",
     "description": "Convert photos to line drawings effortlessly. Transform any photo into clean line art for embroidery, tattoos, crafts, and digital art."
   },
+  "breadcrumb": {
+    "home": "Home",
+    "drawing_styles": "Drawing Styles",
+    "current": "Photo to Line Drawing"
+  },
   "hero": {
     "title": "Transform Photo to Line Drawing Instantly",
     "highlight_text": "Photo to Line Drawing",
@@ -209,8 +214,12 @@
         "icon": "GoArrowUpRight"
       }
     ]
+  },
+  "structured_data": {
+    "name": "Photo to Line Drawing Converter",
+    "description": "Convert photos to line drawings effortlessly. Transform any photo into clean line art for embroidery, tattoos, crafts, and digital art.",
+    "breadcrumb_home": "Home",
+    "breadcrumb_drawing_styles": "Picture to Drawing Styles",
+    "breadcrumb_current": "Photo to Line Drawing Converter"
   }
- 
-  
-  
 }

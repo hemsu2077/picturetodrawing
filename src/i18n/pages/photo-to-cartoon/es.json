@@ -3,6 +3,11 @@
     "title": "Foto a caricatura con IA | Prueba gratis",
     "description": "Convierte cualquier foto a caricatura con inteligencia artificial. Obtén ilustraciones nítidas para retratos, mascotas y grupos en segundos, ideales para redes sociales, regalos personalizados y branding."
   },
+  "breadcrumb": {
+    "home": "Inicio",
+    "drawing_styles": "Estilos de Dibujo",
+    "current": "Foto a Caricatura"
+  },
   "hero": {
     "title": "Herramienta IA de Foto a caricatura",
     "highlight_text": "Foto a caricatura",
@@ -205,5 +210,12 @@
         "target": "_self"
       }
     ]
+  },
+  "structured_data": {
+    "name": "Herramienta IA de Foto a caricatura",
+    "description": "Convierte cualquier foto a caricatura con inteligencia artificial. Obtén ilustraciones nítidas para retratos, mascotas y grupos en segundos.",
+    "breadcrumb_home": "Inicio",
+    "breadcrumb_drawing_styles": "Foto a Estilos de Dibujo",
+    "breadcrumb_current": "Herramienta IA de Foto a caricatura"
   }
 }

@@ -3,6 +3,11 @@
     "title": "写真をカートゥーンにするAI | 無料体験できるオンライン変換",
     "description": "AIで写真をカートゥーンに変換し、ポートレートやペット、集合写真を数秒で高精細なイラストに。SNSアイコン、ギフト、ブランド素材にも最適。今すぐ無料で試せます。"
   },
+  "breadcrumb": {
+    "home": "ホーム",
+    "drawing_styles": "描画スタイル",
+    "current": "写真をカートゥーンに"
+  },
   "hero": {
     "title": "写真をカートゥーンにするAI変換ツール",
     "highlight_text": "写真をカートゥーンに",
@@ -205,5 +210,12 @@
         "target": "_self"
       }
     ]
+  },
+  "structured_data": {
+    "name": "写真をカートゥーンにするAI変換ツール",
+    "description": "AIで写真をカートゥーンに変換し、ポートレートやペット、集合写真を数秒で高精細なイラストに。",
+    "breadcrumb_home": "ホーム",
+    "breadcrumb_drawing_styles": "写真を描画スタイルに",
+    "breadcrumb_current": "写真をカートゥーンにするAI変換ツール"
   }
 }

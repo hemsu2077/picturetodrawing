@@ -3,6 +3,11 @@
     "title": "Convertir photo en dessin au trait - Essai gratuit",
     "description": "Convertissez des photos en dessins au trait sans effort. Transformez n'importe quelle photo en dessin au trait net pour broderie, tatouages, artisanat et art numérique."
   },
+  "breadcrumb": {
+    "home": "Accueil",
+    "drawing_styles": "Styles de dessin",
+    "current": "Photo en dessin au trait"
+  },
   "hero": {
     "title": "Transformez instantanément une photo en dessin au trait",
     "highlight_text": "photo en dessin au trait",
@@ -209,5 +214,12 @@
         "icon": "GoArrowUpRight"
       }
     ]
+  },
+  "structured_data": {
+    "name": "Convertir photo en dessin au trait",
+    "description": "Convertissez des photos en dessins au trait sans effort. Transformez n'importe quelle photo en dessin au trait net pour broderie, tatouages, artisanat et art numérique.",
+    "breadcrumb_home": "Accueil",
+    "breadcrumb_drawing_styles": "Photo en styles de dessin",
+    "breadcrumb_current": "Convertir photo en dessin au trait"
   }
 }

@@ -3,6 +3,11 @@
     "title": "Convertidor de Foto a Dibujo de Líneas - Gratis para Probar",
     "description": "Convierte fotos en dibujos de líneas sin esfuerzo. Transforma cualquier foto en arte de líneas limpias para bordados, tatuajes, manualidades y arte digital."
   },
+  "breadcrumb": {
+    "home": "Inicio",
+    "drawing_styles": "Estilos de Dibujo",
+    "current": "Foto a Dibujo de Líneas"
+  },
   "hero": {
     "title": "Transforma Foto en Dibujo de Líneas al Instante",
     "highlight_text": "Foto en Dibujo de Líneas",
@@ -210,5 +215,12 @@
         "icon": "GoArrowUpRight"
       }
     ]
+  },
+  "structured_data": {
+    "name": "Convertidor de Foto a Dibujo de Líneas",
+    "description": "Convierte fotos en dibujos de líneas sin esfuerzo. Transforma cualquier foto en arte de líneas limpias para bordados, tatuajes, manualidades y arte digital.",
+    "breadcrumb_home": "Inicio",
+    "breadcrumb_drawing_styles": "Foto a Estilos de Dibujo",
+    "breadcrumb_current": "Convertidor de Foto a Dibujo de Líneas"
   }
 }

@@ -3,6 +3,11 @@
     "title": "사진을 선화 그림으로 변환 - 무료 체험 가능",
     "description": "사진을 선화 그림으로 쉽게 변환하세요. 자수, 타투, 수공예, 디지털 아트를 위한 깨끗한 선화 예술로 어떤 사진이든 변환하세요."
   },
+  "breadcrumb": {
+    "home": "홈",
+    "drawing_styles": "그림 스타일",
+    "current": "사진을 선화로"
+  },
   "hero": {
     "title": "사진을 선화 그림으로 즉시 변환하세요",
     "highlight_text": "사진을 선화 그림으로",
@@ -209,5 +214,12 @@
         "icon": "GoArrowUpRight"
       }
     ]
+  },
+  "structured_data": {
+    "name": "사진을 선화 그림으로 변환 도구",
+    "description": "사진을 선화 그림으로 쉽게 변환하세요. 자수, 타투, 수공예, 디지털 아트를 위한 깨끗한 선화 예술로 어떤 사진이든 변환하세요.",
+    "breadcrumb_home": "홈",
+    "breadcrumb_drawing_styles": "사진을 그림 스타일로",
+    "breadcrumb_current": "사진을 선화 그림으로 변환 도구"
   }
 }

@@ -3,6 +3,11 @@
     "title": "照片轉卡通 AI | 免費開始",
     "description": "使用AI照片轉卡通工具，一鍵把人像、毛孩、合照變成高畫質卡通插畫。雲端快速渲染，免費試用，是社群頭像、送禮與商業素材的首選。"
   },
+  "breadcrumb": {
+    "home": "首頁",
+    "drawing_styles": "繪畫風格",
+    "current": "照片轉卡通"
+  },
   "hero": {
     "title": "AI照片轉卡通變身工具",
     "highlight_text": "照片轉卡通",
@@ -205,5 +210,12 @@
         "target": "_self"
       }
     ]
+  },
+  "structured_data": {
+    "name": "AI照片轉卡通變身工具",
+    "description": "使用AI照片轉卡通工具，一鍵把人像、毛孩、合照變成高畫質卡通插畫。",
+    "breadcrumb_home": "首頁",
+    "breadcrumb_drawing_styles": "圖片轉繪畫風格",
+    "breadcrumb_current": "AI照片轉卡通變身工具"
   }
 }

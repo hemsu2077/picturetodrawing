@@ -79,7 +79,7 @@ export function StyleSelector({ selectedStyle, onStyleChange, className, default
       </div>
       
       {/* Styles Grid - Fixed height */}
-      <div className="h-[400px] overflow-y-auto px-4 pb-4 pt-4 border-y border-border/50">
+      <div className="h-[240px] md:h-[400px] overflow-y-auto px-4 pb-4 pt-4 border-y border-border/50">
         <div className="grid grid-cols-3 lg:grid-cols-4 gap-2">
           {filteredStyles.map((style) => (
             <div

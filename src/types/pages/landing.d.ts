@@ -32,6 +32,11 @@ export interface PhotoTransformationPage {
     description?: string;
   };
   hero?: Hero;
+  breadcrumb?: {
+    home?: string;
+    drawing_styles?: string;
+    current?: string;
+  };
   branding?: Section;
   introduce?: Section;
   benefit?: Section;
@@ -49,6 +54,13 @@ export interface PhotoTransformationPage {
   testimonial?: Section;
   faq?: Section;
   cta?: Section;
+  structured_data?: {
+    name?: string;
+    description?: string;
+    breadcrumb_home?: string;
+    breadcrumb_drawing_styles?: string;
+    breadcrumb_current?: string;
+  };
 }
 
 export interface PricingPage {

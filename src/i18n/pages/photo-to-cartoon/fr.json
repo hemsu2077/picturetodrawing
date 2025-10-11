@@ -1,12 +1,17 @@
 {
   "meta": {
     "title": "Photo en dessin animé avec IA | Essai gratuit",
-    "description": "Transformez n’importe quelle photo en dessin animé en quelques secondes grâce à l’IA. Portraits, animaux ou photos de groupe : obtenez des illustrations nettes pour les réseaux sociaux, les cadeaux personnalisés ou votre marque."
+    "description": "Transformez n'importe quelle photo en dessin animé en quelques secondes grâce à l'IA. Portraits, animaux ou photos de groupe : obtenez des illustrations nettes pour les réseaux sociaux, les cadeaux personnalisés ou votre marque."
+  },
+  "breadcrumb": {
+    "home": "Accueil",
+    "drawing_styles": "Styles de dessin",
+    "current": "Photo en dessin animé"
   },
   "hero": {
     "title": "Outil IA Photo en dessin animé",
     "highlight_text": "Photo en dessin animé",
-    "description": "Importez votre image préférée et laissez l’IA la convertir instantanément en dessin animé. Idéal pour selfies, couples ou animaux de compagnie : testez gratuitement et surprenez votre entourage.",
+    "description": "Importez votre image préférée et laissez l'IA la convertir instantanément en dessin animé. Idéal pour selfies, couples ou animaux de compagnie : testez gratuitement et surprenez votre entourage.",
     "show_happy_users": false,
     "show_badge": false
   },
@@ -205,5 +210,12 @@
         "target": "_self"
       }
     ]
+  },
+  "structured_data": {
+    "name": "Outil IA Photo en dessin animé",
+    "description": "Transformez n'importe quelle photo en dessin animé en quelques secondes grâce à l'IA. Portraits, animaux ou photos de groupe.",
+    "breadcrumb_home": "Accueil",
+    "breadcrumb_drawing_styles": "Photo en styles de dessin",
+    "breadcrumb_current": "Outil IA Photo en dessin animé"
   }
 }
