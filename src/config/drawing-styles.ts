@@ -2,193 +2,225 @@ export interface StyleOption {
   id: string;
   name: string;
   image: string;
+  preview: string;
 }
 
 export const getAllDrawingStyles = (t: any): StyleOption[] => [
   {
     id: 'pencil-sketch',
     name: t('styles.pencil_sketch'),
-    image: 'https://files.picturetodrawing.com/styles/pencil-sketch.webp?v=1.1'
+    image: 'https://files.picturetodrawing.com/styles/pencil-sketch.webp?v=1.1',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-pencil-sketch.webp'
   },
   {
     id: 'pencil-sketch-2',
     name: t('styles.pencil_sketch_2'),
-    image: 'https://files.picturetodrawing.com/styles/pencil-sketch-2.webp'
+    image: 'https://files.picturetodrawing.com/styles/pencil-sketch-2.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-pencil-sketch-2.webp'
   },
   {
     id: 'line-drawing',
     name: t('styles.line_drawing'),
-    image: 'https://files.picturetodrawing.com/styles/line-drawing.webp?v=2'
+    image: 'https://files.picturetodrawing.com/styles/line-drawing.webp?v=2',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-line-drawing.webp'
   },
   {
     id: 'line-drawing-2',
     name: t('styles.line_drawing_2'),
-    image: 'https://files.picturetodrawing.com/styles/line-drawing-2.webp'
+    image: 'https://files.picturetodrawing.com/styles/line-drawing-2.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-line-drawing-2.webp'
   },
   {
     id: 'line-art',
     name: t('styles.line_art'),
-    image: 'https://files.picturetodrawing.com/styles/line-art.webp'
+    image: 'https://files.picturetodrawing.com/styles/line-art.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-line-art.webp'
   },
   {
     id: 'bold-outline',
     name: t('styles.bold_outline'),
-    image: 'https://files.picturetodrawing.com/styles/bold-outline.webp'
+    image: 'https://files.picturetodrawing.com/styles/bold-outline.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-bold-outline.webp'
   },
   {
     id: 'charcoal-drawing',
     name: t('styles.charcoal_drawing'),
-    image: 'https://files.picturetodrawing.com/styles/charcoal-drawing.webp'
+    image: 'https://files.picturetodrawing.com/styles/charcoal-drawing.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-charcoal-drawing.webp'
   },
   {
     id: 'inkart',
     name: t('styles.inkart'),
-    image: 'https://files.picturetodrawing.com/styles/inkart.webp'
+    image: 'https://files.picturetodrawing.com/styles/inkart.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-inkart.webp'
   },
   {
     id: 'simple-drawing',
     name: t('styles.simple_drawing'),
-    image: 'https://files.picturetodrawing.com/styles/simple-drawing.webp'
+    image: 'https://files.picturetodrawing.com/styles/simple-drawing.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-simple-drawing.webp'
   },
   {
     id: 'color-pencil-drawing',
     name: t('styles.color_pencil_drawing'),
-    image: 'https://files.picturetodrawing.com/styles/color-pencil-drawing.webp'
+    image: 'https://files.picturetodrawing.com/styles/color-pencil-drawing.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-color-pencil-drawing.webp'
   },
   {
     id: 'watercolor-painting',
     name: t('styles.watercolor_painting'),
-    image: 'https://files.picturetodrawing.com/styles/water-color.webp'
+    image: 'https://files.picturetodrawing.com/styles/water-color.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-watercolor-painting.webp'
   },
   {
     id: 'splash-watercolor-art',
     name: t('styles.splash_watercolor_art'),
-    image: 'https://files.picturetodrawing.com/styles/splash-watercolor.webp?v=2'
+    image: 'https://files.picturetodrawing.com/styles/splash-watercolor.webp?v=2',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-splash-watercolor-art.webp'
   },
   {
     id: 'kawaii-pastel-doodle',
     name: t('styles.kawaii_pastel_doodle'),
-    image: 'https://files.picturetodrawing.com/styles/kawaii-pastel-doodle.webp'
+    image: 'https://files.picturetodrawing.com/styles/kawaii-pastel-doodle.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-kawaii-pastel-doodle.webp'
   },
   {
     id: 'van-gogh',
     name: t('styles.van_gogh'),
-    image: 'https://files.picturetodrawing.com/styles/van-gogh.webp'
+    image: 'https://files.picturetodrawing.com/styles/van-gogh.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-van-gogh.webp'
   },
   {
     id: 'oil-painting',
     name: t('styles.oil_painting'),
-    image: 'https://files.picturetodrawing.com/styles/oil-painting.webp'
+    image: 'https://files.picturetodrawing.com/styles/oil-painting.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-oil-painting.webp'
   },
   {
     id: 'pop-art',
     name: t('styles.pop_art'),
-    image: 'https://files.picturetodrawing.com/styles/pop-art.webp'
+    image: 'https://files.picturetodrawing.com/styles/pop-art.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-pop-art.webp'
   },
   {
     id: 'psychedelic-art',
     name: t('styles.psychedelic_art'),
-    image: 'https://files.picturetodrawing.com/styles/psychedelic-art.webp'
+    image: 'https://files.picturetodrawing.com/styles/psychedelic-art.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-psychedelic-art.webp'
   },
   {
     id: 'graffiti-street-art',
     name: t('styles.graffiti_street_art'),
-    image: 'https://files.picturetodrawing.com/styles/graffiti-street-art.webp'
+    image: 'https://files.picturetodrawing.com/styles/graffiti-street-art.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-graffiti-street-art.webp'
   },
   {
     id: 'pure-cartoon',
     name: t('styles.pure_cartoon'),
-    image: 'https://files.picturetodrawing.com/styles/pure-cartoon.webp'
+    image: 'https://files.picturetodrawing.com/styles/pure-cartoon.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-pure-cartoon.webp'
   },
   {
     id: 'ghibli-style',
     name: t('styles.studio_ghibli'),
-    image: 'https://files.picturetodrawing.com/styles/ghibli-style.webp'
+    image: 'https://files.picturetodrawing.com/styles/ghibli-style.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-ghibli-style.webp'
   },
   {
     id: '90s-retro-anime',
     name: t('styles.90s_retro_anime'),
-    image: 'https://files.picturetodrawing.com/styles/90s-retro-anime.webp'
+    image: 'https://files.picturetodrawing.com/styles/90s-retro-anime.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-90s-retro-anime.webp'
   },
   {
     id: 'shounen-anime',
     name: t('styles.shounen_anime'),
-    image: 'https://files.picturetodrawing.com/styles/shounen-anime.webp'
+    image: 'https://files.picturetodrawing.com/styles/shounen-anime.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-shounen-anime.webp'
   },
   {
     id: 'shoujo-anime',
     name: t('styles.shoujo_anime'),
-    image: 'https://files.picturetodrawing.com/styles/shoujo-anime.webp'
+    image: 'https://files.picturetodrawing.com/styles/shoujo-anime.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-shoujo-anime.webp'
   },
   {
     id: 'pixar-3d',
     name: t('styles.pixar_3d'),
-    image: 'https://files.picturetodrawing.com/styles/pixar-3d.webp'
+    image: 'https://files.picturetodrawing.com/styles/pixar-3d.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-pixar-3d.webp'
   },
   {
     id: 'disney-3d',
     name: t('styles.disney_3d'),
-    image: 'https://files.picturetodrawing.com/styles/disney-3d.webp'
-  },
-  {
-    id: '3d-chibi',
-    name: t('styles.3d_chibi'),
-    image: 'https://files.picturetodrawing.com/styles/3d-chibi.webp'
+    image: 'https://files.picturetodrawing.com/styles/disney-3d.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-disney-3d.webp'
   },
   {
     id: 'simpsons',
     name: t('styles.simpsons'),
-    image: 'https://files.picturetodrawing.com/styles/simpsons.webp'
+    image: 'https://files.picturetodrawing.com/styles/simpsons.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-simpsons.webp'
   },
   {
     id: 'superhero-comic',
     name: t('styles.superhero_comic'),
-    image: 'https://files.picturetodrawing.com/styles/superhero-comic.webp?v=2'
+    image: 'https://files.picturetodrawing.com/styles/superhero-comic.webp?v=2',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-superhero-comic.webp'
   },
   {
     id: 'manga',
     name: t('styles.manga'),
-    image: 'https://files.picturetodrawing.com/styles/manga.webp'
+    image: 'https://files.picturetodrawing.com/styles/manga.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-manga.webp'
   },
   {
     id: 'cyberpunk-neon',
     name: t('styles.cyberpunk_neon'),
-    image: 'https://files.picturetodrawing.com/styles/cyberpunk-neon.webp'
+    image: 'https://files.picturetodrawing.com/styles/cyberpunk-neon.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-cyberpunk-neon.webp'
   },
   {
     id: 'gta-style',
     name: t('styles.gta_style'),
-    image: 'https://files.picturetodrawing.com/styles/gta-style.webp'
+    image: 'https://files.picturetodrawing.com/styles/gta-style.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-gta-style.webp'
   },
   {
     id: 'south-park',
     name: t('styles.south_park'),
-    image: 'https://files.picturetodrawing.com/styles/south-park.webp'
+    image: 'https://files.picturetodrawing.com/styles/south-park.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-south-park.webp'
   },
   {
     id: 'rick-morty',
     name: t('styles.rick_morty'),
-    image: 'https://files.picturetodrawing.com/styles/rick-morty.webp'
+    image: 'https://files.picturetodrawing.com/styles/rick-morty.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-rick-morty.webp'
   },
   {
     id: 'snoopy',
     name: t('styles.snoopy'),
-    image: 'https://files.picturetodrawing.com/styles/snoopy.webp'
+    image: 'https://files.picturetodrawing.com/styles/snoopy.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-snoopy.webp'
   },
   {
     id: 'pixel-art',
     name: t('styles.pixel_art'),
-    image: 'https://files.picturetodrawing.com/styles/pixel-art.webp'
+    image: 'https://files.picturetodrawing.com/styles/pixel-art.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-pixel-art.webp'
   },
   {
     id: 'clay',
     name: t('styles.clay'),
-    image: 'https://files.picturetodrawing.com/styles/clay.webp'
+    image: 'https://files.picturetodrawing.com/styles/clay.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-clay.webp'
   },
   {
     id: 'low-poly',
     name: t('styles.low_poly'),
-    image: 'https://files.picturetodrawing.com/styles/low-poly.webp'
+    image: 'https://files.picturetodrawing.com/styles/low-poly.webp',
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-low-poly.webp'
   },
 
 ];

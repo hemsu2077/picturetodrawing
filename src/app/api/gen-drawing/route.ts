@@ -98,7 +98,16 @@ try {
         }
       } catch (uploadError) {
         console.error("Failed to upload input image:", uploadError);
-        throw new Error("Failed to upload input image");
+        const errorMsg = uploadError instanceof Error ? uploadError.message : "Unknown error";
+        
+        // Provide user-friendly error message
+        if (errorMsg.includes('timeout') || errorMsg.includes('ETIMEDOUT')) {
+          throw new Error("Image upload timed out. Please try again with a smaller image or check your connection.");
+        } else if (errorMsg.includes('ECONNRESET') || errorMsg.includes('ECONNREFUSED')) {
+          throw new Error("Network connection issue. Please check your internet connection and try again.");
+        } else {
+          throw new Error("Failed to upload image. Please try again.");
+        }
       }
     }
     const imageModel = replicate.image(selectedModel);
@@ -138,7 +147,12 @@ try {
       generateOptions.aspectRatio = ratio || "match_input_image";
     }
 
-    const { images, warnings } = await generateImage(generateOptions);
+    let images, warnings;
+    
+    try {
+      const result = await generateImage(generateOptions);
+      images = result.images;
+      warnings = result.warnings;
 
       if (warnings.length > 0 && process.env.NODE_ENV !== 'production') {
         console.warn("Generation warnings:", warnings);
@@ -147,6 +161,43 @@ try {
       if (!images || images.length === 0) {
         throw new Error("No images generated");
       }
+    } catch (aiError: any) {
+      // Extract Replicate error from AI SDK error
+      console.error("AI SDK Error:", aiError);
+      
+      // Try to get the actual Replicate error message
+      let replicateError = "Unknown error";
+      
+      if (aiError.cause?.value?.error) {
+        // This is the actual Replicate error message
+        replicateError = aiError.cause.value.error;
+      } else if (aiError.message) {
+        replicateError = aiError.message;
+      }
+      
+      // Map Replicate errors to user-friendly i18n keys
+      let errorKey = "error_unknown";
+      
+      if (replicateError.includes("flagged as sensitive") || replicateError.includes("E005")) {
+        errorKey = "error_sensitive_content";
+      } else if (replicateError.includes("timeout") || replicateError.includes("timed out")) {
+        errorKey = "error_timeout";
+      } else if (replicateError.includes("invalid") || replicateError.includes("Invalid")) {
+        errorKey = "error_invalid_input";
+      } else if (replicateError.includes("ModelError") || replicateError.includes("model")) {
+        errorKey = "error_model_failed";
+      }
+      
+      // Return error with i18n key for frontend to translate
+      return Response.json(
+        { 
+          code: -1, 
+          message: replicateError,
+          errorKey: errorKey // Frontend can use this for i18n
+        }, 
+        { status: 500 }
+      );
+    }
        
     const provider = "replicate";
 
@@ -200,12 +251,19 @@ try {
             filename,
           };
         } catch (err) {
-          if (process.env.NODE_ENV !== 'production') {
-            console.log("upload file failed:", err);
-          }
+          console.error("[Critical] Failed to upload generated image:", err);
+          const errorMsg = err instanceof Error ? err.message : "Unknown error";
+          
+          // Log detailed error for monitoring
+          console.error(`[Storage Error] Key: ${key}, Size: ${body.length} bytes, Error: ${errorMsg}`);
+          
+          // Return partial result - image was generated but upload failed
+          // Frontend can still show the base64 image
           return {
             provider,
             filename,
+            uploadError: true,
+            errorMessage: "Image generated but storage failed. Please download and save manually.",
           };
         }
       })

@@ -222,11 +222,6 @@ export const STYLE_METADATA: Record<string, StyleMetadata> = {
     hasLandingPage: true,
     landingPageUrl: '/photo-to-cartoon'
   },
-  '3d-chibi': {
-    id: '3d-chibi',
-    hasLandingPage: true,
-    landingPageUrl: '/photo-to-cartoon'
-  },
   'pixel-art': {
     id: 'pixel-art',
     hasLandingPage: false

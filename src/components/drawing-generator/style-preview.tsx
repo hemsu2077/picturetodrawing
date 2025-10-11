@@ -22,7 +22,7 @@ export function StylePreview({ selectedStyle, className }: StylePreviewProps) {
     <div className={cn("", className)}>
       <div className="relative rounded-lg overflow-hidden bg-muted aspect-video">
         <img
-          src={displayStyle.image}
+          src={displayStyle.preview}
           alt={displayStyle.name + ' - Picture to Drawing Style Preview'}
           className="w-full h-full object-cover"
         />

@@ -156,7 +156,7 @@ export function GenerationProgress({
               {/* Speed indicator */}
               {isPaidUser === true ? (
                 // 2x speed badge for paid users - Clean white badge with green text
-                <div className="relative flex items-center gap-1 px-2.5 py-1 border border-border rounded-full bg-white dark:bg-white/95 dark:border-green-300/30">
+                <div className="relative flex items-center gap-1 px-2.5 py-1 border border-border rounded-full bg-white">
                   <Zap className="h-2.5 w-2.5 text-green-600 dark:text-green-500" fill="currentColor" />
                   <span className="text-[10px] font-semibold text-primary tracking-tight">2×</span>
                 </div>

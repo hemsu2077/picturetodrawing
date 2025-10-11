@@ -268,7 +268,10 @@ export function DrawingGenerator({
           setError(data.message || t('daily_trial_used'));
           return;
         }
-        setError(data.message || t('generation_failed'));
+        
+        // Use errorKey for i18n translation if available, otherwise use message
+        const errorMessage = data.errorKey ? t(data.errorKey) : (data.message || t('generation_failed'));
+        setError(errorMessage);
         return;
       }
 
@@ -300,7 +303,9 @@ export function DrawingGenerator({
           setTrialStatus(prev => prev ? { ...prev, canUseTrial: false, isTrialUsage: false } : null);
         }
       } else {
-        setError(data.message || t('generation_failed'));
+        // Use errorKey for i18n translation if available, otherwise use message
+        const errorMessage = data.errorKey ? t(data.errorKey) : (data.message || t('generation_failed'));
+        setError(errorMessage);
         return;
       }
     } catch (err) {
@@ -355,7 +360,7 @@ export function DrawingGenerator({
   };
 
   return (
-    <div className={cn("w-full max-w-7xl mx-auto space-y-4 mb-16 sm:space-y-6 px-2", className)}>
+    <div className={cn("w-full max-w-7xl mx-auto space-y-4 mb-16 sm:space-y-6 px-2 lg:px-8", className)}>
       {/* Main Input Card */}
       <div className="border-none py-0">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">

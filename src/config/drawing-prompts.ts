@@ -12,7 +12,7 @@ export function getModelForStyle(style: string): 'nano-banana' | 'flux-kontext-p
 }
 
 export const drawingPrompts: DrawingPromptConfig = {
-  'line-drawing': 'Convert images to line art. Only keep outlines, no shading. Make it look like a coloring book page with clear contours and simplified details.',
+  'line-drawing': 'Convert images to black and white line art. Only keep outlines, no shading. Make it look like a coloring book page with clear contours and simplified details.',
   'line-drawing-2': 'Change this picture to a clean black and white line illustration. Make it look like a coloring book page with clear contours and simplified details.',
   'bold-outline': 'transform to black-and-white cartoon line art . Clean bold outlines, coloring book style with no shading',
   'line-art': 'Convert photo to artistic minimalist continuous line illustration, abstract expression, black and white',
@@ -41,14 +41,14 @@ export const drawingPrompts: DrawingPromptConfig = {
   'simpsons': 'The Simpsons style, 2D flat cartoon, thick black outlines, bright flat colors, exaggerated and humorous characters, minimal shading, simple background, satirical and comical atmosphere, completely non-realistic.',
   'south-park': 'South Park style, 2D paper cut-out cartoon, simple round faces with no nose or tiny nose, large white circular eyes, flat solid bright colors, minimal details, no shading, no outlines, extremely simplistic and crude design, comical and satirical atmosphere.',
   'rick-morty': 'Transform to Rick & Morty style, while maintaining the exact original composition and placement',
-  'snoopy': 'Transform to Snoopy style, while maintaining the exact original composition and placement',
+  'snoopy': 'Transform to Snoopy style, while maintaining the exact original composition and placement. Clean black outlines, simple shapes, minimal details, soft pastel colors, flat shading, round proportions, cute and warm cartoon look, Peanuts comic aesthetics, white background, gentle lighting',
   'pixel-art': 'transform the image to a 16-bit pixel art',
   'clay': 'Cartoonish claymation stop-motion style, colorful modeling clay objects and scenes, rounded and exaggerated shapes, playful and whimsical, highly stylized, visible fingerprints and handcrafted imperfections, vibrant saturated colors, no realistic details, no CGI, no photographic textures, completely handmade look.',
   'superhero-comic': 'transform the image to a drawing, the drawing should be in the style of American superhero comic style, rough lines, exaggerated colors. Just like a real comic, Try to make it look as painted as possible.',
   'manga': 'transform the image to a drawing, the drawing should be in the style of Japanese/Korean manga style, clean lines, black and white tones, expressive emotions, dynamic composition. Just like a real manga, Try to make it look as painted as possible.',
   'cyberpunk-neon': 'Transform to cyberpunk neon noir style, while maintaining the exact original composition and placement',
   'gta-style': 'Transform to GTA style, while maintaining the exact original composition and placement',
-  'low-poly': 'tranform picture to low poly style, geometric polygonal art, faceted shapes, flat shading, digital 3D style',
+  'low-poly': 'transform to low poly style, large flat polygons, geometric shapes, faceted surfaces, simplified details, sharp edges, minimal texture, strong light and shadow contrast, vibrant yet natural color palette, 3D polygonal look, resembling digital sculpture or origami art',
 };
 
 // Helper function to get prompt for specific model and style

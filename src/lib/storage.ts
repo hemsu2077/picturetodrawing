@@ -1,8 +1,11 @@
+import { retryWithBackoff, RetryPresets, RetryOptions } from './retry';
+
 interface StorageConfig {
   endpoint: string;
   region: string;
   accessKey: string;
   secretKey: string;
+  retryOptions?: RetryOptions;
 }
 
 export function newStorage(config?: StorageConfig) {
@@ -15,6 +18,7 @@ export class Storage {
   private secretAccessKey: string;
   private bucket: string;
   private region: string;
+  private retryOptions: RetryOptions;
 
   constructor(config?: StorageConfig) {
     this.endpoint = config?.endpoint || process.env.STORAGE_ENDPOINT || "";
@@ -24,6 +28,7 @@ export class Storage {
       config?.secretKey || process.env.STORAGE_SECRET_KEY || "";
     this.bucket = process.env.STORAGE_BUCKET || "";
     this.region = config?.region || process.env.STORAGE_REGION || "auto";
+    this.retryOptions = config?.retryOptions || RetryPresets.fileUpload;
   }
 
   async uploadFile({
@@ -47,43 +52,66 @@ export class Storage {
     }
 
     const bodyArray = body instanceof Buffer ? new Uint8Array(body) : body;
-
     const url = `${this.endpoint}/${uploadBucket}/${key}`;
 
-    const { AwsClient } = await import("aws4fetch");
+    // Wrap the upload operation with retry logic
+    return retryWithBackoff(
+      async () => {
+        const { AwsClient } = await import("aws4fetch");
 
-    const client = new AwsClient({
-      accessKeyId: this.accessKeyId,
-      secretAccessKey: this.secretAccessKey,
-    });
+        const client = new AwsClient({
+          accessKeyId: this.accessKeyId,
+          secretAccessKey: this.secretAccessKey,
+        });
 
-    const headers: Record<string, string> = {
-      "Content-Type": contentType || "application/octet-stream",
-      "Content-Disposition": disposition,
-      "Content-Length": bodyArray.length.toString(),
-    };
+        const headers: Record<string, string> = {
+          "Content-Type": contentType || "application/octet-stream",
+          "Content-Disposition": disposition,
+          "Content-Length": bodyArray.length.toString(),
+        };
 
-    const request = new Request(url, {
-      method: "PUT",
-      headers,
-      body: bodyArray,
-    });
+        const request = new Request(url, {
+          method: "PUT",
+          headers,
+          body: bodyArray,
+        });
 
-    const response = await client.fetch(request);
+        const response = await client.fetch(request);
 
-    if (!response.ok) {
-      throw new Error(`Upload failed: ${response.statusText}`);
-    }
+        if (!response.ok) {
+          const errorMsg = `Upload failed: ${response.status} ${response.statusText}`;
+          // Log response body for debugging (truncated)
+          try {
+            const errorBody = await response.text();
+            if (process.env.NODE_ENV !== 'production') {
+              console.error('R2 upload error response:', errorBody.substring(0, 500));
+            }
+          } catch (e) {
+            // Ignore if we can't read the error body
+          }
+          throw new Error(errorMsg);
+        }
 
-    return {
-      location: url,
-      bucket: uploadBucket,
-      key,
-      filename: key.split("/").pop(),
-      url: process.env.STORAGE_DOMAIN
-        ? `${process.env.STORAGE_DOMAIN}/${key}`
-        : url,
-    };
+        return {
+          location: url,
+          bucket: uploadBucket,
+          key,
+          filename: key.split("/").pop(),
+          url: process.env.STORAGE_DOMAIN
+            ? `${process.env.STORAGE_DOMAIN}/${key}`
+            : url,
+        };
+      },
+      {
+        ...this.retryOptions,
+        onRetry: (error, attempt) => {
+          console.warn(
+            `[Storage] Upload retry ${attempt}/${this.retryOptions.maxAttempts} for ${key}:`,
+            error.message
+          );
+        },
+      }
+    );
   }
 
   async downloadAndUpload({
@@ -99,18 +127,33 @@ export class Storage {
     contentType?: string;
     disposition?: "inline" | "attachment";
   }) {
-    const response = await fetch(url);
-    if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
-    }
+    // Download with retry logic
+    const body = await retryWithBackoff(
+      async () => {
+        const response = await fetch(url);
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
 
-    if (!response.body) {
-      throw new Error("No body in response");
-    }
+        if (!response.body) {
+          throw new Error("No body in response");
+        }
 
-    const arrayBuffer = await response.arrayBuffer();
-    const body = new Uint8Array(arrayBuffer);
+        const arrayBuffer = await response.arrayBuffer();
+        return new Uint8Array(arrayBuffer);
+      },
+      {
+        ...RetryPresets.standard,
+        onRetry: (error, attempt) => {
+          console.warn(
+            `[Storage] Download retry ${attempt} for ${url}:`,
+            error.message
+          );
+        },
+      }
+    );
 
+    // Upload with retry logic (already handled in uploadFile)
     return this.uploadFile({
       body,
       key,
