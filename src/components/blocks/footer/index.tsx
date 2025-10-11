@@ -1,6 +1,7 @@
 import { Footer as FooterType } from "@/types/blocks/footer";
 import Icon from "@/components/icon";
 import { Link } from "@/i18n/navigation";
+import NextImage from "next/image";
 
 export default function Footer({ footer }: { footer: FooterType }) {
   if (footer.disabled) {
@@ -94,14 +95,30 @@ export default function Footer({ footer }: { footer: FooterType }) {
             )}
           </div>
           <div className="flex flex-wrap justify-center gap-4 mt-8">
-            <a href="https://www.toolify.ai/tool/picture-to-drawing-1" target="_blank" rel="noopener noreferrer"><img src="https://cdn.toolify.ai/featured_light.svg" alt="U-Tools badge" width="160" height="54"/></a>
-            <a href="https://fazier.com/launches/picturetodrawing.com" target="_blank"><img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=neutral" width="160" height="60" alt="Fazier badge" /></a>
-            <a href="https://turbo0.com/item/picture-to-drawing" target="_blank" rel="noopener noreferrer"><img src="https://img.turbo0.com/badge-listed-light.svg" alt="Listed on Turbo0" width="120" height="54"/></a>       
-            <a href="https://twelve.tools" target="_blank"><img src="https://twelve.tools/badge2-light.svg" alt="Featured on Twelve Tools" width="150" height="54"/></a>
-            <a title="ai tools code.market" href="https://code.market?code.market=verified"><img alt="ai tools code.market" title="ai tools code.market" src="https://code.market/assets/manage-product/featured-logo-bright.svg" width="160" height="54"/></a>
-            <a href="https://tinylaunch.com" target="_blank" rel="noopener"> <img src="https://tinylaunch.com/tinylaunch_badge_featured_on.svg" alt="TinyLaunch Badge" width="140" height="54"/></a>
-            <a href="https://dang.ai/" target="_blank" ><img src="https://cdn.prod.website-files.com/63d8afd87da01fb58ea3fbcb/6487e2868c6c8f93b4828827_dang-badge.png" alt="Dang.ai" width="120" height="54"/></a>
-            <a href="https://www.saasbaba.com/" target="_blank" rel="noopener noreferrer"><img src="https://saasbaba.com/wp-content/uploads/2023/05/featured-on-sb.png" alt="SaasBaba.com" width="120" height="38"/></a>
+            <a href="https://www.toolify.ai/tool/picture-to-drawing-1" target="_blank" rel="noopener noreferrer">
+              <NextImage src="https://cdn.toolify.ai/featured_light.svg" alt="U-Tools badge" width={160} height={54} loading="lazy" unoptimized />
+            </a>
+            <a href="https://fazier.com/launches/picturetodrawing.com" target="_blank" rel="noopener noreferrer">
+              <NextImage src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=neutral" width={160} height={60} alt="Fazier badge" loading="lazy" unoptimized />
+            </a>
+            <a href="https://turbo0.com/item/picture-to-drawing" target="_blank" rel="noopener noreferrer">
+              <NextImage src="https://img.turbo0.com/badge-listed-light.svg" alt="Listed on Turbo0" width={120} height={54} loading="lazy" unoptimized />
+            </a>
+            <a href="https://twelve.tools" target="_blank" rel="noopener noreferrer">
+              <NextImage src="https://twelve.tools/badge2-light.svg" alt="Featured on Twelve Tools" width={150} height={54} loading="lazy" unoptimized />
+            </a>
+            <a title="ai tools code.market" href="https://code.market?code.market=verified" target="_blank" rel="noopener noreferrer">
+              <NextImage alt="ai tools code.market" title="ai tools code.market" src="https://code.market/assets/manage-product/featured-logo-bright.svg" width={160} height={54} loading="lazy" unoptimized />
+            </a>
+            <a href="https://tinylaunch.com" target="_blank" rel="noopener noreferrer">
+              <NextImage src="https://tinylaunch.com/tinylaunch_badge_featured_on.svg" alt="TinyLaunch Badge" width={140} height={54} loading="lazy" unoptimized />
+            </a>
+            <a href="https://dang.ai/" target="_blank" rel="noopener noreferrer">
+              <NextImage src="https://cdn.prod.website-files.com/63d8afd87da01fb58ea3fbcb/6487e2868c6c8f93b4828827_dang-badge.png" alt="Dang.ai" width={120} height={54} loading="lazy" unoptimized />
+            </a>
+            <a href="https://www.saasbaba.com/" target="_blank" rel="noopener noreferrer">
+              <NextImage src="https://saasbaba.com/wp-content/uploads/2023/05/featured-on-sb.png" alt="SaasBaba.com" width={120} height={38} loading="lazy" unoptimized />
+            </a>
           </div>
         </footer>
       </div>

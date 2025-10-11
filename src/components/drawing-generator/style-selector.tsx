@@ -99,6 +99,8 @@ export function StyleSelector({ selectedStyle, onStyleChange, className, default
                     src={style.image}
                     alt={style.name + " - Picture to Drawing style"}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    loading="lazy"
+                    decoding="async"
                   />
                   {selectedStyle === style.id && (
                     <div className="absolute top-1.5 right-1.5 w-4 h-4 bg-primary rounded-full flex items-center justify-center shadow-lg">

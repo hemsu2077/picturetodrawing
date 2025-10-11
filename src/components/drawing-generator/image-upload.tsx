@@ -162,6 +162,8 @@ export function ImageUpload({ onImageSelect, selectedImage, className }: ImageUp
                       src={sampleUrl}
                       alt={t('drawing_generator.sample_alt', { index: index + 1 })}
                       className="w-full h-full hover:scale-105 transition-transform object-cover"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                 ))}
