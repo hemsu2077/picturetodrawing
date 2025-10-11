@@ -10,49 +10,49 @@ export const getAllDrawingStyles = (t: any): StyleOption[] => [
     id: 'pencil-sketch',
     name: t('styles.pencil_sketch'),
     image: 'https://files.picturetodrawing.com/styles/pencil-sketch.webp?v=1.1',
-    preview: 'https://files.picturetodrawing.com/styles/sample/sample-pencil-sketch.webp'
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-pencil-sketch.webp?v=1.1'
   },
   {
     id: 'pencil-sketch-2',
     name: t('styles.pencil_sketch_2'),
     image: 'https://files.picturetodrawing.com/styles/pencil-sketch-2.webp',
-    preview: 'https://files.picturetodrawing.com/styles/sample/sample-pencil-sketch-2.webp'
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-pencil-sketch-2.webp?v=1.1'
   },
   {
     id: 'line-drawing',
     name: t('styles.line_drawing'),
     image: 'https://files.picturetodrawing.com/styles/line-drawing.webp?v=2',
-    preview: 'https://files.picturetodrawing.com/styles/sample/sample-line-drawing.webp'
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-line-drawing.webp?v=1.1'
   },
   {
     id: 'line-drawing-2',
     name: t('styles.line_drawing_2'),
     image: 'https://files.picturetodrawing.com/styles/line-drawing-2.webp',
-    preview: 'https://files.picturetodrawing.com/styles/sample/sample-line-drawing-2.webp'
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-line-drawing-2.webp?v=1.1'
   },
   {
     id: 'line-art',
     name: t('styles.line_art'),
     image: 'https://files.picturetodrawing.com/styles/line-art.webp',
-    preview: 'https://files.picturetodrawing.com/styles/sample/sample-line-art.webp'
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-line-art.webp?v=1.1'
   },
   {
     id: 'bold-outline',
     name: t('styles.bold_outline'),
     image: 'https://files.picturetodrawing.com/styles/bold-outline.webp',
-    preview: 'https://files.picturetodrawing.com/styles/sample/sample-bold-outline.webp'
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-bold-outline.webp?v=1.1'
   },
   {
     id: 'charcoal-drawing',
     name: t('styles.charcoal_drawing'),
     image: 'https://files.picturetodrawing.com/styles/charcoal-drawing.webp',
-    preview: 'https://files.picturetodrawing.com/styles/sample/sample-charcoal-drawing.webp'
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-charcoal-drawing.webp?v=1.1'
   },
   {
     id: 'inkart',
     name: t('styles.inkart'),
     image: 'https://files.picturetodrawing.com/styles/inkart.webp',
-    preview: 'https://files.picturetodrawing.com/styles/sample/sample-inkart.webp'
+    preview: 'https://files.picturetodrawing.com/styles/sample/sample-inkart.webp?v=1.1'
   },
   {
     id: 'simple-drawing',
