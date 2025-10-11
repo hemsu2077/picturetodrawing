@@ -24,7 +24,7 @@ export const drawingPrompts: DrawingPromptConfig = {
   'simple-drawing': 'transform to a simple drawing with bold clear outlines, bright colors, smooth shapes, and a playful minimalist style',
   'kawaii-pastel-doodle': 'Transform to Kawaii pastel doodle while maintaining the exact original composition and placement',
   'watercolor-painting': 'transform the image to a drawing, the drawing should be in the style of watercolor painting, Try to make it look as painted as possible.',
-  'inkart': 'transform the image to a drawing, the drawing should be in the style of ink art, Try to make it look as painted as possible.',
+  'inkart': 'transform to the style of black and white ink art, Try to make it look as painted as possible.',
   'van-gogh': 'Transfrom to Van Gogh style, with thick impasto brushstrokes, swirling textures, vibrant contrasting colors, and expressive emotional intensity.',
   'oil-painting': 'tranform picture to artistic oil painting, fine art style, visible brush strokes, rich oil texture, on canvas. Maintaining composition',
   'pop-art': 'Transform to Pop Art style, while maintaining the exact original composition and placement',
