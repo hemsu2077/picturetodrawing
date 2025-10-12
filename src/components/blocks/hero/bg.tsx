@@ -11,7 +11,7 @@ export default function Bg() {
 
       
       {/* container for background image */}
-      {/* <div className="container mx-auto h-full relative p-24">
+      <div className="container mx-auto h-full relative p-24">
         <div 
           className="w-full h-full opacity-10"
           style={{
@@ -21,7 +21,7 @@ export default function Bg() {
             backgroundRepeat: 'no-repeat',
           }}
         />
-      </div> */}
+      </div>
      
     </div>
   );

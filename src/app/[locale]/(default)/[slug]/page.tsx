@@ -138,13 +138,13 @@ export default async function PhotoTransformationPage({
           </div>
         </section>
       )}
+      {page.hero && <Hero hero={page.hero} />}
       <div id="drawing-generator">
         <DrawingGenerator
           defaultStyle={generator.defaultStyle}
           defaultCategory={generator.defaultCategory}
         />
       </div>
-      {page.hero && <Hero hero={page.hero} />}
       {page.introduce && <Feature1 section={page.introduce} />}
       {page.transformation_examples && (
         <TransformationExamples section={page.transformation_examples} />

@@ -50,10 +50,10 @@ export default async function LandingPage({
 
   return (
     <>
-      <div id="drawing-generator" className="mt-8">
+      {page.hero && <Hero hero={page.hero} />}
+      <div id="drawing-generator">
         <DrawingGenerator />
       </div>
-      {page.hero && <Hero hero={page.hero} />}
       {page.introduce && <Feature1 section={page.introduce} />}
       {page.transformation_examples && <TransformationExamples section={page.transformation_examples} />}
       {page.benefit && <Feature2 section={page.benefit} />}

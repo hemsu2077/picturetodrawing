@@ -105,9 +105,10 @@ export default async function DrawingStylesPage({
           <Breadcrumb 
             items={[{ label: page.breadcrumb?.drawing_styles || 'Drawing Styles' }]} 
             homeLabel={page.breadcrumb?.home}
+            hideOnMobile
           />
           
-          <div className="max-w-3xl space-y-6">
+          <div className="max-w-3xl space-y-6 mt-8">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium">
               <Sparkles className="size-4" />
               {totalStylesCount}+ {page.hero?.badge}

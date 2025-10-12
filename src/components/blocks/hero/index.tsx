@@ -44,7 +44,7 @@ export default function Hero({ hero, backgroundVariant = 'default' }: HeroProps)
   return (
     <>
       <HeroBg />
-      <section className="py-8 lg:py-16">
+      <section className="py-4 lg:py-8">
         <div className="container">
           {hero.show_badge && (
             <div className="flex items-center justify-center mb-8">
@@ -69,7 +69,7 @@ export default function Hero({ hero, backgroundVariant = 'default' }: HeroProps)
             )}
 
             {texts && texts.length > 1 ? (
-              <h1 className="mx-auto mb-3 mt-4 max-w-6xl text-balance text-4xl font-semibold lg:mb-7 lg:text-7xl">
+              <h1 className="mx-auto mb-3 mt-4 max-w-6xl text-balance text-4xl font-semibold lg:mb-7 lg:text-6xl">
                 {texts[0]}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#FC5C7D] to-[#5e52d0] snipcss0-3-5-8">
                   {highlightText}
@@ -83,7 +83,7 @@ export default function Hero({ hero, backgroundVariant = 'default' }: HeroProps)
             )}
 
             <p
-              className="m mx-auto max-w-3xl text-muted-foreground lg:text-xl"
+              className="m mx-auto max-w-3xl text-muted-foreground text-md lg:text-lg"
               dangerouslySetInnerHTML={{ __html: hero.description || "" }}
             />
             {hero.buttons && (
