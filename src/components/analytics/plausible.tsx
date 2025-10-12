@@ -1,3 +1,5 @@
+import Script from "next/script";
+
 export default function Plausible() {
   if (process.env.NODE_ENV !== "production") {
     return null;
@@ -11,10 +13,11 @@ export default function Plausible() {
   }
 
   return (
-    <script
+    <Script
       defer
       data-domain={plausibleDomain}
       src={plausibleScriptUrl}
-    ></script>
+      strategy="afterInteractive"
+    />
   );
 }
