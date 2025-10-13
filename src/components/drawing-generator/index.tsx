@@ -338,6 +338,15 @@ export function DrawingGenerator({
       );
     }
 
+    // Show "Start Free" for non-logged-in users to encourage sign-up
+    if (!session?.user?.uuid) {
+      return (
+        <>
+          <span>{t('start_free')}</span>
+        </>
+      );
+    }
+
     if (trialStatus?.canUseTrial) {
       return (
         <>
@@ -423,13 +432,9 @@ export function DrawingGenerator({
               </Button>
               
               {/* Trial hint text */}
-              {!session?.user?.uuid ? (
+              {!session?.user?.uuid && (
                 <p className="text-xs text-center text-muted-foreground">
                   {t('login_for_free_trial_hint')}
-                </p>
-              ) : trialStatus?.canUseTrial && (
-                <p className="text-xs text-center text-muted-foreground">
-                  {t('free_trial_available_hint')}
                 </p>
               )}
             </div>
