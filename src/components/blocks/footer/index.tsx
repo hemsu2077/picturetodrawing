@@ -98,6 +98,9 @@ export default function Footer({ footer }: { footer: FooterType }) {
             <a href="https://www.toolify.ai/tool/picture-to-drawing-1" target="_blank" rel="noopener noreferrer">
               <NextImage src="https://cdn.toolify.ai/featured_light.svg" alt="U-Tools badge" width={160} height={54} loading="lazy" unoptimized />
             </a>
+            <a href="https://faceseek.online" target="_blank" rel="noopener noreferrer">
+              <NextImage src="https://faceseek.online/images/Dark.svg" alt="FaceSeek Partner" width={160} height={30} loading="lazy" unoptimized />
+            </a>
             <a href="https://fazier.com/launches/picturetodrawing.com" target="_blank" rel="noopener noreferrer">
               <NextImage src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=featured&theme=neutral" width={160} height={60} alt="Fazier badge" loading="lazy" unoptimized />
             </a>
@@ -119,6 +122,7 @@ export default function Footer({ footer }: { footer: FooterType }) {
             <a href="https://www.saasbaba.com/" target="_blank" rel="noopener noreferrer">
               <NextImage src="https://saasbaba.com/wp-content/uploads/2023/05/featured-on-sb.png" alt="SaasBaba.com" width={120} height={38} loading="lazy" unoptimized />
             </a>
+            
           </div>
         </footer>
       </div>
