@@ -1,3 +1,5 @@
+"use client";
+
 import Script from "next/script";
 
 export default function Plausible() {
@@ -17,7 +19,6 @@ export default function Plausible() {
       defer
       data-domain={plausibleDomain}
       src={plausibleScriptUrl}
-      strategy="afterInteractive"
     />
   );
 }
