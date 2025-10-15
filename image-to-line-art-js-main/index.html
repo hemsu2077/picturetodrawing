@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Convert Image to Line Art / Sketch (with JS)</title>
+    <script src="github-pages-coop-coep-workaround.js"></script>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.10.0/dist/ort.js"></script>
+    
+    <div>
+      Select one or more images: <input type="file" accept="image/*" multiple id="fileInputEl">
+      <br>
+      Then click here: <button id="startBtn" onclick="main()" disabled>loading model...</button>
+      <br>
+      Save all the resulting line art images: <button id="downloadBtn" disabled onclick="downloadOutputImages()">save</button>
+    </div>
+    <p><a href="https://github.com/josephrocca/image-to-line-art-js">github repo</a> - <a href="https://huggingface.co/rocca/informative-drawings-line-art-onnx">huggingface repo</a></p>
+    
+    <script>
+      if(self.crossOriginIsolated) { // needs to be cross-origin-isolated to use wasm threads. you need to serve this html file with these two headers: https://web.dev/coop-coep/
+        ort.env.wasm.numThreads = navigator.hardwareConcurrency
+      }
+      ort.env.wasm.proxy = true;
+      
+      if(!window.OffscreenCanvas) alert("Your browser doesn't support OffscreenCanvas - a browser feature that was standardized way back in 2018. Please use a modern browser like Chrome, Edge or Brave.");
+      
+      let onnxSession;
+      (async function() {
+        console.log("Downloading model... (see network tab for progress)");
+        onnxSession = await ort.InferenceSession.create('https://huggingface.co/rocca/informative-drawings-line-art-onnx/resolve/main/model.onnx', { executionProviders: ["wasm"] });
+        console.log("Model loaded.");
+        startBtn.disabled = false;
+        startBtn.textContent = "start";
+      })();
+      
+      async function main() {
+        if(!fileInputEl.files[0]) return alert("Please select some images first.");
+        
+        startBtn.disabled = true;
+        startBtn.innerHTML = "processing...";
+        
+        let inputBlob;
+        for(let inputBlob of fileInputEl.files) {
+          let {data, width, height} = await blobToLinearRGBArray(inputBlob);
+
+          const feeds = {'input': new ort.Tensor('float32', data, [1, 3, height, width])};
+
+          console.log("Running inference...");
+          let t = Date.now();
+          const results = await onnxSession.run(feeds);
+          console.log(`Finished in ${Date.now()-t}ms`);
+
+          const out = results["output"]; // greyscale data tensor
+          console.log(`results:`, out);
+
+          let blob = await linearGreyscaleArrayToBlob(out.data, {width:out.dims[3], height:out.dims[2]});
+          let blobUrl = URL.createObjectURL(blob);
+          let imgEl = document.createElement("img");
+          imgEl.dataset.name = inputBlob.name;
+          imgEl.src = blobUrl;
+          document.body.appendChild(imgEl);
+        }
+        
+        startBtn.disabled = false;
+        startBtn.innerHTML = "start";
+        downloadBtn.disabled = false;
+      }
+      
+      async function getBlobImageDims(blob) {
+        let img = await createImageBitmap(blob);
+        return {width:img.width, height:img.height};
+      }
+      
+      async function linearGreyscaleArrayToBlob(linearArr, dims) {
+        let dataArray = [];
+        for(let i = 0; i < linearArr.length; i++) {
+          dataArray.push(linearArr[i]*255); // R
+          dataArray.push(linearArr[i]*255); // G
+          dataArray.push(linearArr[i]*255); // B
+          dataArray.push(1*255);            // A
+        }
+        //let imageData = ctx.createImageData(256, 256);
+        let imageData = new ImageData(new Uint8ClampedArray(dataArray), dims.width, dims.height);
+        let canvas = new OffscreenCanvas(dims.width, dims.height);
+        let ctx = canvas.getContext("2d");
+        ctx.putImageData(imageData, 0, 0);
+        return canvas.convertToBlob({type:"image/jpg"});
+      }
+      
+      // this function resizes to 256px width
+      async function blobToLinearRGBArray(blob) {
+        let img = await createImageBitmap(blob);
+        let canvas = new OffscreenCanvas(img.width, img.height);
+        let ctx = canvas.getContext("2d");
+        ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+        let imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
+
+        let rgbData = [[], [], []]; // [r, g, b]
+        // remove alpha and put into correct shape:
+        let d = imageData.data;
+        for(let i = 0; i < d.length; i += 4) { 
+          let x = (i/4) % canvas.width;
+          let y = Math.floor((i/4) / canvas.width)
+          if(!rgbData[0][y]) rgbData[0][y] = [];
+          if(!rgbData[1][y]) rgbData[1][y] = [];
+          if(!rgbData[2][y]) rgbData[2][y] = [];
+          rgbData[0][y][x] = d[i+0]/255;
+          rgbData[1][y][x] = d[i+1]/255;
+          rgbData[2][y][x] = d[i+2]/255;
+        }
+        rgbData = Float32Array.from(rgbData.flat().flat());
+        return {data:rgbData, width:img.width, height:img.height};
+      }
+      
+      async function downloadOutputImages() {
+        let directoryHandle = await window.showDirectoryPicker();
+        for(let img of [...document.querySelectorAll("img")]) {
+          let url = img.src;
+          let name = img.dataset.name+".lines.jpg";
+          let fileHandle = await directoryHandle.getFileHandle(name, {create:true});
+          let response = await fetch(url);
+          await response.body.pipeTo(await fileHandle.createWritable());
+        }
+      }
+    </script>
+  </body>
+</html>

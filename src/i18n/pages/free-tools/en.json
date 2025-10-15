@@ -1,0 +1,19 @@
+{
+  "meta": {
+    "title": "Free Tools",
+    "description": "Try our browser-based free utilities. No upload required."
+  },
+  "hero": {
+    "title": "Free Tools",
+    "description": "Quick, private, and free browser-based photo utilities."
+  },
+  "tools": [
+    {
+      "title": "Photo to Sketch (Free)",
+      "url": "/free-tools/photo-to-sketch",
+      "description": "Browser-based line drawing converter. No upload required.",
+      "icon": "RiPencilLine",
+      "thumbnail": "/imgs/bg/bg.webp"
+    }
+  ]
+}
