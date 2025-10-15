@@ -33,7 +33,7 @@ export default async function FreeToolPhotoToSketchPage({
   return (
     <>
       {page.hero && <FreeToolHero hero={page.hero} />}
-      <div className="container py-8">
+      <div className="container">
         <FreeLineArtTool />
       </div>
     </>

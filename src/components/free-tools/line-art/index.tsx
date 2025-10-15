@@ -1,8 +1,11 @@
 "use client";
 
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useState, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { ImagePreview } from "./image-preview";
+import { UploadControl } from "./upload-control";
+import { ProcessingProgress } from "./processing-progress";
 
 declare global {
   interface Window {
@@ -10,14 +13,6 @@ declare global {
   }
 }
 
-type Status =
-  | { type: "idle" }
-  | { type: "loading"; message: string }
-  | { type: "ready" }
-  | { type: "processing" }
-  | { type: "error"; message: string };
-
-const DEFAULT_SAMPLE = "/imgs/bg/bg.webp";
 const ONNX_RUNTIME_URL =
   "https://cdn.jsdelivr.net/npm/onnxruntime-web@1.10.0/dist/ort.min.js";
 const DEFAULT_MODEL_URL =
@@ -30,107 +25,116 @@ export function FreeLineArtTool({
 }: {
   className?: string;
   modelUrl?: string;
-  maxDim?: number; // downscale long side to speed up demo
+  maxDim?: number;
 }) {
-  const [status, setStatus] = useState<Status>({ type: "idle" });
-  const [session, setSession] = useState<any | null>(null);
   const [inputFile, setInputFile] = useState<File | null>(null);
+  const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [outputUrl, setOutputUrl] = useState<string | null>(null);
-  const [previewUrl, setPreviewUrl] = useState<string>(DEFAULT_SAMPLE);
-  const [fileName, setFileName] = useState<string>("result.lines.jpg");
+  const [isProcessing, setIsProcessing] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  
+  const sessionRef = useRef<any | null>(null);
+  const isLoadingModelRef = useRef(false);
 
-  const fileInputRef = useRef<HTMLInputElement | null>(null);
-
-  // Load onnxruntime-web from CDN if not already present
-  useEffect(() => {
-    let cancelled = false;
-    async function load() {
-      try {
-        if (!window.ort) {
-          setStatus({ type: "loading", message: "Loading runtime..." });
-          await new Promise<void>((resolve, reject) => {
-            const s = document.createElement("script");
-            s.src = ONNX_RUNTIME_URL;
-            s.async = true;
-            s.onload = () => resolve();
-            s.onerror = () => reject(new Error("Failed to load onnxruntime-web"));
-            document.head.appendChild(s);
-          });
-        }
-
-        if (cancelled) return;
-
-        const ort = window.ort;
-        if (!ort) throw new Error("ONNX Runtime not available");
-
-        // Basic WASM setup; threads auto when crossOriginIsolated
-        if ((self as any).crossOriginIsolated) {
-          ort.env.wasm.numThreads = (navigator as any).hardwareConcurrency || 1;
-        }
-        ort.env.wasm.proxy = true;
-
-        setStatus({ type: "loading", message: "Loading model..." });
-        const sess = await ort.InferenceSession.create(modelUrl, {
-          executionProviders: ["wasm"],
-        });
-
-        if (cancelled) return;
-        setSession(sess);
-        setStatus({ type: "ready" });
-      } catch (err: any) {
-        console.error(err);
-        if (!cancelled) setStatus({ type: "error", message: err?.message || "Init error" });
+  // Lazy load model and runtime only when needed
+  const loadModelIfNeeded = async () => {
+    if (sessionRef.current) return sessionRef.current;
+    if (isLoadingModelRef.current) {
+      // Wait for ongoing load
+      while (isLoadingModelRef.current) {
+        await new Promise(resolve => setTimeout(resolve, 100));
       }
+      return sessionRef.current;
     }
-    load();
-    return () => {
-      cancelled = true;
-    };
-  }, [modelUrl]);
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (!file) return;
-    setInputFile(file);
-    setFileName(file.name.replace(/\.[^/.]+$/, "") + ".lines.jpg");
-    const url = URL.createObjectURL(file);
-    setPreviewUrl(url);
-    setOutputUrl(null);
+    isLoadingModelRef.current = true;
+    try {
+      // Load ONNX runtime if not present
+      if (!window.ort) {
+        await new Promise<void>((resolve, reject) => {
+          const s = document.createElement("script");
+          s.src = ONNX_RUNTIME_URL;
+          s.async = true;
+          s.onload = () => resolve();
+          s.onerror = () => reject(new Error("Failed to load runtime"));
+          document.head.appendChild(s);
+        });
+      }
+
+      const ort = window.ort;
+      if (!ort) throw new Error("ONNX Runtime not available");
+
+      // Setup WASM
+      if ((self as any).crossOriginIsolated) {
+        ort.env.wasm.numThreads = (navigator as any).hardwareConcurrency || 1;
+      }
+      ort.env.wasm.proxy = true;
+
+      // Load model
+      const sess = await ort.InferenceSession.create(modelUrl, {
+        executionProviders: ["wasm"],
+      });
+
+      sessionRef.current = sess;
+      return sess;
+    } finally {
+      isLoadingModelRef.current = false;
+    }
   };
 
-  const processImage = async () => {
-    if (!session) return;
-    if (!inputFile) return;
-    try {
-      setStatus({ type: "processing" });
+  const handleFileSelect = (file: File) => {
+    setInputFile(file);
+    // Don't set previewUrl here - upload control will handle its own preview
+    setOutputUrl(null);
+    setError(null);
+  };
 
+  const handleClearFile = () => {
+    setInputFile(null);
+    setPreviewUrl(null);
+    setOutputUrl(null);
+    setError(null);
+  };
+
+  const handleGenerate = async () => {
+    if (!inputFile) return;
+    
+    setIsProcessing(true);
+    setError(null);
+    setOutputUrl(null);
+
+    try {
+      // Load model on demand
+      const session = await loadModelIfNeeded();
+      
+      // Process image
       const { data, width, height } = await fileToTensorData(inputFile, maxDim);
 
       const feeds = {
         input: new window.ort.Tensor("float32", data, [1, 3, height, width]),
       };
 
-      const t0 = Date.now();
       const results = await session.run(feeds);
-      const dt = Date.now() - t0;
-      console.log(`Inference finished in ${dt}ms`);
-
       const out = results["output"];
+      
       const blob = await greyscaleArrayToBlob(out.data as Float32Array | number[], {
         width: out.dims[3],
         height: out.dims[2],
       });
+      
       const url = URL.createObjectURL(blob);
       setOutputUrl(url);
-      setStatus({ type: "ready" });
     } catch (err: any) {
       console.error(err);
-      setStatus({ type: "error", message: err?.message || "Processing failed" });
+      setError(err?.message || "Processing failed");
+    } finally {
+      setIsProcessing(false);
     }
   };
 
   const handleDownload = () => {
-    if (!outputUrl) return;
+    if (!outputUrl || !inputFile) return;
+    const fileName = inputFile.name.replace(/\.[^/.]+$/, "") + ".lines.jpg";
     const a = document.createElement("a");
     a.href = outputUrl;
     a.download = fileName;
@@ -139,74 +143,64 @@ export function FreeLineArtTool({
     a.remove();
   };
 
-  return (
-    <div className={cn("w-full", className)}>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Left: Upload/Controls */}
-        <div className="border rounded-lg p-4 bg-card">
-          <h2 className="font-semibold mb-3">Photo to Line Drawing (Free)</h2>
-          <p className="text-sm text-muted-foreground mb-4">
-            Runs entirely in your browser. No upload. Great for quick sketches.
-          </p>
-          <div className="space-y-4">
-            <div>
-              <input
-                ref={fileInputRef}
-                type="file"
-                accept="image/*"
-                onChange={handleFileChange}
-                className="block w-full text-sm"
-              />
-              <p className="text-xs text-muted-foreground mt-2">
-                Tip: Large images are auto downscaled to {maxDim}px on the long
-                side for speed.
-              </p>
-            </div>
+  const handleCloseResult = () => {
+    setOutputUrl(null);
+    setError(null);
+  };
 
-            <div className="flex items-center gap-3">
-              <Button
-                onClick={processImage}
-                disabled={status.type !== "ready" || !inputFile}
-              >
-                {status.type === "processing" ? "Processing..." : "Generate"}
-              </Button>
-              <span className="text-sm text-muted-foreground">
-                {status.type === "loading" && status.message}
-                {status.type === "ready" && "Model ready"}
-                {status.type === "error" && status.message}
-              </span>
-            </div>
+  return (
+    <div className={cn("w-full max-w-7xl mx-auto", className)}>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* Right: Upload & Controls - Shows first on mobile */}
+        <div className="bg-background rounded-lg p-4 shadow-sm h-[420px] sm:h-[480px] flex flex-col gap-3 md:order-2">
+          {/* Upload control - flexible height */}
+          <div className="flex-1 min-h-0">
+            <UploadControl
+              onFileSelect={handleFileSelect}
+              selectedFile={inputFile}
+              onClearFile={handleClearFile}
+            />
           </div>
+
+          {/* Generate button - fixed at bottom */}
+          <Button
+            onClick={handleGenerate}
+            disabled={!inputFile || isProcessing}
+            className="w-full h-11 text-base flex-shrink-0"
+            size="lg"
+          >
+            {isProcessing ? (
+              <>
+                <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2" />
+                Processing...
+              </>
+            ) : (
+              "Generate Line Art"
+            )}
+          </Button>
         </div>
 
-        {/* Right: Preview */}
-        <div className="border rounded-lg overflow-hidden bg-card">
-          <div className="flex items-center justify-between p-3 border-b">
-            <div className="font-medium">Preview</div>
-            <div>
-              <Button
-                variant="outline"
-                onClick={handleDownload}
-                disabled={!outputUrl}
-              >
-                Download
-              </Button>
-            </div>
-          </div>
-          <div className="aspect-square md:aspect-auto md:h-[520px] w-full bg-muted flex items-center justify-center">
-            {outputUrl ? (
-              // show generated line art
-              <img
-                src={outputUrl}
-                alt="Line art result"
-                className="max-h-full max-w-full object-contain"
-              />
+        {/* Left: Preview - Shows second on mobile */}
+        <div className="bg-background rounded-lg p-4 shadow-sm h-[420px] sm:h-[480px] md:order-1">
+          <div className="h-full">
+            {isProcessing ? (
+              <ProcessingProgress />
+            ) : error ? (
+              <div className="w-full h-full flex items-center justify-center bg-muted/30 rounded-lg">
+                <div className="text-center px-4">
+                  <div className="w-12 h-12 rounded-full bg-destructive/10 flex items-center justify-center mb-3 mx-auto">
+                    <span className="text-destructive text-xl">⚠</span>
+                  </div>
+                  <div className="text-sm font-medium text-destructive mb-1">Processing Failed</div>
+                  <div className="text-xs text-muted-foreground">{error}</div>
+                </div>
+              </div>
             ) : (
-              // show sample or selected preview
-              <img
-                src={previewUrl}
-                alt="Preview"
-                className="max-h-full max-w-full object-contain"
+              <ImagePreview
+                imageUrl={outputUrl}
+                isResult={!!outputUrl}
+                onDownload={handleDownload}
+                onClose={handleCloseResult}
               />
             )}
           </div>
