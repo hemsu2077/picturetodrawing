@@ -13,12 +13,12 @@ interface UploadControlProps {
   className?: string;
 }
 
-// Sample images for quick testing
+// Sample images for quick testing (local files, no CORS issues)
 const SAMPLE_IMAGES = [
-  'https://files.picturetodrawing.com/sample/sample-1.webp',
-  'https://files.picturetodrawing.com/sample/sample-2.webp',
-  'https://files.picturetodrawing.com/sample/sample-3.webp',
-  'https://files.picturetodrawing.com/sample/sample-4.webp',
+  '/imgs/samples/sample-1.webp',
+  '/imgs/samples/sample-2.webp',
+  '/imgs/samples/sample-3.webp',
+  '/imgs/samples/sample-4.webp',
 ];
 
 export function UploadControl({
@@ -70,39 +70,24 @@ export function UploadControl({
 
   const handleSampleSelect = async (sampleUrl: string) => {
     try {
-      // Load image via Image element and convert using canvas
-      const img = document.createElement('img');
-      img.crossOrigin = 'anonymous';
-      
-      await new Promise<void>((resolve, reject) => {
-        img.onload = () => resolve();
-        img.onerror = () => reject(new Error('Image load failed'));
-        img.src = sampleUrl;
+      // Fetch local sample image (no CORS issues, no server load)
+      const response = await fetch(sampleUrl, {
+        cache: 'force-cache',
       });
       
-      // Convert image to blob using canvas
-      const canvas = document.createElement('canvas');
-      canvas.width = img.naturalWidth;
-      canvas.height = img.naturalHeight;
-      const ctx = canvas.getContext('2d');
-      if (!ctx) throw new Error('Canvas context not available');
+      if (!response.ok) {
+        throw new Error(`Failed to fetch image: ${response.status}`);
+      }
       
-      ctx.drawImage(img, 0, 0);
+      const blob = await response.blob();
+      const fileName = sampleUrl.split('/').pop() || 'sample.webp';
+      const file = new File([blob], fileName, { type: blob.type || 'image/webp' });
       
-      const blob = await new Promise<Blob>((resolve, reject) => {
-        canvas.toBlob((b) => {
-          if (b) resolve(b);
-          else reject(new Error('Canvas to blob failed'));
-        }, 'image/jpeg', 0.95);
-      });
-      
-      const fileName = sampleUrl.split('/').pop()?.replace(/\.[^.]+$/, '.jpg') || 'sample.jpg';
-      const file = new File([blob], fileName, { type: 'image/jpeg' });
       onFileSelect(file);
       setPreviewUrl(URL.createObjectURL(blob));
     } catch (error) {
       console.error('Failed to load sample image:', error);
-      alert('Failed to load sample image. Please try uploading your own image.');
+      alert('Failed to load sample image. Please try again.');
     }
   };
 
