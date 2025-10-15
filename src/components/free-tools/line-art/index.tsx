@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { ImagePreview } from "./image-preview";
 import { UploadControl } from "./upload-control";
 import { ProcessingProgress } from "./processing-progress";
+import { useTranslations } from "next-intl";
 
 declare global {
   interface Window {
@@ -27,6 +28,7 @@ export function FreeLineArtTool({
   modelUrl?: string;
   maxDim?: number;
 }) {
+  const t = useTranslations("free_line_art");
   const [inputFile, setInputFile] = useState<File | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [outputUrl, setOutputUrl] = useState<string | null>(null);
@@ -184,7 +186,10 @@ export function FreeLineArtTool({
         <div className="bg-background rounded-lg p-4 shadow-sm h-[420px] sm:h-[480px] md:order-1">
           <div className="h-full">
             {isProcessing ? (
-              <ProcessingProgress />
+              <ProcessingProgress 
+                upgradeHint={t("upgrade_hint")}
+                upgradeButtonText={t("upgrade_button")}
+              />
             ) : error ? (
               <div className="w-full h-full flex items-center justify-center bg-muted/30 rounded-lg">
                 <div className="text-center px-4">
@@ -201,6 +206,8 @@ export function FreeLineArtTool({
                 isResult={!!outputUrl}
                 onDownload={handleDownload}
                 onClose={handleCloseResult}
+                upgradeHint={t("upgrade_hint")}
+                upgradeButtonText={t("upgrade_button")}
               />
             )}
           </div>

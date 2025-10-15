@@ -323,5 +323,9 @@
     "free_credits_title": "로그인하여 무료 크레딧 받기",
     "free_credits_description": "매일 체크인하여 무료 크레딧 획득",
     "sign_in_button": "로그인"
+  },
+  "free_line_art": {
+    "upgrade_hint": "더 선명한 선과 더 많은 스타일을 원하시나요?",
+    "upgrade_button": "AI Studio 체험하기"
   }
 }

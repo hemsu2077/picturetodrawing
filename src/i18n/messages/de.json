@@ -323,5 +323,9 @@
     "free_credits_title": "Melden Sie sich an, um kostenlose Credits zu erhalten",
     "free_credits_description": "Täglich einchecken, um kostenlose Credits zu verdienen",
     "sign_in_button": "Anmelden"
+  },
+  "free_line_art": {
+    "upgrade_hint": "Schärfere Linien & mehr Stile?",
+    "upgrade_button": "AI Studio testen"
   }
 }

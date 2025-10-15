@@ -325,5 +325,9 @@
     "free_credits_title": "Sign in to get free credits",
     "free_credits_description": "Check in daily to earn free credits",
     "sign_in_button": "Sign In"
+  },
+  "free_line_art": {
+    "upgrade_hint": "Want studio-quality pencil sketch & 20+ art styles?",
+    "upgrade_button": "Try AI Studio"
   }
 }

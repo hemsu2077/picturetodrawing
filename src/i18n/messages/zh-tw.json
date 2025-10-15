@@ -325,5 +325,9 @@
     "free_credits_title": "登入獲取免費積分",
     "free_credits_description": "每日簽到賺取免費積分",
     "sign_in_button": "登入"
+  },
+  "free_line_art": {
+    "upgrade_hint": "想要更清晰的線條和更多風格？",
+    "upgrade_button": "試試 AI 工作室"
   }
 }

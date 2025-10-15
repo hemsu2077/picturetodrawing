@@ -322,5 +322,9 @@
     "free_credits_title": "Inicia sesión para obtener créditos gratis",
     "free_credits_description": "Regístrate diariamente para ganar créditos gratis",
     "sign_in_button": "Iniciar sesión"
+  },
+  "free_line_art": {
+    "upgrade_hint": "¿Líneas más nítidas y más estilos?",
+    "upgrade_button": "Probar AI Studio"
   }
 }

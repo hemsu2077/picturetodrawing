@@ -323,5 +323,9 @@
     "free_credits_title": "Connectez-vous pour obtenir des crédits gratuits",
     "free_credits_description": "Enregistrez-vous quotidiennement pour gagner des crédits gratuits",
     "sign_in_button": "Se connecter"
+  },
+  "free_line_art": {
+    "upgrade_hint": "Des lignes plus nettes et plus de styles ?",
+    "upgrade_button": "Essayer AI Studio"
   }
 }

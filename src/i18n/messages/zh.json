@@ -325,5 +325,9 @@
     "free_credits_title": "登录获取免费积分",
     "free_credits_description": "每日签到赚取免费积分",
     "sign_in_button": "登录"
+  },
+  "free_line_art": {
+    "upgrade_hint": "想要更清晰的线条和更多风格？",
+    "upgrade_button": "试试 AI 工作室"
   }
 }

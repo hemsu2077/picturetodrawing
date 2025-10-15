@@ -324,5 +324,9 @@
     "free_credits_title": "サインインして無料クレジットを取得",
     "free_credits_description": "毎日チェックインして無料クレジットを獲得",
     "sign_in_button": "サインイン"
+  },
+  "free_line_art": {
+    "upgrade_hint": "より鮮明な線とスタイルをお求めですか？",
+    "upgrade_button": "AI Studio を試す"
   }
 }
