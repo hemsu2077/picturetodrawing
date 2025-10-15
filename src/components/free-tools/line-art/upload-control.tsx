@@ -4,7 +4,15 @@ import React, { useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Upload, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import Image from "next/image";
+import NextImage from "next/image";
+import { ProcessingProgress } from "./processing-progress";
+
+// Global type for the UMD build loaded from CDN
+declare global {
+  interface Window {
+    heic2any?: any;
+  }
+}
 
 interface UploadControlProps {
   onFileSelect: (file: File) => void;
@@ -30,28 +38,155 @@ export function UploadControl({
   const fileInputRef = useRef<HTMLInputElement | null>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
+  const [isConverting, setIsConverting] = useState(false);
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
-    if (file && file.type.startsWith("image/")) {
-      onFileSelect(file);
-      // Create preview URL
-      const url = URL.createObjectURL(file);
-      setPreviewUrl(url);
+  const MAX_DIM = 1024;
+
+  const loadImageFromUrl = (url: string) =>
+    new Promise<HTMLImageElement>((resolve, reject) => {
+      const img = new Image();
+      img.onload = () => resolve(img);
+      img.onerror = reject;
+      img.src = url;
+    });
+
+  const downscaleIfNeeded = async (
+    file: File,
+    maxDim: number = MAX_DIM,
+    outputType: string = "image/jpeg",
+    quality: number = 0.92
+  ): Promise<File> => {
+    // Create object URL to read dimensions
+    const url = URL.createObjectURL(file);
+    try {
+      const img = await loadImageFromUrl(url);
+      const origW = img.naturalWidth || (img as any).width;
+      const origH = img.naturalHeight || (img as any).height;
+      const maxSide = Math.max(origW, origH);
+
+      // No resize needed
+      if (maxSide <= maxDim) {
+        return file;
+      }
+
+      const scale = maxDim / maxSide;
+      const W = Math.max(1, Math.round(origW * scale));
+      const H = Math.max(1, Math.round(origH * scale));
+
+      const canvas = document.createElement("canvas");
+      canvas.width = W;
+      canvas.height = H;
+      const ctx = canvas.getContext("2d");
+      if (!ctx) return file;
+      ctx.drawImage(img, 0, 0, W, H);
+
+      const blob: Blob = await new Promise((resolve, reject) =>
+        canvas.toBlob(
+          (b) => (b ? resolve(b) : reject(new Error("toBlob failed"))),
+          outputType,
+          quality
+        )
+      );
+
+      const outName = file.name.replace(/\.[^.]+$/, "") + ".jpg";
+      return new File([blob], outName, { type: outputType });
+    } finally {
+      URL.revokeObjectURL(url);
     }
   };
 
-  const handleDrop = (e: React.DragEvent) => {
+  const isHeicLike = (file: File) => {
+    const type = (file.type || "").toLowerCase();
+    const name = (file.name || "").toLowerCase();
+    return (
+      type.includes("heic") ||
+      type.includes("heif") ||
+      /\.(heic|heif)$/.test(name)
+    );
+  };
+
+  const loadHeic2Any = async (): Promise<any | null> => {
+    if (typeof window === "undefined") return null;
+    if (window.heic2any) return window.heic2any;
+    await new Promise<void>((resolve, reject) => {
+      const script = document.createElement("script");
+      script.src =
+        "https://cdn.jsdelivr.net/npm/heic2any@0.0.4/dist/heic2any.min.js";
+      script.async = true;
+      script.onload = () => resolve();
+      script.onerror = () => reject(new Error("Failed to load heic2any"));
+      document.head.appendChild(script);
+    });
+    return window.heic2any || null;
+  };
+
+  const revokePreview = () => {
+    if (previewUrl) URL.revokeObjectURL(previewUrl);
+  };
+
+  const processSelectedFile = async (file: File) => {
+    // Revoke previous preview (if any)
+    revokePreview();
+
+    if (!file) return;
+
+    // If not HEIC/HEIF, pass through directly
+    try {
+      setIsConverting(true);
+      setPreviewUrl(null);
+
+      if (!isHeicLike(file)) {
+        // For non-HEIC: downscale if needed (output JPEG to keep consistent)
+        const downsized = await downscaleIfNeeded(file, MAX_DIM, "image/jpeg", 0.92);
+        onFileSelect(downsized);
+        const url = URL.createObjectURL(downsized);
+        setPreviewUrl(url);
+        return;
+      }
+
+      // Convert HEIC/HEIF to JPEG first
+      const heic2any = await loadHeic2Any();
+      if (!heic2any) throw new Error("heic2any is not available");
+      const converted = await heic2any({
+        blob: file,
+        toType: "image/jpeg",
+        quality: 0.92,
+      });
+      const convertedBlob = Array.isArray(converted) ? converted[0] : converted;
+      const jpegFile = new File(
+        [convertedBlob],
+        file.name.replace(/\.(heic|heif)$/i, ".jpg"),
+        { type: "image/jpeg" }
+      );
+
+      // Then downscale if needed
+      const downsized = await downscaleIfNeeded(jpegFile, MAX_DIM, "image/jpeg", 0.92);
+      onFileSelect(downsized);
+      const url = URL.createObjectURL(downsized);
+      setPreviewUrl(url);
+    } catch (error) {
+      console.error("Image processing failed:", error);
+      alert(
+        "Image processing failed. Please try another image (JPEG/PNG/WebP/HEIC)."
+      );
+    } finally {
+      setIsConverting(false);
+    }
+  };
+
+  const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      await processSelectedFile(file);
+    }
+  };
+
+  const handleDrop = async (e: React.DragEvent) => {
     e.preventDefault();
     setIsDragging(false);
     
     const file = e.dataTransfer.files?.[0];
-    if (file && file.type.startsWith("image/")) {
-      onFileSelect(file);
-      // Create preview URL
-      const url = URL.createObjectURL(file);
-      setPreviewUrl(url);
-    }
+    if (file) await processSelectedFile(file);
   };
 
   const handleDragOver = (e: React.DragEvent) => {
@@ -82,9 +217,9 @@ export function UploadControl({
       const blob = await response.blob();
       const fileName = sampleUrl.split('/').pop() || 'sample.webp';
       const file = new File([blob], fileName, { type: blob.type || 'image/webp' });
-      
-      onFileSelect(file);
-      setPreviewUrl(URL.createObjectURL(blob));
+
+      // Ensure same processing pipeline (downscale if needed)
+      await processSelectedFile(file);
     } catch (error) {
       console.error('Failed to load sample image:', error);
       alert('Failed to load sample image. Please try again.');
@@ -92,6 +227,7 @@ export function UploadControl({
   };
 
   const handleClear = () => {
+    revokePreview();
     onClearFile();
     setPreviewUrl(null);
     if (fileInputRef.current) {
@@ -104,15 +240,17 @@ export function UploadControl({
       <input
         ref={fileInputRef}
         type="file"
-        accept="image/*"
+        accept="image/*,.heic,.heif"
         onChange={handleFileChange}
         className="hidden"
       />
 
-      {selectedFile ? (
+      {isConverting ? (
+        <ProcessingProgress className="flex-1" />
+      ) : selectedFile ? (
         <div className="relative w-full flex-1 rounded-lg overflow-hidden border bg-muted/30">
           {previewUrl && (
-            <Image
+            <NextImage
               src={previewUrl}
               alt="Uploaded preview"
               fill
@@ -170,7 +308,7 @@ export function UploadControl({
                     handleSampleSelect(sampleUrl);
                   }}
                 >
-                  <Image
+                  <NextImage
                     src={sampleUrl}
                     alt={`Sample ${index + 1}`}
                     fill
