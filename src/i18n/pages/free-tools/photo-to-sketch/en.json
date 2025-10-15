@@ -4,8 +4,22 @@
     "description": "Convert your photo to line drawing directly in your browser."
   },
   "hero": {
-    "title": "Free Photo to Sketch Tools",
-    "description": "Private and fast. All processing happens locally in your browser."
+    "title": "Free Photo to Sketch Tool",
+    "description": "Convert your photos to beautiful sketches instantly. Private and fast - all processing happens locally in your browser.",
+    "features": [
+      {
+        "icon": "Zap",
+        "text": "100% Free"
+      },
+      {
+        "icon": "Shield",
+        "text": "No Login Required"
+      },
+      {
+        "icon": "Database",
+        "text": "Data Not Stored"
+      }
+    ]
   }
 }
 

@@ -4,6 +4,7 @@ export const revalidate = 3600;
 import { Metadata } from "next";
 import { getPage } from "@/services/page";
 import { FreeLineArtTool } from "@/components/free-tools/line-art";
+import FreeToolHero from "@/components/blocks/free-tool-hero";
 
 export async function generateMetadata({
   params,
@@ -30,14 +31,12 @@ export default async function FreeToolPhotoToSketchPage({
   const page: any = await getPage("free-tools/photo-to-sketch", locale);
 
   return (
-    <div className="container py-8 space-y-8">
-      <div className="space-y-2">
-        <h1 className="text-2xl font-bold">{page?.hero?.title}</h1>
-        <p className="text-muted-foreground">{page?.hero?.description}</p>
+    <>
+      {page.hero && <FreeToolHero hero={page.hero} />}
+      <div className="container py-8">
+        <FreeLineArtTool />
       </div>
-
-      <FreeLineArtTool />
-    </div>
+    </>
   );
 }
 
