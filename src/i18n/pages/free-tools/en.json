@@ -3,6 +3,10 @@
     "title": "Free Tools",
     "description": "Try our browser-based free utilities. No upload required."
   },
+  "breadcrumb": {
+    "home": "Home",
+    "free_tools": "Free Tools"
+  },
   "hero": {
     "title": "Free Tools",
     "description": "Quick, private, and free browser-based photo utilities."
@@ -16,4 +20,11 @@
       "thumbnail": "/imgs/bg/bg.webp"
     }
   ]
+  ,
+  "structured_data": {
+    "name": "Free Tools",
+    "description": "Try our browser-based free utilities. No upload required.",
+    "breadcrumb_home": "Home",
+    "breadcrumb_free_tools": "Free Tools"
+  }
 }

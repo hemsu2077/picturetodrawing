@@ -3,6 +3,11 @@
     "title": "Photo to Sketch (Free)",
     "description": "Convert your photo to line drawing directly in your browser."
   },
+  "breadcrumb": {
+    "home": "Home",
+    "free_tools": "Free Tools",
+    "current": "Photo to Sketch (Free)"
+  },
   "hero": {
     "title": "Free Photo to Sketch Tool",
     "description": "Convert your photos to beautiful sketches instantly. Private and fast - all processing happens locally in your browser.",
@@ -114,5 +119,12 @@
       }
     ]
   }
+  ,
+  "structured_data": {
+    "name": "Photo to Sketch (Free)",
+    "description": "Convert your photo to line drawing directly in your browser.",
+    "breadcrumb_home": "Home",
+    "breadcrumb_free_tools": "Free Tools",
+    "breadcrumb_current": "Photo to Sketch (Free)"
+  }
 }
-

@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import { getPage } from "@/services/page";
 import { Link } from "@/i18n/navigation";
 import Icon from "@/components/icon";
+import { Breadcrumb } from "@/components/drawing-styles";
 
 export async function generateMetadata({
   params,
@@ -13,12 +14,19 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const page: any = await getPage("free-tools", locale);
-  const base = process.env.NEXT_PUBLIC_WEB_URL?.replace(/\/+$/, "") || "";
-  const path = locale && locale !== "en" ? `/${locale}/free-tools` : "/free-tools";
+
+  const normalizedBaseUrl = process.env.NEXT_PUBLIC_WEB_URL
+    ? process.env.NEXT_PUBLIC_WEB_URL.replace(/\/+$/, "")
+    : undefined;
+  const localizedPath = locale && locale !== "en" ? `/${locale}/free-tools` : "/free-tools";
+  const canonicalUrl = normalizedBaseUrl ? `${normalizedBaseUrl}${localizedPath}` : localizedPath;
+
   return {
-    title: page?.meta?.title || "Free Tools",
-    description: page?.meta?.description || "Try our browser-based free tools.",
-    alternates: { canonical: `${base}${path}` },
+    title: page?.meta?.title,
+    description: page?.meta?.description,
+    alternates: {
+      canonical: canonicalUrl || undefined,
+    },
   };
 }
 
@@ -31,7 +39,49 @@ export default async function FreeToolsPage({
   const page: any = await getPage("free-tools", locale);
 
   return (
-    <div className="container py-8 space-y-8">
+    <div className="container pt-2 space-y-8">
+      {/* Structured Data */}
+      {page.structured_data && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'CollectionPage',
+              name: page.structured_data.name,
+              description: page.structured_data.description,
+              url: `${(process.env.NEXT_PUBLIC_WEB_URL || '').replace(/\/+$/, '')}${locale && locale !== 'en' ? `/${locale}` : ''}/free-tools`,
+              breadcrumb: {
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                  {
+                    '@type': 'ListItem',
+                    position: 1,
+                    name: page.structured_data.breadcrumb_home,
+                    item: (process.env.NEXT_PUBLIC_WEB_URL || '').replace(/\/+$/, '') || undefined,
+                  },
+                  {
+                    '@type': 'ListItem',
+                    position: 2,
+                    name: page.structured_data.breadcrumb_free_tools,
+                    item: `${(process.env.NEXT_PUBLIC_WEB_URL || '').replace(/\/+$/, '')}${locale && locale !== 'en' ? `/${locale}` : ''}/free-tools`,
+                  },
+                ],
+              },
+            }),
+          }}
+        />
+      )}
+
+      {/* Breadcrumb Navigation */}
+      {page.breadcrumb && (
+        <Breadcrumb
+          items={[{ label: page.breadcrumb.free_tools || 'Free Tools' }]}
+          homeLabel={page.breadcrumb.home}
+          hideOnMobile
+        />
+      )}
+
       <div className="text-center space-y-3">
         <h1 className="text-3xl font-bold">{page?.hero?.title || "Free Tools"}</h1>
         <p className="text-muted-foreground text-lg">

@@ -8,6 +8,7 @@ import FreeToolHero from "@/components/blocks/free-tool-hero";
 import { UpgradeCard } from "@/components/free-tools/upgrade-card";
 import Showcase from "@/components/blocks/showcase";
 import FAQ from "@/components/blocks/faq";
+import { Breadcrumb } from "@/components/drawing-styles";
 
 export async function generateMetadata({
   params,
@@ -16,12 +17,20 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const page: any = await getPage("free-tools/photo-to-sketch", locale);
-  const base = process.env.NEXT_PUBLIC_WEB_URL?.replace(/\/+$/, "") || "";
-  const path = locale && locale !== "en" ? `/${locale}/free-tools/photo-to-sketch` : "/free-tools/photo-to-sketch";
+
+  const normalizedBaseUrl = process.env.NEXT_PUBLIC_WEB_URL
+    ? process.env.NEXT_PUBLIC_WEB_URL.replace(/\/+$/, "")
+    : undefined;
+  const localizedPath =
+    locale && locale !== "en" ? `/${locale}/free-tools/photo-to-sketch` : "/free-tools/photo-to-sketch";
+  const canonicalUrl = normalizedBaseUrl ? `${normalizedBaseUrl}${localizedPath}` : localizedPath;
+
   return {
-    title: page?.meta?.title || "Photo to Sketch (Free)",
-    description: page?.meta?.description || "Browser-based line drawing converter.",
-    alternates: { canonical: `${base}${path}` },
+    title: page?.meta?.title,
+    description: page?.meta?.description,
+    alternates: {
+      canonical: canonicalUrl || undefined,
+    },
   };
 }
 
@@ -35,6 +44,60 @@ export default async function FreeToolPhotoToSketchPage({
 
   return (
     <>
+      {/* Structured Data */}
+      {page.structured_data && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'WebPage',
+              name: page.structured_data.name,
+              description: page.structured_data.description,
+              url: `${(process.env.NEXT_PUBLIC_WEB_URL || '').replace(/\/+$/, '')}${locale && locale !== 'en' ? `/${locale}` : ''}/free-tools/photo-to-sketch`,
+              breadcrumb: {
+                '@type': 'BreadcrumbList',
+                itemListElement: [
+                  {
+                    '@type': 'ListItem',
+                    position: 1,
+                    name: page.structured_data.breadcrumb_home,
+                    item: (process.env.NEXT_PUBLIC_WEB_URL || '').replace(/\/+$/, '') || undefined,
+                  },
+                  {
+                    '@type': 'ListItem',
+                    position: 2,
+                    name: page.structured_data.breadcrumb_free_tools,
+                    item: `${(process.env.NEXT_PUBLIC_WEB_URL || '').replace(/\/+$/, '')}${locale && locale !== 'en' ? `/${locale}` : ''}/free-tools`,
+                  },
+                  {
+                    '@type': 'ListItem',
+                    position: 3,
+                    name: page.structured_data.breadcrumb_current,
+                    item: `${(process.env.NEXT_PUBLIC_WEB_URL || '').replace(/\/+$/, '')}${locale && locale !== 'en' ? `/${locale}` : ''}/free-tools/photo-to-sketch`,
+                  },
+                ],
+              },
+            }),
+          }}
+        />
+      )}
+
+      {/* Breadcrumb Navigation */}
+      {page.breadcrumb && (
+        <section className="pt-2">
+          <div className="container">
+            <Breadcrumb
+              items={[
+                { label: page.breadcrumb.free_tools || 'Free Tools', href: '/free-tools' },
+                { label: page.breadcrumb.current || 'Photo to Sketch' },
+              ]}
+              homeLabel={page.breadcrumb.home}
+            />
+          </div>
+        </section>
+      )}
+
       {page.hero && <FreeToolHero hero={page.hero} />}
 
       <FreeLineArtTool />
@@ -57,4 +120,3 @@ export default async function FreeToolPhotoToSketchPage({
     </>
   );
 }
-
