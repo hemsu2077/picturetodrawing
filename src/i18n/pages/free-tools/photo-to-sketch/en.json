@@ -34,7 +34,7 @@
         "title": "Portrait to Pencil Sketch",
         "description": "Turn portrait photos into elegant pencil sketches with fine details",
         "image": {
-          "src": "https://files.picturetodrawing.com/styles/sample/sample-pencil-sketch.webp",
+          "src": "https://files.picturetodrawing.com/free-tools/photo-to-sketch/photo-to-sketch-sample-portrait.webp",
           "alt": "Free Photo to Sketch - Portrait Example"
         },
         "url": "#",
@@ -44,7 +44,7 @@
         "title": "Pet Photo Sketch",
         "description": "Convert pet photos into charming sketch drawings",
         "image": {
-          "src": "https://files.picturetodrawing.com/styles/sample/sample-line-drawing.webp",
+          "src": "https://files.picturetodrawing.com/free-tools/photo-to-sketch/photo-to-sketch-sample-pet.webp",
           "alt": "Free Photo to Sketch - Pet Drawing"
         },
         "url": "#",
@@ -54,7 +54,7 @@
         "title": "Landscape Sketch Art",
         "description": "Create artistic landscape sketches from your travel photos",
         "image": {
-          "src": "https://files.picturetodrawing.com/styles/sample/sample-charcoal-drawing.webp",
+          "src": "https://files.picturetodrawing.com/free-tools/photo-to-sketch/photo-to-sketch-sample-landscape.webp",
           "alt": "Free Photo to Sketch - Landscape Art"
         },
         "url": "#",
@@ -63,7 +63,7 @@
     ]
   },
   "upgrade_card": {
-    "title": "Professional Pencil Sketch and 30+ Other Artistic Styles",
+    "title": "Professional Pencil Sketch and More Artistic Styles",
     "description": "Upgrade to our AI-powered drawing generator for studio-quality results. Access 30+ professional art styles including realistic pencil sketch, watercolor, oil painting, and more. Cloud processing with saved history.",
     "image": "https://files.picturetodrawing.com/sample/benifit-style.webp",
     "features": [

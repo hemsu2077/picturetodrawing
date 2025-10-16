@@ -336,7 +336,7 @@
     "generating": "Generating...",
     "processing_message": "Generating your image...",
     "processing_failed": "Generating Failed",
-    "line_art_result": "Sketch result",
+    "photo_to_sketch_result": "Photo to Sketch Result",
     "preview": "Preview",
     "sample_alt": "Photo to Sketch Sample {index}",
     "uploaded_preview_alt": "Uploaded preview",

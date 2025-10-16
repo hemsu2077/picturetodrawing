@@ -503,6 +503,16 @@
           ]
         },
         {
+          "title": "Free Tools",
+          "children": [
+            {
+              "title": "Photo to Sketch",
+              "url": "/free-tools/photo-to-sketch",
+              "target": "_self"
+            }
+          ]
+        },
+        {
           "title": "Friends",
           "children": [
             {

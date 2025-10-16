@@ -17,7 +17,7 @@ interface ImagePreviewProps {
   upgradeButtonText?: string;
 }
 
-const DEFAULT_SAMPLE = "https://files.picturetodrawing.com/styles/sample/sample-line-drawing.webp";
+const DEFAULT_SAMPLE = "https://files.picturetodrawing.com/free-tools/photo-to-sketch/photo-to-sketch-sample-hero.webp";
 
 export function ImagePreview({
   imageUrl,
@@ -59,7 +59,7 @@ export function ImagePreview({
 
         <Image
           src={displayUrl}
-          alt={isResult ? t('line_art_result') : t('preview')}
+          alt={isResult ? t('photo_to_sketch_result') : t('preview')}
           width={800}
           height={800}
           className="max-w-full max-h-full object-contain"
