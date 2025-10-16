@@ -1,13 +1,10 @@
-import {
-  getMessages,
-  getTranslations,
-  setRequestLocale,
-} from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import { AppContextProvider } from "@/contexts/app";
 import { Metadata } from "next";
 import { NextAuthSessionProvider } from "@/auth/session";
 import { NextIntlClientProvider } from "next-intl";
 import { ThemeProvider } from "@/providers/theme";
+import { routing } from "@/i18n/routing";
 
 export async function generateMetadata({
   params,
@@ -39,10 +36,25 @@ export default async function LocaleLayout({
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const messages = await getMessages();
+  // Normalize locale to match our message filenames
+  let effectiveLocale = locale;
+  if (effectiveLocale === "zh-CN") effectiveLocale = "zh";
+  if (effectiveLocale === "zh-TW") effectiveLocale = "zh-tw";
+  if (!routing.locales.includes(effectiveLocale as any)) {
+    effectiveLocale = routing.defaultLocale;
+  }
+
+  // Explicitly import messages by locale to avoid SSG defaulting to en
+  let messages: any;
+  try {
+    messages = (await import(`@/i18n/messages/${effectiveLocale}.json`)).default;
+  } catch (e) {
+    messages = (await import(`@/i18n/messages/en.json`)).default;
+    effectiveLocale = "en";
+  }
 
   return (
-    <NextIntlClientProvider messages={messages}>
+    <NextIntlClientProvider locale={effectiveLocale} messages={messages}>
       <NextAuthSessionProvider>
         <AppContextProvider>
           <ThemeProvider>{children}</ThemeProvider>
@@ -50,4 +62,9 @@ export default async function LocaleLayout({
       </NextAuthSessionProvider>
     </NextIntlClientProvider>
   );
+}
+
+// Pre-render all locales so SSR serves the correct messages per locale
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
 }
