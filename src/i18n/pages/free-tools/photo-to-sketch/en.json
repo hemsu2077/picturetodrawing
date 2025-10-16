@@ -20,6 +20,31 @@
         "text": "Data Not Stored"
       }
     ]
+  },
+  "upgrade_card": {
+    "title": "Want studio-quality pencil sketch & 30+ art styles?",
+    "description": "Unlock 30+ professional art styles with our AI Drawing Generator. Get cloud-powered processing and save your creations.",
+    "image": "https://files.picturetodrawing.com/sample/benifit-style.webp",
+    "features": [
+      {
+        "icon": "Palette",
+        "text": "30+ Art Styles"
+      },
+      {
+        "icon": "Zap",
+        "text": "Fast Generation"
+      },
+      {
+        "icon": "History",
+        "text": "Save History"
+      },
+      {
+        "icon": "Sparkles",
+        "text": "Daily Free"
+      }
+    ],
+    "cta_text": "Try AI Drawing Generator",
+    "cta_link": "/"
   }
 }
 

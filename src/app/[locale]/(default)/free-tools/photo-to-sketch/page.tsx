@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import { getPage } from "@/services/page";
 import { FreeLineArtTool } from "@/components/free-tools/line-art";
 import FreeToolHero from "@/components/blocks/free-tool-hero";
+import { UpgradeCard } from "@/components/free-tools/upgrade-card";
 
 export async function generateMetadata({
   params,
@@ -33,8 +34,19 @@ export default async function FreeToolPhotoToSketchPage({
   return (
     <>
       {page.hero && <FreeToolHero hero={page.hero} />}
-      <div className="container">
+      <div className="container space-y-8 pb-16">
         <FreeLineArtTool />
+        
+        {page.upgrade_card && (
+          <UpgradeCard
+            title={page.upgrade_card.title}
+            description={page.upgrade_card.description}
+            features={page.upgrade_card.features}
+            ctaText={page.upgrade_card.cta_text}
+            ctaLink={page.upgrade_card.cta_link}
+            styleImage={page.upgrade_card.image}
+          />
+        )}
       </div>
     </>
   );
