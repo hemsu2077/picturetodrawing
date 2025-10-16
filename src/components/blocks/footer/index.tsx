@@ -51,7 +51,7 @@ export default function Footer({ footer }: { footer: FooterType }) {
                 </ul>
               )} */}
             </div>
-            <div className="grid grid-cols-4 gap-6">
+            <div className="grid grid-cols-2 gap-6 lg:grid-cols-4">
               {footer.nav?.items?.map((item, i) => (
                 <div key={i}>
                   <p className="mb-6 font-bold">{item.title}</p>
@@ -83,7 +83,7 @@ export default function Footer({ footer }: { footer: FooterType }) {
               </p>
             )}
             {footer.agreement && (
-              <ul className="flex justify-center gap-4 lg:justify-start">
+              <ul className="flex flex-col gap-2 lg:flex-row lg:justify-start lg:gap-4">
                 {footer.agreement.items?.map((item, i) => (
                   <li key={i} className="hover:text-primary">
                     <a href={item.url || ""} target={item.target}>
