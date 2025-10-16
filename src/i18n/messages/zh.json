@@ -327,7 +327,19 @@
     "sign_in_button": "登录"
   },
   "free_line_art": {
-    "upgrade_hint": "想要更清晰的线条和更多风格？",
-    "upgrade_button": "试试 AI 工作室"
+    "upgrade_hint": "不够满意？",
+    "upgrade_button": "试试 AI 手绘",
+    "upload_title": "上传你的照片",
+    "upload_hint": "点击选择或拖拽到此处",
+    "sample_hint": "或试试示例图片：",
+    "generate_button": "转换为素描",
+    "generating": "生成中...",
+    "processing_message": "正在生成你的图片...",
+    "processing_failed": "生成失败",
+    "photo_to_sketch_result": "照片转素描结果",
+    "preview": "预览",
+    "sample_alt": "照片转素描示例 {index}",
+    "uploaded_preview_alt": "已上传预览",
+    "image_processing_failed": "图片处理失败。请尝试其他图片（JPEG/PNG/WebP/HEIC）。"
   }
 }

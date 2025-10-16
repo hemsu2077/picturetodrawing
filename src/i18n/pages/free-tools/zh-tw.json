@@ -1,0 +1,27 @@
+{
+  "meta": {
+    "title": "免費照片工具－圖片轉手繪",
+    "description": "免費照片轉素描與影像編輯工具。免登入、免註冊，直接線上使用圖片轉手繪的免費工具處理你的照片。"
+  },
+  "breadcrumb": {
+    "home": "首頁",
+    "free_tools": "免費工具"
+  },
+  "hero": {
+    "title": "免費照片工具",
+    "description": "不需登入，即可免費使用我們的線上工具處理與轉換照片。"
+  },
+  "tools": [
+    {
+      "title": "照片轉素描",
+      "url": "/free-tools/photo-to-sketch",
+      "thumbnail": "/imgs/bg/bg.webp"
+    }
+  ],
+  "structured_data": {
+    "name": "免費照片工具－圖片轉手繪",
+    "description": "免費照片轉素描與影像編輯工具，不需登入。",
+    "breadcrumb_home": "首頁",
+    "breadcrumb_free_tools": "免費工具"
+  }
+}

@@ -30,6 +30,17 @@
           ]
         },
         {
+          "title": "免费工具",
+          "children": [
+            {
+              "title": "照片转素描",
+              "url": "/free-tools/photo-to-sketch",
+              "target": "_self",
+              "icon": "RiColorFilterAiLine"
+            }
+          ]
+        },
+        {
           "title": "价格",
           "url": "/pricing",
           "icon": ""
@@ -61,20 +72,20 @@
     "highlight_text": "图片转手绘",
     "description": "体验AI驱动的图片转手绘神奇效果",
     "tip": "免费试用，100%安全，即时出图",
-    "tip_items": [
-      {
-        "text": "新用户赠送10积分",
-        "icon": "Gift"
-      },
-      {
-        "text": "每日限免",
-        "icon": "CalendarCheck"
-      },
-      {
-        "text": "专业级创作",
-        "icon": "Fan"
-      }
-    ],
+      "tip_items": [
+        {
+          "text": "新用户赠送10积分",
+          "icon": "Gift"
+        },
+        {
+          "text": "每日免费",
+          "icon": "CalendarCheck"
+        },
+        {
+          "text": "专业级创作",
+          "icon": "Fan"
+        }
+      ],
     "show_happy_users": false,
     "show_badge": false
   },

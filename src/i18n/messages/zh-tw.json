@@ -203,8 +203,8 @@
     "generating": "生成中...",
     "processing": "處理中...",
     "free": "限免",
-    "login_for_free_trial_hint": "登入領10點數 · 每日限免",
-    "free_trial_available_hint": "每日限免剩餘：1次",
+    "login_for_free_trial_hint": "登入領10點數 · 每日免費",
+    "free_trial_available_hint": "每日免費剩餘：1次",
     "select_image_first": "請先選擇圖片",
     "insufficient_credits": "點數不足",
     "daily_trial_used": "今日限免已用完",
@@ -327,7 +327,19 @@
     "sign_in_button": "登入"
   },
   "free_line_art": {
-    "upgrade_hint": "想要更清晰的線條和更多風格？",
-    "upgrade_button": "試試 AI 工作室"
+    "upgrade_hint": "不夠滿意？",
+    "upgrade_button": "試試 AI 手繪",
+    "upload_title": "上傳你的照片",
+    "upload_hint": "點擊選擇或拖曳到此處",
+    "sample_hint": "或試試範例圖片：",
+    "generate_button": "轉換為素描",
+    "generating": "生成中...",
+    "processing_message": "正在生成你的圖片...",
+    "processing_failed": "生成失敗",
+    "photo_to_sketch_result": "照片轉素描結果",
+    "preview": "預覽",
+    "sample_alt": "照片轉素描範例 {index}",
+    "uploaded_preview_alt": "已上傳預覽",
+    "image_processing_failed": "圖片處理失敗。請嘗試其他圖片（JPEG/PNG/WebP/HEIC）。"
   }
 }

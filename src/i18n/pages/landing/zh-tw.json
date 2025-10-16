@@ -30,6 +30,17 @@
           ]
         },
         {
+          "title": "免費工具",
+          "children": [
+            {
+              "title": "照片轉素描",
+              "url": "/free-tools/photo-to-sketch",
+              "target": "_self",
+              "icon": "RiColorFilterAiLine"
+            }
+          ]
+        },
+        {
           "title": "價格",
           "url": "/pricing",
           "icon": ""
@@ -65,7 +76,7 @@
         "icon": "Gift"
       },
       {
-        "text": "每日限免",
+        "text": "每日免費",
         "icon": "CalendarCheck"
       },
       {

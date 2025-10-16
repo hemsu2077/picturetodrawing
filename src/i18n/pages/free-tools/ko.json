@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "title": "Free Photo Editing Tools - Picture to Drawing",
+    "description": "Free photo to sketch converter and image editing tools. No login, no signup required. Transform your photos with our completely free online tools from Picture to Drawing."
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "free_tools": "Free Tools"
+  },
+  "hero": {
+    "title": "Free Photo Tools",
+    "description": "Transform your photos with our free online tools. No login required, completely free to use."
+  },
+  "tools": [
+    {
+      "title": "Photo to Sketch",
+      "url": "/free-tools/photo-to-sketch",
+      "thumbnail": "/imgs/bg/bg.webp"
+    }
+  ]
+  ,
+  "structured_data": {
+    "name": "Free Photo Tools - Picture to Drawing",
+    "description": "Free photo to sketch converter and image editing tools. No login required.",
+    "breadcrumb_home": "Home",
+    "breadcrumb_free_tools": "Free Tools"
+  }
+}

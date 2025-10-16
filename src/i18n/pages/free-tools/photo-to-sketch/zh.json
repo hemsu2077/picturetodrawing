@@ -1,0 +1,116 @@
+{
+  "meta": {
+    "title": "免费照片转素描转换器 - 无需登录，永久免费",
+    "description": "一键将照片转换为精美铅笔素描。完全免费的照片转素描工具，无需登录/注册，无需信用卡，直接在线生成与下载。"
+  },
+  "breadcrumb": {
+    "home": "首页",
+    "free_tools": "免费工具",
+    "current": "照片转素描"
+  },
+  "hero": {
+    "title": "免费照片转素描转换器",
+    "description": "上传照片，秒变铅笔素描。零门槛、零成本，轻松获得自然细腻的素描效果。",
+    "features": [
+      { "icon": "Zap", "text": "永久免费" },
+      { "icon": "Shield", "text": "无需登录" },
+      { "icon": "Database", "text": "完全私密" }
+    ]
+  },
+  "showcase": {
+    "title": "照片转素描效果展示",
+    "description": "查看真实示例，感受我们免费铅笔素描转换器的画质与细节。",
+    "items": [
+      {
+        "title": "人像转铅笔素描",
+        "description": "将人物照片转为更具层次与质感的素描作品",
+        "image": {
+          "src": "https://files.picturetodrawing.com/free-tools/photo-to-sketch/photo-to-sketch-sample-portrait.webp",
+          "alt": "免费照片转素描 - 人像示例"
+        },
+        "url": "#",
+        "target": "_self"
+      },
+      {
+        "title": "宠物照片素描",
+        "description": "把宠物照片转成更有温度的素描插画",
+        "image": {
+          "src": "https://files.picturetodrawing.com/free-tools/photo-to-sketch/photo-to-sketch-sample-pet.webp",
+          "alt": "免费照片转素描 - 宠物作品"
+        },
+        "url": "#",
+        "target": "_self"
+      },
+      {
+        "title": "风景素描艺术",
+        "description": "旅行大片也能一键生成富有艺术感的风景素描",
+        "image": {
+          "src": "https://files.picturetodrawing.com/free-tools/photo-to-sketch/photo-to-sketch-sample-landscape.webp",
+          "alt": "免费照片转素描 - 风景艺术"
+        },
+        "url": "#",
+        "target": "_self"
+      }
+    ]
+  },
+  "upgrade_card": {
+    "title": "专业级铅笔素描与更多艺术风格",
+    "description": "升级到我们的 AI 图片转手绘生成器，获取工作室级效果。解锁 30+ 专业艺术风格（铅笔素描、水彩、油画等），云端处理并自动保存历史，速度更快、质量更稳。",
+    "image": "https://files.picturetodrawing.com/sample/benifit-style.webp",
+    "features": [
+      { "icon": "Palette", "text": "30+ 艺术风格" },
+      { "icon": "Zap", "text": "更快处理" },
+      { "icon": "History", "text": "作品可保存" },
+      { "icon": "Sparkles", "text": "每日免费试用" }
+    ],
+    "cta_text": "试用 AI 图片转手绘",
+    "cta_link": "/"
+  },
+  "faq": {
+    "name": "faq",
+    "label": "常见问题",
+    "title": "常见问题 - 照片转素描转换器",
+    "description": "关于我们的免费照片转素描工具，你想知道的都在这里。",
+    "items": [
+      {
+        "title": "这个照片转素描工具真的永久免费吗？",
+        "description": "是的。本工具完全免费，无任何隐藏费用、订阅或付费功能限制。你可以不限次数地将照片转为铅笔素描。与主页的 AI 图片转手绘生成器（提供更多高级风格）不同，这个浏览器端的素描工具面向所有人永久免费。"
+      },
+      {
+        "title": "使用时需要注册或登录吗？",
+        "description": "不需要。本免费照片转素描工具完全在你的浏览器中运行，无需注册或登录。打开页面、上传照片，即可立即转换为素描——无需邮箱、无需个人信息。"
+      },
+      {
+        "title": "为什么账户里找不到我生成的素描历史？",
+        "description": "由于这是无需登录的免费工具，一切都在你的浏览器本地处理，不会保存到任何账号或数据库中。生成的图片仅存在于你的设备上，请在生成后立即下载。如果你需要云端保存历史记录，推荐使用我们主页的 AI 图片转手绘生成器。"
+      },
+      {
+        "title": "把照片转成素描一般需要多久？",
+        "description": "标准尺寸的图片通常在 50–60 秒内完成；大图或超高分辨率图片可能需要 70–90 秒，因为所有计算都在浏览器本地进行，速度与设备性能和图片复杂度有关。若想更快（约 20–30 秒）的云端处理，可试试我们的专业 AI 图片转手绘生成器。"
+      },
+      {
+        "title": "素描效果不理想怎么办？",
+        "description": "素描质量与原图质量密切相关。建议选择主体清晰、光线良好、分辨率较高的照片；模糊或噪点较多的图片会影响细节表现。如果对免费工具效果不满意，可到首页试用 AI 图片转手绘生成器，支持多种素描风格与更先进的算法，每日可免费体验一次。"
+      },
+      {
+        "title": "哪些类型的照片更适合转换为素描？",
+        "description": "主体清晰、对比度较强的照片往往效果更好。例如光线良好的人像、五官明显的宠物照，以及结构分明的风景图等。工具会自动检测边缘并转化为素描线条，边界清晰的图片更容易得到干净、艺术感更强的结果。"
+      },
+      {
+        "title": "我的照片是否私密安全？",
+        "description": "完全私密安全。本工具在你的浏览器端本地处理图片，图片不会上传到服务器，也不会被收集、存储或传输。非常适合处理需要保护隐私的个人照片。"
+      },
+      {
+        "title": "生成的素描能商用吗？",
+        "description": "可以。你拥有用本免费工具生成的素描图片的完整使用权，可用于商业用途，包括营销素材、产品设计、社媒内容或个人艺术创作，无需署名或支付授权费用。"
+      }
+    ]
+  },
+  "structured_data": {
+    "name": "免费照片转素描转换器",
+    "description": "将照片一键转为精美铅笔素描，无需登录、永久免费。",
+    "breadcrumb_home": "首页",
+    "breadcrumb_free_tools": "免费工具",
+    "breadcrumb_current": "照片转素描"
+  }
+}
