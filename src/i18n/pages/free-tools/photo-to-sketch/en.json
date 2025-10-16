@@ -1,20 +1,20 @@
 {
   "meta": {
-    "title": "Photo to Sketch (Free)",
-    "description": "Convert your photo to line drawing directly in your browser."
+    "title": "Free Photo to Sketch Converter - No Login Required",
+    "description": "Transform photos into beautiful pencil sketches. 100% free photo to sketch converter with no login, no signup, no credit card required. Completely free forever"
   },
   "breadcrumb": {
     "home": "Home",
     "free_tools": "Free Tools",
-    "current": "Photo to Sketch (Free)"
+    "current": "Photo to Sketch"
   },
   "hero": {
-    "title": "Free Photo to Sketch Tool",
-    "description": "Convert your photos to beautiful sketches instantly. Private and fast - all processing happens locally in your browser.",
+    "title": "Free Photo to Sketch Converter",
+    "description": "Turn any photo into a beautiful pencil sketch. Just upload your image and download your sketch.",
     "features": [
       {
         "icon": "Zap",
-        "text": "100% Free"
+        "text": "100% Free Forever"
       },
       {
         "icon": "Shield",
@@ -22,40 +22,40 @@
       },
       {
         "icon": "Database",
-        "text": "Data Not Stored"
+        "text": "Fully Private"
       }
     ]
   },
   "showcase": {
-    "title": "Free Line Art Examples",
-    "description": "See what you can create with our free photo to sketch tool",
+    "title": "Photo to Sketch Examples",
+    "description": "Discover the quality of our free pencil sketch converter with real examples",
     "items": [
       {
-        "title": "Portrait Sketch",
-        "description": "Convert portraits to clean line drawings",
+        "title": "Portrait to Pencil Sketch",
+        "description": "Turn portrait photos into elegant pencil sketches with fine details",
         "image": {
           "src": "https://files.picturetodrawing.com/styles/sample/sample-pencil-sketch.webp",
-          "alt": "Photo to Sketch Example | Portrait Sketch"
+          "alt": "Free Photo to Sketch - Portrait Example"
         },
         "url": "#",
         "target": "_self"
       },
       {
-        "title": "Pet Drawing",
-        "description": "Transform pet photos into sketches",
+        "title": "Pet Photo Sketch",
+        "description": "Convert pet photos into charming sketch drawings",
         "image": {
           "src": "https://files.picturetodrawing.com/styles/sample/sample-line-drawing.webp",
-          "alt": "Photo to Sketch Example | Pet Drawing"
+          "alt": "Free Photo to Sketch - Pet Drawing"
         },
         "url": "#",
         "target": "_self"
       },
       {
-        "title": "Landscape Sketch",
-        "description": "Create beautiful landscape line art",
+        "title": "Landscape Sketch Art",
+        "description": "Create artistic landscape sketches from your travel photos",
         "image": {
           "src": "https://files.picturetodrawing.com/styles/sample/sample-charcoal-drawing.webp",
-          "alt": "Photo to Sketch Example | Landscape Drawing"
+          "alt": "Free Photo to Sketch - Landscape Art"
         },
         "url": "#",
         "target": "_self"
@@ -63,8 +63,8 @@
     ]
   },
   "upgrade_card": {
-    "title": "Want studio-quality pencil sketch & 30+ art styles?",
-    "description": "Unlock 30+ professional art styles with our AI Drawing Generator. Get cloud-powered processing and save your creations.",
+    "title": "Need Professional Pencil Sketch with 30+ Artistic Styles?",
+    "description": "Upgrade to our AI-powered drawing generator for studio-quality results. Access 30+ professional art styles including realistic pencil sketch, watercolor, oil painting, and more. Cloud processing with saved history.",
     "image": "https://files.picturetodrawing.com/sample/benifit-style.webp",
     "features": [
       {
@@ -73,58 +73,65 @@
       },
       {
         "icon": "Zap",
-        "text": "Fast Generation"
+        "text": "Faster Processing"
       },
       {
         "icon": "History",
-        "text": "Save History"
+        "text": "Save Your Work"
       },
       {
         "icon": "Sparkles",
-        "text": "Daily Free"
+        "text": "Daily Free Trial"
       }
     ],
-    "cta_text": "Try AI Drawing Generator",
+    "cta_text": "Try AI Picture to Drawing",
     "cta_link": "/"
   },
   "faq": {
     "name": "faq",
     "label": "FAQ",
-    "title": "Frequently Asked Questions About Photo to Line Drawing Conversion",
-    "description": "Everything you need to know about converting photos to line drawings",
+    "title": "Frequently Asked Questions - Photo to Sketch Converter",
+    "description": "Common questions about our free photo to sketch tool",
     "items": [
       {
-        "title": "What types of photos work best for line drawing conversion?",
-        "description": "Photos with clear subjects and good contrast work best. Portraits, pets, buildings, and objects with defined edges produce excellent line art results. Our AI can handle various lighting conditions and automatically adjusts for optimal line drawing output."
+        "title": "Is this photo to sketch converter completely free?",
+        "description": "Yes, this free photo to sketch tool is 100% free with no hidden costs, subscriptions, or premium features. You can convert unlimited photos to pencil sketches without any charges. Unlike our main AI drawing generator which offers premium features, this browser-based sketch converter is designed to be completely free for everyone forever."
       },
       {
-        "title": "Can I use the line drawings for commercial projects?",
-        "description": "Yes! All line drawings created with our photo to line drawing tool can be used for both personal and commercial purposes. You retain full rights to your converted images and can use them for products, marketing, or any business application."
+        "title": "Do I need to create an account or login to use this tool?",
+        "description": "No account or login is required. This free photo to sketch converter works entirely in your browser without any registration. Simply open the page, upload your photo, and convert it to a sketch instantly. No email, no signup, no personal information needed - just pure functionality."
       },
       {
-        "title": "What file formats are supported for upload and download?",
-        "description": "Upload: JPG, PNG, HEIC, WebP, and most common image formats. Download: High-quality PNG for raster graphics, SVG for scalable vector line art, and PDF for printing. Choose the format that best suits your intended use case."
+        "title": "Why can't I find my generated sketches in my account history?",
+        "description": "Since this free tool processes everything locally in your browser without requiring login, generated sketches are not stored in any account history or database. Your converted images exist only on your device. Please download your pencil sketch immediately after generation. If you need to save your work history, consider using our main AI picture to drawing generator which offers cloud storage and account features."
       },
       {
-        "title": "How long does photo to line drawing conversion take?",
-        "description": "Processing time depends on your account type: Free users can expect conversions to complete within 50-60 seconds, while premium subscribers enjoy priority processing with results in just 20-30 seconds. Image size and complexity may slightly affect processing time, but our optimized AI servers ensure consistent quality regardless of speed."
+        "title": "How long does it take to convert a photo to sketch?",
+        "description": "The photo to sketch conversion typically takes 40-50 seconds for standard images. Processing time may extend to 60-70 seconds for larger photos or high-resolution images, as all computation happens in your browser. The speed depends on your device's processing power and the image complexity. For faster cloud-based processing (20-30 seconds), try our premium AI drawing generator."
       },
       {
-        "title": "Is my photo data secure and private?",
-        "description": "Absolutely. Your photos are processed securely and automatically deleted from our servers after conversion. We never store, share, or use your images for any purpose other than creating your line drawing. Your privacy is our top priority."
+        "title": "Why doesn't my sketch look good? How can I improve results?",
+        "description": "The quality of your photo to sketch conversion depends heavily on your original image. For best results, use high-resolution photos with clear subjects and good lighting. Blurry or low-quality images will produce less detailed sketches. If you're not satisfied with the free tool's output, try our AI picture to drawing generator on the homepage - it offers advanced algorithms, multiple pencil sketch styles, and professional-quality results. You can try it free once daily without login."
       },
       {
-        "title": "Can I adjust the line thickness and detail level?",
-        "description": "No, you cannot adjust the line thickness and detail level."
+        "title": "What types of photos work best for sketch conversion?",
+        "description": "Photos with clear subjects and strong contrast produce the best pencil sketch results. Portraits with good lighting, pet photos with defined features, and landscapes with distinct elements work exceptionally well. The free photo to sketch tool automatically detects edges and converts them into sketch lines, so images with well-defined boundaries yield cleaner, more artistic results."
+      },
+      {
+        "title": "Is my photo data private and secure?",
+        "description": "Absolutely. This free tool processes your photos entirely in your browser using client-side technology. Your images never leave your device or get uploaded to any server. No data is collected, stored, or transmitted. This makes our photo to sketch converter one of the most private options available - perfect for sensitive or personal photos you want to convert to sketches."
+      },
+      {
+        "title": "Can I use the generated sketches commercially?",
+        "description": "Yes, you have full rights to use sketches created with this free photo to sketch converter for any purpose, including commercial projects. Whether for business marketing, product design, social media content, or personal artwork, the generated pencil sketches are yours to use freely without attribution or licensing restrictions."
       }
     ]
-  }
-  ,
+  },
   "structured_data": {
-    "name": "Photo to Sketch (Free)",
-    "description": "Convert your photo to line drawing directly in your browser.",
+    "name": "Free Photo to Sketch Converter",
+    "description": "Transform photos into beautiful pencil sketches instantly. 100% free photo to sketch converter with no login required.",
     "breadcrumb_home": "Home",
     "breadcrumb_free_tools": "Free Tools",
-    "breadcrumb_current": "Photo to Sketch (Free)"
+    "breadcrumb_current": "Photo to Sketch"
   }
 }
