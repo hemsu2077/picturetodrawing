@@ -126,7 +126,7 @@ export default async function PhotoTransformationPage({
 
       {/* Breadcrumb Navigation */}
       {page.breadcrumb && (
-        <section className="pt-2">
+        <section className="pt-4">
           <div className="container">
             <Breadcrumb 
               items={[

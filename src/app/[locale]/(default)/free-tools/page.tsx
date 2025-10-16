@@ -39,7 +39,7 @@ export default async function FreeToolsPage({
   const page: any = await getPage("free-tools", locale);
 
   return (
-    <div className="container pt-2 space-y-8">
+    <div className="container pt-4 space-y-8">
       {/* Structured Data */}
       {page.structured_data && (
         <script
