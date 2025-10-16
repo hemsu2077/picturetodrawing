@@ -30,7 +30,7 @@
         "description": "Convert portraits to clean line drawings",
         "image": {
           "src": "https://files.picturetodrawing.com/styles/sample/sample-pencil-sketch.webp",
-          "alt": "Portrait line art example"
+          "alt": "Photo to Sketch Example | Portrait Sketch"
         },
         "url": "#",
         "target": "_self"
@@ -40,7 +40,7 @@
         "description": "Transform pet photos into sketches",
         "image": {
           "src": "https://files.picturetodrawing.com/styles/sample/sample-line-drawing.webp",
-          "alt": "Pet line art example"
+          "alt": "Photo to Sketch Example | Pet Drawing"
         },
         "url": "#",
         "target": "_self"
@@ -50,7 +50,7 @@
         "description": "Create beautiful landscape line art",
         "image": {
           "src": "https://files.picturetodrawing.com/styles/sample/sample-charcoal-drawing.webp",
-          "alt": "Landscape line art example"
+          "alt": "Photo to Sketch Example | Landscape Drawing"
         },
         "url": "#",
         "target": "_self"

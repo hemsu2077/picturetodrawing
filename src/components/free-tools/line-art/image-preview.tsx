@@ -1,11 +1,11 @@
 "use client";
 
-import React from "react";
 import { Button } from "@/components/ui/button";
 import { Download, X, Sparkles } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 interface ImagePreviewProps {
   imageUrl: string | null;
@@ -17,7 +17,7 @@ interface ImagePreviewProps {
   upgradeButtonText?: string;
 }
 
-const DEFAULT_SAMPLE = "https://files.picturetodrawing.com/styles/pencil-sketch.webp?v=1.1";
+const DEFAULT_SAMPLE = "https://files.picturetodrawing.com/styles/sample/sample-line-drawing.webp";
 
 export function ImagePreview({
   imageUrl,
@@ -28,6 +28,7 @@ export function ImagePreview({
   upgradeHint,
   upgradeButtonText,
 }: ImagePreviewProps) {
+  const t = useTranslations('free_line_art');
   const displayUrl = imageUrl || DEFAULT_SAMPLE;
 
   return (
@@ -58,7 +59,7 @@ export function ImagePreview({
 
         <Image
           src={displayUrl}
-          alt={isResult ? "Line art result" : "Preview"}
+          alt={isResult ? t('line_art_result') : t('preview')}
           width={800}
           height={800}
           className="max-w-full max-h-full object-contain"

@@ -6,6 +6,7 @@ import { Upload, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import NextImage from "next/image";
 import { ProcessingProgress } from "./processing-progress";
+import { useTranslations } from "next-intl";
 
 // Global type for the UMD build loaded from CDN
 declare global {
@@ -35,6 +36,8 @@ export function UploadControl({
   onClearFile,
   className,
 }: UploadControlProps) {
+  const t = useTranslations('free_line_art');
+  const tDaily = useTranslations('daily_checkin');
   const fileInputRef = useRef<HTMLInputElement | null>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
@@ -166,9 +169,7 @@ export function UploadControl({
       setPreviewUrl(url);
     } catch (error) {
       console.error("Image processing failed:", error);
-      alert(
-        "Image processing failed. Please try another image (JPEG/PNG/WebP/HEIC)."
-      );
+      alert(t('image_processing_failed'));
     } finally {
       setIsConverting(false);
     }
@@ -252,7 +253,7 @@ export function UploadControl({
           {previewUrl && (
             <NextImage
               src={previewUrl}
-              alt="Uploaded preview"
+              alt={t('uploaded_preview_alt')}
               fill
               className="object-contain"
               unoptimized
@@ -282,21 +283,29 @@ export function UploadControl({
             className="flex flex-col items-center gap-2 text-center cursor-pointer"
             onClick={openFileDialog}
           >
-            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
-              <Upload className="h-6 w-6 text-primary" />
-            </div>
-            <div>
-              <div className="text-md font-medium mb-0.5">Upload your photo</div>
-              <div className="text-sm text-muted-foreground">
-                Click to browse or drag and drop
-              </div>
+            <Button 
+              variant="outline"
+              size="default"
+              className="pointer-events-none" 
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Upload className="h-4 w-4 mr-2" />
+              {tDaily('upload_picture')}
+            </Button>
+            <div className="space-y-1 text-center">
+              <p className="text-xs text-muted-foreground">
+                {tDaily('drag_drop_hint')}
+              </p>
+              <p className="text-xs text-muted-foreground">
+                {tDaily('supported_formats')}
+              </p>
             </div>
           </div>
 
           {/* Sample images inside upload area */}
           <div className="mt-4 pt-4">
             <p className="text-xs font-medium text-muted-foreground mb-2 text-center">
-              Or try with sample pictures:
+              {t('sample_hint')}
             </p>
             <div className="flex gap-2 justify-center">
               {SAMPLE_IMAGES.map((sampleUrl, index) => (
@@ -310,7 +319,7 @@ export function UploadControl({
                 >
                   <NextImage
                     src={sampleUrl}
-                    alt={`Sample ${index + 1}`}
+                    alt={t('sample_alt', { index: index + 1 })}
                     fill
                     className="object-cover hover:scale-105 transition-transform"
                     sizes="56px"

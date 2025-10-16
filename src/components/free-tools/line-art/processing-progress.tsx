@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { useTranslations } from "next-intl";
 
 interface ProcessingProgressProps {
   className?: string;
@@ -13,6 +14,8 @@ interface ProcessingProgressProps {
 }
 
 export function ProcessingProgress({ className, upgradeHint, upgradeButtonText }: ProcessingProgressProps) {
+  const t = useTranslations('free_line_art');
+  
   return (
     <div className={cn("relative w-full h-full flex flex-col", className)}>
       {/* Processing area */}
@@ -26,7 +29,7 @@ export function ProcessingProgress({ className, upgradeHint, upgradeButtonText }
           </div>
           
           <div className="text-sm text-center text-muted-foreground px-4">
-            Processing your image...
+            {t('processing_message')}
           </div>
         </div>
       </div>

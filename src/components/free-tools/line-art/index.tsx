@@ -174,10 +174,10 @@ export function FreeLineArtTool({
             {isProcessing ? (
               <>
                 <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2" />
-                Processing...
+                {t("generating")}
               </>
             ) : (
-              "Generate Line Art"
+              t("generate_button")
             )}
           </Button>
         </div>
@@ -196,7 +196,7 @@ export function FreeLineArtTool({
                   <div className="w-12 h-12 rounded-full bg-destructive/10 flex items-center justify-center mb-3 mx-auto">
                     <span className="text-destructive text-xl">⚠</span>
                   </div>
-                  <div className="text-sm font-medium text-destructive mb-1">Processing Failed</div>
+                  <div className="text-sm font-medium text-destructive mb-1">{t("processing_failed")}</div>
                   <div className="text-xs text-muted-foreground">{error}</div>
                 </div>
               </div>

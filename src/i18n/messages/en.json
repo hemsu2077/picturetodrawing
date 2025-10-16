@@ -328,6 +328,18 @@
   },
   "free_line_art": {
     "upgrade_hint": "Not satisfied?",
-    "upgrade_button": "Try AI Drawing"
+    "upgrade_button": "Try AI Drawing",
+    "upload_title": "Upload your photo",
+    "upload_hint": "Click to browse or drag and drop",
+    "sample_hint": "Or try with sample pictures:",
+    "generate_button": "Generate Line Art",
+    "generating": "Processing...",
+    "processing_message": "Processing your image...",
+    "processing_failed": "Processing Failed",
+    "line_art_result": "Line art result",
+    "preview": "Preview",
+    "sample_alt": "Photo to Sketch Sample {index}",
+    "uploaded_preview_alt": "Uploaded preview",
+    "image_processing_failed": "Image processing failed. Please try another image (JPEG/PNG/WebP/HEIC)."
   }
 }
