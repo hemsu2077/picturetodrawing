@@ -177,7 +177,7 @@ export function FreeLineArtTool({
     <div className={cn("w-full max-w-7xl mx-auto pb-24 px-2 md:px-8", className)}>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Right: Upload & Controls - Shows first on mobile */}
-        <div className="bg-background rounded-lg p-4 shadow-sm h-[420px] sm:h-[480px] flex flex-col gap-3 md:order-2">
+        <div className="bg-background border border-gray-200 rounded-lg p-4 shadow-sm h-[420px] sm:h-[480px] flex flex-col gap-3 md:order-2">
           {/* Upload control - flexible height */}
           <div className="flex-1 min-h-0">
             <UploadControl
@@ -206,7 +206,7 @@ export function FreeLineArtTool({
         </div>
 
         {/* Left: Preview - Shows second on mobile */}
-        <div className="bg-background rounded-lg p-4 shadow-sm h-[420px] sm:h-[480px] md:order-1">
+        <div className="bg-background border border-gray-200 rounded-lg p-4 shadow-sm h-[420px] sm:h-[480px] md:order-1">
           <div className="h-full">
             {isProcessing ? (
               <ProcessingProgress 
