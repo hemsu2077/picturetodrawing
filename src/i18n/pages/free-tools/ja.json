@@ -1,28 +1,27 @@
 {
   "meta": {
-    "title": "Free Photo Editing Tools - Picture to Drawing",
-    "description": "Free photo to sketch converter and image editing tools. No login, no signup required. Transform your photos with our completely free online tools from Picture to Drawing."
+    "title": "無料写真編集ツール - Picture to Drawing",
+    "description": "ログイン不要の無料ツールで写真をスケッチに変換。完全無料のオンライン写真ツールをお試しください。"
   },
   "breadcrumb": {
-    "home": "Home",
-    "free_tools": "Free Tools"
+    "home": "ホーム",
+    "free_tools": "無料ツール"
   },
   "hero": {
-    "title": "Free Photo Tools",
-    "description": "Transform your photos with our free online tools. No login required, completely free to use."
+    "title": "無料オンライン写真ツール",
+    "description": "ログイン不要・完全無料。写真を簡単操作でスケッチに変換できます。"
   },
   "tools": [
     {
-      "title": "Photo to Sketch",
+      "title": "写真をスケッチに",
       "url": "/free-tools/photo-to-sketch",
-      "thumbnail": "/imgs/bg/bg.webp"
+      "thumbnail": "https://files.picturetodrawing.com/free-tools/photo-to-sketch/photo-to-sketch-sample-hero.webp"
     }
-  ]
-  ,
+  ],
   "structured_data": {
-    "name": "Free Photo Tools - Picture to Drawing",
-    "description": "Free photo to sketch converter and image editing tools. No login required.",
-    "breadcrumb_home": "Home",
-    "breadcrumb_free_tools": "Free Tools"
+    "name": "無料オンライン写真ツール - Picture to Drawing",
+    "description": "ログイン不要の無料写真ツール。写真をスケッチに変換できます。",
+    "breadcrumb_home": "ホーム",
+    "breadcrumb_free_tools": "無料ツール"
   }
 }

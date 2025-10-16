@@ -1,61 +1,61 @@
 {
   "meta": {
-    "title": "Free Photo to Sketch Converter - No Login Required",
-    "description": "Transform photos into beautiful pencil sketches. 100% free photo to sketch converter with no login, no signup, no credit card required. Completely free forever"
+    "title": "無料 写真をスケッチに変換 — ログイン不要",
+    "description": "写真を美しい鉛筆スケッチにオンライン変換。登録・ログイン・クレジットカード不要。完全無料でずっと使える写真スケッチ変換ツール。"
   },
   "breadcrumb": {
-    "home": "Home",
-    "free_tools": "Free Tools",
-    "current": "Photo to Sketch"
+    "home": "ホーム",
+    "free_tools": "無料ツール",
+    "current": "写真をスケッチに"
   },
   "hero": {
-    "title": "Free Photo to Sketch Converter",
-    "description": "Turn any photo into a beautiful pencil sketch. Just upload your image and download your sketch.",
+    "title": "無料 写真をスケッチに変換",
+    "description": "画像をアップロードするだけで、味わいのある鉛筆スケッチに。ダウンロードもワンクリック。",
     "features": [
       {
         "icon": "Zap",
-        "text": "100% Free Forever"
+        "text": "ずっと無料"
       },
       {
         "icon": "Shield",
-        "text": "No Login Required"
+        "text": "ログイン不要"
       },
       {
         "icon": "Database",
-        "text": "Fully Private"
+        "text": "完全プライベート"
       }
     ]
   },
   "showcase": {
-    "title": "Photo to Sketch Examples",
-    "description": "Discover the quality of our free pencil sketch converter with real examples",
+    "title": "写真をスケッチに — 変換例",
+    "description": "無料の鉛筆スケッチ変換の仕上がりを、実際の作例でチェック",
     "items": [
       {
-        "title": "Portrait to Pencil Sketch",
-        "description": "Turn portrait photos into elegant pencil sketches with fine details",
+        "title": "ポートレート → 鉛筆スケッチ",
+        "description": "顔の輪郭や髪の質感まで繊細に再現",
         "image": {
           "src": "https://files.picturetodrawing.com/free-tools/photo-to-sketch/photo-to-sketch-sample-portrait.webp",
-          "alt": "Free Photo to Sketch - Portrait Example"
+          "alt": "無料 写真をスケッチに — ポートレート例"
         },
         "url": "#",
         "target": "_self"
       },
       {
-        "title": "Pet Photo Sketch",
-        "description": "Convert pet photos into charming sketch drawings",
+        "title": "ペット写真のスケッチ化",
+        "description": "毛並みや瞳の輝きをやさしく表現",
         "image": {
           "src": "https://files.picturetodrawing.com/free-tools/photo-to-sketch/photo-to-sketch-sample-pet.webp",
-          "alt": "Free Photo to Sketch - Pet Drawing"
+          "alt": "無料 写真をスケッチに — ペット"
         },
         "url": "#",
         "target": "_self"
       },
       {
-        "title": "Landscape Sketch Art",
-        "description": "Create artistic landscape sketches from your travel photos",
+        "title": "風景写真のスケッチアート",
+        "description": "旅行写真を味わいのある線画に",
         "image": {
           "src": "https://files.picturetodrawing.com/free-tools/photo-to-sketch/photo-to-sketch-sample-landscape.webp",
-          "alt": "Free Photo to Sketch - Landscape Art"
+          "alt": "無料 写真をスケッチに — 風景"
         },
         "url": "#",
         "target": "_self"
@@ -63,75 +63,75 @@
     ]
   },
   "upgrade_card": {
-    "title": "Professional Pencil Sketch and More Artistic Styles",
-    "description": "Upgrade to our AI-powered drawing generator for studio-quality results. Access 30+ professional art styles including realistic pencil sketch, watercolor, oil painting, and more. Cloud processing with saved history.",
+    "title": "プロ品質の鉛筆スケッチと多彩なアートスタイル",
+    "description": "クラウドAI版なら、スタジオ品質の仕上がりと保存機能。鉛筆スケッチ、水彩、油絵など30以上のスタイルに対応。履歴保存や高速処理にも対応しています。",
     "image": "https://files.picturetodrawing.com/sample/benifit-style.webp",
     "features": [
       {
         "icon": "Palette",
-        "text": "30+ Art Styles"
+        "text": "30+ アートスタイル"
       },
       {
         "icon": "Zap",
-        "text": "Faster Processing"
+        "text": "高速処理"
       },
       {
         "icon": "History",
-        "text": "Save Your Work"
+        "text": "履歴を保存"
       },
       {
         "icon": "Sparkles",
-        "text": "Daily Free Trial"
+        "text": "毎日無料トライアル"
       }
     ],
-    "cta_text": "Try AI Picture to Drawing",
+    "cta_text": "AI写真イラスト化を試す",
     "cta_link": "/"
   },
   "faq": {
     "name": "faq",
     "label": "FAQ",
-    "title": "Frequently Asked Questions - Photo to Sketch Converter",
-    "description": "Common questions about our free photo to sketch tool",
+    "title": "よくある質問 — 写真をスケッチに変換",
+    "description": "無料スケッチ変換ツールに関するご質問",
     "items": [
       {
-        "title": "Is this photo to sketch converter completely free?",
-        "description": "Yes, this free photo to sketch tool is 100% free with no hidden costs, subscriptions, or premium features. You can convert unlimited photos to pencil sketches without any charges. Unlike our main AI drawing generator which offers premium features, this browser-based sketch converter is designed to be completely free for everyone forever."
+        "title": "本当に無料で使えますか？",
+        "description": "はい。隠れた料金やプレミアム機能はありません。写真スケッチ変換を回数制限なく無料でご利用いただけます。メインのAI写真イラスト化（有料機能あり）とは別に、こちらのブラウザ版スケッチ変換は誰でもずっと無料で使えるように設計されています。"
       },
       {
-        "title": "Do I need to create an account or login to use this tool?",
-        "description": "No account or login is required. This free photo to sketch converter works entirely in your browser without any registration. Simply open the page, upload your photo, and convert it to a sketch instantly. No email, no signup, no personal information needed - just pure functionality."
+        "title": "アカウント作成やログインは必要ですか？",
+        "description": "不要です。本ツールはブラウザ内で完結し、登録なしで使えます。ページを開いて写真をアップロードするだけで、すぐにスケッチ化できます。メール入力や個人情報の登録も不要です。"
       },
       {
-        "title": "Why can't I find my generated sketches in my account history?",
-        "description": "Since this free tool processes everything locally in your browser without requiring login, generated sketches are not stored in any account history or database. Your converted images exist only on your device. Please download your pencil sketch immediately after generation. If you need to save your work history, consider using our main AI picture to drawing generator which offers cloud storage and account features."
+        "title": "生成したスケッチがアカウント履歴に表示されません",
+        "description": "ログイン不要・ローカル処理のため、生成結果はサーバーやアカウントに保存されません。変換後は端末内にのみ存在します。必要な場合はすぐにダウンロードしてください。作業履歴の保存が必要なら、クラウド版のAI写真イラスト化（履歴保存対応）をご検討ください。"
       },
       {
-        "title": "How long does it take to convert a photo to sketch?",
-        "description": "The photo to sketch conversion typically takes 50-60 seconds for standard images. Processing time may extend to 70-90 seconds for larger photos or high-resolution images, as all computation happens in your browser. The speed depends on your device's processing power and the image complexity. For faster cloud-based processing (20-30 seconds), try our premium AI drawing generator."
+        "title": "変換にはどのくらい時間がかかりますか？",
+        "description": "標準的な画像で50〜60秒ほどです。高解像度や大きな写真では70〜90秒かかることがあります。処理はすべてブラウザ内で行われるため、端末性能や画像の複雑さによって速度が変わります。より高速（20〜30秒）の処理をご希望なら、クラウド版AIをご利用ください。"
       },
       {
-        "title": "Why doesn't my sketch look good? How can I improve results?",
-        "description": "The quality of your photo to sketch conversion depends heavily on your original image. For best results, use high-resolution photos with clear subjects and good lighting. Blurry or low-quality images will produce less detailed sketches. If you're not satisfied with the free tool's output, try our AI picture to drawing generator on the homepage - it offers advanced algorithms, multiple pencil sketch styles, and professional-quality results. You can try it free once daily without login."
+        "title": "仕上がりがいまいちです。改善するには？",
+        "description": "元画像の質が結果に大きく影響します。被写体がはっきり写った高解像度の写真、明るくコントラストのある写真をお試しください。無料ツールで満足できない場合は、ホームのAI写真イラスト化をお試しください。複数の鉛筆スケッチスタイルや高度なアルゴリズムで、よりプロ品質の仕上がりが期待できます（毎日1回無料トライアル）。"
       },
       {
-        "title": "What types of photos work best for sketch conversion?",
-        "description": "Photos with clear subjects and strong contrast produce the best pencil sketch results. Portraits with good lighting, pet photos with defined features, and landscapes with distinct elements work exceptionally well. The free photo to sketch tool automatically detects edges and converts them into sketch lines, so images with well-defined boundaries yield cleaner, more artistic results."
+        "title": "どんな写真がスケッチ化に向いていますか？",
+        "description": "被写体が明確でコントラストが強い写真が最適です。光の状態が良いポートレート、輪郭がはっきりしたペット写真、要素が明瞭な風景写真は特にきれいに仕上がります。エッジ検出により輪郭線を生成するため、境界が明瞭な画像ほどクリーンで印象的なスケッチになります。"
       },
       {
-        "title": "Is my photo data private and secure?",
-        "description": "Absolutely. This free tool processes your photos entirely in your browser using client-side technology. Your images never leave your device or get uploaded to any server. No data is collected, stored, or transmitted. This makes our photo to sketch converter one of the most private options available - perfect for sensitive or personal photos you want to convert to sketches."
+        "title": "プライバシーは守られますか？",
+        "description": "はい。写真は端末内で処理され、サーバーにアップロードされません。データの収集・保存・送信は行われず、個人の写真を安全にスケッチ化できます。"
       },
       {
-        "title": "Can I use the generated sketches commercially?",
-        "description": "Yes, you have full rights to use sketches created with this free photo to sketch converter for any purpose, including commercial projects. Whether for business marketing, product design, social media content, or personal artwork, the generated pencil sketches are yours to use freely without attribution or licensing restrictions."
+        "title": "商用利用は可能ですか？",
+        "description": "可能です。本ツールで生成したスケッチは、SNSや印刷物、製品デザイン、商用プロジェクトなど、クレジット表記なしで自由にお使いいただけます。"
       }
     ]
   },
   "structured_data": {
-    "name": "Free Photo to Sketch Converter",
-    "description": "Transform photos into beautiful pencil sketches instantly. 100% free photo to sketch converter with no login required.",
-    "breadcrumb_home": "Home",
-    "breadcrumb_free_tools": "Free Tools",
-    "breadcrumb_current": "Photo to Sketch"
+    "name": "無料 写真をスケッチに変換",
+    "description": "写真をすぐに鉛筆スケッチへ。ログイン不要・完全無料の写真スケッチ変換ツール。",
+    "breadcrumb_home": "ホーム",
+    "breadcrumb_free_tools": "無料ツール",
+    "breadcrumb_current": "写真をスケッチに"
   }
 }

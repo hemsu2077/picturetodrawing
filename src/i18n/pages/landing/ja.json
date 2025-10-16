@@ -22,10 +22,21 @@
               "icon": "RiColorFilterAiLine"
             },
             {
-              "title": " 写真をカートゥーンに",
+              "title": "写真をカートゥーンに",
               "url": "/photo-to-cartoon",
               "target": "_self",
               "icon": "RiBearSmileLine"
+            }
+          ]
+        },
+        {
+          "title": "無料ツール",
+          "children": [
+            {
+              "title": "写真をスケッチに",
+              "url": "/free-tools/photo-to-sketch",
+              "target": "_self",
+              "icon": "RiColorFilterAiLine"
             }
           ]
         },
@@ -486,6 +497,16 @@
             {
               "title": "スタイルギャラリー",
               "url": "/drawing-styles",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "無料ツール",
+          "children": [
+            {
+              "title": "写真をスケッチに",
+              "url": "/free-tools/photo-to-sketch",
               "target": "_self"
             }
           ]

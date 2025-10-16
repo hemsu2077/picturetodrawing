@@ -22,10 +22,21 @@
               "icon": "RiColorFilterAiLine"
             },
             {
-              "title": "사진을 만화로 바꿔주는",
+              "title": "사진을 만화로",
               "url": "/photo-to-cartoon",
               "target": "_self",
               "icon": "RiBearSmileLine"
+            }
+          ]
+        },
+        {
+          "title": "무료 도구",
+          "children": [
+            {
+              "title": "사진을 스케치로",
+              "url": "/free-tools/photo-to-sketch",
+              "target": "_self",
+              "icon": "RiColorFilterAiLine"
             }
           ]
         },
@@ -479,13 +490,23 @@
               "target": "_self"
             },
             {
-              "title": "사진을 만화로 바꿔주는",
+              "title": "사진을 만화로",
               "url": "/photo-to-cartoon",
               "target": "_self"
             },
             {
               "title": "스타일 갤러리",
               "url": "/drawing-styles",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "무료 도구",
+          "children": [
+            {
+              "title": "사진을 스케치로",
+              "url": "/free-tools/photo-to-sketch",
               "target": "_self"
             }
           ]

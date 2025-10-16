@@ -1,61 +1,52 @@
 {
   "meta": {
-    "title": "Free Photo to Sketch Converter - No Login Required",
-    "description": "Transform photos into beautiful pencil sketches. 100% free photo to sketch converter with no login, no signup, no credit card required. Completely free forever"
+    "title": "Convertidor de foto a boceto gratis — sin registro",
+    "description": "Convierte tus fotos en bocetos a lápiz. 100 % gratis, sin registro ni tarjeta. Siempre gratuito."
   },
   "breadcrumb": {
-    "home": "Home",
-    "free_tools": "Free Tools",
-    "current": "Photo to Sketch"
+    "home": "Inicio",
+    "free_tools": "Herramientas gratuitas",
+    "current": "Foto a boceto"
   },
   "hero": {
-    "title": "Free Photo to Sketch Converter",
-    "description": "Turn any photo into a beautiful pencil sketch. Just upload your image and download your sketch.",
+    "title": "Gratis: de foto a boceto",
+    "description": "Sube tu imagen y descárgala como boceto a lápiz — sin registrarte.",
     "features": [
-      {
-        "icon": "Zap",
-        "text": "100% Free Forever"
-      },
-      {
-        "icon": "Shield",
-        "text": "No Login Required"
-      },
-      {
-        "icon": "Database",
-        "text": "Fully Private"
-      }
+      { "icon": "Zap", "text": "Siempre gratis" },
+      { "icon": "Shield", "text": "Sin registro" },
+      { "icon": "Database", "text": "100 % privado" }
     ]
   },
   "showcase": {
-    "title": "Photo to Sketch Examples",
-    "description": "Discover the quality of our free pencil sketch converter with real examples",
+    "title": "Ejemplos: foto a boceto",
+    "description": "Comprueba la calidad real de nuestro convertidor gratuito con estas muestras",
     "items": [
       {
-        "title": "Portrait to Pencil Sketch",
-        "description": "Turn portrait photos into elegant pencil sketches with fine details",
+        "title": "Retrato → boceto a lápiz",
+        "description": "Contornos finos y textura natural de piel y cabello",
         "image": {
           "src": "https://files.picturetodrawing.com/free-tools/photo-to-sketch/photo-to-sketch-sample-portrait.webp",
-          "alt": "Free Photo to Sketch - Portrait Example"
+          "alt": "Foto a boceto gratis — Ejemplo de retrato"
         },
         "url": "#",
         "target": "_self"
       },
       {
-        "title": "Pet Photo Sketch",
-        "description": "Convert pet photos into charming sketch drawings",
+        "title": "Boceto de tu mascota",
+        "description": "Pelaje suave y mirada con vida",
         "image": {
           "src": "https://files.picturetodrawing.com/free-tools/photo-to-sketch/photo-to-sketch-sample-pet.webp",
-          "alt": "Free Photo to Sketch - Pet Drawing"
+          "alt": "Foto a boceto gratis — Mascota"
         },
         "url": "#",
         "target": "_self"
       },
       {
-        "title": "Landscape Sketch Art",
-        "description": "Create artistic landscape sketches from your travel photos",
+        "title": "Paisaje en arte de boceto",
+        "description": "Da un toque gráfico a tus fotos de viaje",
         "image": {
           "src": "https://files.picturetodrawing.com/free-tools/photo-to-sketch/photo-to-sketch-sample-landscape.webp",
-          "alt": "Free Photo to Sketch - Landscape Art"
+          "alt": "Foto a boceto gratis — Paisaje"
         },
         "url": "#",
         "target": "_self"
@@ -63,75 +54,63 @@
     ]
   },
   "upgrade_card": {
-    "title": "Professional Pencil Sketch and More Artistic Styles",
-    "description": "Upgrade to our AI-powered drawing generator for studio-quality results. Access 30+ professional art styles including realistic pencil sketch, watercolor, oil painting, and more. Cloud processing with saved history.",
+    "title": "Calidad profesional y más estilos",
+    "description": "La versión IA en la nube ofrece calidad de estudio, historial guardado y 30+ estilos (boceto, acuarela, óleo, etc.). Proceso rápido con guardado en la nube.",
     "image": "https://files.picturetodrawing.com/sample/benifit-style.webp",
     "features": [
-      {
-        "icon": "Palette",
-        "text": "30+ Art Styles"
-      },
-      {
-        "icon": "Zap",
-        "text": "Faster Processing"
-      },
-      {
-        "icon": "History",
-        "text": "Save Your Work"
-      },
-      {
-        "icon": "Sparkles",
-        "text": "Daily Free Trial"
-      }
+      { "icon": "Palette", "text": "30+ estilos" },
+      { "icon": "Zap", "text": "Procesado más rápido" },
+      { "icon": "History", "text": "Historial guardado" },
+      { "icon": "Sparkles", "text": "Prueba gratuita diaria" }
     ],
-    "cta_text": "Try AI Picture to Drawing",
+    "cta_text": "Probar IA foto en dibujo",
     "cta_link": "/"
   },
   "faq": {
     "name": "faq",
     "label": "FAQ",
-    "title": "Frequently Asked Questions - Photo to Sketch Converter",
-    "description": "Common questions about our free photo to sketch tool",
+    "title": "Preguntas frecuentes — foto a boceto",
+    "description": "Dudas habituales sobre la herramienta gratuita de foto a boceto",
     "items": [
       {
-        "title": "Is this photo to sketch converter completely free?",
-        "description": "Yes, this free photo to sketch tool is 100% free with no hidden costs, subscriptions, or premium features. You can convert unlimited photos to pencil sketches without any charges. Unlike our main AI drawing generator which offers premium features, this browser-based sketch converter is designed to be completely free for everyone forever."
+        "title": "¿De verdad es gratis?",
+        "description": "Sí. Sin costes ocultos ni funciones premium bloqueadas. Convierte todas las fotos que quieras en bocetos a lápiz. A diferencia del servicio principal ‘foto en dibujo’ con extras de pago, este convertidor en el navegador es gratis para siempre."
       },
       {
-        "title": "Do I need to create an account or login to use this tool?",
-        "description": "No account or login is required. This free photo to sketch converter works entirely in your browser without any registration. Simply open the page, upload your photo, and convert it to a sketch instantly. No email, no signup, no personal information needed - just pure functionality."
+        "title": "¿Necesito crear una cuenta?",
+        "description": "No. Todo se hace en el navegador, sin registro. Abre la página, sube tu foto y obtén el boceto al instante. No pedimos correo ni datos personales."
       },
       {
-        "title": "Why can't I find my generated sketches in my account history?",
-        "description": "Since this free tool processes everything locally in your browser without requiring login, generated sketches are not stored in any account history or database. Your converted images exist only on your device. Please download your pencil sketch immediately after generation. If you need to save your work history, consider using our main AI picture to drawing generator which offers cloud storage and account features."
+        "title": "¿Por qué mis bocetos no aparecen en mi cuenta?",
+        "description": "Como no hay inicio de sesión, el procesamiento es local y no se guarda nada en servidores ni en tu historial. El resultado solo existe en tu dispositivo: descárgalo al momento. Si quieres guardar tus trabajos, usa la versión en la nube de ‘foto en dibujo’."
       },
       {
-        "title": "How long does it take to convert a photo to sketch?",
-        "description": "The photo to sketch conversion typically takes 50-60 seconds for standard images. Processing time may extend to 70-90 seconds for larger photos or high-resolution images, as all computation happens in your browser. The speed depends on your device's processing power and the image complexity. For faster cloud-based processing (20-30 seconds), try our premium AI drawing generator."
+        "title": "¿Cuánto tarda la conversión?",
+        "description": "Normalmente 50–60 s por imagen estándar, 70–90 s en fotos grandes o muy detalladas. Todo ocurre en el navegador, por lo que depende de tu dispositivo y de la complejidad de la imagen. Para 20–30 s, prueba la versión en la nube."
       },
       {
-        "title": "Why doesn't my sketch look good? How can I improve results?",
-        "description": "The quality of your photo to sketch conversion depends heavily on your original image. For best results, use high-resolution photos with clear subjects and good lighting. Blurry or low-quality images will produce less detailed sketches. If you're not satisfied with the free tool's output, try our AI picture to drawing generator on the homepage - it offers advanced algorithms, multiple pencil sketch styles, and professional-quality results. You can try it free once daily without login."
+        "title": "El resultado no me convence. ¿Cómo mejoro?",
+        "description": "La calidad depende mucho de la foto original. Usa imágenes nítidas, bien iluminadas y con un sujeto claro. Las fotos borrosas o de baja calidad pierden detalle. Para un acabado más pro, prueba la versión IA con varios estilos de boceto (una prueba gratis diaria)."
       },
       {
-        "title": "What types of photos work best for sketch conversion?",
-        "description": "Photos with clear subjects and strong contrast produce the best pencil sketch results. Portraits with good lighting, pet photos with defined features, and landscapes with distinct elements work exceptionally well. The free photo to sketch tool automatically detects edges and converts them into sketch lines, so images with well-defined boundaries yield cleaner, more artistic results."
+        "title": "¿Qué fotos funcionan mejor?",
+        "description": "Suelen ir mejor los sujetos bien definidos y con buen contraste: retratos con buena luz, mascotas con contornos claros y paisajes con formas marcadas. El sistema detecta bordes y genera trazos: cuanto más clara la separación, más limpio el boceto."
       },
       {
-        "title": "Is my photo data private and secure?",
-        "description": "Absolutely. This free tool processes your photos entirely in your browser using client-side technology. Your images never leave your device or get uploaded to any server. No data is collected, stored, or transmitted. This makes our photo to sketch converter one of the most private options available - perfect for sensitive or personal photos you want to convert to sketches."
+        "title": "¿Mis datos están seguros?",
+        "description": "Sí. Tus imágenes no salen de tu dispositivo: no hay subidas, ni almacenado, ni envíos. Ideal para material sensible."
       },
       {
-        "title": "Can I use the generated sketches commercially?",
-        "description": "Yes, you have full rights to use sketches created with this free photo to sketch converter for any purpose, including commercial projects. Whether for business marketing, product design, social media content, or personal artwork, the generated pencil sketches are yours to use freely without attribution or licensing restrictions."
+        "title": "¿Puedo usar los bocetos comercialmente?",
+        "description": "Sí. Puedes usarlos libremente — en redes, impresos o proyectos comerciales, sin necesidad de atribución."
       }
     ]
   },
   "structured_data": {
-    "name": "Free Photo to Sketch Converter",
-    "description": "Transform photos into beautiful pencil sketches instantly. 100% free photo to sketch converter with no login required.",
-    "breadcrumb_home": "Home",
-    "breadcrumb_free_tools": "Free Tools",
-    "breadcrumb_current": "Photo to Sketch"
+    "name": "Convertidor de foto a boceto gratis",
+    "description": "Convierte fotos en bocetos a lápiz al instante, sin registro.",
+    "breadcrumb_home": "Inicio",
+    "breadcrumb_free_tools": "Herramientas gratuitas",
+    "breadcrumb_current": "Foto a boceto"
   }
 }

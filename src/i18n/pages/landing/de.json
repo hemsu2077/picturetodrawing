@@ -30,6 +30,17 @@
           ]
         },
         {
+          "title": "Kostenlose Tools",
+          "children": [
+            {
+              "title": "Foto in Skizze",
+              "url": "/free-tools/photo-to-sketch",
+              "target": "_self",
+              "icon": "RiColorFilterAiLine"
+            }
+          ]
+        },
+        {
           "title": "Preise",
           "url": "/pricing",
           "icon": ""
@@ -486,6 +497,16 @@
             {
               "title": "Zeichenstil-Galerie",
               "url": "/drawing-styles",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Kostenlose Tools",
+          "children": [
+            {
+              "title": "Foto in Skizze",
+              "url": "/free-tools/photo-to-sketch",
               "target": "_self"
             }
           ]

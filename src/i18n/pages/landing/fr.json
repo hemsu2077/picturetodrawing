@@ -30,6 +30,17 @@
           ]
         },
         {
+          "title": "Outils gratuits",
+          "children": [
+            {
+              "title": "Photo en croquis",
+              "url": "/free-tools/photo-to-sketch",
+              "target": "_self",
+              "icon": "RiColorFilterAiLine"
+            }
+          ]
+        },
+        {
           "title": "Tarifs",
           "url": "/pricing",
           "icon": ""
@@ -486,6 +497,16 @@
             {
               "title": "Galerie de Styles",
               "url": "/drawing-styles",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Outils gratuits",
+          "children": [
+            {
+              "title": "Photo en croquis",
+              "url": "/free-tools/photo-to-sketch",
               "target": "_self"
             }
           ]

@@ -324,7 +324,19 @@
     "sign_in_button": "Iniciar sesión"
   },
   "free_line_art": {
-    "upgrade_hint": "¿Líneas más nítidas y más estilos?",
-    "upgrade_button": "Probar AI Studio"
+    "upgrade_hint": "¿El resultado no te convence?",
+    "upgrade_button": "Probar dibujo con IA",
+    "upload_title": "Subir foto",
+    "upload_hint": "Haz clic para elegir o arrastra y suelta",
+    "sample_hint": "O prueba con imágenes de ejemplo:",
+    "generate_button": "Convertir a boceto",
+    "generating": "Generando...",
+    "processing_message": "Generando tu imagen...",
+    "processing_failed": "Generación fallida",
+    "photo_to_sketch_result": "Foto a boceto — Resultado",
+    "preview": "Vista previa",
+    "sample_alt": "Ejemplo foto a boceto {index}",
+    "uploaded_preview_alt": "Vista previa de la imagen subida",
+    "image_processing_failed": "Error al procesar la imagen. Prueba con otra (JPEG/PNG/WebP/HEIC)."
   }
 }

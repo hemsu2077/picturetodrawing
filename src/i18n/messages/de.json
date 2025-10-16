@@ -325,7 +325,19 @@
     "sign_in_button": "Anmelden"
   },
   "free_line_art": {
-    "upgrade_hint": "Schärfere Linien & mehr Stile?",
-    "upgrade_button": "AI Studio testen"
+    "upgrade_hint": "Nicht ganz zufrieden mit dem Ergebnis?",
+    "upgrade_button": "KI‑Zeichnung testen",
+    "upload_title": "Foto hochladen",
+    "upload_hint": "Zum Auswählen klicken oder per Drag & Drop",
+    "sample_hint": "Oder mit Beispielbildern testen:",
+    "generate_button": "In Skizze umwandeln",
+    "generating": "Wird generiert...",
+    "processing_message": "Bild wird erstellt...",
+    "processing_failed": "Erstellung fehlgeschlagen",
+    "photo_to_sketch_result": "Foto in Skizze – Ergebnis",
+    "preview": "Vorschau",
+    "sample_alt": "Foto in Skizze Beispiel {index}",
+    "uploaded_preview_alt": "Vorschau des hochgeladenen Bildes",
+    "image_processing_failed": "Bildverarbeitung fehlgeschlagen. Bitte ein anderes Bild versuchen (JPEG/PNG/WebP/HEIC)."
   }
 }

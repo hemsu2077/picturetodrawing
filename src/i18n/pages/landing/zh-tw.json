@@ -501,6 +501,16 @@
           ]
         },
         {
+          "title": "免費工具",
+          "children": [
+            {
+              "title": "照片轉素描",
+              "url": "/free-tools/photo-to-sketch",
+              "target": "_self"
+            }
+          ]
+        },
+        {
           "title": "Friends",
           "children": [
             {

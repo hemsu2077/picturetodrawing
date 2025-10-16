@@ -1,61 +1,52 @@
 {
   "meta": {
-    "title": "Free Photo to Sketch Converter - No Login Required",
-    "description": "Transform photos into beautiful pencil sketches. 100% free photo to sketch converter with no login, no signup, no credit card required. Completely free forever"
+    "title": "Kostenloser Foto‑zu‑Skizze‑Konverter – ohne Anmeldung",
+    "description": "Verwandeln Sie Fotos in stimmungsvolle Bleistiftskizzen. 100% kostenlos – ohne Anmeldung, ohne Kreditkarte. Dauerhaft kostenlos nutzbar."
   },
   "breadcrumb": {
-    "home": "Home",
-    "free_tools": "Free Tools",
-    "current": "Photo to Sketch"
+    "home": "Startseite",
+    "free_tools": "Kostenlose Tools",
+    "current": "Foto in Skizze"
   },
   "hero": {
-    "title": "Free Photo to Sketch Converter",
-    "description": "Turn any photo into a beautiful pencil sketch. Just upload your image and download your sketch.",
+    "title": "Kostenlos: Foto in Skizze umwandeln",
+    "description": "Bild hochladen, als Bleistiftskizze herunterladen – ganz ohne Anmeldung.",
     "features": [
-      {
-        "icon": "Zap",
-        "text": "100% Free Forever"
-      },
-      {
-        "icon": "Shield",
-        "text": "No Login Required"
-      },
-      {
-        "icon": "Database",
-        "text": "Fully Private"
-      }
+      { "icon": "Zap", "text": "Für immer kostenlos" },
+      { "icon": "Shield", "text": "Keine Anmeldung nötig" },
+      { "icon": "Database", "text": "100% privat" }
     ]
   },
   "showcase": {
-    "title": "Photo to Sketch Examples",
-    "description": "Discover the quality of our free pencil sketch converter with real examples",
+    "title": "Beispiele: Foto in Skizze",
+    "description": "Sehen Sie an realen Beispielen, wie gut der kostenlose Konverter arbeitet",
     "items": [
       {
-        "title": "Portrait to Pencil Sketch",
-        "description": "Turn portrait photos into elegant pencil sketches with fine details",
+        "title": "Porträt → Bleistiftskizze",
+        "description": "Feine Konturen, natürliche Haar‑ und Hautstruktur",
         "image": {
           "src": "https://files.picturetodrawing.com/free-tools/photo-to-sketch/photo-to-sketch-sample-portrait.webp",
-          "alt": "Free Photo to Sketch - Portrait Example"
+          "alt": "Kostenlos Foto in Skizze – Porträt Beispiel"
         },
         "url": "#",
         "target": "_self"
       },
       {
-        "title": "Pet Photo Sketch",
-        "description": "Convert pet photos into charming sketch drawings",
+        "title": "Haustierfoto als Skizze",
+        "description": "Weiche Fellstruktur und lebendige Augen",
         "image": {
           "src": "https://files.picturetodrawing.com/free-tools/photo-to-sketch/photo-to-sketch-sample-pet.webp",
-          "alt": "Free Photo to Sketch - Pet Drawing"
+          "alt": "Kostenlos Foto in Skizze – Haustier"
         },
         "url": "#",
         "target": "_self"
       },
       {
-        "title": "Landscape Sketch Art",
-        "description": "Create artistic landscape sketches from your travel photos",
+        "title": "Landschaft als Skizzenkunst",
+        "description": "Reisefotos mit künstlerischem Liniencharakter",
         "image": {
           "src": "https://files.picturetodrawing.com/free-tools/photo-to-sketch/photo-to-sketch-sample-landscape.webp",
-          "alt": "Free Photo to Sketch - Landscape Art"
+          "alt": "Kostenlos Foto in Skizze – Landschaft"
         },
         "url": "#",
         "target": "_self"
@@ -63,75 +54,63 @@
     ]
   },
   "upgrade_card": {
-    "title": "Professional Pencil Sketch and More Artistic Styles",
-    "description": "Upgrade to our AI-powered drawing generator for studio-quality results. Access 30+ professional art styles including realistic pencil sketch, watercolor, oil painting, and more. Cloud processing with saved history.",
+    "title": "Pro‑Qualität & mehr Zeichenstile",
+    "description": "Mit der KI‑Studio‑Version erhalten Sie Studioqualität, Verlaufsspeicherung und 30+ Stile wie Bleistiftskizze, Aquarell oder Ölmalerei – inkl. Cloud‑Verarbeitung.",
     "image": "https://files.picturetodrawing.com/sample/benifit-style.webp",
     "features": [
-      {
-        "icon": "Palette",
-        "text": "30+ Art Styles"
-      },
-      {
-        "icon": "Zap",
-        "text": "Faster Processing"
-      },
-      {
-        "icon": "History",
-        "text": "Save Your Work"
-      },
-      {
-        "icon": "Sparkles",
-        "text": "Daily Free Trial"
-      }
+      { "icon": "Palette", "text": "30+ Zeichenstile" },
+      { "icon": "Zap", "text": "Schnellere Verarbeitung" },
+      { "icon": "History", "text": "Arbeiten speichern" },
+      { "icon": "Sparkles", "text": "Täglicher Gratis‑Test" }
     ],
-    "cta_text": "Try AI Picture to Drawing",
+    "cta_text": "KI Bild zu Zeichnung testen",
     "cta_link": "/"
   },
   "faq": {
     "name": "faq",
     "label": "FAQ",
-    "title": "Frequently Asked Questions - Photo to Sketch Converter",
-    "description": "Common questions about our free photo to sketch tool",
+    "title": "Häufige Fragen – Foto in Skizze",
+    "description": "Antworten zum kostenlosen Foto‑zu‑Skizze‑Tool",
     "items": [
       {
-        "title": "Is this photo to sketch converter completely free?",
-        "description": "Yes, this free photo to sketch tool is 100% free with no hidden costs, subscriptions, or premium features. You can convert unlimited photos to pencil sketches without any charges. Unlike our main AI drawing generator which offers premium features, this browser-based sketch converter is designed to be completely free for everyone forever."
+        "title": "Ist das wirklich kostenlos?",
+        "description": "Ja. Keine versteckten Kosten oder Premium‑Sperren. Sie können beliebig viele Fotos in Bleistiftskizzen umwandeln. Anders als der Hauptdienst ‚Bild zu Zeichnung‘ mit Premium‑Features ist dieser Browser‑Konverter dauerhaft kostenlos."
       },
       {
-        "title": "Do I need to create an account or login to use this tool?",
-        "description": "No account or login is required. This free photo to sketch converter works entirely in your browser without any registration. Simply open the page, upload your photo, and convert it to a sketch instantly. No email, no signup, no personal information needed - just pure functionality."
+        "title": "Brauche ich ein Konto oder Login?",
+        "description": "Nein. Alles läuft im Browser – ohne Registrierung. Seite öffnen, Foto hochladen und sofort in eine Skizze umwandeln. Keine E‑Mail, keine Daten – einfach nutzen."
       },
       {
-        "title": "Why can't I find my generated sketches in my account history?",
-        "description": "Since this free tool processes everything locally in your browser without requiring login, generated sketches are not stored in any account history or database. Your converted images exist only on your device. Please download your pencil sketch immediately after generation. If you need to save your work history, consider using our main AI picture to drawing generator which offers cloud storage and account features."
+        "title": "Warum sehe ich meine Skizzen nicht im Konto?",
+        "description": "Weil ohne Login lokal verarbeitet wird, wird nichts im Konto oder auf Servern gespeichert. Ihre Skizzen existieren nur auf Ihrem Gerät – bitte direkt herunterladen. Wenn Sie eine Verlaufsfunktion möchten, nutzen Sie die Cloud‑Version ‚Bild zu Zeichnung‘."
       },
       {
-        "title": "How long does it take to convert a photo to sketch?",
-        "description": "The photo to sketch conversion typically takes 50-60 seconds for standard images. Processing time may extend to 70-90 seconds for larger photos or high-resolution images, as all computation happens in your browser. The speed depends on your device's processing power and the image complexity. For faster cloud-based processing (20-30 seconds), try our premium AI drawing generator."
+        "title": "Wie lange dauert die Umwandlung?",
+        "description": "In der Regel 50–60 Sekunden pro Standardbild, bei sehr großen oder hochauflösenden Fotos 70–90 Sekunden. Alles passiert im Browser, daher hängt die Dauer von Ihrem Gerät und der Bildkomplexität ab. Für 20–30 Sekunden nutzen Sie die Cloud‑Variante."
       },
       {
-        "title": "Why doesn't my sketch look good? How can I improve results?",
-        "description": "The quality of your photo to sketch conversion depends heavily on your original image. For best results, use high-resolution photos with clear subjects and good lighting. Blurry or low-quality images will produce less detailed sketches. If you're not satisfied with the free tool's output, try our AI picture to drawing generator on the homepage - it offers advanced algorithms, multiple pencil sketch styles, and professional-quality results. You can try it free once daily without login."
+        "title": "Meine Skizze sieht nicht gut aus – Tipps?",
+        "description": "Qualität hängt stark vom Ausgangsfoto ab. Wählen Sie scharfe, hochauflösende Bilder mit klaren Motiven und guter Beleuchtung. Unklare Fotos liefern weniger Details. Für noch bessere Ergebnisse testen Sie die KI‑Studio‑Version mit mehreren Skizzierstilen (täglich gratis ausprobieren)."
       },
       {
-        "title": "What types of photos work best for sketch conversion?",
-        "description": "Photos with clear subjects and strong contrast produce the best pencil sketch results. Portraits with good lighting, pet photos with defined features, and landscapes with distinct elements work exceptionally well. The free photo to sketch tool automatically detects edges and converts them into sketch lines, so images with well-defined boundaries yield cleaner, more artistic results."
+        "title": "Welche Fotos eignen sich am besten?",
+        "description": "Klare Motive und hoher Kontrast liefern die besten Skizzenergebnisse: gut beleuchtete Porträts, Haustierfotos mit deutlichen Konturen oder Landschaften mit klaren Formen. Das Tool erkennt Kanten und erzeugt daraus Linien – je klarer die Abgrenzung, desto sauberer die Skizze."
       },
       {
-        "title": "Is my photo data private and secure?",
-        "description": "Absolutely. This free tool processes your photos entirely in your browser using client-side technology. Your images never leave your device or get uploaded to any server. No data is collected, stored, or transmitted. This makes our photo to sketch converter one of the most private options available - perfect for sensitive or personal photos you want to convert to sketches."
+        "title": "Sind meine Daten sicher?",
+        "description": "Ja. Ihre Bilder verlassen Ihr Gerät nicht. Es gibt keinen Upload, keine Speicherung, keine Übertragung. Ideal für sensible Fotos."
       },
       {
-        "title": "Can I use the generated sketches commercially?",
-        "description": "Yes, you have full rights to use sketches created with this free photo to sketch converter for any purpose, including commercial projects. Whether for business marketing, product design, social media content, or personal artwork, the generated pencil sketches are yours to use freely without attribution or licensing restrictions."
+        "title": "Darf ich die Skizzen kommerziell nutzen?",
+        "description": "Ja. Sie dürfen die erzeugten Skizzen frei verwenden – privat wie geschäftlich, ohne Urheberhinweis."
       }
     ]
   },
   "structured_data": {
-    "name": "Free Photo to Sketch Converter",
-    "description": "Transform photos into beautiful pencil sketches instantly. 100% free photo to sketch converter with no login required.",
-    "breadcrumb_home": "Home",
-    "breadcrumb_free_tools": "Free Tools",
-    "breadcrumb_current": "Photo to Sketch"
+    "name": "Kostenloser Foto‑zu‑Skizze‑Konverter",
+    "description": "Fotos in Bleistiftskizzen verwandeln – sofort, ohne Anmeldung, dauerhaft kostenlos.",
+    "breadcrumb_home": "Startseite",
+    "breadcrumb_free_tools": "Kostenlose Tools",
+    "breadcrumb_current": "Foto in Skizze"
   }
 }

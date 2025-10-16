@@ -1,28 +1,27 @@
 {
   "meta": {
-    "title": "Free Photo Editing Tools - Picture to Drawing",
-    "description": "Free photo to sketch converter and image editing tools. No login, no signup required. Transform your photos with our completely free online tools from Picture to Drawing."
+    "title": "무료 사진 도구 - Picture to Drawing",
+    "description": "로그인 없이 사진을 스케치로 변환하는 무료 도구. Picture to Drawing의 완전 무료 온라인 사진 도구로 사진을 손쉽게 변신하세요."
   },
   "breadcrumb": {
-    "home": "Home",
-    "free_tools": "Free Tools"
+    "home": "홈",
+    "free_tools": "무료 도구"
   },
   "hero": {
-    "title": "Free Photo Tools",
-    "description": "Transform your photos with our free online tools. No login required, completely free to use."
+    "title": "무료 온라인 사진 도구",
+    "description": "로그인 불필요, 완전 무료. 사진을 간편하게 스케치로 변환하세요."
   },
   "tools": [
     {
-      "title": "Photo to Sketch",
+      "title": "사진을 스케치로",
       "url": "/free-tools/photo-to-sketch",
-      "thumbnail": "/imgs/bg/bg.webp"
+      "thumbnail": "https://files.picturetodrawing.com/free-tools/photo-to-sketch/photo-to-sketch-sample-hero.webp"
     }
-  ]
-  ,
+  ],
   "structured_data": {
-    "name": "Free Photo Tools - Picture to Drawing",
-    "description": "Free photo to sketch converter and image editing tools. No login required.",
-    "breadcrumb_home": "Home",
-    "breadcrumb_free_tools": "Free Tools"
+    "name": "무료 온라인 사진 도구 - Picture to Drawing",
+    "description": "로그인 불필요한 무료 사진 도구. 사진을 스케치로 변환할 수 있습니다.",
+    "breadcrumb_home": "홈",
+    "breadcrumb_free_tools": "무료 도구"
   }
 }

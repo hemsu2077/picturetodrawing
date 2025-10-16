@@ -326,7 +326,19 @@
     "sign_in_button": "サインイン"
   },
   "free_line_art": {
-    "upgrade_hint": "より鮮明な線とスタイルをお求めですか？",
-    "upgrade_button": "AI Studio を試す"
+    "upgrade_hint": "仕上がりに満足できませんか？",
+    "upgrade_button": "AIイラストを試す",
+    "upload_title": "写真をアップロード",
+    "upload_hint": "クリックして選択、またはドラッグ＆ドロップ",
+    "sample_hint": "サンプル写真で試す：",
+    "generate_button": "スケッチに変換",
+    "generating": "生成中...",
+    "processing_message": "画像を生成しています...",
+    "processing_failed": "生成に失敗しました",
+    "photo_to_sketch_result": "写真をスケッチに：結果",
+    "preview": "プレビュー",
+    "sample_alt": "写真をスケッチに サンプル {index}",
+    "uploaded_preview_alt": "アップロード画像のプレビュー",
+    "image_processing_failed": "画像の処理に失敗しました。別の画像（JPEG/PNG/WebP/HEIC）をお試しください。"
   }
 }

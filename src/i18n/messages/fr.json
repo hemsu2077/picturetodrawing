@@ -325,7 +325,19 @@
     "sign_in_button": "Se connecter"
   },
   "free_line_art": {
-    "upgrade_hint": "Des lignes plus nettes et plus de styles ?",
-    "upgrade_button": "Essayer AI Studio"
+    "upgrade_hint": "Pas satisfait(e) du résultat ?",
+    "upgrade_button": "Essayer l’IA de dessin",
+    "upload_title": "Importer une photo",
+    "upload_hint": "Cliquer pour parcourir ou glisser‑déposer",
+    "sample_hint": "Ou essayez avec des images d’exemple :",
+    "generate_button": "Convertir en croquis",
+    "generating": "Génération en cours...",
+    "processing_message": "Votre image est en cours de génération...",
+    "processing_failed": "Échec de la génération",
+    "photo_to_sketch_result": "Photo en croquis — Résultat",
+    "preview": "Aperçu",
+    "sample_alt": "Exemple photo en croquis {index}",
+    "uploaded_preview_alt": "Aperçu de l’image importée",
+    "image_processing_failed": "Échec du traitement de l’image. Essayez une autre image (JPEG/PNG/WebP/HEIC)."
   }
 }

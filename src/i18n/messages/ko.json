@@ -325,7 +325,19 @@
     "sign_in_button": "로그인"
   },
   "free_line_art": {
-    "upgrade_hint": "더 선명한 선과 더 많은 스타일을 원하시나요?",
-    "upgrade_button": "AI Studio 체험하기"
+    "upgrade_hint": "결과가 만족스럽지 않으신가요?",
+    "upgrade_button": "AI 그림 변환 체험",
+    "upload_title": "사진 업로드",
+    "upload_hint": "클릭해 선택하거나 드래그 앤 드롭",
+    "sample_hint": "또는 샘플 사진으로 체험:",
+    "generate_button": "스케치로 변환",
+    "generating": "생성 중...",
+    "processing_message": "이미지를 생성하는 중...",
+    "processing_failed": "생성 실패",
+    "photo_to_sketch_result": "사진을 스케치로 결과",
+    "preview": "미리보기",
+    "sample_alt": "사진을 스케치로 샘플 {index}",
+    "uploaded_preview_alt": "업로드한 이미지 미리보기",
+    "image_processing_failed": "이미지 처리에 실패했습니다. 다른 이미지(JPEG/PNG/WebP/HEIC)를 시도해 주세요."
   }
 }

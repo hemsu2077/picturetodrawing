@@ -30,6 +30,17 @@
           ]
         },
         {
+          "title": "Herramientas gratuitas",
+          "children": [
+            {
+              "title": "Foto a boceto",
+              "url": "/free-tools/photo-to-sketch",
+              "target": "_self",
+              "icon": "RiColorFilterAiLine"
+            }
+          ]
+        },
+        {
           "title": "Precios",
           "url": "/pricing",
           "icon": ""
@@ -486,6 +497,16 @@
             {
               "title": "Galería de Estilos",
               "url": "/drawing-styles",
+              "target": "_self"
+            }
+          ]
+        },
+        {
+          "title": "Herramientas gratuitas",
+          "children": [
+            {
+              "title": "Foto a boceto",
+              "url": "/free-tools/photo-to-sketch",
               "target": "_self"
             }
           ]
