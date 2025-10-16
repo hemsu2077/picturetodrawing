@@ -14,10 +14,16 @@ declare global {
   }
 }
 
-const ONNX_RUNTIME_URL =
-  "https://cdn.jsdelivr.net/npm/onnxruntime-web@1.10.0/dist/ort.min.js";
-const DEFAULT_MODEL_URL =
-  "https://huggingface.co/rocca/informative-drawings-line-art-onnx/resolve/main/model.onnx";
+const ONNX_RUNTIME_URL = process.env
+  .NEXT_PUBLIC_ONNX_RUNTIME_URL as string | undefined;
+const DEFAULT_MODEL_URL = process.env
+  .NEXT_PUBLIC_LINEART_MODEL_URL as string | undefined;
+// Prefer explicit env; otherwise derive from runtime url directory
+const ONNX_WASM_BASE_URL =
+  (process.env.NEXT_PUBLIC_ONNX_WASM_BASE_URL as string | undefined) ||
+  (ONNX_RUNTIME_URL
+    ? ONNX_RUNTIME_URL.slice(0, ONNX_RUNTIME_URL.lastIndexOf("/") + 1)
+    : undefined);
 const EXTRA_PROCESSING_DELAY_MS = 40_000;
 
 export function FreeLineArtTool({
@@ -53,15 +59,22 @@ export function FreeLineArtTool({
     isLoadingModelRef.current = true;
     try {
       // Load ONNX runtime if not present
-      if (!window.ort) {
-        await new Promise<void>((resolve, reject) => {
+      const loadScript = (url: string) =>
+        new Promise<void>((resolve, reject) => {
           const s = document.createElement("script");
-          s.src = ONNX_RUNTIME_URL;
+          s.src = url;
           s.async = true;
+          // Do not set crossOrigin/referrerPolicy to avoid requiring CORS for script
           s.onload = () => resolve();
-          s.onerror = () => reject(new Error("Failed to load runtime"));
+          s.onerror = () => reject(new Error(`Failed to load runtime: ${url}`));
           document.head.appendChild(s);
         });
+
+      if (!window.ort) {
+        if (!ONNX_RUNTIME_URL) {
+          throw new Error("NEXT_PUBLIC_ONNX_RUNTIME_URL is not set");
+        }
+        await loadScript(ONNX_RUNTIME_URL);
       }
 
       const ort = window.ort;
@@ -72,8 +85,15 @@ export function FreeLineArtTool({
         ort.env.wasm.numThreads = (navigator as any).hardwareConcurrency || 1;
       }
       ort.env.wasm.proxy = true;
+      // Point runtime to the directory containing wasm/worker files
+      if (ONNX_WASM_BASE_URL) {
+        ort.env.wasm.wasmPaths = ONNX_WASM_BASE_URL;
+      }
 
       // Load model
+      if (!modelUrl) {
+        throw new Error("NEXT_PUBLIC_LINEART_MODEL_URL is not set");
+      }
       const sess = await ort.InferenceSession.create(modelUrl, {
         executionProviders: ["wasm"],
       });
