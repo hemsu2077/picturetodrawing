@@ -21,6 +21,42 @@
       }
     ]
   },
+  "showcase": {
+    "title": "Free Line Art Examples",
+    "description": "See what you can create with our free photo to sketch tool",
+    "items": [
+      {
+        "title": "Portrait Sketch",
+        "description": "Convert portraits to clean line drawings",
+        "image": {
+          "src": "https://files.picturetodrawing.com/styles/sample/sample-pencil-sketch.webp",
+          "alt": "Portrait line art example"
+        },
+        "url": "#",
+        "target": "_self"
+      },
+      {
+        "title": "Pet Drawing",
+        "description": "Transform pet photos into sketches",
+        "image": {
+          "src": "https://files.picturetodrawing.com/styles/sample/sample-line-drawing.webp",
+          "alt": "Pet line art example"
+        },
+        "url": "#",
+        "target": "_self"
+      },
+      {
+        "title": "Landscape Sketch",
+        "description": "Create beautiful landscape line art",
+        "image": {
+          "src": "https://files.picturetodrawing.com/styles/sample/sample-charcoal-drawing.webp",
+          "alt": "Landscape line art example"
+        },
+        "url": "#",
+        "target": "_self"
+      }
+    ]
+  },
   "upgrade_card": {
     "title": "Want studio-quality pencil sketch & 30+ art styles?",
     "description": "Unlock 30+ professional art styles with our AI Drawing Generator. Get cloud-powered processing and save your creations.",
@@ -45,6 +81,38 @@
     ],
     "cta_text": "Try AI Drawing Generator",
     "cta_link": "/"
+  },
+  "faq": {
+    "name": "faq",
+    "label": "FAQ",
+    "title": "Frequently Asked Questions About Photo to Line Drawing Conversion",
+    "description": "Everything you need to know about converting photos to line drawings",
+    "items": [
+      {
+        "title": "What types of photos work best for line drawing conversion?",
+        "description": "Photos with clear subjects and good contrast work best. Portraits, pets, buildings, and objects with defined edges produce excellent line art results. Our AI can handle various lighting conditions and automatically adjusts for optimal line drawing output."
+      },
+      {
+        "title": "Can I use the line drawings for commercial projects?",
+        "description": "Yes! All line drawings created with our photo to line drawing tool can be used for both personal and commercial purposes. You retain full rights to your converted images and can use them for products, marketing, or any business application."
+      },
+      {
+        "title": "What file formats are supported for upload and download?",
+        "description": "Upload: JPG, PNG, HEIC, WebP, and most common image formats. Download: High-quality PNG for raster graphics, SVG for scalable vector line art, and PDF for printing. Choose the format that best suits your intended use case."
+      },
+      {
+        "title": "How long does photo to line drawing conversion take?",
+        "description": "Processing time depends on your account type: Free users can expect conversions to complete within 50-60 seconds, while premium subscribers enjoy priority processing with results in just 20-30 seconds. Image size and complexity may slightly affect processing time, but our optimized AI servers ensure consistent quality regardless of speed."
+      },
+      {
+        "title": "Is my photo data secure and private?",
+        "description": "Absolutely. Your photos are processed securely and automatically deleted from our servers after conversion. We never store, share, or use your images for any purpose other than creating your line drawing. Your privacy is our top priority."
+      },
+      {
+        "title": "Can I adjust the line thickness and detail level?",
+        "description": "No, you cannot adjust the line thickness and detail level."
+      }
+    ]
   }
 }
 

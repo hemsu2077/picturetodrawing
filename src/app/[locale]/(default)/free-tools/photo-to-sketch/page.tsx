@@ -6,6 +6,8 @@ import { getPage } from "@/services/page";
 import { FreeLineArtTool } from "@/components/free-tools/line-art";
 import FreeToolHero from "@/components/blocks/free-tool-hero";
 import { UpgradeCard } from "@/components/free-tools/upgrade-card";
+import Showcase from "@/components/blocks/showcase";
+import FAQ from "@/components/blocks/faq";
 
 export async function generateMetadata({
   params,
@@ -34,10 +36,13 @@ export default async function FreeToolPhotoToSketchPage({
   return (
     <>
       {page.hero && <FreeToolHero hero={page.hero} />}
-      <div className="container space-y-8 pb-16">
-        <FreeLineArtTool />
-        
-        {page.upgrade_card && (
+
+      <FreeLineArtTool />
+      
+      {page.showcase && <Showcase section={page.showcase} />}
+      
+    
+      {page.upgrade_card && (
           <UpgradeCard
             title={page.upgrade_card.title}
             description={page.upgrade_card.description}
@@ -47,7 +52,8 @@ export default async function FreeToolPhotoToSketchPage({
             styleImage={page.upgrade_card.image}
           />
         )}
-      </div>
+
+    {page.faq && <FAQ section={page.faq} />}
     </>
   );
 }

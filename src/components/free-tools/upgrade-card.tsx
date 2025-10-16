@@ -45,6 +45,7 @@ export function UpgradeCard({
   };
 
   return (
+    <section className="container py-16">
     <div
       className={cn(
         "relative overflow-hidden rounded-xl border border-border/50 bg-gradient-to-br from-background via-background to-muted/20",
@@ -113,5 +114,6 @@ export function UpgradeCard({
       {/* Subtle accent line */}
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
     </div>
+    </section>
   );
 }
