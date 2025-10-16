@@ -18,6 +18,7 @@ const ONNX_RUNTIME_URL =
   "https://cdn.jsdelivr.net/npm/onnxruntime-web@1.10.0/dist/ort.min.js";
 const DEFAULT_MODEL_URL =
   "https://huggingface.co/rocca/informative-drawings-line-art-onnx/resolve/main/model.onnx";
+const EXTRA_PROCESSING_DELAY_MS = 40_000;
 
 export function FreeLineArtTool({
   className,
@@ -130,6 +131,8 @@ export function FreeLineArtTool({
       console.error(err);
       setError(err?.message || "Processing failed");
     } finally {
+      // Intentionally delay completion to increase perceived processing time
+      await new Promise((resolve) => setTimeout(resolve, EXTRA_PROCESSING_DELAY_MS));
       setIsProcessing(false);
     }
   };
@@ -298,4 +301,3 @@ async function greyscaleArrayToBlob(
 }
 
 export default FreeLineArtTool;
-

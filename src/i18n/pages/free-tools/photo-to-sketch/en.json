@@ -63,7 +63,7 @@
     ]
   },
   "upgrade_card": {
-    "title": "Need Professional Pencil Sketch with 30+ Artistic Styles?",
+    "title": "Professional Pencil Sketch and 30+ Other Artistic Styles",
     "description": "Upgrade to our AI-powered drawing generator for studio-quality results. Access 30+ professional art styles including realistic pencil sketch, watercolor, oil painting, and more. Cloud processing with saved history.",
     "image": "https://files.picturetodrawing.com/sample/benifit-style.webp",
     "features": [
@@ -107,7 +107,7 @@
       },
       {
         "title": "How long does it take to convert a photo to sketch?",
-        "description": "The photo to sketch conversion typically takes 40-50 seconds for standard images. Processing time may extend to 60-70 seconds for larger photos or high-resolution images, as all computation happens in your browser. The speed depends on your device's processing power and the image complexity. For faster cloud-based processing (20-30 seconds), try our premium AI drawing generator."
+        "description": "The photo to sketch conversion typically takes 50-60 seconds for standard images. Processing time may extend to 70-90 seconds for larger photos or high-resolution images, as all computation happens in your browser. The speed depends on your device's processing power and the image complexity. For faster cloud-based processing (20-30 seconds), try our premium AI drawing generator."
       },
       {
         "title": "Why doesn't my sketch look good? How can I improve results?",
