@@ -159,9 +159,22 @@ export async function updateSubOrder({
       return;
     }
 
-    // subscribe renew
-    if (Number(sub_times) > 1) {
+  // subscribe renew
+  if (Number(sub_times) > 1) {
       const renew_order_no = `${order.order_no}_${sub_times}`;
+
+      // Idempotency: if renew order already exists, ensure credits synced and return
+      const existedRenew = await findOrderByOrderNo(renew_order_no);
+      if (existedRenew) {
+        try {
+          if (existedRenew.user_uuid && existedRenew.credits > 0) {
+            await updateCreditForOrder(existedRenew as unknown as Order);
+          }
+        } catch (e) {
+          // keep silent to avoid failing webhook on retries
+        }
+        return;
+      }
 
       const currentDate = new Date();
       const created_at = currentDate.toISOString();
@@ -222,7 +235,23 @@ export async function updateSubOrder({
         order_detail: order.order_detail || "",
       };
 
-      await insertOrder(renew_order as unknown as typeof orders.$inferInsert);
+      try {
+        await insertOrder(renew_order as unknown as typeof orders.$inferInsert);
+      } catch (e: any) {
+        // Handle duplicate unique key on order_no gracefully (webhook retries)
+        const code = e?.code || e?.cause?.code;
+        const msg: string = e?.message || "";
+        if (code === "23505" || msg.includes("duplicate key value")) {
+          const existed = await findOrderByOrderNo(renew_order_no);
+          if (existed && existed.user_uuid && existed.credits > 0) {
+            try {
+              await updateCreditForOrder(existed as unknown as Order);
+            } catch {}
+          }
+          return;
+        }
+        throw e;
+      }
 
       if (renew_order.user_uuid) {
         if (renew_order.credits > 0) {
