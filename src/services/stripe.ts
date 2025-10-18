@@ -32,8 +32,12 @@ export async function handleCheckoutSession(
 
       metadata["sub_id"] = subId;
       metadata["sub_times"] = "1";
-      metadata["sub_interval"] = item.plan.interval;
-      metadata["sub_interval_count"] = item.plan.interval_count.toString();
+      // Fallback to price.recurring if plan is not present in newer API versions
+      const interval = (item as any).plan?.interval || (item as any).price?.recurring?.interval;
+      const intervalCount =
+        (item as any).plan?.interval_count || (item as any).price?.recurring?.interval_count;
+      metadata["sub_interval"] = interval;
+      metadata["sub_interval_count"] = (intervalCount ?? "").toString();
       metadata["sub_cycle_anchor"] =
         subscription.billing_cycle_anchor.toString();
       metadata["sub_period_start"] =
@@ -77,7 +81,64 @@ export async function handleInvoice(stripe: Stripe, invoice: Stripe.Invoice) {
       throw new Error("not handle unpaid invoice");
     }
 
-    const subId = invoice.subscription as string;
+    // Try to extract subscription id robustly across API versions
+    const getSubscriptionIdFromInvoice = async (): Promise<string | undefined> => {
+      const raw = (invoice as any).subscription;
+      if (typeof raw === "string" && raw) return raw;
+      if (raw && typeof raw === "object" && typeof raw.id === "string") return raw.id;
+
+      // Some newer API variants may put parent references
+      const parent = (invoice as any).parent;
+      if (parent && typeof parent === "object") {
+        if (typeof parent.id === "string") return parent.id;
+        if (typeof (parent as any).subscription?.id === "string") return (parent as any).subscription.id;
+      }
+
+      // Fallback: find via line subscription_item -> retrieve item to get subscription id
+      const lines = (invoice as any).lines?.data || [];
+      for (const line of lines) {
+        const subItemId = (line as any).subscription_item;
+        if (typeof subItemId === "string" && subItemId) {
+          try {
+            const subItem = await stripe.subscriptionItems.retrieve(subItemId);
+            if (typeof (subItem as any).subscription === "string") {
+              return (subItem as any).subscription as string;
+            }
+          } catch (e) {
+            // ignore and continue other fallbacks
+          }
+        }
+      }
+
+      // Last resort: query customer's subscriptions and match by price on invoice lines
+      if (invoice.customer) {
+        try {
+          const customerId = typeof invoice.customer === "string" ? invoice.customer : (invoice.customer as any).id;
+          const priceIds: string[] = [];
+          for (const line of lines) {
+            const priceId = (line as any).price?.id;
+            if (typeof priceId === "string") priceIds.push(priceId);
+          }
+
+          if (customerId) {
+            const subs = await stripe.subscriptions.list({ customer: customerId, status: "all", limit: 100 });
+            for (const sub of subs.data) {
+              const subPriceIds = sub.items.data
+                .map((it) => ((it as any).price?.id as string | undefined))
+                .filter(Boolean) as string[];
+              const matched = priceIds.some((pid) => subPriceIds.includes(pid));
+              if (matched) return sub.id;
+            }
+          }
+        } catch (e) {
+          // ignore and fall through
+        }
+      }
+
+      return undefined;
+    };
+
+    const subId = await getSubscriptionIdFromInvoice();
     // not handle none-subscription payment
     if (!subId) {
       throw new Error("not handle none-subscription payment");
@@ -126,8 +187,12 @@ export async function handleInvoice(stripe: Stripe, invoice: Stripe.Invoice) {
 
     metadata["sub_id"] = subId;
     metadata["sub_times"] = subTimes.toString();
-    metadata["sub_interval"] = item.plan.interval;
-    metadata["sub_interval_count"] = item.plan.interval_count.toString();
+    // Fallback to price.recurring if plan is not present
+    const itemInterval = (item as any).plan?.interval || (item as any).price?.recurring?.interval;
+    const itemIntervalCount =
+      (item as any).plan?.interval_count || (item as any).price?.recurring?.interval_count;
+    metadata["sub_interval"] = itemInterval;
+    metadata["sub_interval_count"] = (itemIntervalCount ?? "").toString();
     metadata["sub_cycle_anchor"] = subscription.billing_cycle_anchor.toString();
     metadata["sub_period_start"] = subscription.current_period_start.toString();
     metadata["sub_period_end"] = subscription.current_period_end.toString();
