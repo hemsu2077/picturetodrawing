@@ -94,6 +94,18 @@ export async function handleInvoice(stripe: Stripe, invoice: Stripe.Invoice) {
         if (typeof (parent as any).subscription?.id === "string") return (parent as any).subscription.id;
       }
 
+      // Try retrieving invoice with expansion to access subscription field directly
+      try {
+        const inv = await stripe.invoices.retrieve(invoice.id as string, {
+          expand: ["subscription", "lines.data", "lines.data.price"],
+        } as any);
+        const invSub = (inv as any).subscription;
+        if (typeof invSub === "string" && invSub) return invSub;
+        if (invSub && typeof invSub === "object" && typeof invSub.id === "string") return invSub.id;
+      } catch (e) {
+        // ignore and continue other fallbacks
+      }
+
       // Fallback: find via line subscription_item -> retrieve item to get subscription id
       const lines = (invoice as any).lines?.data || [];
       for (const line of lines) {
@@ -122,6 +134,14 @@ export async function handleInvoice(stripe: Stripe, invoice: Stripe.Invoice) {
 
           if (customerId) {
             const subs = await stripe.subscriptions.list({ customer: customerId, status: "all", limit: 100 });
+            // Prefer exact match by latest_invoice -> invoice.id
+            for (const sub of subs.data) {
+              const latestInvoice = (sub as any).latest_invoice;
+              const latestInvoiceId = typeof latestInvoice === "string" ? latestInvoice : latestInvoice?.id;
+              if (latestInvoiceId && latestInvoiceId === invoice.id) {
+                return sub.id;
+              }
+            }
             for (const sub of subs.data) {
               const subPriceIds = sub.items.data
                 .map((it) => ((it as any).price?.id as string | undefined))
