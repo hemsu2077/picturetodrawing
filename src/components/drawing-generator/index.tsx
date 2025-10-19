@@ -407,7 +407,7 @@ export function DrawingGenerator({
           </div>
 
           {/* Right Side - Controls */}
-          <div className="border border-gray-200 md:col-span-1 lg:col-span-1 space-y-4 rounded-lg shadow-sm">
+          <div className="border border-gray-200 bg-background md:col-span-1 lg:col-span-1 space-y-4 rounded-lg shadow-sm">
             <StyleSelector
               selectedStyle={selectedStyle}
               onStyleChange={setSelectedStyle}
