@@ -94,7 +94,7 @@ export default function Footer({ footer }: { footer: FooterType }) {
               </ul>
             )}
           </div>
-          <div className="flex flex-wrap justify-center gap-4 mt-8">
+          {/* <div className="flex flex-wrap justify-center gap-4 mt-8">
             <a href="https://www.toolify.ai/tool/picture-to-drawing-1" target="_blank" rel="noopener noreferrer">
               <NextImage src="https://cdn.toolify.ai/featured_light.svg" alt="U-Tools badge" width={160} height={54} loading="lazy" unoptimized />
             </a>
@@ -123,7 +123,7 @@ export default function Footer({ footer }: { footer: FooterType }) {
               <NextImage src="https://saasbaba.com/wp-content/uploads/2023/05/featured-on-sb.png" alt="SaasBaba.com" width={120} height={38} loading="lazy" unoptimized />
             </a>
             
-          </div>
+          </div> */}
         </footer>
       </div>
     </section>
