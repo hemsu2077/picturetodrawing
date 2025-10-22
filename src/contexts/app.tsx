@@ -115,6 +115,46 @@ export const AppContextProvider = ({ children }: { children: ReactNode }) => {
     }
   }, [session]);
 
+  useEffect(() => {
+    if (!user || !user.email) return;
+    if (typeof window === "undefined") return;
+
+    const w: any = window as any;
+    const consent = w.__uetConsentAdStorage || 'denied';
+    if (consent !== 'granted') return;
+    if (w.__uetEnhancedSent) return;
+
+    try {
+      const email = String(user.email || "").trim().toLowerCase();
+      const phone = "";
+      w.uetq = w.uetq || [];
+      w.uetq.push('set', { 'pid': { 'em': email, 'ph': phone } });
+      w.__uetEnhancedSent = true;
+    } catch (e) {
+      // no-op
+    }
+  }, [user]);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const w: any = window as any;
+    const handler = (evt: any) => {
+      const status = evt?.detail?.ad_storage;
+      if (status !== 'granted') return;
+      if (!user || !user.email) return;
+      if (w.__uetEnhancedSent) return;
+      try {
+        const email = String(user.email || "").trim().toLowerCase();
+        const phone = "";
+        w.uetq = w.uetq || [];
+        w.uetq.push('set', { 'pid': { 'em': email, 'ph': phone } });
+        w.__uetEnhancedSent = true;
+      } catch (e) {}
+    };
+    window.addEventListener('consent:changed', handler as EventListener);
+    return () => window.removeEventListener('consent:changed', handler as EventListener);
+  }, [user]);
+
   return (
     <AppContext.Provider
       value={{
