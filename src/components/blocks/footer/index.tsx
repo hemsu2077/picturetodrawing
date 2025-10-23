@@ -113,6 +113,10 @@ export default function Footer({ footer }: { footer: FooterType }) {
             <a title="ai tools code.market" href="https://code.market?code.market=verified" target="_blank" rel="noopener noreferrer">
               <NextImage alt="ai tools code.market" title="ai tools code.market" src="https://code.market/assets/manage-product/featured-logo-bright.svg" width={160} height={54} loading="lazy" unoptimized />
             </a>
+            <a title="dofollow tools" href="https://dofollow.tools" target="_blank" rel="noopener noreferrer">
+              <NextImage alt="Featured on Dofollow.Tools" title="ai tools code.market" src="https://dofollow.tools/badge/badge_light.svg" width={150} height={40} loading="lazy" unoptimized />
+            </a>
+
             {/* <a href="https://tinylaunch.com" target="_blank" rel="noopener noreferrer">
               <NextImage src="https://tinylaunch.com/tinylaunch_badge_featured_on.svg" alt="TinyLaunch Badge" width={140} height={54} loading="lazy" unoptimized />
             </a>
