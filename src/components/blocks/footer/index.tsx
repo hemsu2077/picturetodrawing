@@ -94,7 +94,7 @@ export default function Footer({ footer }: { footer: FooterType }) {
               </ul>
             )}
           </div>
-          {/* <div className="flex flex-wrap justify-center gap-4 mt-8">
+          <div className="flex flex-wrap justify-center gap-4 mt-8">
             <a href="https://www.toolify.ai/tool/picture-to-drawing-1" target="_blank" rel="noopener noreferrer">
               <NextImage src="https://cdn.toolify.ai/featured_light.svg" alt="U-Tools badge" width={160} height={54} loading="lazy" unoptimized />
             </a>
@@ -113,7 +113,7 @@ export default function Footer({ footer }: { footer: FooterType }) {
             <a title="ai tools code.market" href="https://code.market?code.market=verified" target="_blank" rel="noopener noreferrer">
               <NextImage alt="ai tools code.market" title="ai tools code.market" src="https://code.market/assets/manage-product/featured-logo-bright.svg" width={160} height={54} loading="lazy" unoptimized />
             </a>
-            <a href="https://tinylaunch.com" target="_blank" rel="noopener noreferrer">
+            {/* <a href="https://tinylaunch.com" target="_blank" rel="noopener noreferrer">
               <NextImage src="https://tinylaunch.com/tinylaunch_badge_featured_on.svg" alt="TinyLaunch Badge" width={140} height={54} loading="lazy" unoptimized />
             </a>
             <a href="https://dang.ai/" target="_blank" rel="noopener noreferrer">
@@ -121,9 +121,9 @@ export default function Footer({ footer }: { footer: FooterType }) {
             </a>
             <a href="https://www.saasbaba.com/" target="_blank" rel="noopener noreferrer">
               <NextImage src="https://saasbaba.com/wp-content/uploads/2023/05/featured-on-sb.png" alt="SaasBaba.com" width={120} height={38} loading="lazy" unoptimized />
-            </a>
+            </a> */}
             
-          </div> */}
+          </div>
         </footer>
       </div>
     </section>
