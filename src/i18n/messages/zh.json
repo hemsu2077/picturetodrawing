@@ -203,7 +203,7 @@
     "generating": "生成中...",
     "processing": "处理中...",
     "free": "限免",
-    "login_for_free_trial_hint": "登录领10积分 · 每日限免",
+    "login_for_free_trial_hint": "登录领免费积分",
     "free_trial_available_hint": "今日限免剩余：1次",
     "select_image_first": "请先选择图片",
     "insufficient_credits": "积分不足",
